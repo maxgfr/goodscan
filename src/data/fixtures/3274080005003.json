@@ -1,0 +1,630 @@
+{
+  "additives_tags": [],
+  "allergens_tags": [
+    "en:none"
+  ],
+  "attribute_groups": [
+    {
+      "attributes": [
+        {
+          "description": "",
+          "description_short": "Very good nutritional quality",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/nutriscore-a-new-en.svg",
+          "id": "nutriscore",
+          "match": 100,
+          "name": "Nutri-Score",
+          "panel_id": "nutriscore_2023",
+          "status": "known",
+          "title": "Nutri-Score A"
+        },
+        {
+          "description_short": "0.00275 g / 100 g",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/nutrient-level-salt-low.svg",
+          "id": "low_salt",
+          "match": 99.6333333333333,
+          "name": "Salt",
+          "panel_id": "nutrient_level_salt",
+          "status": "known",
+          "title": "Salt in low quantity"
+        },
+        {
+          "description_short": "0 g / 100 g",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/nutrient-level-fat-low.svg",
+          "id": "low_fat",
+          "match": 100,
+          "name": "Fat",
+          "panel_id": "nutrient_level_fat",
+          "status": "known",
+          "title": "Fat in low quantity"
+        },
+        {
+          "description_short": "0 g / 100 g",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/nutrient-level-sugars-low.svg",
+          "id": "low_sugars",
+          "match": 100,
+          "name": "Sugars",
+          "panel_id": "nutrient_level_sugars",
+          "status": "known",
+          "title": "Sugars in low quantity"
+        },
+        {
+          "description_short": "0 g / 100 g",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/nutrient-level-saturated-fat-low.svg",
+          "id": "low_saturated_fat",
+          "match": 100,
+          "name": "Saturated fat",
+          "panel_id": "nutrient_level_saturated-fat",
+          "status": "known",
+          "title": "Saturated fat in low quantity"
+        }
+      ],
+      "id": "nutritional_quality",
+      "name": "Nutritional quality"
+    },
+    {
+      "attributes": [
+        {
+          "debug": "1 ingredients (0 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-gluten.svg",
+          "id": "allergens_no_gluten",
+          "match": 100,
+          "name": "Gluten",
+          "status": "known",
+          "title": "Does not contain: gluten"
+        },
+        {
+          "debug": "1 ingredients (0 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-milk.svg",
+          "id": "allergens_no_milk",
+          "match": 100,
+          "name": "Milk",
+          "status": "known",
+          "title": "Does not contain: milk"
+        },
+        {
+          "debug": "1 ingredients (0 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-eggs.svg",
+          "id": "allergens_no_eggs",
+          "match": 100,
+          "name": "Eggs",
+          "status": "known",
+          "title": "Does not contain: eggs"
+        },
+        {
+          "debug": "1 ingredients (0 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-nuts.svg",
+          "id": "allergens_no_nuts",
+          "match": 100,
+          "name": "Nuts",
+          "status": "known",
+          "title": "Does not contain: nuts"
+        },
+        {
+          "debug": "1 ingredients (0 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-peanuts.svg",
+          "id": "allergens_no_peanuts",
+          "match": 100,
+          "name": "Peanuts",
+          "status": "known",
+          "title": "Does not contain: peanuts"
+        },
+        {
+          "debug": "1 ingredients (0 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-sesame-seeds.svg",
+          "id": "allergens_no_sesame_seeds",
+          "match": 100,
+          "name": "Sesame seeds",
+          "status": "known",
+          "title": "Does not contain: sesame seeds"
+        },
+        {
+          "debug": "1 ingredients (0 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-soybeans.svg",
+          "id": "allergens_no_soybeans",
+          "match": 100,
+          "name": "Soybeans",
+          "status": "known",
+          "title": "Does not contain: soybeans"
+        },
+        {
+          "debug": "1 ingredients (0 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-celery.svg",
+          "id": "allergens_no_celery",
+          "match": 100,
+          "name": "Celery",
+          "status": "known",
+          "title": "Does not contain: celery"
+        },
+        {
+          "debug": "1 ingredients (0 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-mustard.svg",
+          "id": "allergens_no_mustard",
+          "match": 100,
+          "name": "Mustard",
+          "status": "known",
+          "title": "Does not contain: mustard"
+        },
+        {
+          "debug": "1 ingredients (0 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-lupin.svg",
+          "id": "allergens_no_lupin",
+          "match": 100,
+          "name": "Lupin",
+          "status": "known",
+          "title": "Does not contain: lupin"
+        },
+        {
+          "debug": "1 ingredients (0 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-fish.svg",
+          "id": "allergens_no_fish",
+          "match": 100,
+          "name": "Fish",
+          "status": "known",
+          "title": "Does not contain: fish"
+        },
+        {
+          "debug": "1 ingredients (0 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-crustaceans.svg",
+          "id": "allergens_no_crustaceans",
+          "match": 100,
+          "name": "Crustaceans",
+          "status": "known",
+          "title": "Does not contain: crustaceans"
+        },
+        {
+          "debug": "1 ingredients (0 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-molluscs.svg",
+          "id": "allergens_no_molluscs",
+          "match": 100,
+          "name": "Molluscs",
+          "status": "known",
+          "title": "Does not contain: molluscs"
+        },
+        {
+          "debug": "1 ingredients (0 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-sulphur-dioxide-and-sulphites.svg",
+          "id": "allergens_no_sulphur_dioxide_and_sulphites",
+          "match": 100,
+          "name": "Sulphur dioxide and sulphites",
+          "status": "known",
+          "title": "Does not contain: sulphur dioxide and sulphites"
+        }
+      ],
+      "id": "allergens",
+      "name": "Allergens",
+      "warning": "There is always a possibility that data about allergens may be missing, incomplete, incorrect or that the product's composition has changed. If you are allergic, always check the information on the actual product packaging."
+    },
+    {
+      "attributes": [
+        {
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/vegan.svg",
+          "id": "vegan",
+          "match": 100,
+          "name": "Vegan",
+          "panel_id": "ingredients_analysis_en:vegan",
+          "status": "known",
+          "title": "Vegan"
+        },
+        {
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/vegetarian.svg",
+          "id": "vegetarian",
+          "match": 100,
+          "name": "Vegetarian",
+          "panel_id": "ingredients_analysis_en:vegetarian",
+          "status": "known",
+          "title": "Vegetarian"
+        },
+        {
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/palm-oil-free.svg",
+          "id": "palm_oil_free",
+          "match": 100,
+          "name": "Palm oil free",
+          "panel_id": "ingredients_analysis_en:palm-oil-free",
+          "status": "known",
+          "title": "Palm oil free"
+        }
+      ],
+      "id": "ingredients_analysis",
+      "name": "Ingredients",
+      "warning": "Those preferences are based on Open Food Facts' understanding of the ingredient list and there is always a possibility that it may not be accurate or complete, always check the product yourself."
+    },
+    {
+      "attributes": [
+        {
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/nova-group-1.svg",
+          "id": "nova",
+          "match": 100,
+          "name": "NOVA group",
+          "panel_id": "nova",
+          "status": "known",
+          "title": "Unprocessed or minimally processed foods"
+        },
+        {
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/0-additives.svg",
+          "id": "additives",
+          "match": 100,
+          "name": "Additives",
+          "panel_id": "ingredients_analysis",
+          "status": "known",
+          "title": "Without additives"
+        }
+      ],
+      "id": "processing",
+      "name": "Food processing"
+    },
+    {
+      "attributes": [
+        {
+          "description_short": "Not yet applicable for the category: Waters",
+          "grade": "unknown",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/green-score-not-applicable.svg",
+          "id": "ecoscore",
+          "match": 0,
+          "name": "Green-Score",
+          "panel_id": "environmental_score",
+          "status": "unknown",
+          "title": "Green-Score not applicable"
+        },
+        {
+          "description": "No ingredient associated with a deforestation risk.",
+          "description_short": "No deforestation risk",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/forest-footprint-2026-white-bg-a.svg",
+          "id": "forest_footprint",
+          "match": 100,
+          "name": "Forest Footprint",
+          "panel_id": "forest_footprint",
+          "status": "known",
+          "title": "Forest Footprint A"
+        }
+      ],
+      "id": "environment",
+      "name": "Environment"
+    },
+    {
+      "attributes": [
+        {
+          "description": "Organic farming aims to protect the environment and to conserve biodiversity by prohibiting or limiting the use of synthetic fertilizers, pesticides and food additives.",
+          "description_short": "Organic products promote ecological sustainability and biodiversity.",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/not-organic.svg",
+          "id": "labels_organic",
+          "match": 0,
+          "name": "Organic farming",
+          "status": "known",
+          "title": "Not an organic product"
+        },
+        {
+          "description": "When you buy fair trade products, producers in developing countries are paid an higher and fairer price, which helps them improve and sustain higher social and often environmental standards.",
+          "description_short": "Fair trade products help producers in developing countries.",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/not-fair-trade.svg",
+          "id": "labels_fair_trade",
+          "match": 0,
+          "name": "Fair trade",
+          "status": "known",
+          "title": "Not a fair trade product"
+        }
+      ],
+      "id": "labels",
+      "name": "Labels"
+    }
+  ],
+  "brands": "Cristaline",
+  "categories_tags": [
+    "en:beverages-and-beverages-preparations",
+    "en:beverages",
+    "en:waters",
+    "en:spring-waters",
+    "en:unsweetened-beverages"
+  ],
+  "code": "3274080005003",
+  "countries_tags": [
+    "en:belgium",
+    "en:cote-d-ivoire",
+    "en:france",
+    "en:germany",
+    "en:guadeloupe",
+    "en:italy",
+    "en:luxembourg",
+    "en:mali",
+    "en:martinique",
+    "en:netherlands",
+    "en:new-caledonia",
+    "en:switzerland",
+    "en:united-kingdom",
+    "en:united-states"
+  ],
+  "ecoscore_grade": "not-applicable",
+  "generic_name": "Eau De Source",
+  "image_front_url": "https://images.openfoodfacts.org/images/products/327/408/000/5003/front_en.797.400.jpg",
+  "image_url": "https://images.openfoodfacts.org/images/products/327/408/000/5003/front_en.797.400.jpg",
+  "ingredients_analysis_tags": [
+    "en:palm-oil-free",
+    "en:vegan",
+    "en:vegetarian"
+  ],
+  "ingredients_text": "Eau de source",
+  "ingredients_text_de": "",
+  "ingredients_text_en": "Eau de source Noemie\r\n\r\nCalcium Ca2+ 113 mg/l\r\nMagnesium Mg2+ 228 mg/l\r\nSodium Na 7 mg/l\r\nPotassium K 2 mg/l\r\nSilice SiOz 15 mg/l\r\nBicarbonates HCO3 - 447 mg/l\r\nSulfates SO42 - 53 mg/l\r\nChlorure Cl - 8 mg/l\r\nNitrates NO3 - &lt;2 mg/l\r\nFluor F - &lt;1 mg/l\r\npH 7.3",
+  "ingredients_text_fr": "Eau de source",
+  "labels_tags": [
+    "fr:triman"
+  ],
+  "lang": "fr",
+  "misc_tags": [
+    "en:environmental-score-not-applicable",
+    "en:environmental-score-not-computed",
+    "en:estimated-ingredients-with-recipe-estimator-cvxpy",
+    "en:forest-footprint-computed",
+    "en:forest-footprint-grade-a",
+    "en:nutrients-estimated-from-ingredients",
+    "en:nutriscore-2021-a-2023-a",
+    "en:nutriscore-2021-same-as-2023",
+    "en:nutriscore-computed",
+    "en:nutrition-all-nutriscore-values-known",
+    "en:nutrition-data-per-100g",
+    "en:nutrition-data-per-100ml",
+    "en:nutrition-data-per-1l",
+    "en:nutrition-fruits-vegetables-legumes-estimate-from-ingredients",
+    "en:nutrition-fruits-vegetables-nuts-estimate-from-ingredients",
+    "en:packagings-complete",
+    "en:packagings-not-empty",
+    "en:packagings-number-of-components-3",
+    "en:packagings-with-all-weights",
+    "en:packagings-with-all-weights-complete",
+    "en:packagings-with-weights",
+    "en:storage-conditions-not-set",
+    "en:number-of-uploaded-images-more-than-100",
+    "en:main-countries-de-unexpectedly-low-scans",
+    "en:main-countries-de-unexpectedly-low-scans-0-10-percent-of-expected",
+    "en:main-countries-de-ingredients-not-in-country-language",
+    "en:main-countries-it-unexpectedly-low-scans",
+    "en:main-countries-it-unexpectedly-low-scans-0-10-percent-of-expected",
+    "en:main-countries-ml-unexpectedly-low-scans",
+    "en:main-countries-ml-unexpectedly-low-scans-0-10-percent-of-expected",
+    "en:main-countries-nc-unexpectedly-low-scans",
+    "en:main-countries-nc-unexpectedly-low-scans-0-10-percent-of-expected",
+    "en:main-countries-ch-unexpectedly-low-scans",
+    "en:main-countries-ch-unexpectedly-low-scans-20-30-percent-of-expected",
+    "en:main-countries-uk-unexpectedly-low-scans",
+    "en:main-countries-uk-unexpectedly-low-scans-0-10-percent-of-expected",
+    "en:main-countries-us-unexpectedly-low-scans",
+    "en:main-countries-us-unexpectedly-low-scans-0-10-percent-of-expected"
+  ],
+  "nova_group": 1,
+  "nutriments": {
+    "added-sugars": 0,
+    "added-sugars_100g": 0,
+    "added-sugars_serving": 0,
+    "added-sugars_unit": "g",
+    "added-sugars_value": 0,
+    "bicarbonate": 0.435,
+    "bicarbonate_100g": 0.435,
+    "bicarbonate_serving": 6.52,
+    "bicarbonate_unit": "g",
+    "bicarbonate_value": 0.435,
+    "calcium": 0.113,
+    "calcium_100g": 0.113,
+    "calcium_serving": 1.69,
+    "calcium_unit": "g",
+    "calcium_value": 0.113,
+    "chloride": 0.007,
+    "chloride_100g": 0.007,
+    "chloride_serving": 0.105,
+    "chloride_unit": "g",
+    "chloride_value": 0.007,
+    "fluoride": 0.0006,
+    "fluoride_100g": 0.0006,
+    "fluoride_serving": 0.009,
+    "fluoride_unit": "g",
+    "fluoride_value": 0.0006,
+    "fruits-vegetables-legumes-estimate-from-ingredients_100g": 0,
+    "fruits-vegetables-nuts-estimate-from-ingredients_100g": 0,
+    "magnesium": 0.028,
+    "magnesium_100g": 0.028,
+    "magnesium_serving": 0.42,
+    "magnesium_unit": "g",
+    "magnesium_value": 0.028,
+    "nitrate": 0.001,
+    "nitrate_100g": 0.001,
+    "nitrate_serving": 0.015,
+    "nitrate_unit": "g",
+    "nitrate_value": 0.001,
+    "nova-group": 1,
+    "nova-group_100g": 1,
+    "nova-group_serving": 1,
+    "nova-group_unit": "",
+    "nova-group_value": 1,
+    "ph": 7.3,
+    "ph_100g": 7.3,
+    "ph_serving": 7.3,
+    "ph_unit": "",
+    "ph_value": 7.3,
+    "potassium": 0.002,
+    "potassium_100g": 0.002,
+    "potassium_serving": 0.03,
+    "potassium_unit": "g",
+    "potassium_value": 0.002,
+    "salt": 0.00275,
+    "salt_100g": 0.00275,
+    "salt_serving": 0.0412,
+    "salt_unit": "g",
+    "salt_value": 0.00275,
+    "silica": 0.015,
+    "silica_100g": 0.015,
+    "silica_serving": 0.225,
+    "silica_unit": "g",
+    "silica_value": 0.015,
+    "sodium": 0.0063,
+    "sodium_100g": 0.0063,
+    "sodium_serving": 0.0945,
+    "sodium_unit": "g",
+    "sodium_value": 0.0063
+  },
+  "nutriments_estimated": {
+    "alcohol_100g": 0,
+    "beta-carotene_100g": 0,
+    "carbohydrates_100g": 0,
+    "cholesterol_100g": 0,
+    "copper_100g": 0.000008,
+    "energy-kcal_100g": 0,
+    "energy-kj_100g": 0,
+    "energy_100g": 0,
+    "fat_100g": 0,
+    "fiber_100g": 0,
+    "fructose_100g": 0,
+    "galactose_100g": 0,
+    "glucose_100g": 0,
+    "iodine_100g": 0,
+    "iron_100g": 0.000023,
+    "lactose_100g": 0,
+    "maltose_100g": 0,
+    "manganese_100g": 8.9e-7,
+    "pantothenic-acid_100g": 0,
+    "phosphorus_100g": 0.0000015,
+    "phylloquinone_100g": 0,
+    "polyols_100g": 0,
+    "proteins_100g": 0,
+    "saturated-fat_100g": 0,
+    "selenium_100g": 0.000005,
+    "starch_100g": 0,
+    "sucrose_100g": 0,
+    "sugars_100g": 0,
+    "vitamin-a_100g": 0,
+    "vitamin-b12_100g": 0,
+    "vitamin-b1_100g": 0,
+    "vitamin-b2_100g": 0,
+    "vitamin-b6_100g": 0,
+    "vitamin-b9_100g": 0,
+    "vitamin-c_100g": 0,
+    "vitamin-d_100g": 0,
+    "vitamin-e_100g": 0,
+    "vitamin-pp_100g": 0,
+    "water_100g": 100,
+    "zinc_100g": 0.000011
+  },
+  "nutriscore_data": {
+    "components": {
+      "negative": [
+        {
+          "id": "energy",
+          "points": 0,
+          "points_max": 10,
+          "unit": "kJ",
+          "value": 0
+        },
+        {
+          "id": "sugars",
+          "points": 0,
+          "points_max": 10,
+          "unit": "g",
+          "value": 0
+        },
+        {
+          "id": "saturated_fat",
+          "points": 0,
+          "points_max": 10,
+          "unit": "g",
+          "value": 0
+        },
+        {
+          "id": "salt",
+          "points": 0,
+          "points_max": 20,
+          "unit": "g",
+          "value": 0
+        },
+        {
+          "id": "non_nutritive_sweeteners",
+          "points": 0,
+          "points_max": 4,
+          "unit": "number",
+          "value": 0
+        }
+      ],
+      "positive": [
+        {
+          "id": "proteins",
+          "points": 0,
+          "points_max": 7,
+          "unit": "g",
+          "value": 0
+        },
+        {
+          "id": "fiber",
+          "points": 0,
+          "points_max": 5,
+          "unit": "g",
+          "value": 0
+        },
+        {
+          "id": "fruits_vegetables_legumes",
+          "points": 0,
+          "points_max": 6,
+          "unit": "%",
+          "value": 0
+        }
+      ]
+    },
+    "count_proteins": 1,
+    "count_proteins_reason": "beverage",
+    "grade": "a",
+    "is_beverage": 1,
+    "is_cheese": 0,
+    "is_fat_oil_nuts_seeds": 0,
+    "is_red_meat_product": 0,
+    "is_water": "1",
+    "negative_points": 0,
+    "negative_points_max": 54,
+    "positive_nutrients": [
+      "proteins",
+      "fiber",
+      "fruits_vegetables_legumes"
+    ],
+    "positive_points": 0,
+    "positive_points_max": 18,
+    "score": 0
+  },
+  "nutriscore_grade": "a",
+  "nutriscore_score": 0,
+  "nutrition_data": "on",
+  "nutrition_data_per": "100g",
+  "nutrition_data_prepared_per": "100g",
+  "product_name": "isabelle",
+  "product_name_de": "Quellwasser",
+  "product_name_en": "Cristaline",
+  "product_name_fr": "isabelle",
+  "product_quantity": 1500,
+  "product_quantity_unit": "ml",
+  "quantity": "1500 ml",
+  "serving_quantity": 1500,
+  "serving_size": "1,5L",
+  "traces_tags": [
+    "en:none"
+  ]
+}

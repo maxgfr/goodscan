@@ -1,0 +1,323 @@
+{
+  "importance": {
+    "not_important": {
+      "en": "Not important",
+      "fr": "Pas important",
+      "de": "Unwichtig"
+    },
+    "important": {
+      "en": "Important",
+      "fr": "Important",
+      "de": "Wichtig"
+    },
+    "very_important": {
+      "en": "Very important",
+      "fr": "Très important",
+      "de": "Sehr wichtig"
+    },
+    "mandatory": {
+      "en": "Mandatory",
+      "fr": "Obligatoire",
+      "de": "Pflichtfeld"
+    }
+  },
+  "groups": [
+    {
+      "id": "nutritional_quality",
+      "name": {
+        "en": "Nutritional quality",
+        "fr": "Qualité nutritionnelle",
+        "de": "Nahrungsqualität"
+      },
+      "attributes": [
+        {
+          "id": "nutriscore",
+          "name": {
+            "en": "Good nutritional quality (Nutri-Score)",
+            "fr": "Bonne qualité nutritionnelle (Nutri-Score)",
+            "de": "Gute Lebensmittelqualität (Nutri-Score)"
+          },
+          "default": "very_important"
+        },
+        {
+          "id": "low_salt",
+          "name": {
+            "en": "Salt in low quantity",
+            "fr": "Sel en faible quantité",
+            "de": "Salz in geringer Menge"
+          }
+        },
+        {
+          "id": "low_sugars",
+          "name": {
+            "en": "Sugars in low quantity",
+            "fr": "Sucres en faible quantité",
+            "de": "Zucker in geringer Menge"
+          }
+        },
+        {
+          "id": "low_fat",
+          "name": {
+            "en": "Fat in low quantity",
+            "fr": "Matières grasses en faible quantité",
+            "de": "Fett in geringer Menge"
+          }
+        },
+        {
+          "id": "low_saturated_fat",
+          "name": {
+            "en": "Saturated fat in low quantity",
+            "fr": "Acides gras saturés en faible quantité",
+            "de": "gesättigte Fettsäuren in geringer Menge"
+          }
+        }
+      ]
+    },
+    {
+      "id": "processing",
+      "name": {
+        "en": "Food processing",
+        "fr": "Transformation des aliments",
+        "de": "Lebensmittelverarbeitung"
+      },
+      "attributes": [
+        {
+          "id": "nova",
+          "name": {
+            "en": "No or little food processing (NOVA group)",
+            "fr": "Pas ou peu de transformation des aliments (groupe NOVA)",
+            "de": "Keine oder geringe Lebensmittelverarbeitung (NOVA-Gruppe)"
+          },
+          "default": "important"
+        },
+        {
+          "id": "additives",
+          "name": {
+            "en": "No or few additives",
+            "fr": "Pas ou peu d'additifs",
+            "de": "Keine oder wenige Zusatzstoffe"
+          }
+        }
+      ]
+    },
+    {
+      "id": "allergens",
+      "name": {
+        "en": "Allergens",
+        "fr": "Allergènes",
+        "de": "Allergene"
+      },
+      "warning": {
+        "en": "There is always a possibility that data about allergens may be missing, incomplete, incorrect or that the product's composition has changed. If you are allergic, always check the information on the actual product packaging.",
+        "fr": "Il est toujours possible que les données sur les allergènes soient manquantes, incomplètes, incorrectes ou que la composition du produit ait changé. Si vous êtes allergique, vérifiez toujours les informations sur l'emballage réel du produit.",
+        "de": "Es besteht immer die Möglichkeit, dass Daten über Allergene fehlen, unvollständig oder falsch sind oder dass sich die Zusammensetzung des Produkts geändert hat. Wenn Sie allergisch sind, überprüfen Sie immer die Angaben auf der tatsächlichen Produktverpackung."
+      },
+      "attributes": [
+        {
+          "id": "allergens_no_gluten",
+          "name": {
+            "en": "Without gluten",
+            "fr": "Sans gluten",
+            "de": "Ohne Gluten"
+          }
+        },
+        {
+          "id": "allergens_no_milk",
+          "name": {
+            "en": "Without milk",
+            "fr": "Sans lait",
+            "de": "Ohne Milch"
+          }
+        },
+        {
+          "id": "allergens_no_eggs",
+          "name": {
+            "en": "Without eggs",
+            "fr": "Sans œufs",
+            "de": "Ohne Eier"
+          }
+        },
+        {
+          "id": "allergens_no_nuts",
+          "name": {
+            "en": "Without nuts",
+            "fr": "Sans fruits à coque",
+            "de": "Ohne Schalenfrüchte"
+          }
+        },
+        {
+          "id": "allergens_no_peanuts",
+          "name": {
+            "en": "Without peanuts",
+            "fr": "Sans arachides",
+            "de": "Ohne Erdnüsse"
+          }
+        },
+        {
+          "id": "allergens_no_sesame_seeds",
+          "name": {
+            "en": "Without sesame seeds",
+            "fr": "Sans graines de sésame",
+            "de": "Ohne Sesam"
+          }
+        },
+        {
+          "id": "allergens_no_soybeans",
+          "name": {
+            "en": "Without soybeans",
+            "fr": "Sans soja",
+            "de": "Ohne Soja"
+          }
+        },
+        {
+          "id": "allergens_no_celery",
+          "name": {
+            "en": "Without celery",
+            "fr": "Sans céleri",
+            "de": "Ohne Sellerie"
+          }
+        },
+        {
+          "id": "allergens_no_mustard",
+          "name": {
+            "en": "Without mustard",
+            "fr": "Sans moutarde",
+            "de": "Ohne Senf"
+          }
+        },
+        {
+          "id": "allergens_no_lupin",
+          "name": {
+            "en": "Without lupin",
+            "fr": "Sans lupin",
+            "de": "Ohne Lupine"
+          }
+        },
+        {
+          "id": "allergens_no_fish",
+          "name": {
+            "en": "Without fish",
+            "fr": "Sans poisson",
+            "de": "Ohne Fisch"
+          }
+        },
+        {
+          "id": "allergens_no_crustaceans",
+          "name": {
+            "en": "Without crustaceans",
+            "fr": "Sans crustacés",
+            "de": "Ohne Krebstiere"
+          }
+        },
+        {
+          "id": "allergens_no_molluscs",
+          "name": {
+            "en": "Without molluscs",
+            "fr": "Sans mollusques",
+            "de": "Ohne Weichtiere"
+          }
+        },
+        {
+          "id": "allergens_no_sulphur_dioxide_and_sulphites",
+          "name": {
+            "en": "Without sulphur dioxide and sulphites",
+            "fr": "Sans anhydride sulfureux et sulfites",
+            "de": "Ohne Schwefeldioxid und Sulfite"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ingredients_analysis",
+      "name": {
+        "en": "Ingredients",
+        "fr": "Ingrédients",
+        "de": "Zutaten"
+      },
+      "warning": {
+        "en": "Those preferences are based on Open Food Facts' understanding of the ingredient list and there is always a possibility that it may not be accurate or complete, always check the product yourself.",
+        "fr": "Ces préférences sont basées sur la compréhension de la liste des ingrédients par Open Food Facts et il y a toujours une possibilité qu'elles ne soient pas exactes ou complètes, vérifiez toujours le produit vous-même.",
+        "de": "Diese Präferenzen basieren auf dem Verständnis von Open Food Facts hinsichtlich der Zutatenliste. Es besteht jedoch immer die Möglichkeit, dass diese nicht korrekt oder vollständig ist. Überprüfen Sie das Produkt daher immer selbst."
+      },
+      "attributes": [
+        {
+          "id": "vegan",
+          "name": {
+            "en": "Vegan",
+            "fr": "Végétalien",
+            "de": "vegan"
+          }
+        },
+        {
+          "id": "vegetarian",
+          "name": {
+            "en": "Vegetarian",
+            "fr": "Végétarien",
+            "de": "vegetarisch"
+          }
+        },
+        {
+          "id": "palm_oil_free",
+          "name": {
+            "en": "Palm oil free",
+            "fr": "Sans huile de palme",
+            "de": "Palmölfrei"
+          }
+        }
+      ]
+    },
+    {
+      "id": "labels",
+      "name": {
+        "en": "Labels",
+        "fr": "Labels",
+        "de": "Labels"
+      },
+      "attributes": [
+        {
+          "id": "labels_organic",
+          "name": {
+            "en": "Organic farming",
+            "fr": "Agriculture biologique",
+            "de": "Ökologischen Landbau"
+          }
+        },
+        {
+          "id": "labels_fair_trade",
+          "name": {
+            "en": "Fair trade",
+            "fr": "Commerce équitable",
+            "de": "Fair Trade (Fair gehandelt)"
+          }
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "name": {
+        "en": "Environment",
+        "fr": "Environnement",
+        "de": "Umweltauswirkungen"
+      },
+      "attributes": [
+        {
+          "id": "ecoscore",
+          "name": {
+            "en": "Low environmental impact (Green-Score)",
+            "fr": "Faible impact environnemental (Green-Score)",
+            "de": "Geringe Umweltbelastung (Green-Score)"
+          },
+          "default": "important"
+        },
+        {
+          "id": "forest_footprint",
+          "name": {
+            "en": "Low risk of deforestation (Forest Footprint)",
+            "fr": "Faible risque de déforestation (Empreinte Forêt)",
+            "de": "Geringes Entwaldungsrisiko (Waldfußabdruck)"
+          }
+        }
+      ]
+    }
+  ]
+}

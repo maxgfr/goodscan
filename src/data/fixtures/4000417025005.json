@@ -1,0 +1,603 @@
+{
+  "additives_tags": [
+    "en:e1103",
+    "en:e322"
+  ],
+  "allergens_tags": [
+    "en:eggs",
+    "en:milk",
+    "en:nuts",
+    "en:peanuts",
+    "en:soybeans"
+  ],
+  "attribute_groups": [
+    {
+      "attributes": [
+        {
+          "description": "",
+          "description_short": "Lower nutritional quality",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/nutriscore-e-new-en.svg",
+          "id": "nutriscore",
+          "match": 12.2272727272727,
+          "name": "Nutri-Score",
+          "panel_id": "nutriscore_2023",
+          "status": "known",
+          "title": "Nutri-Score E"
+        },
+        {
+          "description_short": "0.01 g / 100 g",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/nutrient-level-salt-low.svg",
+          "id": "low_salt",
+          "match": 99.3333333333333,
+          "name": "Salt",
+          "panel_id": "nutrient_level_salt",
+          "status": "known",
+          "title": "Salt in low quantity"
+        },
+        {
+          "description_short": "27 g / 100 g",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/nutrient-level-fat-high.svg",
+          "id": "low_fat",
+          "match": 13,
+          "name": "Fat",
+          "panel_id": "nutrient_level_fat",
+          "status": "known",
+          "title": "Fat in high quantity"
+        },
+        {
+          "description_short": "51 g / 100 g",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/nutrient-level-sugars-high.svg",
+          "id": "low_sugars",
+          "match": 0,
+          "name": "Sugars",
+          "panel_id": "nutrient_level_sugars",
+          "status": "known",
+          "title": "Sugars in high quantity"
+        },
+        {
+          "description_short": "11 g / 100 g",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/nutrient-level-saturated-fat-high.svg",
+          "id": "low_saturated_fat",
+          "match": 0,
+          "name": "Saturated fat",
+          "panel_id": "nutrient_level_saturated-fat",
+          "status": "known",
+          "title": "Saturated fat in high quantity"
+        }
+      ],
+      "id": "nutritional_quality",
+      "name": "Nutritional quality"
+    },
+    {
+      "attributes": [
+        {
+          "debug": "en:gluten in traces",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/may-contain-gluten.svg",
+          "id": "allergens_no_gluten",
+          "match": 20,
+          "name": "Gluten",
+          "status": "known",
+          "title": "May contain: gluten"
+        },
+        {
+          "debug": "en:milk in allergens",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/contains-milk.svg",
+          "id": "allergens_no_milk",
+          "match": 0,
+          "name": "Milk",
+          "status": "known",
+          "title": "Contains: milk"
+        },
+        {
+          "debug": "en:eggs in allergens",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/contains-eggs.svg",
+          "id": "allergens_no_eggs",
+          "match": 0,
+          "name": "Eggs",
+          "status": "known",
+          "title": "Contains: eggs"
+        },
+        {
+          "debug": "en:nuts in allergens",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/contains-nuts.svg",
+          "id": "allergens_no_nuts",
+          "match": 0,
+          "name": "Nuts",
+          "status": "known",
+          "title": "Contains: nuts"
+        },
+        {
+          "debug": "en:peanuts in allergens",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/contains-peanuts.svg",
+          "id": "allergens_no_peanuts",
+          "match": 0,
+          "name": "Peanuts",
+          "status": "known",
+          "title": "Contains: peanuts"
+        },
+        {
+          "debug": "10 ingredients (1 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-sesame-seeds.svg",
+          "id": "allergens_no_sesame_seeds",
+          "match": 100,
+          "name": "Sesame seeds",
+          "status": "known",
+          "title": "Does not contain: sesame seeds"
+        },
+        {
+          "debug": "en:soybeans in allergens",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/contains-soybeans.svg",
+          "id": "allergens_no_soybeans",
+          "match": 0,
+          "name": "Soybeans",
+          "status": "known",
+          "title": "Contains: soybeans"
+        },
+        {
+          "debug": "10 ingredients (1 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-celery.svg",
+          "id": "allergens_no_celery",
+          "match": 100,
+          "name": "Celery",
+          "status": "known",
+          "title": "Does not contain: celery"
+        },
+        {
+          "debug": "10 ingredients (1 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-mustard.svg",
+          "id": "allergens_no_mustard",
+          "match": 100,
+          "name": "Mustard",
+          "status": "known",
+          "title": "Does not contain: mustard"
+        },
+        {
+          "debug": "10 ingredients (1 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-lupin.svg",
+          "id": "allergens_no_lupin",
+          "match": 100,
+          "name": "Lupin",
+          "status": "known",
+          "title": "Does not contain: lupin"
+        },
+        {
+          "debug": "10 ingredients (1 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-fish.svg",
+          "id": "allergens_no_fish",
+          "match": 100,
+          "name": "Fish",
+          "status": "known",
+          "title": "Does not contain: fish"
+        },
+        {
+          "debug": "10 ingredients (1 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-crustaceans.svg",
+          "id": "allergens_no_crustaceans",
+          "match": 100,
+          "name": "Crustaceans",
+          "status": "known",
+          "title": "Does not contain: crustaceans"
+        },
+        {
+          "debug": "10 ingredients (1 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-molluscs.svg",
+          "id": "allergens_no_molluscs",
+          "match": 100,
+          "name": "Molluscs",
+          "status": "known",
+          "title": "Does not contain: molluscs"
+        },
+        {
+          "debug": "10 ingredients (1 unknown)",
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/no-sulphur-dioxide-and-sulphites.svg",
+          "id": "allergens_no_sulphur_dioxide_and_sulphites",
+          "match": 100,
+          "name": "Sulphur dioxide and sulphites",
+          "status": "known",
+          "title": "Does not contain: sulphur dioxide and sulphites"
+        }
+      ],
+      "id": "allergens",
+      "name": "Allergens",
+      "warning": "There is always a possibility that data about allergens may be missing, incomplete, incorrect or that the product's composition has changed. If you are allergic, always check the information on the actual product packaging."
+    },
+    {
+      "attributes": [
+        {
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/non-vegan.svg",
+          "id": "vegan",
+          "match": 0,
+          "name": "Vegan",
+          "panel_id": "ingredients_analysis_en:non-vegan",
+          "status": "known",
+          "title": "Non-vegan"
+        },
+        {
+          "grade": "unknown",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/vegetarian-status-unknown.svg",
+          "id": "vegetarian",
+          "name": "Vegetarian",
+          "panel_id": "ingredients_analysis_en:vegetarian-status-unknown",
+          "status": "unknown",
+          "title": "Vegetarian status unknown"
+        },
+        {
+          "grade": "a",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/palm-oil-free.svg",
+          "id": "palm_oil_free",
+          "match": 100,
+          "name": "Palm oil free",
+          "panel_id": "ingredients_analysis_en:palm-oil-free",
+          "status": "known",
+          "title": "Palm oil free"
+        }
+      ],
+      "id": "ingredients_analysis",
+      "name": "Ingredients",
+      "warning": "Those preferences are based on Open Food Facts' understanding of the ingredient list and there is always a possibility that it may not be accurate or complete, always check the product yourself."
+    },
+    {
+      "attributes": [
+        {
+          "description_short": "2 ultra-processing markers",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/nova-group-4.svg",
+          "id": "nova",
+          "match": 0,
+          "name": "NOVA group",
+          "panel_id": "nova",
+          "status": "known",
+          "title": "Ultra-processed foods"
+        },
+        {
+          "grade": "c",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/2-additives.svg",
+          "id": "additives",
+          "match": 60,
+          "name": "Additives",
+          "panel_id": "additives",
+          "status": "known",
+          "title": "2 additives"
+        }
+      ],
+      "id": "processing",
+      "name": "Food processing"
+    },
+    {
+      "attributes": [
+        {
+          "description_short": "Missing a precise category",
+          "grade": "unknown",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/green-score-unknown.svg",
+          "id": "ecoscore",
+          "match": 0,
+          "name": "Green-Score",
+          "panel_id": "environmental_score",
+          "status": "unknown",
+          "title": "Green-Score not computed"
+        },
+        {
+          "description": "Presence of one or more ingredients at risk of deforestation, but low risk given their quantity, origin and/or labels.",
+          "description_short": "Low risk of deforestation",
+          "grade": "b",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/forest-footprint-2026-white-bg-b.svg",
+          "id": "forest_footprint",
+          "match": 66,
+          "name": "Forest Footprint",
+          "panel_id": "forest_footprint",
+          "status": "known",
+          "title": "Forest Footprint B"
+        }
+      ],
+      "id": "environment",
+      "name": "Environment"
+    },
+    {
+      "attributes": [
+        {
+          "description": "Organic farming aims to protect the environment and to conserve biodiversity by prohibiting or limiting the use of synthetic fertilizers, pesticides and food additives.",
+          "description_short": "Organic products promote ecological sustainability and biodiversity.",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/not-organic.svg",
+          "id": "labels_organic",
+          "match": 0,
+          "name": "Organic farming",
+          "status": "known",
+          "title": "Not an organic product"
+        },
+        {
+          "description": "When you buy fair trade products, producers in developing countries are paid an higher and fairer price, which helps them improve and sustain higher social and often environmental standards.",
+          "description_short": "Fair trade products help producers in developing countries.",
+          "grade": "e",
+          "icon_url": "https://static.openfoodfacts.org/images/attributes/dist/not-fair-trade.svg",
+          "id": "labels_fair_trade",
+          "match": 0,
+          "name": "Fair trade",
+          "status": "known",
+          "title": "Not a fair trade product"
+        }
+      ],
+      "id": "labels",
+      "name": "Labels"
+    }
+  ],
+  "brands": "Ritter Sport",
+  "categories_tags": [
+    "nl:Chocolade",
+    "nl:Koeken/Chocolade/Snoep"
+  ],
+  "code": "4000417025005",
+  "countries_tags": [
+    "en:belarus",
+    "en:belgium",
+    "en:bulgaria",
+    "en:czech-republic",
+    "en:denmark",
+    "en:france",
+    "en:germany",
+    "en:greece",
+    "en:italy",
+    "en:morocco",
+    "en:netherlands",
+    "en:poland",
+    "en:romania",
+    "en:russia",
+    "en:slovakia",
+    "en:spain",
+    "en:sweden",
+    "en:united-kingdom"
+  ],
+  "ecoscore_grade": "unknown",
+  "generic_name": "",
+  "image_front_url": "https://images.openfoodfacts.org/images/products/400/041/702/5005/front_en.237.400.jpg",
+  "image_url": "https://images.openfoodfacts.org/images/products/400/041/702/5005/front_en.237.400.jpg",
+  "ingredients_analysis_tags": [
+    "en:palm-oil-free",
+    "en:non-vegan",
+    "en:vegetarian-status-unknown"
+  ],
+  "ingredients_text": "Suiker, cacaomassa, AMANDELEN (16 %) Cacaoboter, invertsuikerstroop, emulgator: lecithinen (SOJA), bevochtigingsmiddel: invertase. Kan sporen van aardnoten, noten gluten bevattende granen, melk en eieren bevatten.",
+  "ingredients_text_de": "Zucker, Kakaomasse, Mandeln (16%), Kakaobutter, Invertzuckersirup, Emulgator: Sojalecithin, Feuchthaltemittel: Invertase",
+  "ingredients_text_en": "sugar, cocoa mass¹, ALMONDS (16 %), cocoa butter¹, invert sugar syrup, emulsifier (SOYA lecithins), humectant (invertase).  May contain traces of peanuts, other nuts, cereals containing gluten, milk and egg.\r\n¹Rainforest Alliance Certified",
+  "ingredients_text_fr": "Sucre, pâte de cacao, amandes (16%), beurre de cacao, sirop de sucre inverti, émulsifiant : lécithine (de soja), humectant : invertase, arôme naturel.",
+  "labels_tags": [
+    "en:no-gluten",
+    "en:rainforest-alliance"
+  ],
+  "lang": "nl",
+  "misc_tags": [
+    "en:ecobalyse-api-not-called",
+    "en:ecobalyse-ingredients-matched-between-50-and-59",
+    "en:ecobalyse-reference-quantity-from-product-quantity",
+    "en:environmental-score-changed",
+    "en:environmental-score-grade-changed",
+    "en:environmental-score-not-computed",
+    "en:estimated-ingredients-with-recipe-estimator-cvxpy",
+    "en:forest-footprint-b",
+    "en:forest-footprint-computed",
+    "en:forest-footprint-grade-b",
+    "en:nutrients-not-estimated-from-ingredients-too-few-ingredients-with-nutrition-data",
+    "en:nutriscore-2021-e-2023-e",
+    "en:nutriscore-2021-same-as-2023",
+    "en:nutriscore-computed",
+    "en:nutrition-all-nutriscore-values-known",
+    "en:nutrition-data-per-100g",
+    "en:nutrition-fruits-vegetables-legumes-estimate-from-ingredients",
+    "en:nutrition-fruits-vegetables-nuts-estimate-from-ingredients",
+    "en:packagings-not-complete",
+    "en:packagings-not-empty",
+    "en:packagings-not-empty-but-not-complete",
+    "en:packagings-number-of-components-1",
+    "en:storage-conditions-not-set",
+    "en:number-of-uploaded-images-11-to-50",
+    "en:main-countries-no-scans"
+  ],
+  "nova_group": 4,
+  "nutriments": {
+    "added-sugars": 52.94,
+    "added-sugars_100g": 52.94,
+    "added-sugars_modifier": "~",
+    "added-sugars_serving": 3.45,
+    "added-sugars_unit": "g",
+    "added-sugars_value": 52.94,
+    "alcohol": 0,
+    "alcohol_100g": 0,
+    "alcohol_serving": 0,
+    "alcohol_unit": "% vol",
+    "alcohol_value": 0,
+    "carbohydrates": 52,
+    "carbohydrates_100g": 52,
+    "carbohydrates_serving": 3.39,
+    "carbohydrates_unit": "g",
+    "carbohydrates_value": 52,
+    "cholesterol": 0,
+    "cholesterol_100g": 0,
+    "cholesterol_serving": 0,
+    "cholesterol_unit": "g",
+    "cholesterol_value": 0,
+    "choline": 0,
+    "choline_100g": 0,
+    "choline_serving": 0,
+    "choline_unit": "g",
+    "choline_value": 0,
+    "cocoa": 50,
+    "cocoa_100g": 50,
+    "cocoa_serving": 50,
+    "cocoa_unit": "%",
+    "cocoa_value": 50,
+    "energy": 2069,
+    "energy-kcal": 496,
+    "energy-kcal_100g": 496,
+    "energy-kcal_serving": 32.3,
+    "energy-kcal_unit": "kcal",
+    "energy-kcal_value": 496,
+    "energy-kj": 2069,
+    "energy-kj_100g": 2069,
+    "energy-kj_serving": 135,
+    "energy-kj_unit": "kJ",
+    "energy-kj_value": 2069,
+    "energy_100g": 2069,
+    "energy_serving": 135,
+    "energy_unit": "kJ",
+    "energy_value": 2069,
+    "fat": 27,
+    "fat_100g": 27,
+    "fat_serving": 1.76,
+    "fat_unit": "g",
+    "fat_value": 27,
+    "fiber": 6.2,
+    "fiber_100g": 6.2,
+    "fiber_serving": 0.404,
+    "fiber_unit": "g",
+    "fiber_value": 6.2,
+    "fruits-vegetables-legumes-estimate-from-ingredients_100g": 0,
+    "fruits-vegetables-nuts-estimate-from-ingredients_100g": 16,
+    "nova-group": 4,
+    "nova-group_100g": 4,
+    "nova-group_serving": 4,
+    "nova-group_unit": "",
+    "nova-group_value": 4,
+    "proteins": 7,
+    "proteins_100g": 7,
+    "proteins_serving": 0.456,
+    "proteins_unit": "g",
+    "proteins_value": 7,
+    "salt": 0.01,
+    "salt_100g": 0.01,
+    "salt_serving": 0.000652,
+    "salt_unit": "g",
+    "salt_value": 0.01,
+    "saturated-fat": 11,
+    "saturated-fat_100g": 11,
+    "saturated-fat_serving": 0.717,
+    "saturated-fat_unit": "g",
+    "saturated-fat_value": 11,
+    "sodium": 0.4,
+    "sodium_100g": 0.4,
+    "sodium_serving": 0.0261,
+    "sodium_unit": "g",
+    "sodium_value": 0.4,
+    "starch": 0,
+    "starch_100g": 0,
+    "starch_serving": 0,
+    "starch_unit": "g",
+    "starch_value": 0,
+    "sugars": 51,
+    "sugars_100g": 51,
+    "sugars_serving": 3.33,
+    "sugars_unit": "g",
+    "sugars_value": 51,
+    "trans-fat": 0.5,
+    "trans-fat_100g": 0.5,
+    "trans-fat_serving": 0.0326,
+    "trans-fat_unit": "g",
+    "trans-fat_value": 0.5
+  },
+  "nutriscore_data": {
+    "components": {
+      "negative": [
+        {
+          "id": "energy",
+          "points": 6,
+          "points_max": 10,
+          "unit": "kJ",
+          "value": 2069
+        },
+        {
+          "id": "sugars",
+          "points": 14,
+          "points_max": 15,
+          "unit": "g",
+          "value": 51
+        },
+        {
+          "id": "saturated_fat",
+          "points": 10,
+          "points_max": 10,
+          "unit": "g",
+          "value": 11
+        },
+        {
+          "id": "salt",
+          "points": 0,
+          "points_max": 20,
+          "unit": "g",
+          "value": 0.01
+        }
+      ],
+      "positive": [
+        {
+          "id": "fiber",
+          "points": 3,
+          "points_max": 5,
+          "unit": "g",
+          "value": 6.2
+        },
+        {
+          "id": "fruits_vegetables_legumes",
+          "points": 0,
+          "points_max": 5,
+          "unit": "%",
+          "value": 0
+        }
+      ]
+    },
+    "count_proteins": 0,
+    "count_proteins_reason": "negative_points_greater_than_or_equal_to_11",
+    "grade": "e",
+    "is_beverage": 0,
+    "is_cheese": 0,
+    "is_fat_oil_nuts_seeds": 0,
+    "is_red_meat_product": 0,
+    "is_water": 0,
+    "negative_points": 30,
+    "negative_points_max": 55,
+    "positive_nutrients": [
+      "fiber",
+      "fruits_vegetables_legumes"
+    ],
+    "positive_points": 3,
+    "positive_points_max": 10,
+    "score": 27
+  },
+  "nutriscore_grade": "e",
+  "nutriscore_score": 27,
+  "nutrition_data": "on",
+  "nutrition_data_prepared_per": "100g",
+  "product_name": "RITTER SPORT marsepein",
+  "product_name_de": "Marzipan",
+  "product_name_en": "Marzipane chocolate",
+  "product_name_fr": "Pâte d'amandes Marzipan",
+  "product_quantity": 100,
+  "product_quantity_unit": "g",
+  "quantity": "100g",
+  "serving_quantity": 6.52,
+  "serving_size": "1 Cube (6.52 g)",
+  "traces_tags": [
+    "en:eggs",
+    "en:gluten",
+    "en:milk",
+    "en:nuts",
+    "en:peanuts"
+  ]
+}

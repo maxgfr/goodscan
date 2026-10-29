@@ -1,0 +1,20 @@
+import { registerSW } from "virtual:pwa-register";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./styles.css";
+import { App } from "./ui/App";
+import { AppProvider } from "./ui/state";
+
+const root = document.getElementById("root");
+if (!root) throw new Error("No #root element");
+
+createRoot(root).render(
+  <StrictMode>
+    <AppProvider>
+      <App />
+    </AppProvider>
+  </StrictMode>,
+);
+
+// Offline from the second visit; a new version takes over on the next load.
+if (import.meta.env.PROD) registerSW({ immediate: true });

@@ -1,0 +1,3580 @@
+[
+  {
+    "id": "S1",
+    "url": "https://downloads.regulations.gov/FDA-2024-N-2910-0001/content.html",
+    "canonicalUrl": "https://downloads.regulations.gov/FDA-2024-N-2910-0001/content.html",
+    "title": "Federal Register Volume 90 Number 10 (FOP proposed rule full text)",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "downloads.regulations.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 19 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S1.md",
+    "snippet": "full text",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9839,
+        "content": 0.9635,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S2",
+    "url": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/re-evaluation_en",
+    "canonicalUrl": "https://food.ec.europa.eu/food-safety/food-improvement-agents/additives/re-evaluation_en",
+    "title": "Re-evaluation - Food Safety - European Commission",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "food.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S2.md",
+    "snippet": "E171",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8714,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S3",
+    "url": "https://github.com/Sec-ant/barcode-detector",
+    "canonicalUrl": "https://github.com/Sec-ant/barcode-detector",
+    "title": "Sec-ant/barcode-detector ponyfill/polyfill",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 3 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S3.md",
+    "snippet": "ZXing-C++ WebAssembly",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4374,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S4",
+    "url": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
+    "canonicalUrl": "https://openfoodfacts.github.io/openfoodfacts-server/api",
+    "title": "Introduction to Open Food Facts API documentation",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "openfoodfacts.github.io",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S4.md",
+    "snippet": "v3 current; rate limits 15 req/min product, 10 req/min search",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 1,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S5",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10897572/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10897572",
+    "title": "Complementarity between the updated Nutri-Score and NOVA",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "pmc.ncbi.nlm.nih.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S5.md",
+    "snippet": "complementarity",
+    "meta": {
+      "foundBy": 1,
+      "textVia": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10897572/fullTextXML",
+      "rank": {
+        "rrf": 0.4278,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "NOVA food classification: definition of the four groups and how Open Food Facts computes nova_group",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S6",
+    "url": "https://www.eclarion.com/nutriscore-calculator/methodology/",
+    "canonicalUrl": "https://eclarion.com/nutriscore-calculator/methodology",
+    "title": "FSA-NPS Algorithm: Technical Reference for the 2023 Nutri-Score",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "eclarion.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S6.md",
+    "snippet": "A<1 B<3 C<11 D<19",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.5213,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S7",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/BarcodeDetector",
+    "canonicalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/BarcodeDetector",
+    "title": "BarcodeDetector - MDN",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "developer.mozilla.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S7.md",
+    "snippet": "getSupportedFormats",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 1,
+        "content": 0.2332,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S8",
+    "url": "https://github.com/openfoodfacts/openfoodfacts-server/issues/12621",
+    "canonicalUrl": "https://github.com/openfoodfacts/openfoodfacts-server/issues/12621",
+    "title": "The count of UPF markers might be too high",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 3 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S8.md",
+    "snippet": "nova markers",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4593,
+        "content": 0.8826,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "NOVA food classification: definition of the four groups and how Open Food Facts computes nova_group",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S9",
+    "url": "https://github.com/openfoodfacts/openfoodfacts-server/pull/11142",
+    "canonicalUrl": "https://github.com/openfoodfacts/openfoodfacts-server/pull/11142",
+    "title": "feat: rename ecoscore fields to environmental_score (internal) and new external name and logos",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 6 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S9.md",
+    "snippet": "rename",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8841,
+        "content": 0.7836,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S10",
+    "url": "https://www.bmleh.de/SharedDocs/Downloads/DE/_Ernaehrung/Lebensmittel-Kennzeichnung/nutri-score-update-algorithm-beverages.pdf?__blob=publicationFile&v=2",
+    "canonicalUrl": "https://bmleh.de/SharedDocs/Downloads/DE/_Ernaehrung/Lebensmittel-Kennzeichnung/nutri-score-update-algorithm-beverages.pdf?__blob=publicationFile&v=2",
+    "title": "Update of the Nutri-Score algorithm for beverages",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "bmleh.de",
+    "trust": 0.5,
+    "signals": [
+      "cites 23 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S10.md",
+    "snippet": "B/C 2/3, C/D 6/7",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.5544,
+        "content": 0.8224,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S11",
+    "url": "https://www.foodwatch.org/en/banning-added-nitrites-and-nitrates-in-food",
+    "canonicalUrl": "https://foodwatch.org/en/banning-added-nitrites-and-nitrates-in-food",
+    "title": "Banning added nitrites and nitrates in food",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "foodwatch.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S11.md",
+    "snippet": "foodwatch",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8841,
+        "content": 0.8632,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S12",
+    "url": "https://www.hlc.com/en/publications/fda-issues-proposed-rule-on-frontofpackage-nutrition-labeling",
+    "canonicalUrl": "https://hlc.com/en/publications/fda-issues-proposed-rule-on-frontofpackage-nutrition-labeling",
+    "title": "FDA Issues Proposed Rule on Front-of-Package Nutrition Labeling (HLC)",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "hlc.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S12.md",
+    "snippet": "5% low 20% high",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9385,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S13",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Barcode_Detection_API",
+    "canonicalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Barcode_Detection_API",
+    "title": "Barcode Detection API - MDN",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "developer.mozilla.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S13.md",
+    "snippet": "experimental",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9919,
+        "content": 0.2422,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S14",
+    "url": "https://kanegrade.com/eu-titanium-dioxide-ban-alternative-white-food-colours/",
+    "canonicalUrl": "https://kanegrade.com/eu-titanium-dioxide-ban-alternative-white-food-colours",
+    "title": "Is Titanium Dioxide (E171) Banned in the EU?",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "kanegrade.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S14.md",
+    "snippet": "timeline",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8356,
+        "content": 0.8084,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S15",
+    "url": "https://nutriscore-europe.com/wp-content/uploads/2023/04/Addendum-Chapter-4-scientific-report-update-beverages.pdf",
+    "canonicalUrl": "https://nutriscore-europe.com/wp-content/uploads/2023/04/Addendum-Chapter-4-scientific-report-update-beverages.pdf",
+    "title": "Addendum chapter 4 beverages",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "nutriscore-europe.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S15.md",
+    "snippet": "water only A",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.5458,
+        "content": 0.7885,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S16",
+    "url": "https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/tutorial-off-api/",
+    "canonicalUrl": "https://openfoodfacts.github.io/documentation/docs/Product-Opener/api/tutorial-off-api",
+    "title": "Tutorial on using the Open Food Facts API (documentation site)",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "openfoodfacts.github.io",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S16.md",
+    "snippet": "tutorial",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9531,
+        "content": 0.6998,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S17",
+    "url": "https://www.britannica.com/topic/Nova-scale",
+    "canonicalUrl": "https://britannica.com/topic/Nova-scale",
+    "title": "NOVA classification - Britannica",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "britannica.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S17.md",
+    "snippet": "Monteiro 2009",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.5037,
+        "content": 0.8191,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "NOVA food classification: definition of the four groups and how Open Food Facts computes nova_group",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S18",
+    "url": "https://www.federalregister.gov/documents/2025/01/16/2025-00778/food-labeling-front-of-package-nutrition-information",
+    "canonicalUrl": "https://federalregister.gov/documents/2025/01/16/2025-00778/food-labeling-front-of-package-nutrition-information",
+    "title": "Federal Register: Food Labeling: Front-of-Package Nutrition Information",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "federalregister.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S18.md",
+    "snippet": "Low <=5% DV, Med 6-19%, High >=20%",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 1,
+        "content": 0.21,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    },
+    "fullText": false
+  },
+  {
+    "id": "S19",
+    "url": "https://dev.to/ilhannegis/barcode-scanning-on-ios-the-missing-web-api-and-a-webassembly-solution-2in2",
+    "canonicalUrl": "https://dev.to/ilhannegis/barcode-scanning-on-ios-the-missing-web-api-and-a-webassembly-solution-2in2",
+    "title": "Barcode Scanning on iOS: The Missing Web API and a WebAssembly Solution",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "dev.to",
+    "trust": 0.5,
+    "signals": [
+      "cites 3 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S19.md",
+    "snippet": "fallback",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4436,
+        "content": 0.6612,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S20",
+    "url": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2023.7884",
+    "canonicalUrl": "https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2023.7884",
+    "title": "Risk assessment of N-nitrosamines in food (EFSA 2023)",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "efsa.onlinelibrary.wiley.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 17 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S20.md",
+    "snippet": "MOE < 10000 health concern",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 1,
+        "content": 0.4951,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S21",
+    "url": "https://github.com/vitofico/usuals/pull/34",
+    "canonicalUrl": "https://github.com/vitofico/usuals/pull/34",
+    "title": "product scores, barcode memory, allergen flags",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S21.md",
+    "snippet": "environmental_score_grade read first, ecoscore_grade fallback",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8592,
+        "content": 0.6831,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S22",
+    "url": "https://world.openfoodfacts.org/nova",
+    "canonicalUrl": "https://world.openfoodfacts.org/nova",
+    "title": "NOVA groups for food processing - Open Food Facts",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "world.openfoodfacts.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S22.md",
+    "snippet": "category and ingredients",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4732,
+        "content": 0.7198,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "NOVA food classification: definition of the four groups and how Open Food Facts computes nova_group",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S23",
+    "url": "https://www.foodengineeringmag.com/articles/103400-fda-could-finalize-front-of-pack-nutrition-label-rule-in-spring-2026",
+    "canonicalUrl": "https://foodengineeringmag.com/articles/103400-fda-could-finalize-front-of-pack-nutrition-label-rule-in-spring-2026",
+    "title": "FDA Could Finalize FOP Rule in Spring 2026",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "foodengineeringmag.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S23.md",
+    "snippet": "spring 2026",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8841,
+        "content": 0.5895,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S24",
+    "url": "https://www.foodtimes.eu/consumers-and-health/nutri-score-france-mandatory/",
+    "canonicalUrl": "https://foodtimes.eu/consumers-and-health/nutri-score-france-mandatory",
+    "title": "France votes to mandate Nutri-Score, exempting terroir",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "foodtimes.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 6 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S24.md",
+    "snippet": "Nov 2025 vote",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4478,
+        "content": 0.5735,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S25",
+    "url": "https://dev.to/jamiepark-design/building-a-zero-dependency-barcode-scanner-with-the-web-barcode-detection-api-246k",
+    "canonicalUrl": "https://dev.to/jamiepark-design/building-a-zero-dependency-barcode-scanner-with-the-web-barcode-detection-api-246k",
+    "title": "Building a Zero-Dependency Barcode Scanner with the Web Barcode Detection API",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "dev.to",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S25.md",
+    "snippet": "Chrome 134 claim",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.3986,
+        "content": 0.6845,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S26",
+    "url": "https://github.com/openfoodfacts/openfoodfacts-server/pull/14760",
+    "canonicalUrl": "https://github.com/openfoodfacts/openfoodfacts-server/pull/14760",
+    "title": "fix: nutri-score and environmental-score facet logos",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S26.md",
+    "snippet": "rename ecoscore fields to environmental_score #11142",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8971,
+        "content": 0.6885,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S27",
+    "url": "https://jn.nutrition.org/article/S0022-3166(26)00310-X/fulltext",
+    "canonicalUrl": "https://jn.nutrition.org/article/S0022-3166(26)00310-X/fulltext",
+    "title": "Classification without Calibration: internal logical incoherence of Nova",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "jn.nutrition.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 7 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S27.md",
+    "snippet": "2026",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4399,
+        "content": 0.642,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "NOVA food classification: definition of the four groups and how Open Food Facts computes nova_group",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S28",
+    "url": "https://www.efsa.europa.eu/sites/default/files/corporate_publications/files/nitrates-nitrites-170614.pdf",
+    "canonicalUrl": "https://efsa.europa.eu/sites/default/files/corporate_publications/files/nitrates-nitrites-170614.pdf",
+    "title": "Nitrites and nitrates added to food: EFSA explains",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "efsa.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S28.md",
+    "snippet": "2017 ADI",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9839,
+        "content": 0.4463,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S29",
+    "url": "https://www.packagingdigest.com/regulations-standards/fda-front-of-pack-labeling-rule-2026-status-and-timeline",
+    "canonicalUrl": "https://packagingdigest.com/regulations-standards/fda-front-of-pack-labeling-rule-2026-status-and-timeline",
+    "title": "2026 FDA Front-of-Pack Labeling Rule Status and Timeline",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "packagingdigest.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S29.md",
+    "snippet": "status",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9104,
+        "content": 0.6863,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S30",
+    "url": "https://www.santepubliquefrance.fr/sites/default/files/rdd/document/FAQ-updatedAlgo-FR_V11.pdf",
+    "canonicalUrl": "https://santepubliquefrance.fr/sites/default/files/rdd/document/FAQ-updatedAlgo-FR_V11.pdf",
+    "title": "NUTRI-SCORE Questions & Reponses",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "santepubliquefrance.fr",
+    "trust": 0.5,
+    "signals": [
+      "cites 11 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S30.md",
+    "snippet": "transition 24 months",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.5137,
+        "content": 0.3176,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S31",
+    "url": "https://github.com/openfoodfacts/openfoodfacts-server/issues/8818",
+    "canonicalUrl": "https://github.com/openfoodfacts/openfoodfacts-server/issues/8818",
+    "title": "Define a rate-limit policy",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S31.md",
+    "snippet": "rate limit policy",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9242,
+        "content": 0.4525,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S32",
+    "url": "https://github.com/openfoodfacts/openfoodfacts-server/pull/14924",
+    "canonicalUrl": "https://github.com/openfoodfacts/openfoodfacts-server/pull/14924",
+    "title": "fix: count an ingredient that is also an additive as a single NOVA marker",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S32.md",
+    "snippet": "compute_nova_group",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4661,
+        "content": 0.7117,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "NOVA food classification: definition of the four groups and how Open Food Facts computes nova_group",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S33",
+    "url": "https://github.com/Sec-ant/zxing-wasm",
+    "canonicalUrl": "https://github.com/Sec-ant/zxing-wasm",
+    "title": "Sec-ant/zxing-wasm",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 5 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S33.md",
+    "snippet": "ZXing-C++ WebAssembly",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4199,
+        "content": 0.6208,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S34",
+    "url": "https://vitaearete.substack.com/p/delayed-not-denied-labels-and-sodium",
+    "canonicalUrl": "https://vitaearete.substack.com/p/delayed-not-denied-labels-and-sodium",
+    "title": "FDA Calls Its Proposed Food Label Important. Its Target Slipped",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "vitaearete.substack.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 10 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S34.md",
+    "snippet": "target slipped to December 2026",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8714,
+        "content": 0.7567,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S35",
+    "url": "https://www.blv.admin.ch/dam/fr/sd-web/gIxXfypDnYOO/aktuelisierungsbericht-gremiums-nutri-score-2022-en.pdf",
+    "canonicalUrl": "https://blv.admin.ch/dam/fr/sd-web/gIxXfypDnYOO/aktuelisierungsbericht-gremiums-nutri-score-2022-en.pdf",
+    "title": "Update of the Nutri-Score algorithm (BLV)",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "blv.admin.ch",
+    "trust": 0.5,
+    "signals": [
+      "cites 18 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S35.md",
+    "snippet": "modified final threshold A/B",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.5634,
+        "content": 0.7814,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S36",
+    "url": "https://www.efsa.europa.eu/en/news/titanium-dioxide-e171-no-longer-considered-safe-when-used-food-additive",
+    "canonicalUrl": "https://efsa.europa.eu/en/news/titanium-dioxide-e171-no-longer-considered-safe-when-used-food-additive",
+    "title": "Titanium dioxide: E171 no longer considered safe when used as a food additive",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "efsa.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S36.md",
+    "snippet": "EFSA 2021",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8592,
+        "content": 0.6306,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S37",
+    "url": "https://bugs.webkit.org/show_bug.cgi?id=281848",
+    "canonicalUrl": "https://bugs.webkit.org/show_bug.cgi?id=281848",
+    "title": "WebKit bug 281848 Shape Detection API not working",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "bugs.webkit.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0149,
+    "extract": "sources/S37.md",
+    "snippet": "iOS 18",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4631,
+        "content": 0.422,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S38",
+    "url": "https://dicentra.com/blog/article/fda-front-of-package-nutrition-labelling-is-still-moving-forward-what-food-manufacturers-need-to-know",
+    "canonicalUrl": "https://dicentra.com/blog/article/fda-front-of-package-nutrition-labelling-is-still-moving-forward-what-food-manufacturers-need-to-know",
+    "title": "FDA Front-of-Package: What's Next?",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "dicentra.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0149,
+    "extract": "sources/S38.md",
+    "snippet": "still moving forward",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8971,
+        "content": 0.6994,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S39",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009987/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009987",
+    "title": "Re-evaluation of potassium nitrite (E 249) and sodium nitrite (E 250) as food additives",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "pmc.ncbi.nlm.nih.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0149,
+    "extract": "sources/S39.md",
+    "snippet": "ADI 0.07 mg/kg",
+    "meta": {
+      "foundBy": 1,
+      "textVia": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7009987/fullTextXML",
+      "rank": {
+        "rrf": 0.9683,
+        "content": 0.5522,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S40",
+    "url": "https://world.openfoodfacts.org/data",
+    "canonicalUrl": "https://world.openfoodfacts.org/data",
+    "title": "Open Food Facts data",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "world.openfoodfacts.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 5 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0149,
+    "extract": "sources/S40.md",
+    "snippet": "ODbL",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8026,
+        "content": 0.6872,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S41",
+    "url": "https://www.cambridge.org/core/journals/public-health-nutrition/article/un-decade-of-nutrition-the-nova-food-classification-and-the-trouble-with-ultraprocessing/2A9776922A28F8F757BDA32C3266AC2A",
+    "canonicalUrl": "https://cambridge.org/core/journals/public-health-nutrition/article/un-decade-of-nutrition-the-nova-food-classification-and-the-trouble-with-ultraprocessing/2A9776922A28F8F757BDA32C3266AC2A",
+    "title": "The UN Decade of Nutrition, the NOVA food classification and the trouble with ultra-processing",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "cambridge.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 27 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0149,
+    "extract": "sources/S41.md",
+    "snippet": "Monteiro PHN",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4805,
+        "content": 0.6247,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "NOVA food classification: definition of the four groups and how Open Food Facts computes nova_group",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S42",
+    "url": "https://www.santepubliquefrance.fr/en/press/nutri-score-calculation-algorithm-evolving-promote-healthier-food-choices",
+    "canonicalUrl": "https://santepubliquefrance.fr/en/press/nutri-score-calculation-algorithm-evolving-promote-healthier-food-choices",
+    "title": "The Nutri-Score calculation algorithm is evolving",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "santepubliquefrance.fr",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0149,
+    "extract": "sources/S42.md",
+    "snippet": "SpF press",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.499,
+        "content": 0.5731,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S43",
+    "url": "https://edition.cnn.com/2025/02/24/health/fda-delays-final-rule-foods-healthy-label",
+    "canonicalUrl": "https://edition.cnn.com/2025/02/24/health/fda-delays-final-rule-foods-healthy-label",
+    "title": "FDA delays effective date of healthy rule",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "edition.cnn.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S43.md",
+    "snippet": "April 28 2025",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8026,
+        "content": 0.5601,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S44",
+    "url": "https://github.com/Sec-ant/zxing-wasm/releases",
+    "canonicalUrl": "https://github.com/Sec-ant/zxing-wasm/releases",
+    "title": "zxing-wasm releases",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S44.md",
+    "snippet": "v3 EAN13 naming",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4144,
+        "content": 0.4478,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S45",
+    "url": "https://openfoodfacts.github.io/openfoodfacts-server/api/ref-cheatsheet/",
+    "canonicalUrl": "https://openfoodfacts.github.io/openfoodfacts-server/api/ref-cheatsheet",
+    "title": "Reference: API CheatSheet",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "openfoodfacts.github.io",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S45.md",
+    "snippet": "API cheatsheet",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9839,
+        "content": 0.3568,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S46",
+    "url": "https://www.nature.com/articles/s41430-022-01099-1?error=cookies_not_supported&code=b32c25bb-9c4f-418f-9183-1d65ae30d564",
+    "canonicalUrl": "https://nature.com/articles/s41430-022-01099-1?code=b32c25bb-9c4f-418f-9183-1d65ae30d564&error=cookies_not_supported",
+    "title": "Ultra-processed foods: how functional is the NOVA system?",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "nature.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 5 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S46.md",
+    "snippet": "Cramer's V 0.58",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4526,
+        "content": 0.6629,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "NOVA food classification: definition of the four groups and how Open Food Facts computes nova_group",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S47",
+    "url": "https://www.rivm.nl/en/food-and-nutrition/nutri-score",
+    "canonicalUrl": "https://rivm.nl/en/food-and-nutrition/nutri-score",
+    "title": "Nutri-Score RIVM",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "rivm.nl",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S47.md",
+    "snippet": "Netherlands",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4208,
+        "content": 0.5813,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S48",
+    "url": "https://www.safefood.net/professional/food-safety/food-safety-news-(1)/2025/meat-nitrites",
+    "canonicalUrl": "https://safefood.net/professional/food-safety/food-safety-news-(1)/2025/meat-nitrites",
+    "title": "Is it time for the meat industry to go nitrate free?",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "safefood.net",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S48.md",
+    "snippet": "safefood",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9104,
+        "content": 0.462,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S49",
+    "url": "https://agrinfo.eu/book-of-reports/maximum-levels-of-nitrites-and-nitrates-lowered/",
+    "canonicalUrl": "https://agrinfo.eu/book-of-reports/maximum-levels-of-nitrites-and-nitrates-lowered",
+    "title": "Maximum levels of nitrites and nitrates lowered - AGRINFO",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "agrinfo.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S49.md",
+    "snippet": "9 October 2025",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9385,
+        "content": 0.4022,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S50",
+    "url": "https://github.com/openfoodfacts/openfoodfacts-server/blob/main/taxonomies/additives.txt",
+    "canonicalUrl": "https://github.com/openfoodfacts/openfoodfacts-server/blob/main/taxonomies/additives.txt",
+    "title": "additives taxonomy",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 14 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S50.md",
+    "snippet": "efsa_evaluation_overexposure_risk",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7349,
+        "content": 0.482,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S51",
+    "url": "https://www.cambridge.org/core/journals/proceedings-of-the-nutrition-society/article/are-all-ultraprocessed-foods-bad-a-critical-review-of-the-nova-classification-system/16D07B81A1587340B3EE847F3C662E60",
+    "canonicalUrl": "https://cambridge.org/core/journals/proceedings-of-the-nutrition-society/article/are-all-ultraprocessed-foods-bad-a-critical-review-of-the-nova-classification-system/16D07B81A1587340B3EE847F3C662E60",
+    "title": "Are all ultra-processed foods bad? A critical review of NOVA",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "cambridge.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 10 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S51.md",
+    "snippet": "criticism",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4462,
+        "content": 0.6478,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "NOVA food classification: definition of the four groups and how Open Food Facts computes nova_group",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S52",
+    "url": "https://www.foodbev.com/news/major-food-groups-drop-nutri-score-labels-in-germany-after-tougher-scoring-rules-take-effect",
+    "canonicalUrl": "https://foodbev.com/news/major-food-groups-drop-nutri-score-labels-in-germany-after-tougher-scoring-rules-take-effect",
+    "title": "Major food groups drop Nutri-Score labels in Germany",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "foodbev.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S52.md",
+    "snippet": "33 manufacturers withdrew",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4596,
+        "content": 0.4072,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S53",
+    "url": "https://www.hklaw.com/en/insights/publications/2025/01/fdas-new-year-new-rules-labeling-for-healthier-choices",
+    "canonicalUrl": "https://hklaw.com/en/insights/publications/2025/01/fdas-new-year-new-rules-labeling-for-healthier-choices",
+    "title": "FDA's New Year, New Rules - Holland & Knight",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "hklaw.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S53.md",
+    "snippet": "healthy and FOP",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8243,
+        "content": 0.6004,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S54",
+    "url": "https://www.npmjs.com/package/barcode-detector",
+    "canonicalUrl": "https://npmjs.com/package/barcode-detector",
+    "title": "barcode-detector - npm",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "npmjs.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 3 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S54.md",
+    "snippet": "ponyfill",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4256,
+        "content": 0.8276,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S55",
+    "url": "https://en.wikipedia.org/wiki/Ultra-processed_food",
+    "canonicalUrl": "https://en.wikipedia.org/wiki/Ultra-processed_food",
+    "title": "Ultra-processed food - Wikipedia",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "en.wikipedia.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S55.md",
+    "snippet": "UPF definition",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4957,
+        "content": 0.6141,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "NOVA food classification: definition of the four groups and how Open Food Facts computes nova_group",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S56",
+    "url": "https://github.com/openfoodfacts/openfoodfacts-server/issues/1374",
+    "canonicalUrl": "https://github.com/openfoodfacts/openfoodfacts-server/issues/1374",
+    "title": "Add over-exposure risk levels for additives from EFSA evaluations",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S56.md",
+    "snippet": "EFSA",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8243,
+        "content": 0.4546,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S57",
+    "url": "https://github.com/undecaf/barcode-detector-polyfill",
+    "canonicalUrl": "https://github.com/undecaf/barcode-detector-polyfill",
+    "title": "undecaf/barcode-detector-polyfill (ZBar WASM)",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S57.md",
+    "snippet": "polyfill",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.3888,
+        "content": 0.5402,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S58",
+    "url": "https://www.foodnavigator.com/Article/2019/06/13/Children-exceed-acceptable-daily-intake-of-phosphates-EFSA-finds/",
+    "canonicalUrl": "https://foodnavigator.com/Article/2019/06/13/Children-exceed-acceptable-daily-intake-of-phosphates-EFSA-finds",
+    "title": "Children exceed ADI of phosphates",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "foodnavigator.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S58.md",
+    "snippet": "phosphates",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8026,
+        "content": 0.4262,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S59",
+    "url": "https://www.kslaw.com/insights/articles/fda-releases-proposed-front-of-package-nutrition-labeling-rule",
+    "canonicalUrl": "https://kslaw.com/insights/articles/fda-releases-proposed-front-of-package-nutrition-labeling-rule",
+    "title": "FDA Releases Proposed FOP Rule - King & Spalding",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "kslaw.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 4 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S59.md",
+    "snippet": "summary",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9242,
+        "content": 0.7451,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S60",
+    "url": "https://www.vzhh.de/themen/lebensmittel-ernaehrung/nutri-score-ist-seit-2024-besser",
+    "canonicalUrl": "https://vzhh.de/themen/lebensmittel-ernaehrung/nutri-score-ist-seit-2024-besser",
+    "title": "Nutri-Score ist seit 2024 besser",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "vzhh.de",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S60.md",
+    "snippet": "vzhh",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.472,
+        "content": 0.128,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    },
+    "offTopic": true
+  },
+  {
+    "id": "S61",
+    "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2019.5674",
+    "canonicalUrl": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2019.5674",
+    "title": "Re-evaluation of phosphoric acid-phosphates",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "efsa.onlinelibrary.wiley.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 21 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S61.md",
+    "snippet": "group ADI 40 mg/kg",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8243,
+        "content": 0.4554,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S62",
+    "url": "https://forum.openfoodfacts.org/t/conditions-to-use-the-open-food-facts-api/443",
+    "canonicalUrl": "https://forum.openfoodfacts.org/t/conditions-to-use-the-open-food-facts-api/443",
+    "title": "Conditions to use the Open Food Facts API",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "forum.openfoodfacts.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S62.md",
+    "snippet": "forum",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7722,
+        "content": 0.5262,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S63",
+    "url": "https://nationalaglawcenter.org/fda-releases-final-healthy-rule/",
+    "canonicalUrl": "https://nationalaglawcenter.org/fda-releases-final-healthy-rule",
+    "title": "FDA Releases Final Healthy Rule",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "nationalaglawcenter.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S63.md",
+    "snippet": "limits",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8133,
+        "content": 0.5046,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S64",
+    "url": "https://scanbot.io/techblog/barcode-detection-api-tutorial/",
+    "canonicalUrl": "https://scanbot.io/techblog/barcode-detection-api-tutorial",
+    "title": "Barcode Detection API tutorial - Scanbot",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "scanbot.io",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S64.md",
+    "snippet": "tutorial",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.3937,
+        "content": 0.4499,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S65",
+    "url": "https://www.nomoreupf.co.uk/learn/nova-classification",
+    "canonicalUrl": "https://nomoreupf.co.uk/learn/nova-classification",
+    "title": "NOVA Classification: The 4 Processing Groups",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "nomoreupf.co.uk",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S65.md",
+    "snippet": "groups",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4164,
+        "content": 0.5042,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "NOVA food classification: definition of the four groups and how Open Food Facts computes nova_group",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S66",
+    "url": "https://www.santepubliquefrance.fr/en/les-actualites/nutri-score-update-changes-2024",
+    "canonicalUrl": "https://santepubliquefrance.fr/en/les-actualites/nutri-score-update-changes-2024",
+    "title": "Nutri-Score: An Update on the Changes for 2024",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "santepubliquefrance.fr",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S66.md",
+    "snippet": "dates",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.492,
+        "content": 0.4756,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S67",
+    "url": "https://caniuse.com/mdn-api_barcodedetector",
+    "canonicalUrl": "https://caniuse.com/mdn-api_barcodedetector",
+    "title": "BarcodeDetector API - caniuse",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "caniuse.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S67.md",
+    "snippet": "Chrome Android supported; Firefox not; Safari disabled by default",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.5163,
+        "content": 0.1974,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    },
+    "offTopic": true
+  },
+  {
+    "id": "S68",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ%3AL_202302108",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML?uri=OJ%3AL_202302108",
+    "title": "Commission Regulation (EU) 2023/2108",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S68.md",
+    "snippet": "nitrites nitrates",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9531,
+        "content": 0.4895,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S69",
+    "url": "https://github.com/beitz/ToFoo/pull/20",
+    "canonicalUrl": "https://github.com/beitz/ToFoo/pull/20",
+    "title": "Open Food Facts: stay under the published rate limit",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S69.md",
+    "snippet": "product API 200 with CORS; search 503",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9104,
+        "content": 0.3501,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S70",
+    "url": "https://openknowledge.fao.org/server/api/core/bitstreams/5277b379-0acb-4d97-a6a3-602774104629/content",
+    "canonicalUrl": "https://openknowledge.fao.org/server/api/core/bitstreams/5277b379-0acb-4d97-a6a3-602774104629/content",
+    "title": "Ultra-processed foods, diet quality, and health using the NOVA classification system (FAO)",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "openknowledge.fao.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 10 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S70.md",
+    "snippet": "FAO report",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.488,
+        "content": 0.5707,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "NOVA food classification: definition of the four groups and how Open Food Facts computes nova_group",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S71",
+    "url": "https://tachizgroup.com/en/france-nutri-score-mandatory-food-exporters/",
+    "canonicalUrl": "https://tachizgroup.com/en/france-nutri-score-mandatory-food-exporters",
+    "title": "France Nutri-Score: Mandatory in 2026?",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "tachizgroup.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S71.md",
+    "snippet": "remains voluntary",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4421,
+        "content": 0.3377,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S72",
+    "url": "https://www.khlaw.com/insights/fda-finalizes-healthy-claim",
+    "canonicalUrl": "https://khlaw.com/insights/fda-finalizes-healthy-claim",
+    "title": "FDA Finalizes the Healthy Claim - Keller and Heckman",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "khlaw.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S72.md",
+    "snippet": "symbol",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8356,
+        "content": 0.5654,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S73",
+    "url": "https://chromium.googlesource.com/external/github.com/mdn/browser-compat-data/+/HEAD/api/BarcodeDetector.json",
+    "canonicalUrl": "https://chromium.googlesource.com/external/github.com/mdn/browser-compat-data/+/HEAD/api/BarcodeDetector.json",
+    "title": "browser-compat-data BarcodeDetector.json",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "chromium.googlesource.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 4 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0137,
+    "extract": "sources/S73.md",
+    "snippet": "compat",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4772,
+        "content": 0.2504,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S74",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13522855/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13522855",
+    "title": "Ultra-Processed Food Policies and Global Nutrition Equity",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "pmc.ncbi.nlm.nih.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0137,
+    "extract": "sources/S74.md",
+    "snippet": "criticism",
+    "meta": {
+      "foundBy": 1,
+      "textVia": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13522855/fullTextXML",
+      "rank": {
+        "rrf": 0.4338,
+        "content": 0.399,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "NOVA food classification: definition of the four groups and how Open Food Facts computes nova_group",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S75",
+    "url": "https://world.openfoodfacts.org/green-score",
+    "canonicalUrl": "https://world.openfoodfacts.org/green-score",
+    "title": "Green-Score: the environmental impact of food products",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "world.openfoodfacts.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0137,
+    "extract": "sources/S75.md",
+    "snippet": "Green-Score new name of Eco-Score end of 2024",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8714,
+        "content": 0.3136,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S76",
+    "url": "https://www.fdli.org/2025/05/fda-final-rule-updates-the-healthy-nutrient-content-claim/",
+    "canonicalUrl": "https://fdli.org/2025/05/fda-final-rule-updates-the-healthy-nutrient-content-claim",
+    "title": "FDA Final Rule Updates the Healthy Nutrient Content Claim - FDLI",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "fdli.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0137,
+    "extract": "sources/S76.md",
+    "snippet": "limits",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8472,
+        "content": 0.5292,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S77",
+    "url": "https://www.heraxfood.com/en/news/lower-maximum-levels-of-nitrites-applicable-from-9-october-2025-",
+    "canonicalUrl": "https://heraxfood.com/en/news/lower-maximum-levels-of-nitrites-applicable-from-9-october-2025-",
+    "title": "Lower maximum levels of nitrites applicable from 9 October 2025",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "heraxfood.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0137,
+    "extract": "sources/S77.md",
+    "snippet": "80 mg/kg",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9242,
+        "content": 0.1238,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    },
+    "offTopic": true
+  },
+  {
+    "id": "S78",
+    "url": "https://www.processalimentaire.com/ingredients/nutri-score-le-gouvernement-valide-enfin-le-nouvel-algorithme",
+    "canonicalUrl": "https://processalimentaire.com/ingredients/nutri-score-le-gouvernement-valide-enfin-le-nouvel-algorithme",
+    "title": "Nutri-Score : le Gouvernement valide enfin le nouvel algorithme",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "processalimentaire.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0137,
+    "extract": "sources/S78.md",
+    "snippet": "arrete March 2025",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.5062,
+        "content": 0.1157,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    },
+    "offTopic": true
+  },
+  {
+    "id": "S79",
+    "url": "https://eur-lex.europa.eu/eli/reg/2022/63/oj",
+    "canonicalUrl": "https://eur-lex.europa.eu/eli/reg/2022/63/oj",
+    "title": "Commission Regulation (EU) 2022/63 titanium dioxide",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0135,
+    "extract": "sources/S79.md",
+    "snippet": "ban",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8472,
+        "content": 0.468,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S80",
+    "url": "https://github.com/mwdearing/health-nutrition/issues/297",
+    "canonicalUrl": "https://github.com/mwdearing/health-nutrition/issues/297",
+    "title": "Open Food Facts product-read limit is documented as 100 per minute; the published limit is 15",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0135,
+    "extract": "sources/S80.md",
+    "snippet": "rate limit",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9385,
+        "content": 0.2649,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S81",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2024-12-27/pdf/2024-29957.pdf",
+    "canonicalUrl": "https://govinfo.gov/content/pkg/FR-2024-12-27/pdf/2024-29957.pdf",
+    "title": "Food Labeling: Nutrient Content Claims; Definition of Term Healthy (final rule, 89 FR 106064)",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "govinfo.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 11 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0135,
+    "extract": "sources/S81.md",
+    "snippet": "Food Labeling: Nutrient Content — **SUMMARY:** The Food and Drug Administration (FDA or we) is issuing this final rule updating the definition for the implied nutrient content claim ‘‘healthy’’ to be consistent with current nutrition science and Federal dietary guidance, especially the Dietary Guidelines for Americans (Dietary Guidelines), regarding how cons",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S82",
+    "url": "https://www.npmjs.com/package/@sec-ant/barcode-detector",
+    "canonicalUrl": "https://npmjs.com/package/@sec-ant/barcode-detector",
+    "title": "@sec-ant/barcode-detector - npm (deprecated)",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "npmjs.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0135,
+    "extract": "sources/S82.md",
+    "snippet": "republished as barcode-detector",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4037,
+        "content": 0.4958,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S83",
+    "url": "https://www.nutree.fr/detail-article/nutri-score-decryptage-du-nouvel-algorithme.html",
+    "canonicalUrl": "https://nutree.fr/detail-article/nutri-score-decryptage-du-nouvel-algorithme.html",
+    "title": "Nutri-Score : decryptage du nouvel algorithme",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "nutree.fr",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0135,
+    "extract": "sources/S83.md",
+    "snippet": "24 months from March 15 2025",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4851,
+        "content": 0.1546,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    },
+    "offTopic": true
+  },
+  {
+    "id": "S84",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/BarcodeDetector/BarcodeDetector",
+    "canonicalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/BarcodeDetector/BarcodeDetector",
+    "title": "BarcodeDetector: BarcodeDetector() constructor",
+    "backend": "standards",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "developer.mozilla.org",
+    "trust": 0.9,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0133,
+    "extract": "sources/S84.md",
+    "snippet": "The BarcodeDetector() constructor creates\na new BarcodeDetector object which detects linear and two-dimensional\nbarcodes in images.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.5163,
+        "content": 0.1912,
+        "trust": 0.9,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    },
+    "offTopic": true
+  },
+  {
+    "id": "S85",
+    "url": "https://github.com/openfoodfacts/openfoodfacts-server/issues/4272",
+    "canonicalUrl": "https://github.com/openfoodfacts/openfoodfacts-server/issues/4272",
+    "title": "Replace old risk levels for additives by new EFSA overexposure risk levels",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0133,
+    "extract": "sources/S85.md",
+    "snippet": "EFSA overexposure",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8356,
+        "content": 0.4012,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S86",
+    "url": "https://vegconomist.com/health/stricter-nutri-score-criteria-prompt-exit-pepsico-danone-alpro-germany/",
+    "canonicalUrl": "https://vegconomist.com/health/stricter-nutri-score-criteria-prompt-exit-pepsico-danone-alpro-germany",
+    "title": "Stricter Nutri-Score criteria prompt exit of PepsiCo, Danone, Alpro",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "vegconomist.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0133,
+    "extract": "sources/S86.md",
+    "snippet": "Germany",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4536,
+        "content": 0.2748,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S87",
+    "url": "https://www.fsai.ie/news-and-alerts/latest-news/aspartame-jefca-and-iarc-assessments",
+    "canonicalUrl": "https://fsai.ie/news-and-alerts/latest-news/aspartame-jefca-and-iarc-assessments",
+    "title": "Aspartame - JECFA and IARC assessments",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "fsai.ie",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0133,
+    "extract": "sources/S87.md",
+    "snippet": "FSAI",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7821,
+        "content": 0.1912,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    },
+    "offTopic": true
+  },
+  {
+    "id": "S88",
+    "url": "https://www.hlc.com/en/publications/omb-releases-2026-unified-agenda-of-regulatory-actions",
+    "canonicalUrl": "https://hlc.com/en/publications/omb-releases-2026-unified-agenda-of-regulatory-actions",
+    "title": "OMB Releases 2026 Unified Agenda of Regulatory Actions",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "hlc.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0133,
+    "extract": "sources/S88.md",
+    "snippet": "Share by email — FDA will also propose a rule to create a new “low added sugar” nutrient content claim and issue a final rule to permit the use of salt substitutes in standardized foods.3 The agency also plans to publish several new rulemaking actions to modernize and revoke standards of identity for several foods.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S89",
+    "url": "https://github.com/openfoodfacts/open-prices/pull/1418",
+    "canonicalUrl": "https://github.com/openfoodfacts/open-prices/pull/1418",
+    "title": "feat: accepter et logguer l'en-tete X-User-Agent",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S89.md",
+    "snippet": "cors-headers.include X-User-Agent",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7625,
+        "content": 0.4292,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S90",
+    "url": "https://nutriscore.blog/2022/08/04/report-of-the-european-scientific-committee-in-charge-of-updating-the-nutri-score-changes-to-the-algorithm-for-solid-foods/",
+    "canonicalUrl": "https://nutriscore.blog/2022/08/04/report-of-the-european-scientific-committee-in-charge-of-updating-the-nutri-score-changes-to-the-algorithm-for-solid-foods",
+    "title": "Report of the European Scientific Committee: changes for solid foods",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "nutriscore.blog",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S90.md",
+    "snippet": "A/B threshold 0/1",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.5292,
+        "content": 0.5467,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S91",
+    "url": "https://wicg.github.io/shape-detection-api/",
+    "canonicalUrl": "https://wicg.github.io/shape-detection-api",
+    "title": "Accelerated Shape Detection in Images (WICG)",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "wicg.github.io",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S91.md",
+    "snippet": "spec",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.47,
+        "content": 0.3087,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S92",
+    "url": "https://www.dailyintakeblog.com/2026/03/fda-signals-potential-reassessment-of-proposed-front-of-package-rule/",
+    "canonicalUrl": "https://dailyintakeblog.com/2026/03/fda-signals-potential-reassessment-of-proposed-front-of-package-rule",
+    "title": "FDA Signals Potential Reassessment of Proposed Front-of-Package Rule",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "dailyintakeblog.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S92.md",
+    "snippet": "FDA Signals Potential Reassessment of Proposed Front-of-Package Rule — Specifically, meaningful changes to the proposal could require FDA to reissue the rule for additional notice-and-comment rulemaking. As a result, the agency is weighing whether revisions are feasible within its broader policy and timeline objectives.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S93",
+    "url": "https://www.efsa.europa.eu/en/topics/topic/aspartame",
+    "canonicalUrl": "https://efsa.europa.eu/en/topics/topic/aspartame",
+    "title": "Aspartame - EFSA topic",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "efsa.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S93.md",
+    "snippet": "ADI 40",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7722,
+        "content": 0.2503,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S94",
+    "url": "https://github.com/Sec-ant/barcode-detector/releases/tag/v3.2.3",
+    "canonicalUrl": "https://github.com/Sec-ant/barcode-detector/releases/tag/v3.2.3",
+    "title": "barcode-detector Release v3.2.3",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.013,
+    "extract": "sources/S94.md",
+    "snippet": "zxing-wasm 3.1.6",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4314,
+        "content": 0.2301,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S95",
+    "url": "https://world.openfoodfacts.org/terms-of-use",
+    "canonicalUrl": "https://world.openfoodfacts.org/terms-of-use",
+    "title": "Terms of use, contribution and re-use",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "world.openfoodfacts.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 3 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.013,
+    "extract": "sources/S95.md",
+    "snippet": "ODbL DbCL CC-BY-SA",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7922,
+        "content": 0.2542,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S96",
+    "url": "https://www.bmleh.de/DE/themen/ernaehrung/lebensmittel-kennzeichnung/freiwillige-angaben-und-label/nutri-score/nutri-score-weiterentwicklung.html",
+    "canonicalUrl": "https://bmleh.de/DE/themen/ernaehrung/lebensmittel-kennzeichnung/freiwillige-angaben-und-label/nutri-score/nutri-score-weiterentwicklung.html",
+    "title": "BMLEH Weiterentwicklung des Nutri-Score",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "bmleh.de",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.013,
+    "extract": "sources/S96.md",
+    "snippet": "seit 1. Januar 2026 nur weiterentwickelter Algorithmus",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4785,
+        "content": 0.1333,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    },
+    "offTopic": true
+  },
+  {
+    "id": "S97",
+    "url": "https://www.efsa.europa.eu/en/press/news/190612",
+    "canonicalUrl": "https://efsa.europa.eu/en/press/news/190612",
+    "title": "EFSA issues new advice on phosphates",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "efsa.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.013,
+    "extract": "sources/S97.md",
+    "snippet": "exceed",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8133,
+        "content": 0.2717,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S98",
+    "url": "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+    "canonicalUrl": "https://fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels",
+    "title": "Daily Value on the Nutrition and Supplement Facts Labels",
+    "backend": "file",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "fda.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.013,
+    "extract": "sources/S98.md",
+    "snippet": "Which Nutrients Are Required to Be Listed on the Nutrition and Supplement Facts Labels? — Similarly, the Supplement Facts label is required to list the same nutrients as the Nutrition Facts label when any of these nutrients are found in the supplement in an amount considered to be greater than zero. For more information, see 21 CFR 101.9(c).",
+    "meta": {
+      "textVia": "file:///private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/dl/fda/fda-daily-value.html",
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S99",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/BarcodeDetector/getSupportedFormats_static",
+    "canonicalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/BarcodeDetector/getSupportedFormats_static",
+    "title": "BarcodeDetector: getSupportedFormats() static method",
+    "backend": "standards",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "developer.mozilla.org",
+    "trust": 0.9,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0128,
+    "extract": "sources/S99.md",
+    "snippet": "The getSupportedFormats() static method\nof the BarcodeDetector interface returns a Promise which\nfulfills with an Array of supported barcode format types.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4845,
+        "content": 0.1916,
+        "trust": 0.9,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    },
+    "offTopic": true
+  },
+  {
+    "id": "S101",
+    "url": "https://www.campdenbri.co.uk/blogs/nitrites-and-nitrates.php",
+    "canonicalUrl": "https://campdenbri.co.uk/blogs/nitrites-and-nitrates.php",
+    "title": "Nitrites and nitrates - Campden BRI",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "campdenbri.co.uk",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0128,
+    "extract": "sources/S101.md",
+    "snippet": "limits",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8971,
+        "content": 0.1549,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    },
+    "offTopic": true
+  },
+  {
+    "id": "S102",
+    "url": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/use-term-healthy-food-labeling",
+    "canonicalUrl": "https://fda.gov/food/nutrition-food-labeling-and-critical-foods/use-term-healthy-food-labeling",
+    "title": "Use of the \"Healthy\" Claim on Food Labeling",
+    "backend": "file",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "fda.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0128,
+    "extract": "sources/S102.md",
+    "snippet": "Previous Actions — On September 29, 2022, the FDA issued a proposed rule to update the nutrient content claim “healthy,” which was set in 1994.",
+    "meta": {
+      "textVia": "file:///private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/dl/fda/fda-healthy.html",
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S103",
+    "url": "https://www.foodwatch.org/en/nutri-score-algorithm-for-beverages-further-improved",
+    "canonicalUrl": "https://foodwatch.org/en/nutri-score-algorithm-for-beverages-further-improved",
+    "title": "Nutri-Score algorithm for beverages further improved",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "foodwatch.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0128,
+    "extract": "sources/S103.md",
+    "snippet": "milk B",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4312,
+        "content": 0.5298,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S104",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/BarcodeDetector/detect",
+    "canonicalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/BarcodeDetector/detect",
+    "title": "BarcodeDetector: detect() method",
+    "backend": "standards",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "developer.mozilla.org",
+    "trust": 0.9,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0127,
+    "extract": "sources/S104.md",
+    "snippet": "The detect() method of the\nBarcodeDetector interface returns a Promise which fulfills\nwith an Array of detected barcodes within an image.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4999,
+        "content": 0.1806,
+        "trust": 0.9,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    },
+    "offTopic": true
+  },
+  {
+    "id": "S105",
+    "url": "https://pypi.org/project/openfoodfacts/",
+    "canonicalUrl": "https://pypi.org/project/openfoodfacts",
+    "title": "openfoodfacts PyPI",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "pypi.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0127,
+    "extract": "sources/S105.md",
+    "snippet": "user_agent required",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7531,
+        "content": 0.2523,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S106",
+    "url": "https://www.efsa.europa.eu/en/topics/topic/food-additives",
+    "canonicalUrl": "https://efsa.europa.eu/en/topics/topic/food-additives",
+    "title": "Food additive re-evaluations - EFSA",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "efsa.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0127,
+    "extract": "sources/S106.md",
+    "snippet": "re-evaluations",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7625,
+        "content": 0.2432,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S107",
+    "url": "https://www.fda.gov/food/guidance-documents-regulatory-information-topic-food-and-dietary-supplements/foods-program-regulations-under-development",
+    "canonicalUrl": "https://fda.gov/food/guidance-documents-regulatory-information-topic-food-and-dietary-supplements/foods-program-regulations-under-development",
+    "title": "Foods Program Regulations Under Development",
+    "backend": "file",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "fda.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0127,
+    "extract": "sources/S107.md",
+    "snippet": "Foods Program Regulations Under Development — Front-of-Package Nutrition Labeling Final Rule Nutrient Content Claims for Added Sugars Proposed Rule",
+    "meta": {
+      "textVia": "file:///private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/dl/fda/fda-regs-under-dev.html",
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S108",
+    "url": "https://www.foodwatch.org/fileadmin/-INT/sugar-fat-salt/documents/PPT_Dr._Julia_Nutri-Score_algorithm.pdf",
+    "canonicalUrl": "https://foodwatch.org/fileadmin/-INT/sugar-fat-salt/documents/PPT_Dr._Julia_Nutri-Score_algorithm.pdf",
+    "title": "Nutri-Score algorithm: introduction and update, Pr C. Julia",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "foodwatch.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0127,
+    "extract": "sources/S108.md",
+    "snippet": "effects",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.426,
+        "content": 0.4091,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S109",
+    "url": "https://openfoodfacts.github.io/openfoodfacts-server/api/tutorial-off-api/",
+    "canonicalUrl": "https://openfoodfacts.github.io/openfoodfacts-server/api/tutorial-off-api",
+    "title": "Tutorial on using the Open Food Facts API",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "openfoodfacts.github.io",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S109.md",
+    "snippet": "nutriscore_data fields",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9683,
+        "content": 0.6422,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S110",
+    "url": "https://whatpwacando.today/barcode/",
+    "canonicalUrl": "https://whatpwacando.today/barcode",
+    "title": "Barcode Detection - What PWA Can Do Today",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "whatpwacando.today",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S110.md",
+    "snippet": "does not work on iOS 18",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4499,
+        "content": 0.1161,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    },
+    "offTopic": true
+  },
+  {
+    "id": "S111",
+    "url": "https://www.bav-institut.de/de/news/nutri-score-aenderung-der-berechnungsgrundlage-zum-jahresbeginn-2024",
+    "canonicalUrl": "https://bav-institut.de/de/news/nutri-score-aenderung-der-berechnungsgrundlage-zum-jahresbeginn-2024",
+    "title": "BAV-Institut Nutri-Score Aenderung 2024",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "bav-institut.de",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S111.md",
+    "snippet": "Germany",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4657,
+        "content": 0.0512,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    },
+    "offTopic": true
+  },
+  {
+    "id": "S112",
+    "url": "https://www.fda.gov/food/food-labeling-nutrition/front-package-nutrition-labeling",
+    "canonicalUrl": "https://fda.gov/food/food-labeling-nutrition/front-package-nutrition-labeling",
+    "title": "Front-of-Package Nutrition Labeling",
+    "backend": "file",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "fda.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S112.md",
+    "snippet": "Proposed Rule — The FDA is proposing to require a front-of-package (FOP) nutrition label on most packaged foods to provide accessible, at-a-glance information to help consumers quickly and easily identify how foods can be part of a healthy diet.",
+    "meta": {
+      "textVia": "file:///private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/dl/fda/fda-fop.html",
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "US FDA healthy nutrient content claim final rule and front-of-package Nutrition Info box proposed rule: Low Med High thresholds by percent Daily Value and Daily Values for saturated fat, sodium, added sugars",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S113",
+    "url": "https://www.paho.org/en/news/14-7-2023-aspartame-hazard-and-risk-assessment-results-released",
+    "canonicalUrl": "https://paho.org/en/news/14-7-2023-aspartame-hazard-and-risk-assessment-results-released",
+    "title": "Aspartame hazard and risk assessment results released",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "paho.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S113.md",
+    "snippet": "IARC 2B JECFA 40 mg",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7922,
+        "content": 0.2364,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "EFSA evaluations of high-risk food additives: nitrites and nitrates E249-E252, titanium dioxide E171 ban, phosphates, aspartame and other additives of concern",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S114",
+    "url": "https://github.com/mdn/content/blob/main/files/en-us/web/api/barcode_detection_api/index.md",
+    "canonicalUrl": "https://github.com/mdn/content/blob/main/files/en-us/web/api/barcode_detection_api/index.md",
+    "title": "MDN content barcode_detection_api",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0123,
+    "extract": "sources/S114.md",
+    "snippet": "formats ean_13 upc_a",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.4845,
+        "content": 0.2392,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S115",
+    "url": "https://github.com/vasuopenai/product-langflow/pull/12",
+    "canonicalUrl": "https://github.com/vasuopenai/product-langflow/pull/12",
+    "title": "Nutri-Score (2023 algorithm) for USDA products, validated against Open Food Facts",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "github.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0123,
+    "extract": "sources/S115.md",
+    "snippet": "Nutriscore.pm",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7439,
+        "content": 0.3167,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Open Food Facts API v3 for a client-side app: endpoints, CORS, rate limits, User-Agent, nutriscore_data, nova_group, ecoscore vs environmental_score, additives EFSA overexposure risk, ODbL attribution",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S116",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12073336/",
+    "canonicalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12073336",
+    "title": "The Nutritional Profile of Spanish Beverages: Original vs Updated Nutri-Score (PMC)",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "pmc.ncbi.nlm.nih.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0123,
+    "extract": "sources/S116.md",
+    "snippet": "3.2. Comparison of Original and Updated NS-NPM Scores and Nutri-Score Categories Across Beverage Types — The NS-NPM score using the original algorithm ranged from −1 for legume beverages to 11 for sugar-sweetened beverages. In contrast, the updated 2023 NS-NPM version showed a broader range, from −2 points for legume-based beverages to 10 points for sugar-sw",
+    "meta": {
+      "textVia": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12073336/fullTextXML",
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "Nutri-Score 2023 updated algorithm: point thresholds for grades A to E for solid foods and beverages, and adoption status in France and Germany",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S117",
+    "url": "https://caniuse.com/mdn-api_barcodedetector_barcodedetector",
+    "canonicalUrl": "https://caniuse.com/mdn-api_barcodedetector_barcodedetector",
+    "title": "BarcodeDetector constructor - caniuse",
+    "backend": "host",
+    "fetchedAt": "2026-10-29T22:26:40.303Z",
+    "domain": "caniuse.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0122,
+    "extract": "sources/S117.md",
+    "snippet": "partial desktop",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.5079,
+        "content": 0.1957,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Barcode scanning in web browsers: BarcodeDetector API support across browsers, zxing-wasm and barcode-detector ponyfill",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/22682fad-8490-4853-951b-1956f25c4e97/scratchpad/deep/q6"
+        }
+      ]
+    },
+    "offTopic": true
+  }
+]
