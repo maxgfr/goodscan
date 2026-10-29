@@ -11,6 +11,8 @@ label from a photo when a product is missing. An installable PWA: no account, no
 
 **→ [maxgfr.github.io/goodscan](https://maxgfr.github.io/goodscan/)**
 
+![A German chocolate bar looked up on the live site: its score, the reasons, the Nutri-Score, NOVA and the FDA-style box, then the same page in German](docs/demo.gif)
+
 ## How it works
 
 1. **Scan.** The back camera reads EAN-13, EAN-8, UPC-A and UPC-E codes with the browser's own
