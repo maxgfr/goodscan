@@ -147,6 +147,7 @@ export const en = {
 
   settingsTitle: "Settings",
   settingsLanguage: "Language",
+  langAuto: "Automatic ({lang})",
   settingsRegion: "Region",
   regionAuto: "Automatic ({region})",
   region_us: "United States",

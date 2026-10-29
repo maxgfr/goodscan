@@ -25,7 +25,7 @@ import { DEFAULT_PREFERENCES, type Preferences } from "../score/match";
 const KEY = "goodscan-prefs";
 
 interface Stored {
-  lang?: Lang;
+  lang?: Lang | undefined;
   region?: Region | "auto";
   preferences?: Preferences;
 }
@@ -41,7 +41,9 @@ function readStored(): Stored {
 interface App {
   ready: boolean;
   lang: Lang;
-  setLang(lang: Lang): void;
+  /** "auto" follows the browser (English when it speaks none of ours). */
+  langSetting: Lang | "auto";
+  setLang(lang: Lang | "auto"): void;
   region: Region;
   regionSetting: Region | "auto";
   setRegion(region: Region | "auto"): void;
@@ -70,7 +72,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
 
   const update = useCallback((patch: Stored) => {
     setStored((s) => {
-      const next = { ...s, ...patch };
+      const next: Stored = { ...s, ...patch };
+      for (const k of Object.keys(next) as (keyof Stored)[])
+        if (next[k] === undefined) delete next[k];
       localStorage.setItem(KEY, JSON.stringify(next));
       return next;
     });
@@ -92,7 +96,8 @@ export function AppProvider({ children }: { children: ReactNode }) {
     () => ({
       ready,
       lang,
-      setLang: (l) => update({ lang: l }),
+      langSetting: stored.lang ?? "auto",
+      setLang: (l) => update({ lang: l === "auto" ? undefined : l }),
       region,
       regionSetting,
       setRegion: (r) => update({ region: r }),
@@ -103,7 +108,18 @@ export function AppProvider({ children }: { children: ReactNode }) {
       history,
       refreshHistory,
     }),
-    [ready, lang, region, regionSetting, preferences, settings, history, refreshHistory, update],
+    [
+      ready,
+      lang,
+      stored.lang,
+      region,
+      regionSetting,
+      preferences,
+      settings,
+      history,
+      refreshHistory,
+      update,
+    ],
   );
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }

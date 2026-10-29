@@ -149,6 +149,7 @@ export const fr: Messages = {
 
   settingsTitle: "Réglages",
   settingsLanguage: "Langue",
+  langAuto: "Automatique ({lang})",
   settingsRegion: "Région",
   regionAuto: "Automatique ({region})",
   region_us: "États-Unis",

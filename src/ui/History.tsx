@@ -34,14 +34,14 @@ export function HistoryList({
                   loading="lazy"
                 />
               ) : (
-                <span className="grid size-11 shrink-0 place-items-center rounded-lg bg-stone-100 text-stone-400 dark:bg-stone-800">
+                <span className="grid size-11 shrink-0 place-items-center rounded-lg bg-stone-100 text-muted dark:bg-stone-800">
                   <Icon name="scan" />
                 </span>
               )}
               <span className="min-w-0 flex-1">
                 <span className="block truncate text-sm font-medium">{item.name || item.code}</span>
-                <span className="block truncate text-xs text-stone-500">
-                  {item.brands ?? item.code}
+                <span className="block truncate text-xs text-muted">
+                  {[item.brands, item.code].filter(Boolean).join(" · ")}
                 </span>
               </span>
               <span className={`num flex items-center gap-1.5 text-sm font-semibold ${tone.text}`}>
@@ -52,7 +52,7 @@ export function HistoryList({
             {editable ? (
               <button
                 type="button"
-                className="rounded-lg p-1.5 text-stone-400 hover:bg-stone-100 hover:text-rose-600 dark:hover:bg-stone-800"
+                className="rounded-lg p-1.5 text-muted hover:bg-stone-100 hover:text-rose-600 dark:hover:bg-stone-800"
                 aria-label={`${t("historyRemove")} ${item.name}`}
                 onClick={async () => {
                   await removeHistory(item.code);
@@ -91,7 +91,16 @@ export function History() {
           </div>
         </>
       ) : (
-        <p className="text-sm text-stone-500">{t("historyEmpty")}</p>
+        <div className="card grid justify-items-start gap-3">
+          <p className="text-sm text-soft">{t("historyEmpty")}</p>
+          <a
+            href={href({ name: "scan" })}
+            className="inline-flex items-center gap-2 rounded-xl bg-brand-700 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800 dark:bg-brand-500 dark:text-stone-950 dark:hover:bg-brand-400"
+          >
+            <Icon name="scan" className="size-4" />
+            {t("scanTitle")}
+          </a>
+        </div>
       )}
     </>
   );
