@@ -85,7 +85,11 @@ export function AppProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
-    void Promise.all([loadLlmSettings(), refreshHistory()]).finally(() => setReady(true));
+    // Start even if a store never answers (another tab holding it): the views cope with nothing.
+    void Promise.race([
+      Promise.all([loadLlmSettings(), refreshHistory()]),
+      new Promise((r) => setTimeout(r, 5000)),
+    ]).finally(() => setReady(true));
   }, [refreshHistory]);
 
   useEffect(() => {

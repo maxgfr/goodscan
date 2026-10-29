@@ -25,14 +25,37 @@ interface Schema extends DBSchema {
   history: { key: string; value: HistoryItem; indexes: { scannedAt: number } };
 }
 
+/** An open that has not settled by then is given up (and tried again next time). */
+export const OPEN_TIMEOUT_MS = 4000;
+
 let db: Promise<IDBPDatabase<Schema>> | null = null;
-function open() {
-  db ??= openDB<Schema>("goodscan", 1, {
-    upgrade(d) {
-      d.createObjectStore("products", { keyPath: "code" });
-      d.createObjectStore("history", { keyPath: "code" }).createIndex("scannedAt", "scannedAt");
-    },
-  });
+function open(): Promise<IDBPDatabase<Schema>> {
+  if (!db) {
+    const opening = openDB<Schema>("goodscan", 1, {
+      upgrade(d) {
+        d.createObjectStore("products", { keyPath: "code" });
+        d.createObjectStore("history", { keyPath: "code" }).createIndex("scannedAt", "scannedAt");
+      },
+      // Another tab wants to delete or upgrade the database: let it, reopen later.
+      blocking(_current, _blocked, event) {
+        (event.target as IDBDatabase).close();
+        db = null;
+      },
+      terminated() {
+        db = null;
+      },
+    });
+    // While another tab holds the database, an open can wait forever: never let it freeze the app.
+    db = Promise.race([
+      opening,
+      new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error("The local database is busy.")), OPEN_TIMEOUT_MS),
+      ),
+    ]);
+    db.catch(() => {
+      db = null;
+    });
+  }
   return db;
 }
 
