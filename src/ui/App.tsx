@@ -7,11 +7,12 @@ import { Icon, type IconName, Spinner } from "./kit";
 import { ProductPage } from "./Product";
 import { href, type Route, useRoute } from "./router";
 import { Scan } from "./Scan";
+import { Search } from "./Search";
 import { Settings } from "./Settings";
 import { useApp } from "./state";
 
 const NAV: { route: Route; label: MessageKey; icon: IconName; match: Route["name"][] }[] = [
-  { route: { name: "scan" }, label: "navScan", icon: "scan", match: ["scan", "product"] },
+  { route: { name: "scan" }, label: "navScan", icon: "scan", match: ["scan", "product", "search"] },
   { route: { name: "history" }, label: "navHistory", icon: "history", match: ["history"] },
   { route: { name: "settings" }, label: "navSettings", icon: "gear", match: ["settings"] },
   { route: { name: "about" }, label: "navAbout", icon: "info", match: ["about"] },
@@ -21,6 +22,8 @@ function View({ route }: { route: Route }) {
   switch (route.name) {
     case "product":
       return <ProductPage key={route.code} code={route.code} />;
+    case "search":
+      return <Search key={route.q} q={route.q} />;
     case "history":
       return <History />;
     case "settings":

@@ -12,6 +12,7 @@ import {
 } from "react";
 import { llm, loadLlmSettings, savedSettings } from "../ai/settings";
 import { type HistoryItem, history as readHistory } from "../data/db";
+import { searchAvailable } from "../data/search";
 import {
   detectLang,
   detectRegion,
@@ -53,6 +54,8 @@ interface App {
   settings: LlmSettings | null;
   history: HistoryItem[];
   refreshHistory(): Promise<void>;
+  /** Name search answers from this page (see data/search.ts). */
+  searchOn: boolean;
 }
 
 const Ctx = createContext<App | null>(null);
@@ -61,6 +64,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [stored, setStored] = useState(readStored);
   const [ready, setReady] = useState(false);
   const [history, setHistory] = useState<HistoryItem[]>([]);
+  const [searchOn, setSearchOn] = useState(false);
   const llmState = useLlmSettings(llm);
   // biome-ignore lint/correctness/useExhaustiveDependencies: re-read when the saved settings change
   const settings = useMemo(() => savedSettings(), [llmState.saved]);
@@ -93,6 +97,10 @@ export function AppProvider({ children }: { children: ReactNode }) {
   }, [refreshHistory]);
 
   useEffect(() => {
+    void searchAvailable().then(setSearchOn);
+  }, []);
+
+  useEffect(() => {
     document.documentElement.lang = lang;
   }, [lang]);
 
@@ -111,6 +119,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       settings,
       history,
       refreshHistory,
+      searchOn,
     }),
     [
       ready,
@@ -123,6 +132,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       history,
       refreshHistory,
       update,
+      searchOn,
     ],
   );
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

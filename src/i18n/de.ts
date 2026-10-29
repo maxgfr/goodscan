@@ -23,6 +23,16 @@ export const de: Messages = {
   scanManualPlaceholder: "z. B. 4008400402222",
   scanManualGo: "Suchen",
   scanInvalid: "Ein Barcode hat 8, 12, 13 oder 14 Ziffern.",
+  searchLabel: "Barcode oder Produktname",
+  searchPlaceholder: "Barcode oder Name, z. B. Nutella",
+  searchGo: "Suchen",
+  searchTitle: "Suche: „{q}“",
+  searchCount: "{count} Produkte in Open Food Facts",
+  searchNone:
+    "Kein Produkt passt zu „{q}“. Versuch eine andere Schreibweise, eine Marke, oder scanne den Barcode.",
+  searchMore: "Mehr Ergebnisse",
+  searchRateLimit: "Zu viele Suchen in einer Minute. Versuch es gleich noch mal.",
+  searchError: "Die Suche ist nicht erreichbar. Scanne oder tippe den Barcode.",
   scanRecent: "Zuletzt",
   scanTry: "Probier eins",
 

@@ -53,6 +53,8 @@ async function offline(page: Page | BrowserContext, errors: string[], lookups: s
     page.on("pageerror", (e) => errors.push(e.message));
   }
   await page.route(/models\.dev|openrouter\.ai\/api\/v1\/models/, (r) => r.abort());
+  // Name search is blocked by its CORS policy for now: the default here too.
+  await page.route(/search\.openfoodfacts\.org/, (r) => r.abort());
   await page.route(/images\.open\w+facts\.org/, (r) =>
     r.fulfill({
       contentType: "image/svg+xml",
@@ -375,4 +377,61 @@ test("starts even when another tab holds the local database", async ({ page, con
     timeout: 8000,
   });
   expect(errors).toEqual([]);
+});
+
+test.describe("name search", () => {
+  const hits = [
+    {
+      code: "4008400402222",
+      product_name: "Nutella",
+      brands: ["Nutella"],
+      quantity: "450 g",
+      nutriscore_grade: "e",
+    },
+    {
+      code: "3017620422003",
+      product_name: "Nutella",
+      brands: ["Nutella", "Ferrero"],
+      quantity: "400 g",
+      nutriscore_grade: "e",
+    },
+  ];
+
+  test("when the search service answers: type a name, pick a product", async ({ page }) => {
+    const errors: string[] = [];
+    await offline(page, errors);
+    const asked: string[] = [];
+    await page.route(/search\.openfoodfacts\.org/, (route) => {
+      asked.push(route.request().url());
+      return route.fulfill({
+        headers: cors,
+        json: { hits, count: 2, page: 1, page_size: 20, page_count: 1 },
+      });
+    });
+    await page.goto("./");
+    const field = page.getByLabel("Barcode or product name");
+    await expect(field).toBeVisible();
+    await field.fill("nutella");
+    await page.getByRole("button", { name: "Look up" }).click();
+    await expect(page.getByRole("heading", { name: "Search: “nutella”" })).toBeVisible();
+    await expect(page.getByText("2 products in Open Food Facts")).toBeVisible();
+    const results = page.getByTestId("search-results");
+    await expect(results.getByRole("link")).toHaveCount(2);
+    await results.getByRole("link", { name: /Nutella, Ferrero/ }).click();
+    await expect(page.getByTestId("product-name")).toHaveText("Nutella");
+    expect(page.url()).toContain("#/p/3017620422003");
+    expect(new URL(asked.at(-1) ?? "").searchParams.get("q")).toBe("nutella");
+    expect(errors).toEqual([]);
+  });
+
+  test("while it is blocked: the field stays a barcode field", async ({ page }) => {
+    const errors: string[] = [];
+    await offline(page, errors);
+    await page.goto("./");
+    await expect(page.getByLabel("Or type the code")).toBeVisible();
+    await page.getByLabel("Or type the code").fill("nutella");
+    await page.getByRole("button", { name: "Look up" }).click();
+    await expect(page.getByText("A barcode has 8, 12, 13 or 14 digits.")).toBeVisible();
+    expect(errors).toEqual([]);
+  });
 });

@@ -25,6 +25,14 @@ label from a photo when a product is missing. An installable PWA: no account, no
    language, then Open Beauty, Pet Food and Products Facts. A UPC-A is also tried as its EAN-13.
    It identifies itself with `X-User-Agent` and brakes itself under the API's 15 reads a minute.
    Products are kept a week in IndexedDB, so a second scan is instant and works offline.
+
+   **By name:** the same field takes a product name, through Open Food Facts' search service
+   ([search-a-licious](https://github.com/openfoodfacts/search-a-licious)); the legacy full-text
+   search answers 503 to anonymous visitors. That service only allows `localhost` in its CORS
+   policy for now ([search-a-licious#427](https://github.com/openfoodfacts/search-a-licious/issues/427)),
+   so the app asks once per session whether it answers from the page and offers name search only
+   then: it turns on by itself the day the policy opens. A deployment can point
+   `VITE_SEARCH_ENDPOINT` at its own proxy meanwhile.
 3. **Score.** Deterministic and explained, in [`src/score/score.ts`](src/score/score.ts):
    - start from nutrition: the 2023 Nutri-Score mapped onto 0–100 (A ≈ 85–100 … E ≈ 0–23),
      the database's, or one goodscan computes from the nutrition facts when the database could

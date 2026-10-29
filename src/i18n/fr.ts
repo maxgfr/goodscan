@@ -22,6 +22,16 @@ export const fr: Messages = {
   scanManualPlaceholder: "ex. 3017620422003",
   scanManualGo: "Chercher",
   scanInvalid: "Un code-barres a 8, 12, 13 ou 14 chiffres.",
+  searchLabel: "Code-barres ou nom du produit",
+  searchPlaceholder: "Code-barres ou nom, ex. Nutella",
+  searchGo: "Rechercher",
+  searchTitle: "Recherche : « {q} »",
+  searchCount: "{count} produits dans Open Food Facts",
+  searchNone:
+    "Aucun produit ne correspond à « {q} ». Essayez une autre orthographe, une marque, ou scannez le code-barres.",
+  searchMore: "Plus de résultats",
+  searchRateLimit: "Trop de recherches en une minute. Réessayez dans un instant.",
+  searchError: "La recherche est injoignable. Scannez ou tapez le code-barres.",
   scanRecent: "Récents",
   scanTry: "Essayez",
 
