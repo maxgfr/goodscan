@@ -7,16 +7,7 @@ import { type Match, matchProduct } from "../score/match";
 import { type Reason, type Score, scoreProduct } from "../score/score";
 import { fopBox } from "../score/us";
 import { AiPanel, LabelReader } from "./Ai";
-import {
-  GradeBadge,
-  Icon,
-  Notice,
-  NovaBadge,
-  ScoreDial,
-  Section,
-  Spinner,
-  VERDICT_TONE,
-} from "./kit";
+import { GradeBadge, Icon, Notice, NovaBadge, ScoreDial, Section, VERDICT_TONE } from "./kit";
 import { href } from "./router";
 import { useApp } from "./state";
 import { remember, useProduct } from "./useProduct";
@@ -46,9 +37,22 @@ export function ProductPage({ code }: { code: string }) {
   switch (state.status) {
     case "loading":
       return (
-        <div className="grid place-items-center gap-3 py-24 text-stone-500" role="status">
-          <Spinner className="size-6" />
-          {t("lookupLoading")}
+        <div className="grid gap-4" role="status" aria-busy="true">
+          <span className="sr-only">{t("lookupLoading")}</span>
+          <div className="card grid gap-4" aria-hidden="true">
+            <div className="flex gap-4">
+              <div className="skeleton size-24 shrink-0 rounded-xl" />
+              <div className="grid flex-1 content-start gap-2 pt-1">
+                <div className="skeleton h-5 w-3/4" />
+                <div className="skeleton h-4 w-1/2" />
+              </div>
+            </div>
+            <div className="flex items-center gap-5">
+              <div className="skeleton size-[132px] rounded-full" />
+              <div className="skeleton h-7 w-28" />
+            </div>
+          </div>
+          <div className="card skeleton h-24" aria-hidden="true" />
         </div>
       );
     case "error": {
@@ -72,9 +76,7 @@ export function ProductPage({ code }: { code: string }) {
         <div className="grid gap-4">
           <BackLink />
           <Section title={t("notFoundTitle")}>
-            <p className="mb-4 text-sm text-stone-600 dark:text-stone-300">
-              {t("notFoundBody", { code })}
-            </p>
+            <p className="mb-4 text-sm text-soft">{t("notFoundBody", { code })}</p>
             <LabelReader code={code} onProduct={applyLabel} prompt={t("aiLabelBody")} />
             <a
               className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700 underline dark:text-brand-400"
@@ -98,7 +100,7 @@ function BackLink() {
   return (
     <a
       href={href({ name: "scan" })}
-      className="inline-flex w-fit items-center gap-1 text-sm text-stone-500 hover:text-stone-900 dark:hover:text-white"
+      className="inline-flex w-fit items-center gap-1 text-sm text-muted hover:text-stone-900 dark:hover:text-white"
     >
       <Icon name="left" className="size-4" />
       {t("back")}
@@ -146,10 +148,10 @@ function ProductView({
             <h1 className="text-xl font-bold tracking-tight" data-testid="product-name">
               {product.name || product.code}
             </h1>
-            <p className="text-sm text-stone-500">
+            <p className="text-sm text-muted">
               {[product.brands, product.quantity].filter(Boolean).join(" · ")}
             </p>
-            <p className="num mt-1 text-xs text-stone-400">{product.code}</p>
+            <p className="num mt-1 text-xs text-muted">{product.code}</p>
           </div>
         </div>
 
@@ -173,9 +175,7 @@ function ProductView({
               </p>
             ) : null}
             {!food ? (
-              <p className="mt-1 text-sm text-stone-500">
-                {t("notFoodBody", { db: db?.name ?? "" })}
-              </p>
+              <p className="mt-1 text-sm text-muted">{t("notFoodBody", { db: db?.name ?? "" })}</p>
             ) : null}
           </div>
         </div>
@@ -219,7 +219,7 @@ function ProductView({
       {match ? <MatchCard match={match} /> : null}
 
       <Section title={t("aiTitle")}>
-        <p className="-mt-2 mb-3 text-xs text-stone-500">{t("aiSubtitle")}</p>
+        <p className="-mt-2 mb-3 text-xs text-muted">{t("aiSubtitle")}</p>
         <AiPanel product={product} score={score} match={match} />
       </Section>
 
@@ -228,14 +228,12 @@ function ProductView({
       <Allergens product={product} />
       {product.ingredients ? (
         <Section title={t("ingredientsTitle")}>
-          <p className="text-sm leading-relaxed text-stone-600 dark:text-stone-300">
-            {product.ingredients}
-          </p>
+          <p className="text-sm leading-relaxed text-soft">{product.ingredients}</p>
         </Section>
       ) : null}
 
       {product.source !== "label" ? (
-        <p className="text-center text-xs text-stone-500">
+        <p className="text-center text-xs text-muted">
           {t("dataFrom", { db: db?.name ?? "Open Food Facts" })} ·{" "}
           <a className="underline" href={productUrl(product)} target="_blank" rel="noreferrer">
             {t("viewOn", { db: db?.name ?? "Open Food Facts" })}
@@ -259,7 +257,7 @@ function ReasonLine({ reason, score }: { reason: Reason; score: Score }) {
       <span>
         {text}
         {reason.cap !== undefined && reason.key !== "alcohol" ? (
-          <span className="text-stone-500"> — {t("reasonCap", { cap: reason.cap })}</span>
+          <span className="text-muted"> — {t("reasonCap", { cap: reason.cap })}</span>
         ) : null}
       </span>
       {delta ? (
@@ -277,7 +275,7 @@ function Badges({ product, score }: { product: P; score: Score }) {
   const { t } = useApp();
   return (
     <Section title={t("badgesTitle")}>
-      <div className="flex flex-wrap gap-x-6 gap-y-3">
+      <div className="grid grid-cols-3 gap-3">
         <GradeBadge
           grade={score.nutri?.grade ?? null}
           label={t("badgeNutri")}
@@ -304,7 +302,7 @@ function UsBox({ product }: { product: P }) {
     <Section
       title={t("usTitle")}
       aside={
-        <span className="text-xs text-stone-500">
+        <span className="text-xs text-muted">
           {box.per === "serving" ? t("usServing", { g: Math.round(box.grams) }) : t("usPer100")}
         </span>
       }
@@ -318,7 +316,7 @@ function UsBox({ product }: { product: P }) {
           </div>
         ))}
       </div>
-      <p className="mt-2 text-xs text-stone-500">{t("usNote")}</p>
+      <p className="mt-2 text-xs text-muted">{t("usNote")}</p>
     </Section>
   );
 }
@@ -329,7 +327,7 @@ const MATCH_TONE: Record<Match["status"], string> = {
   poor_match: "text-amber-700 dark:text-amber-400",
   may_not_match: "text-amber-700 dark:text-amber-400",
   does_not_match: "text-rose-700 dark:text-rose-400",
-  unknown_match: "text-stone-500",
+  unknown_match: "text-muted",
 };
 
 function MatchCard({ match }: { match: Match }) {
@@ -351,10 +349,10 @@ function MatchCard({ match }: { match: Match }) {
         {match.score !== null &&
         match.status !== "does_not_match" &&
         match.status !== "unknown_match" ? (
-          <span className="num ml-2 text-sm font-medium text-stone-500">{match.score} %</span>
+          <span className="num ml-2 text-sm font-medium text-muted">{match.score} %</span>
         ) : null}
       </p>
-      <p className="mb-2 text-xs text-stone-500">{t("matchSubtitle")}</p>
+      <p className="mb-2 text-xs text-muted">{t("matchSubtitle")}</p>
       {[
         ["matchFailed", match.failed, "text-rose-700 dark:text-rose-400"],
         ["matchDoubtful", match.doubtful, "text-amber-700 dark:text-amber-400"],
@@ -397,10 +395,7 @@ function NutritionTable({ n, drink }: { n: Nutriments; drink: boolean }) {
         <tbody>
           {rows.map((k) => (
             <tr key={k} className="border-b border-stone-100 last:border-0 dark:border-stone-800">
-              <th
-                scope="row"
-                className="py-1.5 text-left font-normal text-stone-600 dark:text-stone-300"
-              >
+              <th scope="row" className="py-1.5 text-left font-normal text-soft">
                 {t(`n_${k}` as MessageKey)}
               </th>
               <td className="num py-1.5 text-right font-medium">
@@ -435,7 +430,7 @@ function Additives({ score }: { score: Score }) {
                 <span>{a.names[lang] ?? a.names.en ?? a.code}</span>
                 <span className="flex flex-wrap gap-1">
                   {a.anses ? (
-                    <span className="rounded-full px-2 py-0.5 text-xs text-stone-500 ring-1 ring-stone-300 dark:ring-stone-700">
+                    <span className="rounded-full px-2 py-0.5 text-xs text-muted ring-1 ring-stone-300 dark:ring-stone-700">
                       {t("anses")}
                     </span>
                   ) : null}
@@ -450,7 +445,7 @@ function Additives({ score }: { score: Score }) {
           })}
         </ul>
       ) : (
-        <p className="text-sm text-stone-500">{t("additivesNone")}</p>
+        <p className="text-sm text-muted">{t("additivesNone")}</p>
       )}
     </Section>
   );
@@ -487,10 +482,10 @@ function Allergens({ product }: { product: P }) {
           ))}
         </ul>
       ) : (
-        <p className="text-sm text-stone-500">{t("allergensNone")}</p>
+        <p className="text-sm text-muted">{t("allergensNone")}</p>
       )}
       {traceList.length ? (
-        <p className="mt-2 text-sm text-stone-600 dark:text-stone-300">
+        <p className="mt-2 text-sm text-soft">
           <span className="font-medium">{t("traces")}: </span>
           {traceList.join(", ")}
         </p>

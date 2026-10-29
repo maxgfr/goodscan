@@ -9,12 +9,10 @@ export function About() {
       <PageTitle title={t("aboutTitle")} subtitle={t("appTagline")} />
       <div className="grid gap-4">
         <section className="card">
-          <p className="text-sm leading-relaxed text-stone-700 dark:text-stone-300">
-            {t("aboutBody")}
-          </p>
+          <p className="text-sm leading-relaxed text-soft">{t("aboutBody")}</p>
         </section>
         <Section title={t("aboutScoreTitle")}>
-          <ol className="grid list-decimal gap-1.5 pl-5 text-sm leading-relaxed text-stone-700 dark:text-stone-300">
+          <ol className="grid list-decimal gap-1.5 pl-5 text-sm leading-relaxed text-soft">
             {(
               ["aboutScore1", "aboutScore2", "aboutScore3", "aboutScore4", "aboutScore5"] as const
             ).map((k) => (
@@ -23,7 +21,7 @@ export function About() {
           </ol>
         </Section>
         <Section title={t("aboutSourcesTitle")}>
-          <ul className="grid gap-2 text-sm leading-relaxed text-stone-700 dark:text-stone-300">
+          <ul className="grid gap-2 text-sm leading-relaxed text-soft">
             <li>
               {t("aboutOff")}{" "}
               <a

@@ -63,7 +63,7 @@ export function LabelReader({
   const [error, setError] = useState<string | null>(null);
   if (!settings) {
     return (
-      <p className="text-sm text-stone-600 dark:text-stone-300">
+      <p className="text-sm text-soft">
         {t("aiConnectBody")}{" "}
         <a
           className="font-semibold text-brand-700 underline dark:text-brand-400"
@@ -76,7 +76,7 @@ export function LabelReader({
   }
   return (
     <div className="grid gap-2">
-      <p className="text-sm text-stone-600 dark:text-stone-300">{prompt}</p>
+      <p className="text-sm text-soft">{prompt}</p>
       <div>
         <PhotoButton
           label={busy ? t("aiReading") : t("aiLabel")}
@@ -132,7 +132,7 @@ export function AiPanel({
   if (!settings) {
     return (
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="text-sm text-stone-600 dark:text-stone-300">{t("aiConnectBody")}</p>
+        <p className="text-sm text-soft">{t("aiConnectBody")}</p>
         <a
           href={href({ name: "settings" })}
           className="inline-flex items-center gap-2 rounded-xl border border-stone-300 px-4 py-2 text-sm font-semibold hover:bg-stone-100 dark:border-stone-700 dark:hover:bg-stone-800"
@@ -179,7 +179,7 @@ export function AiPanel({
         </Button>
       </form>
       {busy ? (
-        <p className="text-sm text-stone-500" role="status">
+        <p className="text-sm text-muted" role="status">
           {t("aiThinking")}
         </p>
       ) : null}
@@ -198,7 +198,7 @@ export function AiPanel({
                 {line.startsWith("- ") ? `• ${line.slice(2)}` : line}
               </p>
             ))}
-          <p className="mt-2 text-xs text-stone-400">{t("aiDisclaimer")}</p>
+          <p className="mt-2 text-xs text-muted">{t("aiDisclaimer")}</p>
         </div>
       ) : null}
     </div>

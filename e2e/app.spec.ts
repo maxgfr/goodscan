@@ -118,6 +118,8 @@ test("loads under the CSP with no error and navigates", async ({ page }) => {
   await offline(page, errors);
   await page.goto("./");
   await expect(page.getByRole("heading", { name: "Scan a product" })).toBeVisible();
+  // Samples until the first scan, no emoji standing in for flags.
+  await expect(page.getByRole("link", { name: "US Cheerios" })).toBeVisible();
   for (const name of ["History", "Settings", "About", "Scan"]) {
     await page
       .getByRole("navigation", { name: "Main" })
@@ -201,6 +203,11 @@ test("water is excellent; switching the language translates everything", async (
   await expect(page.getByRole("heading", { name: "Réglages" })).toBeVisible();
   await page.getByLabel("Langue").selectOption("de");
   await expect(page.getByRole("heading", { name: "Einstellungen" })).toBeVisible();
+  // Back to the browser's language.
+  await page.getByLabel("Sprache").selectOption("auto");
+  await expect(page.getByRole("heading", { name: "Settings" })).toBeVisible();
+  await expect(page.getByLabel("Language")).toHaveValue("auto");
+  await page.getByLabel("Language").selectOption("de");
   await page.goto("./#/history");
   await expect(page.getByRole("heading", { name: "Verlauf" })).toBeVisible();
   await expect(page.getByText("100", { exact: true })).toBeVisible();
@@ -211,6 +218,8 @@ test("preferences: a mandatory allergen rules a product out", async ({ page }) =
   const errors: string[] = [];
   await offline(page, errors);
   await page.goto("./#/settings");
+  // Groups other than nutrition start closed.
+  await page.locator("summary", { hasText: "Allergens" }).click();
   await page.getByLabel("Without gluten").selectOption("mandatory");
   await lookUp(page, "0016000275287");
   await expect(page.getByTestId("match")).toHaveText("Does not match");

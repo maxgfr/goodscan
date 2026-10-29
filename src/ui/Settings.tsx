@@ -4,7 +4,7 @@ import { useLlmSettings } from "llm-connect/react";
 import { useEffect, useState } from "react";
 import { llm, proxySettings } from "../ai/settings";
 import { clearAll } from "../data/db";
-import { detectRegion, LANGS, type Lang, type MessageKey, type Region } from "../i18n";
+import { detectLang, detectRegion, LANGS, type Lang, type MessageKey, type Region } from "../i18n";
 import {
   ATTRIBUTE_GROUPS,
   DEFAULT_PREFERENCES,
@@ -13,11 +13,11 @@ import {
   type Importance,
   PRESETS,
 } from "../score/match";
-import { Button, Notice, PageTitle, Section } from "./kit";
+import { Button, Icon, Notice, PageTitle, Section } from "./kit";
 import { useApp } from "./state";
 
 export function Settings() {
-  const { t, lang, setLang, regionSetting, setRegion, refreshHistory } = useApp();
+  const { t, langSetting, setLang, regionSetting, setRegion, refreshHistory } = useApp();
   const [erased, setErased] = useState(false);
   return (
     <>
@@ -29,9 +29,10 @@ export function Settings() {
               <span className="label">{t("settingsLanguage")}</span>
               <select
                 className="input"
-                value={lang}
-                onChange={(e) => setLang(e.target.value as Lang)}
+                value={langSetting}
+                onChange={(e) => setLang(e.target.value as Lang | "auto")}
               >
+                <option value="auto">{t("langAuto", { lang: LANGS[detectLang()] })}</option>
                 {Object.entries(LANGS).map(([code, name]) => (
                   <option key={code} value={code}>
                     {name}
@@ -54,14 +55,14 @@ export function Settings() {
               </select>
             </label>
           </div>
-          <p className="mt-2 text-xs text-stone-500">{t("settingsRegionNote")}</p>
+          <p className="mt-2 text-xs text-muted">{t("settingsRegionNote")}</p>
         </Section>
 
         <Preferences />
         <AiSettings />
 
         <Section title={t("settingsData")}>
-          <p className="mb-3 text-sm text-stone-600 dark:text-stone-300">{t("settingsDataNote")}</p>
+          <p className="mb-3 text-sm text-soft">{t("settingsDataNote")}</p>
           <div className="flex items-center gap-3">
             <Button
               variant="danger"
@@ -73,7 +74,7 @@ export function Settings() {
             >
               {t("settingsErase")}
             </Button>
-            {erased ? <span className="text-sm text-stone-500">{t("settingsErased")}</span> : null}
+            {erased ? <span className="text-sm text-muted">{t("settingsErased")}</span> : null}
           </div>
         </Section>
       </div>
@@ -88,9 +89,7 @@ function Preferences() {
   const name = (n: Record<string, string>) => n[lang] ?? n.en ?? "";
   return (
     <Section title={t("settingsPreferences")}>
-      <p className="mb-3 text-sm text-stone-600 dark:text-stone-300">
-        {t("settingsPreferencesNote")}
-      </p>
+      <p className="mb-3 text-sm text-soft">{t("settingsPreferencesNote")}</p>
       <p className="label">{t("settingsPresets")}</p>
       <div className="mb-4 flex flex-wrap gap-2">
         {Object.entries(PRESETS).map(([id, preset]) => {
@@ -116,32 +115,54 @@ function Preferences() {
           );
         })}
       </div>
-      <div className="grid gap-4">
-        {ATTRIBUTE_GROUPS.map((g) => (
-          <fieldset key={g.id}>
-            <legend className="mb-1 text-sm font-semibold">{name(g.name)}</legend>
-            {g.warning ? <p className="mb-2 text-xs text-stone-500">{name(g.warning)}</p> : null}
-            <div className="grid gap-1">
-              {g.attributes.map((a) => (
-                <label key={a.id} className="flex items-center justify-between gap-3 text-sm">
-                  <span>{name(a.name)}</span>
-                  <select
-                    className="input w-40 shrink-0 py-1"
-                    value={preferences[a.id] ?? "not_important"}
-                    onChange={(e) => set(a.id, e.target.value as Importance)}
-                    aria-label={name(a.name)}
-                  >
-                    {IMPORTANCES.map((i) => (
-                      <option key={i} value={i}>
-                        {name(IMPORTANCE[i])}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-              ))}
-            </div>
-          </fieldset>
-        ))}
+      <div className="grid gap-2">
+        {ATTRIBUTE_GROUPS.map((g, gi) => {
+          const active = g.attributes.filter(
+            (a) => (preferences[a.id] ?? "not_important") !== "not_important",
+          ).length;
+          return (
+            <details
+              key={g.id}
+              open={gi === 0}
+              className="group rounded-xl border border-stone-200 dark:border-stone-800"
+            >
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-3 py-2.5 text-sm font-semibold [&::-webkit-details-marker]:hidden">
+                {name(g.name)}
+                <span className="flex items-center gap-2 text-xs font-medium text-muted">
+                  {active ? <span className="num">{active}</span> : null}
+                  <Icon name="right" className="size-4 transition-transform group-open:rotate-90" />
+                </span>
+              </summary>
+              <div className="border-t border-stone-200 px-3 pb-2 dark:border-stone-800">
+                {g.warning ? <p className="pt-2 text-xs text-muted">{name(g.warning)}</p> : null}
+                <ul className="divide-y divide-stone-100 dark:divide-stone-800/70">
+                  {g.attributes.map((a) => {
+                    const value = preferences[a.id] ?? "not_important";
+                    return (
+                      <li key={a.id} className="flex items-center gap-3 py-2">
+                        <label htmlFor={`pref-${a.id}`} className="min-w-0 flex-1 text-sm">
+                          {name(a.name)}
+                        </label>
+                        <select
+                          id={`pref-${a.id}`}
+                          className={`input w-36 shrink-0 py-1.5 sm:w-44 ${value === "not_important" ? "text-muted" : "font-medium"}`}
+                          value={value}
+                          onChange={(e) => set(a.id, e.target.value as Importance)}
+                        >
+                          {IMPORTANCES.map((i) => (
+                            <option key={i} value={i}>
+                              {name(IMPORTANCE[i])}
+                            </option>
+                          ))}
+                        </select>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </details>
+          );
+        })}
       </div>
       <div className="mt-4">
         <Button variant="ghost" onClick={() => setPreferences(DEFAULT_PREFERENCES)}>
@@ -180,7 +201,7 @@ function AiSettings() {
 
   return (
     <Section title={t("settingsAi")}>
-      <p className="mb-3 text-sm text-stone-600 dark:text-stone-300">{t("settingsAiNote")}</p>
+      <p className="mb-3 text-sm text-soft">{t("settingsAiNote")}</p>
       {proxySettings() ? <Notice>{t("aiProxy")}</Notice> : null}
       <div className="grid gap-4">
         <div
@@ -194,7 +215,7 @@ function AiSettings() {
               role="tab"
               aria-selected={d.custom === custom}
               onClick={() => llm.toggleCustom(custom)}
-              className={`rounded-lg px-3 py-1 font-medium ${d.custom === custom ? "bg-white shadow-sm dark:bg-stone-950" : "text-stone-500"}`}
+              className={`rounded-lg px-3 py-1 font-medium ${d.custom === custom ? "bg-white shadow-sm dark:bg-stone-950" : "text-muted"}`}
             >
               {custom ? t("aiCustom") : t("aiProvider")}
             </button>
@@ -313,7 +334,7 @@ function AiSettings() {
                   </button>
                 ))}
                 {models.length === 0 ? (
-                  <p className="px-3 py-2 text-sm text-stone-500">{t("aiNoModel")}</p>
+                  <p className="px-3 py-2 text-sm text-muted">{t("aiNoModel")}</p>
                 ) : null}
               </div>
             </div>
@@ -357,7 +378,7 @@ function AiSettings() {
             {t("aiForget")}
           </Button>
           {saved ? (
-            <span className="text-sm text-stone-600 dark:text-stone-300" role="status">
+            <span className="text-sm text-soft" role="status">
               {saved}
             </span>
           ) : null}

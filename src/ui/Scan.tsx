@@ -7,12 +7,12 @@ import { Button, Icon, Notice, PageTitle } from "./kit";
 import { go, href } from "./router";
 import { useApp } from "./state";
 
-/** One product per market, to try without a package in hand. */
+/** One product per market, to try without a package in hand (shown until the first scan). */
 const SAMPLES = [
-  { code: "3017620422003", label: "🇫🇷 Nutella" },
-  { code: "4000417025005", label: "🇩🇪 Ritter Sport" },
-  { code: "0016000275287", label: "🇺🇸 Cheerios" },
-  { code: "3274080005003", label: "💧 Cristaline" },
+  { code: "3017620422003", market: "FR", label: "Nutella" },
+  { code: "4000417025005", market: "DE", label: "Ritter Sport" },
+  { code: "0016000275287", market: "US", label: "Cheerios" },
+  { code: "3274080005003", market: "FR", label: "Cristaline" },
 ];
 
 export function Scan() {
@@ -82,7 +82,7 @@ export function Scan() {
     <>
       <PageTitle title={t("scanTitle")} subtitle={t("scanSubtitle")} />
 
-      <div className="relative mb-4 aspect-[4/3] overflow-hidden rounded-2xl bg-stone-900 shadow-sm sm:aspect-video">
+      <div className="relative mb-4 aspect-[3/2] overflow-hidden rounded-2xl bg-stone-900 sm:aspect-video">
         <video
           ref={video}
           className={`size-full object-cover ${on ? "" : "invisible"}`}
@@ -172,21 +172,41 @@ export function Scan() {
         </label>
       </div>
 
-      <div className="mb-6 flex flex-wrap items-center gap-2 text-sm">
-        <span className="text-stone-500">{t("scanTry")}</span>
-        {SAMPLES.map((s) => (
-          <a key={s.code} className="chip" href={href({ name: "product", code: s.code })}>
-            {s.label}
-          </a>
-        ))}
-      </div>
-
       {history.length ? (
         <section>
-          <h2 className="mb-2 font-semibold">{t("scanRecent")}</h2>
+          <div className="mb-2 flex items-baseline justify-between">
+            <h2 className="font-semibold">{t("scanRecent")}</h2>
+            <a
+              className="text-sm font-medium text-brand-700 underline dark:text-brand-400"
+              href={href({ name: "history" })}
+            >
+              {t("navHistory")}
+            </a>
+          </div>
           <HistoryList items={history.slice(0, 5)} />
         </section>
-      ) : null}
+      ) : (
+        <section aria-labelledby="try">
+          <h2 id="try" className="mb-2 text-sm font-semibold">
+            {t("scanTry")}
+          </h2>
+          <ul className="flex flex-wrap gap-2">
+            {SAMPLES.map((s) => (
+              <li key={s.code}>
+                <a
+                  className="chip inline-flex items-center gap-2 py-1.5 text-sm"
+                  href={href({ name: "product", code: s.code })}
+                >
+                  <span className="num rounded bg-stone-100 px-1 text-[10px] font-semibold tracking-wide text-muted dark:bg-stone-800">
+                    {s.market}
+                  </span>
+                  {s.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
     </>
   );
 }

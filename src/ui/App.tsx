@@ -63,12 +63,16 @@ export function App() {
           </nav>
           <a
             href={href({ name: "settings" })}
-            className="ml-auto flex max-w-[45%] items-center gap-2 rounded-full border border-stone-300 px-3 py-1 text-xs text-stone-600 transition hover:border-brand-500 dark:border-stone-700 dark:text-stone-300"
+            className="ml-auto flex max-w-[45%] items-center gap-2 rounded-full border border-stone-300 px-3 py-1.5 text-xs text-soft transition hover:border-brand-500 dark:border-stone-700"
+            aria-label={settings ? modelLabel(settings) : t("aiConnect")}
           >
             <span
               className={`size-2 shrink-0 rounded-full ${settings ? "bg-brand-500" : "bg-stone-400"}`}
             />
-            <span className="truncate">{settings ? modelLabel(settings) : t("aiConnect")}</span>
+            <Icon name="spark" className="size-4 shrink-0 sm:hidden" />
+            <span className="hidden truncate sm:inline">
+              {settings ? modelLabel(settings) : t("aiConnect")}
+            </span>
           </a>
         </div>
       </header>
@@ -77,7 +81,7 @@ export function App() {
         {ready ? (
           <View route={route} />
         ) : (
-          <div className="grid place-items-center py-24 text-stone-400">
+          <div className="grid place-items-center py-24 text-muted">
             <Spinner className="size-6" />
           </div>
         )}
@@ -95,7 +99,7 @@ export function App() {
                 key={n.label}
                 href={href(n.route)}
                 aria-current={active ? "page" : undefined}
-                className={`flex flex-col items-center gap-0.5 py-2 text-[11px] font-medium ${active ? "text-brand-700 dark:text-brand-400" : "text-stone-500"}`}
+                className={`flex flex-col items-center gap-0.5 py-2 text-[11px] font-medium ${active ? "text-brand-700 dark:text-brand-400" : "text-muted"}`}
               >
                 <Icon name={n.icon} />
                 {t(n.label)}

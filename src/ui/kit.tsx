@@ -52,7 +52,7 @@ const VARIANTS: Record<Variant, string> = {
   secondary:
     "border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-100 dark:hover:bg-stone-800",
   ghost:
-    "text-stone-600 hover:bg-stone-100 hover:text-stone-900 dark:text-stone-300 dark:hover:bg-stone-800 dark:hover:text-white",
+    "text-stone-600 hover:bg-stone-100 hover:text-soft dark:hover:bg-stone-800 dark:hover:text-white",
   danger: "text-rose-600 hover:bg-rose-50 dark:text-rose-400 dark:hover:bg-rose-950",
 };
 
@@ -131,9 +131,7 @@ export function PageTitle({ title, subtitle }: { title: string; subtitle?: React
   return (
     <div className="mb-5">
       <h1 className="text-2xl font-bold tracking-tight">{title}</h1>
-      {subtitle ? (
-        <p className="mt-1 text-sm text-stone-500 dark:text-stone-400">{subtitle}</p>
-      ) : null}
+      {subtitle ? <p className="mt-1 text-sm text-muted">{subtitle}</p> : null}
     </div>
   );
 }
@@ -152,8 +150,8 @@ export const VERDICT_TONE: Record<Verdict, { ring: string; text: string; bg: str
     bg: "bg-amber-500",
   },
   bad: { ring: "stroke-rose-500", text: "text-rose-700 dark:text-rose-400", bg: "bg-rose-500" },
-  unknown: { ring: "stroke-stone-400", text: "text-stone-500", bg: "bg-stone-400" },
-  "not-food": { ring: "stroke-stone-400", text: "text-stone-500", bg: "bg-stone-400" },
+  unknown: { ring: "stroke-stone-400", text: "text-muted", bg: "bg-stone-400" },
+  "not-food": { ring: "stroke-stone-400", text: "text-muted", bg: "bg-stone-400" },
 };
 
 /** The 0–100 score as a dial, coloured by verdict. */
@@ -212,7 +210,7 @@ export function ScoreDial({
         <div className="num text-4xl font-bold tracking-tight" data-testid="score">
           {value ?? "?"}
         </div>
-        <div className="text-xs text-stone-500 dark:text-stone-400">/ 100</div>
+        <div className="text-xs text-muted">/ 100</div>
       </div>
     </div>
   );
@@ -237,17 +235,17 @@ export function GradeBadge({
   note?: string;
 }) {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex flex-col items-start gap-1.5 sm:flex-row sm:items-center sm:gap-2">
       <span
-        className={`grid size-9 place-items-center rounded-lg text-lg font-bold uppercase ${grade ? GRADE_COLORS[grade] : "bg-stone-200 text-stone-500 dark:bg-stone-800"}`}
+        className={`grid size-9 place-items-center rounded-lg text-lg font-bold uppercase ${grade ? GRADE_COLORS[grade] : "bg-stone-200 text-muted dark:bg-stone-800"}`}
         aria-hidden="true"
       >
         {grade ?? "?"}
       </span>
-      <span className="text-xs leading-tight text-stone-600 dark:text-stone-300">
+      <span className="text-xs leading-tight text-soft">
         {label}
         <span className="sr-only"> {grade?.toUpperCase() ?? "?"}</span>
-        {note ? <span className="block text-stone-400">{note}</span> : null}
+        {note ? <span className="block text-muted">{note}</span> : null}
       </span>
     </div>
   );
@@ -256,14 +254,14 @@ export function GradeBadge({
 export function NovaBadge({ group, label }: { group: number | undefined; label: string }) {
   const colors = ["", "bg-emerald-700", "bg-yellow-500", "bg-orange-500", "bg-rose-600"];
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex flex-col items-start gap-1.5 sm:flex-row sm:items-center sm:gap-2">
       <span
-        className={`grid size-9 place-items-center rounded-lg text-lg font-bold text-white ${group ? colors[group] : "bg-stone-200 text-stone-500 dark:bg-stone-800"}`}
+        className={`grid size-9 place-items-center rounded-lg text-lg font-bold text-white ${group ? colors[group] : "bg-stone-200 text-muted dark:bg-stone-800"}`}
         aria-hidden="true"
       >
         {group ?? "?"}
       </span>
-      <span className="text-xs leading-tight text-stone-600 dark:text-stone-300">
+      <span className="text-xs leading-tight text-soft">
         {label}
         <span className="sr-only"> {group ?? "?"}</span>
       </span>
@@ -282,7 +280,7 @@ export function Section({
 }) {
   return (
     <section className="card">
-      <div className="mb-3 flex items-baseline justify-between gap-3">
+      <div className="mb-3 flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
         <h2 className="font-semibold">{title}</h2>
         {aside}
       </div>
