@@ -358,3 +358,21 @@ test("reads a barcode from a photo", async ({ page }) => {
   expect(page.url()).toContain("#/p/4008400402222");
   expect(errors).toEqual([]);
 });
+
+test("starts even when another tab holds the local database", async ({ page, context }) => {
+  const errors: string[] = [];
+  await offline(page, errors);
+  // A first tab opens the app (and its database), then something deletes the database
+  // while that tab still holds it: the deletion waits, and so would every later open.
+  const other = await context.newPage();
+  await other.goto("./");
+  await expect(other.getByRole("heading", { name: "Scan a product" })).toBeVisible();
+  await other.evaluate(() => {
+    indexedDB.deleteDatabase("goodscan");
+  });
+  await page.goto("./");
+  await expect(page.getByRole("heading", { name: "Scan a product" })).toBeVisible({
+    timeout: 8000,
+  });
+  expect(errors).toEqual([]);
+});
