@@ -16,7 +16,7 @@ const SAMPLES = [
 ];
 
 export function Scan() {
-  const { t, history } = useApp();
+  const { t, history, searchOn } = useApp();
   const video = useRef<HTMLVideoElement>(null);
   const camera = useRef<Camera | null>(null);
   const [on, setOn] = useState(false);
@@ -71,11 +71,10 @@ export function Scan() {
   function submit(e: React.FormEvent) {
     e.preventDefault();
     const clean = cleanCode(code);
-    if (!clean) {
-      setError(t("scanInvalid"));
-      return;
-    }
-    go({ name: "product", code: clean });
+    if (clean) return go({ name: "product", code: clean });
+    // Not a barcode: a name, when name search is on.
+    if (searchOn && /\p{L}/u.test(code)) return go({ name: "search", q: code.trim() });
+    setError(t("scanInvalid"));
   }
 
   return (
@@ -142,14 +141,16 @@ export function Scan() {
       <div className="mb-6 grid gap-3 sm:grid-cols-[1fr_auto]">
         <form onSubmit={submit} className="flex gap-2">
           <label className="sr-only" htmlFor="code">
-            {t("scanManual")}
+            {searchOn ? t("searchLabel") : t("scanManual")}
           </label>
           <input
             id="code"
-            className="input font-mono"
-            inputMode="numeric"
+            className={`input ${searchOn ? "" : "font-mono"}`}
+            type={searchOn ? "search" : "text"}
+            inputMode={searchOn ? "search" : "numeric"}
+            enterKeyHint={searchOn ? "search" : "go"}
             autoComplete="off"
-            placeholder={t("scanManualPlaceholder")}
+            placeholder={searchOn ? t("searchPlaceholder") : t("scanManualPlaceholder")}
             value={code}
             onChange={(e) => setCode(e.target.value)}
           />

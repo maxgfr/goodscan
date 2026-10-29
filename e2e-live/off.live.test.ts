@@ -5,6 +5,7 @@
  */
 import { describe, expect, test } from "bun:test";
 import { lookup, RateLimiter } from "../src/data/off";
+import { SEARCH_URL, searchProducts } from "../src/data/search";
 import { scoreProduct } from "../src/score/score";
 
 const CASES = [
@@ -44,5 +45,17 @@ describe("Open Food Facts, live", () => {
       { efsa_evaluation_overexposure_risk?: { en: string } }
     >;
     expect(t["en:e250"]?.efsa_evaluation_overexposure_risk?.en).toBe("en:high");
+  }, 30_000);
+
+  test("name search answers, and says whether this site may call it yet", async () => {
+    const page = await searchProducts("nutella", { lang: "fr", limiter: new RateLimiter() });
+    expect(page.count).toBeGreaterThan(10);
+    expect(page.hits[0]?.code).toMatch(/^\d{8,14}$/);
+    const res = await fetch(`${SEARCH_URL}?q=nutella&page_size=1&fields=code`, {
+      headers: { Origin: "https://maxgfr.github.io" },
+    });
+    const cors = res.headers.get("access-control-allow-origin");
+    // Informational: name search shows in the app once this is open (search-a-licious#427).
+    console.log(`search CORS for maxgfr.github.io: ${cors ?? "closed"}`);
   }, 30_000);
 });

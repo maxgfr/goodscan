@@ -6,6 +6,7 @@ describe("routes", () => {
     for (const r of [
       { name: "scan" },
       { name: "product", code: "3017620422003" },
+      { name: "search", q: "pâte à tartiner & co" },
       { name: "history" },
       { name: "settings" },
       { name: "about" },
@@ -18,5 +19,6 @@ describe("routes", () => {
     expect(parseRoute("#/p/abc")).toEqual({ name: "scan" });
     expect(parseRoute("")).toEqual({ name: "scan" });
     expect(parseRoute("#/nope")).toEqual({ name: "scan" });
+    expect(parseRoute("#/search?q=%20")).toEqual({ name: "scan" });
   });
 });
