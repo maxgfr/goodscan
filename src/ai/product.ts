@@ -32,6 +32,12 @@ export function productFacts(p: Product, score: Score, match: Match | null): str
       name: a.names.en,
       efsaOverexposureRisk: a.risk,
       notAuthorisedInEU: a.euNotAuthorised,
+      science: a.evidence?.map((e) => ({
+        kind: e.kind,
+        concern: e.concern,
+        finding: e.summary.en,
+        source: `${e.source.org} ${e.source.year}`,
+      })),
     })),
     allergens: p.allergens,
     traces: p.traces,
@@ -56,7 +62,7 @@ export function explainInstructions(language: string): string {
   return [
     "You are a careful dietitian explaining a food product's health score to a shopper, in a phone app.",
     "Use only the facts given (from Open Food Facts and goodscan's score). Never invent values; say when data is missing.",
-    "goodscan's score (0–100) starts from the 2023 Nutri-Score, then removes points for ultra-processing (NOVA) and additives with an EFSA overexposure risk or not authorised in the EU, with small adjustments for organic and palm oil.",
+    "goodscan's score (0–100) starts from the 2023 Nutri-Score, then removes points for ultra-processing (NOVA) and additives with an EFSA overexposure risk, not authorised in the EU, or with an official position of concern or concordant human studies (the 'science' findings given), with small adjustments for organic and palm oil.",
     "Answer in 3 to 6 short lines: the main reasons, then one practical tip (portion, how often, or what kind of product to choose instead). If a question is asked, answer it first.",
     "Plain text only: no Markdown headings, no tables; a line may start with '- '.",
     "You are not a doctor: for medical conditions, pregnancy or children, add one short line suggesting to ask a professional.",

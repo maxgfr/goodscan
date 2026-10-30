@@ -69,6 +69,7 @@ export const en = {
   reason_additiveHigh: "{additive}: high risk of overexposure (EFSA)",
   reason_additiveModerate: "{additive}: moderate risk of overexposure (EFSA)",
   reason_additiveEu: "{additive}: not authorised in EU food",
+  reason_additiveEvidence: "{additive}: a concern backed by an official body or human studies",
   reason_organic: "Organic",
   reason_palmOil: "Contains palm oil",
   reasonCap: "caps the score at {cap}",
@@ -124,6 +125,17 @@ export const en = {
   risk_unknown: "Not evaluated",
   euNotAuthorised: "Not authorised in the EU",
   anses: "Watched by ANSES",
+  scienceTitle: "What science says",
+  scienceNote:
+    "Points come off only for an official position of concern, or two human studies that agree. A single study is shown, not counted.",
+  evidence_official: "Official position",
+  evidence_cohort: "Cohort study",
+  evidence_trial: "Human trial",
+  evidence_meta: "Meta-analysis",
+  evidence_animal: "Animal study",
+  evidence_lab: "Lab study",
+  evidenceConcern: "Concern",
+  evidenceReassuring: "Reassuring",
 
   allergensTitle: "Allergens",
   allergensNone: "None listed.",
@@ -218,13 +230,15 @@ export const en = {
     "Start from nutrition: the 2023 Nutri-Score (A ≈ 85–100 … E ≈ 0–23), the database's or one goodscan computes from the facts.",
   aboutScore2: "Processing: −12 for ultra-processed (NOVA 4), −4 for processed (NOVA 3).",
   aboutScore3:
-    "Additives: −15 for a high risk of overexposure according to EFSA (and the score cannot go above 49), −6 for a moderate one, −25 for an additive the EU does not authorise (score at most 25). At most −45 in all.",
+    "Additives: −15 for a high risk of overexposure according to EFSA (and the score cannot go above 49), −6 for a moderate one, −25 for an additive the EU does not authorise (score at most 25). −6 when science weighs against it: an official position of concern (WHO, IARC, EFSA, FDA) or two human studies that agree, not on top of the high-risk or EU penalties. At most −45 in all.",
   aboutScore4: "Organic +5, palm oil −3. Water is 100, alcohol at most 20.",
   aboutScore5: "75 and up is excellent, 50 good, 25 poor, below bad.",
   aboutSourcesTitle: "Sources and licences",
   aboutOff:
     "Product data, additives and preference attributes: Open Food Facts, Open Beauty Facts, Open Pet Food Facts, Open Products Facts — Open Database License (ODbL); images CC BY-SA.",
   aboutEfsa: "Additive risks: EFSA re-evaluations, as recorded in the Open Food Facts taxonomy.",
+  aboutScience:
+    "What science says: official positions (WHO, IARC, EFSA, FDA) and human studies, each linked to its DOI or PubMed record, from a verified literature research.",
   aboutFda:
     "US nutrient box: FDA Daily Values and the proposed front-of-package Nutrition Info box (Low ≤ 5 %, High ≥ 20 % DV).",
   aboutNotAdvice:

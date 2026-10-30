@@ -1,5 +1,6 @@
 /** One product: the score and why, the US or EU view first, "for you", then the details. */
 import { useCallback, useMemo, useState } from "react";
+import { type Evidence, evidenceUrl } from "../data/evidence";
 import { ADD_PRODUCT_URL, DATABASES, productUrl } from "../data/off";
 import { isFood, type Nutriments, type Product as P } from "../data/product";
 import type { MessageKey } from "../i18n";
@@ -426,20 +427,23 @@ function Additives({ score }: { score: Score }) {
           {score.additives.map((a) => {
             const risk = a.euNotAuthorised ? "high" : (a.risk ?? "unknown");
             return (
-              <li key={a.tag} className="flex flex-wrap items-center justify-between gap-2 text-sm">
-                <span>{a.names[lang] ?? a.names.en ?? a.code}</span>
-                <span className="flex flex-wrap gap-1">
-                  {a.anses ? (
-                    <span className="rounded-full px-2 py-0.5 text-xs text-muted ring-1 ring-stone-300 dark:ring-stone-700">
-                      {t("anses")}
+              <li key={a.tag} className="grid gap-1.5 text-sm">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <span>{a.names[lang] ?? a.names.en ?? a.code}</span>
+                  <span className="flex flex-wrap gap-1">
+                    {a.anses ? (
+                      <span className="rounded-full px-2 py-0.5 text-xs text-muted ring-1 ring-stone-300 dark:ring-stone-700">
+                        {t("anses")}
+                      </span>
+                    ) : null}
+                    <span
+                      className={`rounded-full px-2 py-0.5 text-xs font-medium ${RISK_TONE[risk]}`}
+                    >
+                      {a.euNotAuthorised ? t("euNotAuthorised") : t(`risk_${risk}` as MessageKey)}
                     </span>
-                  ) : null}
-                  <span
-                    className={`rounded-full px-2 py-0.5 text-xs font-medium ${RISK_TONE[risk]}`}
-                  >
-                    {a.euNotAuthorised ? t("euNotAuthorised") : t(`risk_${risk}` as MessageKey)}
                   </span>
-                </span>
+                </div>
+                {a.evidence ? <Science evidence={a.evidence} /> : null}
               </li>
             );
           })}
@@ -448,6 +452,49 @@ function Additives({ score }: { score: Score }) {
         <p className="text-sm text-muted">{t("additivesNone")}</p>
       )}
     </Section>
+  );
+}
+
+/** The cited findings on one additive, folded under it. */
+function Science({ evidence }: { evidence: Evidence[] }) {
+  const { t, lang } = useApp();
+  const l = lang === "fr" || lang === "de" ? lang : "en";
+  return (
+    <details
+      className="rounded-xl bg-stone-50 px-3 py-2 dark:bg-stone-800/60"
+      data-testid="science"
+    >
+      <summary className="cursor-pointer text-xs font-semibold text-brand-700 dark:text-brand-400">
+        {t("scienceTitle")} ({evidence.length})
+      </summary>
+      <ul className="mt-2 grid gap-3">
+        {evidence.map((e) => (
+          <li key={`${e.source.url}${e.summary.en}`} className="grid gap-1">
+            <span className="flex flex-wrap gap-1">
+              <span className="rounded-full px-2 py-0.5 text-xs text-muted ring-1 ring-stone-300 dark:ring-stone-700">
+                {t(`evidence_${e.kind}` as MessageKey)}
+              </span>
+              <span
+                className={`rounded-full px-2 py-0.5 text-xs font-medium ${e.concern ? RISK_TONE.moderate : RISK_TONE.none}`}
+              >
+                {e.concern ? t("evidenceConcern") : t("evidenceReassuring")}
+              </span>
+            </span>
+            <p className="text-soft">{e.summary[l]}</p>
+            <a
+              className="inline-flex w-fit items-center gap-1 text-xs text-muted underline"
+              href={evidenceUrl(e)}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {e.source.org}, {e.source.year}
+              <Icon name="external" className="size-3" />
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p className="mt-2 text-xs text-muted">{t("scienceNote")}</p>
+    </details>
   );
 }
 

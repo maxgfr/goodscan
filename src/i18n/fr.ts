@@ -72,6 +72,7 @@ export const fr: Messages = {
   reason_additiveHigh: "{additive} : risque élevé de surexposition (EFSA)",
   reason_additiveModerate: "{additive} : risque modéré de surexposition (EFSA)",
   reason_additiveEu: "{additive} : non autorisé dans l'UE",
+  reason_additiveEvidence: "{additive} : risque signalé par une autorité ou des études humaines",
   reason_organic: "Bio",
   reason_palmOil: "Contient de l'huile de palme",
   reasonCap: "plafonne la note à {cap}",
@@ -127,6 +128,17 @@ export const fr: Messages = {
   risk_unknown: "Non évalué",
   euNotAuthorised: "Non autorisé dans l'UE",
   anses: "Surveillé par l'ANSES",
+  scienceTitle: "Ce que dit la science",
+  scienceNote:
+    "Des points ne sont retirés que pour une position officielle préoccupante ou deux études humaines concordantes. Une étude isolée est citée, sans pénalité.",
+  evidence_official: "Position officielle",
+  evidence_cohort: "Étude de cohorte",
+  evidence_trial: "Essai chez l'humain",
+  evidence_meta: "Méta-analyse",
+  evidence_animal: "Étude animale",
+  evidence_lab: "Étude en laboratoire",
+  evidenceConcern: "Préoccupant",
+  evidenceReassuring: "Rassurant",
 
   allergensTitle: "Allergènes",
   allergensNone: "Aucun indiqué.",
@@ -221,7 +233,7 @@ export const fr: Messages = {
     "On part de la nutrition : le Nutri-Score 2023 (A ≈ 85–100 … E ≈ 0–23), celui de la base ou celui que goodscan calcule à partir des valeurs.",
   aboutScore2: "Transformation : −12 si ultra-transformé (NOVA 4), −4 si transformé (NOVA 3).",
   aboutScore3:
-    "Additifs : −15 pour un risque élevé de surexposition selon l'EFSA (et la note ne peut dépasser 49), −6 pour un risque modéré, −25 pour un additif non autorisé dans l'UE (note au plus 25). Au plus −45 en tout.",
+    "Additifs : −15 pour un risque élevé de surexposition selon l'EFSA (et la note ne peut dépasser 49), −6 pour un risque modéré, −25 pour un additif non autorisé dans l'UE (note au plus 25). −6 quand la science pèse contre lui : une position officielle préoccupante (OMS, CIRC, EFSA, FDA) ou deux études humaines concordantes, sans cumul avec les pénalités risque élevé ou UE. Au plus −45 en tout.",
   aboutScore4: "Bio +5, huile de palme −3. L'eau vaut 100, l'alcool au plus 20.",
   aboutScore5: "À partir de 75 c'est excellent, 50 bon, 25 médiocre, en dessous mauvais.",
   aboutSourcesTitle: "Sources et licences",
@@ -229,6 +241,8 @@ export const fr: Messages = {
     "Données produits, additifs et attributs de préférences : Open Food Facts, Open Beauty Facts, Open Pet Food Facts, Open Products Facts — Open Database License (ODbL) ; images CC BY-SA.",
   aboutEfsa:
     "Risques des additifs : réévaluations de l'EFSA, telles que reprises dans la taxonomie d'Open Food Facts.",
+  aboutScience:
+    "Ce que dit la science : positions officielles (OMS, CIRC, EFSA, FDA) et études humaines, chacune liée à son DOI ou à sa fiche PubMed, issues d'une recherche bibliographique vérifiée.",
   aboutFda:
     "Encadré nutriments US : valeurs quotidiennes de la FDA et projet d'encadré « Nutrition Info » en face avant (Faible ≤ 5 %, Élevé ≥ 20 % VQ).",
   aboutNotAdvice:

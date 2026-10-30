@@ -34,6 +34,17 @@ export function About() {
               </a>
             </li>
             <li>{t("aboutEfsa")}</li>
+            <li>
+              {t("aboutScience")}{" "}
+              <a
+                className="underline"
+                href="https://github.com/maxgfr/goodscan/tree/main/docs/research/additives-evidence"
+                target="_blank"
+                rel="noreferrer"
+              >
+                docs/research
+              </a>
+            </li>
             <li>{t("aboutFda")}</li>
             <li className="font-medium">{t("aboutNotAdvice")}</li>
             <li>
