@@ -404,6 +404,9 @@ test("the manifest makes it installable", async ({ page, request }) => {
   expect(manifest.icons.map((i: { sizes: string }) => i.sizes)).toEqual(
     expect.arrayContaining(["192x192", "512x512"]),
   );
+  // A new version takes over without waiting for every tab to close.
+  const sw = await (await request.get(new URL("sw.js", page.url()).href)).text();
+  expect(sw).toMatch(/self\.skipWaiting\(\)\s*,\s*\w+\.clientsClaim\(\)/);
 });
 
 test("@camera scans a real barcode from the camera", async ({ page }) => {
