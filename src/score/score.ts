@@ -9,7 +9,7 @@
  */
 import additivesData from "../data/additives.json";
 import { EU_NOT_AUTHORISED } from "../data/eu";
-import { EVIDENCE, type Evidence, weighs } from "../data/evidence";
+import { type Evidence, evidenceFor, weighs } from "../data/evidence";
 import { type Grade, isCosmetic, isFood, type Product } from "../data/product";
 import { type CosmeticFlag, scoreCosmetic } from "./cosmetic";
 import { type AdditiveHazard, additiveHazard } from "./hazard";
@@ -102,7 +102,7 @@ export function additiveInfo(tag: string): AdditiveInfo {
   if (d?.r) info.risk = RISK[d.r];
   if (d?.a) info.anses = true;
   if (tag in EU_NOT_AUTHORISED) info.euNotAuthorised = true;
-  const evidence = EVIDENCE[tag];
+  const evidence = evidenceFor(tag);
   if (evidence?.length) {
     info.evidence = evidence;
     if (weighs(evidence)) info.evidenceWeighs = true;

@@ -38,6 +38,14 @@ export function weighs(list: readonly Evidence[]): boolean {
   );
 }
 
+/**
+ * The findings on an additive: its own, else its family's, for a lettered
+ * subtype (E960c, enzymatically produced steviol glycosides, is still E960).
+ */
+export function evidenceFor(tag: string): Evidence[] | undefined {
+  return EVIDENCE[tag] ?? EVIDENCE[tag.replace(/^(en:e\d+)[a-z]+$/, "$1")];
+}
+
 /** The link to show: the DOI, else PubMed, else the page. */
 export function evidenceUrl(e: Evidence): string {
   if (e.source.doi) return `https://doi.org/${e.source.doi}`;

@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test";
 import additives from "./additives.json";
-import { EVIDENCE, type Evidence, evidenceUrl, weighs } from "./evidence";
+import { EVIDENCE, type Evidence, evidenceFor, evidenceUrl, weighs } from "./evidence";
 
 const finding = (kind: Evidence["kind"], concern = true): Evidence => ({
   summary: { en: "x", fr: "x", de: "x" },
@@ -53,6 +53,16 @@ describe("evidence data", () => {
     expect(evidenceUrl({ ...e, source: { ...e.source, pmid: "1", doi: "10.1136/bmj-1" } })).toBe(
       "https://doi.org/10.1136/bmj-1",
     );
+  });
+});
+
+describe("subtypes", () => {
+  test("a lettered subtype inherits its family's findings, unless it has its own", () => {
+    expect(evidenceFor("en:e960c")).toBe(EVIDENCE["en:e960"]);
+    expect(evidenceFor("en:e952i")).toBe(EVIDENCE["en:e952"]);
+    expect(evidenceFor("en:e407a")).toBe(EVIDENCE["en:e407a"]);
+    expect(evidenceFor("en:e407a")).not.toBe(EVIDENCE["en:e407"]);
+    expect(evidenceFor("en:e330")).toBeUndefined();
   });
 });
 

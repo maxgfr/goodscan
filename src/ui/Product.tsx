@@ -185,8 +185,10 @@ function ProductView({
 }) {
   const { t, region, preferences } = useApp();
   const score = useMemo(() => scoreProduct(product), [product]);
+  // Food preferences say nothing about a cosmetic.
   const match = useMemo(
-    () => (product.attributes.length ? matchProduct(product, preferences) : null),
+    () =>
+      product.attributes.length && !isCosmetic(product) ? matchProduct(product, preferences) : null,
     [product, preferences],
   );
   const db = DATABASES.find((d) => d.source === product.source);
