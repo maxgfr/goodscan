@@ -4,9 +4,9 @@ import { ean13Modules } from "./barcode-video";
 
 const ENDPOINT = "https://llm.test/v1";
 
-const fixture = (code: string) => {
+const fixture = (code: string, dir = "src/data/fixtures") => {
   try {
-    return JSON.parse(readFileSync(`src/data/fixtures/${code}.json`, "utf8"));
+    return JSON.parse(readFileSync(`${dir}/${code}.json`, "utf8"));
   } catch {
     return null;
   }
@@ -33,6 +33,12 @@ const LABEL = {
   allergens: ["gluten", "nuts"],
   nova: 3,
   organic: true,
+  confidence: "high",
+};
+
+const INCI = {
+  name: null,
+  ingredients: "Aqua, Glycerin, Parfum, Limonene, Linalool, Butylphenyl Methylpropional",
   confidence: "high",
 };
 
@@ -67,7 +73,12 @@ async function offline(page: Page | BrowserContext, errors: string[], lookups: s
       return route.fulfill({ status: 204, headers: cors });
     const code = url.pathname.split("/").at(-1) ?? "";
     lookups.push(`${url.host} ${code}`);
-    const product = url.host === "world.openfoodfacts.org" ? fixture(code) : null;
+    const product =
+      url.host === "world.openfoodfacts.org"
+        ? fixture(code)
+        : url.host === "world.openbeautyfacts.org"
+          ? fixture(code, "src/data/fixtures/obf")
+          : null;
     return product
       ? route.fulfill({ headers: cors, json: { status: "success", product } })
       : route.fulfill({
@@ -85,7 +96,9 @@ async function offline(page: Page | BrowserContext, errors: string[], lookups: s
     const body = route.request().postData() ?? "";
     const content = body.includes("food_label")
       ? JSON.stringify(LABEL)
-      : "- Lots of sugar and saturated fat.\n- Keep it for a treat.";
+      : body.includes("cosmetic_label")
+        ? JSON.stringify(INCI)
+        : "- Lots of sugar and saturated fat.\n- Keep it for a treat.";
     return route.fulfill({
       headers: cors,
       json: {
@@ -265,6 +278,76 @@ test("unknown barcode: the AI reads the label, goodscan scores it", async ({ pag
   await expect(page.getByText("Estimated by AI from a photo")).toBeVisible();
   await expect(page.getByTestId("reasons")).toContainText("computed by goodscan");
   await expect(page.getByTestId("reasons")).toContainText("Organic");
+  expect(errors).toEqual([]);
+});
+
+test.describe("cosmetics", () => {
+  test.use({ locale: "fr-FR" });
+  test("Garnier: from Open Beauty Facts, an ingredient score and its alerts", async ({ page }) => {
+    const errors: string[] = [];
+    const lookups: string[] = [];
+    await offline(page, errors, lookups);
+    await lookUp(page, "3600540539397", "Chercher");
+    await expect(page.getByText("Note ingrédients")).toBeVisible();
+    await expect(page.getByTestId("reasons")).toContainText("ingrédients vérifiés");
+    await expect(page.getByTestId("reasons")).toContainText("allergènes de parfum");
+    const concerns = page.getByTestId("concerns");
+    await expect(concerns).toContainText("Linalool");
+    await expect(concerns).toContainText("Allergène de parfum");
+    await expect(concerns.getByRole("link").first()).toHaveAttribute("href", /^https:\/\//);
+    await expect(page.getByRole("heading", { name: "Ingrédients (INCI)" })).toBeVisible();
+    // No food sections on a cosmetic.
+    await expect(page.getByText("Nutri-Score (UE)")).toHaveCount(0);
+    await expect(page.getByTestId("fop")).toHaveCount(0);
+    await expect(page.getByText("Données : Open Beauty Facts (ODbL)")).toBeVisible();
+    expect(lookups).toContain("world.openbeautyfacts.org 3600540539397");
+    expect(errors).toEqual([]);
+  });
+});
+
+test("US cosmetic: Secret, its cyclic silicone flagged", async ({ page }) => {
+  const errors: string[] = [];
+  await offline(page, errors);
+  await lookUp(page, "0037000123439");
+  await expect(page.getByText("Ingredient score")).toBeVisible();
+  await expect(page.getByTestId("concerns")).toContainText("Cyclopentasiloxane");
+  await expect(page.getByTestId("reasons")).toContainText(
+    "Cyclopentasiloxane: restricted in EU cosmetics",
+  );
+  expect(errors).toEqual([]);
+});
+
+test("cosmetic with no ingredient list: a photo, the model reads it, goodscan scores it", async ({
+  page,
+}) => {
+  const errors: string[] = [];
+  await offline(page, errors);
+  await page.route(/world\.openbeautyfacts\.org\/api\/v3\/product\/3600000000009/, (route) =>
+    route.fulfill({
+      headers: cors,
+      json: {
+        status: "success",
+        product: { code: "3600000000009", product_name: "Crème test", brands: "Test" },
+      },
+    }),
+  );
+  await connectModel(page);
+  await lookUp(page, "3600000000009");
+  await expect(page.getByTestId("verdict")).toHaveText("Not enough data");
+  await expect(page.getByTestId("reasons")).toContainText("Ingredient list missing");
+  await page.getByLabel("Read the ingredient list from a photo").setInputFiles({
+    name: "inci.png",
+    mimeType: "image/png",
+    buffer: Buffer.from(
+      "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==",
+      "base64",
+    ),
+  });
+  await expect(page.getByText("Estimated by AI from a photo")).toBeVisible();
+  await expect(page.getByTestId("reasons")).toContainText(
+    "Butylphenyl Methylpropional: banned in EU cosmetics",
+  );
+  await expect(page.getByTestId("verdict")).toHaveText("Bad");
   expect(errors).toEqual([]);
 });
 

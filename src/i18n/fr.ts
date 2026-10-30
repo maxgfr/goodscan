@@ -56,7 +56,8 @@ export const fr: Messages = {
   verdictNotFood: "Pas un aliment",
   scoreOutOf: "/ 100",
   scoreEstimated: "Estimé par IA à partir d'une photo",
-  notFoodBody: "Ce produit vient de {db} : goodscan ne note que ce qui se mange ou se boit.",
+  notFoodBody:
+    "Ce produit vient de {db} : goodscan ne note que les aliments, les boissons et les cosmétiques.",
 
   whyTitle: "Pourquoi cette note",
   reason_nutrition: "Nutri-Score {grade}",
@@ -75,6 +76,17 @@ export const fr: Messages = {
   reason_additiveEvidence: "{additive} : risque signalé par une autorité ou des études humaines",
   reason_organic: "Bio",
   reason_palmOil: "Contient de l'huile de palme",
+  reason_ingredientsMissing: "Liste des ingrédients absente : pas encore de note",
+  reason_ingredientsChecked:
+    "{count} ingrédients vérifiés selon les règles de l'UE et des États-Unis",
+  reason_ingredientsClean: "Aucun ingrédient préoccupant trouvé",
+  reason_ingredientProhibited: "{ingredient} : interdit dans les cosmétiques de l'UE",
+  reason_ingredientCmr: "{ingredient} : cancérogène, mutagène ou toxique pour la reproduction",
+  reason_ingredientEndocrine: "{ingredient} : perturbateur endocrinien identifié dans l'UE",
+  reason_ingredientPfas: "{ingredient} : un PFAS (polluant éternel)",
+  reason_ingredientUsBan: "{ingredient} : interdit dans les cosmétiques par un État américain",
+  reason_ingredientRestricted: "{ingredient} : restreint dans les cosmétiques de l'UE",
+  reason_ingredientAllergens: "{count} allergènes de parfum (liste d'étiquetage de l'UE)",
   reasonCap: "plafonne la note à {cap}",
 
   matchTitle: "Pour vous",
@@ -144,6 +156,21 @@ export const fr: Messages = {
   allergensNone: "Aucun indiqué.",
   traces: "Traces possibles",
   ingredientsTitle: "Ingrédients",
+  cosmeticScore: "Note ingrédients",
+  concernTitle: "Ingrédients préoccupants",
+  concernNone: "Aucun des ingrédients ne figure sur nos listes.",
+  concernNote:
+    "Vérifié selon le règlement cosmétique de l'UE (annexes II et III), les allergènes de parfum à étiqueter, les avis du CSSC, les listes CMR et de perturbateurs endocriniens, les PFAS et les interdictions des États américains.",
+  cat_euProhibited: "Interdit dans l'UE",
+  cat_euRestricted: "Restreint dans l'UE",
+  cat_cmr: "CMR",
+  cat_endocrine: "Perturbateur endocrinien",
+  cat_fragranceAllergen: "Allergène de parfum",
+  cat_pfas: "PFAS",
+  cat_usStateBan: "Interdit dans un État américain",
+  ingredientsInci: "Ingrédients (INCI)",
+  aiInci: "Lire la liste des ingrédients en photo",
+  aiInciMissing: "La liste des ingrédients manque. Une photo de l'emballage la complète.",
 
   aiTitle: "Demander à l'IA",
   aiSubtitle:
@@ -236,6 +263,8 @@ export const fr: Messages = {
     "Additifs : −15 pour un risque élevé de surexposition selon l'EFSA (et la note ne peut dépasser 49), −6 pour un risque modéré, −25 pour un additif non autorisé dans l'UE (note au plus 25). −6 quand la science pèse contre lui : une position officielle préoccupante (OMS, CIRC, EFSA, FDA) ou deux études humaines concordantes, sans cumul avec les pénalités risque élevé ou UE. Au plus −45 en tout.",
   aboutScore4: "Bio +5, huile de palme −3. L'eau vaut 100, l'alcool au plus 20.",
   aboutScore5: "À partir de 75 c'est excellent, 50 bon, 25 médiocre, en dessous mauvais.",
+  aboutCosmetics:
+    "Les cosmétiques (Open Beauty Facts) ont une note ingrédients : à partir de 100, −40 pour un ingrédient interdit dans les cosmétiques de l'UE (note au plus 20), −25 pour un CMR ou un perturbateur endocrinien identifié dans l'UE (au plus 49), −20 pour un PFAS (au plus 49) ou pour une interdiction d'un État américain qu'aucune règle de l'UE ne couvre, −8 pour une restriction de l'UE, −3 par allergène de parfum (−15 au plus).",
   aboutSourcesTitle: "Sources et licences",
   aboutOff:
     "Données produits, additifs et attributs de préférences : Open Food Facts, Open Beauty Facts, Open Pet Food Facts, Open Products Facts — Open Database License (ODbL) ; images CC BY-SA.",
@@ -243,6 +272,8 @@ export const fr: Messages = {
     "Risques des additifs : réévaluations de l'EFSA, telles que reprises dans la taxonomie d'Open Food Facts.",
   aboutScience:
     "Ce que dit la science : positions officielles (OMS, CIRC, EFSA, FDA) et études humaines, chacune liée à son DOI ou à sa fiche PubMed, issues d'une recherche bibliographique vérifiée.",
+  aboutCosmeticsSources:
+    "Ingrédients cosmétiques : annexes du règlement (UE) 1223/2009, allergènes de parfum du règlement 2023/1545, avis du CSSC, ECHA, listes de perturbateurs endocriniens de l'UE, loi californienne AB 2762, chacun avec ses sources.",
   aboutFda:
     "Encadré nutriments US : valeurs quotidiennes de la FDA et projet d'encadré « Nutrition Info » en face avant (Faible ≤ 5 %, Élevé ≥ 20 % VQ).",
   aboutNotAdvice:

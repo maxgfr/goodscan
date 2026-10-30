@@ -45,6 +45,8 @@ export interface Product {
   /** e.g. "en:palm-oil", "en:vegan", "en:non-vegetarian" */
   analysis: string[];
   ingredients?: string;
+  /** Open Beauty Facts' ingredient tags, for cosmetics ("en:linalool"). */
+  ingredientTags?: string[];
   nutriments: Nutriments;
   /** Grams in one serving, when the label says. */
   servingGrams?: number;
@@ -70,3 +72,5 @@ export const isGrade = (g: unknown): g is Grade =>
 
 /** Is it something we eat or drink (the health score applies)? */
 export const isFood = (p: Product) => p.source === "off" || p.source === "label";
+/** A cosmetic, from Open Beauty Facts: it gets the ingredient score. */
+export const isCosmetic = (p: Product) => p.source === "obf";

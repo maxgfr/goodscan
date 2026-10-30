@@ -14,7 +14,14 @@ export function About() {
         <Section title={t("aboutScoreTitle")}>
           <ol className="grid list-decimal gap-1.5 pl-5 text-sm leading-relaxed text-soft">
             {(
-              ["aboutScore1", "aboutScore2", "aboutScore3", "aboutScore4", "aboutScore5"] as const
+              [
+                "aboutScore1",
+                "aboutScore2",
+                "aboutScore3",
+                "aboutScore4",
+                "aboutScore5",
+                "aboutCosmetics",
+              ] as const
             ).map((k) => (
               <li key={k}>{t(k)}</li>
             ))}
@@ -45,6 +52,7 @@ export function About() {
                 docs/research
               </a>
             </li>
+            <li>{t("aboutCosmeticsSources")}</li>
             <li>{t("aboutFda")}</li>
             <li className="font-medium">{t("aboutNotAdvice")}</li>
             <li>

@@ -1,0 +1,146 @@
+{
+  "allergens_tags": [],
+  "attribute_groups": [
+    {
+      "attributes": [
+        {
+          "grade": "unknown",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/vegan-status-unknown.svg",
+          "id": "vegan",
+          "name": "Vegan",
+          "panel_id": "ingredients_analysis_en:vegan-status-unknown",
+          "status": "unknown",
+          "title": "Vegan status unknown"
+        },
+        {
+          "grade": "unknown",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/vegetarian-status-unknown.svg",
+          "id": "vegetarian",
+          "name": "Vegetarian",
+          "panel_id": "ingredients_analysis_en:vegetarian-status-unknown",
+          "status": "unknown",
+          "title": "Vegetarian status unknown"
+        },
+        {
+          "grade": "a",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/palm-oil-free.svg",
+          "id": "palm_oil_free",
+          "match": 100,
+          "name": "Palm oil free",
+          "panel_id": "ingredients_analysis_en:palm-oil-free",
+          "status": "known",
+          "title": "Palm oil free"
+        }
+      ],
+      "id": "ingredients_analysis",
+      "name": "Ingredients",
+      "warning": "Those preferences are based on Open Food Facts' understanding of the ingredient list and there is always a possibility that it may not be accurate or complete, always check the product yourself."
+    },
+    {
+      "attributes": [
+        {
+          "description": "Organic farming aims to protect the environment and to conserve biodiversity by prohibiting or limiting the use of synthetic fertilizers, pesticides and food additives.",
+          "description_short": "Organic products promote ecological sustainability and biodiversity.",
+          "grade": "unknown",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/organic-unknown.svg",
+          "id": "labels_organic",
+          "name": "Organic farming",
+          "status": "unknown",
+          "title": "Missing information: organic product?"
+        },
+        {
+          "description": "When you buy fair trade products, producers in developing countries are paid an higher and fairer price, which helps them improve and sustain higher social and often environmental standards.",
+          "description_short": "Fair trade products help producers in developing countries.",
+          "grade": "unknown",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/fair-trade-unknown.svg",
+          "id": "labels_fair_trade",
+          "name": "Fair trade",
+          "status": "unknown",
+          "title": "Missing information: fair trade product?"
+        }
+      ],
+      "id": "labels",
+      "name": "Labels"
+    }
+  ],
+  "brands": "NIVEA",
+  "categories_tags": [],
+  "code": "4005900964441",
+  "countries_tags": ["en:austria", "en:germany", "en:morocco"],
+  "ecoscore_grade": "unknown",
+  "generic_name": "",
+  "image_front_url": "https://images.openbeautyfacts.org/images/products/400/590/096/4441/front_en.13.400.jpg",
+  "image_url": "https://images.openbeautyfacts.org/images/products/400/590/096/4441/front_en.13.400.jpg",
+  "ingredients_analysis_tags": [
+    "en:palm-oil-free",
+    "en:vegan-status-unknown",
+    "en:vegetarian-status-unknown"
+  ],
+  "ingredients_tags": [
+    "en:aqua",
+    "en:glycerin",
+    "en:myristyl-alcohol",
+    "en:alcohol-denat",
+    "en:myristyl-myristate",
+    "en:cetearyl-glucoside",
+    "en:coco-caprylate",
+    "en:Caprate",
+    "en:glyceryl-stearate",
+    "en:palmitic-acid",
+    "en:stearic-acid",
+    "en:hydrogenated-coco-glycerides",
+    "en:Simmondsia Chinensis Seed Oil",
+    "en:tocopheryl-acetate",
+    "en:prunus-amygdalus-dulcis-oil",
+    "en:vegetable-oil",
+    "en:cetyl-ricinoleate",
+    "en:triisostearin",
+    "en:Sorbitan Stearate",
+    "en:Hydroxypropyl Starch Phosphate",
+    "en:sodium-hydroxide",
+    "en:cetearyl-alcohol",
+    "en:gellan-gum",
+    "en:xanthan-gum",
+    "en:myristic-acid",
+    "en:arachidic-acid",
+    "en:oleic-acid",
+    "en:lauric-acid",
+    "en:disodium-cetearyl-sulfosuccinate",
+    "en:phenoxyethanol",
+    "en:ethylhexylglycerin",
+    "en:citronellol",
+    "en:allergenic-fragrances",
+    "en:alpha-isomethyl-ionone",
+    "en:Acetyl Cedrene",
+    "en:Citrus Aurantium Peel Oil",
+    "en:limonene",
+    "en:terpineol",
+    "en:Lavandula Oil",
+    "en:Extract",
+    "en:linalyl-acetate",
+    "en:parfum"
+  ],
+  "ingredients_text": "Aqua, Glycerin, Myristyl Alcohol, Alcohol Denat., Myristyl Myristate, Cetearyl Glucoside, Coco-Caprylate/Caprate, Glyceryl Stearate, Palmitic Acid, Stearic Acid, Hydrogenated Coco-Glycerides, Simmondsia Chinensis Seed Oil, Tocopheryl Acetate, Prunus Amygdalus Dulcis Oil, Vegetable Oil, Cetyl Ricinoleate, Triisostearin, Sorbitan Stearate, Hydroxypropyl Starch Phosphate, Sodium Hydroxide, Cetearyl Alcohol, Gellan Gum, Xanthan Gum, Myristic Acid, Arachidic Acid, Oleic Acid, Lauric Acid, Disodium Cetearyl Sulfosuccinate, Phenoxyethanol, Ethylhexylglycerin, Citronellol, Alpha-Isomethyl Ionone, Acetyl Cedrene, Citrus Aurantium Peel Oil, Limonene, Terpineol, Lavandula Oil/Extract, Linalyl Acetate, Parfum",
+  "ingredients_text_en": "Aqua, Glycerin, Myristyl Alcohol, Alcohol Denat., Myristyl Myristate, Cetearyl Glucoside, Coco-Caprylate/Caprate, Glyceryl Stearate, Palmitic Acid, Stearic Acid, Hydrogenated Coco-Glycerides, Simmondsia Chinensis Seed Oil, Tocopheryl Acetate, Prunus Amygdalus Dulcis Oil, Vegetable Oil, Cetyl Ricinoleate, Triisostearin, Sorbitan Stearate, Hydroxypropyl Starch Phosphate, Sodium Hydroxide, Cetearyl Alcohol, Gellan Gum, Xanthan Gum, Myristic Acid, Arachidic Acid, Oleic Acid, Lauric Acid, Disodium Cetearyl Sulfosuccinate, Phenoxyethanol, Ethylhexylglycerin, Citronellol, Alpha-Isomethyl Ionone, Acetyl Cedrene, Citrus Aurantium Peel Oil, Limonene, Terpineol, Lavandula Oil/Extract, Linalyl Acetate, Parfum",
+  "ingredients_text_fr": "",
+  "labels_tags": [],
+  "lang": "en",
+  "misc_tags": [
+    "en:estimated-ingredients-with-product-opener",
+    "en:packagings-empty",
+    "en:packagings-not-complete",
+    "en:packagings-number-of-components-0",
+    "en:storage-conditions-not-set",
+    "en:number-of-uploaded-images-4-to-6",
+    "en:main-countries-new-product"
+  ],
+  "nutriscore_grade": "unknown",
+  "nutrition": {
+    "input_sets": []
+  },
+  "product_name": "Soft",
+  "product_name_en": "Soft",
+  "product_name_fr": "",
+  "quantity": "",
+  "traces_tags": []
+}

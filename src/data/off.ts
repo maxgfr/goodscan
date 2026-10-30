@@ -53,9 +53,13 @@ const FIELDS = [
   "attribute_groups",
 ];
 
-/** The product's name and ingredients in the user's language come as their own fields. */
-export function fieldsFor(lang: string): string {
-  return [...FIELDS, `product_name_${lang}`, `ingredients_text_${lang}`].join(",");
+/**
+ * The product's name and ingredients in the user's language come as their own
+ * fields; cosmetics also bring their ingredient tags.
+ */
+export function fieldsFor(lang: string, source?: Source): string {
+  const extra = source === "obf" ? ["ingredients_tags"] : [];
+  return [...FIELDS, ...extra, `product_name_${lang}`, `ingredients_text_${lang}`].join(",");
 }
 
 export class LookupError extends Error {
@@ -216,6 +220,8 @@ export function normalize(raw: Raw, source: Source, lang: string): Product {
   if (image) product.image = image;
   const ingredients = str(raw[`ingredients_text_${lang}`]) ?? str(raw.ingredients_text);
   if (ingredients) product.ingredients = ingredients;
+  const ingredientTags = tags(raw.ingredients_tags);
+  if (source === "obf" && ingredientTags.length) product.ingredientTags = ingredientTags;
   if (serving && serving > 0) product.servingGrams = serving;
   const servingSize = str(raw.serving_size);
   if (servingSize) product.servingSize = servingSize;
@@ -237,7 +243,7 @@ export interface LookupOptions {
 
 /** One product read: the product, null if this database does not know it. */
 async function read(
-  host: string,
+  { host, source }: { host: string; source: Source },
   code: string,
   { lang, fetch: f = fetch, limiter: l = limiter, signal }: LookupOptions,
 ): Promise<Raw | null> {
@@ -247,7 +253,7 @@ async function read(
   }
   let res: Response;
   try {
-    res = await f(`${host}/api/v3/product/${code}?fields=${fieldsFor(lang)}&lc=${lang}`, {
+    res = await f(`${host}/api/v3/product/${code}?fields=${fieldsFor(lang, source)}&lc=${lang}`, {
       headers: { "X-User-Agent": USER_AGENT },
       ...(signal ? { signal } : {}),
     });
@@ -276,11 +282,11 @@ export async function lookup(rawCode: string, opts: LookupOptions): Promise<Prod
   const [off, ...others] = DATABASES;
   if (!off) return null;
   for (const code of codes) {
-    const raw = await read(off.host, code, opts);
+    const raw = await read(off, code, opts);
     if (raw) return normalize(raw, off.source, opts.lang);
   }
   for (const db of others) {
-    const raw = await read(db.host, first, opts);
+    const raw = await read(db, first, opts);
     if (raw) return normalize(raw, db.source, opts.lang);
   }
   return null;

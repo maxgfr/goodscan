@@ -1,7 +1,7 @@
 /**
- * Against the real Open Food Facts (run by hand: bun run e2e-live). Checks
- * the sources still answer the way the app expects, for one product per
- * market, slowly enough for the API's rate limit.
+ * Against the real Open Food Facts and Open Beauty Facts (run by hand: bun
+ * run e2e-live). Checks the sources still answer the way the app expects, for
+ * one product per market, slowly enough for the API's rate limit.
  */
 import { describe, expect, test } from "bun:test";
 import { lookup, RateLimiter } from "../src/data/off";
@@ -32,6 +32,30 @@ describe("Open Food Facts, live", () => {
       console.log(`${c.market} ${c.code} ${p.name}: ${score.value} ${score.verdict}`);
       await Bun.sleep(4500);
     }, 30_000);
+  }
+
+  const COSMETICS = [
+    { code: "3600540539397", lang: "fr", market: "France", brand: /garnier/i },
+    { code: "4005900964441", lang: "de", market: "Germany", brand: /nivea/i },
+    { code: "0037000123439", lang: "en", market: "US", name: /secret/i },
+  ];
+  // Each one is read in Open Food Facts first, then Open Beauty Facts: two or three reads.
+  const cosmeticLimiter = new RateLimiter(10);
+  for (const c of COSMETICS) {
+    test(`Open Beauty Facts, ${c.market}: ${c.code}`, async () => {
+      const p = await lookup(c.code, { lang: c.lang, limiter: cosmeticLimiter });
+      expect(p?.source).toBe("obf");
+      if (!p) return;
+      if (c.name) expect(p.name).toMatch(c.name);
+      if (c.brand) expect(p.brands ?? "").toMatch(c.brand);
+      expect(p.ingredients?.length).toBeGreaterThan(50);
+      expect(p.ingredientTags?.length).toBeGreaterThan(5);
+      const score = scoreProduct(p);
+      expect(score.value).toBeGreaterThan(0);
+      expect(score.cosmetic?.length).toBeGreaterThan(0);
+      console.log(`${c.market} ${c.code} ${p.name}: ${score.value} ${score.verdict}`);
+      await Bun.sleep(20_000);
+    }, 60_000);
   }
 
   test("an unknown barcode is null, not an error", async () => {

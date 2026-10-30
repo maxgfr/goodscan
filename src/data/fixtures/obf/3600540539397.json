@@ -1,0 +1,153 @@
+{
+  "additives_tags": ["en:e1519", "en:e211", "en:e330", "en:e422", "en:e502"],
+  "allergens_tags": [],
+  "attribute_groups": [
+    {
+      "attributes": [
+        {
+          "grade": "unknown",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/vegan-status-unknown.svg",
+          "id": "vegan",
+          "name": "Vegan",
+          "panel_id": "ingredients_analysis_en:vegan-status-unknown",
+          "status": "unknown",
+          "title": "Vegan status unknown"
+        },
+        {
+          "grade": "unknown",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/vegetarian-status-unknown.svg",
+          "id": "vegetarian",
+          "name": "Vegetarian",
+          "panel_id": "ingredients_analysis_en:vegetarian-status-unknown",
+          "status": "unknown",
+          "title": "Vegetarian status unknown"
+        },
+        {
+          "grade": "a",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/palm-oil-free.svg",
+          "id": "palm_oil_free",
+          "match": 100,
+          "name": "Palm oil free",
+          "panel_id": "ingredients_analysis_en:palm-oil-free",
+          "status": "known",
+          "title": "Palm oil free"
+        }
+      ],
+      "id": "ingredients_analysis",
+      "name": "Ingredients",
+      "warning": "Those preferences are based on Open Food Facts' understanding of the ingredient list and there is always a possibility that it may not be accurate or complete, always check the product yourself."
+    },
+    {
+      "attributes": [
+        {
+          "description": "Organic farming aims to protect the environment and to conserve biodiversity by prohibiting or limiting the use of synthetic fertilizers, pesticides and food additives.",
+          "description_short": "Organic products promote ecological sustainability and biodiversity.",
+          "grade": "unknown",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/organic-unknown.svg",
+          "id": "labels_organic",
+          "name": "Organic farming",
+          "status": "unknown",
+          "title": "Missing information: organic product?"
+        },
+        {
+          "description": "When you buy fair trade products, producers in developing countries are paid an higher and fairer price, which helps them improve and sustain higher social and often environmental standards.",
+          "description_short": "Fair trade products help producers in developing countries.",
+          "grade": "unknown",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/fair-trade-unknown.svg",
+          "id": "labels_fair_trade",
+          "name": "Fair trade",
+          "status": "unknown",
+          "title": "Missing information: fair trade product?"
+        }
+      ],
+      "id": "labels",
+      "name": "Labels"
+    }
+  ],
+  "brands": "Garnier",
+  "categories_tags": [],
+  "code": "3600540539397",
+  "countries_tags": ["en:algeria", "en:france", "en:morocco", "en:saudi-arabia"],
+  "ecoscore_grade": "unknown",
+  "generic_name": "",
+  "image_front_url": "https://images.openbeautyfacts.org/images/products/360/054/053/9397/front_en.12.400.jpg",
+  "image_url": "https://images.openbeautyfacts.org/images/products/360/054/053/9397/front_en.12.400.jpg",
+  "ingredients_analysis_tags": [
+    "en:palm-oil-free",
+    "en:vegan-status-unknown",
+    "en:vegetarian-status-unknown"
+  ],
+  "ingredients_tags": [
+    "en:aqua",
+    "en:cetearyl-alcohol",
+    "en:glycerin",
+    "en:cocos-nucifera-oil",
+    "en:behentrimonium-chloride",
+    "en:isopropyl-myristate",
+    "en:parfum",
+    "en:persea-gratissima-oil",
+    "en:butyrospermum-parkii-butter",
+    "en:dicaprylyl-ether",
+    "en:dicaprylyl-carbonate",
+    "en:citric-acid",
+    "en:sodium-benzoate",
+    "en:cetrimonium-chloride",
+    "en:linalool",
+    "en:allergenic-fragrances",
+    "en:benzyl-alcohol",
+    "en:benzyl-salicylate",
+    "en:citronellol",
+    "en:geraniol",
+    "en:limonene",
+    "en:alpha-isomethyl-ionone",
+    "en:rosmarinus-officinalis-leaf-extract"
+  ],
+  "ingredients_text": "aqua, cetearyl alcohol, glycerin, cocos nucifera oil, behentrimonium chloride, isopropyl myristate, parfum, persea gratissima oil, butyrospermum parkii butter, dicaprylyl ether, dicaprylyl carbonate, citric acid, sodium benzoate, cetrimonium chloride, linalool, benzyl alcohol, benzyl salicylate, citronellol, geraniol, limonene, alpha-isomethyl ionone, rosmarinus officinalis leaf extract",
+  "ingredients_text_en": "aqua, cetearyl alcohol, glycerin, cocos nucifera oil, behentrimonium chloride, isopropyl myristate, parfum, persea gratissima oil, butyrospermum parkii butter, dicaprylyl ether, dicaprylyl carbonate, citric acid, sodium benzoate, cetrimonium chloride, linalool, benzyl alcohol, benzyl salicylate, citronellol, geraniol, limonene, alpha-isomethyl ionone, rosmarinus officinalis leaf extract",
+  "labels_tags": [],
+  "lang": "en",
+  "misc_tags": [
+    "en:packagings-empty",
+    "en:packagings-not-complete",
+    "en:packagings-number-of-components-0",
+    "en:main-countries-new-product"
+  ],
+  "nova_group": 4,
+  "nutriscore_grade": "unknown",
+  "nutrition": {
+    "aggregated_set": {
+      "nutrients": {
+        "nova-group": {
+          "source": "packaging",
+          "source_index": 0,
+          "source_per": "100ml",
+          "unit": "",
+          "value": 4
+        }
+      },
+      "per": "100ml",
+      "preparation": "as_sold"
+    },
+    "input_sets": [
+      {
+        "last_updated_t": 1793109029,
+        "nutrients": {
+          "nova-group": {
+            "unit": "",
+            "value": 4,
+            "value_string": "4"
+          }
+        },
+        "per": "100ml",
+        "per_quantity": 100,
+        "per_unit": "ml",
+        "preparation": "as_sold",
+        "source": "packaging"
+      }
+    ]
+  },
+  "product_name": "garnier",
+  "product_name_en": "garnier",
+  "quantity": "200 ml",
+  "traces_tags": []
+}

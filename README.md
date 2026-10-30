@@ -1,6 +1,6 @@
 # goodscan
 
-Scan a food barcode and see if it is good for you. goodscan reads the open databases of
+Scan a food or cosmetic barcode and see if it is good for you. goodscan reads the open databases of
 [Open Food Facts](https://world.openfoodfacts.org) and gives a 0–100 health score you can check
 line by line: the Nutri-Score, how processed it is, which additives carry a risk according to EFSA
 or are not allowed in the EU. It works for products from the US, France, Germany and the 150+
@@ -84,6 +84,34 @@ Nutri-Score only counts sweeteners in drinks). A single study, or animal and lab
 but costs nothing. An additive EFSA already rates at a high risk of overexposure, or that the EU
 does not authorise, keeps that stronger penalty alone.
 
+## Cosmetics
+
+A barcode Open Food Facts does not know is looked up in Open Beauty Facts too, and a cosmetic gets
+an **ingredient score** out of 100, with the same verdicts as food. Open Beauty Facts gives the
+ingredient list (INCI) but no hazard data, so goodscan keeps its own list of ingredients of concern,
+each with its rule or finding and its sources, in [`src/data/cosmetics.ts`](src/data/cosmetics.ts):
+- banned in EU cosmetics (Regulation (EC) No 1223/2009, annex II), −40, and the score cannot pass
+  20;
+- carcinogenic, mutagenic or toxic for reproduction (CMR), or an endocrine disruptor identified in
+  the EU, −25, at most 49;
+- a PFAS, −20, at most 49; a US state ban (California's AB 2762 and others) that no EU rule covers,
+  −20;
+- restricted in EU cosmetics (annex III, or a REACH restriction such as the cyclic silicones D4,
+  D5 and D6), −8;
+- a fragrance allergen of the EU labelling list (Regulation (EU) 2023/1545), −3 each, −15 at most.
+
+Each ingredient counts once, at its strongest category. The list is matched after removing case,
+accents and punctuation, alternative names in parentheses or after a slash ("Aqua/Water/Eau",
+"Parfum (Fragrance)"), and colour codes such as `CI 77891`, against INCI names and their French
+and German synonyms, and against Open Beauty Facts' own ingredient tags. Only whole names match:
+"sans parfum" is not a fragrance. With no list, there is no score until a photo of the pack is
+read by your model, and that list goes through the same score.
+
+The list comes from a deep, verified web research with
+[ultrasearch](https://github.com/maxgfr/ultrasearch) in
+[docs/research/cosmetics](docs/research/cosmetics/README.md), on the regulations' texts, SCCS
+opinions, ECHA and edlists.org.
+
 ## Sources
 
 The data choices were checked with a cited, verified web research (116 sources) in
@@ -97,6 +125,10 @@ The data choices were checked with a cited, verified web research (116 sources) 
   authorise ([`src/data/eu.ts`](src/data/eu.ts)).
 - What science says: official positions and human studies, cited with their DOI or PMID
   ([docs/research/additives-evidence](docs/research/additives-evidence/README.md)).
+- Cosmetic ingredients: EU Cosmetics Regulation annexes, fragrance allergens of Regulation (EU)
+  2023/1545, SCCS opinions, ECHA, the EU endocrine-disruptor lists, California AB 2762
+  ([docs/research/cosmetics](docs/research/cosmetics/README.md)). Cosmetics data: Open Beauty Facts,
+  ODbL.
 - Nutri-Score 2023 tables: the Nutri-Score Scientific Committee's updated algorithm (in force in
   Germany and France since 2024–2025).
 - US box: FDA Daily Values (saturated fat 20 g, sodium 2300 mg, added sugars 50 g).

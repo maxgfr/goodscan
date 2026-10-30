@@ -1,0 +1,4186 @@
+[
+  {
+    "id": "S1",
+    "url": "https://en.wikipedia.org/wiki/EC_Regulation_1223%2F2009_on_cosmetics",
+    "canonicalUrl": "https://en.wikipedia.org/wiki/EC_Regulation_1223%2F2009_on_cosmetics",
+    "title": "EC Regulation 1223/2009 on cosmetics",
+    "backend": "wikipedia",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "lang": "en",
+    "domain": "en.wikipedia.org",
+    "trust": 0.85,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 2 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0296,
+    "extract": "sources/S1.md",
+    "snippet": "EC Regulation 1223/2009 on cosmetics sets binding requirements for cosmetic products that have been made available on the market within the European Union",
+    "meta": {
+      "foundBy": 2,
+      "rank": {
+        "rrf": 0.9839,
+        "content": 0.3174,
+        "trust": 0.85,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        },
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S2",
+    "url": "https://biorius.com/cosmetic-news/methylisothiazolinone-in-cosmetics/",
+    "canonicalUrl": "https://biorius.com/cosmetic-news/methylisothiazolinone-in-cosmetics",
+    "title": "Methylisothiazolinone in cosmetic products - Biorius",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "biorius.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S2.md",
+    "snippet": "MCI/MI mixture banned in leave-on 16 April 2016",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9104,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S3",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021R1902",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32021R1902",
+    "title": "Commission Regulation (EU) 2021/1902 (CMR omnibus IV)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S3.md",
+    "snippet": "amending Annexes II, III and V to Regulation (EC) No 1223/2009 as regards the use in cosmetic products of certain substances classified as CMR; zinc pyrithione, butylphenyl methylpropional; applies from 1 March 2022",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 1,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S4",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1545",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32023R1545",
+    "title": "Commission Regulation (EU) 2023/1545 labelling of fragrance allergens",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S4.md",
+    "snippet": "amending Regulation (EC) No 1223/2009 as regards labelling of fragrance allergens in cosmetic products",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 1,
+        "content": 0.9537,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S5",
+    "url": "https://health.ec.europa.eu/system/files/2022-08/sccs_o_244.pdf",
+    "canonicalUrl": "https://health.ec.europa.eu/system/files/2022-08/sccs_o_244.pdf",
+    "title": "SCCS/1622/20 Opinion on Homosalate",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 7 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S5.md",
+    "snippet": "not safe up to 10%; safe up to 0.5%",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9104,
+        "content": 0.9113,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S6",
+    "url": "https://www.belabservices.com/en/post/amendment-reach-restrictions-for-d4-d5-and-d6-in-cosmetics",
+    "canonicalUrl": "https://belabservices.com/en/post/amendment-reach-restrictions-for-d4-d5-and-d6-in-cosmetics",
+    "title": "REACH Amendment: Restrictions for D4, D5 and D6 in Cosmetics",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "belabservices.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S6.md",
+    "snippet": "rinse-off D4 D5 31 January 2020",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9242,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S7",
+    "url": "https://www.exponent.com/article/california-toxic-free-cosmetics-act",
+    "canonicalUrl": "https://exponent.com/article/california-toxic-free-cosmetics-act",
+    "title": "California Toxic-Free Cosmetics Act - Exponent",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "exponent.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S7.md",
+    "snippet": "24 ingredients",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9242,
+        "content": 0.9983,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S8",
+    "url": "https://adslaboratories.com/commission-regulation-eu-2021-1902-4th-cmr-omnibus/",
+    "canonicalUrl": "https://adslaboratories.com/commission-regulation-eu-2021-1902-4th-cmr-omnibus",
+    "title": "Commission Regulation (EU) 2021/1902 (4th CMR Omnibus) - ADSL",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "adslaboratories.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S8.md",
+    "snippet": "zinc pyrithione and butylphenyl methylpropional added to Annex II entries 1666 and 1670 from 1 March 2022",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9839,
+        "content": 0.9591,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S9",
+    "url": "https://biorius.com/cosmetic-news/d4-d5-d6-restrictions/",
+    "canonicalUrl": "https://biorius.com/cosmetic-news/d4-d5-d6-restrictions",
+    "title": "D4, D5, D6 REACh restrictions published - Biorius",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "biorius.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S9.md",
+    "snippet": "D6 wash-off 6 June 2027",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9683,
+        "content": 0.8852,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S10",
+    "url": "https://health.ec.europa.eu/system/files/2023-08/sccs_o_265.pdf",
+    "canonicalUrl": "https://health.ec.europa.eu/system/files/2023-08/sccs_o_265.pdf",
+    "title": "SCCS/1643/22 Scientific Advice Triclocarban and Triclosan",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 4 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S10.md",
+    "snippet": "triclosan 0.3% toothpaste; potential endocrine disrupting properties",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8356,
+        "content": 0.8878,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S11",
+    "url": "https://www.sdu.dk/en/om-sdu/fakulteterne/naturvidenskab/nyheder-2020/hormonforstyrrende-stoffer",
+    "canonicalUrl": "https://sdu.dk/en/om-sdu/fakulteterne/naturvidenskab/nyheder-2020/hormonforstyrrende-stoffer",
+    "title": "New website provides overview of endocrine disruptors in the EU",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "sdu.dk",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S11.md",
+    "snippet": "19 substances List I",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7821,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S12",
+    "url": "https://www.sgs.com/en-hk/news/2023/10/eu-expands-the-list-of-fragrance-allergens-in-cosmetic-products",
+    "canonicalUrl": "https://sgs.com/en-hk/news/2023/10/eu-expands-the-list-of-fragrance-allergens-in-cosmetic-products",
+    "title": "EU Expands the List of Fragrance Allergens in Cosmetic Products - SGS",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "sgs.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S12.md",
+    "snippet": "table current/new entries",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9385,
+        "content": 0.9653,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S13",
+    "url": "https://www.steptoe.com/en/news-publications/california-consumer-chemicals-law-blog/assembly-bill-496-lays-the-regulations-on-thick-for-the-cosmetics-industry.html",
+    "canonicalUrl": "https://steptoe.com/en/news-publications/california-consumer-chemicals-law-blog/assembly-bill-496-lays-the-regulations-on-thick-for-the-cosmetics-industry.html",
+    "title": "Assembly Bill 496 Lays the Regulations on Thick for the Cosmetics Industry",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "steptoe.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S13.md",
+    "snippet": "Steptoe",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8592,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S14",
+    "url": "https://coslaw.eu/new-restrictions-for-the-uv-filters/",
+    "canonicalUrl": "https://coslaw.eu/new-restrictions-for-the-uv-filters",
+    "title": "New restrictions for the UV filters Benzophenone-3 and Octocrylene",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "coslaw.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S14.md",
+    "snippet": "coslaw",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9839,
+        "content": 0.6293,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S15",
+    "url": "https://cosmeticobs.com/en/articles/european-commission-45/regulation-20221181-entry-into-force-this-31-july-2024-8236",
+    "canonicalUrl": "https://cosmeticobs.com/en/articles/european-commission-45/regulation-20221181-entry-into-force-this-31-july-2024-8236",
+    "title": "Regulation 2022/1181: entry into force this 31 July 2024",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosmeticobs.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S15.md",
+    "snippet": "CosmeticOBS",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7922,
+        "content": 0.885,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S16",
+    "url": "https://ecomundo.eu/en/blog/mocra-deadlines-update-2026",
+    "canonicalUrl": "https://ecomundo.eu/en/blog/mocra-deadlines-update-2026",
+    "title": "MoCRA Deadlines Update 2026",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "ecomundo.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S16.md",
+    "snippet": "GMP PFAS allergens",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7722,
+        "content": 0.982,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S17",
+    "url": "https://globalsilicones.org/regulation/eu/restrictions-on-personal-care-consumer-and-professional-products/",
+    "canonicalUrl": "https://globalsilicones.org/regulation/eu/restrictions-on-personal-care-consumer-and-professional-products",
+    "title": "Restrictions on Personal Care, Consumer and Professional Products - Global Silicones Council",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "globalsilicones.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S17.md",
+    "snippet": "D4 D5 D6",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8841,
+        "content": 0.8561,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S18",
+    "url": "https://single-market-economy.ec.europa.eu/sectors/cosmetics/tpo-nail-products-questions-answers_en",
+    "canonicalUrl": "https://single-market-economy.ec.europa.eu/sectors/cosmetics/tpo-nail-products-questions-answers_en",
+    "title": "TPO in nail products - questions and answers - European Commission",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "single-market-economy.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S18.md",
+    "snippet": "From 1 September 2025 placing and making available of cosmetic products containing TPO prohibited",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9242,
+        "content": 0.8946,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S19",
+    "url": "https://www.ul.com/news/eu-amends-cosmetics-regulation-regarding-fragrance-allergens",
+    "canonicalUrl": "https://ul.com/news/eu-amends-cosmetics-regulation-regarding-fragrance-allergens",
+    "title": "EU Amends Cosmetics Regulation Regarding Fragrance Allergens - UL",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "ul.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S19.md",
+    "snippet": "56 additional fragrance allergens 0.001% leave-on 0.01% rinse-off",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9531,
+        "content": 0.956,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S20",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R1224",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32017R1224",
+    "title": "Commission Regulation (EU) 2017/1224 methylisothiazolinone rinse-off 0.0015%",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S20.md",
+    "snippet": "amending Annex V; MI rinse-off 0,0015 %",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 1,
+        "content": 0.6696,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S21",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1328",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32024R1328",
+    "title": "Commission Regulation (EU) 2024/1328 (REACH Annex XVII D4, D5, D6)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S21.md",
+    "snippet": "(2)  Commission Regulation (EU) 2018/35 of 10 January 2018 amending Annex XVII to Regulation (EC) No 1907/2006 of the European Parliament and of the Council concerning the Registration, Evaluation, Authorisation and Restriction of Chemicals (REACH) as regards octamethylcyclotetrasiloxane (‘D4’) and decamethylcyclopentasiloxane (‘D5’) (OJ L 6, 11.1.2018, p.",
+    "meta": {
+      "textVia": "http://publications.europa.eu/resource/cellar/e54ebba3-13e7-11ef-a251-01aa75ed71a1.0006.03/DOC_1",
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S22",
+    "url": "https://health.ec.europa.eu/publications/4-methylbenzylidene-camphor-4-mbc_en",
+    "canonicalUrl": "https://health.ec.europa.eu/publications/4-methylbenzylidene-camphor-4-mbc_en",
+    "title": "4-Methylbenzylidene camphor (4-MBC) - European Commission",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S22.md",
+    "snippet": "SCCS opinion",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8472,
+        "content": 0.6858,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S23",
+    "url": "https://www.afslaw.com/perspectives/alerts/california-bans-toxic-chemicals-cosmetics",
+    "canonicalUrl": "https://afslaw.com/perspectives/alerts/california-bans-toxic-chemicals-cosmetics",
+    "title": "California Bans Toxic Chemicals in Cosmetics - ArentFox Schiff",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "afslaw.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S23.md",
+    "snippet": "AB 2762",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9104,
+        "content": 0.9209,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S24",
+    "url": "https://www.cosmeticscare.eu/en/lilial-and-zinc-pyrithione-banned/",
+    "canonicalUrl": "https://cosmeticscare.eu/en/lilial-and-zinc-pyrithione-banned",
+    "title": "Lilial and zinc pyrithione banned",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosmeticscare.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S24.md",
+    "snippet": "butylphenyl methylpropional zinc pyrithione Annex II",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9531,
+        "content": 0.8793,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S25",
+    "url": "https://www.hpra.ie/regulation/cosmetics/labelling-and-claims/cosmetic-products-labelling/labelling-of-cosmetic-fragrance-allergens",
+    "canonicalUrl": "https://hpra.ie/regulation/cosmetics/labelling-and-claims/cosmetic-products-labelling/labelling-of-cosmetic-fragrance-allergens",
+    "title": "Labelling of cosmetic fragrance allergens - HPRA",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "hpra.ie",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S25.md",
+    "snippet": "placed on the Union market until 31 July 2026 and made available until 31 July 2028",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9104,
+        "content": 0.8494,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S26",
+    "url": "https://assets.publishing.service.gov.uk/media/638e035b8fa8f569f4902055/EM_Butylated_Hydroxytoluene__Acid_Yellow_3__Homosalate__HAA299_and_Resorcinol_in_cosmetic_products__1_.pdf",
+    "canonicalUrl": "https://assets.publishing.service.gov.uk/media/638e035b8fa8f569f4902055/EM_Butylated_Hydroxytoluene__Acid_Yellow_3__Homosalate__HAA299_and_Resorcinol_in_cosmetic_products__1_.pdf",
+    "title": "Explanatory memorandum BHT, Acid Yellow 3, Homosalate, HAA299, Resorcinol",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "assets.publishing.service.gov.uk",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S26.md",
+    "snippet": "UK OPSS",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9385,
+        "content": 0.6354,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S27",
+    "url": "https://biorius.com/cosmetic-news/mocra-compliance/",
+    "canonicalUrl": "https://biorius.com/cosmetic-news/mocra-compliance",
+    "title": "MoCRA Compliance: Complete Guide to FDA Cosmetic Requirements - Biorius",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "biorius.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S27.md",
+    "snippet": "MoCRA",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7821,
+        "content": 0.9377,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S28",
+    "url": "https://cosmeticobs.com/en/articles/european-commission-45/regulation-20241328-new-restrictions-for-d4-d5-and-d6-8116",
+    "canonicalUrl": "https://cosmeticobs.com/en/articles/european-commission-45/regulation-20241328-new-restrictions-for-d4-d5-and-d6-8116",
+    "title": "Regulation 2024/1328: new restrictions for D4, D5 and D6",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosmeticobs.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S28.md",
+    "snippet": "CosmeticOBS",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9531,
+        "content": 0.7361,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S29",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_178.pdf",
+    "canonicalUrl": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_178.pdf",
+    "title": "SCCS/1557/15 Opinion on Methylisothiazolinone (submission III)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S29.md",
+    "snippet": "rinse-off 0.0015% safe for induction",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9683,
+        "content": 0.6568,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S30",
+    "url": "https://oxfordbiosciences.com/resources/eu-fragrance-allergens/",
+    "canonicalUrl": "https://oxfordbiosciences.com/resources/eu-fragrance-allergens",
+    "title": "EU Fragrance Allergen Labelling: The Full List",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "oxfordbiosciences.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S30.md",
+    "snippet": "full table of the 56 additions with CAS numbers",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8971,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S31",
+    "url": "https://www.belabservices.com/en/post/the-omnibus-act-vii-european-commission-announces-new-restrictions-for-cmr-substances-in-cosmetic-p",
+    "canonicalUrl": "https://belabservices.com/en/post/the-omnibus-act-vii-european-commission-announces-new-restrictions-for-cmr-substances-in-cosmetic-p",
+    "title": "The Omnibus Act VII: New Restrictions for CMR Substances",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "belabservices.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S31.md",
+    "snippet": "22 CMR substances 1 September 2025",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7349,
+        "content": 0.8868,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S32",
+    "url": "http://cehos.dk/files/ED-list_II_2024.pdf",
+    "canonicalUrl": "http://cehos.dk/files/ED-list_II_2024.pdf",
+    "title": "Prioritisation of Endocrine Disruptors for Regulation CeHoS",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cehos.dk",
+    "trust": 0.5,
+    "signals": [
+      "cites 16 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S32.md",
+    "snippet": "BP-3 REACH evaluation ongoing",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7439,
+        "content": 0.7345,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S33",
+    "url": "https://coslaw.eu/omnibus-iv-new-ingredients-banned-in-cosmetics/",
+    "canonicalUrl": "https://coslaw.eu/omnibus-iv-new-ingredients-banned-in-cosmetics",
+    "title": "Omnibus IV: new ingredients banned in cosmetics",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "coslaw.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S33.md",
+    "snippet": "Lilial and zinc pyrithione banned 1 March 2022",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9683,
+        "content": 0.8146,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S34",
+    "url": "https://health.ec.europa.eu/publications/opinion-parabens-updated-request-scientific-opinion-propyl-and-butylparaben-colipa-p82-preservatives_en",
+    "canonicalUrl": "https://health.ec.europa.eu/publications/opinion-parabens-updated-request-scientific-opinion-propyl-and-butylparaben-colipa-p82-preservatives_en",
+    "title": "Opinion on Parabens - Updated request propyl- and butylparaben",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S34.md",
+    "snippet": "SCCS",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8841,
+        "content": 0.4741,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S35",
+    "url": "https://inciapi.com/blog/eu-allergens-2023-1545/",
+    "canonicalUrl": "https://inciapi.com/blog/eu-allergens-2023-1545",
+    "title": "EU Regulation 2023/1545: Annex III Fragrance Allergens List",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "inciapi.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S35.md",
+    "snippet": "82 entries",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8841,
+        "content": 0.9439,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S36",
+    "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB2771",
+    "canonicalUrl": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202120220AB2771",
+    "title": "AB-2771 Cosmetic products: safety (2021-2022) PFAS",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "leginfo.legislature.ca.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S36.md",
+    "snippet": "Beginning January 1, 2025 intentionally added PFAS",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8472,
+        "content": 0.7981,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S37",
+    "url": "https://www.cosreglo.fr/blog/pfas-cosmetique",
+    "canonicalUrl": "https://cosreglo.fr/blog/pfas-cosmetique",
+    "title": "PFAS en cosmétique : l'interdiction française depuis 2026",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosreglo.fr",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S37.md",
+    "snippet": "cosreglo",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7722,
+        "content": 0.6752,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S38",
+    "url": "https://edlists.org/about-this-site",
+    "canonicalUrl": "https://edlists.org/about-this-site",
+    "title": "About this site - edlists.org",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "edlists.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0149,
+    "extract": "sources/S38.md",
+    "snippet": "Belgium, Denmark, France, Netherlands, Sweden, Spain",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7922,
+        "content": 0.6337,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S39",
+    "url": "https://health.ec.europa.eu/publications/safety-triclocarban-and-triclosan-substances-potential-endocrine-disrupting-properties-cosmetic_en",
+    "canonicalUrl": "https://health.ec.europa.eu/publications/safety-triclocarban-and-triclosan-substances-potential-endocrine-disrupting-properties-cosmetic_en",
+    "title": "Safety of Triclocarban and Triclosan - Public Health",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0149,
+    "extract": "sources/S39.md",
+    "snippet": "SCCS 24-25 October 2022",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8243,
+        "content": 0.589,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S40",
+    "url": "https://www.alsglobal.com/en/news-and-publications/2024/07/eu-regulation-2023-1545-fragrance-allergen-labeling",
+    "canonicalUrl": "https://alsglobal.com/en/news-and-publications/2024/07/eu-regulation-2023-1545-fragrance-allergen-labeling",
+    "title": "Navigating EU Regulation 2023/1545 - ALS",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "alsglobal.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 3 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0149,
+    "extract": "sources/S40.md",
+    "snippet": "fragrance allergen labeling guide",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9242,
+        "content": 0.9387,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S41",
+    "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/modernization-cosmetics-regulation-act-2022-mocra",
+    "canonicalUrl": "https://fda.gov/cosmetics/cosmetics-laws-regulations/modernization-cosmetics-regulation-act-2022-mocra",
+    "title": "Modernization of Cosmetics Regulation Act of 2022 (MoCRA) - FDA",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "fda.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0149,
+    "extract": "sources/S41.md",
+    "snippet": "facility registration, product listing, adverse event reporting, safety substantiation",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8243,
+        "content": 0.8361,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S42",
+    "url": "https://www.sgs.com/en-fr/news/2025/03/safeguards-04025-france-bans-pfas-on-consumer-products",
+    "canonicalUrl": "https://sgs.com/en-fr/news/2025/03/safeguards-04025-france-bans-pfas-on-consumer-products",
+    "title": "France Bans PFAS on Consumer Products - SGS",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "sgs.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0149,
+    "extract": "sources/S42.md",
+    "snippet": "cosmetics ski wax textiles",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8243,
+        "content": 0.6882,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S43",
+    "url": "https://coslaw.eu/endocrine-disruptors-keep-up-with-cosmetics-news/",
+    "canonicalUrl": "https://coslaw.eu/endocrine-disruptors-keep-up-with-cosmetics-news",
+    "title": "Endocrine disruptors: keep up with cosmetics news!",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "coslaw.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 4 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S43.md",
+    "snippet": "28 potential ED substances cosmetics call for data",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7625,
+        "content": 0.8166,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S44",
+    "url": "https://cosmetic.chemlinked.com/news/cosmetic-news/us-fda-sets-november-2026-timeline-for-formaldehyde-ban-and-fragrance-allergen-rule",
+    "canonicalUrl": "https://cosmetic.chemlinked.com/news/cosmetic-news/us-fda-sets-november-2026-timeline-for-formaldehyde-ban-and-fragrance-allergen-rule",
+    "title": "U.S. FDA Targets November 2026 for Formaldehyde Ban and Fragrance Allergen Labeling Proposals",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosmetic.chemlinked.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S44.md",
+    "snippet": "ChemLinked",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7625,
+        "content": 0.8728,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S45",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0877",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32025R0877",
+    "title": "Commission Regulation (EU) 2025/877 (CMR omnibus VII)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S45.md",
+    "snippet": "trimethylbenzoyl diphenylphosphine oxide prohibited from 1 September 2025",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9385,
+        "content": 0.9679,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S46",
+    "url": "https://health.ec.europa.eu/system/files/2022-08/sccs_o_254.pdf",
+    "canonicalUrl": "https://health.ec.europa.eu/system/files/2022-08/sccs_o_254.pdf",
+    "title": "SCCS/1632/21 Scientific Advice threshold for warning 'contains formaldehyde'",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S46.md",
+    "snippet": "formaldehyde releasers",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7625,
+        "content": 0.6872,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S47",
+    "url": "https://www2.mst.dk/Udgiv/publications/2018/10/978-87-93710-94-8.pdf",
+    "canonicalUrl": "https://www2.mst.dk/Udgiv/publications/2018/10/978-87-93710-94-8.pdf",
+    "title": "Risk assessment of fluorinated substances in cosmetic products - Danish EPA 2018",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "www2.mst.dk",
+    "trust": 0.5,
+    "signals": [
+      "cites 12 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S47.md",
+    "snippet": "PTFE most product types",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7439,
+        "content": 0.7411,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S48",
+    "url": "https://cosmeticobs.com/en/articles/cosmetic-regulations-18/hicc-atranol-chloroatranol-prohibited-from-august-23-2019-3990",
+    "canonicalUrl": "https://cosmeticobs.com/en/articles/cosmetic-regulations-18/hicc-atranol-chloroatranol-prohibited-from-august-23-2019-3990",
+    "title": "HICC, Atranol, Chloroatranol: prohibited from August 23, 2019",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosmeticobs.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S48.md",
+    "snippet": "CosmeticOBS",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8356,
+        "content": 0.6263,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S49",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_132.pdf",
+    "canonicalUrl": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_132.pdf",
+    "title": "SCCS/1514/13 Opinion on Parabens - propyl- and butylparaben",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S49.md",
+    "snippet": "adopted 3 May 2013",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8971,
+        "content": 0.4854,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S50",
+    "url": "https://edlists.org/the-ed-lists/list-i-substances-identified-as-endocrine-disruptors-by-the-eu",
+    "canonicalUrl": "https://edlists.org/the-ed-lists/list-i-substances-identified-as-endocrine-disruptors-by-the-eu",
+    "title": "List I: Substances identified as endocrine disruptors at EU level",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "edlists.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S50.md",
+    "snippet": "4-MBC, butylparaben, isobutylparaben, 3-benzylidene camphor, DEHP, DBP, BBP, DIBP, BPA, TPP",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8243,
+        "content": 0.4493,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S51",
+    "url": "https://inciapi.com/blog/otne-2023-1545-annex-iii/",
+    "canonicalUrl": "https://inciapi.com/blog/otne-2023-1545-annex-iii",
+    "title": "OTNE and the 2023/1545 Fragrance Allergen List",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "inciapi.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S51.md",
+    "snippet": "Tetramethyl Acetyloctahydronaphthalenes entry 344",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7722,
+        "content": 0.9984,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S52",
+    "url": "https://www.chemsafetypro.com/Topics/Restriction/Restriction_of_D4_and_D5_in_Personal_Care_Products.html",
+    "canonicalUrl": "https://chemsafetypro.com/Topics/Restriction/Restriction_of_D4_and_D5_in_Personal_Care_Products.html",
+    "title": "Restriction of D4 and D5 in Personal Care Products",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "chemsafetypro.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S52.md",
+    "snippet": "chemsafetypro",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8971,
+        "content": 0.5462,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S53",
+    "url": "https://www.ul.com/news/california-bans-pfas-textile-articles-and-cosmetics",
+    "canonicalUrl": "https://ul.com/news/california-bans-pfas-textile-articles-and-cosmetics",
+    "title": "California Bans PFAS in Textile Articles and Cosmetics - UL",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "ul.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S53.md",
+    "snippet": "AB 2771",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8356,
+        "content": 0.7268,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S54",
+    "url": "https://coslaw.eu/new-amendment-to-cosmetics-regulation-retinol-and-other-substances-banned-or-restricted-in-cosmetics/",
+    "canonicalUrl": "https://coslaw.eu/new-amendment-to-cosmetics-regulation-retinol-and-other-substances-banned-or-restricted-in-cosmetics",
+    "title": "New amendment to EU Cosmetics Regulation: Retinol and other substances",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "coslaw.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S54.md",
+    "snippet": "2024/996 genistein daidzein triclocarban triclosan",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7922,
+        "content": 0.7477,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S55",
+    "url": "https://cosmeticobs.com/en/articles/european-commission-45/reminder-full-entry-into-force-of-the-new-restrictions-on-benzophenone-3-and-octocrylene-7516",
+    "canonicalUrl": "https://cosmeticobs.com/en/articles/european-commission-45/reminder-full-entry-into-force-of-the-new-restrictions-on-benzophenone-3-and-octocrylene-7516",
+    "title": "Reminder: full entry into force of the new restrictions on Benzophenone-3 and Octocrylene",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosmeticobs.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S55.md",
+    "snippet": "28 July 2023",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9683,
+        "content": 0.3295,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S56",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/Privacy/Regulations/GDPR",
+    "canonicalUrl": "https://developer.mozilla.org/en-US/docs/Web/Privacy/Regulations/GDPR",
+    "title": "GDPR",
+    "backend": "standards",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "developer.mozilla.org",
+    "trust": 0.9,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S56.md",
+    "snippet": "The General Data Protection Regulation (GDPR) is a comprehensive data protection law enacted by the European Union (EU). It gives individuals control over how their personal data is used by organizations, and imposes restrictions on how an organization is allowed to handle this personal data.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 1,
+        "content": 0.2448,
+        "trust": 0.9,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S57",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R1003",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32014R1003",
+    "title": "Commission Regulation (EU) No 1003/2014 MCI/MI mixture leave-on",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S57.md",
+    "snippet": "mixture methylchloroisothiazolinone and methylisothiazolinone rinse-off only 0,0015 %",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9242,
+        "content": 0.7422,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S58",
+    "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201920200AB2762",
+    "canonicalUrl": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201920200AB2762",
+    "title": "Bill Text - AB-2762 Cosmetic products: safety.",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "leginfo.legislature.ca.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S58.md",
+    "snippet": "Toxic-Free Cosmetics Act; commencing January 1, 2025 intentionally added ingredients",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 1,
+        "content": 0.5601,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S59",
+    "url": "https://monographs.iarc.who.int/news-events/volume-136-talc-and-acrylonitrile",
+    "canonicalUrl": "https://monographs.iarc.who.int/news-events/volume-136-talc-and-acrylonitrile",
+    "title": "IARC Monographs Volume 136: Talc and Acrylonitrile",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "monographs.iarc.who.int",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S59.md",
+    "snippet": "11-18 June 2024",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7011,
+        "content": 0.6307,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S60",
+    "url": "https://cosmeticobs.com/en/articles/cosmetic-regulations-18/mi-no-more-than-00015-in-rinse-off-products-early-2018-3993",
+    "canonicalUrl": "https://cosmeticobs.com/en/articles/cosmetic-regulations-18/mi-no-more-than-00015-in-rinse-off-products-early-2018-3993",
+    "title": "MI: no more than 0.0015% in rinse-off products early 2018",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosmeticobs.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S60.md",
+    "snippet": "CosmeticOBS",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9531,
+        "content": 0.347,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S61",
+    "url": "https://health.ec.europa.eu/system/files/2023-08/sccs_o_262.pdf",
+    "canonicalUrl": "https://health.ec.europa.eu/system/files/2023-08/sccs_o_262.pdf",
+    "title": "SCCS/1640/21 Opinion on 4-Methylbenzylidene camphor (4-MBC)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 4 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S61.md",
+    "snippet": "cannot conclude on safety; may act as endocrine disruptor",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8592,
+        "content": 0.9498,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S62",
+    "url": "https://www.economie.gouv.fr/entreprises/tout-savoir-sur-linterdiction-progressive-des-pfas",
+    "canonicalUrl": "https://economie.gouv.fr/entreprises/tout-savoir-sur-linterdiction-progressive-des-pfas",
+    "title": "Tout savoir sur l'interdiction progressive des PFAS",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "economie.gouv.fr",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S62.md",
+    "snippet": "cosmétiques fart textiles 1er janvier 2026",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8472,
+        "content": 0.4479,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S63",
+    "url": "https://www.morganlewis.com/pubs/2025/12/state-pfas-bans-in-cosmetics-expand-ahead-of-2026",
+    "canonicalUrl": "https://morganlewis.com/pubs/2025/12/state-pfas-bans-in-cosmetics-expand-ahead-of-2026",
+    "title": "State PFAS Bans in Cosmetics Expand Ahead of 2026 - Morgan Lewis",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "morganlewis.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S63.md",
+    "snippet": "California Colorado Maryland Minnesota Washington",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7176,
+        "content": 0.8225,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S64",
+    "url": "https://www.registrarcorp.com/blog/cosmetics/eu-fragrance-allergen-expansion-2026/",
+    "canonicalUrl": "https://registrarcorp.com/blog/cosmetics/eu-fragrance-allergen-expansion-2026",
+    "title": "EU Fragrance Allergen Deadline July 31, 2026",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "registrarcorp.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S64.md",
+    "snippet": "deadline",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7922,
+        "content": 0.8344,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S65",
+    "url": "https://www.ul.com/news/eu-updates-cosmetics-regulation-annexes-ii-iii-and-v",
+    "canonicalUrl": "https://ul.com/news/eu-updates-cosmetics-regulation-annexes-ii-iii-and-v",
+    "title": "EU Updates Cosmetics Regulation Annexes II, III, and V - UL",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "ul.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S65.md",
+    "snippet": "2022/1531",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7531,
+        "content": 0.7655,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S66",
+    "url": "https://cosmetic.chemlinked.com/news/cosmetic-news/california-to-ban-the-use-of-26-ingredients-in-cosmetics",
+    "canonicalUrl": "https://cosmetic.chemlinked.com/news/cosmetic-news/california-to-ban-the-use-of-26-ingredients-in-cosmetics",
+    "title": "California to Ban the Use of 26 Ingredients in Cosmetics",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosmetic.chemlinked.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S66.md",
+    "snippet": "ChemLinked AB 496",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8714,
+        "content": 0.5525,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S67",
+    "url": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_102.pdf",
+    "canonicalUrl": "https://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_102.pdf",
+    "title": "SCCS Opinion on Fragrance allergens in cosmetic products (SCCS/1459/11)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 11 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S67.md",
+    "snippet": "26-27 June 2012; established, likely and possible fragrance allergens; HICC atranol chloroatranol should not be present",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8472,
+        "content": 0.6472,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S68",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32018R0035",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32018R0035",
+    "title": "Commission Regulation (EU) 2018/35 (REACH Annex XVII D4 and D5)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S68.md",
+    "snippet": "On 17 April 2015, the United Kingdom submitted to the European Chemicals Agency (‘Agency’) a dossier pursuant to Article 69(4) of Regulation (EC) No 1907/2006 (‘the Annex XV dossier (2)’), proposing to restrict octamethylcyclotetrasiloxane (D4) and decamethylcyclopentasiloxane (D5) in cosmetic products that are washed off in normal conditions of use.",
+    "meta": {
+      "textVia": "http://publications.europa.eu/resource/cellar/db103079-f6a4-11e7-b8f5-01aa75ed71a1.0006.03/DOC_1",
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S69",
+    "url": "https://health.ec.europa.eu/system/files/2022-08/sccs_o_243.pdf",
+    "canonicalUrl": "https://health.ec.europa.eu/system/files/2022-08/sccs_o_243.pdf",
+    "title": "SCCS/1623/20 Final Opinion on Propylparaben",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 6 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S69.md",
+    "snippet": "propylparaben safe up to 0.14%",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8714,
+        "content": 0.6389,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S70",
+    "url": "https://health.ec.europa.eu/system/files/2022-08/sccs_o_260.pdf",
+    "canonicalUrl": "https://health.ec.europa.eu/system/files/2022-08/sccs_o_260.pdf",
+    "title": "SCCS/1638/21 Scientific Advice on Homosalate",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S70.md",
+    "snippet": "safe up to 7.34% in face cream and pump spray",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9242,
+        "content": 0.7278,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S71",
+    "url": "https://www.legislation.gov.uk/eur/2014/358/data.html",
+    "canonicalUrl": "https://legislation.gov.uk/eur/2014/358/data.html",
+    "title": "Commission Regulation (EU) No 358/2014",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "legislation.gov.uk",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S71.md",
+    "snippet": "amending Annexes II and V; parabens; triclosan",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8841,
+        "content": 0.5067,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S72",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1490",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32023R1490",
+    "title": "Commission Regulation (EU) 2023/1490 (CMR omnibus VI)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0137,
+    "extract": "sources/S72.md",
+    "snippet": "30 entries Annex II from 1 December 2023: benzophenone, zinc ethylhexanoate, theophylline, melamine",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7821,
+        "content": 0.9509,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S73",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34274358/",
+    "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/34274358",
+    "title": "Opinion of the SCCS - Final Opinion on propylparaben - PubMed",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "pubmed.ncbi.nlm.nih.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0137,
+    "extract": "sources/S73.md",
+    "snippet": "Regul Toxicol Pharmacol",
+    "meta": {
+      "foundBy": 1,
+      "textVia": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=34274358&rettype=abstract&retmode=text",
+      "rank": {
+        "rrf": 0.8592,
+        "content": 0.3798,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S74",
+    "url": "https://www.iarc.who.int/wp-content/uploads/2024/07/QA-Mono-Vol136.pdf",
+    "canonicalUrl": "https://iarc.who.int/wp-content/uploads/2024/07/QA-Mono-Vol136.pdf",
+    "title": "IARC Q&A Monographs Volume 136",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "iarc.who.int",
+    "trust": 0.5,
+    "signals": [
+      "cites 3 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0137,
+    "extract": "sources/S74.md",
+    "snippet": "talc",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7176,
+        "content": 0.6085,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S75",
+    "url": "https://www.ikw.org/fileadmin/IKW_Dateien/downloads/Schoenheitspflege/2024-02-12_CE_Guidelines_Allergens_DE.pdf",
+    "canonicalUrl": "https://ikw.org/fileadmin/IKW_Dateien/downloads/Schoenheitspflege/2024-02-12_CE_Guidelines_Allergens_DE.pdf",
+    "title": "Leitlinien zu den Anforderungen an Duftstoffallergene (IKW)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "ikw.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0137,
+    "extract": "sources/S75.md",
+    "snippet": "Cosmetics Europe Guidelines",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8026,
+        "content": 0.4617,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S76",
+    "url": "https://www.personalcareinsights.com/news/echa-benzophenone3-endocrine-risk.html",
+    "canonicalUrl": "https://personalcareinsights.com/news/echa-benzophenone3-endocrine-risk.html",
+    "title": "EU's decade-long evaluation confirms endocrine disruption risk from UV filter",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "personalcareinsights.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0137,
+    "extract": "sources/S76.md",
+    "snippet": "benzophenone-3 ECHA",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7531,
+        "content": 0.4806,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S77",
+    "url": "https://www.wiley.law/alert-FDA-Withdraws-Standardized-Asbestos-Testing-Proposal-for-Talc-Containing-Cosmetics-With-Intent-to-Reexamine-and-Reissue",
+    "canonicalUrl": "https://wiley.law/alert-FDA-Withdraws-Standardized-Asbestos-Testing-Proposal-for-Talc-Containing-Cosmetics-With-Intent-to-Reexamine-and-Reissue",
+    "title": "FDA Withdraws Asbestos Testing Proposal for Talc-Containing Cosmetics",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "wiley.law",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0137,
+    "extract": "sources/S77.md",
+    "snippet": "Wiley",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7531,
+        "content": 0.6878,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S78",
+    "url": "https://apps.ecology.wa.gov/publications/documents/2404019.pdf",
+    "canonicalUrl": "https://apps.ecology.wa.gov/publications/documents/2404019.pdf",
+    "title": "Toxic-Free Cosmetics Act Guide - Washington Ecology",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "apps.ecology.wa.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 5 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0135,
+    "extract": "sources/S78.md",
+    "snippet": "DMDM hydantoin Table 2",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7349,
+        "content": 0.6076,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S79",
+    "url": "https://cosmeticobs.com/en/articles/authorities-47/2nd-update-of-ed-lists-for-2025-9084",
+    "canonicalUrl": "https://cosmeticobs.com/en/articles/authorities-47/2nd-update-of-ed-lists-for-2025-9084",
+    "title": "2nd update of ED Lists for 2025",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosmeticobs.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0135,
+    "extract": "sources/S79.md",
+    "snippet": "potassium chlorate List II",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7722,
+        "content": 0.4868,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S80",
+    "url": "https://criticalcatalyst.com/regulation-eu-2022-1531-omnibus-act-v-applicable-as-of-17-december-2022/",
+    "canonicalUrl": "https://criticalcatalyst.com/regulation-eu-2022-1531-omnibus-act-v-applicable-as-of-17-december-2022",
+    "title": "Regulation (EU) 2022/1531 Omnibus Act V",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "criticalcatalyst.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0135,
+    "extract": "sources/S80.md",
+    "snippet": "applicable as of 17 December 2022",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7439,
+        "content": 0.616,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S81",
+    "url": "https://www.cosmacon.de/en/glossary/allergenic-fragrances/",
+    "canonicalUrl": "https://cosmacon.de/en/glossary/allergenic-fragrances",
+    "title": "Allergenic Fragrances - CR 2023/1545 - Cosmacon",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosmacon.de",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0135,
+    "extract": "sources/S81.md",
+    "snippet": "table INCI CAS",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8714,
+        "content": 0.7657,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S82",
+    "url": "https://www.legislation.gov.uk/eur/2019/831/adopted/data.xht?view=snippet&wrap=true",
+    "canonicalUrl": "https://legislation.gov.uk/eur/2019/831/adopted/data.xht?view=snippet&wrap=true",
+    "title": "Commission Regulation (EU) 2019/831 (legislation.gov.uk)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "legislation.gov.uk",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0135,
+    "extract": "sources/S82.md",
+    "snippet": "Quaternium-15 Annex II entry 1386",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7722,
+        "content": 0.4517,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S83",
+    "url": "https://www.senat.fr/questions/base/2025/qSEQ251006329.html",
+    "canonicalUrl": "https://senat.fr/questions/base/2025/qSEQ251006329.html",
+    "title": "Application de la loi PFAS - Sénat",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "senat.fr",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0135,
+    "extract": "sources/S83.md",
+    "snippet": "article 1er interdit à compter du 1er janvier 2026",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8356,
+        "content": 0.2908,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S84",
+    "url": "https://california.public.law/codes/health_and_safety_code_section_108980",
+    "canonicalUrl": "https://california.public.law/codes/health_and_safety_code_section_108980",
+    "title": "California Health and Safety Code section 108980",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "california.public.law",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0133,
+    "extract": "sources/S84.md",
+    "snippet": "current version with subdivision (b) lily aldehyde",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9683,
+        "content": 0.3781,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S85",
+    "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32023R1545",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/DE/TXT?uri=CELEX%3A32023R1545",
+    "title": "Verordnung (EU) 2023/1545 Kennzeichnung allergener Duftstoffe",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0133,
+    "extract": "sources/S85.md",
+    "snippet": "Änderung der Verordnung (EG) Nr. 1223/2009 hinsichtlich der Kennzeichnung allergener Duftstoffe in kosmetischen Mitteln",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9683,
+        "content": 0.7256,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S86",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R1531",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32022R1531",
+    "title": "Commission Regulation (EU) 2022/1531 (CMR omnibus V)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0133,
+    "extract": "sources/S86.md",
+    "snippet": "14 substances Annex II from 17 December 2022; methyl salicylate Annex III; sodium hydroxymethylglycinate",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7625,
+        "content": 0.9866,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S87",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R2195",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32022R2195",
+    "title": "Commission Regulation (EU) 2022/2195 (BHT, Acid Yellow 3, Homosalate, HAA299, Resorcinol)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0133,
+    "extract": "sources/S87.md",
+    "snippet": "The Commission requested the SCCS to carry out a safety assessment of Homosalate in view of the information provided. The SCCS concluded in its opinion of 24-25 June 2021 (4) that Homosalate is not safe when used as a UV-filter in cosmetic products at concentrations of up to 10 %.",
+    "meta": {
+      "textVia": "http://publications.europa.eu/resource/cellar/61e21609-61a8-11ed-92ed-01aa75ed71a1.0006.03/DOC_1",
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S88",
+    "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/cod.14089",
+    "canonicalUrl": "https://onlinelibrary.wiley.com/doi/full/10.1111/cod.14089",
+    "title": "Contact allergy to formaldehyde and formaldehyde releasers: clinical review (Goossens 2022)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "onlinelibrary.wiley.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 3 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0133,
+    "extract": "sources/S88.md",
+    "snippet": "quaternium-15 Annex II 2019",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7531,
+        "content": 0.4076,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S89",
+    "url": "https://sciencemediacentre.es/en/talc-classified-probably-carcinogenic-humans-iarc",
+    "canonicalUrl": "https://sciencemediacentre.es/en/talc-classified-probably-carcinogenic-humans-iarc",
+    "title": "Talc is classified as probably carcinogenic to humans by the IARC",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "sciencemediacentre.es",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0133,
+    "extract": "sources/S89.md",
+    "snippet": "SMC Spain",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.6854,
+        "content": 0.4951,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S90",
+    "url": "https://assets.publishing.service.gov.uk/media/63ce6face90e071ba448517b/sag-cs-opinion-07-formaldehyde-releasing-substances.pdf",
+    "canonicalUrl": "https://assets.publishing.service.gov.uk/media/63ce6face90e071ba448517b/sag-cs-opinion-07-formaldehyde-releasing-substances.pdf",
+    "title": "SAG-CS Opinion 07: Formaldehyde releasing substances",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "assets.publishing.service.gov.uk",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S90.md",
+    "snippet": "DMDM hydantoin entry 33, imidazolidinyl urea 27, diazolidinyl urea 46, bronopol 21",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7439,
+        "content": 0.4487,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S91",
+    "url": "https://cosmeticobs.com/en/articles/international-66/washington-state-bans-25-formaldehyde-releasers-8917",
+    "canonicalUrl": "https://cosmeticobs.com/en/articles/international-66/washington-state-bans-25-formaldehyde-releasers-8917",
+    "title": "Washington State bans 25 formaldehyde releasers",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosmeticobs.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S91.md",
+    "snippet": "CosmeticOBS",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7262,
+        "content": 0.4607,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S92",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R0996",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32024R0996",
+    "title": "Commission Regulation (EU) 2024/996",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S92.md",
+    "snippet": "Vitamin A, Alpha-Arbutin, Arbutin and substances with potential endocrine disrupting properties; 4-MBC Annex II",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8133,
+        "content": 0.6656,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S93",
+    "url": "https://health.ec.europa.eu/document/download/2928185b-f8b7-474e-937a-052a90a90970_en",
+    "canonicalUrl": "https://health.ec.europa.eu/document/download/2928185b-f8b7-474e-937a-052a90a90970_en",
+    "title": "SCCS/1627/21 Final Opinion on Octocrylene",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 6 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S93.md",
+    "snippet": "10% individually; 9% propellant spray",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8841,
+        "content": 0.7676,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S94",
+    "url": "https://www.cosmacon.de/en/new-allergen-list/",
+    "canonicalUrl": "https://cosmacon.de/en/new-allergen-list",
+    "title": "New allergen list - Cosmacon",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosmacon.de",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S94.md",
+    "snippet": "INCI CAS",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8592,
+        "content": 0.8344,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S95",
+    "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053201526",
+    "canonicalUrl": "https://legifrance.gouv.fr/jorf/id/JORFTEXT000053201526",
+    "title": "Décret n° 2025-1376 du 28 décembre 2025 PFAS",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "legifrance.gouv.fr",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S95.md",
+    "snippet": "définition PFAS, concentrations résiduelles, exemptions",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8133,
+        "content": 0.2721,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S96",
+    "url": "https://biorius.com/cosmetic-news/new-cosmetic-regulation-april/",
+    "canonicalUrl": "https://biorius.com/cosmetic-news/new-cosmetic-regulation-april",
+    "title": "New cosmetic regulation on Vitamin A, Alpha-Arbutin, Arbutin - Biorius",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "biorius.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.013,
+    "extract": "sources/S96.md",
+    "snippet": "4-MBC ban 1 May 2025 / 1 May 2026; kojic acid 1%",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8026,
+        "content": 0.4686,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S97",
+    "url": "https://ecology.wa.gov/about-us/who-we-are/news/2025/formaldehyde-releasers-rule",
+    "canonicalUrl": "https://ecology.wa.gov/about-us/who-we-are/news/2025/formaldehyde-releasers-rule",
+    "title": "Washington moves to restrict cancer-causing chemicals in cosmetics - Ecology",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "ecology.wa.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.013,
+    "extract": "sources/S97.md",
+    "snippet": "25 formaldehyde releasers 1 January 2027",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7439,
+        "content": 0.4055,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S98",
+    "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32023R1545",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/FR/TXT?uri=CELEX%3A32023R1545",
+    "title": "Règlement (UE) 2023/1545 étiquetage des substances parfumantes allergisantes",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.013,
+    "extract": "sources/S98.md",
+    "snippet": "règlement modifiant le règlement (CE) no 1223/2009 en ce qui concerne l'étiquetage des substances parfumantes allergisantes",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9839,
+        "content": 0.7514,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S99",
+    "url": "https://health.ec.europa.eu/system/files/2022-08/sccs_o_247.pdf",
+    "canonicalUrl": "https://health.ec.europa.eu/system/files/2022-08/sccs_o_247.pdf",
+    "title": "SCCS/1625/20 Final Opinion on Benzophenone-3",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 6 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.013,
+    "extract": "sources/S99.md",
+    "snippet": "6% face cream hand cream lipstick; 2.2% body",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8971,
+        "content": 0.7622,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S100",
+    "url": "https://www.ecologie.gouv.fr/politiques-publiques/proteger-population-risques-lies-aux-pfas-loi-du-27-fevrier-2025",
+    "canonicalUrl": "https://ecologie.gouv.fr/politiques-publiques/proteger-population-risques-lies-aux-pfas-loi-du-27-fevrier-2025",
+    "title": "Protéger la population des risques liés aux PFAS : la loi du 27 février 2025",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "ecologie.gouv.fr",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.013,
+    "extract": "sources/S100.md",
+    "snippet": "ministère de la Transition écologique",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8592,
+        "content": 0.2609,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S101",
+    "url": "https://www.legislation.gov.uk/eur/2017/1224/contents/adopted/data.html",
+    "canonicalUrl": "https://legislation.gov.uk/eur/2017/1224/contents/adopted/data.html",
+    "title": "Commission Regulation (EU) 2017/1224",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "legislation.gov.uk",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.013,
+    "extract": "sources/S101.md",
+    "snippet": "Methylisothiazolinone rinse-off 15 ppm SCCS 15 December 2015",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9839,
+        "content": 0.3343,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S102",
+    "url": "https://biorius.com/cosmetic-news/upcoming-ban-of-hicc_lyral-atranol-and-chloroatranol/",
+    "canonicalUrl": "https://biorius.com/cosmetic-news/upcoming-ban-of-hicc_lyral-atranol-and-chloroatranol",
+    "title": "Upcoming Ban of HICC/Lyral, Atranol and Chloroatranol - Biorius",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "biorius.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0128,
+    "extract": "sources/S102.md",
+    "snippet": "oak moss tree moss atranol",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8243,
+        "content": 0.3337,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S103",
+    "url": "https://edlists.org/the-ed-lists/list-ii-substances-under-eu-investigation-endocrine-disruption",
+    "canonicalUrl": "https://edlists.org/the-ed-lists/list-ii-substances-under-eu-investigation-endocrine-disruption",
+    "title": "List II: Substances under EU investigation for endocrine disruption",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "edlists.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0128,
+    "extract": "sources/S103.md",
+    "snippet": "List II",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8133,
+        "content": 0.2671,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S104",
+    "url": "https://www.cosmeticscare.eu/en/from-26-to-82-longer-list-of-allergens/",
+    "canonicalUrl": "https://cosmeticscare.eu/en/from-26-to-82-longer-list-of-allergens",
+    "title": "From 26 to 82",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosmeticscare.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0128,
+    "extract": "sources/S104.md",
+    "snippet": "lilial lyral",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7821,
+        "content": 0.4653,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S105",
+    "url": "https://www.edqm.eu/documents/52006/1867303/Summary+report+-+Market+Surveillance+Study+on+Formaldehyde+in+Cosmetic+Products+Summary+Report+-+October+2023.pdf/e34565c1-5395-8a1f-0a6c-b432cf422911?t=1698403317638",
+    "canonicalUrl": "https://edqm.eu/documents/52006/1867303/Summary+report+-+Market+Surveillance+Study+on+Formaldehyde+in+Cosmetic+Products+Summary+Report+-+October+2023.pdf/e34565c1-5395-8a1f-0a6c-b432cf422911?t=1698403317638",
+    "title": "OCCL Market Surveillance Study on Formaldehyde in Cosmetic Products 2023",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "edqm.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0128,
+    "extract": "sources/S105.md",
+    "snippet": "DMDM hydantoin diazolidinyl urea imidazolidinyl urea most frequent",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7349,
+        "content": 0.4062,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S106",
+    "url": "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/prohibited-restricted-ingredients-cosmetics",
+    "canonicalUrl": "https://fda.gov/cosmetics/cosmetics-laws-regulations/prohibited-restricted-ingredients-cosmetics",
+    "title": "Prohibited & Restricted Ingredients in Cosmetics - FDA",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "fda.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0128,
+    "extract": "sources/S106.md",
+    "snippet": "mercury bithionol methylene chloride vinyl chloride",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8133,
+        "content": 0.3031,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S107",
+    "url": "https://www.safecosmetics.org/wp-content/uploads/2022/08/BCPP-Red-List-for-Web_Tier-1_PFAS_Key.pdf",
+    "canonicalUrl": "https://safecosmetics.org/wp-content/uploads/2022/08/BCPP-Red-List-for-Web_Tier-1_PFAS_Key.pdf",
+    "title": "Chemicals of Concern PFAS - BCPP Red List",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "safecosmetics.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0128,
+    "extract": "sources/S107.md",
+    "snippet": "CAS numbers PFAS INCI",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7349,
+        "content": 0.2528,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S108",
+    "url": "https://cosmetic.chemlinked.com/news/cosmetic-news/eu-lowers-the-labelling-threshold-for-formaldehyde-releasers-in-cosmetics-regulation",
+    "canonicalUrl": "https://cosmetic.chemlinked.com/news/cosmetic-news/eu-lowers-the-labelling-threshold-for-formaldehyde-releasers-in-cosmetics-regulation",
+    "title": "EU Lowers the Labelling Threshold for Formaldehyde Releasers",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "cosmetic.chemlinked.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0127,
+    "extract": "sources/S108.md",
+    "snippet": "0.05% to 0.001%",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8026,
+        "content": 0.4228,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S109",
+    "url": "https://edlists.org/the-ed-lists/list-iii-substances-identified-as-endocrine-disruptors-by-participating-national-authorities",
+    "canonicalUrl": "https://edlists.org/the-ed-lists/list-iii-substances-identified-as-endocrine-disruptors-by-participating-national-authorities",
+    "title": "List III: Substances identified as endocrine disruptors by participating national authorities",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "edlists.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0127,
+    "extract": "sources/S109.md",
+    "snippet": "List III",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8026,
+        "content": 0.2229,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S110",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R1004",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32014R1004",
+    "title": "Commission Regulation (EU) No 1004/2014",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0127,
+    "extract": "sources/S110.md",
+    "snippet": "butylparaben propylparaben 0.14% not in leave-on nappy area children under three",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8714,
+        "content": 0.4763,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S111",
+    "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB496",
+    "canonicalUrl": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB496",
+    "title": "AB 496 Cosmetic safety - California Legislative Information",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "leginfo.legislature.ca.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0127,
+    "extract": "sources/S111.md",
+    "snippet": "Chapter 441, Statutes of 2023; January 1, 2027",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8971,
+        "content": 0.39,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S112",
+    "url": "https://www.iarc.who.int/wp-content/uploads/2024/07/pr352_E.pdf",
+    "canonicalUrl": "https://iarc.who.int/wp-content/uploads/2024/07/pr352_E.pdf",
+    "title": "IARC press release 352: IARC Monographs evaluate the carcinogenicity of talc and acrylonitrile",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "iarc.who.int",
+    "trust": 0.5,
+    "signals": [
+      "cites 3 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0127,
+    "extract": "sources/S112.md",
+    "snippet": "talc Group 2A probably carcinogenic",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7262,
+        "content": 0.6063,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S113",
+    "url": "https://www.phytodia.com/fr/blog/reglement-europeen-nouveaux-allergenes-dans-cosmetiques-n214",
+    "canonicalUrl": "https://phytodia.com/fr/blog/reglement-europeen-nouveaux-allergenes-dans-cosmetiques-n214",
+    "title": "Le règlement sur les nouveaux allergènes dans les cosmétiques publié",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "phytodia.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0127,
+    "extract": "sources/S113.md",
+    "snippet": "liste finale en français",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8356,
+        "content": 0.2981,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S114",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R1198",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32016R1198",
+    "title": "Commission Regulation (EU) 2016/1198 methylisothiazolinone leave-on ban",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S114.md",
+    "snippet": "MIT banned in leave-on products from 12 February 2017",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9385,
+        "content": 0.6762,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S115",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R1176",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32022R1176",
+    "title": "Commission Regulation (EU) 2022/1176 (UV filters Benzophenone-3 and Octocrylene)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S115.md",
+    "snippet": "In light of the SCCS opinions, it can be concluded that there is potential risk to human health arising from the use of Benzophenone-3 and Octocrylene as UV filters in cosmetic products in the concentrations currently allowed. Therefore, the use of Benzophenone-3 and Octocrylene should be restricted to the maximum concentrations proposed by the SCCS.",
+    "meta": {
+      "textVia": "http://publications.europa.eu/resource/cellar/171df8bf-fe58-11ec-b94a-01aa75ed71a1.0006.03/DOC_1",
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about UV filters benzophenone-3, octocrylene, homosalate, 4-MBC, and which cosmetic ingredients are on the EU endocrine disruptor lists (edlists.org)?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S116",
+    "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB496",
+    "canonicalUrl": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB496",
+    "title": "AB-496 Cosmetic safety (2023-2024) bill text",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "leginfo.legislature.ca.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S116.md",
+    "snippet": "26 additional ingredients",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8841,
+        "content": 0.3756,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which 24 substances does California AB 2762 Toxic-Free Cosmetics Act ban, what other US state bans apply, and what obligations does the federal MoCRA 2022 impose?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S117",
+    "url": "https://www.aloer.fr/les-allergenes-de-parfum-a-echeance-ue-2026/",
+    "canonicalUrl": "https://aloer.fr/les-allergenes-de-parfum-a-echeance-ue-2026",
+    "title": "Les allergènes de parfum à échéance UE 2026",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "aloer.fr",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S117.md",
+    "snippet": "tableau CAS",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8243,
+        "content": 0.2231,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which fragrance allergens must be labelled under Commission Regulation (EU) 2023/1545 and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S118",
+    "url": "https://www.gossement-avocats.com/blog/pfas-le-gouvernement-precise-les-regles-dinterdiction-des-produits-comportant-des-pfas-applicables-au-1er-janvier-2026-decrets/",
+    "canonicalUrl": "https://gossement-avocats.com/blog/pfas-le-gouvernement-precise-les-regles-dinterdiction-des-produits-comportant-des-pfas-applicables-au-1er-janvier-2026-decrets",
+    "title": "PFAS : le Gouvernement précise les règles (décrets des 22 et 28 décembre 2025)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "gossement-avocats.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S118.md",
+    "snippet": "Gossement",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7922,
+        "content": 0.276,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S119",
+    "url": "https://www.ul.com/news/eu-updates-annex-ii-cosmetics-regulation",
+    "canonicalUrl": "https://ul.com/news/eu-updates-annex-ii-cosmetics-regulation",
+    "title": "EU Updates Annex II to Cosmetics Regulation - UL",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "ul.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S119.md",
+    "snippet": "2023/1490 29 new substances",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7722,
+        "content": 0.6363,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S120",
+    "url": "https://biorius.com/cosmetic-news/the-omnibus-regulation/",
+    "canonicalUrl": "https://biorius.com/cosmetic-news/the-omnibus-regulation",
+    "title": "Omnibus Regulation 2019 - Biorius",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "biorius.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0123,
+    "extract": "sources/S120.md",
+    "snippet": "Quaternium-15, chloroacetamide, dichloromethane, formaldehyde",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7262,
+        "content": 0.2997,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S121",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42085541/",
+    "canonicalUrl": "https://pubmed.ncbi.nlm.nih.gov/42085541",
+    "title": "Talc and Acrylonitrile - PubMed",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "pubmed.ncbi.nlm.nih.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares a persistent identity (DOI/arXiv/canonical)"
+    ],
+    "score": 0.0123,
+    "extract": "sources/S121.md",
+    "snippet": "IARC Monogr Identif Carcinog Hazards Hum 136",
+    "meta": {
+      "foundBy": 1,
+      "textVia": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42085541&rettype=abstract&retmode=text",
+      "rank": {
+        "rrf": 0.6932,
+        "content": 0.3935,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S122",
+    "url": "https://www.legislation.gov.uk/eur/2014/1004/data.html",
+    "canonicalUrl": "https://legislation.gov.uk/eur/2014/1004/data.html",
+    "title": "Commission Regulation (EU) No 1004/2014",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "legislation.gov.uk",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0123,
+    "extract": "sources/S122.md",
+    "snippet": "Annex V entry 12a butylparaben propylparaben",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8592,
+        "content": 0.4602,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S123",
+    "url": "https://aida.ineris.fr/reglementation/decret-ndeg-2025-1376-281225-relatif-a-prevention-risques-resultant-lexposition",
+    "canonicalUrl": "https://aida.ineris.fr/reglementation/decret-ndeg-2025-1376-281225-relatif-a-prevention-risques-resultant-lexposition",
+    "title": "Décret n° 2025-1376 du 28/12/25 PFAS - AIDA INERIS",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "aida.ineris.fr",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0122,
+    "extract": "sources/S123.md",
+    "snippet": "D.525-1 définition",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8026,
+        "content": 0.2782,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S124",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R1410",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32017R1410",
+    "title": "Commission Regulation (EU) 2017/1410 (HICC, atranol, chloroatranol)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0122,
+    "extract": "sources/S124.md",
+    "snippet": "Annex II and III to Regulation (EC) No 1223/2009 are amended in accordance with the Annex to this Regulation. From 23 August 2019 cosmetic products containing one or more of the substances prohibited by this Regulation shall not be placed on the Union market.",
+    "meta": {
+      "textVia": "http://publications.europa.eu/resource/cellar/f14047b3-7814-11e7-b2f2-01aa75ed71a1.0006.03/DOC_1",
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S125",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R1181",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32022R1181",
+    "title": "Commission Regulation (EU) 2022/1181 formaldehyde releasers labelling",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0122,
+    "extract": "sources/S125.md",
+    "snippet": "releases formaldehyde where total formaldehyde released exceeds 0,001 %",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8133,
+        "content": 0.46,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S126",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0358",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32014R0358",
+    "title": "Commission Regulation (EU) No 358/2014 (parabens, Annexes II and V)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.012,
+    "extract": "sources/S126.md",
+    "snippet": "Therefore, those substances should no longer be listed in Annex V and, given that they might be used as antimicrobial agents, they should be listed in Annex II to make clear that they are prohibited in cosmetic products.",
+    "meta": {
+      "textVia": "http://publications.europa.eu/resource/cellar/4f42e643-c083-11e3-86f9-01aa75ed71a1.0006.03/DOC_1",
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S127",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051266190",
+    "canonicalUrl": "https://legifrance.gouv.fr/codes/article_lc/LEGIARTI000051266190",
+    "title": "Article L524-1 - Code de l'environnement - Légifrance",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "legifrance.gouv.fr",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.012,
+    "extract": "sources/S127.md",
+    "snippet": "ChronoLégi l'accès au droit dans le temps — Version à la date d'aujourd'hui Voir les versions dans le temps",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S128",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32026R0078",
+    "canonicalUrl": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A32026R0078",
+    "title": "Commission Regulation (EU) 2026/78 (CMR omnibus VIII)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "eur-lex.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0119,
+    "extract": "sources/S128.md",
+    "snippet": "In order to uniformly implement the prohibition of CMR substances within the internal market, to ensure legal certainty in particular for economic operators and national competent authorities, and to ensure a high level of protection of human health, all CMR substances should be included in the list of prohibited substances in Annex II to Regulation (EC) No",
+    "meta": {
+      "textVia": "http://publications.europa.eu/resource/cellar/37a475ba-f020-11f0-8d3c-01aa75ed71a1.0006.03/DOC_1",
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S129",
+    "url": "https://health.ec.europa.eu/system/files/2023-12/sccs_o_276_final.pdf",
+    "canonicalUrl": "https://health.ec.europa.eu/system/files/2023-12/sccs_o_276_final.pdf",
+    "title": "SCCS/1652/23 Final Opinion on Methylparaben",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 13 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0119,
+    "extract": "sources/S129.md",
+    "snippet": "SCCS overall comment on genotoxicity of Methylparaben — However, as Methylparaben was tested in a valid study on chromosomal aberrations in rats with a negative result, the SCCS is of opinion that the *in vitro* results on chromosomal aberrations of limited or low reliability can be overruled by the in vivo data. Additionally, Methylparaben was tested in a r",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S130",
+    "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051260902",
+    "canonicalUrl": "https://legifrance.gouv.fr/jorf/id/JORFTEXT000051260902",
+    "title": "LOI n° 2025-188 du 27 février 2025 PFAS - Légifrance",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "legifrance.gouv.fr",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0119,
+    "extract": "sources/S130.md",
+    "snippet": "ChronoLégi l'accès au droit dans le temps — Version à la date d'aujourd'hui Voir les versions dans le temps",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S131",
+    "url": "https://health.ec.europa.eu/publications/methylparaben-cas-no-99-76-3-ec-no-202-785-7_en",
+    "canonicalUrl": "https://health.ec.europa.eu/publications/methylparaben-cas-no-99-76-3-ec-no-202-785-7_en",
+    "title": "Methylparaben (CAS No. 99-76-3) - Public Health",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0118,
+    "extract": "sources/S131.md",
+    "snippet": "Description — Therefore, this assessment did not cover the safety of Methylparaben for the environment. SCCS, scientific opinion, methylparaben, preservative, Regulation 1223/2009, CAS No.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "What do SCCS opinions and EU rules say about the preservatives parabens, methylisothiazolinone, methylchloroisothiazolinone, triclosan, formaldehyde and formaldehyde releasers?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S132",
+    "url": "https://health.ec.europa.eu/system/files/2021-08/sccs_o_213_0.pdf",
+    "canonicalUrl": "https://health.ec.europa.eu/system/files/2021-08/sccs_o_213_0.pdf",
+    "title": "SCCS/1591/17 Opinion on the safety of Butylphenyl methylpropional (p-BMHCA) - Submission II",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0118,
+    "extract": "sources/S132.md",
+    "snippet": "Background — Butylphenyl methylpropional (BMHCA) is currently regulated for labelling purposes in Annex III entry 83 of the Cosmetics Regulation No 1223/2009 when present in a concentration above 10 ppm for leave-on products and above 100 ppm for rinse-off products.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S133",
+    "url": "https://projetcelsius.com/en/blog/pfas-ban-france-eu/",
+    "canonicalUrl": "https://projetcelsius.com/en/blog/pfas-ban-france-eu",
+    "title": "PFAS ban in France: what already applies and what the EU is preparing",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "projetcelsius.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0118,
+    "extract": "sources/S133.md",
+    "snippet": "PFAS restriction procedure under REACH, step by step — The Commission has 3 months after the SEAC opinion to prepare a draft amendment to Annex XVII to REACH.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S134",
+    "url": "https://health.ec.europa.eu/publications/safety-butylphenyl-methylpropional-p-bmhca-cosmetic-products-submission-ii_en",
+    "canonicalUrl": "https://health.ec.europa.eu/publications/safety-butylphenyl-methylpropional-p-bmhca-cosmetic-products-submission-ii_en",
+    "title": "The safety of Butylphenyl methylpropional (p-BMHCA) in cosmetic products - Submission II",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0116,
+    "extract": "sources/S134.md",
+    "snippet": "Description — Does the SCCS have any further scientific concerns with regard to the use of Butylphenyl methylpropional (p-BMHCA) as a fragrance ingredient in cosmetic leave-on and/or rinse-off type products? Evaluation of this substance by other scientific bodies (e.g.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S135",
+    "url": "https://www.lemotif.fr/actu3305/beaute/pfas-cosmetiques-interdiction-produits-beaute.html",
+    "canonicalUrl": "https://lemotif.fr/actu3305/beaute/pfas-cosmetiques-interdiction-produits-beaute.html",
+    "title": "PFAS interdits dans les cosmétiques",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "lemotif.fr",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0116,
+    "extract": "sources/S135.md",
+    "snippet": "Ce que change la loi anti-PFAS — Le texte fondateur, la loi n° 2025-188 du 27 février 2025, vise l’ensemble des substances per- et polyfluoroalkylées, ces molécules à liaison carbone-fluor qui résistent à la dégradation naturelle et s’accumulent dans l’environnement et l’organisme.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "REACH restriction dates for siloxanes D4 D5 D6 in cosmetics, French 2025 PFAS law banning PFAS in cosmetics from 2026, PFAS INCI names, IARC 2024 classification of talc",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S136",
+    "url": "https://health.ec.europa.eu/system/files/2021-11/sccs_o_236.pdf",
+    "canonicalUrl": "https://health.ec.europa.eu/system/files/2021-11/sccs_o_236.pdf",
+    "title": "SCCS/1614/19 Final Opinion on Zinc Pyrithione (ZPT) - Submission III",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 3 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0115,
+    "extract": "sources/S136.md",
+    "snippet": "Background — *According to Article 15(2) of the Cosmetics Regulation, “*The use in cosmetic products of substances classified as CMR substances, of category 1A or 1B under Part 3 of Annex VI to Regulation (EC) No 1272/2008 shall be prohibited.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S137",
+    "url": "https://health.ec.europa.eu/publications/zinc-pyrithione-zpt-submission-iii_en",
+    "canonicalUrl": "https://health.ec.europa.eu/publications/zinc-pyrithione-zpt-submission-iii_en",
+    "title": "Zinc Pyrithione (ZPT) - Submission III - Public Health",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "health.ec.europa.eu",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0114,
+    "extract": "sources/S137.md",
+    "snippet": "Description — Does the SCCS have any further scientific concerns with regard to the use of Zinc Pyrithione in cosmetic products? SCCS, scientific opinion, preservative, Zinc Pyrithione, ZPT, P81, submission III, Regulation 1223/2009, CAS 13463-41-7, EC 236-671-3",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S138",
+    "url": "https://www.obelis.net/news/sccs-final-opinion-on-the-safety-of-butylphenyl-methylpropional-p-bmhca/",
+    "canonicalUrl": "https://obelis.net/news/sccs-final-opinion-on-the-safety-of-butylphenyl-methylpropional-p-bmhca",
+    "title": "SCCS Final Opinion on Butylphenyl Methylpropional Safety - Obelis",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T09:07:27.438Z",
+    "domain": "obelis.net",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0112,
+    "extract": "sources/S138.md",
+    "snippet": "SCCS Final Opinion on the safety of Butylphenyl methylpropional (p-BMHCA) — It is currently regulated for labelling purposes in Annex III entry 83 of the Cosmetics Regulation No 1223/2009 and its presence must be indicated in the list of ingredients on the labels when its concentration exceeds 0.001% in leave-on products and 0.01% in rinse-off products.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "Which substances used in cosmetics were recently prohibited (Annex II) or restricted (Annex III) under EU Cosmetics Regulation 1223/2009 via the CMR omnibus regulations?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r2/q1"
+        }
+      ]
+    }
+  }
+]

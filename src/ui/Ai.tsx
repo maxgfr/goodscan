@@ -2,8 +2,15 @@
 import { useState } from "react";
 import { AiError } from "../ai/call";
 import { preparePhoto } from "../ai/image";
-import { explainProduct, productFacts, productFromLabel, readLabel } from "../ai/product";
-import type { Product } from "../data/product";
+import {
+  explainProduct,
+  productFacts,
+  productFromCosmeticLabel,
+  productFromLabel,
+  readCosmeticLabel,
+  readLabel,
+} from "../ai/product";
+import { isCosmetic, type Product } from "../data/product";
 import type { Match } from "../score/match";
 import type { Score } from "../score/score";
 import { Button, Icon, Notice } from "./kit";
@@ -61,6 +68,8 @@ export function LabelReader({
   const { t, settings, lang } = useApp();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // A cosmetic's photo is its ingredient list, read into the same product.
+  const cosmetic = base && isCosmetic(base) ? base : null;
   if (!settings) {
     return (
       <p className="text-sm text-soft">
@@ -79,15 +88,18 @@ export function LabelReader({
       <p className="text-sm text-soft">{prompt}</p>
       <div>
         <PhotoButton
-          label={busy ? t("aiReading") : t("aiLabel")}
+          label={busy ? t("aiReading") : cosmetic ? t("aiInci") : t("aiLabel")}
           busy={busy}
           onFile={async (file) => {
             setBusy(true);
             setError(null);
             try {
               const image = await preparePhoto(file);
-              const label = await readLabel({ settings }, image, lang);
-              onProduct(productFromLabel(label, code, base));
+              onProduct(
+                cosmetic
+                  ? productFromCosmeticLabel(await readCosmeticLabel({ settings }, image), cosmetic)
+                  : productFromLabel(await readLabel({ settings }, image, lang), code, base),
+              );
             } catch (err) {
               setError(t("aiError", { message: message(err) }));
             } finally {
@@ -121,7 +133,15 @@ export function AiPanel({
     setBusy(true);
     setError(null);
     try {
-      setAnswer(await explainProduct({ settings }, productFacts(product, score, match), lang, q));
+      setAnswer(
+        await explainProduct(
+          { settings },
+          productFacts(product, score, match),
+          lang,
+          q,
+          isCosmetic(product),
+        ),
+      );
     } catch (err) {
       setError(t("aiError", { message: message(err) }));
     } finally {
