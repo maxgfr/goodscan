@@ -11,6 +11,7 @@ import additivesData from "../data/additives.json";
 import { EU_NOT_AUTHORISED } from "../data/eu";
 import { type Evidence, evidenceFor, weighs } from "../data/evidence";
 import { type Grade, isCosmetic, isFood, type Product } from "../data/product";
+import { US_FOOD_LAWS, type UsLaw } from "../data/usFoodLaws";
 import { type CosmeticFlag, scoreCosmetic } from "./cosmetic";
 import { type AdditiveHazard, additiveHazard } from "./hazard";
 import { nutriscore } from "./nutriscore";
@@ -76,6 +77,8 @@ export interface AdditiveInfo {
   evidenceWeighs?: boolean;
   /** What official lists (IARC, EU CLP, EU endocrine-disruptor lists) say. */
   hazard?: AdditiveHazard;
+  /** US federal and state rules naming it: shown, not counted. */
+  usLaws?: UsLaw[];
 }
 
 export interface Score {
@@ -110,6 +113,8 @@ export function additiveInfo(tag: string): AdditiveInfo {
   }
   const hazard = additiveHazard(tag);
   if (hazard) info.hazard = hazard;
+  const usLaws = US_FOOD_LAWS[tag];
+  if (usLaws?.length) info.usLaws = usLaws;
   return info;
 }
 

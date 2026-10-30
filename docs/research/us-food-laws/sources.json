@@ -1,0 +1,3050 @@
+[
+  {
+    "id": "S4",
+    "url": "https://www.haynesboone.com/news/alerts/arizona-bans-food-dyes-and-additives-in-schools",
+    "canonicalUrl": "https://haynesboone.com/news/alerts/arizona-bans-food-dyes-and-additives-in-schools",
+    "title": "Haynes Boone: Arizona Bans Food Dyes and Additives in Schools",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "haynesboone.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S4.md",
+    "snippet": "April 2025.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9683,
+        "content": 0.6573,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S5",
+    "url": "https://www.haynesboone.com/news/alerts/fda-announces-plan-to-phase-out-petroleum-based-food-dyes",
+    "canonicalUrl": "https://haynesboone.com/news/alerts/fda-announces-plan-to-phase-out-petroleum-based-food-dyes",
+    "title": "Haynes Boone: FDA Announces Plan to Phase Out Petroleum-Based Food Dyes",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "haynesboone.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S5.md",
+    "snippet": "Voluntary.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9531,
+        "content": 0.9415,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S6",
+    "url": "https://www.hklaw.com/en/insights/publications/2025/07/more-food-for-thought-louisiana-enacts-food-product",
+    "canonicalUrl": "https://hklaw.com/en/insights/publications/2025/07/more-food-for-thought-louisiana-enacts-food-product",
+    "title": "Holland & Knight: Louisiana Enacts Food Product Warning Labels for 44 Chemicals",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "hklaw.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S6.md",
+    "snippet": "QR code.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7349,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S7",
+    "url": "https://www.ttb.gov/public-information/featured-stories/reminder-fda-revokes-authorizations-use-brominated-vegetable",
+    "canonicalUrl": "https://ttb.gov/public-information/featured-stories/reminder-fda-revokes-authorizations-use-brominated-vegetable",
+    "title": "Reminder: FDA Revokes Authorizations for Use of Brominated Vegetable Oil and FD&C Red No. 3",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "ttb.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0164,
+    "extract": "sources/S7.md",
+    "snippet": "TTB: revocation applies to alcohol beverages; compliance date August 2, 2025.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9531,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S8",
+    "url": "https://www.foodprocessing.com/product-development/color/news/55280711/utah-becomes-the-fourth-state-to-ban-ingredients-from-school-meals",
+    "canonicalUrl": "https://foodprocessing.com/product-development/color/news/55280711/utah-becomes-the-fourth-state-to-ban-ingredients-from-school-meals",
+    "title": "Utah Becomes the Fourth State to Ban Ingredients From School Meals",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "foodprocessing.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S8.md",
+    "snippet": "Seven dyes plus potassium bromate and propylparaben.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9242,
+        "content": 0.6635,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S9",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2024-07-03/html/2024-14300.htm",
+    "canonicalUrl": "https://govinfo.gov/content/pkg/FR-2024-07-03/html/2024-14300.htm",
+    "title": "Federal Register Volume 89, Number 128 (July 3, 2024) BVO final rule",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "govinfo.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S9.md",
+    "snippet": "Revocation of authorization for use of brominated vegetable oil in food.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9839,
+        "content": 0.6708,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S10",
+    "url": "https://www.haynesboone.com/news/alerts/enforcement-of-west-virginia-food-dye-ban-temporarily-halted",
+    "canonicalUrl": "https://haynesboone.com/news/alerts/enforcement-of-west-virginia-food-dye-ban-temporarily-halted",
+    "title": "Haynes Boone: Enforcement of West Virginia's Food Dye Ban Temporarily Halted",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "haynesboone.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 3 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S10.md",
+    "snippet": "Injunction.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9104,
+        "content": 0.7708,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S11",
+    "url": "https://www.jonesday.com/en/insights/2023/10/california-becomes-the-first-state-to-ban-four-common-food-additives",
+    "canonicalUrl": "https://jonesday.com/en/insights/2023/10/california-becomes-the-first-state-to-ban-four-common-food-additives",
+    "title": "Jones Day: California to Ban Four Common Food Additives",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "jonesday.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S11.md",
+    "snippet": "Penalties up to $5,000 first violation and $10,000 subsequent.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8971,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do California AB 418 (California Food Safety Act 2023) and AB 2316 (2024 school foods dyes) prohibit and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S12",
+    "url": "https://www.nutritionaloutlook.com/view/fda-finalizes-orange-b-revocation-proposes-remove-citrus-red-no-2",
+    "canonicalUrl": "https://nutritionaloutlook.com/view/fda-finalizes-orange-b-revocation-proposes-remove-citrus-red-no-2",
+    "title": "FDA Finalizes Order for Orange B Revocation, Proposes to Remove Citrus Red No. 2",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "nutritionaloutlook.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0161,
+    "extract": "sources/S12.md",
+    "snippet": "July 2026.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8714,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S13",
+    "url": "http://www.wvlegislature.gov/Bill_Status/bills_text.cfm?billdoc=hb2354%20sub%20enr.htm&yr=2025&sesstype=RS&i=2354",
+    "canonicalUrl": "http://wvlegislature.gov/Bill_Status/bills_text.cfm?billdoc=hb2354%20sub%20enr.htm&i=2354&sesstype=RS&yr=2025",
+    "title": "WV HB 2354 enrolled committee substitute 2025",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "wvlegislature.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S13.md",
+    "snippet": "Prohibits Red 3, Red 40, Yellow 5, Yellow 6, Blue 1, Blue 2, Green 3 in school nutrition programs from August 1, 2025; food for sale from January 1, 2028 including BHA and propylparaben.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 1,
+        "content": 0.6337,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S14",
+    "url": "https://edition.cnn.com/2025/04/22/health/fda-food-dyes",
+    "canonicalUrl": "https://edition.cnn.com/2025/04/22/health/fda-food-dyes",
+    "title": "FDA says it will phase out petroleum-based food dyes",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "edition.cnn.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S14.md",
+    "snippet": "No formal agreement; voluntary.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9385,
+        "content": 0.7614,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S16",
+    "url": "https://nationalaglawcenter.org/food-law-in-the-states-2026-update/",
+    "canonicalUrl": "https://nationalaglawcenter.org/food-law-in-the-states-2026-update",
+    "title": "Food Law in the States: 2026 Update",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "nationalaglawcenter.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S16.md",
+    "snippet": "National Ag Law Center.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.6932,
+        "content": 0.9278,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S17",
+    "url": "https://www.foodbusinessnews.net/articles/26376-fda-bans-use-of-brominated-vegetable-oil",
+    "canonicalUrl": "https://foodbusinessnews.net/articles/26376-fda-bans-use-of-brominated-vegetable-oil",
+    "title": "FDA bans use of brominated vegetable oil",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "foodbusinessnews.net",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0159,
+    "extract": "sources/S17.md",
+    "snippet": "FDA bans BVO.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9242,
+        "content": 0.6771,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S18",
+    "url": "http://www.wvlegislature.gov/Bill_Status/Bills_history.cfm?input=2354&year=2025&sessiontype=RS&btype=bill",
+    "canonicalUrl": "http://wvlegislature.gov/Bill_Status/Bills_history.cfm?btype=bill&input=2354&sessiontype=RS&year=2025",
+    "title": "WV HB 2354 bill history",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "wvlegislature.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S18.md",
+    "snippet": "Signed by governor March 24, 2025.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9839,
+        "content": 0.6074,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S21",
+    "url": "https://regbase.com/analysis/orange-b-citrus-red-2-revocations/",
+    "canonicalUrl": "https://regbase.com/analysis/orange-b-citrus-red-2-revocations",
+    "title": "FDA Revokes Orange B and Moves on Citrus Red No. 2",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "regbase.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S21.md",
+    "snippet": "Effective September 8, 2026.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8592,
+        "content": 0.862,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S22",
+    "url": "https://www.foodbusinessnews.net/articles/27957-two-more-states-ban-food-colors-in-schools",
+    "canonicalUrl": "https://foodbusinessnews.net/articles/27957-two-more-states-ban-food-colors-in-schools",
+    "title": "Two more states ban food colors in schools",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "foodbusinessnews.net",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0156,
+    "extract": "sources/S22.md",
+    "snippet": "Virginia and West Virginia.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8714,
+        "content": 0.6953,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S23",
+    "url": "https://edition.cnn.com/2024/08/30/health/california-food-dye-ban-schools-wellness/index.html",
+    "canonicalUrl": "https://edition.cnn.com/2024/08/30/health/california-food-dye-ban-schools-wellness/index.html",
+    "title": "California bans red No. 40 and others from school food",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "edition.cnn.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S23.md",
+    "snippet": "CNN.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8356,
+        "content": 0.9528,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do California AB 418 (California Food Safety Act 2023) and AB 2316 (2024 school foods dyes) prohibit and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S24",
+    "url": "https://nationalaglawcenter.org/preliminary-injunction-halts-enforcement-of-west-virginias-food-dye-ban/",
+    "canonicalUrl": "https://nationalaglawcenter.org/preliminary-injunction-halts-enforcement-of-west-virginias-food-dye-ban",
+    "title": "Preliminary Injunction Halts Enforcement of West Virginia's Food Dye Ban",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "nationalaglawcenter.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S24.md",
+    "snippet": "December 23, 2025 injunction; school meal provision not enjoined.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9242,
+        "content": 0.5968,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S25",
+    "url": "https://regbase.com/state-food-additive-tracker/",
+    "canonicalUrl": "https://regbase.com/state-food-additive-tracker",
+    "title": "State Food Additive & Dye Bans: 50-State Tracker (Updated September 2026)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "regbase.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S25.md",
+    "snippet": "Thirteen states with school laws.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.6778,
+        "content": 1,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S26",
+    "url": "https://www.fda.gov/food/color-additives-information-consumers/tracking-food-industry-pledges-remove-petroleum-based-food-dyes",
+    "canonicalUrl": "https://fda.gov/food/color-additives-information-consumers/tracking-food-industry-pledges-remove-petroleum-based-food-dyes",
+    "title": "Tracking Food Industry Pledges to Remove Petroleum Based Food Dyes",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "fda.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S26.md",
+    "snippet": "FDA tracker.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8356,
+        "content": 0.6879,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S27",
+    "url": "https://www.fda.gov/food/food-additives-petitions/brominated-vegetable-oil-bvo",
+    "canonicalUrl": "https://fda.gov/food/food-additives-petitions/brominated-vegetable-oil-bvo",
+    "title": "FDA Brominated Vegetable Oil (BVO)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "fda.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0154,
+    "extract": "sources/S27.md",
+    "snippet": "FDA final rule revoking regulation authorizing BVO in food.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9683,
+        "content": 0.7013,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S28",
+    "url": "https://edition.cnn.com/2024/07/02/health/fda-brominated-vegetable-oil-ban-wellness/index.html",
+    "canonicalUrl": "https://edition.cnn.com/2024/07/02/health/fda-brominated-vegetable-oil-ban-wellness/index.html",
+    "title": "FDA will no longer allow brominated vegetable oil in drinks",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "edition.cnn.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S28.md",
+    "snippet": "FDA ban BVO July 2024.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9104,
+        "content": 0.5446,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S30",
+    "url": "https://www.cozen.com/news-resources/publications/2025/fda-s-new-measures-to-eliminate-all-petroleum-based-synthetic-dyes-from-food",
+    "canonicalUrl": "https://cozen.com/news-resources/publications/2025/fda-s-new-measures-to-eliminate-all-petroleum-based-synthetic-dyes-from-food",
+    "title": "Cozen O'Connor: FDA's New Measures to Eliminate All Petroleum-Based Synthetic Dyes from Food",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "cozen.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S30.md",
+    "snippet": "April 2025.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9683,
+        "content": 0.7617,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S32",
+    "url": "https://www.venable.com/insights/publications/2024/08/food-and-color-additives-is-the-patchwork-here",
+    "canonicalUrl": "https://venable.com/insights/publications/2024/08/food-and-color-additives-is-the-patchwork-here",
+    "title": "Venable: Food and Color Additives—Is the Patchwork Here?",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "venable.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0152,
+    "extract": "sources/S32.md",
+    "snippet": "2024 state tracker.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7922,
+        "content": 0.9686,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do California AB 418 (California Food Safety Act 2023) and AB 2316 (2024 school foods dyes) prohibit and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S34",
+    "url": "https://natlawreview.com/article/texas-court-blocks-enforcement-texas-warning-label-requirement",
+    "canonicalUrl": "https://natlawreview.com/article/texas-court-blocks-enforcement-texas-warning-label-requirement",
+    "title": "Court Blocks Texas SB 25 Food-Ingredient Warning Rule",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "natlawreview.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0149,
+    "extract": "sources/S34.md",
+    "snippet": "Injunction.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8026,
+        "content": 0.6632,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S36",
+    "url": "https://www.food-safety.com/articles/9585-bvo-no-longer-authorized-for-food-use-by-fda",
+    "canonicalUrl": "https://food-safety.com/articles/9585-bvo-no-longer-authorized-for-food-use-by-fda",
+    "title": "BVO No Longer Authorized for Food Use by FDA",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "food-safety.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0149,
+    "extract": "sources/S36.md",
+    "snippet": "FDA final rule BVO.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9385,
+        "content": 0.5962,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S37",
+    "url": "https://www.ksl.com/article/51614753/certain-dyes-and-additives-are-now-banned-in-schools-heres-what-it-means-for-your-kids",
+    "canonicalUrl": "https://ksl.com/article/51614753/certain-dyes-and-additives-are-now-banned-in-schools-heres-what-it-means-for-your-kids",
+    "title": "Certain dyes and additives are now banned in schools - KSL",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "ksl.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0149,
+    "extract": "sources/S37.md",
+    "snippet": "August 2026 Utah.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9104,
+        "content": 0.5108,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S38",
+    "url": "https://le.utah.gov/Session/2025/bills/enrolled/HB0402.pdf",
+    "canonicalUrl": "https://le.utah.gov/Session/2025/bills/enrolled/HB0402.pdf",
+    "title": "Utah H.B. 402 enrolled 2025",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "le.utah.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S38.md",
+    "snippet": "Beginning in the 2026-2027 school year, public school may not serve food containing listed additives.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9531,
+        "content": 0.4578,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S39",
+    "url": "https://www.cspi.org/page/synthetic-dyes-corporate-commitment-tracker",
+    "canonicalUrl": "https://cspi.org/page/synthetic-dyes-corporate-commitment-tracker",
+    "title": "CSPI Synthetic Dyes Corporate Commitment Tracker",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "cspi.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S39.md",
+    "snippet": "Voluntary understanding.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8243,
+        "content": 0.7468,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S40",
+    "url": "https://www.fda.gov/industry/color-additives/fdc-red-no-3",
+    "canonicalUrl": "https://fda.gov/industry/color-additives/fdc-red-no-3",
+    "title": "FD&C Red No. 3 | FDA",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "fda.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S40.md",
+    "snippet": "FDA issued orders to revoke authorizations; manufacturers have until January 15, 2027 (food) or January 18, 2028 (ingested drugs).",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8971,
+        "content": 0.6072,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S41",
+    "url": "https://www.hlc.com/en/publications/texas-issues-final-rule-on-sb-25-ingredient-warning-labeling-law",
+    "canonicalUrl": "https://hlc.com/en/publications/texas-issues-final-rule-on-sb-25-ingredient-warning-labeling-law",
+    "title": "Hogan Lovells: Texas Issues Final Rule on SB 25",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "hlc.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S41.md",
+    "snippet": "25 TAC Chapter 229.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7922,
+        "content": 0.7113,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S42",
+    "url": "https://www.wsgr.com/en/insights/california-prepares-first-of-its-kind-food-additive-ban-in-the-united-states.html",
+    "canonicalUrl": "https://wsgr.com/en/insights/california-prepares-first-of-its-kind-food-additive-ban-in-the-united-states.html",
+    "title": "WSGR: California Prepares First-of-Its-Kind Food Additive Ban",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "wsgr.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0147,
+    "extract": "sources/S42.md",
+    "snippet": "AB 418.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7821,
+        "content": 0.9957,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do California AB 418 (California Food Safety Act 2023) and AB 2316 (2024 school foods dyes) prohibit and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S43",
+    "url": "https://www.azleg.gov/legtext/57leg/1r/laws/0052.htm",
+    "canonicalUrl": "https://azleg.gov/legtext/57leg/1r/laws/0052.htm",
+    "title": "Arizona Laws 2025 Chapter 52 HB2164",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "azleg.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S43.md",
+    "snippet": "Beginning in the 2026-2027 school year, any school that participates in a federally funded meal program shall not serve, sell ultraprocessed food; definition lists potassium bromate, propylparaben, titanium dioxide, BVO, dyes.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 1,
+        "content": 0.6002,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S44",
+    "url": "https://www.bdlaw.com/publications/louisiana-and-texas-pass-laws-requiring-warning-labels-for-certain-food-ingredients/",
+    "canonicalUrl": "https://bdlaw.com/publications/louisiana-and-texas-pass-laws-requiring-warning-labels-for-certain-food-ingredients",
+    "title": "Beveridge & Diamond: Louisiana and Texas Pass Laws Requiring Warning Labels",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "bdlaw.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S44.md",
+    "snippet": "2025.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7176,
+        "content": 0.8762,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S45",
+    "url": "https://www.fda.gov/news-events/press-announcements/fda-takes-further-steps-remove-outdated-authorizations-color-additives-food",
+    "canonicalUrl": "https://fda.gov/news-events/press-announcements/fda-takes-further-steps-remove-outdated-authorizations-color-additives-food",
+    "title": "FDA Takes Further Steps to Remove Outdated Authorizations for Color Additives in Food",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "fda.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S45.md",
+    "snippet": "Final order revoking Orange B; proposal to revoke Citrus Red No. 2.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8841,
+        "content": 0.7957,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S47",
+    "url": "https://www.foodsafetynews.com/2024/10/newsom-signs-law-to-prevent-california-schools-from-serving-food-with-certain-additives/",
+    "canonicalUrl": "https://foodsafetynews.com/2024/10/newsom-signs-law-to-prevent-california-schools-from-serving-food-with-certain-additives",
+    "title": "Newsom signs law to prevent California schools from serving food with certain additives",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "foodsafetynews.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0145,
+    "extract": "sources/S47.md",
+    "snippet": "Food Safety News.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7722,
+        "content": 0.9119,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do California AB 418 (California Food Safety Act 2023) and AB 2316 (2024 school foods dyes) prohibit and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S49",
+    "url": "https://wpln.org/post/artificial-food-dyes-banned-from-tennessee-school-meals-as-lawmakers-advance-maha-policy/",
+    "canonicalUrl": "https://wpln.org/post/artificial-food-dyes-banned-from-tennessee-school-meals-as-lawmakers-advance-maha-policy",
+    "title": "Artificial food dyes banned from Tennessee school meals",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "wpln.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S49.md",
+    "snippet": "WPLN.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8026,
+        "content": 0.5425,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S50",
+    "url": "https://www.fda.gov/news-events/press-announcements/hhs-fda-phase-out-petroleum-based-synthetic-dyes-nations-food-supply",
+    "canonicalUrl": "https://fda.gov/news-events/press-announcements/hhs-fda-phase-out-petroleum-based-synthetic-dyes-nations-food-supply",
+    "title": "HHS, FDA to Phase Out Petroleum-Based Synthetic Dyes in Nation's Food Supply",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "fda.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S50.md",
+    "snippet": "April 22, 2025: national standard and timeline; revoke Citrus Red No. 2 and Orange B; work with industry to eliminate six dyes by end of 2026.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 1,
+        "content": 0.7157,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S51",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2025-01-16/pdf/2025-00830.pdf",
+    "canonicalUrl": "https://govinfo.gov/content/pkg/FR-2025-01-16/pdf/2025-00830.pdf",
+    "title": "Federal Register Vol. 90 No. 10 January 16, 2025 Red No. 3 order",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "govinfo.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 3 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0143,
+    "extract": "sources/S51.md",
+    "snippet": "Order revoking FD&C Red No. 3.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8714,
+        "content": 0.5957,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S53",
+    "url": "https://calmatters.org/health/2023/10/california-food-additives-skittles-ban/",
+    "canonicalUrl": "https://calmatters.org/health/2023/10/california-food-additives-skittles-ban",
+    "title": "Newsom signs CA law banning 4 food additives used in candy - CalMatters",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "calmatters.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S53.md",
+    "snippet": "October 2023.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8841,
+        "content": 0.6626,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do California AB 418 (California Food Safety Act 2023) and AB 2316 (2024 school foods dyes) prohibit and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S55",
+    "url": "https://www.consumerreports.org/health/food-additives/one-year-later-are-synthetic-dyes-still-in-our-food-a5846944223/",
+    "canonicalUrl": "https://consumerreports.org/health/food-additives/one-year-later-are-synthetic-dyes-still-in-our-food-a5846944223",
+    "title": "One Year Later: Are Synthetic Dyes Still in Our Food?",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "consumerreports.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S55.md",
+    "snippet": "FDA has not banned them; voluntary.",
+    "meta": {
+      "foundBy": 1,
+      "waybackSnapshot": "20261021145010",
+      "rank": {
+        "rrf": 0.8133,
+        "content": 0.6913,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S57",
+    "url": "https://www.foodservicedirector.com/k-12-schools/tennessee-bill-banning-food-dyes-in-school-meals-heads-to-governor-s-desk",
+    "canonicalUrl": "https://foodservicedirector.com/k-12-schools/tennessee-bill-banning-food-dyes-in-school-meals-heads-to-governor-s-desk",
+    "title": "Tennessee school food dye bill heads to governor's desk",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "foodservicedirector.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0141,
+    "extract": "sources/S57.md",
+    "snippet": "August 1, 2027.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7922,
+        "content": 0.5472,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S58",
+    "url": "https://governor.wv.gov/article/governor-patrick-morrisey-signs-food-dye-legislation-law",
+    "canonicalUrl": "https://governor.wv.gov/article/governor-patrick-morrisey-signs-food-dye-legislation-law",
+    "title": "Governor Patrick Morrisey Signs Food Dye Legislation Into Law",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "governor.wv.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S58.md",
+    "snippet": "March 24, 2025.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9683,
+        "content": 0.3054,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S59",
+    "url": "https://legis.delaware.gov/json/BillDetail/GenerateHtmlDocument?legislationId=141908&legislationTypeId=1&docTypeId=2&legislationName=SB69",
+    "canonicalUrl": "https://legis.delaware.gov/json/BillDetail/GenerateHtmlDocument?docTypeId=2&legislationId=141908&legislationName=SB69&legislationTypeId=1",
+    "title": "Delaware SB 69 bill text",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "legis.delaware.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S59.md",
+    "snippet": "Red dye 40 school meals and competitive food.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7821,
+        "content": 0.5702,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S60",
+    "url": "https://www.dailyintakeblog.com/2026/08/fda-denies-request-for-public-hearing-on-repeal-of-authorizations-for-fdc-red-no-3/",
+    "canonicalUrl": "https://dailyintakeblog.com/2026/08/fda-denies-request-for-public-hearing-on-repeal-of-authorizations-for-fdc-red-no-3",
+    "title": "FDA Denies Request for Public Hearing on Repeal of Authorizations for FD&C Red No. 3",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "dailyintakeblog.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S60.md",
+    "snippet": "Objection had operated as an automatic stay.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8472,
+        "content": 0.3925,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S61",
+    "url": "https://www.hhs.gov/press-room/fda-takes-new-approach-no-artificial-colors-claims.html",
+    "canonicalUrl": "https://hhs.gov/press-room/fda-takes-new-approach-no-artificial-colors-claims.html",
+    "title": "FDA Takes New Approach to No Artificial Colors Claims",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "hhs.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S61.md",
+    "snippet": "February 5, 2026 enforcement discretion.",
+    "meta": {
+      "foundBy": 1,
+      "waybackSnapshot": "20261023140053",
+      "rank": {
+        "rrf": 0.8026,
+        "content": 0.6672,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S62",
+    "url": "https://www.npr.org/2023/10/10/1204839281/california-ban-food-additives-red-dye-3-propylparaben-candy",
+    "canonicalUrl": "https://npr.org/2023/10/10/1204839281/california-ban-food-additives-red-dye-3-propylparaben-candy",
+    "title": "California is first state to ban 4 food additives - NPR",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "npr.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0139,
+    "extract": "sources/S62.md",
+    "snippet": "October 2023.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8714,
+        "content": 0.5213,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do California AB 418 (California Food Safety Act 2023) and AB 2316 (2024 school foods dyes) prohibit and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S66",
+    "url": "https://nationalaglawcenter.org/fda-bans-red-dye-no-3/",
+    "canonicalUrl": "https://nationalaglawcenter.org/fda-bans-red-dye-no-3",
+    "title": "FDA bans Red Dye No. 3",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "nationalaglawcenter.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0137,
+    "extract": "sources/S66.md",
+    "snippet": "National Ag Law Center.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8026,
+        "content": 0.537,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S67",
+    "url": "https://www.cov.com/en/news-and-insights/insights/2025/04/fda-announces-steps-to-phase-out-synthetic-color-additives",
+    "canonicalUrl": "https://cov.com/en/news-and-insights/insights/2025/04/fda-announces-steps-to-phase-out-synthetic-color-additives",
+    "title": "Covington: FDA Announces Steps to Phase Out Synthetic Color Additives",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "cov.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0137,
+    "extract": "sources/S67.md",
+    "snippet": "April 2025 analysis.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9839,
+        "content": 0.7113,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S68",
+    "url": "https://chlpi.org/wp-content/uploads/2025/12/State-Regulation-of-Food-Additives-and-Chemicals_FINAL_.pdf",
+    "canonicalUrl": "https://chlpi.org/wp-content/uploads/2025/12/State-Regulation-of-Food-Additives-and-Chemicals_FINAL_.pdf",
+    "title": "CHLPI December 2025 State Regulation of Food Additives and Chemicals",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "chlpi.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 36 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0135,
+    "extract": "sources/S68.md",
+    "snippet": "Report.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.6703,
+        "content": 0.7629,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S75",
+    "url": "https://www.cov.com/en/news-and-insights/insights/2025/01/fda-announces-revocation-of-authorization-for-the-use-of-fdandc-red-no-3-in-food-and-ingested-drugs-despite-finding-no-human-health-risk",
+    "canonicalUrl": "https://cov.com/en/news-and-insights/insights/2025/01/fda-announces-revocation-of-authorization-for-the-use-of-fdandc-red-no-3-in-food-and-ingested-drugs-despite-finding-no-human-health-risk",
+    "title": "Covington: FDA Announces Revocation of Authorization for FD&C Red No.3",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "cov.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0133,
+    "extract": "sources/S75.md",
+    "snippet": "Delaney Clause basis.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8243,
+        "content": 0.6058,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S76",
+    "url": "https://www.dailyintakeblog.com/2026/07/fda-takes-regulatory-actions-to-remove-outdated-authorizations-for-two-color-additives-in-food/",
+    "canonicalUrl": "https://dailyintakeblog.com/2026/07/fda-takes-regulatory-actions-to-remove-outdated-authorizations-for-two-color-additives-in-food",
+    "title": "FDA Takes Regulatory Actions to Remove Outdated Authorizations for Two Color Additives in Food",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "dailyintakeblog.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0133,
+    "extract": "sources/S76.md",
+    "snippet": "Hyman Phelps July 2026.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8472,
+        "content": 0.5847,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S78",
+    "url": "https://azleg.gov/legtext/57leg/1R/summary/H.HB2164_041625_SIGNED.DOCX.htm",
+    "canonicalUrl": "https://azleg.gov/legtext/57leg/1R/summary/H.HB2164_041625_SIGNED.DOCX.htm",
+    "title": "HB2164 - 571R - House Bill Summary (signed)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "azleg.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S78.md",
+    "snippet": "Arizona Healthy Schools Act.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9839,
+        "content": 0.4162,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S79",
+    "url": "https://www.cov.com/en/news-and-insights/insights/2026/02/court-enjoins-texas-sb-25-food-label-warning-requirement",
+    "canonicalUrl": "https://cov.com/en/news-and-insights/insights/2026/02/court-enjoins-texas-sb-25-food-label-warning-requirement",
+    "title": "Covington: Court Enjoins Texas SB 25 Food Label Warning Requirement",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "cov.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S79.md",
+    "snippet": "February 11, 2026 preliminary injunction.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8243,
+        "content": 0.5306,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S80",
+    "url": "https://www.cozen.com/news-resources/publications/2025/fda-encourages-food-manufacturers-to-phase-out-fd-c-red-no-3",
+    "canonicalUrl": "https://cozen.com/news-resources/publications/2025/fda-encourages-food-manufacturers-to-phase-out-fd-c-red-no-3",
+    "title": "Cozen O'Connor: FDA Encourages Food Manufacturers to Phase Out FD&C Red No. 3",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "cozen.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S80.md",
+    "snippet": "July 2025.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7821,
+        "content": 0.3236,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S81",
+    "url": "https://www.mofo.com/resources/insights/250923-california-bill-ultra-processed-foods",
+    "canonicalUrl": "https://mofo.com/resources/insights/250923-california-bill-ultra-processed-foods",
+    "title": "Newly Passed California Bill Defines Ultra-Processed Foods",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "mofo.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S81.md",
+    "snippet": "AB 1264.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8026,
+        "content": 0.3289,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do California AB 418 (California Food Safety Act 2023) and AB 2316 (2024 school foods dyes) prohibit and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S82",
+    "url": "https://www.skadden.com/insights/publications/2026/02/fdas-new-enforcement-discretion-on-no-artificial-colors-claims",
+    "canonicalUrl": "https://skadden.com/insights/publications/2026/02/fdas-new-enforcement-discretion-on-no-artificial-colors-claims",
+    "title": "Skadden: FDA's New Enforcement Discretion on No Artificial Colors Claims",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "skadden.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0132,
+    "extract": "sources/S82.md",
+    "snippet": "February 2026.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7922,
+        "content": 0.3861,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S85",
+    "url": "https://www.cirs-group.com/en/food/texas-updates-food-labeling-law-44-ingredients-require-warning-labels",
+    "canonicalUrl": "https://cirs-group.com/en/food/texas-updates-food-labeling-law-44-ingredients-require-warning-labels",
+    "title": "CIRS: Texas Updates Food Labeling Law: 44 Ingredients Require Warning Labels",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "cirs-group.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.013,
+    "extract": "sources/S85.md",
+    "snippet": "List of ingredients.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7821,
+        "content": 0.6286,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S86",
+    "url": "https://www.duanemorris.com/alerts/fda_revokes_red_dye_no3_authorization_food_drinks_drugs_what_manufacturers_need_know_0125.html",
+    "canonicalUrl": "https://duanemorris.com/alerts/fda_revokes_red_dye_no3_authorization_food_drinks_drugs_what_manufacturers_need_know_0125.html",
+    "title": "Duane Morris: FDA Revokes Red Dye No. 3 Authorization",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "duanemorris.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.013,
+    "extract": "sources/S86.md",
+    "snippet": "What manufacturers need to know.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7722,
+        "content": 0.4433,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S87",
+    "url": "https://www.fox29.com/news/red-dye-no-40-banned-from-schools-delaware-new-law",
+    "canonicalUrl": "https://fox29.com/news/red-dye-no-40-banned-from-schools-delaware-new-law",
+    "title": "Red dye No. 40 banned from schools in Delaware with new law",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "fox29.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.013,
+    "extract": "sources/S87.md",
+    "snippet": "Signed May 22, 2025.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7722,
+        "content": 0.4578,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S90",
+    "url": "https://www.cov.com/en/news-and-insights/insights/2025/03/west-virginia-passes-law-prohibiting-the-use-of-seven-food-dye-ingredients",
+    "canonicalUrl": "https://cov.com/en/news-and-insights/insights/2025/03/west-virginia-passes-law-prohibiting-the-use-of-seven-food-dye-ingredients",
+    "title": "Covington: West Virginia Passes Law Prohibiting the Use of Seven Food Dye Ingredients",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "cov.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0128,
+    "extract": "sources/S90.md",
+    "snippet": "March 2025.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.9531,
+        "content": 0.3306,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S91",
+    "url": "https://www.cozen.com/news-resources/publications/2025/fda-bans-red-dye-no-3-in-food-and-ingested-drugs-what-manufacturers-should-know",
+    "canonicalUrl": "https://cozen.com/news-resources/publications/2025/fda-bans-red-dye-no-3-in-food-and-ingested-drugs-what-manufacturers-should-know",
+    "title": "Cozen O'Connor: FDA Bans Red Dye No. 3",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "cozen.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0128,
+    "extract": "sources/S91.md",
+    "snippet": "What manufacturers should know.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8133,
+        "content": 0.4425,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S92",
+    "url": "https://www.ewg.org/news-insights/news-release/2024/09/california-leads-nation-first-ban-six-harmful-food-dyes-school",
+    "canonicalUrl": "https://ewg.org/news-insights/news-release/2024/09/california-leads-nation-first-ban-six-harmful-food-dyes-school",
+    "title": "California leads the nation with first ban on six harmful food dyes in school food",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "ewg.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0128,
+    "extract": "sources/S92.md",
+    "snippet": "EWG.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8243,
+        "content": 0.7538,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do California AB 418 (California Food Safety Act 2023) and AB 2316 (2024 school foods dyes) prohibit and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S96",
+    "url": "https://www.haynesboone.com/news/alerts/an-update-on-warnings-on-texas-food-labels-administrative",
+    "canonicalUrl": "https://haynesboone.com/news/alerts/an-update-on-warnings-on-texas-food-labels-administrative",
+    "title": "Haynes Boone: Texas Food Labels Administrative Rule Finalized Amid Ongoing Litigation",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "haynesboone.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0127,
+    "extract": "sources/S96.md",
+    "snippet": "DSHS final rule February 2026.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8133,
+        "content": 0.6805,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S97",
+    "url": "https://www.wiley.law/alert-FDA-Proposes-Mandatory-GRAS-Notification-Framework",
+    "canonicalUrl": "https://wiley.law/alert-FDA-Proposes-Mandatory-GRAS-Notification-Framework",
+    "title": "Wiley: FDA Proposes Mandatory GRAS Notification Framework",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "wiley.law",
+    "trust": 0.5,
+    "signals": [
+      "cites 1 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0127,
+    "extract": "sources/S97.md",
+    "snippet": "2026.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7439,
+        "content": 0.4764,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S98",
+    "url": "https://calmatters.digitaldemocracy.org/bills/ca_202320240ab418",
+    "canonicalUrl": "https://calmatters.digitaldemocracy.org/bills/ca_202320240ab418",
+    "title": "AB 418: The California Food Safety Act - Digital Democracy",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "calmatters.digitaldemocracy.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S98.md",
+    "snippet": "ABPCA Bill Id:AB 418 — Californians should not have to worry that the food they buy in their neighborhood grocery store might be full of dangerous additives or toxic chemicals. AB 418 will correct for a concerning lack of federal oversight and help protect our kids, public health, and the safety of our food supply.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "What do California AB 418 (California Food Safety Act 2023) and AB 2316 (2024 school foods dyes) prohibit and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S99",
+    "url": "https://capitol.texas.gov/tlodocs/89R/analysis/pdf/SB00025F.pdf",
+    "canonicalUrl": "https://capitol.texas.gov/tlodocs/89R/analysis/pdf/SB00025F.pdf",
+    "title": "SB 25 Bill Analysis Senate Research Center (enrolled)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "capitol.texas.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S99.md",
+    "snippet": "Labels developed or copyrighted on or after January 1, 2027.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8472,
+        "content": 0.5024,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S101",
+    "url": "https://www.cspdailynews.com/foodservice/fda-revokes-orange-b-food-coloring-proposes-ban-citrus-red-no-2",
+    "canonicalUrl": "https://cspdailynews.com/foodservice/fda-revokes-orange-b-food-coloring-proposes-ban-citrus-red-no-2",
+    "title": "FDA revokes Orange B food coloring, proposes ban on Citrus Red No. 2",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "cspdailynews.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S101.md",
+    "snippet": "July 2026.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7349,
+        "content": 0.5258,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S102",
+    "url": "https://www.fda.gov/food/food-ingredients-packaging/fda-encourages-food-manufacturers-accelerate-phasing-out-use-fdc-red-no-3-foods-2027-deadline",
+    "canonicalUrl": "https://fda.gov/food/food-ingredients-packaging/fda-encourages-food-manufacturers-accelerate-phasing-out-use-fdc-red-no-3-foods-2027-deadline",
+    "title": "FDA Encourages Food Manufacturers to Accelerate Phasing Out Use of FD&C Red No. 3 in Foods Before 2027 Deadline",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "fda.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0125,
+    "extract": "sources/S102.md",
+    "snippet": "July 14, 2025 letter to manufacturers.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7922,
+        "content": 0.3474,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S103",
+    "url": "https://calmatters.digitaldemocracy.org/bills/ca_202320240ab2316",
+    "canonicalUrl": "https://calmatters.digitaldemocracy.org/bills/ca_202320240ab2316",
+    "title": "AB 2316: California School Food Safety Act - Digital Democracy",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "calmatters.digitaldemocracy.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0123,
+    "extract": "sources/S103.md",
+    "snippet": "Related Legislation: — AB 418 (Gabriel, Chapter 328, Statutes of 2023) enacted the California Food Safety Act to prohibit, commencing January 1, 2027, the manufacture or sale of a food product that contains any of the following substances: brominated vegetable oil; potassium bromate; propylparaben; and, red dye 3.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "What do California AB 418 (California Food Safety Act 2023) and AB 2316 (2024 school foods dyes) prohibit and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S104",
+    "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-revoke-authorization-use-red-no-3-food-and-ingested-drugs",
+    "canonicalUrl": "https://fda.gov/food/hfp-constituent-updates/fda-revoke-authorization-use-red-no-3-food-and-ingested-drugs",
+    "title": "FDA to Revoke Authorization for the Use of Red No. 3 in Food and Ingested Drugs",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "fda.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0123,
+    "extract": "sources/S104.md",
+    "snippet": "Constituent update January 2025.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8356,
+        "content": 0.4642,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S106",
+    "url": "https://www.foodsafetynews.com/2026/01/judge-grants-industry-request-to-stall-ban-on-food-dyes/",
+    "canonicalUrl": "https://foodsafetynews.com/2026/01/judge-grants-industry-request-to-stall-ban-on-food-dyes",
+    "title": "Judge grants industry request to stall ban on food dyes",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "foodsafetynews.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0123,
+    "extract": "sources/S106.md",
+    "snippet": "Board of Education school ban not covered.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8971,
+        "content": 0.3754,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S108",
+    "url": "https://nationalaglawcenter.org/maha-movement-new-texas-and-louisiana-laws/",
+    "canonicalUrl": "https://nationalaglawcenter.org/maha-movement-new-texas-and-louisiana-laws",
+    "title": "MAHA Movement: New Texas and Louisiana Laws",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "nationalaglawcenter.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0122,
+    "extract": "sources/S108.md",
+    "snippet": "National Ag Law Center.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7439,
+        "content": 0.8695,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S109",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-08-05/html/2026-15920.htm",
+    "canonicalUrl": "https://govinfo.gov/content/pkg/FR-2026-08-05/html/2026-15920.htm",
+    "title": "Federal Register Aug 5, 2026: Micro-Tracers, Inc.; Response to Objections and Requests for a Public Hearing (FD&C Red No. 3)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "govinfo.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 5 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0122,
+    "extract": "sources/S109.md",
+    "snippet": "In Objection 2, the objector argues that FDA failed to consider: (1) the safety of the specific use of FD&C Red No.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "What did FDA do on brominated vegetable oil (2024) and FD&C Red No. 3 erythrosine (January 2025) and what are the effective dates?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S112",
+    "url": "https://www.legis.la.gov/Legis/ViewDocument.aspx?d=1428758",
+    "canonicalUrl": "https://legis.la.gov/Legis/ViewDocument.aspx?d=1428758",
+    "title": "Louisiana governor veto message SB 117",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "legis.la.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.012,
+    "extract": "sources/S112.md",
+    "snippet": "SB 14 prohibitions take effect 2028-2029 school year.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7625,
+        "content": 0.4579,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S113",
+    "url": "https://nationalaglawcenter.org/food-law-in-the-states-2026-update-part-2/",
+    "canonicalUrl": "https://nationalaglawcenter.org/food-law-in-the-states-2026-update-part-2",
+    "title": "Food Law in the States: 2026 Update Part 2",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "nationalaglawcenter.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0119,
+    "extract": "sources/S113.md",
+    "snippet": "National Ag Law Center.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.6854,
+        "content": 0.7379,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S114",
+    "url": "https://www.verdantlaw.com/fourth-circuit-to-review-west-virginia-dye-ban-injunction/",
+    "canonicalUrl": "https://verdantlaw.com/fourth-circuit-to-review-west-virginia-dye-ban-injunction",
+    "title": "Fourth Circuit to Review West Virginia Dye Ban Injunction",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "verdantlaw.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0119,
+    "extract": "sources/S114.md",
+    "snippet": "Appeal filed January 22, 2026.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8714,
+        "content": 0.3743,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S117",
+    "url": "https://legis.la.gov/legis/ViewDocument.aspx?d=1421347",
+    "canonicalUrl": "https://legis.la.gov/legis/ViewDocument.aspx?d=1421347",
+    "title": "Louisiana 2025 Regular Session ENROLLED SENATE BILL NO. 14",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "legis.la.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0118,
+    "extract": "sources/S117.md",
+    "snippet": "Prohibited ingredients in school meals from 2028-2029 school year; QR disclosure January 1, 2028.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7722,
+        "content": 0.5405,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S118",
+    "url": "https://www.alston.com/en/insights/publications/2026/08/fda-proposes-eliminate-self-affirmed-gras-pathway",
+    "canonicalUrl": "https://alston.com/en/insights/publications/2026/08/fda-proposes-eliminate-self-affirmed-gras-pathway",
+    "title": "Alston & Bird: FDA Proposes to Eliminate Self-Affirmed GRAS Pathway",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "alston.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0116,
+    "extract": "sources/S118.md",
+    "snippet": "Proposed rule August 2026.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7625,
+        "content": 0.349,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S119",
+    "url": "https://www.cov.com/en/news-and-insights/insights/2025/06/louisiana-enacts-ingredient-disclosure-law-and-ban-on-certain-ingredients-in-school-meals",
+    "canonicalUrl": "https://cov.com/en/news-and-insights/insights/2025/06/louisiana-enacts-ingredient-disclosure-law-and-ban-on-certain-ingredients-in-school-meals",
+    "title": "Covington: Louisiana Enacts Ingredient Disclosure Law and Ban on Certain Ingredients in School Meals",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "cov.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0116,
+    "extract": "sources/S119.md",
+    "snippet": "June 2025.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7531,
+        "content": 0.4254,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S120",
+    "url": "https://www.cov.com/en/news-and-insights/insights/2025/06/texas-enacts-nations-first-state-level-ingredient-disclosure-law-texas-also-enacts-bans-on-certain-ingredients-in-school-meals-similar-louisiana-bill-progresses",
+    "canonicalUrl": "https://cov.com/en/news-and-insights/insights/2025/06/texas-enacts-nations-first-state-level-ingredient-disclosure-law-texas-also-enacts-bans-on-certain-ingredients-in-school-meals-similar-louisiana-bill-progresses",
+    "title": "Covington: Texas Also Enacts Bans on Certain Ingredients in School Meals",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "cov.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0115,
+    "extract": "sources/S120.md",
+    "snippet": "SB 314.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8243,
+        "content": 0.4782,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S122",
+    "url": "https://www.food-safety.com/articles/10504-louisiana-passes-maha-bill-targeting-more-than-40-ingredients-including-seed-oils-dyes-sweeteners",
+    "canonicalUrl": "https://food-safety.com/articles/10504-louisiana-passes-maha-bill-targeting-more-than-40-ingredients-including-seed-oils-dyes-sweeteners",
+    "title": "Louisiana Passes MAHA Bill Targeting More Than 40 Ingredients",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "food-safety.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0115,
+    "extract": "sources/S122.md",
+    "snippet": "15 ingredients school ban.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7262,
+        "content": 0.4894,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S125",
+    "url": "https://www.hklaw.com/en/insights/publications/2025/07/food-for-thought-tx-enacts-food-product-warning-labels-for-44-chemical",
+    "canonicalUrl": "https://hklaw.com/en/insights/publications/2025/07/food-for-thought-tx-enacts-food-product-warning-labels-for-44-chemical",
+    "title": "Holland & Knight: Texas Enacts Food Product Warning Labels for 44 Chemical Ingredients",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "hklaw.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0114,
+    "extract": "sources/S125.md",
+    "snippet": "Signed June 22, 2025.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8356,
+        "content": 0.6095,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S126",
+    "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00025F.htm",
+    "canonicalUrl": "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00025F.htm",
+    "title": "Texas SB 25 enrolled text 89(R)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "capitol.texas.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0112,
+    "extract": "sources/S126.md",
+    "snippet": "Health and Safety Code 431.0815 warning label.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8592,
+        "content": 0.5072,
+        "trust": 0.5,
+        "recency": 0.5
+      },
+      "provenance": [
+        {
+          "subQuestion": "What do West Virginia HB 2354 (2025), Texas SB 25 (2025 warning labels) and Louisiana SB 14 (2025) require and from when?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S128",
+    "url": "https://www.juneauempire.com/2026/05/19/alaska-legislature-votes-to-ban-certain-synthetic-food-dyes-in-school-meals/",
+    "canonicalUrl": "https://juneauempire.com/2026/05/19/alaska-legislature-votes-to-ban-certain-synthetic-food-dyes-in-school-meals",
+    "title": "Alaska Legislature votes to ban certain synthetic food dyes in school meals",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "juneauempire.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0112,
+    "extract": "sources/S128.md",
+    "snippet": "SB 187 to governor.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7093,
+        "content": 0.4979,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S129",
+    "url": "https://capitol.texas.gov/tlodocs/89R/analysis/pdf/SB00314F.pdf",
+    "canonicalUrl": "https://capitol.texas.gov/tlodocs/89R/analysis/pdf/SB00314F.pdf",
+    "title": "SB 314 89(R) Bill Analysis Senate Research Center",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "capitol.texas.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0111,
+    "extract": "sources/S129.md",
+    "snippet": "Prohibition on certain additives in free or reduced-price meals.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8592,
+        "content": 0.4662,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S130",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/html/2026-14909.htm",
+    "canonicalUrl": "https://govinfo.gov/content/pkg/FR-2026-07-23/html/2026-14909.htm",
+    "title": "Federal Register July 23, 2026: Proposal To Revoke the Color Additive Listing for Use of Citrus Red No. 2",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "govinfo.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0111,
+    "extract": "sources/S130.md",
+    "snippet": "to Make America Healthy Again'' (90 FR 20478, May 14, 2025)). the color additive regulation for Citrus Red No.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S132",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-23/html/2026-14910.htm",
+    "canonicalUrl": "https://govinfo.gov/content/pkg/FR-2026-07-23/html/2026-14910.htm",
+    "title": "Federal Register July 23, 2026: Revocation of the Color Additive Listing for Use of Orange B",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "govinfo.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.011,
+    "extract": "sources/S132.md",
+    "snippet": "Program, FDA, September 12, 2025.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S133",
+    "url": "https://www.akleg.gov/basis/Bill/Detail/34?Root=SB187",
+    "canonicalUrl": "https://akleg.gov/basis/Bill/Detail/34?Root=SB187",
+    "title": "Alaska State Legislature SB 187",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "akleg.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0109,
+    "extract": "sources/S133.md",
+    "snippet": "Bill status.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7011,
+        "content": 0.3743,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S134",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2025-09-17/html/2025-18023.htm",
+    "canonicalUrl": "https://govinfo.gov/content/pkg/FR-2025-09-17/html/2025-18023.htm",
+    "title": "Federal Register Sept 17, 2025: Proposal To Remove the Color Additive Listing for Use of Orange B",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "govinfo.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0109,
+    "extract": "sources/S134.md",
+    "snippet": "Program, FDA, August 19, 2025.",
+    "meta": {
+      "foundBy": 1,
+      "provenance": [
+        {
+          "subQuestion": "What is FDA's 2025 plan to phase out petroleum-based synthetic food dyes, its actions on Citrus Red No. 2 and Orange B, and other additive or GRAS revocations through 2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S135",
+    "url": "https://legis.la.gov/Legis/ViewDocument.aspx?d=1483256",
+    "canonicalUrl": "https://legis.la.gov/Legis/ViewDocument.aspx?d=1483256",
+    "title": "RÉSUMÉ DIGEST ACT 735 (SB 57) 2026",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "legis.la.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0108,
+    "extract": "sources/S135.md",
+    "snippet": "Removes acesulfame potassium.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7439,
+        "content": 0.3297,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S136",
+    "url": "https://www.iowapublicradio.org/state-government-news/2026-05-20/reynolds-signs-iowa-maha-law-robert-f-kennedy-jr",
+    "canonicalUrl": "https://iowapublicradio.org/state-government-news/2026-05-20/reynolds-signs-iowa-maha-law-robert-f-kennedy-jr",
+    "title": "RFK Jr. joins Reynolds for MAHA bill signing",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "iowapublicradio.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0106,
+    "extract": "sources/S136.md",
+    "snippet": "HF 2676 signed May 20, 2026.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7176,
+        "content": 0.317,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S137",
+    "url": "https://www.haynesboone.com/news/alerts/food-additive-ban-imminent-in-texas-schools",
+    "canonicalUrl": "https://haynesboone.com/news/alerts/food-additive-ban-imminent-in-texas-schools",
+    "title": "Haynes Boone: Food Additive Ban Imminent in Texas Schools",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "haynesboone.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 2 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0105,
+    "extract": "sources/S137.md",
+    "snippet": "Beginning with 2026-2027 school year.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8356,
+        "content": 0.3963,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S138",
+    "url": "https://www.haynesboone.com/news/alerts/louisiana-clarifies-food-label-disclosures-extends-compliance-date",
+    "canonicalUrl": "https://haynesboone.com/news/alerts/louisiana-clarifies-food-label-disclosures-extends-compliance-date",
+    "title": "Haynes Boone: Louisiana Clarifies Food Label Disclosures and Extends Compliance Date",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "haynesboone.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0104,
+    "extract": "sources/S138.md",
+    "snippet": "June 2026.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7349,
+        "content": 0.3859,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S140",
+    "url": "https://www.cspi.org/page/new-york-food-safety-and-chemical-disclosure-act",
+    "canonicalUrl": "https://cspi.org/page/new-york-food-safety-and-chemical-disclosure-act",
+    "title": "CSPI New York Food Safety and Chemical Disclosure Act",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "cspi.org",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0102,
+    "extract": "sources/S140.md",
+    "snippet": "Passed legislature, awaiting governor.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.663,
+        "content": 0.2539,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S141",
+    "url": "https://www.legis.la.gov/legis/ViewDocument.aspx?d=1480460",
+    "canonicalUrl": "https://legis.la.gov/legis/ViewDocument.aspx?d=1480460",
+    "title": "Louisiana 2026 Regular Session ENROLLED SENATE BILL NO. 57 (Act 735)",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "legis.la.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.0101,
+    "extract": "sources/S141.md",
+    "snippet": "Amends Act 463 of 2025; QR labeling effective December 31, 2028.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.7531,
+        "content": 0.2456,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S142",
+    "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00314F.htm",
+    "canonicalUrl": "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00314F.htm",
+    "title": "Texas SB 314 enrolled text",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T18:54:26.887Z",
+    "domain": "capitol.texas.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0.01,
+    "extract": "sources/S142.md",
+    "snippet": "Education Code 33.9011.",
+    "meta": {
+      "foundBy": 1,
+      "rank": {
+        "rrf": 0.8472,
+        "content": 0.2946,
+        "trust": 0.5,
+        "recency": 0.5,
+        "namedMiss": 0.75
+      },
+      "provenance": [
+        {
+          "subQuestion": "Which other states (Arizona, Utah, Virginia, Tennessee, Delaware, others) enacted laws restricting synthetic dyes or additives in school meals or all foods in 2025-2026?",
+          "runDir": "/private/tmp/claude-501/-Users-maxime-Downloads/317f99f3-53c0-456e-8730-8f314c27c041/scratchpad/r3/q5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "S144",
+    "url": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2FACT622.pdf",
+    "canonicalUrl": "https://arkleg.state.ar.us/Home/FTPDocument?path=%2FACTS%2F2025R%2FPublic%2FACT622.pdf",
+    "title": "Arkansas Act 622 of 2025 (SB 9) Make Arkansas Healthy Again Act",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T19:01:06.469Z",
+    "domain": "arkleg.state.ar.us",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0,
+    "extract": "sources/S144.md",
+    "snippet": "Act 622 of the Regular Session — 1 State of Arkansas *As Engrossed: S3/20/25* 2 95th General Assembly **A Bill** 3 Regular Session, 2025 SENATE BILL 9 4 5 By: Senators B."
+  },
+  {
+    "id": "S145",
+    "url": "https://arkleg.state.ar.us/Bills/Detail?id=SB9&ddBienniumSession=2025%2F2025R",
+    "canonicalUrl": "https://arkleg.state.ar.us/Bills/Detail?ddBienniumSession=2025%2F2025R&id=SB9",
+    "title": "Arkansas SB9 2025 bill detail",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T19:01:07.411Z",
+    "domain": "arkleg.state.ar.us",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0,
+    "extract": "sources/S145.md",
+    "snippet": "This page shows information from a previous legislative session and is presented for archive purposes only. Senate -- Notification that SB9 is now Act 622"
+  },
+  {
+    "id": "S146",
+    "url": "https://www.foodprocessing.com/ingredients/article/55342021/keeping-track-of-state-ingredient-bans",
+    "canonicalUrl": "https://foodprocessing.com/ingredients/article/55342021/keeping-track-of-state-ingredient-bans",
+    "title": "Keeping Track of State Ingredient Bans",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T19:01:08.132Z",
+    "domain": "foodprocessing.com",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0,
+    "extract": "sources/S146.md",
+    "snippet": "Arkansas, Utah, Virginia — “The rights of states to enforce legislation that is not in sync with federal legislation is becoming increasingly controversial, particularly in relation to food dyes and additives,” The Acheson Group recently wrote."
+  },
+  {
+    "id": "S147",
+    "url": "https://law.lis.virginia.gov/vacode/title22.1/chapter13/section22.1-207.4:3/",
+    "canonicalUrl": "https://law.lis.virginia.gov/vacode/title22.1/chapter13/section22.1-207.4:3",
+    "title": "Code of Virginia 22.1-207.4:3 (Effective July 1, 2027) certain food dyes prohibited",
+    "backend": "host",
+    "fetchedAt": "2026-10-30T19:01:09.853Z",
+    "domain": "law.lis.virginia.gov",
+    "trust": 0.5,
+    "signals": [
+      "cites 0 external source(s) · surfaced by 1 engine(s) · declares no persistent identity"
+    ],
+    "score": 0,
+    "extract": "sources/S147.md",
+    "snippet": "§ 22.1-207.4:3. (Effective July 1, 2027) Nutritional standards for school meals and other foods; certain color additives prohibited. — \"Competitive food\" means the same as that term is defined in § 22.1-207.4. No public elementary or secondary school shall offer or make available to any student any food served as a part of a school meal or any competitive fo"
+  }
+]
