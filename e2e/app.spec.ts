@@ -290,12 +290,19 @@ test.describe("cosmetics", () => {
     await lookUp(page, "3600540539397", "Chercher");
     await expect(page.getByText("Note ingrédients")).toBeVisible();
     await expect(page.getByTestId("reasons")).toContainText("ingrédients vérifiés");
-    await expect(page.getByTestId("reasons")).toContainText("allergènes de parfum");
+    await expect(page.getByTestId("reasons")).toContainText("allergènes ou sensibilisants");
     const concerns = page.getByTestId("concerns");
     await expect(concerns).toContainText("Linalool");
     await expect(concerns).toContainText("Allergène de parfum");
     await expect(concerns.getByRole("link").first()).toHaveAttribute("href", /^https:\/\//);
     await expect(page.getByRole("heading", { name: "Ingrédients (INCI)" })).toBeVisible();
+    // Every ingredient of the list with its level, as printed.
+    const inci = page.getByTestId("inci");
+    await expect(inci.getByRole("listitem")).toHaveCount(22);
+    await expect(inci.getByRole("listitem").filter({ hasText: "linalool" })).toContainText(
+      "Risque faible",
+    );
+    await expect(inci.getByRole("listitem").first()).toContainText("Absent de nos listes");
     // No food sections on a cosmetic.
     await expect(page.getByText("Nutri-Score (UE)")).toHaveCount(0);
     await expect(page.getByTestId("fop")).toHaveCount(0);

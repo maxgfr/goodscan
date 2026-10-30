@@ -53,6 +53,7 @@ export function About() {
               </a>
             </li>
             <li>{t("aboutCosmeticsSources")}</li>
+            <li>{t("aboutHazards")}</li>
             <li>{t("aboutFda")}</li>
             <li className="font-medium">{t("aboutNotAdvice")}</li>
             <li>

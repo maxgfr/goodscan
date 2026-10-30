@@ -19,6 +19,7 @@
     "additives": "bun scripts/additives.ts",
     "fixtures": "bun scripts/fixtures.ts",
     "attributes": "bun scripts/attributes.ts",
+    "hazards": "bun scripts/hazards.ts",
     "icons": "pwa-assets-generator"
   },
   "dependencies": {

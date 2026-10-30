@@ -39,11 +39,13 @@ label from a photo when a product is missing. An installable PWA: no account, no
      not (Nutella in France, label photos); our computation matches Open Food Facts' own on
      every product that has one;
    - processing: −12 for ultra-processed (NOVA 4), −4 for processed (NOVA 3);
-   - additives: −15 for a high risk of overexposure in EFSA's re-evaluations (the score then
-     cannot pass 49), −6 for a moderate one, −25 for an additive the EU does not authorise, such
-     as titanium dioxide or potassium bromate (the score cannot pass 25); −6 when science weighs
-     against it (see [Science](#science)), never on top of the two stronger ones; −45 at most in
-     all;
+   - additives, each counted once for the strongest thing said about it: −25 for an additive the
+     EU does not authorise, such as titanium dioxide or potassium bromate (the score cannot pass
+     25); −15 for a high risk, from EFSA's overexposure or the official lists (IARC 1 or 2A, a CMR
+     1A/1B, an EU-identified endocrine disruptor; the score cannot pass 49); −6 for a moderate one:
+     science that weighs (see [Science](#science)), EFSA's moderate overexposure, IARC 2B, a
+     suspected CMR or endocrine disruptor (see [Official lists](#official-lists-for-every-ingredient));
+     −45 at most in all;
    - organic +5, palm oil −3; water is 100, alcohol 20 at most;
    - 75 and up is excellent, 50 good, 25 poor, below that bad.
 4. **Your market first.** With a US browser, the FDA-style box comes first: saturated fat, sodium
@@ -97,8 +99,9 @@ each with its rule or finding and its sources, in [`src/data/cosmetics.ts`](src/
 - a PFAS, −20, at most 49; a US state ban (California's AB 2762 and others) that no EU rule covers,
   −20;
 - restricted in EU cosmetics (annex III, or a REACH restriction such as the cyclic silicones D4,
-  D5 and D6), −8;
-- a fragrance allergen of the EU labelling list (Regulation (EU) 2023/1545), −3 each, −15 at most.
+  D5 and D6), or a suspected CMR or endocrine disruptor, −8;
+- a fragrance allergen of the EU labelling list (Regulation (EU) 2023/1545) or a sensitiser, −3
+  each, −15 at most.
 
 Each ingredient counts once, at its strongest category. The list is matched after removing case,
 accents and punctuation, alternative names in parentheses or after a slash ("Aqua/Water/Eau",
@@ -111,6 +114,35 @@ The list comes from a deep, verified web research with
 [ultrasearch](https://github.com/maxgfr/ultrasearch) in
 [docs/research/cosmetics](docs/research/cosmetics/README.md), on the regulations' texts, SCCS
 opinions, ECHA and edlists.org.
+
+## Official lists, for every ingredient
+
+Beyond the cited findings and the hand-kept cosmetic list, every food additive and every cosmetic
+ingredient is checked against official lists, joined by CAS number, by `bun run hazards` (it
+rebuilds [`src/data/hazards.json`](src/data/hazards.json) from the sources, like `bun run
+additives`):
+- IARC Monographs classifications: groups 1 and 2A are a high risk, 2B a moderate one.
+  Classifications tied to a context that does not apply (ethanol _in alcoholic beverages_,
+  occupational dust, a drug regimen) are left out.
+- The EU harmonised classification (CLP, Annex VI of Regulation (EC) No 1272/2008), as relayed by
+  PubChem under CC BY 4.0: carcinogenic, mutagenic or toxic for reproduction in category 1A/1B is
+  a high risk, category 2 a moderate one, skin and respiratory sensitisers a low one. Only a
+  compound's own CAS number counts, so a polymer does not inherit its monomer's classification.
+- The EU endocrine-disruptor lists ([edlists.org](https://edlists.org)): list I (identified by the
+  EU) is a high risk, list III (identified by a national authority) a moderate one, list II (under
+  investigation) is shown and costs nothing.
+- For cosmetics, the annexes of the Cosmetics Regulation for all 22,000 INCI ingredients of the
+  Open Beauty Facts taxonomy (CosIng data), shown on each ingredient with a link to its CosIng
+  record. An annex II reference is not counted as a ban: several entries only ban an impure grade
+  or some uses (petrolatum, unless fully refined). Outright bans come from the hand-kept list.
+- Additives get their CAS numbers from Wikidata, through the Open Food Facts taxonomy.
+
+`src/data/hazards.json` is derived from the Open Food Facts and Open Beauty Facts taxonomies, so it
+is shared under the ODbL like them; the CLP data is © European Union, CC BY 4.0.
+
+Each additive now counts once, for the strongest thing said about it, and each cosmetic ingredient
+of the list shows its level (high, moderate, low, or on none of the lists), like Yuka, with the
+sources a click away.
 
 ## Sources
 

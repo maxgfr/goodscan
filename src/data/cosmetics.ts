@@ -15,7 +15,15 @@ export type CosmeticCategory =
   | "endocrine"
   | "fragrance-allergen"
   | "pfas"
-  | "us-state-ban";
+  | "us-state-ban"
+  /** Suspected CMR (category 2, IARC 2B) or endocrine disruptor (EU lists II, III). */
+  | "suspected"
+  /** A skin or respiratory sensitiser in the EU harmonised classification. */
+  | "sensitiser"
+  /** Allowed in EU cosmetics with limits (annexes III, V, VI): shown, no points. */
+  | "eu-listed"
+  /** Under EU investigation as an endocrine disruptor (list II): shown, no points. */
+  | "under-review";
 
 export interface CosmeticSource {
   org: string;
