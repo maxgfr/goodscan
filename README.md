@@ -41,7 +41,9 @@ label from a photo when a product is missing. An installable PWA: no account, no
    - processing: −12 for ultra-processed (NOVA 4), −4 for processed (NOVA 3);
    - additives: −15 for a high risk of overexposure in EFSA's re-evaluations (the score then
      cannot pass 49), −6 for a moderate one, −25 for an additive the EU does not authorise, such
-     as titanium dioxide or potassium bromate (the score cannot pass 25); −45 at most in all;
+     as titanium dioxide or potassium bromate (the score cannot pass 25); −6 when science weighs
+     against it (see [Science](#science)), never on top of the two stronger ones; −45 at most in
+     all;
    - organic +5, palm oil −3; water is 100, alcohol 20 at most;
    - 75 and up is excellent, 50 good, 25 poor, below that bad.
 4. **Your market first.** With a US browser, the FDA-style box comes first: saturated fat, sodium
@@ -60,6 +62,28 @@ label from a photo when a product is missing. An installable PWA: no account, no
    facts and ingredients from a photo. Label values go through the same score, marked "estimated
    by AI": the model never gives the score itself.
 
+## Science
+
+Under each additive, a "What science says" panel lists what is known about it, finding by
+finding: an official position (WHO, IARC, JECFA, EFSA, FDA, ANSES) or a study in people (cohort,
+trial, meta-analysis), in animals or in the lab, each marked as a concern or reassuring, with its
+source, its year and a link to its DOI or PubMed record. Sweeteners (aspartame, acesulfame K,
+sucralose, erythritol…), emulsifiers (carrageenan, carboxymethylcellulose, mono- and diglycerides,
+polysorbate 80), the Southampton azo colours, titanium dioxide, erythrosine, nitrites and nitrates
+and a few more are covered, in [`src/data/evidence.ts`](src/data/evidence.ts).
+
+The findings come from a deep, verified literature research with
+[ultrasearch](https://github.com/maxgfr/ultrasearch) in
+[docs/research/additives-evidence](docs/research/additives-evidence/README.md): every claim cites a
+fetched source, was checked against it by an adversarial pass, and every DOI and PMID was
+resolved on Crossref and PubMed. Only claims that passed are in the app.
+
+The score counts a finding only when it is weighty: an official position of concern, or at least
+two human studies that agree. Then the additive costs 6 points, in food as in drinks (the
+Nutri-Score only counts sweeteners in drinks). A single study, or animal and lab work, is shown
+but costs nothing. An additive EFSA already rates at a high risk of overexposure, or that the EU
+does not authorise, keeps that stronger penalty alone.
+
 ## Sources
 
 The data choices were checked with a cited, verified web research (116 sources) in
@@ -71,6 +95,8 @@ The data choices were checked with a cited, verified web research (116 sources) 
 - Additive risks: EFSA re-evaluations, as recorded by Open Food Facts
   (`efsa_evaluation_overexposure_risk`), plus a short hand-kept list of additives the EU does not
   authorise ([`src/data/eu.ts`](src/data/eu.ts)).
+- What science says: official positions and human studies, cited with their DOI or PMID
+  ([docs/research/additives-evidence](docs/research/additives-evidence/README.md)).
 - Nutri-Score 2023 tables: the Nutri-Score Scientific Committee's updated algorithm (in force in
   Germany and France since 2024–2025).
 - US box: FDA Daily Values (saturated fat 20 g, sodium 2300 mg, added sugars 50 g).

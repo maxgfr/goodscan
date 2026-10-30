@@ -73,6 +73,7 @@ export const de: Messages = {
   reason_additiveHigh: "{additive}: hohes Risiko einer Überexposition (EFSA)",
   reason_additiveModerate: "{additive}: mittleres Risiko einer Überexposition (EFSA)",
   reason_additiveEu: "{additive}: in der EU nicht zugelassen",
+  reason_additiveEvidence: "{additive}: Bedenken einer Behörde oder aus Humanstudien",
   reason_organic: "Bio",
   reason_palmOil: "Enthält Palmöl",
   reasonCap: "begrenzt die Bewertung auf {cap}",
@@ -128,6 +129,17 @@ export const de: Messages = {
   risk_unknown: "Nicht bewertet",
   euNotAuthorised: "In der EU nicht zugelassen",
   anses: "Von der ANSES beobachtet",
+  scienceTitle: "Was die Wissenschaft sagt",
+  scienceNote:
+    "Punkte gibt es nur für eine behördliche Bewertung mit Bedenken oder zwei übereinstimmende Humanstudien ab. Eine einzelne Studie wird gezeigt, nicht gezählt.",
+  evidence_official: "Behördliche Bewertung",
+  evidence_cohort: "Kohortenstudie",
+  evidence_trial: "Studie am Menschen",
+  evidence_meta: "Metaanalyse",
+  evidence_animal: "Tierstudie",
+  evidence_lab: "Laborstudie",
+  evidenceConcern: "Bedenklich",
+  evidenceReassuring: "Beruhigend",
 
   allergensTitle: "Allergene",
   allergensNone: "Keine angegeben.",
@@ -222,7 +234,7 @@ export const de: Messages = {
     "Ausgangspunkt ist die Ernährung: der Nutri-Score 2023 (A ≈ 85–100 … E ≈ 0–23), aus der Datenbank oder von goodscan aus den Nährwerten berechnet.",
   aboutScore2: "Verarbeitung: −12 für hochverarbeitet (NOVA 4), −4 für verarbeitet (NOVA 3).",
   aboutScore3:
-    "Zusatzstoffe: −15 für ein hohes Überexpositionsrisiko laut EFSA (und die Bewertung kann nicht über 49 steigen), −6 für ein mittleres, −25 für einen in der EU nicht zugelassenen Zusatzstoff (höchstens 25). Insgesamt höchstens −45.",
+    "Zusatzstoffe: −15 für ein hohes Überexpositionsrisiko laut EFSA (und die Bewertung kann nicht über 49 steigen), −6 für ein mittleres, −25 für einen in der EU nicht zugelassenen Zusatzstoff (höchstens 25). −6, wenn die Wissenschaft dagegen spricht: eine behördliche Bewertung mit Bedenken (WHO, IARC, EFSA, FDA) oder zwei übereinstimmende Humanstudien, nicht zusätzlich zu den Abzügen für hohes Risiko oder fehlende EU-Zulassung. Insgesamt höchstens −45.",
   aboutScore4: "Bio +5, Palmöl −3. Wasser ist 100, Alkohol höchstens 20.",
   aboutScore5: "Ab 75 ausgezeichnet, ab 50 gut, ab 25 mäßig, darunter schlecht.",
   aboutSourcesTitle: "Quellen und Lizenzen",
@@ -230,6 +242,8 @@ export const de: Messages = {
     "Produktdaten, Zusatzstoffe und Vorlieben-Attribute: Open Food Facts, Open Beauty Facts, Open Pet Food Facts, Open Products Facts — Open Database License (ODbL); Bilder CC BY-SA.",
   aboutEfsa:
     "Risiken der Zusatzstoffe: Neubewertungen der EFSA, wie in der Taxonomie von Open Food Facts erfasst.",
+  aboutScience:
+    "Was die Wissenschaft sagt: behördliche Bewertungen (WHO, IARC, EFSA, FDA) und Humanstudien, jeweils mit DOI oder PubMed-Eintrag verlinkt, aus einer geprüften Literaturrecherche.",
   aboutFda:
     "US-Nährstoffbox: Tageswerte der FDA und die vorgeschlagene „Nutrition Info“-Box auf der Vorderseite (Niedrig ≤ 5 %, Hoch ≥ 20 % DV).",
   aboutNotAdvice:

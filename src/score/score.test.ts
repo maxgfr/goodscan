@@ -185,6 +185,37 @@ describe("goodscan score", () => {
     ).toBe(94);
   });
 
+  test("aspartame: an official concern costs 6, in food as in drinks", () => {
+    const s = scoreProduct({ ...blank, additives: ["en:e951"] });
+    expect(s.additives[0]?.evidenceWeighs).toBe(true);
+    expect(s.reasons.at(-1)).toEqual({ key: "additiveEvidence", additive: "en:e951", delta: -6 });
+    expect(s.value).toBe((scoreProduct(blank).value ?? 0) - 6);
+  });
+
+  test("E471: concordant human cohorts cost 6", () => {
+    const s = scoreProduct({ ...blank, additives: ["en:e471"] });
+    expect(s.reasons.map((r) => r.key)).toContain("additiveEvidence");
+    expect(s.additives[0]?.evidence?.some((e) => e.kind === "cohort")).toBe(true);
+  });
+
+  test("evidence does not stack on a high risk or an EU ban", () => {
+    for (const tag of ["en:e250", "en:e171"]) {
+      const s = scoreProduct({ ...blank, additives: [tag] });
+      expect(s.additives[0]?.evidence?.length, tag).toBeGreaterThan(0);
+      expect(
+        s.reasons.map((r) => r.key),
+        tag,
+      ).not.toContain("additiveEvidence");
+    }
+  });
+
+  test("Coca-Cola Zero: its sweeteners are cited and counted", () => {
+    const s = scoreProduct(product("cokeZero"));
+    const keys = s.reasons.filter((r) => r.key === "additiveEvidence").map((r) => r.additive);
+    expect(keys).toContain("en:e951");
+    expect(s.additives.find((a) => a.tag === "en:e950")?.evidence?.length).toBeGreaterThan(0);
+  });
+
   test("organic adds 5, palm oil takes 3", () => {
     const base = scoreProduct(blank).value ?? 0;
     expect(scoreProduct({ ...blank, labels: ["en:organic"] }).value).toBe(Math.min(100, base + 5));

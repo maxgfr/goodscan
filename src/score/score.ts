@@ -3,12 +3,13 @@
  *
  * It starts from nutrition (the Nutri-Score, the database's or ours), then
  * adds or takes points for processing (NOVA), additives (EFSA's
- * overexposure risk, and those the EU does not authorise), organic and palm
- * oil. Some findings also cap the score: a product cannot be "good" with a
+ * overexposure risk, those the EU does not authorise, and those with weighty
+ * scientific evidence of concern), organic and palm oil. Some findings also cap the score: a product cannot be "good" with a
  * high-risk additive in it.
  */
 import additivesData from "../data/additives.json";
 import { EU_NOT_AUTHORISED } from "../data/eu";
+import { EVIDENCE, type Evidence, weighs } from "../data/evidence";
 import { type Grade, isFood, type Product } from "../data/product";
 import { nutriscore } from "./nutriscore";
 
@@ -29,6 +30,7 @@ export interface Reason {
     | "additiveHigh"
     | "additiveModerate"
     | "additiveEu"
+    | "additiveEvidence"
     | "organic"
     | "palmOil";
   delta?: number;
@@ -45,6 +47,10 @@ export interface AdditiveInfo {
   risk?: "high" | "moderate" | "none";
   anses?: boolean;
   euNotAuthorised?: boolean;
+  /** Cited findings, when there are some. */
+  evidence?: Evidence[];
+  /** The findings are weighty enough to cost points. */
+  evidenceWeighs?: boolean;
 }
 
 export interface Score {
@@ -70,6 +76,11 @@ export function additiveInfo(tag: string): AdditiveInfo {
   if (d?.r) info.risk = RISK[d.r];
   if (d?.a) info.anses = true;
   if (tag in EU_NOT_AUTHORISED) info.euNotAuthorised = true;
+  const evidence = EVIDENCE[tag];
+  if (evidence?.length) {
+    info.evidence = evidence;
+    if (weighs(evidence)) info.evidenceWeighs = true;
+  }
   return info;
 }
 
@@ -190,9 +201,16 @@ export function scoreProduct(p: Product): Score {
       additivePenalty += 15;
       cap = Math.min(cap, 49);
       reasons.push({ key: "additiveHigh", additive: a.tag, delta: -15, cap: 49 });
-    } else if (a.risk === "moderate") {
-      additivePenalty += 6;
-      reasons.push({ key: "additiveModerate", additive: a.tag, delta: -6 });
+    } else {
+      if (a.risk === "moderate") {
+        additivePenalty += 6;
+        reasons.push({ key: "additiveModerate", additive: a.tag, delta: -6 });
+      }
+      // An official concern or concordant human studies, for food as for drinks.
+      if (a.evidenceWeighs) {
+        additivePenalty += 6;
+        reasons.push({ key: "additiveEvidence", additive: a.tag, delta: -6 });
+      }
     }
   }
   // Many flagged additives say the same thing: the total stops at 45.

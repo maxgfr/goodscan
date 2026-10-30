@@ -161,6 +161,23 @@ test("US: Cheerios, the FDA box comes first", async ({ page }) => {
   expect(errors).toEqual([]);
 });
 
+test("science: Coca-Cola Zero's aspartame is cited and costs points", async ({ page }) => {
+  const errors: string[] = [];
+  await offline(page, errors);
+  await lookUp(page, "5449000131805");
+  await expect(page.getByTestId("reasons")).toContainText(
+    "Aspartame: a concern backed by an official body or human studies",
+  );
+  const science = page
+    .getByTestId("additives")
+    .locator("li", { hasText: "Aspartame" })
+    .getByTestId("science");
+  await science.getByText(/What science says/).click();
+  await expect(science).toContainText("Official position");
+  await expect(science.getByRole("link").first()).toHaveAttribute("href", /^https:\/\//);
+  expect(errors).toEqual([]);
+});
+
 test.describe("France", () => {
   test.use({ locale: "fr-FR" });
   test("Nutella: no grade in the database, goodscan computes E", async ({ page }) => {
