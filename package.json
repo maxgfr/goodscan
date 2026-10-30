@@ -2,7 +2,7 @@
   "name": "goodscan",
   "version": "1.0.0",
   "private": true,
-  "description": "Health scanner for food in your browser: scan a barcode, get a clear 0–100 verdict from Open Food Facts, in the US, France, Germany and worldwide.",
+  "description": "Health scanner for food and cosmetics in your browser: scan a barcode, get a clear 0–100 verdict from Open Food Facts and Open Beauty Facts, every ingredient checked against official lists, better choices in the same category, in the US, France, Germany and worldwide.",
   "license": "MIT",
   "type": "module",
   "scripts": {

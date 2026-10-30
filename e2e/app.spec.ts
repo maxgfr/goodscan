@@ -334,7 +334,8 @@ test.describe("cosmetics", () => {
       "Risque faible",
     );
     await expect(inci.getByRole("listitem").first()).toContainText("Absent de nos listes");
-    // No food sections on a cosmetic.
+    // No food sections on a cosmetic, not even the food preferences.
+    await expect(page.getByRole("heading", { name: "Pour vous" })).toHaveCount(0);
     await expect(page.getByText("Nutri-Score (UE)")).toHaveCount(0);
     await expect(page.getByTestId("fop")).toHaveCount(0);
     await expect(page.getByText("Données : Open Beauty Facts (ODbL)")).toBeVisible();
