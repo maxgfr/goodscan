@@ -59,6 +59,8 @@ async function offline(page: Page | BrowserContext, errors: string[], lookups: s
     page.on("pageerror", (e) => errors.push(e.message));
   }
   await page.route(/models\.dev|openrouter\.ai\/api\/v1\/models/, (r) => r.abort());
+  // No better-choice lists unless a test serves some.
+  await page.route(/\/alternatives\//, (r) => r.fulfill({ status: 404, body: "" }));
   // Name search is blocked by its CORS policy for now: the default here too.
   await page.route(/search\.openfoodfacts\.org/, (r) => r.abort());
   await page.route(/images\.open\w+facts\.org/, (r) =>
@@ -222,6 +224,35 @@ test.describe("Germany", () => {
     expect((badges?.y ?? 0) < (fopBox?.y ?? 0)).toBe(true);
     expect(errors).toEqual([]);
   });
+});
+
+test("better choices: same category, a better score, a tap away", async ({ page }) => {
+  const errors: string[] = [];
+  await offline(page, errors);
+  const better = [
+    { code: "3274080005003", name: "Cristaline", brands: "Cristaline", score: 100 },
+    { code: "4000417025005", name: "Better spread", brands: "Test", score: 72 },
+    { code: "4008400402222", name: "Nutella", brands: "Ferrero", score: 0 },
+  ];
+  await page.route(/\/alternatives\/us\/\d+\.json$/, (route) =>
+    route.fulfill({
+      headers: cors,
+      json: Object.fromEntries(
+        ["en:sweet-spreads", "en:hazelnut-spreads", "en:cocoa-and-hazelnuts-spreads"].map((c) => [
+          c,
+          { d: 3, p: better },
+        ]),
+      ),
+    }),
+  );
+  await lookUp(page, "4008400402222");
+  const list = page.getByTestId("alternatives");
+  await expect(page.getByRole("heading", { name: "Better choices" })).toBeVisible();
+  // Not the product itself, nothing worse.
+  await expect(list.getByRole("link")).toHaveCount(2);
+  await list.getByRole("link", { name: /Cristaline/ }).click();
+  await expect(page.getByTestId("verdict")).toHaveText("Excellent");
+  expect(errors).toEqual([]);
 });
 
 test("water is excellent; switching the language translates everything", async ({ page }) => {

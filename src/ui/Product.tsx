@@ -1,5 +1,6 @@
 /** One product: the score and why, the US or EU view first, "for you", then the details. */
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { type Alternative, findAlternatives, marketOf } from "../data/alternatives";
 import type { CosmeticCategory } from "../data/cosmetics";
 import { type Evidence, evidenceUrl } from "../data/evidence";
 import { ADD_PRODUCT_URL, DATABASES, productUrl } from "../data/off";
@@ -8,7 +9,13 @@ import type { MessageKey } from "../i18n";
 import { rateIngredients } from "../score/cosmetic";
 import { asEvidence } from "../score/hazard";
 import { type Match, matchProduct } from "../score/match";
-import { type AdditiveInfo, type Reason, type Score, scoreProduct } from "../score/score";
+import {
+  type AdditiveInfo,
+  type Reason,
+  type Score,
+  scoreProduct,
+  verdictOf,
+} from "../score/score";
 import { fopBox } from "../score/us";
 import { AiPanel, LabelReader } from "./Ai";
 import { GradeBadge, Icon, Notice, NovaBadge, ScoreDial, Section, VERDICT_TONE } from "./kit";
@@ -97,6 +104,61 @@ export function ProductPage({ code }: { code: string }) {
     case "found":
       return <ProductView product={state.product} offline={state.offline} onLabel={applyLabel} />;
   }
+}
+
+/** Products of the same category that score better, from the precomputed lists. */
+function BetterChoices({ product, score }: { product: P; score: number }) {
+  const { t, lang, region } = useApp();
+  const [found, setFound] = useState<{ category: string; items: Alternative[] } | null>(null);
+  useEffect(() => {
+    let live = true;
+    setFound(null);
+    void findAlternatives(product, score, marketOf(lang, region)).then((f) => {
+      if (live) setFound(f);
+    });
+    return () => {
+      live = false;
+    };
+  }, [product, score, lang, region]);
+  if (!found) return null;
+  const category = found.category.replace(/^\w\w:/, "").replace(/-/g, " ");
+  return (
+    <Section title={t("altTitle")}>
+      <p className="-mt-2 mb-3 text-xs text-muted">{t("altSubtitle", { category })}</p>
+      <ul className="grid gap-2" data-testid="alternatives">
+        {found.items.map((a) => (
+          <li key={a.code}>
+            <a
+              className="flex items-center gap-3 rounded-xl p-1.5 hover:bg-stone-100 dark:hover:bg-stone-800"
+              href={href({ name: "product", code: a.code })}
+            >
+              {a.image ? (
+                <img
+                  src={a.image}
+                  alt=""
+                  loading="lazy"
+                  className="size-11 shrink-0 rounded-lg bg-white object-contain ring-1 ring-stone-200 dark:ring-stone-800"
+                />
+              ) : (
+                <span className="size-11 shrink-0 rounded-lg bg-stone-100 dark:bg-stone-800" />
+              )}
+              <span className="min-w-0 flex-1">
+                <span className="block truncate text-sm font-medium">{a.name}</span>
+                {a.brands ? (
+                  <span className="block truncate text-xs text-muted">{a.brands}</span>
+                ) : null}
+              </span>
+              <span
+                className={`num shrink-0 rounded-full px-2 py-0.5 text-sm font-bold ${VERDICT_TONE[verdictOf(a.score)].text}`}
+              >
+                {a.score}
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </Section>
+  );
 }
 
 function BackLink() {
@@ -211,6 +273,10 @@ function ProductView({
           </div>
         ) : null}
       </section>
+
+      {score.value !== null && score.value < 75 && product.source !== "label" ? (
+        <BetterChoices product={product} score={score.value} />
+      ) : null}
 
       {region === "us" ? (
         <>

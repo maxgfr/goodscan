@@ -92,9 +92,19 @@ export default defineConfig({
         skipWaiting: true,
         clientsClaim: true,
         globPatterns: ["**/*.{js,css,html,svg,png,ico,wasm,json}"],
+        // The better-choice lists are fetched one shard at a time, not installed.
+        globIgnores: ["alternatives/**"],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         navigateFallback: "index.html",
         runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.pathname.includes("/alternatives/"),
+            handler: "StaleWhileRevalidate",
+            options: {
+              cacheName: "alternatives",
+              expiration: { maxEntries: 64, maxAgeSeconds: 7 * 24 * 3600 },
+            },
+          },
           {
             // Product photos: <img> loads are opaque, so status 0 is cached too.
             urlPattern: /^https:\/\/images\.open(food|beauty|petfood|products)facts\.org\//,

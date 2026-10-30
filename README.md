@@ -149,6 +149,31 @@ Each additive now counts once, for the strongest thing said about it, and each c
 of the list shows its level (high, moderate, low, or on none of the lists), like Yuka, with the
 sources a click away.
 
+## Better choices
+
+When a product is not excellent, goodscan suggests up to four products of the same category that
+score better, as Yuka does, with their photo and score; a tap opens them. Open Food Facts' search
+cannot carry this from a page (it sheds load with a 503 most of the time), so `bun run
+alternatives` reads the whole Open Food Facts and Open Beauty Facts exports in one stream (about
+1.5 GB, half a minute), scores every product with goodscan's own score and keeps, for each
+taxonomy category and market (France, Germany, the US, the world), the eight best scoring 50 or
+more. The site serves them as 256 static files, a category's file picked by a hash of its tag;
+the deploy workflow rebuilds them on every release and every Monday, and the app fetches only the
+file it needs.
+
+To keep suggestions honest:
+
+- only products people scan, with their grade, their ingredients and their NOVA group, and whose
+  ingredient list was mostly recognised (a list read in a language the parser knows poorly misses
+  its additives);
+- the same product under another barcode is never suggested for itself;
+- the product's own most specific category first, the world market before a broader category,
+  never a root category, and never a category with fewer than three good products, where misfiled
+  products would lead.
+
+Suggestions only follow the database: a product filed in the wrong category gets that category's
+suggestions.
+
 ## Sources
 
 The data choices were checked with a cited, verified web research (116 sources) in
@@ -189,6 +214,7 @@ bun run dev        # http://localhost:5173
 bun run test       # unit tests (score, Nutri-Score, matching, API client, i18n, AI)
 bun run test:e2e   # build + Playwright, incl. a real camera scan from a fake video
 bun run e2e-live   # against the real Open Food Facts (by hand)
+bun run alternatives # the better-choice lists in public/alternatives (not committed)
 bun run typecheck && bun run lint
 ```
 
