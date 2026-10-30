@@ -101,8 +101,8 @@ each with its rule or finding and its sources, in [`src/data/cosmetics.ts`](src/
   20;
 - carcinogenic, mutagenic or toxic for reproduction (CMR), or an endocrine disruptor identified in
   the EU, −25, at most 49;
-- a PFAS, −20, at most 49; a US state ban (California's AB 2762 and others) that no EU rule covers,
-  −20;
+- a PFAS, −20, at most 49; a ban in a US state (California's AB 2762 and others), in Canada or
+  by the FDA that no EU rule covers, −20;
 - restricted in EU cosmetics (annex III, or a REACH restriction such as the cyclic silicones D4,
   D5 and D6), or a suspected CMR or endocrine disruptor, −8;
 - a fragrance allergen of the EU labelling list (Regulation (EU) 2023/1545) or a sensitiser, −3
@@ -140,6 +140,15 @@ additives`):
   Open Beauty Facts taxonomy (CosIng data), shown on each ingredient with a link to its CosIng
   record. An annex II reference is not counted as a ban: several entries only ban an impure grade
   or some uses (petrolatum, unless fully refined). Outright bans come from the hand-kept list.
+- For cosmetics too, the ingredients prohibited in Canada
+  ([Health Canada's Cosmetic Ingredient Hotlist](https://www.canada.ca/en/health-canada/services/consumer-product-safety/cosmetics/cosmetic-ingredient-hotlist-prohibited-restricted-ingredients/hotlist.html),
+  its prohibited table: the restricted one is mostly concentrations, labels and impurities, and
+  would flag glycerin) and the FDA's prohibited and restricted cosmetic ingredients (21 CFR 700,
+  250.250). Like a US state ban, they count (−20) only where no EU rule covers the ingredient:
+  eyelash serums' prostaglandin analogues, prohibited in Canada and named by no EU text, are
+  flagged; a thioglycolate the EU allows within limits is not.
+- Not included: California's Proposition 65 list, which OEHHA serves behind an anti-bot wall and
+  no open mirror carries.
 - Additives get their CAS numbers from Wikidata, through the Open Food Facts taxonomy.
 
 `src/data/hazards.json` is derived from the Open Food Facts and Open Beauty Facts taxonomies, so it

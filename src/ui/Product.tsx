@@ -619,6 +619,9 @@ const CATEGORY_KEY: Record<CosmeticCategory, MessageKey> = {
   sensitiser: "cat_sensitiser",
   "eu-listed": "cat_euListed",
   "under-review": "cat_underReview",
+  "non-eu-ban": "cat_nonEuBan",
+  "restricted-abroad": "cat_restrictedAbroad",
+  "eu-annex-ii": "cat_euAnnexIi",
 };
 const CATEGORY_TONE: Record<CosmeticCategory, string> = {
   "eu-prohibited": RISK_TONE.high,
@@ -632,6 +635,9 @@ const CATEGORY_TONE: Record<CosmeticCategory, string> = {
   sensitiser: RISK_TONE.unknown,
   "eu-listed": RISK_TONE.unknown,
   "under-review": RISK_TONE.unknown,
+  "non-eu-ban": RISK_TONE.high,
+  "restricted-abroad": RISK_TONE.unknown,
+  "eu-annex-ii": RISK_TONE.unknown,
 };
 
 const LEVEL_DOT = {

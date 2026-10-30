@@ -138,11 +138,14 @@ const POINTS: Record<CosmeticCategory, number> = {
   endocrine: 25,
   pfas: 20,
   "us-state-ban": 20,
+  "non-eu-ban": 20,
   "eu-restricted": 8,
   suspected: 8,
   "fragrance-allergen": 3,
   sensitiser: 3,
   "eu-listed": 0,
+  "restricted-abroad": 0,
+  "eu-annex-ii": 0,
   "under-review": 0,
 };
 const CAPS: Partial<Record<CosmeticCategory, number>> = {
@@ -154,7 +157,15 @@ const CAPS: Partial<Record<CosmeticCategory, number>> = {
 /** Allergens and sensitisers share one budget; a listed ingredient costs nothing. */
 const ALLERGENS: ReadonlySet<CosmeticCategory> = new Set(["fragrance-allergen", "sensitiser"]);
 const KEYS: Record<
-  Exclude<CosmeticCategory, "fragrance-allergen" | "sensitiser" | "eu-listed" | "under-review">,
+  Exclude<
+    CosmeticCategory,
+    | "fragrance-allergen"
+    | "sensitiser"
+    | "eu-listed"
+    | "under-review"
+    | "restricted-abroad"
+    | "eu-annex-ii"
+  >,
   Reason["key"]
 > = {
   "eu-prohibited": "ingredientProhibited",
@@ -162,22 +173,26 @@ const KEYS: Record<
   endocrine: "ingredientEndocrine",
   pfas: "ingredientPfas",
   "us-state-ban": "ingredientUsBan",
+  "non-eu-ban": "ingredientNonEuBan",
   "eu-restricted": "ingredientRestricted",
   suspected: "ingredientSuspected",
 };
+/** EU rules that already settle an ingredient: a ban abroad then adds nothing. */
 const EU: ReadonlySet<CosmeticCategory> = new Set([
   "eu-prohibited",
   "eu-restricted",
+  "eu-listed",
   "cmr",
   "endocrine",
   "fragrance-allergen",
 ]);
+const ABROAD: ReadonlySet<CosmeticCategory> = new Set(["us-state-ban", "non-eu-ban"]);
 const ALLERGENS_MAX = 15;
 
-/** The category that counts: the strongest; a US ban only when no EU rule covers it. */
+/** The category that counts: the strongest; a ban abroad only when no EU rule covers it. */
 export function countedCategory(i: CosmeticIngredient): CosmeticCategory {
   const eu = i.categories.some((c) => EU.has(c));
-  const cats = i.categories.filter((c) => !(eu && c === "us-state-ban"));
+  const cats = i.categories.filter((c) => !(eu && ABROAD.has(c)));
   return cats.reduce((a, b) => (POINTS[b] > POINTS[a] ? b : a));
 }
 
@@ -235,11 +250,14 @@ const LEVEL: Record<CosmeticCategory, Exclude<IngredientLevel, "none">> = {
   endocrine: "high",
   pfas: "high",
   "us-state-ban": "high",
+  "non-eu-ban": "high",
   "eu-restricted": "moderate",
   suspected: "moderate",
   "fragrance-allergen": "low",
   sensitiser: "low",
   "eu-listed": "low",
+  "restricted-abroad": "low",
+  "eu-annex-ii": "low",
   "under-review": "low",
 };
 

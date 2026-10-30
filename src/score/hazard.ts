@@ -17,6 +17,8 @@ export interface HazardRecord {
   a?: string;
   n?: string;
   k?: string;
+  h?: string;
+  f?: [string, string] | string[];
 }
 
 const HAZARDS = data as unknown as {
@@ -263,6 +265,53 @@ export function findingsOf(r: HazardRecord): HazardFinding[] {
         },
       });
   }
+  if (r.h === "P" || r.h === "R") {
+    const prohibited = r.h === "P";
+    out.push({
+      level: prohibited ? "high" : "listed",
+      summary: prohibited
+        ? {
+            en: "Prohibited in cosmetics in Canada (Health Canada's Cosmetic Ingredient Hotlist).",
+            fr: "Interdit dans les cosmétiques au Canada (liste critique des ingrédients cosmétiques de Santé Canada).",
+            de: "In Kanada in Kosmetik verboten (Cosmetic Ingredient Hotlist von Health Canada).",
+          }
+        : {
+            en: "Restricted in cosmetics in Canada, with conditions of use (Health Canada's Hotlist).",
+            fr: "Restreint dans les cosmétiques au Canada, avec des conditions d'usage (liste critique de Santé Canada).",
+            de: "In Kanada in Kosmetik eingeschränkt, mit Verwendungsbedingungen (Hotlist von Health Canada).",
+          },
+      source: {
+        org: "Health Canada",
+        year: YEAR,
+        title: "Cosmetic Ingredient Hotlist",
+        url: "https://www.canada.ca/en/health-canada/services/consumer-product-safety/cosmetics/cosmetic-ingredient-hotlist-prohibited-restricted-ingredients/hotlist.html",
+      },
+    });
+  }
+  if (r.f) {
+    const [status, cfr] = r.f as [string, string];
+    const prohibited = status === "P";
+    out.push({
+      level: prohibited ? "high" : "listed",
+      summary: prohibited
+        ? {
+            en: `Prohibited in US cosmetics by the FDA (21 CFR ${cfr}).`,
+            fr: `Interdit dans les cosmétiques aux États-Unis par la FDA (21 CFR ${cfr}).`,
+            de: `In den USA von der FDA in Kosmetik verboten (21 CFR ${cfr}).`,
+          }
+        : {
+            en: `Restricted in US cosmetics by the FDA (21 CFR ${cfr}).`,
+            fr: `Restreint dans les cosmétiques aux États-Unis par la FDA (21 CFR ${cfr}).`,
+            de: `In den USA von der FDA in Kosmetik beschränkt (21 CFR ${cfr}).`,
+          },
+      source: {
+        org: "US FDA",
+        year: 2022,
+        title: "Prohibited & Restricted Ingredients in Cosmetics",
+        url: "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/prohibited-restricted-ingredients-cosmetics",
+      },
+    });
+  }
   return out;
 }
 
@@ -292,7 +341,11 @@ export function asEvidence(f: HazardFinding): Evidence {
 /** The categories one cosmetic ingredient's findings put it in. */
 export function categoriesOf(r: HazardRecord): CosmeticCategory[] {
   const cats = new Set<CosmeticCategory>();
-  if (r.a) cats.add("eu-listed");
+  // An annex II reference may ban only a grade or a use; III, V and VI allow with limits.
+  if (r.a) cats.add(r.a.startsWith("II/") ? "eu-annex-ii" : "eu-listed");
+  // Banned in Canada or by the FDA: counts only where no EU rule covers it.
+  if (r.h === "P" || r.f?.[0] === "P") cats.add("non-eu-ban");
+  else if (r.h === "R" || r.f?.[0] === "R") cats.add("restricted-abroad");
   if (r.i) cats.add(r.i[0] === "2B" ? "suspected" : "cmr");
   if (r.c) {
     const codes = r.c[1] as string[];

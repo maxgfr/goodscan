@@ -84,6 +84,7 @@ export const en = {
   reason_ingredientEndocrine: "{ingredient}: endocrine disruptor identified in the EU",
   reason_ingredientPfas: "{ingredient}: a PFAS (forever chemical)",
   reason_ingredientUsBan: "{ingredient}: banned in cosmetics by a US state",
+  reason_ingredientNonEuBan: "{ingredient}: banned in cosmetics in Canada or by the FDA",
   reason_ingredientRestricted: "{ingredient}: restricted in EU cosmetics",
   reason_ingredientSuspected:
     "{ingredient}: suspected carcinogen, mutagen, reprotoxicant or endocrine disruptor",
@@ -178,6 +179,9 @@ export const en = {
   cat_sensitiser: "Sensitiser",
   cat_euListed: "Limited use (EU)",
   cat_underReview: "Under EU review",
+  cat_nonEuBan: "Banned in Canada or the US",
+  cat_restrictedAbroad: "Restricted in Canada or the US",
+  cat_euAnnexIi: "EU annex II",
   ingredientsInci: "Ingredients (INCI)",
   aiInci: "Read the ingredient list from a photo",
   aiInciMissing: "The ingredient list is missing. A photo of the pack fills it in.",
@@ -275,7 +279,7 @@ export const en = {
     "Organic +5, palm oil −3. Processed meat −10 and at most 49 (IARC group 1), red meat −5 (IARC group 2A). Water is 100, alcohol at most 20.",
   aboutScore5: "75 and up is excellent, 50 good, 25 poor, below bad.",
   aboutCosmetics:
-    "Cosmetics (Open Beauty Facts) get an ingredient score: from 100, −40 for an ingredient banned in EU cosmetics (score at most 20), −25 for a CMR (1A/1B, IARC 1 or 2A) or an endocrine disruptor identified in the EU (at most 49), −20 for a PFAS (at most 49) or for a US state ban no EU rule covers, −8 for an EU restriction or a suspected CMR or endocrine disruptor, −3 per fragrance allergen or sensitiser (−15 at most). Each ingredient of the list shows its level.",
+    "Cosmetics (Open Beauty Facts) get an ingredient score: from 100, −40 for an ingredient banned in EU cosmetics (score at most 20), −25 for a CMR (1A/1B, IARC 1 or 2A) or an endocrine disruptor identified in the EU (at most 49), −20 for a PFAS (at most 49) or for a ban in a US state, in Canada or by the FDA that no EU rule covers, −8 for an EU restriction or a suspected CMR or endocrine disruptor, −3 per fragrance allergen or sensitiser (−15 at most). Each ingredient of the list shows its level.",
   aboutSourcesTitle: "Sources and licences",
   aboutOff:
     "Product data, additives and preference attributes: Open Food Facts, Open Beauty Facts, Open Pet Food Facts, Open Products Facts — Open Database License (ODbL); images CC BY-SA.",
@@ -285,7 +289,7 @@ export const en = {
   aboutCosmeticsSources:
     "Cosmetic ingredients: EU Regulation 1223/2009 annexes, Regulation 2023/1545 fragrance allergens, SCCS opinions, ECHA, EU endocrine-disruptor lists, California AB 2762, each listed with its sources.",
   aboutHazards:
-    "Every additive and cosmetic ingredient is also checked against official lists, joined by CAS number: IARC (groups 1, 2A, 2B), the EU harmonised classification (CLP Annex VI: carcinogenic, mutagenic, toxic for reproduction, sensitisers, through PubChem), the EU endocrine-disruptor lists (edlists.org) and the annexes of the Cosmetics Regulation (CosIng, through Open Beauty Facts).",
+    "Every additive and cosmetic ingredient is also checked against official lists, joined by CAS number: IARC (groups 1, 2A, 2B), the EU harmonised classification (CLP Annex VI: carcinogenic, mutagenic, toxic for reproduction, sensitisers, through PubChem), the EU endocrine-disruptor lists (edlists.org), the annexes of the Cosmetics Regulation (CosIng, through Open Beauty Facts), the ingredients prohibited in Canadian cosmetics (Health Canada's Hotlist) and the FDA's prohibited and restricted cosmetic ingredients.",
   aboutFda:
     "US nutrient box: FDA Daily Values and the proposed front-of-package Nutrition Info box (Low ≤ 5 %, High ≥ 20 % DV).",
   aboutNotAdvice:

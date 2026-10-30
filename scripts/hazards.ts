@@ -11,7 +11,12 @@
  * - Additives: the Open Food Facts taxonomy, CAS numbers through Wikidata.
  * - Cosmetics: the Open Beauty Facts ingredients taxonomy (CosIng data, ODbL),
  *   with each ingredient's CAS numbers and the annex of Regulation (EC)
- *   No 1223/2009 that restricts it.
+ *   No 1223/2009 that restricts it; the prohibited ingredients of Health
+ *   Canada's Cosmetic Ingredient Hotlist; the FDA's prohibited and
+ *   restricted cosmetic ingredients.
+ *
+ * California's Proposition 65 list is not here: OEHHA serves it behind an
+ * anti-bot wall, and no open mirror carries it.
  *
  * Only ingredients with at least one finding are kept.
  */
@@ -192,6 +197,58 @@ async function edLists(): Promise<Map<string, EdList>> {
   return out;
 }
 
+// ---------------------------------------------------------------- Health Canada, Cosmetic Ingredient Hotlist
+
+type Listed = "P" | "R";
+const HOTLIST =
+  "https://www.canada.ca/en/health-canada/services/consumer-product-safety/cosmetics/cosmetic-ingredient-hotlist-prohibited-restricted-ingredients/hotlist.html";
+
+/**
+ * Prohibited in Canadian cosmetics, by CAS number: the CAS column of the
+ * prohibited table only. The restricted table is left out: its conditions are
+ * mostly concentrations, labels and impurities (glycerin is there for its
+ * diethylene glycol), which would flag ordinary ingredients.
+ */
+async function hotlist(): Promise<Map<string, Listed>> {
+  const html = await (await get(HOTLIST, { headers: BROWSER })).text();
+  const [prohibited] = html.match(/<table[\s\S]*?<\/table>/g) ?? [];
+  if (!prohibited) throw new Error("Hotlist: the page changed");
+  const out = new Map<string, Listed>();
+  for (const row of prohibited.split(/<tr[\s>]/).slice(1)) {
+    const casCell = /<\/th>\s*<td[^>]*>([\s\S]*?)<\/td>/.exec(row)?.[1] ?? "";
+    for (const c of casCell.match(/\b\d{2,7}-\d{2}-\d\b/g) ?? []) if (validCas(c)) out.set(c, "P");
+  }
+  if (out.size < 300) throw new Error(`Hotlist: only ${out.size} prohibited CAS numbers`);
+  return out;
+}
+
+// ---------------------------------------------------------------- FDA, prohibited and restricted cosmetic ingredients
+
+/**
+ * 21 CFR 700 and 250.250, as the FDA lists them ("Prohibited & Restricted
+ * Ingredients in Cosmetics", content current as of 2022-02-25); only those with
+ * a CAS number (zirconium complexes and cattle materials have none).
+ */
+const FDA: Record<string, [Listed, string]> = {
+  "97-18-7": ["P", "700.11"], // bithionol
+  "75-69-4": ["P", "700.23"], // chlorofluorocarbon propellants: CFC-11,
+  "75-71-8": ["P", "700.23"], // CFC-12,
+  "76-13-1": ["P", "700.23"], // CFC-113,
+  "76-14-2": ["P", "700.23"], // CFC-114
+  "67-66-3": ["P", "700.18"], // chloroform
+  "87-12-7": ["P", "700.15"], // halogenated salicylanilides: dibromsalan,
+  "87-10-5": ["P", "700.15"], // tribromsalan,
+  "2577-72-2": ["P", "700.15"], // metabromsalan,
+  "1154-59-2": ["P", "700.15"], // tetrachlorosalicylanilide
+  "75-09-2": ["P", "700.19"], // methylene chloride
+  "75-01-4": ["P", "700.14"], // vinyl chloride
+  "70-30-4": ["R", "250.250"], // hexachlorophene
+  "7439-97-6": ["R", "700.13"], // mercury and its compounds: mercury,
+  "54-64-8": ["R", "700.13"], // thimerosal,
+  "62-38-4": ["R", "700.13"], // phenylmercuric acetate,
+  "55-68-5": ["R", "700.13"], // phenylmercuric nitrate
+};
+
 // ---------------------------------------------------------------- additives (CAS through Wikidata)
 
 interface TaxonomyEntry {
@@ -254,6 +311,10 @@ export interface HazardRecord {
   n?: string;
   /** CosIng id, for the link. */
   k?: string;
+  /** Health Canada's Hotlist: prohibited or restricted. */
+  h?: Listed;
+  /** FDA: prohibited or restricted, and the CFR section. */
+  f?: [Listed, string];
 }
 
 function findings(
@@ -275,6 +336,8 @@ function findings(
 const [iarcMap, clpMap, edMap] = [await iarc(), await clp(), await edLists()];
 console.log(`IARC ${iarcMap.size} CAS · CLP ${clpMap.size} CAS · ED lists ${edMap.size} CAS`);
 const sources = { iarc: iarcMap, clp: clpMap, ed: edMap };
+const hotlistMap = await hotlist();
+console.log(`Health Canada Hotlist ${hotlistMap.size} CAS · FDA ${Object.keys(FDA).length} CAS`);
 
 const offTaxonomy = (await (
   await get("https://static.openfoodfacts.org/data/taxonomies/additives.json")
@@ -295,6 +358,12 @@ for (const [tag, e] of Object.entries(obfTaxonomy)) {
   const alias = CI_CAS[tag];
   if (alias) cas.push(alias);
   const r = findings(cas, sources);
+  for (const c of cas) {
+    const h = hotlistMap.get(c);
+    if (h && r.h !== "P") r.h = h;
+    const f = FDA[c];
+    if (f && r.f?.[0] !== "P") r.f = f;
+  }
   // Annexes II (prohibited), III (restricted), V (preservatives) and VI (UV filters);
   // IV only lists the colourants allowed.
   const annex = /^(II|III|V|VI)\/\S+/.exec(e.inci_restriction?.en ?? "")?.[0];
@@ -322,5 +391,5 @@ console.log(
   `additives: ${Object.keys(additives).length} with findings (${additiveCasMap.size} with a CAS) — IARC ${count(additives, "i")}, CLP ${count(additives, "c")}, ED ${count(additives, "e")}`,
 );
 console.log(
-  `cosmetics: ${Object.keys(cosmetics).length} with findings — IARC ${count(cosmetics, "i")}, CLP ${count(cosmetics, "c")}, ED ${count(cosmetics, "e")}, annexes ${count(cosmetics, "a")}`,
+  `cosmetics: ${Object.keys(cosmetics).length} with findings — IARC ${count(cosmetics, "i")}, CLP ${count(cosmetics, "c")}, ED ${count(cosmetics, "e")}, annexes ${count(cosmetics, "a")}, Canada ${count(cosmetics, "h")}, FDA ${count(cosmetics, "f")}`,
 );

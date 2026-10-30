@@ -23,7 +23,13 @@ export type CosmeticCategory =
   /** Allowed in EU cosmetics with limits (annexes III, V, VI): shown, no points. */
   | "eu-listed"
   /** Under EU investigation as an endocrine disruptor (list II): shown, no points. */
-  | "under-review";
+  | "under-review"
+  /** Prohibited in Canada (Health Canada's Hotlist) or by the FDA. */
+  | "non-eu-ban"
+  /** Restricted in Canada or by the FDA: shown, no points. */
+  | "restricted-abroad"
+  /** Named in EU annex II, which may only ban a grade or a use: shown, no points. */
+  | "eu-annex-ii";
 
 export interface CosmeticSource {
   org: string;
