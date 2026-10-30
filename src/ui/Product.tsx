@@ -5,8 +5,10 @@ import { type Evidence, evidenceUrl } from "../data/evidence";
 import { ADD_PRODUCT_URL, DATABASES, productUrl } from "../data/off";
 import { isCosmetic, isFood, type Nutriments, type Product as P } from "../data/product";
 import type { MessageKey } from "../i18n";
+import { rateIngredients } from "../score/cosmetic";
+import { asEvidence } from "../score/hazard";
 import { type Match, matchProduct } from "../score/match";
-import { type Reason, type Score, scoreProduct } from "../score/score";
+import { type AdditiveInfo, type Reason, type Score, scoreProduct } from "../score/score";
 import { fopBox } from "../score/us";
 import { AiPanel, LabelReader } from "./Ai";
 import { GradeBadge, Icon, Notice, NovaBadge, ScoreDial, Section, VERDICT_TONE } from "./kit";
@@ -238,8 +240,10 @@ function ProductView({
           <Allergens product={product} />
         </>
       )}
-      {product.ingredients ? (
-        <Section title={cosmetic ? t("ingredientsInci") : t("ingredientsTitle")}>
+      {cosmetic && product.ingredients ? (
+        <IngredientLevels product={product} />
+      ) : product.ingredients ? (
+        <Section title={t("ingredientsTitle")}>
           <p className="text-sm leading-relaxed text-soft">{product.ingredients}</p>
         </Section>
       ) : null}
@@ -459,7 +463,7 @@ function Additives({ score }: { score: Score }) {
                     </span>
                   </span>
                 </div>
-                {a.evidence ? <Science evidence={a.evidence} /> : null}
+                {a.evidence || a.hazard ? <Science evidence={scienceOf(a)} /> : null}
               </li>
             );
           })}
@@ -469,6 +473,16 @@ function Additives({ score }: { score: Score }) {
       )}
     </Section>
   );
+}
+
+/** The cited findings, then what official lists say that they do not already. */
+function scienceOf(a: AdditiveInfo): Evidence[] {
+  const cited = a.evidence ?? [];
+  const orgs = new Set(cited.filter((e) => e.kind === "official").map((e) => e.source.org));
+  const official = (a.hazard?.findings ?? [])
+    .filter((f) => !orgs.has(f.source.org))
+    .map(asEvidence);
+  return [...cited, ...official];
 }
 
 /** The cited findings on one additive, folded under it. */
@@ -522,6 +536,10 @@ const CATEGORY_KEY: Record<CosmeticCategory, MessageKey> = {
   "fragrance-allergen": "cat_fragranceAllergen",
   pfas: "cat_pfas",
   "us-state-ban": "cat_usStateBan",
+  suspected: "cat_suspected",
+  sensitiser: "cat_sensitiser",
+  "eu-listed": "cat_euListed",
+  "under-review": "cat_underReview",
 };
 const CATEGORY_TONE: Record<CosmeticCategory, string> = {
   "eu-prohibited": RISK_TONE.high,
@@ -531,7 +549,57 @@ const CATEGORY_TONE: Record<CosmeticCategory, string> = {
   "us-state-ban": RISK_TONE.moderate,
   "eu-restricted": RISK_TONE.moderate,
   "fragrance-allergen": RISK_TONE.unknown,
+  suspected: RISK_TONE.moderate,
+  sensitiser: RISK_TONE.unknown,
+  "eu-listed": RISK_TONE.unknown,
+  "under-review": RISK_TONE.unknown,
 };
+
+const LEVEL_DOT = {
+  high: "bg-rose-600",
+  moderate: "bg-amber-500",
+  low: "bg-yellow-300 dark:bg-yellow-400",
+  none: "bg-emerald-500",
+} as const;
+const LEVEL_KEY = {
+  high: "risk_high",
+  moderate: "risk_moderate",
+  low: "risk_low",
+  none: "riskNotListed",
+} as const;
+
+/** The whole INCI list, each ingredient with the level of what is said about it. */
+function IngredientLevels({ product }: { product: P }) {
+  const { t } = useApp();
+  const items = useMemo(() => rateIngredients(product), [product]);
+  return (
+    <Section title={t("ingredientsInci")}>
+      <ul className="flex flex-wrap gap-x-3 gap-y-1.5 text-sm" data-testid="inci">
+        {items.map((item, i) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: items of one fixed list
+          <li key={i} className="inline-flex items-center gap-1.5" title={t(LEVEL_KEY[item.level])}>
+            <span
+              className={`size-2 shrink-0 rounded-full ${LEVEL_DOT[item.level]}`}
+              aria-hidden="true"
+            />
+            <span className={item.level === "none" ? "text-soft" : "font-medium"}>
+              {item.label}
+            </span>
+            <span className="sr-only">({t(LEVEL_KEY[item.level])})</span>
+          </li>
+        ))}
+      </ul>
+      <p className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-xs text-muted">
+        {(["high", "moderate", "low", "none"] as const).map((l) => (
+          <span key={l} className="inline-flex items-center gap-1">
+            <span className={`size-2 rounded-full ${LEVEL_DOT[l]}`} aria-hidden="true" />
+            {t(LEVEL_KEY[l])}
+          </span>
+        ))}
+      </p>
+    </Section>
+  );
+}
 
 /** "BUTYLPHENYL METHYLPROPIONAL" as "Butylphenyl Methylpropional". */
 const inciName = (inci: string) =>

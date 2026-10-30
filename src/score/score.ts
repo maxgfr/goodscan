@@ -12,6 +12,7 @@ import { EU_NOT_AUTHORISED } from "../data/eu";
 import { EVIDENCE, type Evidence, weighs } from "../data/evidence";
 import { type Grade, isCosmetic, isFood, type Product } from "../data/product";
 import { type CosmeticFlag, scoreCosmetic } from "./cosmetic";
+import { type AdditiveHazard, additiveHazard } from "./hazard";
 import { nutriscore } from "./nutriscore";
 
 export type Verdict = "excellent" | "good" | "poor" | "bad" | "unknown" | "not-food";
@@ -32,6 +33,8 @@ export interface Reason {
     | "additiveModerate"
     | "additiveEu"
     | "additiveEvidence"
+    | "additiveHazardHigh"
+    | "additiveHazardModerate"
     | "organic"
     | "palmOil"
     | "ingredientsMissing"
@@ -43,6 +46,7 @@ export interface Reason {
     | "ingredientPfas"
     | "ingredientUsBan"
     | "ingredientRestricted"
+    | "ingredientSuspected"
     | "ingredientAllergens";
   delta?: number;
   /** A ceiling this finding sets. */
@@ -65,6 +69,8 @@ export interface AdditiveInfo {
   evidence?: Evidence[];
   /** The findings are weighty enough to cost points. */
   evidenceWeighs?: boolean;
+  /** What official lists (IARC, EU CLP, EU endocrine-disruptor lists) say. */
+  hazard?: AdditiveHazard;
 }
 
 export interface Score {
@@ -97,6 +103,8 @@ export function additiveInfo(tag: string): AdditiveInfo {
     info.evidence = evidence;
     if (weighs(evidence)) info.evidenceWeighs = true;
   }
+  const hazard = additiveHazard(tag);
+  if (hazard) info.hazard = hazard;
   return info;
 }
 
@@ -208,27 +216,14 @@ export function scoreProduct(p: Product): Score {
     reasons.push({ key: "nova1", delta: 0 });
   }
 
+  // Each additive counts once, for the strongest thing said about it.
   let additivePenalty = 0;
   for (const a of additives) {
-    if (a.euNotAuthorised) {
-      additivePenalty += 25;
-      cap = Math.min(cap, 25);
-      reasons.push({ key: "additiveEu", additive: a.tag, delta: -25, cap: 25 });
-    } else if (a.risk === "high") {
-      additivePenalty += 15;
-      cap = Math.min(cap, 49);
-      reasons.push({ key: "additiveHigh", additive: a.tag, delta: -15, cap: 49 });
-    } else {
-      if (a.risk === "moderate") {
-        additivePenalty += 6;
-        reasons.push({ key: "additiveModerate", additive: a.tag, delta: -6 });
-      }
-      // An official concern or concordant human studies, for food as for drinks.
-      if (a.evidenceWeighs) {
-        additivePenalty += 6;
-        reasons.push({ key: "additiveEvidence", additive: a.tag, delta: -6 });
-      }
-    }
+    const reason = additiveReason(a);
+    if (!reason) continue;
+    additivePenalty -= reason.delta ?? 0;
+    if (reason.cap !== undefined) cap = Math.min(cap, reason.cap);
+    reasons.push(reason);
   }
   // Many flagged additives say the same thing: the total stops at 45.
   delta -= Math.min(45, additivePenalty);
@@ -246,6 +241,26 @@ export function scoreProduct(p: Product): Score {
     return { value: null, verdict: "unknown", reasons, additives, ...(nutri ? { nutri } : {}) };
   const value = Math.round(Math.max(0, Math.min(cap, base + delta, 100)));
   return { value, verdict: verdictOf(value), reasons, additives, ...(nutri ? { nutri } : {}) };
+}
+
+/**
+ * The one penalty an additive gets: not authorised in the EU, then a high
+ * risk (EFSA's overexposure, or IARC 1/2A, a CMR 1A/1B or an EU-identified
+ * endocrine disruptor), then a moderate one (cited evidence that weighs,
+ * EFSA's moderate overexposure, IARC 2B, a suspected CMR or endocrine
+ * disruptor). Allergy alone costs nothing.
+ */
+export function additiveReason(a: AdditiveInfo): Reason | undefined {
+  const additive = a.tag;
+  if (a.euNotAuthorised) return { key: "additiveEu", additive, delta: -25, cap: 25 };
+  if (a.risk === "high") return { key: "additiveHigh", additive, delta: -15, cap: 49 };
+  if (a.hazard?.level === "high")
+    return { key: "additiveHazardHigh", additive, delta: -15, cap: 49 };
+  // An official concern or concordant human studies, for food as for drinks.
+  if (a.evidenceWeighs) return { key: "additiveEvidence", additive, delta: -6 };
+  if (a.risk === "moderate") return { key: "additiveModerate", additive, delta: -6 };
+  if (a.hazard?.level === "moderate") return { key: "additiveHazardModerate", additive, delta: -6 };
+  return undefined;
 }
 
 export function verdictOf(value: number): Verdict {

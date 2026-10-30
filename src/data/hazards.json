@@ -1,0 +1,3434 @@
+{
+  "date": "2026-10-30",
+  "additives": {
+    "en:e121": { "i": ["2B", 1987] },
+    "en:e152": { "i": ["2B", 2006] },
+    "en:e171": { "i": ["2B", 2006], "c": ["022-006-00-2", ["H351"]] },
+    "en:e174": { "c": ["047-004-00-9", ["H361f"]] },
+    "en:e216": { "e": "II" },
+    "en:e218": { "e": "II" },
+    "en:e232": { "i": ["2B", 1998] },
+    "en:e239": { "c": ["612-101-00-2", ["H317"]] },
+    "en:e240": { "i": ["1", 2009], "c": ["605-001-00-5", ["H317", "H341", "H350"]] },
+    "en:e281": { "c": ["607-277-00-2", ["H317"]] },
+    "en:e284": { "c": ["005-007-00-2[2]", ["H360FD"]] },
+    "en:e285": { "c": ["005-011-00-4[4]", ["H360FD"]] },
+    "en:e310": { "c": ["607-198-00-3", ["H317"]] },
+    "en:e311": { "c": ["607-199-00-9", ["H317"]] },
+    "en:e312": { "c": ["607-200-00-2", ["H317"]] },
+    "en:e320": { "i": ["2B", 1987], "e": "II" },
+    "en:e321": { "e": "II" },
+    "en:e922": { "c": ["016-061-00-1", ["H317", "H334"]] },
+    "en:e923": { "c": ["016-060-00-6", ["H317", "H334"]] },
+    "en:e924a": { "i": ["2B", 1998], "c": ["035-003-00-6", ["H350"]] },
+    "en:e927a": { "c": ["611-028-00-3", ["H334"]] },
+    "en:e928": { "c": ["617-008-00-0", ["H317"]] },
+    "en:e951": { "i": ["2B", 2023] },
+    "en:e1519": { "c": ["603-057-00-5", ["H317"]] }
+  },
+  "cosmetics": {
+    "en:1-3-bis-2-4-diaminophenoxy-propane": {
+      "a": "III/202",
+      "n": "1‚3-BIS-(2‚4-DIAMINOPHENOXY)PROPANE",
+      "k": "31467"
+    },
+    "en:1-3-bis-2-4-diaminophenoxy-propane-hcl": {
+      "a": "III/202",
+      "n": "1‚3-BIS-(2‚4-DIAMINOPHENOXY) PROPANE HCL",
+      "k": "41535"
+    },
+    "en:1-4-butanediol-dimethacrylate": {
+      "c": ["607-766-00-0", ["H317"]],
+      "n": "1‚4-BUTANEDIOL DIMETHACRYLATE",
+      "k": "83239"
+    },
+    "en:1-5-naphthalenediol": { "a": "III/32", "n": "1‚5-NAPHTHALENEDIOL", "k": "31468" },
+    "en:1-6-hexamethylene-diisocyanate": {
+      "c": ["615-011-00-1", ["H317", "H334"]],
+      "n": "1‚6-HEXAMETHYLENE DIISOCYANATE",
+      "k": "95281"
+    },
+    "en:1-hexyl-4-5-diamino-pyrazole-sulfate": {
+      "a": "III/300",
+      "n": "1-HEXYL 4‚5-DIAMINO PYRAZOLE SULFATE",
+      "k": "92298"
+    },
+    "en:1-hydroxyethyl-4-5-diamino-pyrazole-sulfate": {
+      "c": ["613-249-00-0", ["H317"]],
+      "n": "1-HYDROXYETHYL 4‚5-DIAMINO PYRAZOLE SULFATE",
+      "k": "54177"
+    },
+    "en:1-methyl-4-methylvinyl-cyclohexene": {
+      "c": ["601-029-00-7[3]", ["H317"]],
+      "a": "III/88",
+      "n": "1-METHYL-4-METHYLVINYL-CYCLOHEXENE",
+      "k": "40731"
+    },
+    "en:1-naphthol": { "a": "III/16", "n": "1-NAPHTHOL", "k": "31470" },
+    "en:2-3-epoxypropyltrimoniium-chloride": {
+      "c": ["603-211-00-1", ["H317", "H341", "H350", "H361f"]],
+      "n": "2‚3-EPOXYPROPYLTRIMONIIUM CHLORIDE",
+      "k": "95296"
+    },
+    "en:2-4-diaminophenoxyethanol-hcl": {
+      "a": "III/242",
+      "n": "2‚4-DIAMINOPHENOXYETHANOL HCL",
+      "k": "31476"
+    },
+    "en:2-4-diaminophenoxyethanol-sulfate": {
+      "a": "III/242",
+      "n": "2‚4-DIAMINOPHENOXYETHANOL SULFATE",
+      "k": "54183"
+    },
+    "en:2-4-dimethyl-3-cyclohexene-carboxaldehyde": {
+      "c": ["605-043-00-4[1]", ["H317"]],
+      "n": "2‚4-DIMETHYL-3-CYCLOHEXENE CARBOXALDEHYDE",
+      "k": "74061"
+    },
+    "en:2-5": { "a": "III/301", "n": "2‚5", "k": "41193" },
+    "en:2-6-dihydroxy-3-4-dimethylpyridine": {
+      "a": "III/218",
+      "n": "2‚6-DIHYDROXY-3‚4-DIMETHYLPYRIDINE",
+      "k": "41525"
+    },
+    "en:2-6-dihydroxyethylaminotoluene": {
+      "a": "III/9",
+      "n": "2‚6-DIHYDROXYETHYLAMINOTOLUENE",
+      "k": "54186"
+    },
+    "en:2-6-dimethoxy-3-5-pyridinediamine-hcl": {
+      "a": "III/238",
+      "n": "2‚6-DIMETHOXY-3‚5-PYRIDINEDIAMINE HCL",
+      "k": "31482"
+    },
+    "en:2-7-naphthalenediol": { "a": "III/4", "n": "2‚7-NAPHTHALENEDIOL", "k": "31484" },
+    "en:2-acrylamido-2-methylpropane-sulfonic-acid": {
+      "a": "III/33",
+      "n": "2-ACRYLAMIDO-2-METHYLPROPANE SULFONIC ACID",
+      "k": "95290"
+    },
+    "en:2-amino-4-hydroxyethylaminoanisole": {
+      "a": "III/245",
+      "n": "2-AMINO-4-HYDROXYETHYLAMINOANISOLE",
+      "k": "31487"
+    },
+    "en:2-amino-4-hydroxyethylaminoanisole-sulfate": {
+      "a": "III/245",
+      "n": "2-AMINO-4-HYDROXYETHYLAMINOANISOLE SULFATE",
+      "k": "31488"
+    },
+    "en:2-amino-6-chloro-4-nitrophenol": {
+      "a": "III/252",
+      "n": "2-AMINO-6-CHLORO-4-NITROPHENOL",
+      "k": "31489"
+    },
+    "en:2-chloro-6-ethylamino-4-nitrophenol": {
+      "c": ["609-059-00-2", ["H317"]],
+      "a": "III/201",
+      "n": "2-CHLORO-6-ETHYLAMINO-4-NITROPHENOL",
+      "k": "31494"
+    },
+    "en:2-hexylidenecyclopentanone": {
+      "a": "III/177",
+      "n": "2-HEXYLIDENECYCLOPENTANONE",
+      "k": "41310"
+    },
+    "en:2-hydroxyethyl-acrylate": {
+      "c": ["607-072-00-8", ["H317"]],
+      "n": "2-HYDROXYETHYL ACRYLATE",
+      "k": "95264"
+    },
+    "en:2-hydroxyethyl-picramic-acid": {
+      "c": ["604-056-00-2", ["H361f"]],
+      "a": "III/222",
+      "n": "2-HYDROXYETHYL PICRAMIC ACID",
+      "k": "31498"
+    },
+    "en:2-hydroxyethylamino-5-nitroanisole": {
+      "a": "III/236",
+      "n": "2-HYDROXYETHYLAMINO-5-NITROANISOLE",
+      "k": "31499"
+    },
+    "en:2-hydroxypropyl-acrylate": {
+      "c": ["607-108-00-2[2]", ["H317"]],
+      "n": "2-HYDROXYPROPYL ACRYLATE",
+      "k": "95617"
+    },
+    "en:2-methyl-5-hydroxyethylaminophenol": {
+      "a": "III/229",
+      "n": "2-METHYL-5-HYDROXYETHYLAMINOPHENOL",
+      "k": "31502"
+    },
+    "en:2-methylresorcinol": { "a": "III/243", "n": "2-METHYLRESORCINOL", "k": "31503" },
+    "en:2-tert-butylhydroquinone-methyl-ether": {
+      "e": "II",
+      "n": "2-TERT-BUTYLHYDROQUINONE METHYL ETHER",
+      "k": "39140"
+    },
+    "en:3-5": { "c": ["605-043-00-4[15]", ["H317"]], "n": "3‚5", "k": "41183" },
+    "en:3-5-dimethyl-3-cyclohexene-1-carbaldehyde": {
+      "c": ["605-043-00-4[4]", ["H317"]],
+      "n": "3‚5-DIMETHYL-3-CYCLOHEXENE-1-CARBALDEHYDE",
+      "k": "39603"
+    },
+    "en:3-6-dimethyl-3-cyclohexene-1-carbaldehyde": {
+      "c": ["605-043-00-4[5]", ["H317"]],
+      "n": "3‚6-DIMETHYL-3-CYCLOHEXENE-1-CARBALDEHYDE",
+      "k": "39604"
+    },
+    "en:3-7-dimethyl-octanenitrile": {
+      "c": ["608-022-00-8", ["H317"]],
+      "n": "3‚7-DIMETHYL-OCTANENITRILE",
+      "k": "39651"
+    },
+    "en:3-amino-2-4-dichlorophenol": {
+      "a": "III/19",
+      "n": "3-AMINO-2‚4-DICHLOROPHENOL",
+      "k": "41526"
+    },
+    "en:3-amino-2-4-dichlorophenol-hcl": {
+      "a": "III/227",
+      "n": "3-AMINO-2‚4-DICHLOROPHENOL HCL",
+      "k": "41538"
+    },
+    "en:3-amino-2-6-dimethylphenol": {
+      "a": "III/303",
+      "n": "3-AMINO-2‚6-DIMETHYLPHENOL",
+      "k": "86795"
+    },
+    "en:3-benzylidene-camphor": {
+      "e": "I",
+      "a": "II/1379",
+      "n": "3-BENZYLIDENE CAMPHOR",
+      "k": "31514"
+    },
+    "en:3-carene": { "a": "III/121", "n": "3-CARENE", "k": "41311" },
+    "en:3-methylamino-4-nitrophenoxyethanol": {
+      "a": "III/198",
+      "n": "3-METHYLAMINO-4-NITROPHENOXYETHANOL",
+      "k": "31517"
+    },
+    "en:3-methylnon-2-enenitrile": {
+      "a": "III/172",
+      "n": "3-METHYLNON-2-ENENITRILE",
+      "k": "80806"
+    },
+    "en:3-nitro-p-hydroxyethylaminophenol": {
+      "a": "III/248",
+      "n": "3-NITRO-P-HYDROXYETHYLAMINOPHENOL",
+      "k": "31519"
+    },
+    "en:4-amino-2-hydroxytoluene": {
+      "a": "III/241",
+      "n": "4-AMINO-2-HYDROXYTOLUENE",
+      "k": "31522"
+    },
+    "en:4-amino-2-nitrodiphenylamine-2-carboxylic-acid": {
+      "c": ["607-382-00-3", ["H317"]],
+      "n": "4-AMINO-2-NITRODIPHENYLAMINE-2'-CARBOXYLIC ACID",
+      "k": "31523"
+    },
+    "en:4-amino-3-nitrophenol": { "a": "III/215", "n": "4-AMINO-3-NITROPHENOL", "k": "31524" },
+    "en:4-amino-m-cresol": { "a": "III/244", "n": "4-AMINO-M-CRESOL", "k": "31525" },
+    "en:4-furanylethyl-resorcinol": {
+      "a": "III/22",
+      "n": "4-FURANYLETHYL RESORCINOL",
+      "k": "95040"
+    },
+    "en:4-hydroxybenzoic-acid": { "a": "V/12", "n": "4-HYDROXYBENZOIC ACID", "k": "31527" },
+    "en:4-hydroxypropylamino-3-nitrophenol": {
+      "a": "III/205",
+      "n": "4-HYDROXYPROPYLAMINO-3-NITROPHENOL",
+      "k": "31528"
+    },
+    "en:4-methylbenzylidene-camphor": {
+      "e": "I",
+      "a": "VI/18",
+      "n": "4-METHYLBENZYLIDENE CAMPHOR",
+      "k": "31529"
+    },
+    "en:4-nitrophenyl-aminoethylurea": {
+      "c": ["616-083-00-7", ["H317"]],
+      "a": "III/249",
+      "n": "4-NITROPHENYL AMINOETHYLUREA",
+      "k": "31535"
+    },
+    "en:4-t-butylbenzoic-acid": {
+      "c": ["607-698-00-1", ["H360F"]],
+      "n": "4-T-BUTYLBENZOIC ACID",
+      "k": "54219"
+    },
+    "en:4-tert-butyldihydrocinnamaldehyde": {
+      "a": "III/155",
+      "n": "4-TERT-BUTYLDIHYDROCINNAMALDEHYDE",
+      "k": "39132"
+    },
+    "en:5-bromo-5-nitro-1-3-dioxane": {
+      "a": "V/20",
+      "n": "5-BROMO-5-NITRO-1‚3-DIOXANE",
+      "k": "31538"
+    },
+    "en:6-hydroxyindole": { "c": ["613-218-00-1", ["H317"]], "n": "6-HYDROXYINDOLE", "k": "31541" },
+    "en:6-methyl-coumarin": { "a": "III/46", "n": "6-METHYL COUMARIN", "k": "31542" },
+    "en:7-ethylbicyclooxazolidine": { "a": "V/49", "n": "7-ETHYLBICYCLOOXAZOLIDINE", "k": "31546" },
+    "en:abies-alba-cone-extract": { "a": "III/103", "n": "ABIES ALBA CONE EXTRACT", "k": "41319" },
+    "en:abies-alba-leaf-cera": { "a": "III/103", "n": "ABIES ALBA LEAF CERA", "k": "54228" },
+    "en:abies-alba-leaf-oil": { "a": "III/103", "n": "ABIES ALBA LEAF OIL", "k": "54229" },
+    "en:abies-alba-needle-extract": {
+      "a": "III/103",
+      "n": "ABIES ALBA NEEDLE EXTRACT",
+      "k": "41321"
+    },
+    "en:abies-alba-needle-oil": { "a": "III/103", "n": "ABIES ALBA NEEDLE OIL", "k": "41322" },
+    "en:abies-balsamea-balsam-extract": {
+      "a": "III/107",
+      "n": "ABIES BALSAMEA BALSAM EXTRACT",
+      "k": "38993"
+    },
+    "en:abies-balsamea-extract": { "a": "III/107", "n": "ABIES BALSAMEA EXTRACT", "k": "74133" },
+    "en:abies-balsamea-needle-extract": {
+      "a": "III/107",
+      "n": "ABIES BALSAMEA NEEDLE EXTRACT",
+      "k": "41323"
+    },
+    "en:abies-balsamea-needle-oil": {
+      "a": "III/107",
+      "n": "ABIES BALSAMEA NEEDLE OIL",
+      "k": "74134"
+    },
+    "en:abies-balsamea-resin": { "a": "III/107", "n": "ABIES BALSAMEA RESIN", "k": "54230" },
+    "en:abies-pectinata-leaf-extract": {
+      "a": "III/105",
+      "n": "ABIES PECTINATA LEAF EXTRACT",
+      "k": "82186"
+    },
+    "en:abies-pectinata-needle-extract": {
+      "a": "III/105",
+      "n": "ABIES PECTINATA NEEDLE EXTRACT",
+      "k": "41325"
+    },
+    "en:abies-pectinata-needle-oil": {
+      "a": "III/105",
+      "n": "ABIES PECTINATA NEEDLE OIL",
+      "k": "41326"
+    },
+    "en:abies-pectinata-oil": { "a": "III/105", "n": "ABIES PECTINATA OIL", "k": "31549" },
+    "en:abies-sibirica-needle-extract": {
+      "a": "III/106",
+      "n": "ABIES SIBIRICA NEEDLE EXTRACT",
+      "k": "41327"
+    },
+    "en:abies-sibirica-needle-oil": {
+      "a": "III/106",
+      "n": "ABIES SIBIRICA NEEDLE OIL",
+      "k": "41328"
+    },
+    "en:abies-sibirica-oil": { "a": "III/106", "n": "ABIES SIBIRICA OIL", "k": "31550" },
+    "en:acetaldehyde": {
+      "i": ["2B", 1998],
+      "c": ["605-003-00-6", ["H341", "H350"]],
+      "n": "ACETALDEHYDE",
+      "k": "74144"
+    },
+    "en:acetyl-hexamethyl-indan": { "a": "III/134", "n": "ACETYL HEXAMETHYL INDAN", "k": "31580" },
+    "en:acetyl-hexamethyl-tetralin": {
+      "e": "II",
+      "a": "III/182",
+      "n": "ACETYL HEXAMETHYL TETRALIN",
+      "k": "31581"
+    },
+    "en:acid-blue-9": { "a": "III/190", "n": "ACID BLUE 9", "k": "31613" },
+    "en:acid-blue-9-aluminum-lake": {
+      "a": "III/190",
+      "n": "ACID BLUE 9 ALUMINUM LAKE",
+      "k": "54157"
+    },
+    "en:acid-blue-9-ammonium-salt": {
+      "a": "III/190",
+      "n": "ACID BLUE 9 AMMONIUM SALT",
+      "k": "54158"
+    },
+    "en:acid-blue-62": { "a": "III/195", "n": "ACID BLUE 62", "k": "31611" },
+    "en:acid-red-18": { "a": "III/192", "n": "ACID RED 18", "k": "31623" },
+    "en:acid-red-18-aluminum-lake": {
+      "a": "III/192",
+      "n": "ACID RED 18 ALUMINUM LAKE",
+      "k": "31624"
+    },
+    "en:acid-red-33": { "a": "III/254", "n": "ACID RED 33", "k": "31627" },
+    "en:acid-red-52": { "a": "III/193", "n": "ACID RED 52", "k": "31630" },
+    "en:acid-yellow-23-aluminum-lake": {
+      "a": "III/189",
+      "n": "ACID YELLOW 23 ALUMINUM LAKE",
+      "k": "54161"
+    },
+    "en:acrylamide": {
+      "i": ["2A", 1994],
+      "c": ["616-003-00-0", ["H317", "H340", "H350", "H361f"]],
+      "a": "II/681",
+      "n": "ACRYLAMIDE",
+      "k": "95284"
+    },
+    "en:acrylamide-ammonium-acrylate-copolymer": {
+      "a": "III/66",
+      "n": "ACRYLAMIDE/AMMONIUM ACRYLATE COPOLYMER",
+      "k": "54257"
+    },
+    "en:acrylamide-ethalkonium-chloride-acrylate-copolymer": {
+      "a": "III/66",
+      "n": "ACRYLAMIDE/ETHALKONIUM CHLORIDE ACRYLATE COPOLYMER",
+      "k": "54258"
+    },
+    "en:acrylamide-ethyltrimonium-chloride-acrylate-ethalkonium-chloride-acrylate-copolymer": {
+      "a": "III/66",
+      "n": "ACRYLAMIDE/ETHYLTRIMONIUM CHLORIDE ACRYLATE/ETHALKONIUM CHLORIDE ACRYLATE COPOLYMER",
+      "k": "54259"
+    },
+    "en:acrylamide-sodium-acrylate-copolymer": {
+      "a": "III/66",
+      "n": "ACRYLAMIDE/SODIUM ACRYLATE COPOLYMER",
+      "k": "31644"
+    },
+    "en:acrylamide-sodium-acryloyldimethyltaurate-acrylic-acid-copolymer": {
+      "a": "III/66",
+      "n": "ACRYLAMIDE/SODIUM ACRYLOYLDIMETHYLTAURATE/ACRYLIC ACID COPOLYMER",
+      "k": "54261"
+    },
+    "en:acrylamide-sodium-acryloyldimethyltaurate-copolymer": {
+      "a": "III/66",
+      "n": "ACRYLAMIDE/SODIUM ACRYLOYLDIMETHYLTAURATE COPOLYMER",
+      "k": "54260"
+    },
+    "en:acrylamides-dmapa-acrylates-methoxy-peg-methacrylate-copolymer": {
+      "a": "III/66",
+      "n": "ACRYLAMIDES/DMAPA ACRYLATES/METHOXY PEG METHACRYLATE COPOLYMER",
+      "k": "84996"
+    },
+    "en:acrylamidopropyltrimonium-chloride-acrylamide-copolymer": {
+      "a": "III/66",
+      "n": "ACRYLAMIDOPROPYLTRIMONIUM CHLORIDE/ACRYLAMIDE COPOLYMER",
+      "k": "54263"
+    },
+    "en:acrylonitrile": {
+      "i": ["1", 2024],
+      "c": ["608-003-00-4", ["H317", "H350"]],
+      "a": "II/682",
+      "n": "ACRYLONITRILE",
+      "k": "95285"
+    },
+    "en:acryloyl-morpholine": {
+      "c": ["613-222-00-3", ["H317"]],
+      "n": "ACRYLOYL MORPHOLINE",
+      "k": "94531"
+    },
+    "en:acryloyloxy-propyltrimethoxylane": {
+      "c": ["607-630-00-0", ["H317"]],
+      "n": "ACRYLOYLOXY PROPYLTRIMETHOXYLANE",
+      "k": "91116"
+    },
+    "en:acryloyloxy-propyltrimethoxysilane": {
+      "c": ["607-630-00-0", ["H317"]],
+      "n": "ACRYLOYLOXY PROPYLTRIMETHOXYSILANE",
+      "k": "92114"
+    },
+    "en:allyl-2-methylbutoxyacetate": {
+      "a": "III/148",
+      "n": "ALLYL 2-METHYLBUTOXYACETATE",
+      "k": "41331"
+    },
+    "en:allyl-3-5": { "a": "III/145", "n": "ALLYL 3‚5", "k": "41332" },
+    "en:allyl-butyrate": { "a": "III/135", "n": "ALLYL BUTYRATE", "k": "41334" },
+    "en:allyl-caproate": { "a": "III/140", "n": "ALLYL CAPROATE", "k": "74253" },
+    "en:allyl-cinnamate": { "a": "III/136", "n": "ALLYL CINNAMATE", "k": "41335" },
+    "en:allyl-cyclohexylacetate": { "a": "III/137", "n": "ALLYL CYCLOHEXYLACETATE", "k": "41336" },
+    "en:allyl-cyclohexyloxyacetate": {
+      "a": "III/146",
+      "n": "ALLYL CYCLOHEXYLOXYACETATE",
+      "k": "41337"
+    },
+    "en:allyl-cyclohexylpropionate": {
+      "a": "III/138",
+      "n": "ALLYL CYCLOHEXYLPROPIONATE",
+      "k": "41338"
+    },
+    "en:allyl-heptanoate": { "a": "III/139", "n": "ALLYL HEPTANOATE", "k": "41339" },
+    "en:allyl-heptine-carbonate": { "a": "III/152", "n": "ALLYL HEPTINE CARBONATE", "k": "41340" },
+    "en:allyl-isovalerate": { "a": "III/141", "n": "ALLYL ISOVALERATE", "k": "41342" },
+    "en:allyl-nonanoate": { "a": "III/149", "n": "ALLYL NONANOATE", "k": "41343" },
+    "en:allyl-octanoate": { "a": "III/142", "n": "ALLYL OCTANOATE", "k": "41344" },
+    "en:allyl-phenethyl-ether": { "a": "III/151a", "n": "ALLYL PHENETHYL ETHER", "k": "41345" },
+    "en:allyl-phenoxyacetate": { "a": "III/143", "n": "ALLYL PHENOXYACETATE", "k": "41346" },
+    "en:allyl-phenylacetate": { "a": "III/144", "n": "ALLYL PHENYLACETATE", "k": "41347" },
+    "en:allyl-propionate": { "a": "III/150", "n": "ALLYL PROPIONATE", "k": "41348" },
+    "en:allyl-trimethylhexanoate": {
+      "a": "III/151",
+      "n": "ALLYL TRIMETHYLHEXANOATE",
+      "k": "41349"
+    },
+    "en:almondamide-dea": { "a": "III/60", "n": "ALMONDAMIDE DEA", "k": "31426" },
+    "en:alpha-damascone": { "a": "III/157", "n": "ALPHA-DAMASCONE", "k": "54360" },
+    "en:alpha-isomethyl-ionone": { "a": "III/90", "n": "ALPHA-ISOMETHYL IONONE", "k": "39665" },
+    "en:alpha-terpinene": {
+      "c": ["601-095-00-7", ["H317"]],
+      "a": "III/131",
+      "n": "ALPHA-TERPINENE",
+      "k": "41318"
+    },
+    "en:aluminum-fluoride": { "a": "III/34", "n": "ALUMINUM FLUORIDE", "k": "31668" },
+    "en:aluminum-zirconium-octachlorohydrate": {
+      "a": "III/50",
+      "n": "ALUMINUM ZIRCONIUM OCTACHLOROHYDRATE",
+      "k": "31815"
+    },
+    "en:aluminum-zirconium-octachlorohydrex-gly": {
+      "a": "III/50",
+      "n": "ALUMINUM ZIRCONIUM OCTACHLOROHYDREX GLY",
+      "k": "31816"
+    },
+    "en:aluminum-zirconium-pentachlorohydrate": {
+      "a": "III/50",
+      "n": "ALUMINUM ZIRCONIUM PENTACHLOROHYDRATE",
+      "k": "31817"
+    },
+    "en:aluminum-zirconium-pentachlorohydrex-gly": {
+      "a": "III/50",
+      "n": "ALUMINUM ZIRCONIUM PENTACHLOROHYDREX GLY",
+      "k": "31818"
+    },
+    "en:aluminum-zirconium-tetrachlorohydrate": {
+      "a": "III/50",
+      "n": "ALUMINUM ZIRCONIUM TETRACHLOROHYDRATE",
+      "k": "31819"
+    },
+    "en:aluminum-zirconium-tetrachlorohydrex-gly": {
+      "a": "III/50",
+      "n": "ALUMINUM ZIRCONIUM TETRACHLOROHYDREX GLY",
+      "k": "31820"
+    },
+    "en:aluminum-zirconium-tetrachlorohydrex-peg": {
+      "a": "III/50",
+      "n": "ALUMINUM ZIRCONIUM TETRACHLOROHYDREX PEG",
+      "k": "31821"
+    },
+    "en:aluminum-zirconium-tetrachlorohydrex-pg": {
+      "a": "III/50",
+      "n": "ALUMINUM ZIRCONIUM TETRACHLOROHYDREX PG",
+      "k": "31822"
+    },
+    "en:aluminum-zirconium-trichlorohydrate": {
+      "a": "III/50",
+      "n": "ALUMINUM ZIRCONIUM TRICHLOROHYDRATE",
+      "k": "31823"
+    },
+    "en:aluminum-zirconium-trichlorohydrex-gly": {
+      "a": "III/50",
+      "n": "ALUMINUM ZIRCONIUM TRICHLOROHYDREX GLY",
+      "k": "31824"
+    },
+    "en:aminoethylpropanediol-acrylates-acrylamide-copolymer": {
+      "a": "III/66",
+      "n": "AMINOETHYLPROPANEDIOL-ACRYLATES/ACRYLAMIDE COPOLYMER",
+      "k": "54576"
+    },
+    "en:aminomethyl-propanol": { "a": "III/61", "n": "AMINOMETHYL PROPANOL", "k": "74367" },
+    "en:ammonia": { "a": "III/4", "n": "AMMONIA", "k": "31839" },
+    "en:ammonium-acryloyldimethyltaurate-beheneth-25-methacrylate-crosspolymer": {
+      "i": ["2B", 2018],
+      "c": ["607-111-00-9", ["H317", "H351"]],
+      "n": "AMMONIUM ACRYLOYLDIMETHYLTAURATE/BEHENETH-25 METHACRYLATE CROSSPOLYMER",
+      "k": "54589"
+    },
+    "en:ammonium-benzoate": { "a": "V/1a", "n": "AMMONIUM BENZOATE", "k": "31845" },
+    "en:ammonium-bisulfite": { "a": "III/99", "n": "AMMONIUM BISULFITE", "k": "31847" },
+    "en:ammonium-fluoride": { "a": "III/33", "n": "AMMONIUM FLUORIDE", "k": "31865" },
+    "en:ammonium-fluorosilicate": { "a": "III/42", "n": "AMMONIUM FLUOROSILICATE", "k": "31866" },
+    "en:ammonium-hydroxide": { "a": "III/4", "n": "AMMONIUM HYDROXIDE", "k": "31870" },
+    "en:ammonium-monofluorophosphate": {
+      "a": "III/26",
+      "n": "AMMONIUM MONOFLUOROPHOSPHATE",
+      "k": "31884"
+    },
+    "en:ammonium-persulfate": {
+      "c": ["016-060-00-6", ["H317", "H334"]],
+      "n": "AMMONIUM PERSULFATE",
+      "k": "74419"
+    },
+    "en:ammonium-propionate": { "a": "V/2", "n": "AMMONIUM PROPIONATE", "k": "31896" },
+    "en:ammonium-sulfite": { "a": "III/99", "n": "AMMONIUM SULFITE", "k": "31900" },
+    "en:ammonium-thioglycolate": { "a": "III/2a", "n": "AMMONIUM THIOGLYCOLATE", "k": "31902" },
+    "en:amp-acrylates-allyl-methacrylate-copolymer": {
+      "a": "III/61",
+      "n": "AMP-ACRYLATES/ALLYL METHACRYLATE COPOLYMER",
+      "k": "54612"
+    },
+    "en:amp-acrylates-c1-18-alkyl-acrylate-c1-8-alkyl-acrylamide-copolymer": {
+      "a": "III/66",
+      "n": "AMP-ACRYLATES/C1-18 ALKYL ACRYLATE/C1-8 ALKYL ACRYLAMIDE COPOLYMER",
+      "k": "88076"
+    },
+    "en:amp-acrylates-c1-18-alkyl-acrylate-c1-8-alkyl-acrylamide-hydroxyethylacrylate-copolymer": {
+      "a": "III/61",
+      "n": "AMP-ACRYLATES/C1-18 ALKYL ACRYLATE/C1-8 ALKYL ACRYLAMIDE/HYDROXYETHYLACRYLATE COPOLYMER",
+      "k": "54613"
+    },
+    "en:amp-acrylates-copolymer": { "a": "III/61", "n": "AMP-ACRYLATES COPOLYMER", "k": "74436" },
+    "en:amp-acrylates-diacetoneacrylamide-copolymer": {
+      "a": "III/61",
+      "n": "AMP-ACRYLATES/DIACETONEACRYLAMIDE COPOLYMER",
+      "k": "31912"
+    },
+    "en:amp-acrylates-dimethylaminoethylmethacrylate-copolymer": {
+      "a": "III/61",
+      "n": "AMP-ACRYLATES/DIMETHYLAMINOETHYLMETHACRYLATE COPOLYMER",
+      "k": "31913"
+    },
+    "en:amp-acrylates-ethylhexyl-acrylate-copolymer": {
+      "a": "III/61",
+      "n": "AMP-ACRYLATES/ETHYLHEXYL ACRYLATE COPOLYMER",
+      "k": "54615"
+    },
+    "en:amp-isostearoyl-gelatin-keratin-amino-acids-lysine-hydroxypropyltrimonium-chloride": {
+      "a": "III/61",
+      "n": "AMP-ISOSTEAROYL GELATIN/KERATIN AMINO ACIDS/LYSINE HYDROXYPROPYLTRIMONIUM CHLORIDE",
+      "k": "74442"
+    },
+    "en:amp-isostearoyl-hydrolyzed-collagen": {
+      "a": "III/61",
+      "n": "AMP-ISOSTEAROYL HYDROLYZED COLLAGEN",
+      "k": "74443"
+    },
+    "en:amp-isostearoyl-hydrolyzed-elastin": {
+      "a": "III/61",
+      "n": "AMP-ISOSTEAROYL HYDROLYZED ELASTIN",
+      "k": "54618"
+    },
+    "en:amp-isostearoyl-hydrolyzed-keratin": {
+      "a": "III/61",
+      "n": "AMP-ISOSTEAROYL HYDROLYZED KERATIN",
+      "k": "54619"
+    },
+    "en:amp-isostearoyl-hydrolyzed-silk": {
+      "a": "III/61",
+      "n": "AMP-ISOSTEAROYL HYDROLYZED SILK",
+      "k": "54620"
+    },
+    "en:amp-isostearoyl-hydrolyzed-soy-protein": {
+      "a": "III/61",
+      "n": "AMP-ISOSTEAROYL HYDROLYZED SOY PROTEIN",
+      "k": "74444"
+    },
+    "en:amp-isostearoyl-hydrolyzed-wheat-protein": {
+      "a": "III/61",
+      "n": "AMP-ISOSTEAROYL HYDROLYZED WHEAT PROTEIN",
+      "k": "74445"
+    },
+    "en:amp-isostearoyl-wheat-corn-soy-amino-acids": {
+      "a": "III/61",
+      "n": "AMP-ISOSTEAROYL WHEAT/CORN/SOY AMINO ACIDS",
+      "k": "54621"
+    },
+    "en:amyl-cinnamal": { "a": "III/67", "n": "AMYL CINNAMAL", "k": "31923" },
+    "en:amylcinnamyl-alcohol": { "a": "III/74", "n": "AMYLCINNAMYL ALCOHOL", "k": "39033" },
+    "en:amylcyclopentenone": { "a": "III/153", "n": "AMYLCYCLOPENTENONE", "k": "39037" },
+    "en:amylvinylcarbinyl-acetate": {
+      "a": "III/174",
+      "n": "AMYLVINYLCARBINYL ACETATE",
+      "k": "39052"
+    },
+    "en:apricotamide-dea": { "a": "III/60", "n": "APRICOTAMIDE DEA", "k": "31956" },
+    "en:ascorbic-acid-orange-citrus-limon-citrus-aurantifolia-polypeptides": {
+      "a": "II/358",
+      "n": "ASCORBIC ACID/ORANGE/CITRUS LIMON/CITRUS AURANTIFOLIA POLYPEPTIDES",
+      "k": "83221"
+    },
+    "en:aspartame": { "i": ["2B", 2023], "n": "ASPARTAME", "k": "32015" },
+    "en:attapulgite": { "i": ["2B", 1996], "n": "ATTAPULGITE", "k": "74460" },
+    "en:avocadamide-dea": { "a": "III/60", "n": "AVOCADAMIDE DEA", "k": "32040" },
+    "en:avocadamide-dipa": { "a": "III/60", "n": "AVOCADAMIDE DIPA", "k": "82613" },
+    "en:aziridine": {
+      "i": ["2B", 1998],
+      "c": ["613-001-00-1", ["H340", "H350"]],
+      "n": "AZIRIDINE",
+      "k": "95265"
+    },
+    "en:babassuamide-dea": { "a": "III/60", "n": "BABASSUAMIDE DEA", "k": "32048" },
+    "en:babassuamide-mea": { "a": "III/61", "n": "BABASSUAMIDE MEA", "k": "54786" },
+    "en:barium-sulfide": { "a": "III/23", "n": "BARIUM SULFIDE", "k": "32060" },
+    "en:basic-blue-124": { "a": "III/305", "n": "BASIC BLUE 124", "k": "91435" },
+    "en:basic-brown-17": { "a": "III/304", "n": "BASIC BROWN 17", "k": "32071" },
+    "en:behenamide-dea": { "a": "III/60", "n": "BEHENAMIDE DEA", "k": "32095" },
+    "en:behenamidopropyl-pg-dimonium-chloride": {
+      "c": ["017-021-00-6", ["H317"]],
+      "n": "BEHENAMIDOPROPYL PG-DIMONIUM CHLORIDE",
+      "k": "32102"
+    },
+    "en:behentrimonium-chloride": { "a": "V/44", "n": "BEHENTRIMONIUM CHLORIDE", "k": "32112" },
+    "en:benzalkonium-chloride": { "a": "V/54", "n": "BENZALKONIUM CHLORIDE", "k": "32129" },
+    "en:benzalkonium-saccharinate": { "a": "V/54", "n": "BENZALKONIUM SACCHARINATE", "k": "32130" },
+    "en:benzethonium-chloride": { "a": "V/53", "n": "BENZETHONIUM CHLORIDE", "k": "32132" },
+    "en:benzisothiazolinone": {
+      "c": ["613-088-00-6", ["H317"]],
+      "n": "BENZISOTHIAZOLINONE",
+      "k": "32133"
+    },
+    "en:benzoic-acid": { "a": "V/1", "n": "BENZOIC ACID", "k": "32134" },
+    "en:benzophenone": {
+      "i": ["2B", 2011],
+      "c": ["606-153-00-5", ["H350"]],
+      "n": "BENZOPHENONE",
+      "k": "74467"
+    },
+    "en:benzophenone-1": { "e": "II", "n": "BENZOPHENONE-1", "k": "32137" },
+    "en:benzophenone-2": { "e": "III", "n": "BENZOPHENONE-2", "k": "74472" },
+    "en:benzophenone-3": { "e": "II", "a": "VI/4", "n": "BENZOPHENONE-3", "k": "32142" },
+    "en:benzophenone-4": { "a": "VI/22", "n": "BENZOPHENONE-4", "k": "32143" },
+    "en:benzophenone-5": { "a": "VI/22", "n": "BENZOPHENONE-5", "k": "32144" },
+    "en:benzotriazole": { "e": "II", "n": "BENZOTRIAZOLE", "k": "32149" },
+    "en:benzoyl-chloride": {
+      "i": ["2A", 1998],
+      "c": ["607-012-00-0", ["H317"]],
+      "n": "BENZOYL CHLORIDE",
+      "k": "54654"
+    },
+    "en:benzoyl-peroxide": {
+      "c": ["617-008-00-0", ["H317"]],
+      "a": "III/94",
+      "n": "BENZOYL PEROXIDE",
+      "k": "41528"
+    },
+    "en:benzyl-alcohol": {
+      "c": ["603-057-00-5", ["H317"]],
+      "a": "III/45",
+      "n": "BENZYL ALCOHOL",
+      "k": "32153"
+    },
+    "en:benzyl-benzoate": { "a": "III/85", "n": "BENZYL BENZOATE", "k": "32154" },
+    "en:benzyl-cinnamate": { "a": "III/81", "n": "BENZYL CINNAMATE", "k": "32155" },
+    "en:benzyl-dimethylamino-morpholinophenyl-butanone": {
+      "c": ["606-047-00-9", ["H360D"]],
+      "n": "BENZYL DIMETHYLAMINO MORPHOLINOPHENYL BUTANONE",
+      "k": "93152"
+    },
+    "en:benzyl-salicylate": {
+      "c": ["607-754-00-5", ["H317"]],
+      "a": "III/75",
+      "n": "BENZYL SALICYLATE",
+      "k": "32159"
+    },
+    "en:benzylhemiformal": { "a": "V/55", "n": "BENZYLHEMIFORMAL", "k": "32161" },
+    "en:benzylidene-camphor-sulfonic-acid": {
+      "a": "VI/9",
+      "n": "BENZYLIDENE CAMPHOR SULFONIC ACID",
+      "k": "32162"
+    },
+    "en:beta-pinenes": { "a": "III/130", "n": "BETA-PINENES", "k": "41357" },
+    "en:bha": { "i": ["2B", 1987], "e": "II", "n": "BHA", "k": "32184" },
+    "en:bht": { "e": "II", "n": "BHT", "k": "32185" },
+    "en:bis-isobutyl-peg-14-amodimethicone-copolymer": {
+      "a": "III/186",
+      "n": "BIS-ISOBUTYL PEG-14/AMODIMETHICONE COPOLYMER",
+      "k": "54699"
+    },
+    "en:bis-isobutyl-peg-15-amodimethicone-copolymer": {
+      "a": "III/186",
+      "n": "BIS-ISOBUTYL PEG-15/AMODIMETHICONE COPOLYMER",
+      "k": "74953"
+    },
+    "en:bis-isobutyl-peg-24-ppg-7-dimethicone-copolymer": {
+      "a": "III/186",
+      "n": "BIS-ISOBUTYL PEG-24/PPG-7/DIMETHICONE COPOLYMER",
+      "k": "83233"
+    },
+    "en:bis-isobutyl-peg-ppg-10-7-dimethicone-copolymer": {
+      "a": "III/186",
+      "n": "BIS-ISOBUTYL PEG/PPG-10/7/DIMETHICONE COPOLYMER",
+      "k": "83232"
+    },
+    "en:bis-isobutyl-peg-ppg-20-35-amodimethicone-copolymer": {
+      "a": "III/186",
+      "n": "BIS-ISOBUTYL PEG/PPG-20/35/AMODIMETHICONE COPOLYMER",
+      "k": "84177"
+    },
+    "en:bis-trimethylbenzoyl-phenylphosphine-oxide": {
+      "c": ["015-189-00-5", ["H317"]],
+      "n": "BIS-TRIMETHYLBENZOYL PHENYLPHOSPHINE OXIDE",
+      "k": "89889"
+    },
+    "en:boric-acid": {
+      "c": ["005-007-00-2[2]", ["H360FD"]],
+      "a": "III/1a",
+      "n": "BORIC ACID",
+      "k": "32208"
+    },
+    "en:brain-lipids": { "a": "II/419", "n": "BRAIN LIPIDS", "k": "54947" },
+    "en:butane": { "c": ["601-004-01-8[1]", ["H340", "H350"]], "n": "BUTANE", "k": "31692" },
+    "en:butoxydiglycol": { "a": "III/187", "n": "BUTOXYDIGLYCOL", "k": "31695" },
+    "en:butoxyethanol": { "a": "III/188", "n": "BUTOXYETHANOL", "k": "31696" },
+    "en:butyl-acrylate": { "c": ["607-062-00-3", ["H317"]], "n": "BUTYL ACRYLATE", "k": "91900" },
+    "en:butyl-benzoate": { "a": "V/1a", "n": "BUTYL BENZOATE", "k": "31706" },
+    "en:butyl-methacrylate": {
+      "i": ["2B", 2023],
+      "c": ["607-033-00-5", ["H317"]],
+      "n": "BUTYL METHACRYLATE",
+      "k": "74747"
+    },
+    "en:butyl-methoxydibenzoylmethane": {
+      "e": "II",
+      "a": "VI/8",
+      "n": "BUTYL METHOXYDIBENZOYLMETHANE",
+      "k": "31713"
+    },
+    "en:butyl-thioglycolate": { "a": "III/2b", "n": "BUTYL THIOGLYCOLATE", "k": "31719" },
+    "en:butylparaben": { "e": "I", "a": "V/12", "n": "BUTYLPARABEN", "k": "31734" },
+    "en:butylphenyl-methylpropional": {
+      "c": ["605-041-00-3", ["H360Fd"]],
+      "e": "II",
+      "a": "III/83",
+      "n": "BUTYLPHENYL METHYLPROPIONAL",
+      "k": "31735"
+    },
+    "en:butyraldehyde": { "i": ["2B", 2026], "n": "BUTYRALDEHYDE", "k": "39175" },
+    "en:c14-19-alkane": { "a": "II/764", "n": "C14-19 ALKANE", "k": "54891" },
+    "en:c15-19-alkane": { "a": "II/764", "n": "C15-19 ALKANE", "k": "91129" },
+    "en:c18-21-alkane": { "a": "II/764", "n": "C18-21 ALKANE", "k": "54903" },
+    "en:caffeic-acid": { "i": ["2B", 1992], "n": "CAFFEIC ACID", "k": "55168" },
+    "en:calcium-benzoate": { "a": "V/1a", "n": "CALCIUM BENZOATE", "k": "32313" },
+    "en:calcium-fluoride": { "a": "III/30", "n": "CALCIUM FLUORIDE", "k": "32323" },
+    "en:calcium-fructoborate": { "a": "III/1a", "n": "CALCIUM FRUCTOBORATE", "k": "55180" },
+    "en:calcium-hydroxide": { "a": "III/15c", "n": "CALCIUM HYDROXIDE", "k": "32328" },
+    "en:calcium-paraben": { "a": "V/12", "n": "CALCIUM PARABEN", "k": "32338" },
+    "en:calcium-peroxide": { "a": "III/12", "n": "CALCIUM PEROXIDE", "k": "32339" },
+    "en:calcium-propionate": { "a": "V/2", "n": "CALCIUM PROPIONATE", "k": "32341" },
+    "en:calcium-salicylate": { "a": "V/3", "n": "CALCIUM SALICYLATE", "k": "32344" },
+    "en:calcium-sorbate": { "a": "V/4", "n": "CALCIUM SORBATE", "k": "32346" },
+    "en:calcium-sulfide": { "a": "III/23", "n": "CALCIUM SULFIDE", "k": "32350" },
+    "en:calcium-thioglycolate": { "a": "III/2a", "n": "CALCIUM THIOGLYCOLATE", "k": "32352" },
+    "en:calcium-thioglycolate-hydroxide": {
+      "a": "III/2a",
+      "n": "CALCIUM THIOGLYCOLATE HYDROXIDE",
+      "k": "82345"
+    },
+    "en:calcium-undecylenate": { "a": "V/18", "n": "CALCIUM UNDECYLENATE", "k": "32354" },
+    "en:camphor-benzalkonium-methosulfate": {
+      "a": "VI/2",
+      "n": "CAMPHOR BENZALKONIUM METHOSULFATE",
+      "k": "32378"
+    },
+    "en:cannabidiol": { "a": "II/306", "n": "CANNABIDIOL", "k": "93486" },
+    "en:cannabis-sativa-flower-extract": {
+      "a": "II/306",
+      "n": "CANNABIS SATIVA FLOWER EXTRACT",
+      "k": "96217"
+    },
+    "en:cannabis-sativa-flower-leaf-stem-extract": {
+      "a": "II/306",
+      "n": "CANNABIS SATIVA FLOWER/LEAF/STEM EXTRACT",
+      "k": "95512"
+    },
+    "en:cannabis-sativa-seed-oil-glycereth-8-esters": {
+      "a": "II/306",
+      "n": "CANNABIS SATIVA SEED OIL GLYCERETH-8 ESTERS",
+      "k": "87271"
+    },
+    "en:cannabis-sativa-seed-oil-peg-8-esters": {
+      "a": "II/306",
+      "n": "CANNABIS SATIVA SEED OIL PEG-8 ESTERS",
+      "k": "55066"
+    },
+    "en:cannabis-sativa-seedcake": { "a": "II/306", "n": "CANNABIS SATIVA SEEDCAKE", "k": "92883" },
+    "en:cannabis-sativa-seedcake-powder": {
+      "a": "II/306",
+      "n": "CANNABIS SATIVA SEEDCAKE POWDER",
+      "k": "85312"
+    },
+    "en:cannabis-sativa-stem-powder": {
+      "a": "II/306",
+      "n": "CANNABIS SATIVA STEM POWDER",
+      "k": "87272"
+    },
+    "en:capramide-dea": { "a": "III/60", "n": "CAPRAMIDE DEA", "k": "32393" },
+    "en:caprylamide-mea": { "a": "III/60", "n": "CAPRYLAMIDE MEA", "k": "95041" },
+    "en:caprylyl-gallate": {
+      "c": ["607-199-00-9", ["H317"]],
+      "n": "CAPRYLYL GALLATE",
+      "k": "92290"
+    },
+    "en:carbon-black": { "i": ["2B", 2006], "n": "CARBON BLACK", "k": "32820" },
+    "en:carvone": { "c": ["606-148-00-8[3]", ["H317"]], "n": "CARVONE", "k": "74838" },
+    "en:cedrus-atlantica-bark-extract": {
+      "a": "III/122",
+      "n": "CEDRUS ATLANTICA BARK EXTRACT",
+      "k": "55308"
+    },
+    "en:cedrus-atlantica-bark-oil": {
+      "a": "III/122",
+      "n": "CEDRUS ATLANTICA BARK OIL",
+      "k": "55309"
+    },
+    "en:cedrus-atlantica-bark-water": {
+      "a": "III/122",
+      "n": "CEDRUS ATLANTICA BARK WATER",
+      "k": "55310"
+    },
+    "en:cedrus-atlantica-leaf-extract": {
+      "a": "III/122",
+      "n": "CEDRUS ATLANTICA LEAF EXTRACT",
+      "k": "84592"
+    },
+    "en:cedrus-atlantica-wood-extract": {
+      "a": "III/122",
+      "n": "CEDRUS ATLANTICA WOOD EXTRACT",
+      "k": "41367"
+    },
+    "en:cellulase": { "c": ["647-002-00-3", ["H334"]], "n": "CELLULASE", "k": "55314" },
+    "en:cerebrosides": { "a": "II/419", "n": "CEREBROSIDES", "k": "55327" },
+    "en:cetalkonium-chloride": { "a": "III/65", "n": "CETALKONIUM CHLORIDE", "k": "32509" },
+    "en:cetearalkonium-bromide": { "a": "III/65", "n": "CETEARALKONIUM BROMIDE", "k": "32510" },
+    "en:ceteartrimonium-chloride": { "a": "V/44", "n": "CETEARTRIMONIUM CHLORIDE", "k": "32549" },
+    "en:cetrimonium-bromide": { "a": "V/44", "n": "CETRIMONIUM BROMIDE", "k": "32589" },
+    "en:cetrimonium-chloride": { "a": "V/44", "n": "CETRIMONIUM CHLORIDE", "k": "32590" },
+    "en:cetyl-pg-hydroxyethyl-decanamide": {
+      "a": "III/60",
+      "n": "CETYL-PG HYDROXYETHYL DECANAMIDE",
+      "k": "32624"
+    },
+    "en:cetyl-pg-hydroxyethyl-palmitamide": {
+      "a": "III/60",
+      "n": "CETYL-PG HYDROXYETHYL PALMITAMIDE",
+      "k": "32625"
+    },
+    "en:cetylamine-hydrofluoride": { "a": "III/36", "n": "CETYLAMINE HYDROFLUORIDE", "k": "32622" },
+    "en:chloramine-t": {
+      "c": ["616-010-00-9", ["H334"]],
+      "a": "III/5",
+      "n": "CHLORAMINE T",
+      "k": "55258"
+    },
+    "en:chlorella-vulgaris-methionyl-sh-polypeptide-14-hexapeptide-40": {
+      "a": "II/416???",
+      "n": "CHLORELLA VULGARIS METHIONYL SH-POLYPEPTIDE-14 HEXAPEPTIDE-40",
+      "k": "95905"
+    },
+    "en:chlorhexidine": { "a": "V/42", "n": "CHLORHEXIDINE", "k": "32657" },
+    "en:chlorhexidine-digluconate": { "a": "V/42", "n": "CHLORHEXIDINE DIGLUCONATE", "k": "32659" },
+    "en:chlorhexidine-dihydrochloride": {
+      "a": "V/42",
+      "n": "CHLORHEXIDINE DIHYDROCHLORIDE",
+      "k": "32660"
+    },
+    "en:chloroacetamide": {
+      "c": ["616-036-00-0", ["H317", "H361f"]],
+      "a": "VI/41",
+      "n": "CHLOROACETAMIDE",
+      "k": "32661"
+    },
+    "en:chlorobutanol": { "a": "V/11", "n": "CHLOROBUTANOL", "k": "32662" },
+    "en:chlorophene": {
+      "c": ["604-093-00-4", ["H317", "H351", "H361f"]],
+      "a": "V/40",
+      "n": "CHLOROPHENE",
+      "k": "32664"
+    },
+    "en:chloroplatinic-acid": {
+      "c": ["078-009-00-4", ["H317", "H334"]],
+      "n": "CHLOROPLATINIC ACID",
+      "k": "86001"
+    },
+    "en:chloroxylenol": {
+      "c": ["604-038-00-4[1]", ["H317"]],
+      "a": "V/26",
+      "n": "CHLOROXYLENOL",
+      "k": "32666"
+    },
+    "en:chlorphenesin": { "a": "V/50", "n": "CHLORPHENESIN", "k": "32667" },
+    "en:ci-42510": { "i": ["2B", 2009], "n": "CI 42510", "k": "32759" },
+    "en:ci-77820": { "c": ["047-004-00-9", ["H361f"]], "n": "CI 77820", "k": "32836" },
+    "en:ci-77891": { "i": ["2B", 2006], "c": ["022-006-00-2", ["H351"]], "n": "CI 77891" },
+    "en:ciclopirox-olamine": { "a": "III/61", "n": "CICLOPIROX OLAMINE", "k": "32842" },
+    "en:cinnamal": {
+      "c": ["606-155-00-6[1]", ["H317"]],
+      "a": "III/76",
+      "n": "CINNAMAL",
+      "k": "32846"
+    },
+    "en:cinnamomum-camphora-formosana-leaf-oil-rectified": {
+      "a": "II/360",
+      "n": "CINNAMOMUM CAMPHORA FORMOSANA LEAF OIL RECTIFIED",
+      "k": "39318"
+    },
+    "en:cinnamomum-camphora-formosana-root-extract": {
+      "a": "II/360",
+      "n": "CINNAMOMUM CAMPHORA FORMOSANA ROOT EXTRACT",
+      "k": "39319"
+    },
+    "en:cinnamomum-camphora-formosana-root-oil": {
+      "a": "II/360",
+      "n": "CINNAMOMUM CAMPHORA FORMOSANA ROOT OIL",
+      "k": "39320"
+    },
+    "en:cinnamomum-camphora-linalooliferum-leaf-extract": {
+      "a": "III/84",
+      "n": "CINNAMOMUM CAMPHORA LINALOOLIFERUM LEAF EXTRACT",
+      "k": "39323"
+    },
+    "en:cinnamomum-camphora-linalooliferum-leaf-oil": {
+      "a": "III/84",
+      "n": "CINNAMOMUM CAMPHORA LINALOOLIFERUM LEAF OIL",
+      "k": "39324"
+    },
+    "en:cinnamomum-camphora-linalooliferum-root-extract": {
+      "a": "II/360",
+      "n": "CINNAMOMUM CAMPHORA LINALOOLIFERUM ROOT EXTRACT",
+      "k": "39325"
+    },
+    "en:cinnamomum-camphora-linalooliferum-root-oil": {
+      "a": "II/360",
+      "n": "CINNAMOMUM CAMPHORA LINALOOLIFERUM ROOT OIL",
+      "k": "39326"
+    },
+    "en:cinnamyl-alcohol": { "a": "III/69", "n": "CINNAMYL ALCOHOL", "k": "32853" },
+    "en:cis-retinoic-acid": { "a": "II/375", "n": "CIS-RETINOIC ACID", "k": "95801" },
+    "en:cis-rose-ketone-2": { "a": "III/162", "n": "CIS-ROSE KETONE-2", "k": "41385" },
+    "en:citral": { "c": ["605-019-00-3", ["H317"]], "a": "III/70", "n": "CITRAL", "k": "32857" },
+    "en:citronellol": { "a": "III/86", "n": "CITRONELLOL", "k": "32861" },
+    "en:citrus-aurantifolia-flower-extract": {
+      "a": "II/358",
+      "n": "CITRUS AURANTIFOLIA FLOWER EXTRACT",
+      "k": "55477"
+    },
+    "en:citrus-aurantifolia-flower-galium-aparine-extract": {
+      "a": "II/358",
+      "n": "CITRUS AURANTIFOLIA FLOWER/GALIUM APARINE EXTRACT",
+      "k": "87280"
+    },
+    "en:citrus-aurantifolia-flower-sambucus-nigra-flower-extract": {
+      "a": "II/358",
+      "n": "CITRUS AURANTIFOLIA FLOWER/SAMBUCUS NIGRA FLOWER EXTRACT",
+      "k": "87281"
+    },
+    "en:citrus-aurantifolia-fruit-extract": {
+      "a": "II/358",
+      "n": "CITRUS AURANTIFOLIA FRUIT EXTRACT",
+      "k": "55479"
+    },
+    "en:citrus-aurantifolia-fruit-water": {
+      "a": "II/358",
+      "n": "CITRUS AURANTIFOLIA FRUIT WATER",
+      "k": "82302"
+    },
+    "en:citrus-aurantifolia-peel-oil-distilled": {
+      "a": "II/358",
+      "n": "CITRUS AURANTIFOLIA PEEL OIL DISTILLED",
+      "k": "39367"
+    },
+    "en:citrus-aurantifolia-peel-oil-expressed": {
+      "a": "II/358",
+      "n": "CITRUS AURANTIFOLIA PEEL OIL EXPRESSED",
+      "k": "41387"
+    },
+    "en:citrus-aurantifolia-peel-powder": {
+      "a": "II/358",
+      "n": "CITRUS AURANTIFOLIA PEEL POWDER",
+      "k": "55482"
+    },
+    "en:citrus-aurantifolia-peel-water": {
+      "a": "II/358",
+      "n": "CITRUS AURANTIFOLIA PEEL WATER",
+      "k": "84928"
+    },
+    "en:citrus-grandis-fruit-water": {
+      "a": "II/358",
+      "n": "CITRUS GRANDIS FRUIT WATER",
+      "k": "55374"
+    },
+    "en:citrus-grandis-paradisi-fruit-water": {
+      "a": "II/358",
+      "n": "CITRUS GRANDIS/PARADISI FRUIT WATER",
+      "k": "55378"
+    },
+    "en:citrus-grandis-peel-powder": {
+      "a": "II/358",
+      "n": "CITRUS GRANDIS PEEL POWDER",
+      "k": "55377"
+    },
+    "en:citrus-grandis-peel-seed-extract": {
+      "a": "II/358",
+      "n": "CITRUS GRANDIS PEEL/SEED EXTRACT",
+      "k": "89455"
+    },
+    "en:citrus-limon-flower-extract": {
+      "a": "II/358",
+      "n": "CITRUS LIMON FLOWER EXTRACT",
+      "k": "94881"
+    },
+    "en:citrus-limon-flower-leaf-stem-extract": {
+      "a": "II/358",
+      "n": "CITRUS LIMON FLOWER/LEAF/STEM EXTRACT",
+      "k": "85112"
+    },
+    "en:citrus-limon-flower-leaf-stem-oil": {
+      "a": "II/358",
+      "n": "CITRUS LIMON FLOWER/LEAF/STEM OIL",
+      "k": "82550"
+    },
+    "en:citrus-limon-fruit-extract": {
+      "a": "II/358",
+      "n": "CITRUS LIMON FRUIT EXTRACT",
+      "k": "85114"
+    },
+    "en:citrus-limon-fruit-oil": { "a": "II/358", "n": "CITRUS LIMON FRUIT OIL", "k": "85115" },
+    "en:citrus-limon-fruit-powder": {
+      "a": "II/358",
+      "n": "CITRUS LIMON FRUIT POWDER",
+      "k": "85116"
+    },
+    "en:citrus-limon-fruit-water": { "a": "II/358", "n": "CITRUS LIMON FRUIT WATER", "k": "85117" },
+    "en:citrus-limon-fucus-serratus-extract": {
+      "a": "II/358",
+      "n": "CITRUS LIMON/FUCUS SERRATUS EXTRACT",
+      "k": "84773"
+    },
+    "en:citrus-limon-juice-extract": {
+      "a": "II/358",
+      "n": "CITRUS LIMON JUICE EXTRACT",
+      "k": "85119"
+    },
+    "en:citrus-limon-juice-powder": {
+      "a": "II/358",
+      "n": "CITRUS LIMON JUICE POWDER",
+      "k": "85120"
+    },
+    "en:citrus-limon-leaf-cell-extract": {
+      "a": "II/358",
+      "n": "CITRUS LIMON LEAF CELL EXTRACT",
+      "k": "84774"
+    },
+    "en:citrus-limon-leaf-extract": {
+      "a": "II/358",
+      "n": "CITRUS LIMON LEAF EXTRACT",
+      "k": "41401"
+    },
+    "en:citrus-limon-leaf-oil": { "a": "II/358", "n": "CITRUS LIMON LEAF OIL", "k": "85121" },
+    "en:citrus-limon-leaf-peel-stem-oil": {
+      "a": "II/358",
+      "n": "CITRUS LIMON LEAF/PEEL/STEM OIL",
+      "k": "84772"
+    },
+    "en:citrus-limon-peel-cera": { "a": "II/358", "n": "CITRUS LIMON PEEL CERA", "k": "84776" },
+    "en:citrus-limon-peel-powder": { "a": "II/358", "n": "CITRUS LIMON PEEL POWDER", "k": "85125" },
+    "en:citrus-limon-peel-water": { "a": "II/358", "n": "CITRUS LIMON PEEL WATER", "k": "85126" },
+    "en:citrus-limon-somatic-embryo-extract": {
+      "a": "II/358",
+      "n": "CITRUS LIMON SOMATIC EMBRYO EXTRACT",
+      "k": "95556"
+    },
+    "en:citrus-paradisi": { "a": "II/358", "n": "CITRUS PARADISI", "k": "41414" },
+    "en:citrus-paradisi-fruit-extract": {
+      "a": "II/358",
+      "n": "CITRUS PARADISI FRUIT EXTRACT",
+      "k": "55431"
+    },
+    "en:citrus-paradisi-m-peel-oil-expressed": {
+      "a": "II/358",
+      "n": "CITRUS PARADISI M. PEEL OIL EXPRESSED",
+      "k": "41412"
+    },
+    "en:citrus-paradisi-peel-extract": {
+      "a": "II/358",
+      "n": "CITRUS PARADISI PEEL EXTRACT",
+      "k": "55433"
+    },
+    "en:citrus-reticulata": { "a": "II/358", "n": "CITRUS RETICULATA", "k": "41415" },
+    "en:citrus-reticulata-leaf-oil": {
+      "a": "II/358",
+      "n": "CITRUS RETICULATA LEAF OIL",
+      "k": "55436"
+    },
+    "en:citrus-reticulata-leaf-water": {
+      "a": "II/358",
+      "n": "CITRUS RETICULATA LEAF WATER",
+      "k": "84792"
+    },
+    "en:citrus-reticulata-peel-powder": {
+      "a": "II/358",
+      "n": "CITRUS RETICULATA PEEL POWDER",
+      "k": "55438"
+    },
+    "en:citrus-unshiu-citrus-reticulata-citrus-iyo-fruit-water": {
+      "a": "II/358",
+      "n": "CITRUS UNSHIU/CITRUS RETICULATA/CITRUS IYO FRUIT WATER",
+      "k": "85832"
+    },
+    "en:climbazole": { "e": "II", "a": "V/32", "n": "CLIMBAZOLE", "k": "32909" },
+    "en:cocamide-dea": { "i": ["2B", 2011], "a": "III/60", "n": "COCAMIDE DEA", "k": "32918" },
+    "en:cocamide-dipa": { "a": "III/60", "n": "COCAMIDE DIPA", "k": "82664" },
+    "en:cocoalkonium-chloride": { "a": "V/54", "n": "COCOALKONIUM CHLORIDE", "k": "32955" },
+    "en:cocotrimonium-chloride": { "a": "V/44", "n": "COCOTRIMONIUM CHLORIDE", "k": "32980" },
+    "en:colloidal-silver": {
+      "c": ["047-004-00-9", ["H361f"]],
+      "n": "COLLOIDAL SILVER",
+      "k": "83140"
+    },
+    "en:commiphora-erythrea-glabrescens-gum-extract": {
+      "a": "III/183",
+      "n": "COMMIPHORA ERYTHREA GLABRESCENS GUM EXTRACT",
+      "k": "41425"
+    },
+    "en:commiphora-erythrea-glabrescens-gum-oil": {
+      "a": "III/183",
+      "n": "COMMIPHORA ERYTHREA GLABRESCENS GUM OIL",
+      "k": "39375"
+    },
+    "en:corn-starch-acrylamide-sodium-acrylate-copolymer": {
+      "a": "III/66",
+      "n": "CORN STARCH/ACRYLAMIDE/SODIUM ACRYLATE COPOLYMER",
+      "k": "33045"
+    },
+    "en:cornamide-cocamide-dea": { "a": "III/60", "n": "CORNAMIDE/COCAMIDE DEA", "k": "55702" },
+    "en:cornamide-dea": { "a": "III/60", "n": "CORNAMIDE DEA", "k": "55701" },
+    "en:coumarin": { "a": "III/77", "n": "COUMARIN", "k": "33057" },
+    "en:cuminum-cyminum-fruit-extract": {
+      "a": "II/358",
+      "n": "CUMINUM CYMINUM FRUIT EXTRACT",
+      "k": "41426"
+    },
+    "en:cuminum-cyminum-seed-powder": {
+      "a": "III/156",
+      "n": "CUMINUM CYMINUM SEED POWDER",
+      "k": "55615"
+    },
+    "en:cupressus-sempervirens-bark-extract": {
+      "a": "III/123",
+      "n": "CUPRESSUS SEMPERVIRENS BARK EXTRACT",
+      "k": "55616"
+    },
+    "en:cupressus-sempervirens-fruit-extract": {
+      "a": "III/123",
+      "n": "CUPRESSUS SEMPERVIRENS FRUIT EXTRACT",
+      "k": "55617"
+    },
+    "en:cupressus-sempervirens-leaf-extract": {
+      "a": "III/123",
+      "n": "CUPRESSUS SEMPERVIRENS LEAF EXTRACT",
+      "k": "41428"
+    },
+    "en:cupressus-sempervirens-leaf-nut-stem-oil": {
+      "a": "III/123",
+      "n": "CUPRESSUS SEMPERVIRENS LEAF/NUT/STEM OIL",
+      "k": "55619"
+    },
+    "en:cupressus-sempervirens-leaf-oil": {
+      "a": "III/123",
+      "n": "CUPRESSUS SEMPERVIRENS LEAF OIL",
+      "k": "83058"
+    },
+    "en:cupressus-sempervirens-leaf-stem-extract": {
+      "a": "III/123",
+      "n": "CUPRESSUS SEMPERVIRENS LEAF/STEM EXTRACT",
+      "k": "55620"
+    },
+    "en:cupressus-sempervirens-leaf-water": {
+      "a": "III/123",
+      "n": "CUPRESSUS SEMPERVIRENS LEAF WATER",
+      "k": "55618"
+    },
+    "en:cupressus-sempervirens-seed-extract": {
+      "a": "III/123",
+      "n": "CUPRESSUS SEMPERVIRENS SEED EXTRACT",
+      "k": "55621"
+    },
+    "en:curry-red": { "a": "III/191", "n": "CURRY RED", "k": "33088" },
+    "en:cyclomethicone": {
+      "e": "II",
+      "c": ["014-018-00-1", ["H361f"]],
+      "n": "CYCLOMETHICONE",
+      "k": "33101"
+    },
+    "en:cyclotetrasiloxane": {
+      "c": ["014-018-00-1", ["H361f"]],
+      "e": "II",
+      "n": "CYCLOTETRASILOXANE",
+      "k": "33104"
+    },
+    "en:d-allo-ocimenol": {
+      "c": ["603-235-00-2[3]", ["H317"]],
+      "a": "III/84",
+      "n": "D-ALLO-OCIMENOL",
+      "k": "41007"
+    },
+    "en:d-pulegone": { "i": ["2B", 2013], "n": "D-PULEGONE", "k": "40945" },
+    "en:datura-stramonium-leaf-extract": {
+      "a": "II/301",
+      "n": "DATURA STRAMONIUM LEAF EXTRACT",
+      "k": "84665"
+    },
+    "en:dehydroacetic-acid": { "a": "V/13", "n": "DEHYDROACETIC ACID", "k": "33185" },
+    "en:deltamethrin": { "e": "II", "n": "DELTAMETHRIN", "k": "85040" },
+    "en:di-tea-cocamide-diacetate": {
+      "a": "III/62",
+      "n": "DI-TEA-COCAMIDE DIACETATE",
+      "k": "55977"
+    },
+    "en:di-tea-oleamido-peg-2-sulfosuccinate": {
+      "a": "III/62",
+      "n": "DI-TEA-OLEAMIDO PEG-2 SULFOSUCCINATE",
+      "k": "33711"
+    },
+    "en:di-tea-palmitoyl-aspartate": {
+      "a": "III/62",
+      "n": "DI-TEA-PALMITOYL ASPARTATE",
+      "k": "33712"
+    },
+    "en:diaminopyrimidine-oxide": { "a": "III/93", "n": "DIAMINOPYRIMIDINE OXIDE", "k": "33207" },
+    "en:diazolidinyl-urea": { "a": "V/46", "n": "DIAZOLIDINYL UREA", "k": "33218" },
+    "en:dibehenyl-methylamine": { "a": "III/62", "n": "DIBEHENYL METHYLAMINE", "k": "33220" },
+    "en:dibromocyanoacetamide": {
+      "c": ["607-747-00-7", ["H317"]],
+      "e": "I",
+      "n": "DIBROMOCYANOACETAMIDE",
+      "k": "55819"
+    },
+    "en:dibromohexamidine-isethionate": {
+      "a": "V/15",
+      "n": "DIBROMOHEXAMIDINE ISETHIONATE",
+      "k": "33227"
+    },
+    "en:dibutyl-oxalate": { "a": "III/3", "n": "DIBUTYL OXALATE", "k": "33231" },
+    "en:dichlorobenzyl-alcohol": { "a": "V/22", "n": "DICHLOROBENZYL ALCOHOL", "k": "33259" },
+    "en:dichloromethane": {
+      "i": ["2A", 2014],
+      "c": ["602-004-00-3", ["H351"]],
+      "a": "III/7",
+      "n": "DICHLOROMETHANE",
+      "k": "33260"
+    },
+    "en:dichlorophene": { "a": "III/11", "n": "DICHLOROPHENE", "k": "33262" },
+    "en:dicocodimethylamine-dilinoleate": {
+      "a": "III/62",
+      "n": "DICOCODIMETHYLAMINE DILINOLEATE",
+      "k": "75684"
+    },
+    "en:diethyl-caprylamide": { "a": "III/60", "n": "DIETHYL CAPRYLAMIDE", "k": "55840" },
+    "en:diethyl-oxalate": { "a": "III/3", "n": "DIETHYL OXALATE", "k": "33280" },
+    "en:diethylamino-hydroxybenzoyl-hexyl-benzoate": {
+      "a": "VI/28",
+      "n": "DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE",
+      "k": "38990"
+    },
+    "en:diethylaminoethyl-methacrylate": {
+      "c": ["607-127-00-6", ["H317"]],
+      "n": "DIETHYLAMINOETHYL METHACRYLATE",
+      "k": "90937"
+    },
+    "en:diethylenetriamine": {
+      "c": ["612-058-00-X", ["H317"]],
+      "n": "DIETHYLENETRIAMINE",
+      "k": "95932"
+    },
+    "en:diethylhexyl-butamido-triazone": {
+      "a": "VI/17",
+      "n": "DIETHYLHEXYL BUTAMIDO TRIAZONE",
+      "k": "33301"
+    },
+    "en:dihydrogenated-tallow-methylamine": {
+      "a": "III/62",
+      "n": "DIHYDROGENATED TALLOW METHYLAMINE",
+      "k": "33337"
+    },
+    "en:dihydroxyindoline-hbr": { "a": "III/204", "n": "DIHYDROXYINDOLINE HBR", "k": "55797" },
+    "en:diisobutyl-oxalate": { "a": "III/3", "n": "DIISOBUTYL OXALATE", "k": "33369" },
+    "en:diisopropyl-oxalate": { "a": "III/3", "n": "DIISOPROPYL OXALATE", "k": "33377" },
+    "en:dilithium-oxalate": { "a": "III/3", "n": "DILITHIUM OXALATE", "k": "33400" },
+    "en:dimethicone-peg-3-ppg-15-crosspolymer": {
+      "a": "II/182",
+      "n": "DIMETHICONE/PEG-3/PPG-15 CROSSPOLYMER",
+      "k": "96150"
+    },
+    "en:dimethyl-3-cyclohexene-1-carbaldehyde": {
+      "c": ["605-043-00-4[8]", ["H317"]],
+      "n": "DIMETHYL-3-CYCLOHEXENE-1-CARBALDEHYDE",
+      "k": "39602"
+    },
+    "en:dimethyl-behenamine": { "a": "III/62", "n": "DIMETHYL BEHENAMINE", "k": "33460" },
+    "en:dimethyl-benzenebutanol": {
+      "c": ["603-092-00-6", ["H317"]],
+      "n": "DIMETHYL BENZENEBUTANOL",
+      "k": "39586"
+    },
+    "en:dimethyl-capramide": { "a": "III/60", "n": "DIMETHYL CAPRAMIDE", "k": "55917" },
+    "en:dimethyl-cocamine": { "a": "III/62", "n": "DIMETHYL COCAMINE", "k": "33462" },
+    "en:dimethyl-hydrogenated-tallowamine": {
+      "a": "III/62",
+      "n": "DIMETHYL HYDROGENATED TALLOWAMINE",
+      "k": "33469"
+    },
+    "en:dimethyl-lauramine": { "a": "III/62", "n": "DIMETHYL LAURAMINE", "k": "33473" },
+    "en:dimethyl-lauramine-dimer-dilinoleate": {
+      "a": "III/62",
+      "n": "DIMETHYL LAURAMINE DIMER DILINOLEATE",
+      "k": "75872"
+    },
+    "en:dimethyl-lauramine-isostearate": {
+      "a": "III/62",
+      "n": "DIMETHYL LAURAMINE ISOSTEARATE",
+      "k": "33475"
+    },
+    "en:dimethyl-lauramine-oleate": {
+      "a": "III/62",
+      "n": "DIMETHYL LAURAMINE OLEATE",
+      "k": "75874"
+    },
+    "en:dimethyl-mea": { "a": "III/62", "n": "DIMETHYL MEA", "k": "33479" },
+    "en:dimethyl-myristamine": { "a": "III/62", "n": "DIMETHYL MYRISTAMINE", "k": "33480" },
+    "en:dimethyl-oxalate": { "a": "III/3", "n": "DIMETHYL OXALATE", "k": "33482" },
+    "en:dimethyl-palmitamine": { "a": "III/62", "n": "DIMETHYL PALMITAMINE", "k": "33486" },
+    "en:dimethyl-phthalate": {
+      "c": ["617-022-00-7", ["H317"]],
+      "n": "DIMETHYL PHTHALATE",
+      "k": "75885"
+    },
+    "en:dimethyl-soyamine": { "a": "III/62", "n": "DIMETHYL SOYAMINE", "k": "33489" },
+    "en:dimethyl-stearamine": { "a": "III/62", "n": "DIMETHYL STEARAMINE", "k": "33490" },
+    "en:dimethyl-tallowamine": { "a": "III/62", "n": "DIMETHYL TALLOWAMINE", "k": "33493" },
+    "en:dimethylaminopropyl-methacrylamide": {
+      "a": "III/62",
+      "n": "DIMETHYLAMINOPROPYL METHACRYLAMIDE",
+      "k": "95295"
+    },
+    "en:dimethylaminopropylamine": {
+      "c": ["612-061-00-6", ["H317"]],
+      "e": "II",
+      "a": "III/62",
+      "n": "DIMETHYLAMINOPROPYLAMINE",
+      "k": "95274"
+    },
+    "en:dimethylol-ethylene-thiourea": {
+      "a": "III/44",
+      "n": "DIMETHYLOL ETHYLENE THIOUREA",
+      "k": "33502"
+    },
+    "en:dimethylpabamidopropyl-laurdimonium-tosylate": {
+      "c": ["601-057-00-X", ["H317"]],
+      "n": "DIMETHYLPABAMIDOPROPYL LAURDIMONIUM TOSYLATE",
+      "k": "55928"
+    },
+    "en:dimethyltolylamine": {
+      "i": ["2B", 2016],
+      "c": ["612-296-00-4", ["H350"]],
+      "n": "DIMETHYLTOLYLAMINE",
+      "k": "55929"
+    },
+    "en:dipeptide-20-hexapeptide-40-oligopeptide-93-rh-polypeptide-68-tetrapeptide-35": {
+      "a": "II/416",
+      "n": "DIPEPTIDE-20 HEXAPEPTIDE-40 OLIGOPEPTIDE-93 RH-POLYPEPTIDE-68 TETRAPEPTIDE-35",
+      "k": "89544"
+    },
+    "en:diphenhydramine-hcl": { "a": "II/339", "n": "DIPHENHYDRAMINE HCL", "k": "85068" },
+    "en:dipotassium-oxalate": { "a": "III/3", "n": "DIPOTASSIUM OXALATE", "k": "33555" },
+    "en:dipropyl-oxalate": { "a": "III/3", "n": "DIPROPYL OXALATE", "k": "33558" },
+    "en:disodium-etidronate": { "a": "III/53", "n": "DISODIUM ETIDRONATE", "k": "55904" },
+    "en:disodium-phenyl-dibenzimidazole-tetrasulfonate": {
+      "a": "VI/24",
+      "n": "DISODIUM PHENYL DIBENZIMIDAZOLE TETRASULFONATE",
+      "k": "75792"
+    },
+    "en:disperse-red-17": { "c": ["603-245-00-7", ["H317"]], "n": "DISPERSE RED 17", "k": "33686" },
+    "en:distearyldimethylamine-dilinoleate": {
+      "a": "III/62",
+      "n": "DISTEARYLDIMETHYLAMINE DILINOLEATE",
+      "k": "75961"
+    },
+    "en:dmdm-hydantoin": { "a": "V/33", "n": "DMDM HYDANTOIN", "k": "33723" },
+    "en:dodecyl-gallate": { "c": ["607-200-00-2", ["H317"]], "n": "DODECYL GALLATE", "k": "33728" },
+    "en:drometrizole-trisiloxane": { "a": "VI/16", "n": "DROMETRIZOLE TRISILOXANE", "k": "33742" },
+    "en:epichlorohydrin": {
+      "i": ["2A", 1998],
+      "c": ["603-026-00-6", ["H317", "H350"]],
+      "a": "II/657",
+      "n": "EPICHLOROHYDRIN",
+      "k": "95275"
+    },
+    "en:epsilon-caprolactone-peg-ppg-23-34-copolymer": {
+      "a": "III/186",
+      "n": "EPSILON CAPROLACTONE PEG/PPG-23/34 COPOLYMER",
+      "k": "83156"
+    },
+    "en:ergocalciferol": { "a": "II/335", "n": "ERGOCALCIFEROL", "k": "84565" },
+    "en:ethanolamine": { "a": "III/61", "n": "ETHANOLAMINE", "k": "33796" },
+    "en:ethanolamine-dithiodiglycolate": {
+      "a": "III/61",
+      "n": "ETHANOLAMINE DITHIODIGLYCOLATE",
+      "k": "75987"
+    },
+    "en:ethanolamine-glycerophosphate": {
+      "a": "III/61",
+      "n": "ETHANOLAMINE GLYCEROPHOSPHATE",
+      "k": "33798"
+    },
+    "en:ethanolamine-thioglycolate": {
+      "a": "III/2a",
+      "n": "ETHANOLAMINE THIOGLYCOLATE",
+      "k": "33800"
+    },
+    "en:ethoxydiglycol": { "a": "III/297", "n": "ETHOXYDIGLYCOL", "k": "33802" },
+    "en:ethyl-benzoate": { "a": "V/1a", "n": "ETHYL BENZOATE", "k": "33810" },
+    "en:ethyl-lauroyl-arginate-hcl": {
+      "a": "III/197",
+      "n": "ETHYL LAUROYL ARGINATE HCL",
+      "k": "56060"
+    },
+    "en:ethyl-methacrylate": {
+      "c": ["607-071-00-2", ["H317"]],
+      "n": "ETHYL METHACRYLATE",
+      "k": "33832"
+    },
+    "en:ethyl-pyrrolidone": {
+      "c": ["616-208-00-5", ["H360D"]],
+      "n": "ETHYL PYRROLIDONE",
+      "k": "82478"
+    },
+    "en:ethyl-thioglycolate": { "a": "III/2b", "n": "ETHYL THIOGLYCOLATE", "k": "33850" },
+    "en:ethylbenzene": { "i": ["2B"], "n": "ETHYLBENZENE", "k": "39830" },
+    "en:ethylenediamine": {
+      "c": ["612-006-00-6", ["H317", "H334"]],
+      "n": "ETHYLENEDIAMINE",
+      "k": "95268"
+    },
+    "en:ethylhexyl-acrylate": {
+      "i": ["2B", 2018],
+      "c": ["607-107-00-7", ["H317"]],
+      "n": "ETHYLHEXYL ACRYLATE",
+      "k": "91108"
+    },
+    "en:ethylhexyl-ethylhexanoate": {
+      "c": ["607-622-00-7", ["H361d"]],
+      "n": "ETHYLHEXYL ETHYLHEXANOATE",
+      "k": "56015"
+    },
+    "en:ethylhexyl-methoxycinnamate": {
+      "a": "VI/12",
+      "n": "ETHYLHEXYL METHOXYCINNAMATE",
+      "k": "33886"
+    },
+    "en:ethylhexyl-salicylate": { "a": "VI/20", "n": "ETHYLHEXYL SALICYLATE", "k": "33893" },
+    "en:ethylhexyl-triazone": { "a": "VI/15", "n": "ETHYLHEXYL TRIAZONE", "k": "33895" },
+    "en:ethylparaben": { "a": "V/12", "n": "ETHYLPARABEN", "k": "33899" },
+    "en:etidronic-acid": { "a": "III/53", "n": "ETIDRONIC ACID", "k": "33900" },
+    "en:eugenol": { "a": "III/71", "n": "EUGENOL", "k": "33910" },
+    "en:evernia-furfuracea-lichen-extract": {
+      "a": "III/92",
+      "n": "EVERNIA FURFURACEA LICHEN EXTRACT",
+      "k": "39973"
+    },
+    "en:evernia-prunastri-extract": {
+      "a": "III/91",
+      "n": "EVERNIA PRUNASTRI EXTRACT",
+      "k": "33916"
+    },
+    "en:evernia-prunastri-lichen-extract": {
+      "a": "III/91",
+      "n": "EVERNIA PRUNASTRI LICHEN EXTRACT",
+      "k": "39974"
+    },
+    "en:farnesol": { "a": "III/82", "n": "FARNESOL", "k": "33921" },
+    "en:ficin": { "c": ["647-006-00-5", ["H334"]], "n": "FICIN", "k": "56258" },
+    "en:formic-acid": { "a": "V/14", "n": "FORMIC ACID", "k": "33949" },
+    "en:furfural": { "c": ["605-010-00-4", ["H351"]], "n": "FURFURAL", "k": "33965" },
+    "en:gamma-terpinene": { "a": "III/132", "n": "GAMMA-TERPINENE", "k": "41435" },
+    "en:gelatin-lysine-polyacrylamide-hydroxypropyltrimonium-chloride": {
+      "a": "III/66",
+      "n": "GELATIN/LYSINE/POLYACRYLAMIDE HYDROXYPROPYLTRIMONIUM CHLORIDE",
+      "k": "33985"
+    },
+    "en:geraniol": {
+      "c": ["603-241-00-5", ["H317"]],
+      "a": "III/78",
+      "n": "GERANIOL",
+      "k": "33991"
+    },
+    "en:ginkgo-biloba-leaf-extract": {
+      "i": ["2B", 2013],
+      "n": "GINKGO BILOBA LEAF EXTRACT",
+      "k": "56174"
+    },
+    "en:ginkgo-biloba-leaf-powder": {
+      "i": ["2B", 2013],
+      "n": "GINKGO BILOBA LEAF POWDER",
+      "k": "56175"
+    },
+    "en:ginkgo-biloba-leaf-water": {
+      "i": ["2B", 2013],
+      "n": "GINKGO BILOBA LEAF WATER",
+      "k": "84156"
+    },
+    "en:ginkgo-biloba-nut-extract": {
+      "i": ["2B", 2013],
+      "n": "GINKGO BILOBA NUT EXTRACT",
+      "k": "56176"
+    },
+    "en:ginkgo-biloba-root-extract": {
+      "i": ["2B", 2013],
+      "n": "GINKGO BILOBA ROOT EXTRACT",
+      "k": "84059"
+    },
+    "en:ginkgo-leaf-terpenoids": { "i": ["2B", 2013], "n": "GINKGO LEAF TERPENOIDS", "k": "56177" },
+    "en:glucosylrutin": { "c": ["606-096-00-6", ["H317"]], "n": "GLUCOSYLRUTIN", "k": "56225" },
+    "en:glutaral": {
+      "c": ["605-022-00-X", ["H317", "H334"]],
+      "a": "V/48",
+      "n": "GLUTARAL",
+      "k": "34020"
+    },
+    "en:glyceryl-diretinoate": { "a": "II/375?", "n": "GLYCERYL DIRETINOATE", "k": "88281" },
+    "en:glyceryl-thioglycolate": { "a": "III/2b", "n": "GLYCERYL THIOGLYCOLATE", "k": "34112" },
+    "en:glycol-dimethacrylate": {
+      "c": ["607-114-00-5", ["H317"]],
+      "n": "GLYCOL DIMETHACRYLATE",
+      "k": "88080"
+    },
+    "en:glyoxal": {
+      "c": ["605-016-00-7", ["H317", "H341"]],
+      "a": "III/194",
+      "n": "GLYOXAL",
+      "k": "34157"
+    },
+    "en:glyoxylic-acid": { "c": ["607-745-00-6", ["H317"]], "n": "GLYOXYLIC ACID", "k": "34158" },
+    "en:hc-blue-no-2": { "a": "III/247", "n": "HC BLUE NO. 2", "k": "34191" },
+    "en:hc-blue-no-11": { "a": "III/196", "n": "HC BLUE NO. 11", "k": "34188" },
+    "en:hc-blue-no-12": {
+      "c": ["612-153-00-6", ["H317"]],
+      "a": "III/225",
+      "n": "HC BLUE NO. 12",
+      "k": "34189"
+    },
+    "en:hc-orange-no-2": { "a": "III/208", "n": "HC ORANGE NO. 2", "k": "34202" },
+    "en:hc-red-no-10": { "a": "III/250", "n": "HC RED NO. 10", "k": "34205" },
+    "en:hc-red-no-11": { "a": "III/250", "n": "HC RED NO. 11", "k": "34206" },
+    "en:hc-red-no-13": { "a": "III/237", "n": "HC RED NO. 13", "k": "34207" },
+    "en:hc-violet-no-1": { "a": "III/234", "n": "HC VIOLET NO. 1", "k": "34212" },
+    "en:hc-violet-no-2": {
+      "c": ["603-136-00-4", ["H317"]],
+      "a": "III/200",
+      "n": "HC VIOLET NO. 2",
+      "k": "34213"
+    },
+    "en:hc-yellow-no-10": { "a": "III/231", "n": "HC YELLOW NO. 10", "k": "34214" },
+    "en:hc-yellow-no-17": { "a": "III/300", "n": "HC YELLOW NO. 17", "k": "91911" },
+    "en:hema": { "c": ["607-124-00-X", ["H317"]], "n": "HEMA", "k": "56349" },
+    "en:hexamethylindanopyran": { "e": "II", "n": "HEXAMETHYLINDANOPYRAN", "k": "56371" },
+    "en:hexamidine": { "a": "V/47", "n": "HEXAMIDINE", "k": "34259" },
+    "en:hexamidine-diisethionate": { "a": "V/47", "n": "HEXAMIDINE DIISETHIONATE", "k": "34260" },
+    "en:hexamidine-diparaben": { "a": "V/47", "n": "HEXAMIDINE DIPARABEN", "k": "56372" },
+    "en:hexamidine-paraben": { "a": "V/47", "n": "HEXAMIDINE PARABEN", "k": "34261" },
+    "en:hexetidine": { "a": "V/19", "n": "HEXETIDINE", "k": "34266" },
+    "en:hexyl-salicylate": {
+      "c": ["607-772-00-3", ["H317", "H361d"]],
+      "n": "HEXYL SALICYLATE",
+      "k": "76454"
+    },
+    "en:homosalate": { "a": "VI/3", "n": "HOMOSALATE", "k": "34299" },
+    "en:human-adipose-stromal-cell-exosomes": {
+      "a": "II/146",
+      "n": "HUMAN ADIPOSE STROMAL CELL EXOSOMES",
+      "k": "94665"
+    },
+    "en:human-adipose-stromal-cell-human-hair-dermal-papilla-cell-conditioned-media": {
+      "a": "II/416",
+      "n": "HUMAN ADIPOSE STROMAL CELL/HUMAN HAIR DERMAL PAPILLA CELL CONDITIONED MEDIA",
+      "k": "94357"
+    },
+    "en:human-buffy-coat-cell-conditioned-media": {
+      "a": "II/416",
+      "n": "HUMAN BUFFY COAT CELL CONDITIONED MEDIA",
+      "k": "89813"
+    },
+    "en:human-embryonic-induced-skin-pluripotent-cell-conditioned-media": {
+      "a": "II/416",
+      "n": "HUMAN EMBRYONIC INDUCED SKIN PLURIPOTENT CELL CONDITIONED MEDIA",
+      "k": "95890"
+    },
+    "en:human-fibroblast-induced-pluripotent-cell-culture-conditioned-media": {
+      "a": "II/416",
+      "n": "HUMAN FIBROBLAST INDUCED PLURIPOTENT CELL CULTURE CONDITIONED MEDIA",
+      "k": "92154"
+    },
+    "en:human-oocyte-lysate": { "a": "II/416", "n": "HUMAN OOCYTE LYSATE", "k": "91307" },
+    "en:human-tooth-pulp-stem-cell-conditioned-media": {
+      "a": "II/416",
+      "n": "HUMAN TOOTH PULP STEM CELL CONDITIONED MEDIA",
+      "k": "91252"
+    },
+    "en:hyaluronate-rh-oligopeptide-1": {
+      "a": "II/416",
+      "n": "HYALURONATE RH-OLIGOPEPTIDE-1",
+      "k": "94076"
+    },
+    "en:hydrogen-peroxide": { "a": "III/12", "n": "HYDROGEN PEROXIDE", "k": "34325" },
+    "en:hydrogenated-palmtrimonium-chloride": {
+      "a": "V/44",
+      "n": "HYDROGENATED PALMTRIMONIUM CHLORIDE",
+      "k": "34377"
+    },
+    "en:hydrogenated-tallowalkonium-chloride": {
+      "a": "III/65",
+      "n": "HYDROGENATED TALLOWALKONIUM CHLORIDE",
+      "k": "34401"
+    },
+    "en:hydrogenated-tallowamide-dea": {
+      "a": "III/60",
+      "n": "HYDROGENATED TALLOWAMIDE DEA",
+      "k": "34402"
+    },
+    "en:hydrogenated-tallowamine": { "a": "III/61", "n": "HYDROGENATED TALLOWAMINE", "k": "34403" },
+    "en:hydrogenated-tallowtrimonium-chloride": {
+      "a": "V/44",
+      "n": "HYDROGENATED TALLOWTRIMONIUM CHLORIDE",
+      "k": "34409"
+    },
+    "en:hydrolyzed-cannabis-sativa-seed-extract": {
+      "a": "II/306",
+      "n": "HYDROLYZED CANNABIS SATIVA SEED EXTRACT",
+      "k": "95634"
+    },
+    "en:hydrolyzed-hemp-seed-extract": {
+      "a": "II/306",
+      "n": "HYDROLYZED HEMP SEED EXTRACT",
+      "k": "86166"
+    },
+    "en:hydroquinone": {
+      "c": ["604-005-00-4", ["H317", "H341", "H351"]],
+      "a": "II/1339",
+      "n": "HYDROQUINONE",
+      "k": "76687"
+    },
+    "en:hydroxybenzomorpholine": { "a": "III/230", "n": "HYDROXYBENZOMORPHOLINE", "k": "34480" },
+    "en:hydroxycetyl-hydroxyethylstearamide": {
+      "a": "III/60",
+      "n": "HYDROXYCETYL HYDROXYETHYLSTEARAMIDE",
+      "k": "56791"
+    },
+    "en:hydroxycitronellal": { "a": "III/72", "n": "HYDROXYCITRONELLAL", "k": "34491" },
+    "en:hydroxyethoxy-aminopyrazolopyridine-hcl": {
+      "a": "III/302",
+      "n": "HYDROXYETHOXY AMINOPYRAZOLOPYRIDINE HCL",
+      "k": "90628"
+    },
+    "en:hydroxyethyl-2-nitro-p-toluidine": {
+      "c": ["603-126-00-X", ["H317"]],
+      "a": "III/221",
+      "n": "HYDROXYETHYL-2-NITRO-P-TOLUIDINE",
+      "k": "34508"
+    },
+    "en:hydroxyethyl-3-4-methylenedioxyaniline-hcl": {
+      "a": "III/246",
+      "n": "HYDROXYETHYL-3‚4-METHYLENEDIOXYANILINE HCL",
+      "k": "34509"
+    },
+    "en:hydroxyethyl-isostearyloxy-isopropanolamine": {
+      "a": "III/61",
+      "n": "HYDROXYETHYL ISOSTEARYLOXY ISOPROPANOLAMINE",
+      "k": "85032"
+    },
+    "en:hydroxyisohexyl-3-cyclohexene-carboxaldehyde": {
+      "c": ["605-040-00-8[1]", ["H317"]],
+      "a": "II/1380",
+      "n": "HYDROXYISOHEXYL 3-CYCLOHEXENE CARBOXALDEHYDE",
+      "k": "41531"
+    },
+    "en:imidazole": { "c": ["613-319-00-0", ["H360D"]], "n": "IMIDAZOLE", "k": "34566" },
+    "en:imidazolidinyl-urea": { "a": "V/27", "n": "IMIDAZOLIDINYL UREA", "k": "34567" },
+    "en:immortalized-human-tooth-pulp-stem-cell-conditioned-media": {
+      "a": "II/416",
+      "n": "IMMORTALIZED HUMAN TOOTH PULP STEM CELL CONDITIONED MEDIA",
+      "k": "94177"
+    },
+    "en:iodopropynyl-butylcarbamate": {
+      "c": ["616-212-00-7", ["H317"]],
+      "e": "II",
+      "a": "V/56",
+      "n": "IODOPROPYNYL BUTYLCARBAMATE",
+      "k": "34582"
+    },
+    "en:isoamyl-allylglycolate": { "a": "III/147", "n": "ISOAMYL ALLYLGLYCOLATE", "k": "56785" },
+    "en:isobergamate": { "a": "III/170", "n": "ISOBERGAMATE", "k": "40327" },
+    "en:isobutane": { "c": ["601-004-01-8[2]", ["H340", "H350"]], "n": "ISOBUTANE", "k": "76816" },
+    "en:isobutyl-benzoate": { "a": "V/1a", "n": "ISOBUTYL BENZOATE", "k": "34602" },
+    "en:isobutyl-methacrylate": {
+      "c": ["607-113-00-X", ["H317"]],
+      "n": "ISOBUTYL METHACRYLATE",
+      "k": "56789"
+    },
+    "en:isobutylparaben": { "e": "I", "a": "II/1375", "n": "ISOBUTYLPARABEN", "k": "34612" },
+    "en:isocyclocitral": {
+      "c": ["605-043-00-4[14]", ["H317"]],
+      "n": "ISOCYCLOCITRAL",
+      "k": "40359"
+    },
+    "en:isocyclogeraniol": { "a": "III/176", "n": "ISOCYCLOGERANIOL", "k": "40360" },
+    "en:isoeugenol": {
+      "i": ["2B", 2023],
+      "c": ["604-094-00-X[1]", ["H317"]],
+      "a": "III/73",
+      "n": "ISOEUGENOL",
+      "k": "34653"
+    },
+    "en:isooctyl-thioglycolate": { "a": "III/2b", "n": "ISOOCTYL THIOGLYCOLATE", "k": "34671" },
+    "en:isophorone-diisocyanate": {
+      "c": ["615-008-00-5", ["H317", "H334"]],
+      "n": "ISOPHORONE DIISOCYANATE",
+      "k": "93155"
+    },
+    "en:isopropanolamine": { "a": "III/61", "n": "ISOPROPANOLAMINE", "k": "34676" },
+    "en:isopropanolamine-lanolate": {
+      "a": "III/61",
+      "n": "ISOPROPANOLAMINE LANOLATE",
+      "k": "34677"
+    },
+    "en:isopropyl-benzoate": { "a": "V/1a", "n": "ISOPROPYL BENZOATE", "k": "34684" },
+    "en:isopropyl-cresols": { "a": "V/38", "n": "ISOPROPYL CRESOLS", "k": "34687" },
+    "en:isopropyl-thioglycolate": { "a": "III/2b", "n": "ISOPROPYL THIOGLYCOLATE", "k": "34707" },
+    "en:isopropylamine": { "a": "III/61", "n": "ISOPROPYLAMINE", "k": "34709" },
+    "en:isopropylamine-dodecylbenzenesulfonate": {
+      "a": "III/61",
+      "n": "ISOPROPYLAMINE DODECYLBENZENESULFONATE",
+      "k": "34710"
+    },
+    "en:isopropylidenediphenol-diglycidyl-ether": {
+      "c": ["603-073-00-2", ["H317"]],
+      "n": "ISOPROPYLIDENEDIPHENOL DIGLYCIDYL ETHER",
+      "k": "95939"
+    },
+    "en:isopropylparaben": { "a": "II/1374", "n": "ISOPROPYLPARABEN", "k": "34713" },
+    "en:isostearamide-dea": { "a": "III/60", "n": "ISOSTEARAMIDE DEA", "k": "34717" },
+    "en:l-allo-ocimenol": {
+      "c": ["603-235-00-2[2]", ["H317"]],
+      "a": "III/84",
+      "n": "L-ALLO-OCIMENOL",
+      "k": "41008"
+    },
+    "en:l-alpha-pinene": { "a": "III/130", "n": "L-ALPHA-PINENE", "k": "41450" },
+    "en:l-beta-pinene": { "a": "III/130", "n": "L-BETA-PINENE", "k": "41022" },
+    "en:laccase": { "c": ["647-017-00-5", ["H334"]], "n": "LACCASE", "k": "57839" },
+    "en:lactobacillus-lac-calcium-phosphorous-magnesium-zinc-ferment": {
+      "a": "III/24",
+      "n": "LACTOBACILLUS LAC/CALCIUM/PHOSPHOROUS/MAGNESIUM/ZINC FERMENT",
+      "k": "34817"
+    },
+    "en:lactobacillus-milk-manganese-zinc-ferment-lysate": {
+      "a": "III/24",
+      "n": "LACTOBACILLUS/MILK/MANGANESE/ZINC FERMENT LYSATE",
+      "k": "58023"
+    },
+    "en:lanolinamide-dea": { "a": "III/60", "n": "LANOLINAMIDE DEA", "k": "34864" },
+    "en:lauralkonium-bromide": { "a": "V/54", "n": "LAURALKONIUM BROMIDE", "k": "34872" },
+    "en:lauralkonium-chloride": { "a": "V/54", "n": "LAURALKONIUM CHLORIDE", "k": "34873" },
+    "en:lauramide-dea": { "a": "III/60", "n": "LAURAMIDE DEA", "k": "34875" },
+    "en:lauramide-dipa": { "a": "III/60", "n": "LAURAMIDE DIPA", "k": "91560" },
+    "en:lauramide-myristamide-dea": {
+      "a": "III/60",
+      "n": "LAURAMIDE/MYRISTAMIDE DEA",
+      "k": "34878"
+    },
+    "en:laurtrimonium-bromide": { "a": "V/44", "n": "LAURTRIMONIUM BROMIDE", "k": "34944" },
+    "en:laurtrimonium-chloride": { "a": "V/44", "n": "LAURTRIMONIUM CHLORIDE", "k": "34945" },
+    "en:lauryl-dimethicone-peg-10-phosphate": {
+      "a": "III/186",
+      "n": "LAURYL DIMETHICONE PEG-10 PHOSPHATE",
+      "k": "83151"
+    },
+    "en:lauryl-dimethicone-peg-15-crosspolymer": {
+      "a": "III/186",
+      "n": "LAURYL DIMETHICONE PEG-15 CROSSPOLYMER",
+      "k": "56965"
+    },
+    "en:lauryl-dimethylamine-cyclocarboxypropyloleate": {
+      "a": "III/62",
+      "n": "LAURYL DIMETHYLAMINE CYCLOCARBOXYPROPYLOLEATE",
+      "k": "34957"
+    },
+    "en:lauryl-pyrrolidone": {
+      "c": ["613-099-00-6", ["H317"]],
+      "n": "LAURYL PYRROLIDONE",
+      "k": "77143"
+    },
+    "en:lecithinamide-dea": { "a": "III/60", "n": "LECITHINAMIDE DEA", "k": "34996" },
+    "en:limonene": {
+      "c": ["601-029-00-7[4]", ["H317"]],
+      "a": "III/88",
+      "n": "LIMONENE",
+      "k": "57187"
+    },
+    "en:linalool": {
+      "c": ["603-235-00-2[3]", ["H317"]],
+      "a": "III/84",
+      "n": "LINALOOL",
+      "k": "35016"
+    },
+    "en:linoleamide-dea": { "a": "III/60", "n": "LINOLEAMIDE DEA", "k": "35019" },
+    "en:liquidambar-orientalis-balsam-oil": {
+      "a": "III/180",
+      "n": "LIQUIDAMBAR ORIENTALIS BALSAM OIL",
+      "k": "41452"
+    },
+    "en:liquidambar-orientalis-resin-extract": {
+      "a": "III/180",
+      "n": "LIQUIDAMBAR ORIENTALIS RESIN EXTRACT",
+      "k": "86682"
+    },
+    "en:liquidambar-styraciflua-balsam-extract": {
+      "a": "III/181",
+      "n": "LIQUIDAMBAR STYRACIFLUA BALSAM EXTRACT",
+      "k": "41453"
+    },
+    "en:liquidambar-styraciflua-oil": {
+      "a": "III/181",
+      "n": "LIQUIDAMBAR STYRACIFLUA OIL",
+      "k": "57304"
+    },
+    "en:lithium-carbonate": { "e": "III", "n": "LITHIUM CARBONATE", "k": "85904" },
+    "en:lithium-chloride": { "e": "III", "n": "LITHIUM CHLORIDE", "k": "87536" },
+    "en:lithium-hydroxide": { "e": "III", "a": "III/15b", "n": "LITHIUM HYDROXIDE", "k": "35038" },
+    "en:lithium-sulfide": { "a": "III/23", "n": "LITHIUM SULFIDE", "k": "35043" },
+    "en:lysophosphatidylethanolamine": {
+      "a": "III/61",
+      "n": "LYSOPHOSPHATIDYLETHANOLAMINE",
+      "k": "57474"
+    },
+    "en:m-aminophenol": { "a": "III/217", "n": "M-AMINOPHENOL", "k": "35147" },
+    "en:m-aminophenol-hcl": { "a": "III/217", "n": "M-AMINOPHENOL HCL", "k": "35148" },
+    "en:m-aminophenol-sulfate": { "a": "III/217", "n": "M-AMINOPHENOL SULFATE", "k": "35149" },
+    "en:magnesium-benzoate": { "a": "V/1a", "n": "MAGNESIUM BENZOATE", "k": "35084" },
+    "en:magnesium-fluoride": { "a": "III/56", "n": "MAGNESIUM FLUORIDE", "k": "35091" },
+    "en:magnesium-peroxide": { "a": "III/12", "n": "MAGNESIUM PEROXIDE", "k": "35114" },
+    "en:magnesium-propionate": { "a": "V/2", "n": "MAGNESIUM PROPIONATE", "k": "35116" },
+    "en:magnesium-salicylate": { "a": "V/3", "n": "MAGNESIUM SALICYLATE", "k": "35117" },
+    "en:magnesium-sulfide": { "a": "III/23", "n": "MAGNESIUM SULFIDE", "k": "35122" },
+    "en:magnesium-tea-coco-sulfate": {
+      "a": "III/62",
+      "n": "MAGNESIUM/TEA-COCO-SULFATE",
+      "k": "35127"
+    },
+    "en:magnesium-thioglycolate": { "a": "III/2a", "n": "MAGNESIUM THIOGLYCOLATE", "k": "35124" },
+    "en:maleic-acid": { "c": ["607-095-00-3", ["H317"]], "n": "MALEIC ACID", "k": "35135" },
+    "en:maleic-anhydride": {
+      "c": ["607-096-00-9", ["H317", "H334"]],
+      "n": "MALEIC ANHYDRIDE",
+      "k": "57602"
+    },
+    "en:mea-benzoate": { "a": "V/1a", "n": "MEA-BENZOATE", "k": "35180" },
+    "en:mea-biotinate": { "a": "III/61", "n": "MEA-BIOTINATE", "k": "57758" },
+    "en:mea-borate": { "a": "III/1a", "n": "MEA-BORATE", "k": "35181" },
+    "en:mea-cocoate": { "a": "III/61", "n": "MEA-COCOATE", "k": "57759" },
+    "en:mea-dicetearyl-phosphate": { "a": "III/61", "n": "MEA-DICETEARYL PHOSPHATE", "k": "35182" },
+    "en:mea-hydrolyzed-collagen": { "a": "III/61", "n": "MEA-HYDROLYZED COLLAGEN", "k": "77984" },
+    "en:mea-hydrolyzed-silk": { "a": "III/61", "n": "MEA-HYDROLYZED SILK", "k": "35184" },
+    "en:mea-laureth-6-carboxylate": {
+      "a": "III/61",
+      "n": "MEA-LAURETH-6 CARBOXYLATE",
+      "k": "77988"
+    },
+    "en:mea-laureth-sulfate": { "a": "III/61", "n": "MEA-LAURETH SULFATE", "k": "35186" },
+    "en:mea-lauryl-sulfate": { "a": "III/61", "n": "MEA-LAURYL SULFATE", "k": "35188" },
+    "en:mea-o-phenylphenate": { "a": "III/61", "n": "MEA O-PHENYLPHENATE", "k": "35179" },
+    "en:mea-ppg-6-laureth-7-carboxylate": {
+      "a": "III/61",
+      "n": "MEA PPG-6 LAURETH-7 CARBOXYLATE",
+      "k": "77990"
+    },
+    "en:mea-ppg-8-steareth-7-carboxylate": {
+      "a": "III/61",
+      "n": "MEA-PPG-8-STEARETH-7 CARBOXYLATE",
+      "k": "77991"
+    },
+    "en:mea-sulfite": { "a": "III/61", "n": "MEA-SULFITE", "k": "57763" },
+    "en:mea-thiolactate": { "a": "III/61", "n": "MEA-THIOLACTATE", "k": "35192" },
+    "en:mea-undecylenate": { "a": "V/18", "n": "MEA-UNDECYLENATE", "k": "35193" },
+    "en:mek": { "e": "II", "n": "MEK", "k": "35196" },
+    "en:melamine": {
+      "i": ["2B", 2017],
+      "c": ["613-345-00-2", ["H351"]],
+      "n": "MELAMINE",
+      "k": "95269"
+    },
+    "en:mesyloxybenzyl-isobutylbenzenesulfonamide": {
+      "a": "II/307",
+      "n": "MESYLOXYBENZYL ISOBUTYLBENZENESULFONAMIDE",
+      "k": "88434"
+    },
+    "en:methacrylamide": { "a": "II/681", "n": "METHACRYLAMIDE", "k": "95299" },
+    "en:methacrylamidopropyl-lauryldimonium-chloride": {
+      "a": "III/66",
+      "n": "METHACRYLAMIDOPROPYL LAURYLDIMONIUM CHLORIDE",
+      "k": "95293"
+    },
+    "en:methenamine": {
+      "c": ["612-101-00-2", ["H317"]],
+      "a": "V/30",
+      "n": "METHENAMINE",
+      "k": "35256"
+    },
+    "en:methionyl-hexapeptide-40-sh-decapeptide-1-rh-polypeptide-50": {
+      "a": "II/416",
+      "n": "METHIONYL HEXAPEPTIDE-40 SH-DECAPEPTIDE-1 RH-POLYPEPTIDE-50",
+      "k": "93313"
+    },
+    "en:methionyl-hexapeptide-40-sh-decapeptide-1-tripeptide-44-rh-oligopeptide-1": {
+      "a": "II/416",
+      "n": "METHIONYL HEXAPEPTIDE-40 SH-DECAPEPTIDE-1 TRIPEPTIDE-44 RH-OLIGOPEPTIDE-1",
+      "k": "93312"
+    },
+    "en:methionyl-hexapeptide-40-sh-decapeptide-1-tripeptide-44-rh-polypeptide-3": {
+      "a": "II/416",
+      "n": "METHIONYL HEXAPEPTIDE-40 SH-DECAPEPTIDE-1 TRIPEPTIDE-44 RH-POLYPEPTIDE-3",
+      "k": "93319"
+    },
+    "en:methionyl-hexapeptide-40-sh-decapeptide-1-tripeptide-44-rh-polypeptide-60": {
+      "a": "II/416",
+      "n": "METHIONYL HEXAPEPTIDE-40 SH-DECAPEPTIDE-1 TRIPEPTIDE-44 RH-POLYPEPTIDE-60",
+      "k": "93314"
+    },
+    "en:methotrexate": { "a": "II/6", "n": "METHOTREXATE", "k": "95795" },
+    "en:methotrexoyl-oligopeptide-59": {
+      "a": "II/6",
+      "n": "METHOTREXOYL OLIGOPEPTIDE-59",
+      "k": "95724"
+    },
+    "en:methoxy-peg-100-polyepsilon-caprolactone": {
+      "a": "III/186",
+      "n": "METHOXY PEG-100/POLYEPSILON CAPROLACTONE",
+      "k": "57951"
+    },
+    "en:methoxy-peg-114-polyepsilon-caprolactone": {
+      "a": "III/186",
+      "n": "METHOXY PEG-114/POLYEPSILON CAPROLACTONE",
+      "k": "57952"
+    },
+    "en:methoxyethyl-acrylate": {
+      "c": ["607-744-00-0", ["H317", "H341", "H360FD"]],
+      "n": "METHOXYETHYL ACRYLATE",
+      "k": "94080"
+    },
+    "en:methyl-alcohol": { "a": "III/52", "n": "METHYL ALCOHOL", "k": "35275" },
+    "en:methyl-benzoate": { "a": "V/1a", "n": "METHYL BENZOATE", "k": "35279" },
+    "en:methyl-dicocamine": { "a": "III/62", "n": "METHYL DICOCAMINE", "k": "35286" },
+    "en:methyl-diethanolamine": { "a": "II/411", "n": "METHYL DIETHANOLAMINE", "k": "88437" },
+    "en:methyl-methacrylate": {
+      "c": ["607-035-00-6", ["H317"]],
+      "n": "METHYL METHACRYLATE",
+      "k": "83732"
+    },
+    "en:methyl-methylene-tricyclodecan-olacetate": {
+      "c": ["607-336-00-2", ["H317"]],
+      "n": "METHYL-METHYLENE-TRICYCLODECAN-OLACETATE",
+      "k": "40716"
+    },
+    "en:methyl-methylene-tricyclodecanol": {
+      "c": ["603-123-00-3", ["H317"]],
+      "n": "METHYL-METHYLENE-TRICYCLODECANOL",
+      "k": "40715"
+    },
+    "en:methyl-pyrrolidone": {
+      "c": ["606-021-00-7", ["H360D"]],
+      "n": "METHYL PYRROLIDONE",
+      "k": "35322"
+    },
+    "en:methyl-salicylate": {
+      "c": ["607-749-00-8", ["H317", "H361d"]],
+      "n": "METHYL SALICYLATE",
+      "k": "35325"
+    },
+    "en:methyl-thioglycolate": { "a": "III/2b", "n": "METHYL THIOGLYCOLATE", "k": "35328" },
+    "en:methylchloroisothiazolinone": {
+      "a": "V/39",
+      "n": "METHYLCHLOROISOTHIAZOLINONE",
+      "k": "35333"
+    },
+    "en:methylene-di-t-butylcresol": {
+      "c": ["604-095-00-5", ["H360F"]],
+      "n": "METHYLENE DI-T-BUTYLCRESOL",
+      "k": "35336"
+    },
+    "en:methylene-diphenyl-diisocyanate": {
+      "c": ["615-005-00-9[4]", ["H317", "H334", "H351"]],
+      "n": "METHYLENE DIPHENYL DIISOCYANATE",
+      "k": "95289"
+    },
+    "en:methylenedioxyphenyl-methylpropanal": {
+      "c": ["605-042-00-9[1]", ["H317"]],
+      "n": "METHYLENEDIOXYPHENYL METHYLPROPANAL",
+      "k": "40447"
+    },
+    "en:methylheptadienone": { "a": "III/178", "n": "METHYLHEPTADIENONE", "k": "41459" },
+    "en:methylisothiazolinone": {
+      "c": ["613-326-00-9", ["H317"]],
+      "a": "V/57",
+      "n": "METHYLISOTHIAZOLINONE",
+      "k": "35341"
+    },
+    "en:methylparaben": { "e": "II", "a": "V/12", "n": "METHYLPARABEN", "k": "35342" },
+    "en:methylthiophenyl-morpholino-isobutanone": {
+      "c": ["606-041-00-6", ["H360FD"]],
+      "n": "METHYLTHIOPHENYL MORPHOLINO ISOBUTANONE",
+      "k": "93153"
+    },
+    "en:mibk": { "i": ["2B", 2011], "c": ["606-004-00-4", ["H351"]], "n": "MIBK", "k": "35359" },
+    "en:minkamide-dea": { "a": "III/60", "n": "MINKAMIDE DEA", "k": "35370" },
+    "en:mipa-borate": { "a": "III/1a", "n": "MIPA-BORATE", "k": "35377" },
+    "en:mipa-c12-14-sec-pareth-3-acetate": {
+      "a": "III/61",
+      "n": "MIPA-C12-14 SEC-PARETH-3 ACETATE",
+      "k": "96143"
+    },
+    "en:mipa-c12-15-pareth-sulfate": {
+      "a": "III/61",
+      "n": "MIPA C12-15 PARETH SULFATE",
+      "k": "76975"
+    },
+    "en:mipa-dodecylbenzenesulfonate": {
+      "a": "III/61",
+      "n": "MIPA-DODECYLBENZENESULFONATE",
+      "k": "76977"
+    },
+    "en:mipa-laureth-sulfate": { "a": "III/61", "n": "MIPA-LAURETH SULFATE", "k": "76978" },
+    "en:mipa-lauryl-sulfate": { "a": "III/61", "n": "MIPA-LAURYL SULFATE", "k": "35380" },
+    "en:mipa-myristate": { "a": "III/61", "n": "MIPA-MYRISTATE", "k": "56881" },
+    "en:musk-ketone": {
+      "c": ["609-069-00-7", ["H351"]],
+      "a": "III/97",
+      "n": "MUSK KETONE",
+      "k": "35408"
+    },
+    "en:musk-xylene": {
+      "c": ["609-068-00-1", ["H351"]],
+      "a": "III/96",
+      "n": "MUSK XYLENE",
+      "k": "56999"
+    },
+    "en:myrcene": { "i": ["2B", 2017], "n": "MYRCENE", "k": "40841" },
+    "en:myristalkonium-chloride": { "a": "V/54", "n": "MYRISTALKONIUM CHLORIDE", "k": "35430" },
+    "en:myristalkonium-saccharinate": {
+      "a": "V/54",
+      "n": "MYRISTALKONIUM SACCHARINATE",
+      "k": "35431"
+    },
+    "en:myristamide-dea": { "a": "III/60", "n": "MYRISTAMIDE DEA", "k": "35432" },
+    "en:myroxylon-balsamum-balsam-oil": {
+      "a": "II/1136",
+      "n": "MYROXYLON BALSAMUM BALSAM OIL",
+      "k": "40852"
+    },
+    "en:myroxylon-balsamum-pereirae-balsam-extract": {
+      "a": "III/154",
+      "n": "MYROXYLON BALSAMUM PEREIRAE BALSAM EXTRACT",
+      "k": "40853"
+    },
+    "en:myroxylon-balsamum-pereirae-balsam-oil": {
+      "a": "III/154",
+      "n": "MYROXYLON BALSAMUM PEREIRAE BALSAM OIL",
+      "k": "40854"
+    },
+    "en:myroxylon-pereirae-oil": { "a": "II/1136", "n": "MYROXYLON PEREIRAE OIL", "k": "57204" },
+    "en:myrtrimonium-bromide": { "a": "V/44", "n": "MYRTRIMONIUM BROMIDE", "k": "35469" },
+    "en:n": { "a": "III/I/253", "n": "N", "k": "57209" },
+    "en:n-adamantanoyl-dopamine": { "a": "II/21", "n": "N-ADAMANTANOYL DOPAMINE", "k": "90358" },
+    "en:n-adamantanoyl-tyramine": { "a": "II/21", "n": "N-ADAMANTANOYL TYRAMINE", "k": "90324" },
+    "en:n-caproyl-tyramine": { "a": "II/21", "n": "N-CAPROYL TYRAMINE", "k": "90322" },
+    "en:n-cyclohexanoyl-dopamine": { "a": "II/21", "n": "N-CYCLOHEXANOYL DOPAMINE", "k": "90361" },
+    "en:n-cyclohexanoyl-tyramine": { "a": "II/21", "n": "N-CYCLOHEXANOYL TYRAMINE", "k": "90323" },
+    "en:n-lauryl-diethanolamine": { "a": "III/60", "n": "N-LAURYL DIETHANOLAMINE", "k": "57416" },
+    "en:n-nicotinoyl-dopamine": { "a": "II/21", "n": "N-NICOTINOYL DOPAMINE", "k": "88098" },
+    "en:n-nicotinoyl-tyramine": { "a": "II/21", "n": "N-NICOTINOYL TYRAMINE", "k": "88097" },
+    "en:n-phenyl-p-phenylenediamine": {
+      "a": "III/8",
+      "n": "N-PHENYL-P-PHENYLENEDIAMINE",
+      "k": "35561"
+    },
+    "en:n-phenyl-p-phenylenediamine-hcl": {
+      "a": "III/8",
+      "n": "N-PHENYL-P-PHENYLENEDIAMINE HCL",
+      "k": "35562"
+    },
+    "en:n-phenyl-p-phenylenediamine-sulfate": {
+      "a": "III/8",
+      "n": "N-PHENYL-P-PHENYLENEDIAMINE SULFATE",
+      "k": "35563"
+    },
+    "en:nematode-rh-polypeptide-47": {
+      "a": "II/416",
+      "n": "NEMATODE RH-POLYPEPTIDE-47",
+      "k": "94298"
+    },
+    "en:nicotiana-benthamiana-rh-oligopeptide-1": {
+      "a": "II/416",
+      "n": "NICOTIANA BENTHAMIANA RH-OLIGOPEPTIDE-1",
+      "k": "92993"
+    },
+    "en:nitromethane": { "i": ["2B"], "a": "III/18", "n": "NITROMETHANE", "k": "35508" },
+    "en:nonapeptide-15-sh-polypeptide-56-tripeptide-44-rh-oligopeptide-4": {
+      "a": "II/416",
+      "n": "NONAPEPTIDE-15 SH-POLYPEPTIDE-56 TRIPEPTIDE-44 RH-OLIGOPEPTIDE-4",
+      "k": "90086"
+    },
+    "en:nonoxynol-9": { "e": "I", "n": "NONOXYNOL-9", "k": "92920" },
+    "en:o-aminophenol": {
+      "c": ["612-033-00-3", ["H341"]],
+      "a": "II/1372",
+      "n": "O-AMINOPHENOL",
+      "k": "35572"
+    },
+    "en:o-aminophenol-sulfate": { "a": "III/240", "n": "O-AMINOPHENOL SULFATE", "k": "35573" },
+    "en:o-cymen-5-ol": { "a": "V/38", "n": "O-CYMEN-5-OL", "k": "35637" },
+    "en:o-phenylphenol": {
+      "c": ["604-020-00-6", ["H317", "H351"]],
+      "a": "V/7",
+      "n": "O-PHENYLPHENOL",
+      "k": "35733"
+    },
+    "en:octadecenyl-ammonium-fluoride": {
+      "a": "III/39",
+      "n": "OCTADECENYL-AMMONIUM FLUORIDE",
+      "k": "35583"
+    },
+    "en:octocrylene": { "a": "VI/10", "n": "OCTOCRYLENE", "k": "35585" },
+    "en:octoxynol-1": { "e": "I", "n": "OCTOXYNOL-1", "k": "77664" },
+    "en:octoxynol-9": { "e": "I", "n": "OCTOXYNOL-9", "k": "77681" },
+    "en:octoxynol-33": { "e": "I", "n": "OCTOXYNOL-33", "k": "77675" },
+    "en:octoxynol-70": { "e": "I", "n": "OCTOXYNOL-70", "k": "77679" },
+    "en:octylisothiazolinone": {
+      "c": ["613-112-00-5", ["H317"]],
+      "n": "OCTYLISOTHIAZOLINONE",
+      "k": "57621"
+    },
+    "en:oleamide-dea": { "a": "III/60", "n": "OLEAMIDE DEA", "k": "35649" },
+    "en:oleamide-dipa": { "a": "III/60", "n": "OLEAMIDE DIPA", "k": "82612" },
+    "en:oleamine": { "a": "III/61", "n": "OLEAMINE", "k": "35663" },
+    "en:oligopeptide-91-rh-oligopeptide-1": {
+      "a": "II/416",
+      "n": "OLIGOPEPTIDE-91 RH-OLIGOPEPTIDE-1",
+      "k": "90674"
+    },
+    "en:oligopeptide-107-rh-polypeptide-1": {
+      "a": "II/416",
+      "n": "OLIGOPEPTIDE-107 RH-POLYPEPTIDE-1",
+      "k": "93193"
+    },
+    "en:oligopeptide-123-rh-oligopeptide-1": {
+      "a": "II/416",
+      "n": "OLIGOPEPTIDE-123 RH-OLIGOPEPTIDE-1",
+      "k": "93190"
+    },
+    "en:oligopeptide-123-rh-polypeptide-1": {
+      "a": "II/416",
+      "n": "OLIGOPEPTIDE-123 RH-POLYPEPTIDE-1",
+      "k": "93192"
+    },
+    "en:oligopeptide-123-rh-polypeptide-7": {
+      "a": "II/416",
+      "n": "OLIGOPEPTIDE-123 RH-POLYPEPTIDE-7",
+      "k": "93191"
+    },
+    "en:oligopeptide-127-rh-oligopeptide-1": {
+      "a": "II/416",
+      "n": "OLIGOPEPTIDE-127 RH-OLIGOPEPTIDE-1",
+      "k": "93923"
+    },
+    "en:oligopeptide-127-rh-oligopeptide-4": {
+      "a": "II/416",
+      "n": "OLIGOPEPTIDE-127 RH-OLIGOPEPTIDE-4",
+      "k": "93672"
+    },
+    "en:oligopeptide-127-rh-polypeptide-7": {
+      "a": "II/416",
+      "n": "OLIGOPEPTIDE-127 RH-POLYPEPTIDE-7",
+      "k": "93673"
+    },
+    "en:olivamide-dea": { "a": "III/60", "n": "OLIVAMIDE DEA", "k": "35721" },
+    "en:opopanax-chironium-resin-extract": {
+      "a": "III/184",
+      "n": "OPOPANAX CHIRONIUM RESIN EXTRACT",
+      "k": "41462"
+    },
+    "en:opopanax-chironium-resin-steam-distilled-oil": {
+      "a": "III/184",
+      "n": "OPOPANAX CHIRONIUM RESIN STEAM-DISTILLED OIL",
+      "k": "41463"
+    },
+    "en:oxalic-acid": { "a": "III/3", "n": "OXALIC ACID", "k": "35766" },
+    "en:oxyquinoline": {
+      "c": ["613-324-00-8", ["H317", "H360D"]],
+      "a": "III/51",
+      "n": "OXYQUINOLINE",
+      "k": "35773"
+    },
+    "en:oxyquinoline-sulfate": { "a": "III/51", "n": "OXYQUINOLINE SULFATE", "k": "35775" },
+    "en:p-aminophenol": {
+      "c": ["612-128-00-X", ["H341"]],
+      "a": "III/272",
+      "n": "P-AMINOPHENOL",
+      "k": "35831"
+    },
+    "en:p-hydroxyanisole": {
+      "c": ["604-044-00-7", ["H317"]],
+      "a": "III/95",
+      "n": "P-HYDROXYANISOLE",
+      "k": "41529"
+    },
+    "en:p-methylaminophenol": { "a": "III/223", "n": "P-METHYLAMINOPHENOL", "k": "36625" },
+    "en:p-methylaminophenol-sulfate": {
+      "a": "III/223",
+      "n": "P-METHYLAMINOPHENOL SULFATE",
+      "k": "36626"
+    },
+    "en:p-methylhydrocinnamic-aldehyde": {
+      "a": "III/179",
+      "n": "P-METHYLHYDROCINNAMIC ALDEHYDE",
+      "k": "40697"
+    },
+    "en:p-phenylenediamine": {
+      "c": ["612-028-00-6", ["H317"]],
+      "a": "III/8a",
+      "n": "P-PHENYLENEDIAMINE",
+      "k": "37249"
+    },
+    "en:p-phenylenediamine-sulfate": {
+      "a": "III/8a",
+      "n": "P-PHENYLENEDIAMINE SULFATE",
+      "k": "37251"
+    },
+    "en:paba": { "a": "II/167", "n": "PABA", "k": "87541" },
+    "en:palm-kernelamide-dea": { "a": "III/60", "n": "PALM KERNELAMIDE DEA", "k": "35788" },
+    "en:palmamide-dea": { "a": "III/60", "n": "PALMAMIDE DEA", "k": "35792" },
+    "en:palmamine": { "a": "III/61", "n": "PALMAMINE", "k": "82846" },
+    "en:palmitamide-dea": { "a": "III/60", "n": "PALMITAMIDE DEA", "k": "35797" },
+    "en:peg-2-oleamine-hydrofluoride": {
+      "a": "III/xx",
+      "n": "PEG-2 OLEAMINE HYDROFLUORIDE",
+      "k": "85047"
+    },
+    "en:peg-10-lauryl-dimethicone-crosspolymer": {
+      "a": "III/186",
+      "n": "PEG-10/LAURYL DIMETHICONE CROSSPOLYMER",
+      "k": "57425"
+    },
+    "en:peg-15-lauryl-dimethicone-crosspolymer": {
+      "a": "III/186",
+      "n": "PEG-15/LAURYL DIMETHICONE CROSSPOLYMER",
+      "k": "57573"
+    },
+    "en:peg-25-paba": { "a": "VI/13", "n": "PEG-25 PABA", "k": "78130" },
+    "en:peg-90-polyepsilon-caprolactone": {
+      "a": "III/186",
+      "n": "PEG-90/POLYEPSILON CAPROLACTONE",
+      "k": "57523"
+    },
+    "en:peg-ppg-18-6-dimethicone": {
+      "a": "III/186",
+      "n": "PEG/PPG-18/6 DIMETHICONE",
+      "k": "83207"
+    },
+    "en:pentaclethramidopropyl-dimethylamine": {
+      "a": "III/62",
+      "n": "PENTACLETHRAMIDOPROPYL DIMETHYLAMINE",
+      "k": "95646"
+    },
+    "en:pentaerythrityl-tetraacrylate": {
+      "c": ["607-122-00-9", ["H317"]],
+      "n": "PENTAERYTHRITYL TETRAACRYLATE",
+      "k": "92116"
+    },
+    "en:pentasodium-pentetate": {
+      "c": ["607-736-00-7", ["H360D"]],
+      "n": "PENTASODIUM PENTETATE",
+      "k": "36485"
+    },
+    "en:pentetic-acid": { "c": ["607-735-00-1", ["H360D"]], "n": "PENTETIC ACID", "k": "36487" },
+    "en:perillaldehyde": { "a": "III/169", "n": "PERILLALDEHYDE", "k": "79499" },
+    "en:permethrin": { "c": ["613-058-00-2", ["H317"]], "n": "PERMETHRIN", "k": "59094" },
+    "en:petrolatum": { "a": "II/904", "n": "PETROLATUM", "k": "79504" },
+    "en:phenacetin": { "i": ["1", 2008], "n": "PHENACETIN", "k": "36517" },
+    "en:phenoxyethanol": { "a": "V/29", "n": "PHENOXYETHANOL", "k": "36522" },
+    "en:phenoxyisopropanol": { "a": "III/54", "n": "PHENOXYISOPROPANOL", "k": "36524" },
+    "en:phenyl-benzoate": { "a": "V/1a", "n": "PHENYL BENZOATE", "k": "36525" },
+    "en:phenyl-mercuric-acetate": { "a": "V/17", "n": "PHENYL MERCURIC ACETATE", "k": "36527" },
+    "en:phenyl-mercuric-benzoate": { "a": "V/17", "n": "PHENYL MERCURIC BENZOATE", "k": "36528" },
+    "en:phenyl-mercuric-bromide": { "a": "V/17", "n": "PHENYL MERCURIC BROMIDE", "k": "59212" },
+    "en:phenyl-methyl-pyrazolone": {
+      "a": "III/228",
+      "n": "PHENYL METHYL PYRAZOLONE",
+      "k": "36531"
+    },
+    "en:phenylmethylpentanal": {
+      "c": ["605-038-00-7", ["H317"]],
+      "n": "PHENYLMETHYLPENTANAL",
+      "k": "79705"
+    },
+    "en:phenylparaben": { "a": "II/1376", "n": "PHENYLPARABEN", "k": "36538" },
+    "en:phthalic-anhydride": {
+      "c": ["607-009-00-4", ["H317", "H334"]],
+      "n": "PHTHALIC ANHYDRIDE",
+      "k": "95928"
+    },
+    "en:picea-mariana-leaf-extract": {
+      "a": "III/118",
+      "n": "PICEA MARIANA LEAF EXTRACT",
+      "k": "79808"
+    },
+    "en:picea-mariana-leaf-oil": { "a": "III/118", "n": "PICEA MARIANA LEAF OIL", "k": "82448" },
+    "en:pinus-cembra-leaf-twig-oil": {
+      "a": "III/116",
+      "n": "PINUS CEMBRA LEAF/TWIG OIL",
+      "k": "89823"
+    },
+    "en:pinus-cembra-twig-leaf-extract": {
+      "a": "III/116",
+      "n": "PINUS CEMBRA TWIG LEAF EXTRACT",
+      "k": "41470"
+    },
+    "en:pinus-cembra-twig-leaf-extract-acetylated": {
+      "a": "III/117",
+      "n": "PINUS CEMBRA TWIG LEAF EXTRACT ACETYLATED",
+      "k": "41469"
+    },
+    "en:pinus-cembra-twig-leaf-oil": {
+      "a": "III/116",
+      "n": "PINUS CEMBRA TWIG LEAF OIL",
+      "k": "41471"
+    },
+    "en:pinus-mugo-leaf-oil": { "a": "III/109", "n": "PINUS MUGO LEAF OIL", "k": "83260" },
+    "en:pinus-mugo-pumilio-twig-leaf-extract": {
+      "a": "III/108",
+      "n": "PINUS MUGO PUMILIO TWIG LEAF EXTRACT",
+      "k": "41474"
+    },
+    "en:pinus-mugo-pumilio-twig-leaf-oil": {
+      "a": "III/108",
+      "n": "PINUS MUGO PUMILIO TWIG LEAF OIL",
+      "k": "41475"
+    },
+    "en:pinus-mugo-twig-leaf-extract": {
+      "a": "III/109",
+      "n": "PINUS MUGO TWIG LEAF EXTRACT",
+      "k": "41473"
+    },
+    "en:pinus-mugo-twig-oil": { "a": "III/109", "n": "PINUS MUGO TWIG OIL", "k": "41476" },
+    "en:pinus-nigra-twig-leaf-extract": {
+      "a": "III/111",
+      "n": "PINUS NIGRA TWIG LEAF EXTRACT",
+      "k": "41477"
+    },
+    "en:pinus-nigra-twig-leaf-oil": {
+      "a": "III/111",
+      "n": "PINUS NIGRA TWIG LEAF OIL",
+      "k": "41478"
+    },
+    "en:pinus-palustris-leaf-extract": {
+      "a": "III/112",
+      "n": "PINUS PALUSTRIS LEAF EXTRACT",
+      "k": "36587"
+    },
+    "en:pinus-palustris-oil": { "a": "III/112", "n": "PINUS PALUSTRIS OIL", "k": "79918" },
+    "en:pinus-palustris-twig-leaf-extract": {
+      "a": "III/112",
+      "n": "PINUS PALUSTRIS TWIG LEAF EXTRACT",
+      "k": "41479"
+    },
+    "en:pinus-palustris-twig-leaf-oil": {
+      "a": "III/112",
+      "n": "PINUS PALUSTRIS TWIG LEAF OIL",
+      "k": "41480"
+    },
+    "en:pinus-pinaster-leaf-twig-oil": {
+      "a": "III/113",
+      "n": "PINUS PINASTER LEAF/TWIG OIL",
+      "k": "89106"
+    },
+    "en:pinus-pinaster-twig-leaf-extract": {
+      "a": "III/113",
+      "n": "PINUS PINASTER TWIG LEAF EXTRACT",
+      "k": "41481"
+    },
+    "en:pinus-pinaster-twig-leaf-oil": {
+      "a": "III/113",
+      "n": "PINUS PINASTER TWIG LEAF OIL",
+      "k": "41482"
+    },
+    "en:pinus-pumila-twig-leaf-extract": {
+      "a": "III/114",
+      "n": "PINUS PUMILA TWIG LEAF EXTRACT",
+      "k": "41483"
+    },
+    "en:pinus-pumila-twig-leaf-oil": {
+      "a": "III/114",
+      "n": "PINUS PUMILA TWIG LEAF OIL",
+      "k": "41484"
+    },
+    "en:pinus-species-twig-leaf-extract": {
+      "a": "III/115",
+      "n": "PINUS SPECIES TWIG LEAF EXTRACT",
+      "k": "41485"
+    },
+    "en:pinus-species-twig-leaf-oil": {
+      "a": "III/115",
+      "n": "PINUS SPECIES TWIG LEAF OIL",
+      "k": "41486"
+    },
+    "en:pinus-strobus-bark-extract": {
+      "a": "III/115",
+      "n": "PINUS STROBUS BARK EXTRACT",
+      "k": "59494"
+    },
+    "en:pinus-strobus-cone-extract": {
+      "a": "III/115",
+      "n": "PINUS STROBUS CONE EXTRACT",
+      "k": "59495"
+    },
+    "en:pinus-strobus-twig-oil": { "a": "III/115", "n": "PINUS STROBUS TWIG OIL", "k": "83158" },
+    "en:pinus-sylvestris-bud-extract": {
+      "a": "III/110",
+      "n": "PINUS SYLVESTRIS BUD EXTRACT",
+      "k": "59497"
+    },
+    "en:pinus-sylvestris-cone-extract": {
+      "a": "III/110",
+      "n": "PINUS SYLVESTRIS CONE EXTRACT",
+      "k": "79924"
+    },
+    "en:pinus-sylvestris-leaf-extract": {
+      "a": "III/110",
+      "n": "PINUS SYLVESTRIS LEAF EXTRACT",
+      "k": "36599"
+    },
+    "en:pinus-sylvestris-leaf-oil": {
+      "a": "III/110",
+      "n": "PINUS SYLVESTRIS LEAF OIL",
+      "k": "59498"
+    },
+    "en:pinus-sylvestris-leaf-water": {
+      "a": "III/110",
+      "n": "PINUS SYLVESTRIS LEAF WATER",
+      "k": "59499"
+    },
+    "en:pinus-sylvestris-twig-leaf-extract": {
+      "a": "III/110",
+      "n": "PINUS SYLVESTRIS TWIG LEAF EXTRACT",
+      "k": "41487"
+    },
+    "en:pinus-sylvestris-twig-leaf-oil": {
+      "a": "III/110",
+      "n": "PINUS SYLVESTRIS TWIG LEAF OIL",
+      "k": "41488"
+    },
+    "en:piroctone-olamine": { "a": "III/61", "n": "PIROCTONE OLAMINE", "k": "36604" },
+    "en:poly-oxymethylene-melamine-acrylates-acrylamide": {
+      "a": "III/66",
+      "n": "POLY[OXYMETHYLENE MELAMINE ACRYLATES/ACRYLAMIDE]",
+      "k": "85388"
+    },
+    "en:polyacrylamide": { "a": "III/66", "n": "POLYACRYLAMIDE", "k": "36687" },
+    "en:polyacrylamidomethyl-benzylidene-camphor": {
+      "a": "VI/11",
+      "n": "POLYACRYLAMIDOMETHYL BENZYLIDENE CAMPHOR",
+      "k": "36688"
+    },
+    "en:polyacrylate-crosspolymer-3": {
+      "a": "III/66",
+      "n": "POLYACRYLATE CROSSPOLYMER-3",
+      "k": "86735"
+    },
+    "en:polyacrylate-crosspolymer-4": {
+      "a": "III/66",
+      "n": "POLYACRYLATE CROSSPOLYMER-4",
+      "k": "86831"
+    },
+    "en:polyacrylate-crosspolymer-8": {
+      "a": "III/66",
+      "n": "POLYACRYLATE CROSSPOLYMER-8",
+      "k": "88826"
+    },
+    "en:polyoxymethylene-resorcinol": {
+      "a": "III/22",
+      "n": "POLYOXYMETHYLENE RESORCINOL",
+      "k": "95995"
+    },
+    "en:polyquaternium-5": { "a": "III/66", "n": "POLYQUATERNIUM-5", "k": "36880" },
+    "en:polyquaternium-7": { "a": "III/66", "n": "POLYQUATERNIUM-7", "k": "36882" },
+    "en:polyquaternium-32": { "a": "III/66", "n": "POLYQUATERNIUM-32", "k": "79201" },
+    "en:polyquaternium-33": { "a": "III/66", "n": "POLYQUATERNIUM-33", "k": "79202" },
+    "en:polyquaternium-43": { "a": "III/66", "n": "POLYQUATERNIUM-43", "k": "58825" },
+    "en:polyquaternium-53": { "a": "III/66", "n": "POLYQUATERNIUM-53", "k": "58832" },
+    "en:polyquaternium-63": { "a": "III/66", "n": "POLYQUATERNIUM-63", "k": "58842" },
+    "en:polyquaternium-94": { "a": "III/66", "n": "POLYQUATERNIUM-94", "k": "85410" },
+    "en:polysilicone-15": { "a": "VI/26", "n": "POLYSILICONE-15", "k": "41309" },
+    "en:polyurethane-46": { "a": "III/62", "n": "POLYURETHANE-46", "k": "89070" },
+    "en:polyurethane-84": { "a": "II/201", "n": "POLYURETHANE-84", "k": "96146" },
+    "en:porphyridium-zinc-ferment": {
+      "a": "III/24",
+      "n": "PORPHYRIDIUM/ZINC FERMENT",
+      "k": "36924"
+    },
+    "en:potassium-ascorbylborate": { "a": "III/1a", "n": "POTASSIUM ASCORBYLBORATE", "k": "59028" },
+    "en:potassium-benzoate": { "a": "V/1a", "n": "POTASSIUM BENZOATE", "k": "36934" },
+    "en:potassium-borate": { "a": "III/1a", "n": "POTASSIUM BORATE", "k": "36937" },
+    "en:potassium-butylparaben": { "a": "V/12", "n": "POTASSIUM BUTYLPARABEN", "k": "36938" },
+    "en:potassium-chlorate": { "e": "II", "a": "III/6", "n": "POTASSIUM CHLORATE", "k": "36947" },
+    "en:potassium-ethylparaben": { "a": "V/12", "n": "POTASSIUM ETHYLPARABEN", "k": "36973" },
+    "en:potassium-fluoride": { "a": "III/32", "n": "POTASSIUM FLUORIDE", "k": "36974" },
+    "en:potassium-fluorosilicate": { "a": "III/41", "n": "POTASSIUM FLUOROSILICATE", "k": "36975" },
+    "en:potassium-fructoborate": { "a": "III/1a", "n": "POTASSIUM FRUCTOBORATE", "k": "59121" },
+    "en:potassium-hydroxide": { "a": "III/15a,", "n": "POTASSIUM HYDROXIDE", "k": "36981" },
+    "en:potassium-metabisulfite": { "a": "III/99", "n": "POTASSIUM METABISULFITE", "k": "36994" },
+    "en:potassium-methylparaben": { "a": "V/12", "n": "POTASSIUM METHYLPARABEN", "k": "36997" },
+    "en:potassium-o-phenylphenate": { "a": "V/7", "n": "POTASSIUM O-PHENYLPHENATE", "k": "37007" },
+    "en:potassium-paraben": { "a": "V/12", "n": "POTASSIUM PARABEN", "k": "37011" },
+    "en:potassium-persulfate": {
+      "c": ["016-061-00-1", ["H317", "H334"]],
+      "n": "POTASSIUM PERSULFATE",
+      "k": "37014"
+    },
+    "en:potassium-phenylbenzimidazole-sulfonate": {
+      "a": "VI/6",
+      "n": "POTASSIUM PHENYLBENZIMIDAZOLE SULFONATE",
+      "k": "37015"
+    },
+    "en:potassium-propionate": { "a": "V/2", "n": "POTASSIUM PROPIONATE", "k": "37018" },
+    "en:potassium-propylparaben": { "a": "V/12", "n": "POTASSIUM PROPYLPARABEN", "k": "37019" },
+    "en:potassium-salicylate": { "a": "V/3", "n": "POTASSIUM SALICYLATE", "k": "37022" },
+    "en:potassium-sorbate": { "a": "V/4", "n": "POTASSIUM SORBATE", "k": "37025" },
+    "en:potassium-sulfide": { "a": "III/23", "n": "POTASSIUM SULFIDE", "k": "79736" },
+    "en:potassium-sulfite": { "a": "III/99", "n": "POTASSIUM SULFITE", "k": "37031" },
+    "en:potassium-thioglycolate": { "a": "III/2a", "n": "POTASSIUM THIOGLYCOLATE", "k": "37035" },
+    "en:potassium-undecylenate": { "a": "V/18", "n": "POTASSIUM UNDECYLENATE", "k": "37039" },
+    "en:propionic-acid": { "a": "V/2", "n": "PROPIONIC ACID", "k": "37261" },
+    "en:propyl-benzoate": { "a": "V/1a", "n": "PROPYL BENZOATE", "k": "37266" },
+    "en:propyl-gallate": { "c": ["607-198-00-3", ["H317"]], "n": "PROPYL GALLATE", "k": "37267" },
+    "en:propylidene-phthalide": { "a": "III/175", "n": "PROPYLIDENE PHTHALIDE", "k": "41490" },
+    "en:propylparaben": { "e": "II", "a": "V/12", "n": "PROPYLPARABEN", "k": "37312" },
+    "en:pvp-hydrogen-peroxide": { "a": "III/12", "n": "PVP-HYDROGEN PEROXIDE", "k": "58778" },
+    "en:quaternium-15": {
+      "c": ["612-251-00-9", ["H317", "H361d"]],
+      "a": "VI/31",
+      "n": "QUATERNIUM-15",
+      "k": "37406"
+    },
+    "en:quinine": { "a": "III/21", "n": "QUININE", "k": "37459" },
+    "en:radium-ore-powder": { "a": "II/293", "n": "RADIUM ORE POWDER", "k": "95989" },
+    "en:red-petrolatum": { "a": "II/904", "n": "RED PETROLATUM", "k": "79458" },
+    "en:resorcinol": {
+      "c": ["604-010-00-1", ["H317"]],
+      "e": "II",
+      "a": "III/22",
+      "n": "RESORCINOL",
+      "k": "79461"
+    },
+    "en:rh-oligopeptide-4": { "a": "II/416", "n": "RH-OLIGOPEPTIDE-4", "k": "88086" },
+    "en:rh-oligopeptide-33": { "a": "II/416", "n": "RH-OLIGOPEPTIDE-33", "k": "88124" },
+    "en:rh-polypeptide-11-dipeptide-19-oligopeptide-91-hexapeptide-40": {
+      "a": "II/416",
+      "n": "RH-POLYPEPTIDE-11 DIPEPTIDE-19 OLIGOPEPTIDE-91 HEXAPEPTIDE-40",
+      "k": "89546"
+    },
+    "en:rh-polypeptide-33": { "a": "II/416", "n": "RH-POLYPEPTIDE-33", "k": "90081" },
+    "en:rh-polypeptide-45": { "a": "II/416", "n": "RH-POLYPEPTIDE-45", "k": "92965" },
+    "en:rh-polypeptide-47": { "a": "II/416", "n": "RH-POLYPEPTIDE-47", "k": "90040" },
+    "en:rh-polypeptide-51": { "a": "II/416", "n": "RH-POLYPEPTIDE-51", "k": "88122" },
+    "en:rh-polypeptide-52": { "a": "II/416", "n": "RH-POLYPEPTIDE-52", "k": "88123" },
+    "en:rh-polypeptide-58": { "a": "II/416", "n": "RH-POLYPEPTIDE-58", "k": "89893" },
+    "en:rh-polypeptide-59": { "a": "II/416", "n": "RH-POLYPEPTIDE-59", "k": "89798" },
+    "en:rh-polypeptide-60": { "a": "II/416", "n": "RH-POLYPEPTIDE-60", "k": "92963" },
+    "en:rh-polypeptide-61": { "a": "II/416", "n": "RH-POLYPEPTIDE-61", "k": "92971" },
+    "en:rh-polypeptide-62": { "a": "II/416", "n": "RH-POLYPEPTIDE-62", "k": "89018" },
+    "en:rh-polypeptide-63": { "a": "II/416", "n": "RH-POLYPEPTIDE-63", "k": "89928" },
+    "en:rh-polypeptide-64": { "a": "II/416", "n": "RH-POLYPEPTIDE-64", "k": "90037" },
+    "en:rh-polypeptide-65": { "a": "II/416", "n": "RH-POLYPEPTIDE-65", "k": "90135" },
+    "en:rh-polypeptide-66": { "a": "II/416", "n": "RH-POLYPEPTIDE-66", "k": "90342" },
+    "en:rh-polypeptide-67": { "a": "II/416", "n": "RH-POLYPEPTIDE-67", "k": "90343" },
+    "en:rh-polypeptide-68": { "a": "II/416", "n": "RH-POLYPEPTIDE-68", "k": "89618" },
+    "en:rh-polypeptide-69": { "a": "II/416", "n": "RH-POLYPEPTIDE-69", "k": "90440" },
+    "en:rh-polypeptide-79": { "a": "II/416", "n": "RH-POLYPEPTIDE-79", "k": "91571" },
+    "en:rh-polypeptide-82": { "a": "II/416", "n": "RH-POLYPEPTIDE-82", "k": "94629" },
+    "en:rh-polypeptide-83": { "a": "II/416", "n": "RH-POLYPEPTIDE-83", "k": "92260" },
+    "en:rh-polypeptide-84": { "a": "II/416", "n": "RH-POLYPEPTIDE-84", "k": "93398" },
+    "en:rh-polypeptide-87": { "a": "II/416", "n": "RH-POLYPEPTIDE-87", "k": "94095" },
+    "en:rh-polypeptide-88": { "a": "II/416", "n": "RH-POLYPEPTIDE-88", "k": "94096" },
+    "en:rh-polypeptide-96": { "a": "II/416", "n": "RH-POLYPEPTIDE-96", "k": "94372" },
+    "en:rh-rice-extract": { "a": "II/416", "n": "RH-RICE EXTRACT", "k": "94299" },
+    "en:rice-rh-oligopeptide-2": { "a": "II/416", "n": "RICE RH-OLIGOPEPTIDE-2", "k": "94300" },
+    "en:rice-rh-polypeptide-45": { "a": "II/416", "n": "RICE RH-POLYPEPTIDE-45", "k": "93853" },
+    "en:ricebranamide-dea": { "a": "III/60", "n": "RICEBRANAMIDE DEA", "k": "59251" },
+    "en:ricinoleamide-dea": { "a": "III/60", "n": "RICINOLEAMIDE DEA", "k": "37502" },
+    "en:rose-ketone-3": { "a": "III/161", "n": "ROSE KETONE-3", "k": "41491" },
+    "en:rose-ketone-4": { "a": "III/160", "n": "ROSE KETONE-4", "k": "41492" },
+    "en:rose-ketone-5": { "a": "III/164", "n": "ROSE KETONE-5", "k": "41493" },
+    "en:ruta-graveolens-herb-oil": { "a": "II/358", "n": "RUTA GRAVEOLENS HERB OIL", "k": "41495" },
+    "en:ruta-graveolens-leaf-root-stem-extract": {
+      "a": "II/358",
+      "n": "RUTA GRAVEOLENS LEAF/ROOT/STEM EXTRACT",
+      "k": "84274"
+    },
+    "en:saccharomyces-gold-ferment": {
+      "a": "II/296",
+      "n": "SACCHAROMYCES/GOLD FERMENT",
+      "k": "59535"
+    },
+    "en:saccharomyces-gold-ferment-lysate-filtrate": {
+      "a": "II/296",
+      "n": "SACCHAROMYCES/GOLD FERMENT LYSATE FILTRATE",
+      "k": "59536"
+    },
+    "en:saccharomyces-zinc-iron-germanium-copper-magnesium-silicon-ferment": {
+      "a": "III/24",
+      "n": "SACCHAROMYCES/ZINC/IRON/GERMANIUM/COPPER/MAGNESIUM/SILICON FERMENT",
+      "k": "59630"
+    },
+    "en:salicylic-acid": {
+      "c": ["607-732-00-5", ["H361d"]],
+      "e": "III",
+      "a": "III/98",
+      "n": "SALICYLIC ACID",
+      "k": "37595"
+    },
+    "en:sassafras-officinale-bark-extract": {
+      "a": "II/360",
+      "n": "SASSAFRAS OFFICINALE BARK EXTRACT",
+      "k": "83459"
+    },
+    "en:sassafras-officinale-bark-root-extract": {
+      "a": "II/360",
+      "n": "SASSAFRAS OFFICINALE BARK/ROOT EXTRACT",
+      "k": "58286"
+    },
+    "en:sassafras-officinale-root-oil": {
+      "a": "II/360",
+      "n": "SASSAFRAS OFFICINALE ROOT OIL",
+      "k": "58287"
+    },
+    "en:saturated-methylene-diphenyl-diisocyanate": {
+      "c": ["615-009-00-0", ["H317", "H334"]],
+      "n": "SATURATED METHYLENE DIPHENYL DIISOCYANATE",
+      "k": "95270"
+    },
+    "en:scentenal": { "a": "III/171", "n": "SCENTENAL", "k": "41100" },
+    "en:selenium-sulfide": { "a": "III/49", "n": "SELENIUM SULFIDE", "k": "37650" },
+    "en:sesamide-dea": { "a": "III/60", "n": "SESAMIDE DEA", "k": "37664" },
+    "en:sesamide-dipa": { "a": "III/60", "n": "SESAMIDE DIPA", "k": "82824" },
+    "en:sesqui-c12-16-alkanes": { "a": "II/881", "n": "SESQUI-C12-16 ALKANES", "k": "95620" },
+    "en:sh-polypeptide-56-rh-polypeptide-65": {
+      "a": "II/416",
+      "n": "SH-POLYPEPTIDE-56 RH-POLYPEPTIDE-65",
+      "k": "90085"
+    },
+    "en:sh-polypeptide-56-tripeptide-44-rh-polypeptide-7": {
+      "a": "II/416",
+      "n": "SH-POLYPEPTIDE-56 TRIPEPTIDE-44 RH-POLYPEPTIDE-7",
+      "k": "88537"
+    },
+    "en:silicon-carbide": {
+      "i": ["2A", 2014],
+      "c": ["014-048-00-5", ["H350i"]],
+      "n": "SILICON CARBIDE",
+      "k": "58519"
+    },
+    "en:silkworm-rh-polypeptide-47": {
+      "a": "II/416",
+      "n": "SILKWORM RH-POLYPEPTIDE-47",
+      "k": "94297"
+    },
+    "en:silkworm-rh-polypeptide-69": {
+      "a": "II/416",
+      "n": "SILKWORM RH-POLYPEPTIDE-69",
+      "k": "93865"
+    },
+    "en:silver": { "c": ["047-004-00-9", ["H361f"]], "n": "SILVER", "k": "91080" },
+    "en:silver-chloride": { "a": "V/52", "n": "SILVER CHLORIDE", "k": "37704" },
+    "en:silver-nitrate": { "a": "III/48", "n": "SILVER NITRATE", "k": "37706" },
+    "en:sodium-acrylate-sodium-acryloyldimethyl-taurate-acrylamide-copolymer": {
+      "a": "III/66",
+      "n": "SODIUM ACRYLATE/SODIUM ACRYLOYLDIMETHYL TAURATE/ACRYLAMIDE COPOLYMER",
+      "k": "58708"
+    },
+    "en:sodium-acryloyldimethyl-taurate-acrylamide-vp-copolymer": {
+      "a": "III/66",
+      "n": "SODIUM ACRYLOYLDIMETHYL TAURATE/ACRYLAMIDE/VP COPOLYMER",
+      "k": "58714"
+    },
+    "en:sodium-benzoate": { "a": "V/1", "n": "SODIUM BENZOATE", "k": "37735" },
+    "en:sodium-bisulfite": { "a": "III/99", "n": "SODIUM BISULFITE", "k": "37740" },
+    "en:sodium-borate": {
+      "c": ["005-011-00-4[2]", ["H360FD"]],
+      "a": "III/1a",
+      "n": "SODIUM BORATE",
+      "k": "37742"
+    },
+    "en:sodium-butylparaben": { "a": "V/12", "n": "SODIUM BUTYLPARABEN", "k": "37746" },
+    "en:sodium-chlorate": { "e": "II", "a": "III/6", "n": "SODIUM CHLORATE", "k": "37812" },
+    "en:sodium-dehydroacetate": { "a": "V/13", "n": "SODIUM DEHYDROACETATE", "k": "37851" },
+    "en:sodium-ethylparaben": { "a": "V/12", "n": "SODIUM ETHYLPARABEN", "k": "37868" },
+    "en:sodium-fluoride": { "e": "II", "a": "III/31", "n": "SODIUM FLUORIDE", "k": "37869" },
+    "en:sodium-fluorosilicate": { "a": "III/40", "n": "SODIUM FLUOROSILICATE", "k": "37870" },
+    "en:sodium-formate": { "a": "V/14", "n": "SODIUM FORMATE", "k": "37871" },
+    "en:sodium-fructoborate": { "a": "III/1a", "n": "SODIUM FRUCTOBORATE", "k": "59078" },
+    "en:sodium-hydroxide": { "a": "III/15a", "n": "SODIUM HYDROXIDE", "k": "37890" },
+    "en:sodium-hydroxymethylglycinate": {
+      "c": ["607-746-00-1", ["H317", "H341", "H350"]],
+      "a": "V/51",
+      "n": "SODIUM HYDROXYMETHYLGLYCINATE",
+      "k": "37892"
+    },
+    "en:sodium-isobutylparaben": { "a": "II/1375", "n": "SODIUM ISOBUTYLPARABEN", "k": "41540" },
+    "en:sodium-isopropylparaben": { "a": "VI/12", "n": "SODIUM ISOPROPYLPARABEN", "k": "59176" },
+    "en:sodium-m-nitrobenzenesulfonate": {
+      "c": ["609-048-00-2", ["H317"]],
+      "n": "SODIUM M-NITROBENZENESULFONATE",
+      "k": "37970"
+    },
+    "en:sodium-mea-laureth-2-sulfosuccinate": {
+      "a": "III/61",
+      "n": "SODIUM/MEA LAURETH-2 SULFOSUCCINATE",
+      "k": "80238"
+    },
+    "en:sodium-mea-peg-3-cocamide-sulfate": {
+      "a": "III/61",
+      "n": "SODIUM/MEA-PEG-3 COCAMIDE SULFATE",
+      "k": "59734"
+    },
+    "en:sodium-metabisulfite": { "a": "III/99", "n": "SODIUM METABISULFITE", "k": "37956" },
+    "en:sodium-methylparaben": { "a": "V/12", "n": "SODIUM METHYLPARABEN", "k": "37968" },
+    "en:sodium-monofluorophosphate": {
+      "a": "III/27",
+      "n": "SODIUM MONOFLUOROPHOSPHATE",
+      "k": "37971"
+    },
+    "en:sodium-nitrite": { "a": "III/17", "n": "SODIUM NITRITE", "k": "37980" },
+    "en:sodium-oxalate": { "a": "III/3", "n": "SODIUM OXALATE", "k": "38007" },
+    "en:sodium-paraben": { "a": "V/12", "n": "SODIUM PARABEN", "k": "38016" },
+    "en:sodium-perborate": {
+      "c": ["005-022-00-4[1]", ["H360FD"]],
+      "a": "III/1a",
+      "n": "SODIUM PERBORATE",
+      "k": "38025"
+    },
+    "en:sodium-phenylbenzimidazole-sulfonate": {
+      "a": "VI/6",
+      "n": "SODIUM PHENYLBENZIMIDAZOLE SULFONATE",
+      "k": "38029"
+    },
+    "en:sodium-phenylnonanoate-sulfonate": {
+      "c": ["607-651-00-5", ["H317"]],
+      "n": "SODIUM PHENYLNONANOATE SULFONATE",
+      "k": "91606"
+    },
+    "en:sodium-propionate": {
+      "c": ["607-277-00-2", ["H317"]],
+      "a": "V/2",
+      "n": "SODIUM PROPIONATE",
+      "k": "38042"
+    },
+    "en:sodium-propylparaben": { "a": "V/12", "n": "SODIUM PROPYLPARABEN", "k": "38044" },
+    "en:sodium-salicylate": { "a": "V/3", "n": "SODIUM SALICYLATE", "k": "38052" },
+    "en:sodium-sorbate": { "a": "V/4", "n": "SODIUM SORBATE", "k": "38059" },
+    "en:sodium-sulfide": { "a": "III/23", "n": "SODIUM SULFIDE", "k": "38094" },
+    "en:sodium-sulfite": { "a": "III/99", "n": "SODIUM SULFITE", "k": "38095" },
+    "en:sodium-tea-c12-13-pareth-3-sulfate": {
+      "a": "III/62",
+      "n": "SODIUM/TEA C12-13 PARETH-3 SULFATE",
+      "k": "59735"
+    },
+    "en:sodium-tea-lauroyl-collagen-amino-acids": {
+      "a": "III/62",
+      "n": "SODIUM/TEA-LAUROYL COLLAGEN AMINO ACIDS",
+      "k": "80239"
+    },
+    "en:sodium-tea-lauroyl-hydrolyzed-collagen": {
+      "a": "III/62",
+      "n": "SODIUM/TEA-LAUROYL HYDROLYZED COLLAGEN",
+      "k": "80240"
+    },
+    "en:sodium-tea-lauroyl-hydrolyzed-keratin": {
+      "a": "III/62",
+      "n": "SODIUM/TEA-LAUROYL HYDROLYZED KERATIN",
+      "k": "80241"
+    },
+    "en:sodium-tea-lauroyl-keratin-amino-acids": {
+      "a": "III/62",
+      "n": "SODIUM/TEA-LAUROYL KERATIN AMINO ACIDS",
+      "k": "80242"
+    },
+    "en:sodium-tea-undecylenoyl-alginate": {
+      "a": "III/62",
+      "n": "SODIUM/TEA-UNDECYLENOYL ALGINATE",
+      "k": "38127"
+    },
+    "en:sodium-tea-undecylenoyl-carrageenan": {
+      "a": "III/62",
+      "n": "SODIUM/TEA-UNDECYLENOYL CARRAGEENAN",
+      "k": "38128"
+    },
+    "en:sodium-tea-undecylenoyl-collagen-amino-acids": {
+      "a": "III/62",
+      "n": "SODIUM/TEA-UNDECYLENOYL COLLAGEN AMINO ACIDS",
+      "k": "78518"
+    },
+    "en:sodium-tea-undecylenoyl-hydrolyzed-collagen": {
+      "a": "III/62",
+      "n": "SODIUM/TEA-UNDECYLENOYL HYDROLYZED COLLAGEN",
+      "k": "78519"
+    },
+    "en:sodium-tea-undecylenoyl-hydrolyzed-corn-protein": {
+      "a": "III/62",
+      "n": "SODIUM/TEA-UNDECYLENOYL HYDROLYZED CORN PROTEIN",
+      "k": "78520"
+    },
+    "en:sodium-tea-undecylenoyl-hydrolyzed-soy-protein": {
+      "a": "III/62",
+      "n": "SODIUM/TEA-UNDECYLENOYL HYDROLYZED SOY PROTEIN",
+      "k": "78521"
+    },
+    "en:sodium-tea-undecylenoyl-hydrolyzed-wheat-protein": {
+      "a": "III/62",
+      "n": "SODIUM/TEA-UNDECYLENOYL HYDROLYZED WHEAT PROTEIN",
+      "k": "78522"
+    },
+    "en:sodium-thioglycolate": { "a": "III/2a", "n": "SODIUM THIOGLYCOLATE", "k": "38102" },
+    "en:sodium-undecylenate": { "a": "V/18", "n": "SODIUM UNDECYLENATE", "k": "38116" },
+    "en:sodium-zinc-cetyl-phosphate": {
+      "a": "III/24",
+      "n": "SODIUM ZINC CETYL PHOSPHATE",
+      "k": "59732"
+    },
+    "en:sodium-zinc-taurine-dithiooctanamide": {
+      "a": "III/24",
+      "n": "SODIUM ZINC TAURINE DITHIOOCTANAMIDE",
+      "k": "85703"
+    },
+    "en:sorbic-acid": { "a": "V/4", "n": "SORBIC ACID", "k": "38173" },
+    "en:soyamide-dea": { "a": "III/60", "n": "SOYAMIDE DEA", "k": "38202" },
+    "en:soyamine": { "a": "III/61", "n": "SOYAMINE", "k": "38209" },
+    "en:soytrimonium-chloride": { "a": "V/44", "n": "SOYTRIMONIUM CHLORIDE", "k": "38214" },
+    "en:stannous-fluoride": { "a": "III/35", "n": "STANNOUS FLUORIDE", "k": "38231" },
+    "en:starch-acrylates-acrylamide-copolymer": {
+      "a": "III/66",
+      "n": "STARCH/ACRYLATES/ACRYLAMIDE COPOLYMER",
+      "k": "38234"
+    },
+    "en:stearalkonium-chloride": { "a": "III/65", "n": "STEARALKONIUM CHLORIDE", "k": "38237" },
+    "en:stearamide-dea": { "a": "III/60", "n": "STEARAMIDE DEA", "k": "38242" },
+    "en:stearamine": { "a": "III/61", "n": "STEARAMINE", "k": "38267" },
+    "en:steartrimonium-bromide": { "a": "V/44", "n": "STEARTRIMONIUM BROMIDE", "k": "38312" },
+    "en:steartrimonium-chloride": { "a": "V/44", "n": "STEARTRIMONIUM CHLORIDE", "k": "38313" },
+    "en:strontium-acetate": { "a": "III/58", "n": "STRONTIUM ACETATE", "k": "38353" },
+    "en:strontium-chloride": { "a": "III/57", "n": "STRONTIUM CHLORIDE", "k": "38354" },
+    "en:strontium-chloride-hexahydrate": {
+      "a": "III/57",
+      "n": "STRONTIUM CHLORIDE HEXAHYDRATE",
+      "k": "58895"
+    },
+    "en:strontium-hydroxide": { "a": "III/63", "n": "STRONTIUM HYDROXIDE", "k": "38355" },
+    "en:strontium-peroxide": { "a": "III/12", "n": "STRONTIUM PEROXIDE", "k": "38356" },
+    "en:strontium-sulfide": { "a": "III/23", "n": "STRONTIUM SULFIDE", "k": "38357" },
+    "en:strontium-thioglycolate": { "a": "III/2a", "n": "STRONTIUM THIOGLYCOLATE", "k": "38358" },
+    "en:styrene": {
+      "i": ["2A", 2018],
+      "c": ["601-026-00-0", ["H361d"]],
+      "n": "STYRENE",
+      "k": "41112"
+    },
+    "en:styrene-oxide": {
+      "i": ["2A", 2018],
+      "c": ["603-084-00-2", ["H350"]],
+      "n": "STYRENE OXIDE",
+      "k": "95931"
+    },
+    "en:subtilisin": { "c": ["647-012-00-8", ["H334"]], "n": "SUBTILISIN", "k": "79312" },
+    "en:succinic-anhydride": {
+      "c": ["607-103-00-5", ["H317", "H334"]],
+      "n": "SUCCINIC ANHYDRIDE",
+      "k": "95938"
+    },
+    "en:sulfurized-tea-ricinoleate": {
+      "a": "III/62",
+      "n": "SULFURIZED TEA-RICINOLEATE",
+      "k": "38412"
+    },
+    "en:sunfloweramide-mea": { "a": "III/61", "n": "SUNFLOWERAMIDE MEA", "k": "83859" },
+    "en:t-butyl-methyl-ether": { "i": ["2B", 2025], "n": "T-BUTYL METHYL ETHER", "k": "85681" },
+    "en:t-butylaminoethyl-methacrylate": {
+      "c": ["607-128-00-1", ["H317"]],
+      "n": "T-BUTYLAMINOETHYL METHACRYLATE",
+      "k": "95925"
+    },
+    "en:talc": { "i": ["2A", 2024], "a": "III/59", "n": "TALC", "k": "38438" },
+    "en:tallamide-dea": { "a": "III/60", "n": "TALLAMIDE DEA", "k": "38444" },
+    "en:tallowalkonium-chloride": { "a": "III/65", "n": "TALLOWALKONIUM CHLORIDE", "k": "38456" },
+    "en:tallowamide-dea": { "a": "III/60", "n": "TALLOWAMIDE DEA", "k": "38457" },
+    "en:tallowtrimonium-chloride": { "a": "V/44", "n": "TALLOWTRIMONIUM CHLORIDE", "k": "38468" },
+    "en:tea-abietoyl-hydrolyzed-collagen": {
+      "a": "III/62",
+      "n": "TEA-ABIETOYL HYDROLYZED COLLAGEN",
+      "k": "80605"
+    },
+    "en:tea-acrylates-acrylonitrogens-copolymer": {
+      "a": "III/62",
+      "n": "TEA-ACRYLATES/ACRYLONITROGENS COPOLYMER",
+      "k": "80606"
+    },
+    "en:tea-acrylates-ethylhexyl-acrylate-copolymer": {
+      "a": "III/62",
+      "n": "TEA-ACRYLATES/ETHYLHEXYL ACRYLATE COPOLYMER",
+      "k": "60082"
+    },
+    "en:tea-c8-18-perfluoroalkylethyl-phosphate": {
+      "a": "III/62",
+      "n": "TEA-C8-18 PERFLUOROALKYLETHYL PHOSPHATE",
+      "k": "82544"
+    },
+    "en:tea-c10-15-alkyl-sulfate": { "a": "III/62", "n": "TEA-C10-15 ALKYL SULFATE", "k": "38484" },
+    "en:tea-c11-15-alkyl-sulfate": { "a": "III/62", "n": "TEA-C11-15 ALKYL SULFATE", "k": "60084" },
+    "en:tea-c11-15-pareth-sulfate": {
+      "a": "III/62",
+      "n": "TEA-C11-15 PARETH SULFATE",
+      "k": "60169"
+    },
+    "en:tea-c12-13-alkyl-phosphate": {
+      "a": "III/62",
+      "n": "TEA-C12-13 ALKYL PHOSPHATE",
+      "k": "60118"
+    },
+    "en:tea-c12-13-alkyl-sulfate": { "a": "III/62", "n": "TEA-C12-13 ALKYL SULFATE", "k": "38485" },
+    "en:tea-c12-13-pareth-3-sulfate": {
+      "a": "III/62",
+      "n": "TEA-C12-13 PARETH-3 SULFATE",
+      "k": "60119"
+    },
+    "en:tea-c12-14-alkyl-phosphate": {
+      "a": "III/62",
+      "n": "TEA-C12-14 ALKYL PHOSPHATE",
+      "k": "60120"
+    },
+    "en:tea-c12-14-alkyl-sulfate": { "a": "III/62", "n": "TEA-C12-14 ALKYL SULFATE", "k": "38486" },
+    "en:tea-c12-15-alkyl-sulfate": { "a": "III/62", "n": "TEA-C12-15 ALKYL SULFATE", "k": "38487" },
+    "en:tea-c14-17-alkyl-sec-sulfonate": {
+      "a": "III/62",
+      "n": "TEA C14-17 ALKYL SEC SULFONATE",
+      "k": "86878"
+    },
+    "en:tea-canolate": { "a": "III/62", "n": "TEA-CANOLATE", "k": "80626" },
+    "en:tea-carbomer": { "a": "III/62", "n": "TEA-CARBOMER", "k": "80627" },
+    "en:tea-cocamide-diacetate": { "a": "III/62", "n": "TEA-COCAMIDE DIACETATE", "k": "60121" },
+    "en:tea-coco-sulfate": { "a": "III/62", "n": "TEA-COCO-SULFATE", "k": "80629" },
+    "en:tea-cocoate": { "a": "III/62", "n": "TEA-COCOATE", "k": "38490" },
+    "en:tea-cocoyl-alaninate": { "a": "III/62", "n": "TEA-COCOYL ALANINATE", "k": "60122" },
+    "en:tea-cocoyl-glutamate": { "a": "III/62", "n": "TEA-COCOYL GLUTAMATE", "k": "38492" },
+    "en:tea-cocoyl-glutaminate": { "a": "III/62", "n": "TEA-COCOYL GLUTAMINATE", "k": "60123" },
+    "en:tea-cocoyl-glycinate": { "a": "III/62", "n": "TEA-COCOYL GLYCINATE", "k": "60124" },
+    "en:tea-cocoyl-hydrolyzed-collagen": {
+      "a": "III/62",
+      "n": "TEA-COCOYL HYDROLYZED COLLAGEN",
+      "k": "38493"
+    },
+    "en:tea-cocoyl-hydrolyzed-soy-protein": {
+      "a": "III/62",
+      "n": "TEA-COCOYL HYDROLYZED SOY PROTEIN",
+      "k": "80632"
+    },
+    "en:tea-cocoyl-sarcosinate": { "a": "III/62", "n": "TEA-COCOYL SARCOSINATE", "k": "38495" },
+    "en:tea-dextrin-octenylsuccinate": {
+      "a": "III/62",
+      "n": "TEA-DEXTRIN OCTENYLSUCCINATE",
+      "k": "60125"
+    },
+    "en:tea-diethanolaminoethyl-polyisobutenylsuccinate": {
+      "a": "III/62",
+      "n": "TEA-DIETHANOLAMINOETHYL POLYISOBUTENYLSUCCINATE",
+      "k": "60126"
+    },
+    "en:tea-dimethicone-peg-7-phosphate": {
+      "a": "III/62",
+      "n": "TEA-DIMETHICONE PEG-7 PHOSPHATE",
+      "k": "60127"
+    },
+    "en:tea-dodecylbenzenesulfonate": {
+      "a": "III/62",
+      "n": "TEA-DODECYLBENZENESULFONATE",
+      "k": "80634"
+    },
+    "en:tea-glyceryl-dimaleate": { "a": "III/62", "n": "TEA-GLYCERYL DIMALEATE", "k": "60130" },
+    "en:tea-hydrochloride": { "a": "III/62", "n": "TEA-HYDROCHLORIDE", "k": "38499" },
+    "en:tea-hydrogenated-cocoate": { "a": "III/62", "n": "TEA-HYDROGENATED COCOATE", "k": "60131" },
+    "en:tea-hydrogenated-tallowoyl-glutamate": {
+      "a": "III/62",
+      "n": "TEA-HYDROGENATED TALLOWOYL GLUTAMATE",
+      "k": "60132"
+    },
+    "en:tea-hydroiodide": { "a": "III/62", "n": "TEA-HYDROIODIDE", "k": "80637" },
+    "en:tea-isostearate": { "a": "III/62", "n": "TEA-ISOSTEARATE", "k": "80638" },
+    "en:tea-isostearoyl-hydrolyzed-collagen": {
+      "a": "III/62",
+      "n": "TEA-ISOSTEAROYL HYDROLYZED COLLAGEN",
+      "k": "80639"
+    },
+    "en:tea-laneth-5-sulfate": { "a": "III/62", "n": "TEA-LANETH-5 SULFATE", "k": "80641" },
+    "en:tea-lauraminopropionate": { "a": "III/62", "n": "TEA-LAURAMINOPROPIONATE", "k": "80642" },
+    "en:tea-laurate": { "a": "III/62", "n": "TEA-LAURATE", "k": "80643" },
+    "en:tea-laurate-myristate": { "a": "III/62", "n": "TEA-LAURATE/MYRISTATE", "k": "60133" },
+    "en:tea-laureth-4-phosphate": { "a": "III/62", "n": "TEA-LAURETH-4 PHOSPHATE", "k": "60134" },
+    "en:tea-laureth-sulfate": { "a": "III/62", "n": "TEA-LAURETH SULFATE", "k": "80644" },
+    "en:tea-lauroyl-collagen-amino-acids": {
+      "a": "III/62",
+      "n": "TEA-LAUROYL COLLAGEN AMINO ACIDS",
+      "k": "80645"
+    },
+    "en:tea-lauroyl-glutamate": { "a": "III/62", "n": "TEA-LAUROYL GLUTAMATE", "k": "38510" },
+    "en:tea-lauroyl-hydrolyzed-collagen": {
+      "a": "III/62",
+      "n": "TEA-LAUROYL HYDROLYZED COLLAGEN",
+      "k": "80647"
+    },
+    "en:tea-lauroyl-keratin-amino-acids": {
+      "a": "III/62",
+      "n": "TEA-LAUROYL KERATIN AMINO ACIDS",
+      "k": "80648"
+    },
+    "en:tea-lauroyl-lactylate": { "a": "III/62", "n": "TEA-LAUROYL LACTYLATE", "k": "38513" },
+    "en:tea-lauroyl-methylaminopropionate": {
+      "a": "III/62",
+      "n": "TEA-LAUROYL METHYLAMINOPROPIONATE",
+      "k": "38514"
+    },
+    "en:tea-lauroyl-myristoyl-aspartate": {
+      "a": "III/62",
+      "n": "TEA-LAUROYL/MYRISTOYL ASPARTATE",
+      "k": "60170"
+    },
+    "en:tea-lauroyl-sarcosinate": { "a": "III/62", "n": "TEA-LAUROYL SARCOSINATE", "k": "80663" },
+    "en:tea-lauryl-phosphate": { "a": "III/62", "n": "TEA-LAURYL PHOSPHATE", "k": "60171" },
+    "en:tea-lauryl-sulfate": { "a": "III/62", "n": "TEA-LAURYL SULFATE", "k": "38517" },
+    "en:tea-myristaminopropionate": {
+      "a": "III/62",
+      "n": "TEA-MYRISTAMINOPROPIONATE",
+      "k": "80666"
+    },
+    "en:tea-myristate": { "a": "III/62", "n": "TEA-MYRISTATE", "k": "38519" },
+    "en:tea-myristoyl-hydrolyzed-collagen": {
+      "a": "III/62",
+      "n": "TEA-MYRISTOYL HYDROLYZED COLLAGEN",
+      "k": "80668"
+    },
+    "en:tea-oleate": { "a": "III/62", "n": "TEA-OLEATE", "k": "38521" },
+    "en:tea-oleoyl-hydrolyzed-collagen": {
+      "a": "III/62",
+      "n": "TEA-OLEOYL HYDROLYZED COLLAGEN",
+      "k": "80670"
+    },
+    "en:tea-oleoyl-sarcosinate": { "a": "III/62", "n": "TEA-OLEOYL SARCOSINATE", "k": "80671" },
+    "en:tea-oleyl-sulfate": { "a": "III/62", "n": "TEA-OLEYL SULFATE", "k": "80672" },
+    "en:tea-palm-kernel-sarcosinate": {
+      "a": "III/62",
+      "n": "TEA-PALM KERNEL SARCOSINATE",
+      "k": "80673"
+    },
+    "en:tea-palmitate": { "a": "III/62", "n": "TEA-PALMITATE", "k": "38526" },
+    "en:tea-peg-3-cocamide-sulfate": {
+      "a": "III/62",
+      "n": "TEA-PEG-3 COCAMIDE SULFATE",
+      "k": "38528"
+    },
+    "en:tea-peg-50-hydrogenated-castor-oil-succinate": {
+      "a": "III/62",
+      "n": "TEA-PEG-50 HYDROGENATED CASTOR OIL SUCCINATE",
+      "k": "60172"
+    },
+    "en:tea-phenylbenzimidazole-sulfonate": {
+      "a": "III/62",
+      "n": "TEA-PHENYLBENZIMIDAZOLE SULFONATE",
+      "k": "38529"
+    },
+    "en:tea-rosinate": { "a": "III/62", "n": "TEA-ROSINATE", "k": "80679" },
+    "en:tea-sorbate": { "a": "III/62", "n": "TEA-SORBATE", "k": "38533" },
+    "en:tea-stearate": { "a": "III/62", "n": "TEA-STEARATE", "k": "38534" },
+    "en:tea-tallate": { "a": "III/62", "n": "TEA-TALLATE", "k": "38536" },
+    "en:tea-tridecylbenzenesulfonate": {
+      "a": "III/62",
+      "n": "TEA-TRIDECYLBENZENESULFONATE",
+      "k": "38537"
+    },
+    "en:tea-undecylenate": { "a": "III/62", "n": "TEA-UNDECYLENATE", "k": "38538" },
+    "en:tea-undecylenoyl-hydrolyzed-collagen": {
+      "a": "III/62",
+      "n": "TEA-UNDECYLENOYL HYDROLYZED COLLAGEN",
+      "k": "80687"
+    },
+    "en:terephthalylidene-dicamphor-sulfonic-acid": {
+      "a": "VI/7",
+      "n": "TEREPHTHALYLIDENE DICAMPHOR SULFONIC ACID",
+      "k": "38544"
+    },
+    "en:terpene-alcohols-acetates": {
+      "a": "III/127",
+      "n": "TERPENE ALCOHOLS ACETATES",
+      "k": "41507"
+    },
+    "en:terpenes-and-terpenoids-sinpine": {
+      "a": "III/130",
+      "n": "TERPENES AND TERPENOIDS SINPINE",
+      "k": "41510"
+    },
+    "en:terpinolene": { "a": "III/133", "n": "TERPINOLENE", "k": "41511" },
+    "en:tetrahydro-methyl-propyl-pyran-4-olacetate": {
+      "c": ["607-357-00-7", ["H317"]],
+      "n": "TETRAHYDRO-METHYL-PROPYL-PYRAN-4-OLACETATE",
+      "k": "41037"
+    },
+    "en:tetrahydrofurfuryl-alcohol": {
+      "c": ["603-061-00-7", ["H360Df"]],
+      "n": "TETRAHYDROFURFURYL ALCOHOL",
+      "k": "80723"
+    },
+    "en:tetramethrin": { "c": ["607-727-00-8", ["H351"]], "n": "TETRAMETHRIN", "k": "60243" },
+    "en:tetrapotassium-etidronate": {
+      "a": "III/53",
+      "n": "TETRAPOTASSIUM ETIDRONATE",
+      "k": "38566"
+    },
+    "en:tetrasodium-etidronate": { "a": "III/53", "n": "TETRASODIUM ETIDRONATE", "k": "38570" },
+    "en:theophylline": { "c": ["613-342-00-6", ["H360D"]], "n": "THEOPHYLLINE", "k": "38578" },
+    "en:thiabendazole": { "e": "II", "n": "THIABENDAZOLE", "k": "38579" },
+    "en:thimerosal": { "a": "V/16", "n": "THIMEROSAL", "k": "38582" },
+    "en:thioglycolic-acid": { "a": "III/2a", "n": "THIOGLYCOLIC ACID", "k": "38587" },
+    "en:thuja-occidentalis-bark-extract": {
+      "a": "III/119",
+      "n": "THUJA OCCIDENTALIS BARK EXTRACT",
+      "k": "59764"
+    },
+    "en:thuja-occidentalis-leaf-oil": {
+      "a": "III/119",
+      "n": "THUJA OCCIDENTALIS LEAF OIL",
+      "k": "80246"
+    },
+    "en:thuja-occidentalis-root-extract": {
+      "a": "III/119",
+      "n": "THUJA OCCIDENTALIS ROOT EXTRACT",
+      "k": "59737"
+    },
+    "en:thuja-occidentalis-stem-extract": {
+      "a": "III/119",
+      "n": "THUJA OCCIDENTALIS STEM EXTRACT",
+      "k": "41514"
+    },
+    "en:thuja-occidentalis-stem-oil": {
+      "a": "III/119",
+      "n": "THUJA OCCIDENTALIS STEM OIL",
+      "k": "41515"
+    },
+    "en:tipa-acrylates-ethylhexyl-acrylate-copolymer": {
+      "a": "III/62",
+      "n": "TIPA-ACRYLATES/ETHYLHEXYL ACRYLATE COPOLYMER",
+      "k": "59765"
+    },
+    "en:tipa-c12-14-pareth-3-acetate": {
+      "a": "III/62",
+      "n": "TIPA-C12-14 PARETH-3 ACETATE",
+      "k": "96144"
+    },
+    "en:tipa-laureth-sulfate": { "a": "III/62", "n": "TIPA-LAURETH SULFATE", "k": "38614" },
+    "en:tipa-lauroyl-sarcosinate": { "a": "III/62", "n": "TIPA-LAUROYL SARCOSINATE", "k": "95593" },
+    "en:tipa-lauryl-sulfate": { "a": "III/62", "n": "TIPA-LAURYL SULFATE", "k": "80263" },
+    "en:tipa-myristate": { "a": "III/62", "n": "TIPA-MYRISTATE", "k": "59766" },
+    "en:tipa-stearate": { "a": "III/62", "n": "TIPA-STEARATE", "k": "80264" },
+    "en:titanium-dioxide": {
+      "i": ["2B", 2006],
+      "c": ["022-006-00-2", ["H351"]],
+      "n": "TITANIUM DIOXIDE",
+      "k": "38617"
+    },
+    "en:toluene": {
+      "c": ["601-021-00-3", ["H361d"]],
+      "a": "III/185",
+      "n": "TOLUENE",
+      "k": "80281"
+    },
+    "en:toluene-2-5-diamine": {
+      "c": ["612-125-00-3", ["H317"]],
+      "a": "III/9a",
+      "n": "TOLUENE-2‚5-DIAMINE",
+      "k": "38635"
+    },
+    "en:toluene-diisocyanate": {
+      "c": ["615-006-00-4[1]", ["H317", "H334", "H351"]],
+      "n": "TOLUENE DIISOCYANATE",
+      "k": "95283"
+    },
+    "en:tosylamide": { "a": "II/307", "n": "TOSYLAMIDE", "k": "59784" },
+    "en:trans-rose-ketone-2": { "a": "III/158", "n": "TRANS-ROSE KETONE-2", "k": "41518" },
+    "en:trans-rose-ketone-3": { "a": "III/165", "n": "TRANS-ROSE KETONE-3", "k": "41519" },
+    "en:trans-rose-ketone-5": { "a": "III/159", "n": "TRANS-ROSE KETONE-5", "k": "41520" },
+    "en:transgenic-nematode-rh-polypeptide-47": {
+      "a": "II/416",
+      "n": "TRANSGENIC NEMATODE RH-POLYPEPTIDE-47",
+      "k": "89942"
+    },
+    "en:transgenic-rice-rh-oligopeptide-2": {
+      "a": "II/416",
+      "n": "TRANSGENIC RICE RH-OLIGOPEPTIDE-2",
+      "k": "90090"
+    },
+    "en:transgenic-rice-rh-polypeptide-45": {
+      "a": "II/416",
+      "n": "TRANSGENIC RICE RH-POLYPEPTIDE-45",
+      "k": "87484"
+    },
+    "en:transgenic-silkworm-rh-oligopeptide-2": {
+      "a": "II/416",
+      "n": "TRANSGENIC SILKWORM RH-OLIGOPEPTIDE-2",
+      "k": "89869"
+    },
+    "en:transgenic-silkworm-rh-polypeptide-47": {
+      "a": "II/416",
+      "n": "TRANSGENIC SILKWORM RH-POLYPEPTIDE-47",
+      "k": "89941"
+    },
+    "en:transgenic-silkworm-rh-polypeptide-69": {
+      "a": "II/416",
+      "n": "TRANSGENIC SILKWORM RH-POLYPEPTIDE-69",
+      "k": "91582"
+    },
+    "en:transgenic-tobacco-rh-oligopeptide-1": {
+      "a": "II/416",
+      "n": "TRANSGENIC TOBACCO RH-OLIGOPEPTIDE-1",
+      "k": "88257"
+    },
+    "en:trichloroethane": { "i": ["2A", 2021], "n": "TRICHLOROETHANE", "k": "38660" },
+    "en:triclocarban": { "e": "III", "a": "III/100", "n": "TRICLOCARBAN", "k": "38662" },
+    "en:triclosan": { "e": "II", "a": "V/25", "n": "TRICLOSAN", "k": "38663" },
+    "en:triethanolamine": { "a": "III/62", "n": "TRIETHANOLAMINE", "k": "38702" },
+    "en:triethanolamine-polyoxyethylene-alkylphenylether-phosphate": {
+      "a": "III/62",
+      "n": "TRIETHANOLAMINE POLYOXYETHYLENE ALKYLPHENYLETHER PHOSPHATE",
+      "k": "59821"
+    },
+    "en:triethyl-phosphate": { "e": "II", "n": "TRIETHYL PHOSPHATE", "k": "59826" },
+    "en:triethylhexyl-trimellitate": { "e": "II", "n": "TRIETHYLHEXYL TRIMELLITATE", "k": "80356" },
+    "en:triisopropanolamine": { "a": "III/62", "n": "TRIISOPROPANOLAMINE", "k": "38722" },
+    "en:trilaurylamine": { "a": "III/62", "n": "TRILAURYLAMINE", "k": "38735" },
+    "en:trimellitic-anhydride": {
+      "c": ["607-097-00-4", ["H317", "H334"]],
+      "n": "TRIMELLITIC ANHYDRIDE",
+      "k": "95922"
+    },
+    "en:trimethyl-pentanyl-diisobutyrate": {
+      "e": "II",
+      "n": "TRIMETHYL PENTANYL DIISOBUTYRATE",
+      "k": "38741"
+    },
+    "en:trimethylbenzoyl-diphenylphosphine-oxide": {
+      "c": ["015-203-00-X", ["H317", "H360Fd"]],
+      "n": "TRIMETHYLBENZOYL DIPHENYLPHOSPHINE OXIDE",
+      "k": "87159"
+    },
+    "en:trimethylhexamethylene-diisocyanate": {
+      "c": ["615-010-00-6[2]", ["H334"]],
+      "n": "TRIMETHYLHEXAMETHYLENE DIISOCYANATE",
+      "k": "95302"
+    },
+    "en:trimethylolpropane-triacrylate": {
+      "i": ["2B", 2018],
+      "c": ["607-111-00-9", ["H317", "H351"]],
+      "n": "TRIMETHYLOLPROPANE TRIACRYLATE",
+      "k": "59859"
+    },
+    "en:trioctyldodecyl-borate": { "a": "III/1a", "n": "TRIOCTYLDODECYL BORATE", "k": "38754" },
+    "en:tripeptide-46-hexapeptide-40-oligopeptide-96-oligopeptide-91-tetrapeptide-38-rh-polypeptide-9": {
+      "a": "II/416",
+      "n": "TRIPEPTIDE-46 HEXAPEPTIDE-40 OLIGOPEPTIDE-96 OLIGOPEPTIDE-91 TETRAPEPTIDE-38 RH-POLYPEPTIDE-9",
+      "k": "90642"
+    },
+    "en:triphenyl-phosphate": { "e": "I", "n": "TRIPHENYL PHOSPHATE", "k": "59879" },
+    "en:tripropylene-glycol-diacrylate": {
+      "c": ["607-249-00-X", ["H317"]],
+      "n": "TRIPROPYLENE GLYCOL DIACRYLATE",
+      "k": "91778"
+    },
+    "en:tris-n-hydroxyethyl-hexahydrotriazine": {
+      "c": ["613-114-00-6", ["H317"]],
+      "n": "TRIS(N-HYDROXYETHYL) HEXAHYDROTRIAZINE",
+      "k": "92863"
+    },
+    "en:tris-nonylphenyl-phosphite": { "e": "I", "n": "TRIS(NONYLPHENYL)PHOSPHITE", "k": "38769" },
+    "en:tromethamine": { "a": "III/61", "n": "TROMETHAMINE", "k": "80438" },
+    "en:turpentine": { "a": "III/124", "n": "TURPENTINE", "k": "41521" },
+    "en:undecylenamide-dea": { "a": "III/60", "n": "UNDECYLENAMIDE DEA", "k": "38823" },
+    "en:undecylenic-acid": { "a": "V/18", "n": "UNDECYLENIC ACID", "k": "38829" },
+    "en:urea-peroxide": { "a": "III/12", "n": "UREA PEROXIDE", "k": "38839" },
+    "en:vinyl-acetate": {
+      "i": ["2B", 1995],
+      "c": ["607-023-00-0", ["H351"]],
+      "n": "VINYL ACETATE",
+      "k": "38882"
+    },
+    "en:vinyl-chloride": {
+      "i": ["1", 2009],
+      "c": ["602-023-00-7", ["H350"]],
+      "n": "VINYL CHLORIDE",
+      "k": "90183"
+    },
+    "en:wheat-germamide-dea": { "a": "III/60", "n": "WHEAT GERMAMIDE DEA", "k": "38903" },
+    "en:zinc-acetate": { "a": "III/24", "n": "ZINC ACETATE", "k": "38949" },
+    "en:zinc-ascorbate": { "a": "III/24", "n": "ZINC ASCORBATE", "k": "60270" },
+    "en:zinc-ascorbate-hydroxide": { "a": "III/24", "n": "ZINC ASCORBATE HYDROXIDE", "k": "86638" },
+    "en:zinc-aspartate": { "a": "III/24", "n": "ZINC ASPARTATE", "k": "38951" },
+    "en:zinc-borate": { "a": "III/1a", "n": "ZINC BORATE", "k": "38952" },
+    "en:zinc-chloride": { "a": "III/24", "n": "ZINC CHLORIDE", "k": "38955" },
+    "en:zinc-citrate": { "a": "III/24", "n": "ZINC CITRATE", "k": "80748" },
+    "en:zinc-coceth-sulfate": { "a": "III/24", "n": "ZINC COCETH SULFATE", "k": "60273" },
+    "en:zinc-coco-sulfate": { "a": "III/24", "n": "ZINC COCO-SULFATE", "k": "60274" },
+    "en:zinc-cysteinate": { "a": "III/24", "n": "ZINC CYSTEINATE", "k": "60275" },
+    "en:zinc-dibutyldithiocarbamate": {
+      "c": ["006-081-00-9", ["H317"]],
+      "a": "III/24",
+      "n": "ZINC DIBUTYLDITHIOCARBAMATE",
+      "k": "38957"
+    },
+    "en:zinc-formaldehyde-sulfoxylate": {
+      "a": "III/24",
+      "n": "ZINC FORMALDEHYDE SULFOXYLATE",
+      "k": "80779"
+    },
+    "en:zinc-gluconate": { "a": "III/24", "n": "ZINC GLUCONATE", "k": "38961" },
+    "en:zinc-glutamate": { "a": "III/24", "n": "ZINC GLUTAMATE", "k": "38962" },
+    "en:zinc-glycinate": { "a": "III/24", "n": "ZINC GLYCINATE", "k": "60301" },
+    "en:zinc-glycinate-salicylate": {
+      "a": "III/24",
+      "n": "ZINC GLYCINATE SALICYLATE",
+      "k": "84399"
+    },
+    "en:zinc-hydrolyzed-collagen": { "a": "III/24", "n": "ZINC HYDROLYZED COLLAGEN", "k": "80783" },
+    "en:zinc-hydrolyzed-hyaluronate": {
+      "a": "III/24",
+      "n": "ZINC HYDROLYZED HYALURONATE",
+      "k": "88125"
+    },
+    "en:zinc-lactate": { "a": "III/24", "n": "ZINC LACTATE", "k": "38964" },
+    "en:zinc-magnesium-aspartate": { "a": "III/24", "n": "ZINC MAGNESIUM ASPARTATE", "k": "60303" },
+    "en:zinc-nitrate": { "a": "III/24", "n": "ZINC NITRATE", "k": "86956" },
+    "en:zinc-pentadecene-tricarboxylate": {
+      "a": "III/24",
+      "n": "ZINC PENTADECENE TRICARBOXYLATE",
+      "k": "38971"
+    },
+    "en:zinc-peroxide": { "a": "III/12", "n": "ZINC PEROXIDE", "k": "38972" },
+    "en:zinc-phenolsulfonate": { "a": "III/25", "n": "ZINC PHENOLSULFONATE", "k": "38973" },
+    "en:zinc-picolinate": { "a": "III/24", "n": "ZINC PICOLINATE", "k": "60304" },
+    "en:zinc-pyrithione": {
+      "c": ["613-333-00-7", ["H360D"]],
+      "n": "ZINC PYRITHIONE",
+      "k": "38974"
+    },
+    "en:zinc-salicylate": { "a": "III/24", "n": "ZINC SALICYLATE", "k": "60305" },
+    "en:zinc-sulfate": { "a": "III/24", "n": "ZINC SULFATE", "k": "38978" },
+    "en:zinc-thiosalicylate": { "a": "III/24", "n": "ZINC THIOSALICYLATE", "k": "60307" },
+    "en:zinc-undecylenoyl-hydrolyzed-wheat-protein": {
+      "a": "III/24",
+      "n": "ZINC UNDECYLENOYL HYDROLYZED WHEAT PROTEIN",
+      "k": "60308"
+    }
+  }
+}

@@ -75,6 +75,9 @@ export const de: Messages = {
   reason_additiveModerate: "{additive}: mittleres Risiko einer Überexposition (EFSA)",
   reason_additiveEu: "{additive}: in der EU nicht zugelassen",
   reason_additiveEvidence: "{additive}: Bedenken einer Behörde oder aus Humanstudien",
+  reason_additiveHazardHigh:
+    "{additive}: als ernste Gesundheitsgefahr eingestuft (IARC- oder EU-Listen)",
+  reason_additiveHazardModerate: "{additive}: vermutete Gesundheitsgefahr (IARC- oder EU-Listen)",
   reason_organic: "Bio",
   reason_palmOil: "Enthält Palmöl",
   reason_ingredientsMissing: "Inhaltsstoffliste fehlt: noch keine Bewertung",
@@ -87,7 +90,9 @@ export const de: Messages = {
   reason_ingredientPfas: "{ingredient}: eine PFAS (Ewigkeitschemikalie)",
   reason_ingredientUsBan: "{ingredient}: von einem US-Bundesstaat in Kosmetik verboten",
   reason_ingredientRestricted: "{ingredient}: in EU-Kosmetik beschränkt",
-  reason_ingredientAllergens: "{count} Duftstoff-Allergene (EU-Kennzeichnungsliste)",
+  reason_ingredientSuspected:
+    "{ingredient}: Verdacht auf krebserregende, erbgutverändernde, fortpflanzungsgefährdende oder hormonelle Wirkung",
+  reason_ingredientAllergens: "{count} Allergene oder sensibilisierende Stoffe (EU-Listen)",
   reasonCap: "begrenzt die Bewertung auf {cap}",
 
   matchTitle: "Für dich",
@@ -137,8 +142,10 @@ export const de: Messages = {
   additivesNone: "Keine Zusatzstoffe angegeben.",
   risk_high: "Hohes Risiko",
   risk_moderate: "Mittleres Risiko",
+  risk_low: "Geringes Risiko",
   risk_none: "Kein bekanntes Risiko",
   risk_unknown: "Nicht bewertet",
+  riskNotListed: "Auf keiner unserer Listen",
   euNotAuthorised: "In der EU nicht zugelassen",
   anses: "Von der ANSES beobachtet",
   scienceTitle: "Was die Wissenschaft sagt",
@@ -169,6 +176,10 @@ export const de: Messages = {
   cat_fragranceAllergen: "Duftstoff-Allergen",
   cat_pfas: "PFAS",
   cat_usStateBan: "In einem US-Bundesstaat verboten",
+  cat_suspected: "Vermutete Gefahr",
+  cat_sensitiser: "Sensibilisierend",
+  cat_euListed: "Eingeschränkt (EU)",
+  cat_underReview: "In EU-Prüfung",
   ingredientsInci: "Inhaltsstoffe (INCI)",
   aiInci: "Inhaltsstoffliste per Foto lesen",
   aiInciMissing: "Die Inhaltsstoffliste fehlt. Ein Foto der Verpackung ergänzt sie.",
@@ -261,11 +272,11 @@ export const de: Messages = {
     "Ausgangspunkt ist die Ernährung: der Nutri-Score 2023 (A ≈ 85–100 … E ≈ 0–23), aus der Datenbank oder von goodscan aus den Nährwerten berechnet.",
   aboutScore2: "Verarbeitung: −12 für hochverarbeitet (NOVA 4), −4 für verarbeitet (NOVA 3).",
   aboutScore3:
-    "Zusatzstoffe: −15 für ein hohes Überexpositionsrisiko laut EFSA (und die Bewertung kann nicht über 49 steigen), −6 für ein mittleres, −25 für einen in der EU nicht zugelassenen Zusatzstoff (höchstens 25). −6, wenn die Wissenschaft dagegen spricht: eine behördliche Bewertung mit Bedenken (WHO, IARC, EFSA, FDA) oder zwei übereinstimmende Humanstudien, nicht zusätzlich zu den Abzügen für hohes Risiko oder fehlende EU-Zulassung. Insgesamt höchstens −45.",
+    "Zusatzstoffe: jeder zählt einmal, für das Stärkste, was über ihn gesagt wird. −25, wenn er in der EU nicht zugelassen ist (höchstens 25); −15 für ein hohes Risiko: Überexposition laut EFSA, IARC 1 oder 2A, CMR 1A/1B oder ein von der EU identifizierter endokriner Disruptor (höchstens 49); −6 für ein mittleres: belastbare zitierte Wissenschaft (behördliche Bedenken oder zwei übereinstimmende Humanstudien), mittlere Überexposition laut EFSA, IARC 2B, Verdacht auf CMR oder endokrine Wirkung. Insgesamt höchstens −45.",
   aboutScore4: "Bio +5, Palmöl −3. Wasser ist 100, Alkohol höchstens 20.",
   aboutScore5: "Ab 75 ausgezeichnet, ab 50 gut, ab 25 mäßig, darunter schlecht.",
   aboutCosmetics:
-    "Kosmetik (Open Beauty Facts) erhält eine Inhaltsstoff-Bewertung: ab 100, −40 für einen in EU-Kosmetik verbotenen Inhaltsstoff (höchstens 20), −25 für einen CMR-Stoff oder einen in der EU identifizierten endokrinen Disruptor (höchstens 49), −20 für eine PFAS (höchstens 49) oder ein Verbot eines US-Bundesstaats, das keine EU-Regel abdeckt, −8 für eine EU-Beschränkung, −3 je Duftstoff-Allergen (höchstens −15).",
+    "Kosmetik (Open Beauty Facts) erhält eine Inhaltsstoff-Bewertung: ab 100, −40 für einen in EU-Kosmetik verbotenen Inhaltsstoff (höchstens 20), −25 für einen CMR-Stoff (1A/1B, IARC 1 oder 2A) oder einen in der EU identifizierten endokrinen Disruptor (höchstens 49), −20 für eine PFAS (höchstens 49) oder ein Verbot eines US-Bundesstaats, das keine EU-Regel abdeckt, −8 für eine EU-Beschränkung oder einen Verdacht auf CMR oder endokrine Wirkung, −3 je Duftstoff-Allergen oder sensibilisierendem Stoff (höchstens −15). Jeder Inhaltsstoff der Liste zeigt seine Stufe.",
   aboutSourcesTitle: "Quellen und Lizenzen",
   aboutOff:
     "Produktdaten, Zusatzstoffe und Vorlieben-Attribute: Open Food Facts, Open Beauty Facts, Open Pet Food Facts, Open Products Facts — Open Database License (ODbL); Bilder CC BY-SA.",
@@ -275,6 +286,8 @@ export const de: Messages = {
     "Was die Wissenschaft sagt: behördliche Bewertungen (WHO, IARC, EFSA, FDA) und Humanstudien, jeweils mit DOI oder PubMed-Eintrag verlinkt, aus einer geprüften Literaturrecherche.",
   aboutCosmeticsSources:
     "Kosmetische Inhaltsstoffe: Anhänge der Verordnung (EG) 1223/2009, Duftstoff-Allergene der Verordnung 2023/1545, SCCS-Stellungnahmen, ECHA, EU-Listen endokriner Disruptoren, Kalifornien AB 2762, jeweils mit Quellen.",
+  aboutHazards:
+    "Jeder Zusatzstoff und jeder kosmetische Inhaltsstoff wird außerdem über die CAS-Nummer mit amtlichen Listen abgeglichen: IARC (Gruppen 1, 2A, 2B), die harmonisierte EU-Einstufung (CLP Anhang VI: krebserregend, erbgutverändernd, fortpflanzungsgefährdend, sensibilisierend, über PubChem), die EU-Listen endokriner Disruptoren (edlists.org) und die Anhänge der Kosmetikverordnung (CosIng, über Open Beauty Facts).",
   aboutFda:
     "US-Nährstoffbox: Tageswerte der FDA und die vorgeschlagene „Nutrition Info“-Box auf der Vorderseite (Niedrig ≤ 5 %, Hoch ≥ 20 % DV).",
   aboutNotAdvice:

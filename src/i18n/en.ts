@@ -70,6 +70,8 @@ export const en = {
   reason_additiveModerate: "{additive}: moderate risk of overexposure (EFSA)",
   reason_additiveEu: "{additive}: not authorised in EU food",
   reason_additiveEvidence: "{additive}: a concern backed by an official body or human studies",
+  reason_additiveHazardHigh: "{additive}: classified as a serious health hazard (IARC or EU lists)",
+  reason_additiveHazardModerate: "{additive}: suspected health hazard (IARC or EU lists)",
   reason_organic: "Organic",
   reason_palmOil: "Contains palm oil",
   reason_ingredientsMissing: "Ingredient list missing: no score yet",
@@ -81,7 +83,9 @@ export const en = {
   reason_ingredientPfas: "{ingredient}: a PFAS (forever chemical)",
   reason_ingredientUsBan: "{ingredient}: banned in cosmetics by a US state",
   reason_ingredientRestricted: "{ingredient}: restricted in EU cosmetics",
-  reason_ingredientAllergens: "{count} fragrance allergens (EU labelling list)",
+  reason_ingredientSuspected:
+    "{ingredient}: suspected carcinogen, mutagen, reprotoxicant or endocrine disruptor",
+  reason_ingredientAllergens: "{count} allergens or sensitisers (EU lists)",
   reasonCap: "caps the score at {cap}",
 
   matchTitle: "For you",
@@ -131,8 +135,10 @@ export const en = {
   additivesNone: "No additives listed.",
   risk_high: "High risk",
   risk_moderate: "Moderate risk",
+  risk_low: "Low risk",
   risk_none: "No known risk",
   risk_unknown: "Not evaluated",
+  riskNotListed: "Not on our lists",
   euNotAuthorised: "Not authorised in the EU",
   anses: "Watched by ANSES",
   scienceTitle: "What science says",
@@ -163,6 +169,10 @@ export const en = {
   cat_fragranceAllergen: "Fragrance allergen",
   cat_pfas: "PFAS",
   cat_usStateBan: "Banned in a US state",
+  cat_suspected: "Suspected hazard",
+  cat_sensitiser: "Sensitiser",
+  cat_euListed: "Limited use (EU)",
+  cat_underReview: "Under EU review",
   ingredientsInci: "Ingredients (INCI)",
   aiInci: "Read the ingredient list from a photo",
   aiInciMissing: "The ingredient list is missing. A photo of the pack fills it in.",
@@ -255,11 +265,11 @@ export const en = {
     "Start from nutrition: the 2023 Nutri-Score (A ≈ 85–100 … E ≈ 0–23), the database's or one goodscan computes from the facts.",
   aboutScore2: "Processing: −12 for ultra-processed (NOVA 4), −4 for processed (NOVA 3).",
   aboutScore3:
-    "Additives: −15 for a high risk of overexposure according to EFSA (and the score cannot go above 49), −6 for a moderate one, −25 for an additive the EU does not authorise (score at most 25). −6 when science weighs against it: an official position of concern (WHO, IARC, EFSA, FDA) or two human studies that agree, not on top of the high-risk or EU penalties. At most −45 in all.",
+    "Additives: each counts once, for the strongest thing said about it. −25 if the EU does not authorise it (score at most 25); −15 for a high risk: EFSA overexposure, IARC 1 or 2A, a CMR 1A/1B or an endocrine disruptor identified by the EU (score at most 49); −6 for a moderate one: cited science that weighs (an official position of concern or two human studies that agree), EFSA moderate overexposure, IARC 2B, a suspected CMR or endocrine disruptor. At most −45 in all.",
   aboutScore4: "Organic +5, palm oil −3. Water is 100, alcohol at most 20.",
   aboutScore5: "75 and up is excellent, 50 good, 25 poor, below bad.",
   aboutCosmetics:
-    "Cosmetics (Open Beauty Facts) get an ingredient score: from 100, −40 for an ingredient banned in EU cosmetics (score at most 20), −25 for a CMR or an endocrine disruptor identified in the EU (at most 49), −20 for a PFAS (at most 49) or for a US state ban no EU rule covers, −8 for an EU restriction, −3 per fragrance allergen (−15 at most).",
+    "Cosmetics (Open Beauty Facts) get an ingredient score: from 100, −40 for an ingredient banned in EU cosmetics (score at most 20), −25 for a CMR (1A/1B, IARC 1 or 2A) or an endocrine disruptor identified in the EU (at most 49), −20 for a PFAS (at most 49) or for a US state ban no EU rule covers, −8 for an EU restriction or a suspected CMR or endocrine disruptor, −3 per fragrance allergen or sensitiser (−15 at most). Each ingredient of the list shows its level.",
   aboutSourcesTitle: "Sources and licences",
   aboutOff:
     "Product data, additives and preference attributes: Open Food Facts, Open Beauty Facts, Open Pet Food Facts, Open Products Facts — Open Database License (ODbL); images CC BY-SA.",
@@ -268,6 +278,8 @@ export const en = {
     "What science says: official positions (WHO, IARC, EFSA, FDA) and human studies, each linked to its DOI or PubMed record, from a verified literature research.",
   aboutCosmeticsSources:
     "Cosmetic ingredients: EU Regulation 1223/2009 annexes, Regulation 2023/1545 fragrance allergens, SCCS opinions, ECHA, EU endocrine-disruptor lists, California AB 2762, each listed with its sources.",
+  aboutHazards:
+    "Every additive and cosmetic ingredient is also checked against official lists, joined by CAS number: IARC (groups 1, 2A, 2B), the EU harmonised classification (CLP Annex VI: carcinogenic, mutagenic, toxic for reproduction, sensitisers, through PubChem), the EU endocrine-disruptor lists (edlists.org) and the annexes of the Cosmetics Regulation (CosIng, through Open Beauty Facts).",
   aboutFda:
     "US nutrient box: FDA Daily Values and the proposed front-of-package Nutrition Info box (Low ≤ 5 %, High ≥ 20 % DV).",
   aboutNotAdvice:

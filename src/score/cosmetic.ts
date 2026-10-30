@@ -1,12 +1,14 @@
 /**
  * The ingredient score of a cosmetic, 0 to 100: deterministic, every point
  * explained, the same verdicts as food. It starts from 100 and takes points
- * for each ingredient of concern found in the list (src/data/cosmetics.ts):
- * the strongest category of each ingredient counts once, and some cap the
- * score, like a high-risk additive in food.
+ * for each ingredient of concern found in the list: the hand-kept, cited ones
+ * (src/data/cosmetics.ts) and what official lists say about every other
+ * ingredient (./hazard.ts). The strongest category of each ingredient counts
+ * once, and some cap the score, like a high-risk additive in food.
  */
 import { COSMETICS, type CosmeticCategory, type CosmeticIngredient } from "../data/cosmetics";
 import type { Product } from "../data/product";
+import { COSMETIC_HAZARDS, cosmeticFromHazards } from "./hazard";
 import { type Reason, type Score, verdictOf } from "./score";
 
 export interface CosmeticFlag {
@@ -53,29 +55,78 @@ export function ingredientNames(text: string): string[] {
 
 /** How many items the list has, for "N ingredients checked". */
 export function ingredientCount(text: string): number {
-  return text
-    .split(/[,;•·\n]|\.\s|\s[-–]\s/)
-    .map((s) => normalizeName(s.replace(PREFIX, "")))
-    .filter((s) => s && !/^\d+$/.test(s)).length;
+  return listItems(text).length;
 }
 
-const INDEX = new Map<string, CosmeticIngredient>();
+/**
+ * The items of a list as printed, without what is not an ingredient: bare
+ * numbers, and the packaging text some lists run into ("Contenance nette :
+ * 250 ml… Date de fabrication"), longer than any INCI name.
+ */
+export function listItems(text: string): string[] {
+  return text
+    .split(/[,;•·\n]|\.\s|\s[-–]\s/)
+    .map((s) => s.replace(PREFIX, "").trim().replace(/\.$/, ""))
+    .filter((s) => {
+      const n = normalizeName(s);
+      return n && !/^\d+$/.test(n) && n.split(" ").length <= 10;
+    });
+}
+
+/** Hand-kept entries by every name they go by. */
+const CURATED = new Map<string, CosmeticIngredient>();
 for (const i of COSMETICS) {
   for (const name of [i.inci, ...i.synonyms.en, ...i.synonyms.fr, ...i.synonyms.de]) {
     const n = normalizeName(name);
-    if (n && !INDEX.has(n)) INDEX.set(n, i);
+    if (n && !CURATED.has(n)) CURATED.set(n, i);
   }
 }
 
+/**
+ * Every ingredient the official lists say something about, by its Open Beauty
+ * Facts tag and by its INCI name; merged with the hand-kept entry for the same
+ * ingredient, whose summary leads.
+ */
+const OFFICIAL = new Map<string, CosmeticIngredient>();
+const BY_TAG = new Map<string, CosmeticIngredient>();
+for (const [tag, r] of Object.entries(COSMETIC_HAZARDS)) {
+  const auto = cosmeticFromHazards(tag, r);
+  if (!auto) continue;
+  const name = normalizeName(auto.inci);
+  const curated =
+    CURATED.get(name) ?? CURATED.get(normalizeName(tag.replace(/^\w\w:/, "").replace(/-/g, " ")));
+  const merged: CosmeticIngredient = curated
+    ? {
+        ...curated,
+        categories: [...new Set([...curated.categories, ...auto.categories])],
+        sources: [...curated.sources, ...auto.sources],
+      }
+    : auto;
+  BY_TAG.set(tag, merged);
+  if (name && !OFFICIAL.has(name)) OFFICIAL.set(name, merged);
+  if (curated) for (const [n, i] of CURATED) if (i === curated) CURATED.set(n, merged);
+}
+
+/** One name, or one Open Beauty Facts tag, to its entry. */
+export function lookupIngredient(name: string, tag?: string): CosmeticIngredient | undefined {
+  if (tag) {
+    const byTag = BY_TAG.get(tag);
+    if (byTag) return byTag;
+  }
+  return CURATED.get(name) ?? OFFICIAL.get(name);
+}
+
+const tagName = (t: string) => normalizeName(t.replace(/^\w\w:/, "").replace(/-/g, " "));
+
 /** The ingredients of concern in a list and its Open Beauty Facts tags, each once. */
 export function findConcerns(text: string | undefined, tags: string[] = []): CosmeticIngredient[] {
-  const names = [
-    ...(text ? ingredientNames(text) : []),
-    ...tags.map((t) => normalizeName(t.replace(/^\w\w:/, "").replace(/-/g, " "))),
-  ];
   const found = new Map<string, CosmeticIngredient>();
-  for (const n of names) {
-    const i = INDEX.get(n);
+  for (const n of text ? ingredientNames(text) : []) {
+    const i = lookupIngredient(n);
+    if (i) found.set(i.id, i);
+  }
+  for (const t of tags) {
+    const i = lookupIngredient(tagName(t), t);
     if (i) found.set(i.id, i);
   }
   return [...found.values()];
@@ -88,7 +139,11 @@ const POINTS: Record<CosmeticCategory, number> = {
   pfas: 20,
   "us-state-ban": 20,
   "eu-restricted": 8,
+  suspected: 8,
   "fragrance-allergen": 3,
+  sensitiser: 3,
+  "eu-listed": 0,
+  "under-review": 0,
 };
 const CAPS: Partial<Record<CosmeticCategory, number>> = {
   "eu-prohibited": 20,
@@ -96,13 +151,19 @@ const CAPS: Partial<Record<CosmeticCategory, number>> = {
   endocrine: 49,
   pfas: 49,
 };
-const KEYS: Record<Exclude<CosmeticCategory, "fragrance-allergen">, Reason["key"]> = {
+/** Allergens and sensitisers share one budget; a listed ingredient costs nothing. */
+const ALLERGENS: ReadonlySet<CosmeticCategory> = new Set(["fragrance-allergen", "sensitiser"]);
+const KEYS: Record<
+  Exclude<CosmeticCategory, "fragrance-allergen" | "sensitiser" | "eu-listed" | "under-review">,
+  Reason["key"]
+> = {
   "eu-prohibited": "ingredientProhibited",
   cmr: "ingredientCmr",
   endocrine: "ingredientEndocrine",
   pfas: "ingredientPfas",
   "us-state-ban": "ingredientUsBan",
   "eu-restricted": "ingredientRestricted",
+  suspected: "ingredientSuspected",
 };
 const EU: ReadonlySet<CosmeticCategory> = new Set([
   "eu-prohibited",
@@ -133,6 +194,7 @@ export function scoreCosmetic(p: Product): Score {
   const count = p.ingredients ? ingredientCount(p.ingredients) : tags.length;
   const flags: CosmeticFlag[] = findConcerns(p.ingredients, tags)
     .map((ingredient) => ({ ingredient, category: countedCategory(ingredient) }))
+    .filter((f) => POINTS[f.category] > 0)
     .sort((a, b) => POINTS[b.category] - POINTS[a.category]);
 
   const reasons: Reason[] = [{ key: "ingredientsChecked", count }];
@@ -140,7 +202,7 @@ export function scoreCosmetic(p: Product): Score {
   let cap = 100;
   let allergens = 0;
   for (const f of flags) {
-    if (f.category === "fragrance-allergen") {
+    if (ALLERGENS.has(f.category)) {
       allergens++;
       continue;
     }
@@ -149,7 +211,7 @@ export function scoreCosmetic(p: Product): Score {
     delta -= points;
     if (c !== undefined) cap = Math.min(cap, c);
     reasons.push({
-      key: KEYS[f.category],
+      key: KEYS[f.category as keyof typeof KEYS],
       ingredient: f.ingredient.id,
       delta: -points,
       ...(c !== undefined ? { cap: c } : {}),
@@ -164,4 +226,41 @@ export function scoreCosmetic(p: Product): Score {
 
   const value = Math.round(Math.max(0, Math.min(cap, 100 + delta)));
   return { value, verdict: verdictOf(value), reasons, additives: [], cosmetic: flags };
+}
+
+export type IngredientLevel = "high" | "moderate" | "low" | "none";
+const LEVEL: Record<CosmeticCategory, Exclude<IngredientLevel, "none">> = {
+  "eu-prohibited": "high",
+  cmr: "high",
+  endocrine: "high",
+  pfas: "high",
+  "us-state-ban": "high",
+  "eu-restricted": "moderate",
+  suspected: "moderate",
+  "fragrance-allergen": "low",
+  sensitiser: "low",
+  "eu-listed": "low",
+  "under-review": "low",
+};
+
+export interface RatedIngredient {
+  /** As printed. */
+  label: string;
+  level: IngredientLevel;
+  ingredient?: CosmeticIngredient;
+}
+
+/** Every item of the list, in its order, with the level of what is said about it. */
+export function rateIngredients(p: Product): RatedIngredient[] {
+  const items = p.ingredients
+    ? listItems(p.ingredients)
+    : (p.ingredientTags ?? []).map((t) => t.replace(/^\w\w:/, "").replace(/-/g, " "));
+  return items.map((label) => {
+    const ingredient = ingredientNames(label)
+      .map((n) => lookupIngredient(n))
+      .find(Boolean);
+    return ingredient
+      ? { label, level: LEVEL[countedCategory(ingredient)], ingredient }
+      : { label, level: "none" };
+  });
 }
