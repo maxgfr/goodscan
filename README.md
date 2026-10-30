@@ -162,7 +162,6 @@ the deploy workflow rebuilds them on every release and every Monday, and the app
 file it needs.
 
 To keep suggestions honest:
-
 - only products people scan, with their grade, their ingredients and their NOVA group, and whose
   ingredient list was mostly recognised (a list read in a language the parser knows poorly misses
   its additives);
