@@ -96,6 +96,8 @@ export const de: Messages = {
     "{ingredient}: Verdacht auf krebserregende, erbgutverändernde, fortpflanzungsgefährdende oder hormonelle Wirkung",
   reason_ingredientAllergens: "{count} Allergene oder sensibilisierende Stoffe (EU-Listen)",
   reasonCap: "begrenzt die Bewertung auf {cap}",
+  altTitle: "Bessere Wahl",
+  altSubtitle: "Gleiche Kategorie ({category}), bessere goodscan-Bewertung.",
   reasonSource: "Quelle",
 
   matchTitle: "Für dich",

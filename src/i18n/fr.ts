@@ -96,6 +96,8 @@ export const fr: Messages = {
     "{ingredient} : suspecté cancérogène, mutagène, reprotoxique ou perturbateur endocrinien",
   reason_ingredientAllergens: "{count} allergènes ou sensibilisants (listes de l'UE)",
   reasonCap: "plafonne la note à {cap}",
+  altTitle: "Mieux choisir",
+  altSubtitle: "Même catégorie ({category}), meilleure note goodscan.",
   reasonSource: "Source",
 
   matchTitle: "Pour vous",

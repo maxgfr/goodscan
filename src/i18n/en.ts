@@ -89,6 +89,8 @@ export const en = {
     "{ingredient}: suspected carcinogen, mutagen, reprotoxicant or endocrine disruptor",
   reason_ingredientAllergens: "{count} allergens or sensitisers (EU lists)",
   reasonCap: "caps the score at {cap}",
+  altTitle: "Better choices",
+  altSubtitle: "Same category ({category}), a better goodscan score.",
   reasonSource: "Source",
 
   matchTitle: "For you",
