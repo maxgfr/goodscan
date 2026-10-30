@@ -7,12 +7,13 @@ import { Button, Icon, Notice, PageTitle } from "./kit";
 import { go, href } from "./router";
 import { useApp } from "./state";
 
-/** One product per market, to try without a package in hand (shown until the first scan). */
+/** One product per market and a cosmetic, to try without a package in hand (shown until the first scan). */
 const SAMPLES = [
   { code: "3017620422003", market: "FR", label: "Nutella" },
   { code: "4000417025005", market: "DE", label: "Ritter Sport" },
   { code: "0016000275287", market: "US", label: "Cheerios" },
   { code: "3274080005003", market: "FR", label: "Cristaline" },
+  { code: "4005900964441", market: "DE", label: "Nivea Soft" },
 ];
 
 export function Scan() {

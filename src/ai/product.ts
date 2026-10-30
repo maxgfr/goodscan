@@ -45,6 +45,11 @@ export function productFacts(p: Product, score: Score, match: Match | null): str
     goodscanScore: score.value,
     verdict: score.verdict,
     reasons: score.reasons,
+    ingredientsOfConcern: score.cosmetic?.map((f) => ({
+      inci: f.ingredient.inci,
+      category: f.category,
+      why: f.ingredient.summary.en,
+    })),
     estimatedFromPhoto: p.estimated,
     personalMatch: match
       ? {
@@ -58,7 +63,17 @@ export function productFacts(p: Product, score: Score, match: Match | null): str
   return JSON.stringify(facts);
 }
 
-export function explainInstructions(language: string): string {
+const COSMETIC_INSTRUCTIONS = [
+  "You are a careful cosmetic-safety advisor explaining a cosmetic's ingredient score to a shopper, in a phone app.",
+  "Use only the facts given (from Open Beauty Facts and goodscan's score). Never invent ingredients or rules; say when data is missing.",
+  "goodscan's ingredient score (0–100) starts at 100 and removes points for ingredients banned or restricted in EU cosmetics, CMR substances, endocrine disruptors identified in the EU, PFAS, US state bans and fragrance allergens to label.",
+  "Answer in 3 to 6 short lines: the main reasons, then one practical tip (patch test, fragrance-free choice, what to look for on the label). If a question is asked, answer it first.",
+  "Plain text only: no Markdown headings, no tables; a line may start with '- '.",
+  "You are not a doctor: for skin conditions, pregnancy or children, add one short line suggesting to ask a professional.",
+];
+
+export function explainInstructions(language: string, cosmetic = false): string {
+  if (cosmetic) return [...COSMETIC_INSTRUCTIONS, `Write in ${languageName(language)}.`].join("\n");
   return [
     "You are a careful dietitian explaining a food product's health score to a shopper, in a phone app.",
     "Use only the facts given (from Open Food Facts and goodscan's score). Never invent values; say when data is missing.",
@@ -75,9 +90,10 @@ export async function explainProduct(
   facts: string,
   language: string,
   question?: string,
+  cosmetic = false,
 ): Promise<string> {
   const ask = question?.trim();
-  return text(ctx, explainInstructions(language), [
+  return text(ctx, explainInstructions(language, cosmetic), [
     {
       role: "user",
       content: `Product facts (JSON): ${facts}\n\n${ask ? `My question: ${ask}` : "Explain this score."}`,
@@ -206,5 +222,57 @@ export function productFromLabel(label: LabelAnswer, code: string, base?: Produc
   }
   product.sweeteners = product.additives.some((a) => SWEETENERS.has(a));
   product.estimated = true;
+  return product;
+}
+
+export const cosmeticLabelSchema = z.object({
+  name: z.string().nullable().describe("Product name as printed"),
+  ingredients: z
+    .string()
+    .describe(
+      "The INCI ingredient list exactly as printed, comma-separated, in its order; empty when none is visible",
+    ),
+  confidence: z.enum(["low", "medium", "high"]),
+});
+
+export type CosmeticLabelAnswer = z.infer<typeof cosmeticLabelSchema>;
+
+export function cosmeticLabelInstructions(): string {
+  return [
+    "You read the ingredient list (INCI) of cosmetics from photos for a health app.",
+    "Copy the list exactly, in its order, with the names as printed (Aqua, Parfum, CI 77891…); separate items with commas.",
+    "Leave out everything that is not an ingredient: directions, warnings, addresses, batch numbers.",
+    "Do not guess hidden or cut-off names; never add an ingredient that is not visible.",
+  ].join("\n");
+}
+
+export async function readCosmeticLabel(
+  ctx: CallContext,
+  image: ModelImage,
+): Promise<CosmeticLabelAnswer> {
+  const messages: ModelMessage[] = [
+    {
+      role: "user",
+      content: [
+        { type: "text", text: "Read this cosmetic's ingredient list." },
+        { type: "file", mediaType: image.mediaType, data: { type: "data", data: image.data } },
+      ],
+    },
+  ];
+  return structured(
+    ctx,
+    cosmeticLabelSchema,
+    "cosmetic_label",
+    cosmeticLabelInstructions(),
+    messages,
+  );
+}
+
+/** The list read from a photo, on the product the database gave: it goes through scoreCosmetic. */
+export function productFromCosmeticLabel(label: CosmeticLabelAnswer, base: Product): Product {
+  const product: Product = { ...base, estimated: true };
+  const ingredients = label.ingredients.trim();
+  if (ingredients) product.ingredients = ingredients;
+  if (!base.name && label.name) product.name = label.name;
   return product;
 }

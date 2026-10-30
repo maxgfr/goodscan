@@ -1,0 +1,179 @@
+{
+  "additives_tags": [
+    "en:e1210",
+    "en:e306",
+    "en:e340",
+    "en:e340ii",
+    "en:e386",
+    "en:e415",
+    "en:e422",
+    "en:e900",
+    "en:e900a",
+    "en:e905",
+    "en:e905b"
+  ],
+  "allergens_tags": [],
+  "attribute_groups": [
+    {
+      "attributes": [
+        {
+          "grade": "unknown",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/vegan-status-unknown.svg",
+          "id": "vegan",
+          "name": "Vegan",
+          "panel_id": "ingredients_analysis_en:vegan-status-unknown",
+          "status": "unknown",
+          "title": "Vegan status unknown"
+        },
+        {
+          "grade": "unknown",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/vegetarian-status-unknown.svg",
+          "id": "vegetarian",
+          "name": "Vegetarian",
+          "panel_id": "ingredients_analysis_en:vegetarian-status-unknown",
+          "status": "unknown",
+          "title": "Vegetarian status unknown"
+        },
+        {
+          "grade": "unknown",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/palm-oil-content-unknown.svg",
+          "id": "palm_oil_free",
+          "name": "Palm oil free",
+          "panel_id": "ingredients_analysis_en:palm-oil-content-unknown",
+          "status": "unknown",
+          "title": "Palm oil content unknown"
+        }
+      ],
+      "id": "ingredients_analysis",
+      "name": "Ingredients",
+      "warning": "Those preferences are based on Open Food Facts' understanding of the ingredient list and there is always a possibility that it may not be accurate or complete, always check the product yourself."
+    },
+    {
+      "attributes": [
+        {
+          "description": "Organic farming aims to protect the environment and to conserve biodiversity by prohibiting or limiting the use of synthetic fertilizers, pesticides and food additives.",
+          "description_short": "Organic products promote ecological sustainability and biodiversity.",
+          "grade": "e",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/not-organic.svg",
+          "id": "labels_organic",
+          "match": 0,
+          "name": "Organic farming",
+          "status": "known",
+          "title": "Not an organic product"
+        },
+        {
+          "description": "When you buy fair trade products, producers in developing countries are paid an higher and fairer price, which helps them improve and sustain higher social and often environmental standards.",
+          "description_short": "Fair trade products help producers in developing countries.",
+          "grade": "e",
+          "icon_url": "https://static.openbeautyfacts.org/images/attributes/dist/not-fair-trade.svg",
+          "id": "labels_fair_trade",
+          "match": 0,
+          "name": "Fair trade",
+          "status": "known",
+          "title": "Not a fair trade product"
+        }
+      ],
+      "id": "labels",
+      "name": "Labels"
+    }
+  ],
+  "brands": "CeraVe",
+  "categories_tags": ["fr:baume hydratant"],
+  "code": "3337875598996",
+  "countries_tags": ["en:france", "en:morocco", "en:romania"],
+  "ecoscore_grade": "unknown",
+  "generic_name": "",
+  "image_front_url": "https://images.openbeautyfacts.org/images/products/333/787/559/8996/front_en.28.400.jpg",
+  "image_url": "https://images.openbeautyfacts.org/images/products/333/787/559/8996/front_en.28.400.jpg",
+  "ingredients_analysis_tags": [
+    "en:palm-oil-content-unknown",
+    "en:vegan-status-unknown",
+    "en:vegetarian-status-unknown"
+  ],
+  "ingredients_tags": [
+    "en:water",
+    "en:glycerin",
+    "fr:alcool-cetearylique",
+    "fr:triglycerides-caprylique",
+    "fr:caprique",
+    "fr:alcool-cetylique",
+    "en:ceteareth-20",
+    "fr:vaseline",
+    "fr:phosphate-de-potassium",
+    "en:ceramide-np",
+    "en:ceramide-ap",
+    "en:ceramide-eop",
+    "fr:carbomere",
+    "en:dimethicone",
+    "en:silicones",
+    "fr:methosulfate-de-behentrimonium",
+    "fr:lauryllactylate-de-sodium",
+    "fr:hyaluronate-de-sodium",
+    "en:cholesterol",
+    "en:phenoxyethanol",
+    "fr:edta-disodique",
+    "fr:phosphate-dipotassique",
+    "en:tocopherol",
+    "en:phytosphingosine",
+    "en:xanthan-gum",
+    "fr:ethylhexylglycerine",
+    "fr:code-f-i-l",
+    "fr:d213768",
+    "fr:2"
+  ],
+  "ingredients_text": "Eau, glycérine, alcool cétéarylique, triglycéride caprylique/caprique, alcool cétylique, céteareth-20, vaseline, phosphate de potassium, céramide NP, céramide AP, céramide EOP, carbomère, diméthicone, méthosulfate de béhentrimonium, lauryllactylate de sodium, hyaluronate de sodium, cholestérol, phénoxyéthanol, edta disodique, phosphate dipotassique, tocophérol, phytosphingosine, gomme xanthane, éthylhexylglycérine. (Code F.I.L. D213768/2)",
+  "ingredients_text_en": "aqua, water, glycerin, cetearyl alcohol, caprylic, capric triglyceride, cetyl alcohol, ceteareth-20, petroleum, potassium phosphate, ceramide np, ceramide ap, ceramide eop, carbomer, dimethicone, behentrimonium methosulfate, cetearyl glucoside, lauroyl lactylate, sodium hyaluronate, cholesterol, phenoxyethanol, sodium edta, dipotassium phosphate, tocopherol, phytosphingosine, xanthan gum, ethylhexylglycerin",
+  "ingredients_text_fr": "Eau, glycérine, alcool cétéarylique, triglycéride caprylique/caprique, alcool cétylique, céteareth-20, vaseline, phosphate de potassium, céramide NP, céramide AP, céramide EOP, carbomère, diméthicone, méthosulfate de béhentrimonium, lauryllactylate de sodium, hyaluronate de sodium, cholestérol, phénoxyéthanol, edta disodique, phosphate dipotassique, tocophérol, phytosphingosine, gomme xanthane, éthylhexylglycérine. (Code F.I.L. D213768/2)",
+  "labels_tags": ["en:without-perfume"],
+  "lang": "fr",
+  "misc_tags": [
+    "en:packagings-not-complete",
+    "en:packagings-not-empty",
+    "en:packagings-not-empty-but-not-complete",
+    "en:packagings-number-of-components-1",
+    "en:main-countries-fr-unexpectedly-low-scans",
+    "en:main-countries-fr-unexpectedly-low-scans-0-10-percent-of-expected",
+    "en:main-countries-ro-ingredients-not-in-country-language",
+    "en:main-countries-ro-only-1-field-in-country-language",
+    "en:main-countries-old-product-without-scans-in-2020"
+  ],
+  "nova_group": 4,
+  "nutriscore_grade": "unknown",
+  "nutrition": {
+    "aggregated_set": {
+      "nutrients": {
+        "nova-group": {
+          "source": "packaging",
+          "source_index": 0,
+          "source_per": "100g",
+          "unit": "",
+          "value": 4
+        }
+      },
+      "per": "100g",
+      "preparation": "as_sold"
+    },
+    "input_sets": [
+      {
+        "last_updated_t": 1771970772,
+        "nutrients": {
+          "nova-group": {
+            "unit": "",
+            "value": 4,
+            "value_string": "4"
+          }
+        },
+        "per": "100g",
+        "per_quantity": 100,
+        "per_unit": "g",
+        "preparation": "as_sold",
+        "source": "packaging"
+      }
+    ]
+  },
+  "product_name": "moisturising cream",
+  "product_name_en": "Moisturising cream",
+  "product_name_fr": "moisturising cream",
+  "quantity": "177",
+  "traces_tags": []
+}

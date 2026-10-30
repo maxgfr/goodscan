@@ -10,7 +10,8 @@
 import additivesData from "../data/additives.json";
 import { EU_NOT_AUTHORISED } from "../data/eu";
 import { EVIDENCE, type Evidence, weighs } from "../data/evidence";
-import { type Grade, isFood, type Product } from "../data/product";
+import { type Grade, isCosmetic, isFood, type Product } from "../data/product";
+import { type CosmeticFlag, scoreCosmetic } from "./cosmetic";
 import { nutriscore } from "./nutriscore";
 
 export type Verdict = "excellent" | "good" | "poor" | "bad" | "unknown" | "not-food";
@@ -32,12 +33,25 @@ export interface Reason {
     | "additiveEu"
     | "additiveEvidence"
     | "organic"
-    | "palmOil";
+    | "palmOil"
+    | "ingredientsMissing"
+    | "ingredientsChecked"
+    | "ingredientsClean"
+    | "ingredientProhibited"
+    | "ingredientCmr"
+    | "ingredientEndocrine"
+    | "ingredientPfas"
+    | "ingredientUsBan"
+    | "ingredientRestricted"
+    | "ingredientAllergens";
   delta?: number;
   /** A ceiling this finding sets. */
   cap?: number;
   grade?: Grade;
   additive?: string;
+  /** A cosmetic ingredient's id (src/data/cosmetics.ts). */
+  ingredient?: string;
+  count?: number;
 }
 
 export interface AdditiveInfo {
@@ -61,6 +75,8 @@ export interface Score {
   /** The Nutri-Score shown, with where it came from. */
   nutri?: { grade: Grade; score?: number; computed: boolean };
   additives: AdditiveInfo[];
+  /** A cosmetic's ingredients of concern, strongest first. */
+  cosmetic?: CosmeticFlag[];
 }
 
 const DATA = additivesData as Record<
@@ -138,6 +154,7 @@ const isRedMeat = (p: Product) =>
   has(p.categories, /^en:(beef|pork|lamb|veal|red-meats|beef-meat|pork-meat)$/);
 
 export function scoreProduct(p: Product): Score {
+  if (isCosmetic(p)) return scoreCosmetic(p);
   const additives = [...new Set(p.additives)].map(additiveInfo);
   if (!isFood(p)) return { value: null, verdict: "not-food", reasons: [], additives };
 

@@ -11,3 +11,14 @@ export const RAW = { dietCoke, cheerios, nutellaFr, nutellaDe, ritter, water, co
   "dietCoke" | "cheerios" | "nutellaFr" | "nutellaDe" | "ritter" | "water" | "cokeZero",
   Record<string, unknown>
 >;
+
+/** Real Open Beauty Facts answers (bun run fixtures). Data © Open Beauty Facts contributors, ODbL. */
+import secret from "./obf/0037000123439.json";
+import cerave from "./obf/3337875598996.json";
+import garnier from "./obf/3600540539397.json";
+import nivea from "./obf/4005900964441.json";
+
+export const RAW_OBF = { garnier, cerave, nivea, secret } as Record<
+  "garnier" | "cerave" | "nivea" | "secret",
+  Record<string, unknown>
+>;

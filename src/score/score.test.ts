@@ -223,7 +223,7 @@ describe("goodscan score", () => {
   });
 
   test("not food: no score", () => {
-    expect(scoreProduct({ ...blank, source: "obf" }).verdict).toBe("not-food");
+    expect(scoreProduct({ ...blank, source: "opff" }).verdict).toBe("not-food");
   });
 
   test("alcohol is capped at 20", () => {

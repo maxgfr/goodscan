@@ -1,8 +1,9 @@
 /** One product: the score and why, the US or EU view first, "for you", then the details. */
 import { useCallback, useMemo, useState } from "react";
+import type { CosmeticCategory } from "../data/cosmetics";
 import { type Evidence, evidenceUrl } from "../data/evidence";
 import { ADD_PRODUCT_URL, DATABASES, productUrl } from "../data/off";
-import { isFood, type Nutriments, type Product as P } from "../data/product";
+import { isCosmetic, isFood, type Nutriments, type Product as P } from "../data/product";
 import type { MessageKey } from "../i18n";
 import { type Match, matchProduct } from "../score/match";
 import { type Reason, type Score, scoreProduct } from "../score/score";
@@ -126,7 +127,10 @@ function ProductView({
   );
   const db = DATABASES.find((d) => d.source === product.source);
   const food = isFood(product);
-  const needsLabel = food && !product.estimated && (score.value === null || !score.nutri);
+  const cosmetic = isCosmetic(product);
+  const needsLabel =
+    !product.estimated &&
+    ((food && (score.value === null || !score.nutri)) || (cosmetic && score.value === null));
 
   const us = food ? <UsBox product={product} /> : null;
   const badges = food ? <Badges product={product} score={score} /> : null;
@@ -175,7 +179,8 @@ function ProductView({
                 {t("scoreEstimated")}
               </p>
             ) : null}
-            {!food ? (
+            {cosmetic ? <p className="mt-1 text-sm text-muted">{t("cosmeticScore")}</p> : null}
+            {!food && !cosmetic ? (
               <p className="mt-1 text-sm text-muted">{t("notFoodBody", { db: db?.name ?? "" })}</p>
             ) : null}
           </div>
@@ -199,7 +204,7 @@ function ProductView({
               code={product.code}
               base={product}
               onProduct={onLabel}
-              prompt={t("aiLabelMissing")}
+              prompt={cosmetic ? t("aiInciMissing") : t("aiLabelMissing")}
             />
           </div>
         ) : null}
@@ -225,10 +230,16 @@ function ProductView({
       </Section>
 
       {food ? <NutritionTable n={product.nutriments} drink={product.isBeverage} /> : null}
-      <Additives score={score} />
-      <Allergens product={product} />
+      {cosmetic ? (
+        <Concerns score={score} />
+      ) : (
+        <>
+          <Additives score={score} />
+          <Allergens product={product} />
+        </>
+      )}
       {product.ingredients ? (
-        <Section title={t("ingredientsTitle")}>
+        <Section title={cosmetic ? t("ingredientsInci") : t("ingredientsTitle")}>
           <p className="text-sm leading-relaxed text-soft">{product.ingredients}</p>
         </Section>
       ) : null}
@@ -248,9 +259,14 @@ function ProductView({
 function ReasonLine({ reason, score }: { reason: Reason; score: Score }) {
   const { t, lang } = useApp();
   const a = reason.additive ? score.additives.find((x) => x.tag === reason.additive) : undefined;
+  const ingredient = reason.ingredient
+    ? score.cosmetic?.find((f) => f.ingredient.id === reason.ingredient)?.ingredient
+    : undefined;
   const text = t(`reason_${reason.key}` as MessageKey, {
     grade: reason.grade?.toUpperCase() ?? "",
     additive: a ? (a.names[lang] ?? a.names.en ?? a.code) : "",
+    ingredient: ingredient ? inciName(ingredient.inci) : "",
+    count: reason.count ?? 0,
   });
   const delta = reason.delta;
   return (
@@ -495,6 +511,90 @@ function Science({ evidence }: { evidence: Evidence[] }) {
       </ul>
       <p className="mt-2 text-xs text-muted">{t("scienceNote")}</p>
     </details>
+  );
+}
+
+const CATEGORY_KEY: Record<CosmeticCategory, MessageKey> = {
+  "eu-prohibited": "cat_euProhibited",
+  "eu-restricted": "cat_euRestricted",
+  cmr: "cat_cmr",
+  endocrine: "cat_endocrine",
+  "fragrance-allergen": "cat_fragranceAllergen",
+  pfas: "cat_pfas",
+  "us-state-ban": "cat_usStateBan",
+};
+const CATEGORY_TONE: Record<CosmeticCategory, string> = {
+  "eu-prohibited": RISK_TONE.high,
+  cmr: RISK_TONE.high,
+  endocrine: RISK_TONE.high,
+  pfas: RISK_TONE.high,
+  "us-state-ban": RISK_TONE.moderate,
+  "eu-restricted": RISK_TONE.moderate,
+  "fragrance-allergen": RISK_TONE.unknown,
+};
+
+/** "BUTYLPHENYL METHYLPROPIONAL" as "Butylphenyl Methylpropional". */
+const inciName = (inci: string) =>
+  inci === inci.toUpperCase()
+    ? inci
+        .toLowerCase()
+        .replace(/(^|[\s/(-])(\p{L})/gu, (_, sep: string, c: string) => sep + c.toUpperCase())
+    : inci;
+
+/** A cosmetic's ingredients of concern, each with its categories and sources. */
+function Concerns({ score }: { score: Score }) {
+  const { t, lang } = useApp();
+  const l = lang === "fr" || lang === "de" ? lang : "en";
+  const flags = score.cosmetic ?? [];
+  if (score.value === null) return null;
+  return (
+    <Section title={t("concernTitle")}>
+      {flags.length ? (
+        <ul className="grid gap-3" data-testid="concerns">
+          {flags.map(({ ingredient: i }) => (
+            <li key={i.id} className="grid gap-1 text-sm">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <span className="font-medium">{inciName(i.inci)}</span>
+                <span className="flex flex-wrap gap-1">
+                  {i.categories.map((c) => (
+                    <span
+                      key={c}
+                      className={`rounded-full px-2 py-0.5 text-xs font-medium ${CATEGORY_TONE[c]}`}
+                    >
+                      {t(CATEGORY_KEY[c])}
+                    </span>
+                  ))}
+                </span>
+              </div>
+              <p className="text-soft">{i.summary[l]}</p>
+              <span className="flex flex-wrap gap-x-3 gap-y-1">
+                {i.sources.map((src) => (
+                  <a
+                    key={src.url}
+                    className="inline-flex items-center gap-1 text-xs text-muted underline"
+                    href={
+                      src.doi
+                        ? `https://doi.org/${src.doi}`
+                        : src.pmid
+                          ? `https://pubmed.ncbi.nlm.nih.gov/${src.pmid}/`
+                          : src.url
+                    }
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {src.org}, {src.year}
+                    <Icon name="external" className="size-3" />
+                  </a>
+                ))}
+              </span>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="text-sm text-muted">{t("concernNone")}</p>
+      )}
+      <p className="mt-3 text-xs text-muted">{t("concernNote")}</p>
+    </Section>
   );
 }
 

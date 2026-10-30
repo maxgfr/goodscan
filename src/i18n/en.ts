@@ -54,7 +54,7 @@ export const en = {
   verdictNotFood: "Not a food",
   scoreOutOf: "/ 100",
   scoreEstimated: "Estimated by AI from a photo",
-  notFoodBody: "This product comes from {db}: goodscan only rates what you eat or drink.",
+  notFoodBody: "This product comes from {db}: goodscan rates food, drinks and cosmetics only.",
 
   whyTitle: "Why this score",
   reason_nutrition: "Nutri-Score {grade}",
@@ -72,6 +72,16 @@ export const en = {
   reason_additiveEvidence: "{additive}: a concern backed by an official body or human studies",
   reason_organic: "Organic",
   reason_palmOil: "Contains palm oil",
+  reason_ingredientsMissing: "Ingredient list missing: no score yet",
+  reason_ingredientsChecked: "{count} ingredients checked against EU and US rules",
+  reason_ingredientsClean: "No ingredient of concern found",
+  reason_ingredientProhibited: "{ingredient}: banned in EU cosmetics",
+  reason_ingredientCmr: "{ingredient}: carcinogenic, mutagenic or toxic for reproduction",
+  reason_ingredientEndocrine: "{ingredient}: endocrine disruptor identified in the EU",
+  reason_ingredientPfas: "{ingredient}: a PFAS (forever chemical)",
+  reason_ingredientUsBan: "{ingredient}: banned in cosmetics by a US state",
+  reason_ingredientRestricted: "{ingredient}: restricted in EU cosmetics",
+  reason_ingredientAllergens: "{count} fragrance allergens (EU labelling list)",
   reasonCap: "caps the score at {cap}",
 
   matchTitle: "For you",
@@ -141,6 +151,21 @@ export const en = {
   allergensNone: "None listed.",
   traces: "May contain",
   ingredientsTitle: "Ingredients",
+  cosmeticScore: "Ingredient score",
+  concernTitle: "Ingredients of concern",
+  concernNone: "None of the ingredients is on our lists.",
+  concernNote:
+    "Checked against the EU Cosmetics Regulation (annexes II and III), the fragrance allergens to label, SCCS opinions, CMR and endocrine-disruptor lists, PFAS and US state bans.",
+  cat_euProhibited: "Banned in the EU",
+  cat_euRestricted: "Restricted in the EU",
+  cat_cmr: "CMR",
+  cat_endocrine: "Endocrine disruptor",
+  cat_fragranceAllergen: "Fragrance allergen",
+  cat_pfas: "PFAS",
+  cat_usStateBan: "Banned in a US state",
+  ingredientsInci: "Ingredients (INCI)",
+  aiInci: "Read the ingredient list from a photo",
+  aiInciMissing: "The ingredient list is missing. A photo of the pack fills it in.",
 
   aiTitle: "Ask AI",
   aiSubtitle:
@@ -233,12 +258,16 @@ export const en = {
     "Additives: −15 for a high risk of overexposure according to EFSA (and the score cannot go above 49), −6 for a moderate one, −25 for an additive the EU does not authorise (score at most 25). −6 when science weighs against it: an official position of concern (WHO, IARC, EFSA, FDA) or two human studies that agree, not on top of the high-risk or EU penalties. At most −45 in all.",
   aboutScore4: "Organic +5, palm oil −3. Water is 100, alcohol at most 20.",
   aboutScore5: "75 and up is excellent, 50 good, 25 poor, below bad.",
+  aboutCosmetics:
+    "Cosmetics (Open Beauty Facts) get an ingredient score: from 100, −40 for an ingredient banned in EU cosmetics (score at most 20), −25 for a CMR or an endocrine disruptor identified in the EU (at most 49), −20 for a PFAS (at most 49) or for a US state ban no EU rule covers, −8 for an EU restriction, −3 per fragrance allergen (−15 at most).",
   aboutSourcesTitle: "Sources and licences",
   aboutOff:
     "Product data, additives and preference attributes: Open Food Facts, Open Beauty Facts, Open Pet Food Facts, Open Products Facts — Open Database License (ODbL); images CC BY-SA.",
   aboutEfsa: "Additive risks: EFSA re-evaluations, as recorded in the Open Food Facts taxonomy.",
   aboutScience:
     "What science says: official positions (WHO, IARC, EFSA, FDA) and human studies, each linked to its DOI or PubMed record, from a verified literature research.",
+  aboutCosmeticsSources:
+    "Cosmetic ingredients: EU Regulation 1223/2009 annexes, Regulation 2023/1545 fragrance allergens, SCCS opinions, ECHA, EU endocrine-disruptor lists, California AB 2762, each listed with its sources.",
   aboutFda:
     "US nutrient box: FDA Daily Values and the proposed front-of-package Nutrition Info box (Low ≤ 5 %, High ≥ 20 % DV).",
   aboutNotAdvice:
