@@ -216,6 +216,37 @@ describe("goodscan score", () => {
     expect(s.additives.find((a) => a.tag === "en:e950")?.evidence?.length).toBeGreaterThan(0);
   });
 
+  test("processed meat: IARC group 1, −10 and at most 49, with its source", () => {
+    const s = scoreProduct(product("grisons"));
+    expect(s.reasons).toContainEqual({
+      key: "processedMeat",
+      delta: -10,
+      cap: 49,
+      source: "https://doi.org/10.1016/S1470-2045(15)00444-1",
+    });
+    expect(s.value).toBeLessThanOrEqual(49);
+    expect(s.reasons.map((r) => r.key)).not.toContain("redMeat");
+  });
+
+  test("red meat: IARC group 2A, −5", () => {
+    const s = scoreProduct(product("charal"));
+    expect(s.reasons).toContainEqual(expect.objectContaining({ key: "redMeat", delta: -5 }));
+    const without = scoreProduct({ ...product("charal"), categories: [] });
+    expect(s.value).toBe((without.value ?? 0) - 5);
+  });
+
+  test("a veal stock is not meat; poultry is not red meat", () => {
+    const keys = (p: Product) => scoreProduct(p).reasons.map((r) => r.key);
+    expect(keys(product("maggiVeal"))).not.toContain("redMeat");
+    expect(keys(product("maggiVeal"))).not.toContain("processedMeat");
+    expect(
+      keys({ ...blank, categories: ["en:meats", "en:poultries", "en:chickens"] }),
+    ).not.toContain("redMeat");
+    expect(keys({ ...blank, categories: ["en:meats", "en:pork", "en:bacon"] })).toContain(
+      "processedMeat",
+    );
+  });
+
   test("organic adds 5, palm oil takes 3", () => {
     const base = scoreProduct(blank).value ?? 0;
     expect(scoreProduct({ ...blank, labels: ["en:organic"] }).value).toBe(Math.min(100, base + 5));

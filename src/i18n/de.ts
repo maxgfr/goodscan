@@ -80,6 +80,8 @@ export const de: Messages = {
   reason_additiveHazardModerate: "{additive}: vermutete Gesundheitsgefahr (IARC- oder EU-Listen)",
   reason_organic: "Bio",
   reason_palmOil: "Enthält Palmöl",
+  reason_processedMeat: "Verarbeitetes Fleisch: krebserregend für den Menschen (IARC, Gruppe 1)",
+  reason_redMeat: "Rotes Fleisch: wahrscheinlich krebserregend für den Menschen (IARC, Gruppe 2A)",
   reason_ingredientsMissing: "Inhaltsstoffliste fehlt: noch keine Bewertung",
   reason_ingredientsChecked: "{count} Inhaltsstoffe nach EU- und US-Regeln geprüft",
   reason_ingredientsClean: "Kein bedenklicher Inhaltsstoff gefunden",
@@ -94,6 +96,7 @@ export const de: Messages = {
     "{ingredient}: Verdacht auf krebserregende, erbgutverändernde, fortpflanzungsgefährdende oder hormonelle Wirkung",
   reason_ingredientAllergens: "{count} Allergene oder sensibilisierende Stoffe (EU-Listen)",
   reasonCap: "begrenzt die Bewertung auf {cap}",
+  reasonSource: "Quelle",
 
   matchTitle: "Für dich",
   matchSubtitle: "Deine Vorlieben, abgeglichen wie bei Open Food Facts.",
@@ -273,7 +276,8 @@ export const de: Messages = {
   aboutScore2: "Verarbeitung: −12 für hochverarbeitet (NOVA 4), −4 für verarbeitet (NOVA 3).",
   aboutScore3:
     "Zusatzstoffe: jeder zählt einmal, für das Stärkste, was über ihn gesagt wird. −25, wenn er in der EU nicht zugelassen ist (höchstens 25); −15 für ein hohes Risiko: Überexposition laut EFSA, IARC 1 oder 2A, CMR 1A/1B oder ein von der EU identifizierter endokriner Disruptor (höchstens 49); −6 für ein mittleres: belastbare zitierte Wissenschaft (behördliche Bedenken oder zwei übereinstimmende Humanstudien), mittlere Überexposition laut EFSA, IARC 2B, Verdacht auf CMR oder endokrine Wirkung. Insgesamt höchstens −45.",
-  aboutScore4: "Bio +5, Palmöl −3. Wasser ist 100, Alkohol höchstens 20.",
+  aboutScore4:
+    "Bio +5, Palmöl −3. Verarbeitetes Fleisch −10 und höchstens 49 (IARC, Gruppe 1), rotes Fleisch −5 (IARC, Gruppe 2A). Wasser ist 100, Alkohol höchstens 20.",
   aboutScore5: "Ab 75 ausgezeichnet, ab 50 gut, ab 25 mäßig, darunter schlecht.",
   aboutCosmetics:
     "Kosmetik (Open Beauty Facts) erhält eine Inhaltsstoff-Bewertung: ab 100, −40 für einen in EU-Kosmetik verbotenen Inhaltsstoff (höchstens 20), −25 für einen CMR-Stoff (1A/1B, IARC 1 oder 2A) oder einen in der EU identifizierten endokrinen Disruptor (höchstens 49), −20 für eine PFAS (höchstens 49) oder ein Verbot eines US-Bundesstaats, das keine EU-Regel abdeckt, −8 für eine EU-Beschränkung oder einen Verdacht auf CMR oder endokrine Wirkung, −3 je Duftstoff-Allergen oder sensibilisierendem Stoff (höchstens −15). Jeder Inhaltsstoff der Liste zeigt seine Stufe.",
