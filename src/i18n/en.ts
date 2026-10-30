@@ -147,6 +147,8 @@ export const en = {
   riskNotListed: "Not on our lists",
   euNotAuthorised: "Not authorised in the EU",
   anses: "Watched by ANSES",
+  usBannedFda: "Banned by the FDA",
+  usBannedState: "Banned in a US state",
   scienceTitle: "What science says",
   scienceNote:
     "Points come off only for an official position of concern, or two human studies that agree. A single study is shown, not counted.",
@@ -268,7 +270,7 @@ export const en = {
 
   aboutTitle: "About goodscan",
   aboutBody:
-    "goodscan reads the open databases of Open Food Facts and turns them into a 0–100 health score you can check line by line. No account, no tracking, no server: the page talks to Open Food Facts and, if you want, to your own AI model.",
+    "goodscan reads the open databases of Open Food Facts and Open Beauty Facts and turns them into a 0–100 score you can check line by line, every point with its source: the Nutri-Score, processing, what EFSA, IARC and the official EU, Canadian and US lists say about each additive or cosmetic ingredient, the studies behind them, and better choices in the same category. No account, no tracking, no server: the page talks to Open Food Facts and, if you want, to your own AI model.",
   aboutScoreTitle: "How the score works",
   aboutScore1:
     "Start from nutrition: the 2023 Nutri-Score (A ≈ 85–100 … E ≈ 0–23), the database's or one goodscan computes from the facts.",

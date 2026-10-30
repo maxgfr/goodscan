@@ -154,6 +154,8 @@ export const de: Messages = {
   riskNotListed: "Auf keiner unserer Listen",
   euNotAuthorised: "In der EU nicht zugelassen",
   anses: "Von der ANSES beobachtet",
+  usBannedFda: "Von der FDA verboten",
+  usBannedState: "In einem US-Bundesstaat verboten",
   scienceTitle: "Was die Wissenschaft sagt",
   scienceNote:
     "Punkte gibt es nur für eine behördliche Bewertung mit Bedenken oder zwei übereinstimmende Humanstudien ab. Eine einzelne Studie wird gezeigt, nicht gezählt.",
@@ -275,7 +277,7 @@ export const de: Messages = {
 
   aboutTitle: "Über goodscan",
   aboutBody:
-    "goodscan liest die offenen Datenbanken von Open Food Facts und macht daraus eine Gesundheitsbewertung von 0 bis 100, die du Zeile für Zeile nachprüfen kannst. Kein Konto, kein Tracking, kein Server: die Seite spricht mit Open Food Facts und, wenn du willst, mit deinem eigenen KI-Modell.",
+    "goodscan liest die offenen Datenbanken von Open Food Facts und Open Beauty Facts und macht daraus eine Bewertung von 0 bis 100, Zeile für Zeile nachprüfbar, jeder Punkt mit Quelle: der Nutri-Score, die Verarbeitung, was EFSA, IARC und die amtlichen Listen der EU, Kanadas und der USA über jeden Zusatzstoff oder kosmetischen Inhaltsstoff sagen, die Studien dahinter und bessere Alternativen derselben Kategorie. Kein Konto, kein Tracking, kein Server: die Seite spricht mit Open Food Facts und, wenn du willst, mit deinem eigenen KI-Modell.",
   aboutScoreTitle: "So entsteht die Bewertung",
   aboutScore1:
     "Ausgangspunkt ist die Ernährung: der Nutri-Score 2023 (A ≈ 85–100 … E ≈ 0–23), aus der Datenbank oder von goodscan aus den Nährwerten berechnet.",

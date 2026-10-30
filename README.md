@@ -1,10 +1,12 @@
 # goodscan
 
 Scan a food or cosmetic barcode and see if it is good for you. goodscan reads the open databases of
-[Open Food Facts](https://world.openfoodfacts.org) and gives a 0–100 health score you can check
-line by line: the Nutri-Score, how processed it is, which additives carry a risk according to EFSA
-or are not allowed in the EU. It works for products from the US, France, Germany and the 150+
-countries Open Food Facts covers, in English, French and German. Set your preferences (allergens,
+[Open Food Facts](https://world.openfoodfacts.org) and [Open Beauty Facts](https://world.openbeautyfacts.org)
+and gives a 0–100 score you can check line by line, every point with its source: the Nutri-Score,
+how processed it is, what EFSA, IARC and the EU's classifications say about each additive or
+cosmetic ingredient, the studies behind them, and better choices in the same category. It works
+for products from the US, France, Germany and the 150+ countries Open Food Facts covers, in
+English, French and German. Set your preferences (allergens,
 vegan, low salt…) and it tells you whether a product is for you, the way the Open Food Facts apps
 do. Connect your own AI model if you like, to have a score explained, ask questions, or read a
 label from a photo when a product is missing. An installable PWA: no account, no server.
@@ -90,6 +92,20 @@ two human studies that agree. Then the additive costs 6 points, in food as in dr
 Nutri-Score only counts sweeteners in drinks). A single study, or animal and lab work, is shown
 but costs nothing. An additive EFSA already rates at a high risk of overexposure, or that the EU
 does not authorise, keeps that stronger penalty alone.
+
+### US food laws
+
+Each additive also shows the US rules that name it, from a verified research with ultrasearch in
+[docs/research/us-food-laws](docs/research/us-food-laws/README.md) (101 sources, every claim
+checked against its source, primary texts first: the Federal Register, the FDA, state codes):
+the FDA's revocations (brominated vegetable oil in 2024, Red No. 3 from 2027), statewide bans
+(California's Food Safety Act from 2027, Arkansas and West Virginia from 2028), warning labels
+(Texas, Louisiana), the FDA's non-binding plan to phase out petroleum-based dyes, and the
+school-meal bans of thirteen states, shown as one line. Laws that are signed but stayed in court
+(West Virginia's, Texas's) say so. They are shown, not counted: for food, the EU's list of
+authorised additives is the reference, and every additive a US rule names is either authorised
+there with its conditions or already penalised as not authorised; the FDA's own positions that
+weigh are in the cited evidence.
 
 ## Cosmetics
 
@@ -185,7 +201,8 @@ suggestions.
 ## Sources
 
 The data choices were checked with a cited, verified web research (116 sources) in
-[docs/research](docs/research/README.md), and against the live APIs by `bun run e2e-live`.
+[docs/research](docs/research/README.md), and against the live APIs by `bun run e2e-live`, which
+also checks that every official source the scripts read still answers in the shape they expect.
 - Products, additives taxonomy, preference attributes: Open Food Facts and its sister databases,
   [ODbL](https://opendatacommons.org/licenses/odbl/1-0/); images CC BY-SA. Each product page links
   back to its Open Food Facts page. `bun run additives` and `bun run attributes` refresh the
@@ -193,6 +210,17 @@ The data choices were checked with a cited, verified web research (116 sources) 
 - Additive risks: EFSA re-evaluations, as recorded by Open Food Facts
   (`efsa_evaluation_overexposure_risk`), plus a short hand-kept list of additives the EU does not
   authorise ([`src/data/eu.ts`](src/data/eu.ts)).
+- Official lists, for every additive and cosmetic ingredient (`bun run hazards`, see
+  [Official lists](#official-lists-for-every-ingredient)): IARC Monographs; the EU harmonised
+  classification (CLP Annex VI) through PubChem, © European Union, CC BY 4.0; the EU
+  endocrine-disruptor lists (edlists.org); CosIng annexes through the Open Beauty Facts taxonomy;
+  Health Canada's Cosmetic Ingredient Hotlist; the FDA's prohibited and restricted cosmetic
+  ingredients; CAS numbers of additives from Wikidata (CC0).
+- US food laws: federal and state rules on additives, verified in
+  [docs/research/us-food-laws](docs/research/us-food-laws/README.md).
+- Processed and red meat: IARC Monographs volume 114 ([Bouvard et al., 2015](https://doi.org/10.1016/S1470-2045(15)00444-1)).
+- Better choices: the full Open Food Facts and Open Beauty Facts exports (ODbL), ranked with
+  goodscan's own score (`bun run alternatives`).
 - What science says: official positions and human studies, cited with their DOI or PMID
   ([docs/research/additives-evidence](docs/research/additives-evidence/README.md)).
 - Cosmetic ingredients: EU Cosmetics Regulation annexes, fragrance allergens of Regulation (EU)
@@ -221,7 +249,7 @@ bun install
 bun run dev        # http://localhost:5173
 bun run test       # unit tests (score, Nutri-Score, matching, API client, i18n, AI)
 bun run test:e2e   # build + Playwright, incl. a real camera scan from a fake video
-bun run e2e-live   # against the real Open Food Facts (by hand)
+bun run e2e-live   # against the real Open Food Facts and every official source (by hand)
 bun run alternatives # the better-choice lists in public/alternatives (not committed)
 bun run typecheck && bun run lint
 ```

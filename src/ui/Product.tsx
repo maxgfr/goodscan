@@ -5,6 +5,7 @@ import type { CosmeticCategory } from "../data/cosmetics";
 import { type Evidence, evidenceUrl } from "../data/evidence";
 import { ADD_PRODUCT_URL, DATABASES, productUrl } from "../data/off";
 import { isCosmetic, isFood, type Nutriments, type Product as P } from "../data/product";
+import { lawsShown } from "../data/usFoodLaws";
 import type { MessageKey } from "../i18n";
 import { rateIngredients } from "../score/cosmetic";
 import { asEvidence } from "../score/hazard";
@@ -530,6 +531,11 @@ function Additives({ score }: { score: Score }) {
                 <div className="flex flex-wrap items-center justify-between gap-2">
                   <span>{a.names[lang] ?? a.names.en ?? a.code}</span>
                   <span className="flex flex-wrap gap-1">
+                    {usBan(a) ? (
+                      <span className="rounded-full px-2 py-0.5 text-xs text-muted ring-1 ring-stone-300 dark:ring-stone-700">
+                        {t(usBan(a) === "federal-ban" ? "usBannedFda" : "usBannedState")}
+                      </span>
+                    ) : null}
                     {a.anses ? (
                       <span className="rounded-full px-2 py-0.5 text-xs text-muted ring-1 ring-stone-300 dark:ring-stone-700">
                         {t("anses")}
@@ -542,7 +548,7 @@ function Additives({ score }: { score: Score }) {
                     </span>
                   </span>
                 </div>
-                {a.evidence || a.hazard ? <Science evidence={scienceOf(a)} /> : null}
+                {a.evidence || a.hazard || a.usLaws ? <Science evidence={scienceOf(a)} /> : null}
               </li>
             );
           })}
@@ -554,6 +560,11 @@ function Additives({ score }: { score: Score }) {
   );
 }
 
+/** The strongest US ban on an additive, if any: the FDA's, else a state's for all food. */
+const usBan = (a: AdditiveInfo) =>
+  a.usLaws?.find((l) => l.kind === "federal-ban")?.kind ??
+  a.usLaws?.find((l) => l.kind === "state-ban")?.kind;
+
 /** The cited findings, then what official lists say that they do not already. */
 function scienceOf(a: AdditiveInfo): Evidence[] {
   const cited = a.evidence ?? [];
@@ -561,7 +572,10 @@ function scienceOf(a: AdditiveInfo): Evidence[] {
   const official = (a.hazard?.findings ?? [])
     .filter((f) => !orgs.has(f.source.org))
     .map(asEvidence);
-  return [...cited, ...official];
+  const laws = lawsShown(a.usLaws ?? []).map(
+    (l): Evidence => ({ summary: l.summary, kind: "official", source: l.source, concern: true }),
+  );
+  return [...cited, ...official, ...laws];
 }
 
 /** The cited findings on one additive, folded under it. */

@@ -154,6 +154,8 @@ export const fr: Messages = {
   riskNotListed: "Absent de nos listes",
   euNotAuthorised: "Non autorisé dans l'UE",
   anses: "Surveillé par l'ANSES",
+  usBannedFda: "Interdit par la FDA",
+  usBannedState: "Interdit dans un État américain",
   scienceTitle: "Ce que dit la science",
   scienceNote:
     "Des points ne sont retirés que pour une position officielle préoccupante ou deux études humaines concordantes. Une étude isolée est citée, sans pénalité.",
@@ -275,7 +277,7 @@ export const fr: Messages = {
 
   aboutTitle: "À propos de goodscan",
   aboutBody:
-    "goodscan lit les bases ouvertes d'Open Food Facts et en tire une note santé sur 100 que vous pouvez vérifier ligne par ligne. Pas de compte, pas de pistage, pas de serveur : la page parle à Open Food Facts et, si vous le voulez, à votre propre modèle d'IA.",
+    "goodscan lit les bases ouvertes d'Open Food Facts et d'Open Beauty Facts et en tire une note de 0 à 100 vérifiable ligne par ligne, chaque point avec sa source : le Nutri-Score, la transformation, ce que disent l'EFSA, le CIRC et les listes officielles de l'UE, du Canada et des États-Unis sur chaque additif ou ingrédient cosmétique, les études derrière, et de meilleurs choix dans la même catégorie. Sans compte, sans pistage, sans serveur : la page parle à Open Food Facts et, si vous le souhaitez, à votre propre modèle d'IA.",
   aboutScoreTitle: "Comment la note est calculée",
   aboutScore1:
     "On part de la nutrition : le Nutri-Score 2023 (A ≈ 85–100 … E ≈ 0–23), celui de la base ou celui que goodscan calcule à partir des valeurs.",
