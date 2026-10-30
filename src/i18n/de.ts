@@ -91,6 +91,7 @@ export const de: Messages = {
   reason_ingredientEndocrine: "{ingredient}: in der EU identifizierter endokriner Disruptor",
   reason_ingredientPfas: "{ingredient}: eine PFAS (Ewigkeitschemikalie)",
   reason_ingredientUsBan: "{ingredient}: von einem US-Bundesstaat in Kosmetik verboten",
+  reason_ingredientNonEuBan: "{ingredient}: in Kanada oder von der FDA in Kosmetik verboten",
   reason_ingredientRestricted: "{ingredient}: in EU-Kosmetik beschränkt",
   reason_ingredientSuspected:
     "{ingredient}: Verdacht auf krebserregende, erbgutverändernde, fortpflanzungsgefährdende oder hormonelle Wirkung",
@@ -185,6 +186,9 @@ export const de: Messages = {
   cat_sensitiser: "Sensibilisierend",
   cat_euListed: "Eingeschränkt (EU)",
   cat_underReview: "In EU-Prüfung",
+  cat_nonEuBan: "In Kanada oder den USA verboten",
+  cat_restrictedAbroad: "In Kanada oder den USA eingeschränkt",
+  cat_euAnnexIi: "EU-Anhang II",
   ingredientsInci: "Inhaltsstoffe (INCI)",
   aiInci: "Inhaltsstoffliste per Foto lesen",
   aiInciMissing: "Die Inhaltsstoffliste fehlt. Ein Foto der Verpackung ergänzt sie.",
@@ -282,7 +286,7 @@ export const de: Messages = {
     "Bio +5, Palmöl −3. Verarbeitetes Fleisch −10 und höchstens 49 (IARC, Gruppe 1), rotes Fleisch −5 (IARC, Gruppe 2A). Wasser ist 100, Alkohol höchstens 20.",
   aboutScore5: "Ab 75 ausgezeichnet, ab 50 gut, ab 25 mäßig, darunter schlecht.",
   aboutCosmetics:
-    "Kosmetik (Open Beauty Facts) erhält eine Inhaltsstoff-Bewertung: ab 100, −40 für einen in EU-Kosmetik verbotenen Inhaltsstoff (höchstens 20), −25 für einen CMR-Stoff (1A/1B, IARC 1 oder 2A) oder einen in der EU identifizierten endokrinen Disruptor (höchstens 49), −20 für eine PFAS (höchstens 49) oder ein Verbot eines US-Bundesstaats, das keine EU-Regel abdeckt, −8 für eine EU-Beschränkung oder einen Verdacht auf CMR oder endokrine Wirkung, −3 je Duftstoff-Allergen oder sensibilisierendem Stoff (höchstens −15). Jeder Inhaltsstoff der Liste zeigt seine Stufe.",
+    "Kosmetik (Open Beauty Facts) erhält eine Inhaltsstoff-Bewertung: ab 100, −40 für einen in EU-Kosmetik verbotenen Inhaltsstoff (höchstens 20), −25 für einen CMR-Stoff (1A/1B, IARC 1 oder 2A) oder einen in der EU identifizierten endokrinen Disruptor (höchstens 49), −20 für eine PFAS (höchstens 49) oder ein Verbot eines US-Bundesstaats, Kanadas oder der FDA, das keine EU-Regel abdeckt, −8 für eine EU-Beschränkung oder einen Verdacht auf CMR oder endokrine Wirkung, −3 je Duftstoff-Allergen oder sensibilisierendem Stoff (höchstens −15). Jeder Inhaltsstoff der Liste zeigt seine Stufe.",
   aboutSourcesTitle: "Quellen und Lizenzen",
   aboutOff:
     "Produktdaten, Zusatzstoffe und Vorlieben-Attribute: Open Food Facts, Open Beauty Facts, Open Pet Food Facts, Open Products Facts — Open Database License (ODbL); Bilder CC BY-SA.",
@@ -293,7 +297,7 @@ export const de: Messages = {
   aboutCosmeticsSources:
     "Kosmetische Inhaltsstoffe: Anhänge der Verordnung (EG) 1223/2009, Duftstoff-Allergene der Verordnung 2023/1545, SCCS-Stellungnahmen, ECHA, EU-Listen endokriner Disruptoren, Kalifornien AB 2762, jeweils mit Quellen.",
   aboutHazards:
-    "Jeder Zusatzstoff und jeder kosmetische Inhaltsstoff wird außerdem über die CAS-Nummer mit amtlichen Listen abgeglichen: IARC (Gruppen 1, 2A, 2B), die harmonisierte EU-Einstufung (CLP Anhang VI: krebserregend, erbgutverändernd, fortpflanzungsgefährdend, sensibilisierend, über PubChem), die EU-Listen endokriner Disruptoren (edlists.org) und die Anhänge der Kosmetikverordnung (CosIng, über Open Beauty Facts).",
+    "Jeder Zusatzstoff und jeder kosmetische Inhaltsstoff wird außerdem über die CAS-Nummer mit amtlichen Listen abgeglichen: IARC (Gruppen 1, 2A, 2B), die harmonisierte EU-Einstufung (CLP Anhang VI: krebserregend, erbgutverändernd, fortpflanzungsgefährdend, sensibilisierend, über PubChem), die EU-Listen endokriner Disruptoren (edlists.org), die Anhänge der Kosmetikverordnung (CosIng, über Open Beauty Facts), die in Kanada in Kosmetik verbotenen Inhaltsstoffe (Hotlist von Health Canada) und die von der FDA verbotenen oder beschränkten kosmetischen Inhaltsstoffe.",
   aboutFda:
     "US-Nährstoffbox: Tageswerte der FDA und die vorgeschlagene „Nutrition Info“-Box auf der Vorderseite (Niedrig ≤ 5 %, Hoch ≥ 20 % DV).",
   aboutNotAdvice:

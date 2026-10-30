@@ -365,6 +365,7 @@
     "en:acrylamide": {
       "i": ["2A", 1994],
       "c": ["616-003-00-0", ["H317", "H340", "H350", "H361f"]],
+      "h": "P",
       "a": "II/681",
       "n": "ACRYLAMIDE",
       "k": "95284"
@@ -814,7 +815,7 @@
       "n": "CAMPHOR BENZALKONIUM METHOSULFATE",
       "k": "32378"
     },
-    "en:cannabidiol": { "a": "II/306", "n": "CANNABIDIOL", "k": "93486" },
+    "en:cannabidiol": { "h": "P", "a": "II/306", "n": "CANNABIDIOL", "k": "93486" },
     "en:cannabis-sativa-flower-extract": {
       "a": "II/306",
       "n": "CANNABIS SATIVA FLOWER EXTRACT",
@@ -900,6 +901,7 @@
     "en:cetylamine-hydrofluoride": { "a": "III/36", "n": "CETYLAMINE HYDROFLUORIDE", "k": "32622" },
     "en:chloramine-t": {
       "c": ["616-010-00-9", ["H334"]],
+      "h": "P",
       "a": "III/5",
       "n": "CHLORAMINE T",
       "k": "55258"
@@ -918,6 +920,7 @@
     },
     "en:chloroacetamide": {
       "c": ["616-036-00-0", ["H317", "H361f"]],
+      "h": "P",
       "a": "VI/41",
       "n": "CHLOROACETAMIDE",
       "k": "32661"
@@ -941,6 +944,7 @@
       "k": "32666"
     },
     "en:chlorphenesin": { "a": "V/50", "n": "CHLORPHENESIN", "k": "32667" },
+    "en:ci-12120": { "h": "P", "n": "CI 12120", "k": "32703" },
     "en:ci-42510": { "i": ["2B", 2009], "n": "CI 42510", "k": "32759" },
     "en:ci-77820": { "c": ["047-004-00-9", ["H361f"]], "n": "CI 77820", "k": "32836" },
     "en:ci-77891": { "i": ["2B", 2006], "c": ["022-006-00-2", ["H351"]], "n": "CI 77891" },
@@ -987,7 +991,7 @@
       "k": "39326"
     },
     "en:cinnamyl-alcohol": { "a": "III/69", "n": "CINNAMYL ALCOHOL", "k": "32853" },
-    "en:cis-retinoic-acid": { "a": "II/375", "n": "CIS-RETINOIC ACID", "k": "95801" },
+    "en:cis-retinoic-acid": { "h": "P", "a": "II/375", "n": "CIS-RETINOIC ACID", "k": "95801" },
     "en:cis-rose-ketone-2": { "a": "III/162", "n": "CIS-ROSE KETONE-2", "k": "41385" },
     "en:citral": { "c": ["605-019-00-3", ["H317"]], "a": "III/70", "n": "CITRAL", "k": "32857" },
     "en:citronellol": { "a": "III/86", "n": "CITRONELLOL", "k": "32861" },
@@ -1258,11 +1262,18 @@
     },
     "en:d-pulegone": { "i": ["2B", 2013], "n": "D-PULEGONE", "k": "40945" },
     "en:datura-stramonium-leaf-extract": {
+      "h": "P",
       "a": "II/301",
       "n": "DATURA STRAMONIUM LEAF EXTRACT",
       "k": "84665"
     },
+    "en:dechloro-ethylcloprostenolamide": {
+      "h": "P",
+      "n": "DECHLORO ETHYLCLOPROSTENOLAMIDE",
+      "k": "85697"
+    },
     "en:dehydroacetic-acid": { "a": "V/13", "n": "DEHYDROACETIC ACID", "k": "33185" },
+    "en:dehydrolatanoprost": { "h": "P", "n": "DEHYDROLATANOPROST", "k": "92901" },
     "en:deltamethrin": { "e": "II", "n": "DELTAMETHRIN", "k": "85040" },
     "en:di-tea-cocamide-diacetate": {
       "a": "III/62",
@@ -1298,6 +1309,7 @@
     "en:dichloromethane": {
       "i": ["2A", 2014],
       "c": ["602-004-00-3", ["H351"]],
+      "f": ["P", "700.19"],
       "a": "III/7",
       "n": "DICHLOROMETHANE",
       "k": "33260"
@@ -1310,6 +1322,7 @@
     },
     "en:diethyl-caprylamide": { "a": "III/60", "n": "DIETHYL CAPRYLAMIDE", "k": "55840" },
     "en:diethyl-oxalate": { "a": "III/3", "n": "DIETHYL OXALATE", "k": "33280" },
+    "en:diethyl-toluamide": { "h": "P", "n": "DIETHYL TOLUAMIDE", "k": "75703" },
     "en:diethylamino-hydroxybenzoyl-hexyl-benzoate": {
       "a": "VI/28",
       "n": "DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE",
@@ -1444,6 +1457,7 @@
     "en:epichlorohydrin": {
       "i": ["2A", 1998],
       "c": ["603-026-00-6", ["H317", "H350"]],
+      "h": "P",
       "a": "II/657",
       "n": "EPICHLOROHYDRIN",
       "k": "95275"
@@ -1488,9 +1502,11 @@
       "k": "82478"
     },
     "en:ethyl-thioglycolate": { "a": "III/2b", "n": "ETHYL THIOGLYCOLATE", "k": "33850" },
+    "en:ethyl-travoprostamide": { "h": "P", "n": "ETHYL TRAVOPROSTAMIDE", "k": "92905" },
     "en:ethylbenzene": { "i": ["2B"], "n": "ETHYLBENZENE", "k": "39830" },
     "en:ethylenediamine": {
       "c": ["612-006-00-6", ["H317", "H334"]],
+      "h": "P",
       "n": "ETHYLENEDIAMINE",
       "k": "95268"
     },
@@ -1785,6 +1801,7 @@
       "k": "34677"
     },
     "en:isopropyl-benzoate": { "a": "V/1a", "n": "ISOPROPYL BENZOATE", "k": "34684" },
+    "en:isopropyl-cloprostenate": { "h": "P", "n": "ISOPROPYL CLOPROSTENATE", "k": "85696" },
     "en:isopropyl-cresols": { "a": "V/38", "n": "ISOPROPYL CRESOLS", "k": "34687" },
     "en:isopropyl-thioglycolate": { "a": "III/2b", "n": "ISOPROPYL THIOGLYCOLATE", "k": "34707" },
     "en:isopropylamine": { "a": "III/61", "n": "ISOPROPYLAMINE", "k": "34709" },
@@ -1831,6 +1848,7 @@
     },
     "en:laurtrimonium-bromide": { "a": "V/44", "n": "LAURTRIMONIUM BROMIDE", "k": "34944" },
     "en:laurtrimonium-chloride": { "a": "V/44", "n": "LAURTRIMONIUM CHLORIDE", "k": "34945" },
+    "en:laurus-nobilis-fruit-oil": { "h": "P", "n": "LAURUS NOBILIS FRUIT OIL", "k": "56957" },
     "en:lauryl-dimethicone-peg-10-phosphate": {
       "a": "III/186",
       "n": "LAURYL DIMETHICONE PEG-10 PHOSPHATE",
@@ -1987,7 +2005,7 @@
       "n": "METHIONYL HEXAPEPTIDE-40 SH-DECAPEPTIDE-1 TRIPEPTIDE-44 RH-POLYPEPTIDE-60",
       "k": "93314"
     },
-    "en:methotrexate": { "a": "II/6", "n": "METHOTREXATE", "k": "95795" },
+    "en:methotrexate": { "h": "P", "a": "II/6", "n": "METHOTREXATE", "k": "95795" },
     "en:methotrexoyl-oligopeptide-59": {
       "a": "II/6",
       "n": "METHOTREXOYL OLIGOPEPTIDE-59",
@@ -2014,6 +2032,7 @@
     "en:methyl-diethanolamine": { "a": "II/411", "n": "METHYL DIETHANOLAMINE", "k": "88437" },
     "en:methyl-methacrylate": {
       "c": ["607-035-00-6", ["H317"]],
+      "h": "P",
       "n": "METHYL METHACRYLATE",
       "k": "83732"
     },
@@ -2267,6 +2286,7 @@
       "n": "P-AMINOPHENOL",
       "k": "35831"
     },
+    "en:p-cresol": { "h": "P", "n": "P-CRESOL", "k": "35872" },
     "en:p-hydroxyanisole": {
       "c": ["604-044-00-7", ["H317"]],
       "a": "III/95",
@@ -2349,8 +2369,19 @@
     "en:phenoxyethanol": { "a": "V/29", "n": "PHENOXYETHANOL", "k": "36522" },
     "en:phenoxyisopropanol": { "a": "III/54", "n": "PHENOXYISOPROPANOL", "k": "36524" },
     "en:phenyl-benzoate": { "a": "V/1a", "n": "PHENYL BENZOATE", "k": "36525" },
-    "en:phenyl-mercuric-acetate": { "a": "V/17", "n": "PHENYL MERCURIC ACETATE", "k": "36527" },
-    "en:phenyl-mercuric-benzoate": { "a": "V/17", "n": "PHENYL MERCURIC BENZOATE", "k": "36528" },
+    "en:phenyl-mercuric-acetate": {
+      "h": "P",
+      "f": ["R", "700.13"],
+      "a": "V/17",
+      "n": "PHENYL MERCURIC ACETATE",
+      "k": "36527"
+    },
+    "en:phenyl-mercuric-benzoate": {
+      "h": "P",
+      "a": "V/17",
+      "n": "PHENYL MERCURIC BENZOATE",
+      "k": "36528"
+    },
     "en:phenyl-mercuric-bromide": { "a": "V/17", "n": "PHENYL MERCURIC BROMIDE", "k": "59212" },
     "en:phenyl-methyl-pyrazolone": {
       "a": "III/228",
@@ -2759,6 +2790,7 @@
       "n": "SODIUM BORATE",
       "k": "37742"
     },
+    "en:sodium-bromate": { "h": "P", "n": "SODIUM BROMATE", "k": "37743" },
     "en:sodium-butylparaben": { "a": "V/12", "n": "SODIUM BUTYLPARABEN", "k": "37746" },
     "en:sodium-chlorate": { "e": "II", "a": "III/6", "n": "SODIUM CHLORATE", "k": "37812" },
     "en:sodium-dehydroacetate": { "a": "V/13", "n": "SODIUM DEHYDROACETATE", "k": "37851" },
@@ -2956,6 +2988,7 @@
       "n": "T-BUTYLAMINOETHYL METHACRYLATE",
       "k": "95925"
     },
+    "en:tafluprost": { "h": "P", "n": "TAFLUPROST", "k": "86884" },
     "en:talc": { "i": ["2A", 2024], "a": "III/59", "n": "TALC", "k": "38438" },
     "en:tallamide-dea": { "a": "III/60", "n": "TALLAMIDE DEA", "k": "38444" },
     "en:tallowalkonium-chloride": { "a": "III/65", "n": "TALLOWALKONIUM CHLORIDE", "k": "38456" },
@@ -3190,9 +3223,20 @@
       "k": "38566"
     },
     "en:tetrasodium-etidronate": { "a": "III/53", "n": "TETRASODIUM ETIDRONATE", "k": "38570" },
-    "en:theophylline": { "c": ["613-342-00-6", ["H360D"]], "n": "THEOPHYLLINE", "k": "38578" },
+    "en:theophylline": {
+      "c": ["613-342-00-6", ["H360D"]],
+      "h": "P",
+      "n": "THEOPHYLLINE",
+      "k": "38578"
+    },
     "en:thiabendazole": { "e": "II", "n": "THIABENDAZOLE", "k": "38579" },
-    "en:thimerosal": { "a": "V/16", "n": "THIMEROSAL", "k": "38582" },
+    "en:thimerosal": {
+      "h": "P",
+      "f": ["R", "700.13"],
+      "a": "V/16",
+      "n": "THIMEROSAL",
+      "k": "38582"
+    },
     "en:thioglycolic-acid": { "a": "III/2a", "n": "THIOGLYCOLIC ACID", "k": "38587" },
     "en:thuja-occidentalis-bark-extract": {
       "a": "III/119",
@@ -3240,6 +3284,7 @@
       "n": "TITANIUM DIOXIDE",
       "k": "38617"
     },
+    "en:tolnaftate": { "h": "P", "n": "TOLNAFTATE", "k": "59780" },
     "en:toluene": {
       "c": ["601-021-00-3", ["H361d"]],
       "a": "III/185",
@@ -3254,6 +3299,7 @@
     },
     "en:toluene-diisocyanate": {
       "c": ["615-006-00-4[1]", ["H317", "H334", "H351"]],
+      "h": "P",
       "n": "TOLUENE DIISOCYANATE",
       "k": "95283"
     },
@@ -3307,6 +3353,11 @@
     },
     "en:triethyl-phosphate": { "e": "II", "n": "TRIETHYL PHOSPHATE", "k": "59826" },
     "en:triethylhexyl-trimellitate": { "e": "II", "n": "TRIETHYLHEXYL TRIMELLITATE", "k": "80356" },
+    "en:trifluoromethyl-dechloro-ethylcloprostenolamide": {
+      "h": "P",
+      "n": "TRIFLUOROMETHYL DECHLORO ETHYLCLOPROSTENOLAMIDE",
+      "k": "85699"
+    },
     "en:triisopropanolamine": { "a": "III/62", "n": "TRIISOPROPANOLAMINE", "k": "38722" },
     "en:trilaurylamine": { "a": "III/62", "n": "TRILAURYLAMINE", "k": "38735" },
     "en:trimellitic-anhydride": {
@@ -3367,6 +3418,8 @@
     "en:vinyl-chloride": {
       "i": ["1", 2009],
       "c": ["602-023-00-7", ["H350"]],
+      "h": "P",
+      "f": ["P", "700.14"],
       "n": "VINYL CHLORIDE",
       "k": "90183"
     },

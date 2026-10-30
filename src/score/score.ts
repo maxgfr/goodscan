@@ -47,6 +47,7 @@ export interface Reason {
     | "ingredientEndocrine"
     | "ingredientPfas"
     | "ingredientUsBan"
+    | "ingredientNonEuBan"
     | "ingredientRestricted"
     | "ingredientSuspected"
     | "ingredientAllergens";

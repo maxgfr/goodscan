@@ -91,6 +91,7 @@ export const fr: Messages = {
   reason_ingredientEndocrine: "{ingredient} : perturbateur endocrinien identifié dans l'UE",
   reason_ingredientPfas: "{ingredient} : un PFAS (polluant éternel)",
   reason_ingredientUsBan: "{ingredient} : interdit dans les cosmétiques par un État américain",
+  reason_ingredientNonEuBan: "{ingredient} : interdit dans les cosmétiques au Canada ou par la FDA",
   reason_ingredientRestricted: "{ingredient} : restreint dans les cosmétiques de l'UE",
   reason_ingredientSuspected:
     "{ingredient} : suspecté cancérogène, mutagène, reprotoxique ou perturbateur endocrinien",
@@ -185,6 +186,9 @@ export const fr: Messages = {
   cat_sensitiser: "Sensibilisant",
   cat_euListed: "Usage limité (UE)",
   cat_underReview: "En cours d'évaluation (UE)",
+  cat_nonEuBan: "Interdit au Canada ou aux États-Unis",
+  cat_restrictedAbroad: "Restreint au Canada ou aux États-Unis",
+  cat_euAnnexIi: "Annexe II (UE)",
   ingredientsInci: "Ingrédients (INCI)",
   aiInci: "Lire la liste des ingrédients en photo",
   aiInciMissing: "La liste des ingrédients manque. Une photo de l'emballage la complète.",
@@ -282,7 +286,7 @@ export const fr: Messages = {
     "Bio +5, huile de palme −3. Viande transformée −10 et note au plus 49 (CIRC, groupe 1), viande rouge −5 (CIRC, groupe 2A). L'eau vaut 100, l'alcool au plus 20.",
   aboutScore5: "À partir de 75 c'est excellent, 50 bon, 25 médiocre, en dessous mauvais.",
   aboutCosmetics:
-    "Les cosmétiques (Open Beauty Facts) ont une note ingrédients : à partir de 100, −40 pour un ingrédient interdit dans les cosmétiques de l'UE (note au plus 20), −25 pour un CMR (1A/1B, CIRC 1 ou 2A) ou un perturbateur endocrinien identifié dans l'UE (au plus 49), −20 pour un PFAS (au plus 49) ou pour une interdiction d'un État américain qu'aucune règle de l'UE ne couvre, −8 pour une restriction de l'UE ou un CMR ou perturbateur endocrinien suspecté, −3 par allergène de parfum ou sensibilisant (−15 au plus). Chaque ingrédient de la liste affiche son niveau.",
+    "Les cosmétiques (Open Beauty Facts) ont une note ingrédients : à partir de 100, −40 pour un ingrédient interdit dans les cosmétiques de l'UE (note au plus 20), −25 pour un CMR (1A/1B, CIRC 1 ou 2A) ou un perturbateur endocrinien identifié dans l'UE (au plus 49), −20 pour un PFAS (au plus 49) ou pour une interdiction d'un État américain, du Canada ou de la FDA qu'aucune règle de l'UE ne couvre, −8 pour une restriction de l'UE ou un CMR ou perturbateur endocrinien suspecté, −3 par allergène de parfum ou sensibilisant (−15 au plus). Chaque ingrédient de la liste affiche son niveau.",
   aboutSourcesTitle: "Sources et licences",
   aboutOff:
     "Données produits, additifs et attributs de préférences : Open Food Facts, Open Beauty Facts, Open Pet Food Facts, Open Products Facts — Open Database License (ODbL) ; images CC BY-SA.",
@@ -293,7 +297,7 @@ export const fr: Messages = {
   aboutCosmeticsSources:
     "Ingrédients cosmétiques : annexes du règlement (UE) 1223/2009, allergènes de parfum du règlement 2023/1545, avis du CSSC, ECHA, listes de perturbateurs endocriniens de l'UE, loi californienne AB 2762, chacun avec ses sources.",
   aboutHazards:
-    "Chaque additif et chaque ingrédient cosmétique est aussi vérifié dans les listes officielles, par numéro CAS : CIRC (groupes 1, 2A, 2B), classification harmonisée de l'UE (annexe VI du CLP : cancérogènes, mutagènes, toxiques pour la reproduction, sensibilisants, via PubChem), listes de perturbateurs endocriniens de l'UE (edlists.org) et annexes du règlement cosmétique (CosIng, via Open Beauty Facts).",
+    "Chaque additif et chaque ingrédient cosmétique est aussi vérifié dans les listes officielles, par numéro CAS : CIRC (groupes 1, 2A, 2B), classification harmonisée de l'UE (annexe VI du CLP : cancérogènes, mutagènes, toxiques pour la reproduction, sensibilisants, via PubChem), listes de perturbateurs endocriniens de l'UE (edlists.org), annexes du règlement cosmétique (CosIng, via Open Beauty Facts), ingrédients interdits dans les cosmétiques au Canada (liste critique de Santé Canada) et ingrédients interdits ou restreints par la FDA.",
   aboutFda:
     "Encadré nutriments US : valeurs quotidiennes de la FDA et projet d'encadré « Nutrition Info » en face avant (Faible ≤ 5 %, Élevé ≥ 20 % VQ).",
   aboutNotAdvice:

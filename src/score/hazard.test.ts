@@ -56,7 +56,7 @@ describe("levels", () => {
 
   test("a cosmetics annex is shown, never counted as a ban", () => {
     // Annex II entry 904: petrolatum is banned only unless fully refined.
-    expect(categoriesOf({ a: "II/904" })).toEqual(["eu-listed"]);
+    expect(categoriesOf({ a: "II/904" })).toEqual(["eu-annex-ii"]);
     expect(findingsOf({ a: "III/84" })[0]?.level).toBe("listed");
   });
 });
@@ -126,6 +126,26 @@ describe("cosmetics", () => {
       ),
     );
     expect(items.map((i) => i.label)).toEqual(["Aqua", "Glycerin"]);
+  });
+
+  test("banned in Canada: counts where no EU rule covers it", () => {
+    // A prostaglandin analogue of eyelash serums: prohibited by Health Canada, not named by the EU.
+    const s = scoreCosmetic(withList("Aqua, Isopropyl Cloprostenate"));
+    expect(s.reasons[1]).toMatchObject({ key: "ingredientNonEuBan", delta: -20 });
+    // A thioglycolate the EU allows within limits (annex III): the EU rule settles it.
+    expect(scoreCosmetic(withList("Aqua, Glyceryl Thioglycolate")).value).toBe(100);
+  });
+
+  test("glycerin, restricted in Canada only for an impurity, is not flagged", () => {
+    expect(findConcerns("Glycerin")).toEqual([]);
+  });
+
+  test("the FDA's lists: chloroform prohibited, mercury compounds restricted", () => {
+    const [chloroform] = findingsOf({ f: ["P", "700.18"] });
+    expect(chloroform?.level).toBe("high");
+    expect(chloroform?.summary.en).toContain("21 CFR 700.18");
+    expect(categoriesOf({ f: ["R", "700.13"] })).toEqual(["restricted-abroad"]);
+    expect(categoriesOf({ h: "P" })).toEqual(["non-eu-ban"]);
   });
 
   test("every ingredient of the list gets a level, in its order", () => {
