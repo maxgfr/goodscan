@@ -46,6 +46,11 @@ label from a photo when a product is missing. An installable PWA: no account, no
      science that weighs (see [Science](#science)), EFSA's moderate overexposure, IARC 2B, a
      suspected CMR or endocrine disruptor (see [Official lists](#official-lists-for-every-ingredient));
      −45 at most in all;
+   - processed meat −10 and the score cannot pass 49 (IARC group 1: it causes colorectal
+     cancer), red meat −5 (IARC group 2A), from IARC Monographs volume 114 ([Bouvard et al., The
+     Lancet Oncology, 2015](https://doi.org/10.1016/S1470-2045(15)00444-1)); less than an additive
+     because the Nutri-Score already counts their salt and fat. A stock or a sauce tagged with its
+     meat is not meat;
    - organic +5, palm oil −3; water is 100, alcohol 20 at most;
    - 75 and up is excellent, 50 good, 25 poor, below that bad.
 4. **Your market first.** With a US browser, the FDA-style box comes first: saturated fat, sodium

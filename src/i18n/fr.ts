@@ -80,6 +80,8 @@ export const fr: Messages = {
     "{additive} : danger suspecté pour la santé (CIRC ou listes de l'UE)",
   reason_organic: "Bio",
   reason_palmOil: "Contient de l'huile de palme",
+  reason_processedMeat: "Viande transformée : cancérogène pour l'homme (CIRC, groupe 1)",
+  reason_redMeat: "Viande rouge : cancérogène probable pour l'homme (CIRC, groupe 2A)",
   reason_ingredientsMissing: "Liste des ingrédients absente : pas encore de note",
   reason_ingredientsChecked:
     "{count} ingrédients vérifiés selon les règles de l'UE et des États-Unis",
@@ -94,6 +96,7 @@ export const fr: Messages = {
     "{ingredient} : suspecté cancérogène, mutagène, reprotoxique ou perturbateur endocrinien",
   reason_ingredientAllergens: "{count} allergènes ou sensibilisants (listes de l'UE)",
   reasonCap: "plafonne la note à {cap}",
+  reasonSource: "Source",
 
   matchTitle: "Pour vous",
   matchSubtitle: "Vos préférences, comparées comme le fait Open Food Facts.",
@@ -273,7 +276,8 @@ export const fr: Messages = {
   aboutScore2: "Transformation : −12 si ultra-transformé (NOVA 4), −4 si transformé (NOVA 3).",
   aboutScore3:
     "Additifs : chacun compte une fois, pour ce qui est dit de plus fort à son sujet. −25 s'il n'est pas autorisé dans l'UE (note au plus 25) ; −15 pour un risque élevé : surexposition selon l'EFSA, CIRC 1 ou 2A, CMR 1A/1B ou perturbateur endocrinien identifié par l'UE (note au plus 49) ; −6 pour un risque modéré : science citée qui pèse (position officielle préoccupante ou deux études humaines concordantes), surexposition modérée selon l'EFSA, CIRC 2B, CMR ou perturbateur endocrinien suspecté. Au plus −45 en tout.",
-  aboutScore4: "Bio +5, huile de palme −3. L'eau vaut 100, l'alcool au plus 20.",
+  aboutScore4:
+    "Bio +5, huile de palme −3. Viande transformée −10 et note au plus 49 (CIRC, groupe 1), viande rouge −5 (CIRC, groupe 2A). L'eau vaut 100, l'alcool au plus 20.",
   aboutScore5: "À partir de 75 c'est excellent, 50 bon, 25 médiocre, en dessous mauvais.",
   aboutCosmetics:
     "Les cosmétiques (Open Beauty Facts) ont une note ingrédients : à partir de 100, −40 pour un ingrédient interdit dans les cosmétiques de l'UE (note au plus 20), −25 pour un CMR (1A/1B, CIRC 1 ou 2A) ou un perturbateur endocrinien identifié dans l'UE (au plus 49), −20 pour un PFAS (au plus 49) ou pour une interdiction d'un État américain qu'aucune règle de l'UE ne couvre, −8 pour une restriction de l'UE ou un CMR ou perturbateur endocrinien suspecté, −3 par allergène de parfum ou sensibilisant (−15 au plus). Chaque ingrédient de la liste affiche son niveau.",

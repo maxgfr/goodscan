@@ -37,6 +37,8 @@ export interface Reason {
     | "additiveHazardModerate"
     | "organic"
     | "palmOil"
+    | "processedMeat"
+    | "redMeat"
     | "ingredientsMissing"
     | "ingredientsChecked"
     | "ingredientsClean"
@@ -56,6 +58,8 @@ export interface Reason {
   /** A cosmetic ingredient's id (src/data/cosmetics.ts). */
   ingredient?: string;
   count?: number;
+  /** Where the finding comes from, when the line stands on one source. */
+  source?: string;
 }
 
 export interface AdditiveInfo {
@@ -158,6 +162,23 @@ const isOrganic = (p: Product) =>
     /^en:(organic|eu-organic|usda-organic|bio)$|^fr:ab-agriculture-biologique$|^de:bio/,
   );
 const isCheese = (p: Product) => p.categories.includes("en:cheeses");
+/** IARC Monographs volume 114, summarised in The Lancet Oncology (Bouvard et al., 2015). */
+export const IARC_MEAT = "https://doi.org/10.1016/S1470-2045(15)00444-1";
+/** A stock, a soup or a sauce is tagged with its meat without being meat. */
+const NOT_MEAT = /^en:(broths|broth-stock|soups|sauces|meals)$/;
+const isMeat = (p: Product) => p.categories.includes("en:meats") && !has(p.categories, NOT_MEAT);
+/** Salted, cured, fermented or smoked: IARC group 1. */
+export const isProcessedMeat = (p: Product) =>
+  isMeat(p) && has(p.categories, /^en:(prepared-meats|bacon|canned-meats)$/);
+/** Beef, veal, pork, lamb, mutton, horse, goat: IARC group 2A. */
+export const isUnprocessedRedMeat = (p: Product) =>
+  isMeat(p) &&
+  !isProcessedMeat(p) &&
+  has(
+    p.categories,
+    /^en:(beef|veal|pork|lamb|mutton|horse-meat|goat-meat|red-meats|beef-meat|pork-meat)$/,
+  );
+
 const isRedMeat = (p: Product) =>
   has(p.categories, /^en:(beef|pork|lamb|veal|red-meats|beef-meat|pork-meat)$/);
 
@@ -228,6 +249,16 @@ export function scoreProduct(p: Product): Score {
   // Many flagged additives say the same thing: the total stops at 45.
   delta -= Math.min(45, additivePenalty);
 
+  // IARC: processed meat causes colorectal cancer (group 1), red meat probably does (2A).
+  // The Nutri-Score already counts their salt and fat, hence less than an additive.
+  if (isProcessedMeat(p)) {
+    delta -= 10;
+    cap = Math.min(cap, 49);
+    reasons.push({ key: "processedMeat", delta: -10, cap: 49, source: IARC_MEAT });
+  } else if (isUnprocessedRedMeat(p)) {
+    delta -= 5;
+    reasons.push({ key: "redMeat", delta: -5, source: IARC_MEAT });
+  }
   if (p.analysis.includes("en:palm-oil")) {
     delta -= 3;
     reasons.push({ key: "palmOil", delta: -3 });

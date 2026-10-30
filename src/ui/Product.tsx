@@ -280,6 +280,17 @@ function ReasonLine({ reason, score }: { reason: Reason; score: Score }) {
         {reason.cap !== undefined && reason.key !== "alcohol" ? (
           <span className="text-muted"> — {t("reasonCap", { cap: reason.cap })}</span>
         ) : null}
+        {reason.source ? (
+          <a
+            className="ml-1 inline-flex items-center align-middle text-muted"
+            href={reason.source}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={t("reasonSource")}
+          >
+            <Icon name="external" className="size-3.5" />
+          </a>
+        ) : null}
       </span>
       {delta ? (
         <span

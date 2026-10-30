@@ -74,6 +74,8 @@ export const en = {
   reason_additiveHazardModerate: "{additive}: suspected health hazard (IARC or EU lists)",
   reason_organic: "Organic",
   reason_palmOil: "Contains palm oil",
+  reason_processedMeat: "Processed meat: carcinogenic to humans (IARC group 1)",
+  reason_redMeat: "Red meat: probably carcinogenic to humans (IARC group 2A)",
   reason_ingredientsMissing: "Ingredient list missing: no score yet",
   reason_ingredientsChecked: "{count} ingredients checked against EU and US rules",
   reason_ingredientsClean: "No ingredient of concern found",
@@ -87,6 +89,7 @@ export const en = {
     "{ingredient}: suspected carcinogen, mutagen, reprotoxicant or endocrine disruptor",
   reason_ingredientAllergens: "{count} allergens or sensitisers (EU lists)",
   reasonCap: "caps the score at {cap}",
+  reasonSource: "Source",
 
   matchTitle: "For you",
   matchSubtitle: "Your preferences, matched the way Open Food Facts does.",
@@ -266,7 +269,8 @@ export const en = {
   aboutScore2: "Processing: −12 for ultra-processed (NOVA 4), −4 for processed (NOVA 3).",
   aboutScore3:
     "Additives: each counts once, for the strongest thing said about it. −25 if the EU does not authorise it (score at most 25); −15 for a high risk: EFSA overexposure, IARC 1 or 2A, a CMR 1A/1B or an endocrine disruptor identified by the EU (score at most 49); −6 for a moderate one: cited science that weighs (an official position of concern or two human studies that agree), EFSA moderate overexposure, IARC 2B, a suspected CMR or endocrine disruptor. At most −45 in all.",
-  aboutScore4: "Organic +5, palm oil −3. Water is 100, alcohol at most 20.",
+  aboutScore4:
+    "Organic +5, palm oil −3. Processed meat −10 and at most 49 (IARC group 1), red meat −5 (IARC group 2A). Water is 100, alcohol at most 20.",
   aboutScore5: "75 and up is excellent, 50 good, 25 poor, below bad.",
   aboutCosmetics:
     "Cosmetics (Open Beauty Facts) get an ingredient score: from 100, −40 for an ingredient banned in EU cosmetics (score at most 20), −25 for a CMR (1A/1B, IARC 1 or 2A) or an endocrine disruptor identified in the EU (at most 49), −20 for a PFAS (at most 49) or for a US state ban no EU rule covers, −8 for an EU restriction or a suspected CMR or endocrine disruptor, −3 per fragrance allergen or sensitiser (−15 at most). Each ingredient of the list shows its level.",

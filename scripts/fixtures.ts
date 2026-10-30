@@ -15,6 +15,9 @@ export const FIXTURES: Record<string, string> = {
   "4000417025005": "Ritter Sport marzipan (DE)",
   "3274080005003": "Cristaline water (FR)",
   "5449000131805": "Coca-Cola Zero Sugar (FR, aspartame)",
+  "3449865367250": "Viande des Grisons, Aoste (FR, processed meat)",
+  "3181232220286": "Steaks hachés 5 %, Charal (FR, red meat)",
+  "7613039829264": "Fond de veau, Maggi (FR, a stock, not meat)",
 };
 
 export const COSMETIC_FIXTURES: Record<string, string> = {
