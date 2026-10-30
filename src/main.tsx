@@ -16,5 +16,7 @@ createRoot(root).render(
   </StrictMode>,
 );
 
-// Offline from the second visit; a new version takes over on the next load.
+// Offline from the second visit. A new version is found as the page loads, takes
+// over at once and reloads it, before the old one could ask for files gone from
+// the server.
 if (import.meta.env.PROD) registerSW({ immediate: true });

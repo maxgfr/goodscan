@@ -87,6 +87,10 @@ export default defineConfig({
         ],
       },
       workbox: {
+        // The plugin only adds these itself when it injects the registration; this
+        // app registers in main.tsx, so a new version would wait for every tab to close.
+        skipWaiting: true,
+        clientsClaim: true,
         globPatterns: ["**/*.{js,css,html,svg,png,ico,wasm,json}"],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         navigateFallback: "index.html",
