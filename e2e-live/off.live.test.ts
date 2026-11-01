@@ -1,11 +1,11 @@
 /**
- * Against the real Open Food Facts and Open Beauty Facts (run by hand: bun
- * run e2e-live). Checks the sources still answer the way the app expects, for
- * one product per market, slowly enough for the API's rate limit.
+ * Against the real Open Food, Beauty, Pet Food and Products Facts (run by
+ * hand: bun run e2e-live). Checks the sources still answer the way the app
+ * expects, for one product per market, slowly enough for the API's rate limit.
  */
 import { describe, expect, test } from "bun:test";
-import { lookup, RateLimiter } from "../src/data/off";
-import { SEARCH_URL, searchProducts } from "../src/data/search";
+import { DATABASES, lookup, RateLimiter } from "../src/data/off";
+import { searchProducts, searchUrl } from "../src/data/search";
 import { scoreProduct } from "../src/score/score";
 
 const CASES = [
@@ -71,15 +71,34 @@ describe("Open Food Facts, live", () => {
     expect(t["en:e250"]?.efsa_evaluation_overexposure_risk?.en).toBe("en:high");
   }, 30_000);
 
-  test("name search answers, and says whether this site may call it yet", async () => {
-    const page = await searchProducts("nutella", { lang: "fr", limiter: new RateLimiter() });
-    expect(page.count).toBeGreaterThan(10);
-    expect(page.hits[0]?.code).toMatch(/^\d{8,14}$/);
-    const res = await fetch(`${SEARCH_URL}?q=nutella&page_size=1&fields=code`, {
-      headers: { Origin: "https://maxgfr.github.io" },
-    });
-    const cors = res.headers.get("access-control-allow-origin");
-    // Informational: name search shows in the app once this is open (search-a-licious#427).
-    console.log(`search CORS for maxgfr.github.io: ${cors ?? "closed"}`);
+  test("Open Pet Food Facts and Open Products Facts answer by barcode", async () => {
+    const pet = await lookup("3065890153707", { lang: "fr", prefer: "opff", limiter });
+    expect(pet?.source).toBe("opff");
+    expect(pet?.brands ?? "").toMatch(/whiskas/i);
+    const thing = await lookup("0190199222984", { lang: "en", prefer: "opf", limiter });
+    expect(thing?.source).toBe("opf");
+    expect(thing?.name).toMatch(/iphone/i);
   }, 30_000);
+
+  test("name search: every database answers, and lets this site call it", async () => {
+    for (const [db, q] of [
+      ["off", "nutella"],
+      ["obf", "nivea"],
+      ["opff", "whiskas"],
+      ["opf", "iphone"],
+    ] as const) {
+      const page = await searchProducts(q, {
+        lang: "fr",
+        sources: [db],
+      });
+      expect(page.counts[db], db).toBeGreaterThan(10);
+      expect(page.hits[0]?.source).toBe(db);
+      const host = DATABASES.find((d) => d.source === db)?.host ?? "";
+      const res = await fetch(searchUrl(host, q, "en", 1), {
+        headers: { Origin: "https://maxgfr.github.io" },
+      });
+      expect(res.headers.get("access-control-allow-origin"), db).toBe("*");
+      await Bun.sleep(1000);
+    }
+  }, 90_000);
 });

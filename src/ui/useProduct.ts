@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { addHistory, cachedProduct, cacheProduct } from "../data/db";
 import { LookupError, lookup } from "../data/off";
-import type { Product } from "../data/product";
+import type { Product, Source } from "../data/product";
 import type { Lang } from "../i18n";
 import { scoreProduct } from "../score/score";
 
@@ -25,7 +25,12 @@ export async function remember(code: string, product: Product) {
   }).catch(() => undefined);
 }
 
-export function useProduct(code: string, lang: Lang, onSaved: () => void): ProductState {
+export function useProduct(
+  code: string,
+  lang: Lang,
+  onSaved: () => void,
+  prefer?: Source,
+): ProductState {
   const [state, setState] = useState<ProductState>({ status: "loading" });
 
   useEffect(() => {
@@ -42,7 +47,11 @@ export function useProduct(code: string, lang: Lang, onSaved: () => void): Produ
         return;
       }
       try {
-        const product = await lookup(code, { lang, signal: ctrl.signal });
+        const product = await lookup(code, {
+          lang,
+          signal: ctrl.signal,
+          ...(prefer ? { prefer } : {}),
+        });
         if (ctrl.signal.aborted) return;
         await cacheProduct(code, lang, product).catch(() => undefined);
         if (product) {
@@ -66,7 +75,7 @@ export function useProduct(code: string, lang: Lang, onSaved: () => void): Produ
       }
     })();
     return () => ctrl.abort();
-  }, [code, lang, onSaved]);
+  }, [code, lang, onSaved, prefer]);
 
   return state;
 }
