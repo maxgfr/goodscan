@@ -1,9 +1,13 @@
 /** Name search results, page by page, each one opening the product. */
 import { useEffect, useState } from "react";
-import { SearchError, type SearchHit, searchProducts } from "../data/search";
+import { DATABASES } from "../data/off";
+import type { Source } from "../data/product";
+import { SearchError, type SearchHit, searchProducts, withMore } from "../data/search";
 import { Button, Icon, Notice, PageTitle } from "./kit";
 import { href } from "./router";
 import { useApp } from "./state";
+
+const KIND = { obf: "searchKindObf", opff: "searchKindOpff", opf: "searchKindOpf" } as const;
 
 const GRADE_TONE: Record<string, string> = {
   a: "bg-emerald-700 text-white",
@@ -19,40 +23,75 @@ type State =
       status: "done";
       hits: SearchHit[];
       count: number;
+      counts: Partial<Record<Source, number>>;
       page: number;
-      pageCount: number;
+      /** The databases with a next page. */
+      next: Source[];
+      /** The databases that did not answer. */
+      failed: Source[];
       more: boolean;
     }
   | { status: "error"; kind: SearchError["kind"] };
 
+const names = (sources: Source[]) =>
+  DATABASES.filter((d) => sources.includes(d.source))
+    .map((d) => d.name)
+    .join(", ");
+
 export function Search({ q }: { q: string }) {
   const { t, lang } = useApp();
   const [state, setState] = useState<State>({ status: "loading" });
+  const [attempt, setAttempt] = useState(0);
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: a new attempt asks again
   useEffect(() => {
     const ctrl = new AbortController();
     setState({ status: "loading" });
     searchProducts(q, { lang, signal: ctrl.signal })
-      .then((r) => setState({ status: "done", ...r, more: false }))
+      .then((r) =>
+        setState({
+          status: "done",
+          hits: r.hits,
+          count: r.count,
+          counts: r.counts,
+          page: r.page,
+          next: withMore(r),
+          failed: r.failed,
+          more: false,
+        }),
+      )
       .catch((err) => {
         if (!ctrl.signal.aborted)
           setState({ status: "error", kind: err instanceof SearchError ? err.kind : "network" });
       });
     return () => ctrl.abort();
-  }, [q, lang]);
+  }, [q, lang, attempt]);
+
+  const retry = (
+    <button
+      type="button"
+      className="ml-1 font-semibold underline"
+      onClick={() => setAttempt((n) => n + 1)}
+    >
+      {t("aiRetry")}
+    </button>
+  );
 
   async function more() {
     if (state.status !== "done") return;
     setState({ ...state, more: true });
     try {
-      const next = await searchProducts(q, { lang, page: state.page + 1 });
+      const next = await searchProducts(q, {
+        lang,
+        page: state.page + 1,
+        sources: state.next,
+      });
       const seen = new Set(state.hits.map((h) => h.code));
       setState({
-        status: "done",
+        ...state,
         hits: [...state.hits, ...next.hits.filter((h) => !seen.has(h.code))],
-        count: next.count,
         page: next.page,
-        pageCount: next.pageCount,
+        next: withMore(next),
         more: false,
       });
     } catch {
@@ -94,20 +133,28 @@ export function Search({ q }: { q: string }) {
         </ul>
       ) : state.status === "error" ? (
         <Notice tone="error">
-          {state.kind === "rate-limit" ? t("searchRateLimit") : t("searchError")}
+          {state.kind === "rate-limit" ? t("searchRateLimit") : t("searchError")} {retry}
         </Notice>
-      ) : state.hits.length === 0 ? (
+      ) : state.hits.length === 0 && !state.failed.length ? (
         <Notice>{t("searchNone", { q })}</Notice>
       ) : (
         <>
+          {state.failed.length ? (
+            <div className="mb-3">
+              <Notice tone="warn">
+                {t("searchPartial", { db: names(state.failed) })} {retry}
+              </Notice>
+            </div>
+          ) : null}
           <ul
+            hidden={!state.hits.length}
             className="divide-y divide-stone-200 overflow-hidden rounded-2xl border border-stone-200 bg-white dark:divide-stone-800 dark:border-stone-800 dark:bg-stone-900"
             data-testid="search-results"
           >
             {state.hits.map((h) => (
               <li key={h.code}>
                 <a
-                  href={href({ name: "product", code: h.code })}
+                  href={href({ name: "product", code: h.code, db: h.source })}
                   className="flex items-center gap-3 px-3 py-2.5 transition hover:bg-stone-50 dark:hover:bg-stone-800/60"
                 >
                   {h.image ? (
@@ -123,7 +170,14 @@ export function Search({ q }: { q: string }) {
                     </span>
                   )}
                   <span className="min-w-0 flex-1">
-                    <span className="block truncate text-sm font-medium">{h.name}</span>
+                    <span className="flex items-center gap-1.5">
+                      <span className="truncate text-sm font-medium">{h.name}</span>
+                      {h.source !== "off" && h.source !== "label" ? (
+                        <span className="shrink-0 rounded bg-stone-100 px-1.5 py-0.5 text-[10px] font-semibold tracking-wide text-muted uppercase dark:bg-stone-800">
+                          {t(KIND[h.source])}
+                        </span>
+                      ) : null}
+                    </span>
                     <span className="block truncate text-xs text-muted">
                       {[h.brands, h.quantity].filter(Boolean).join(" · ") || h.code}
                     </span>
@@ -141,7 +195,7 @@ export function Search({ q }: { q: string }) {
               </li>
             ))}
           </ul>
-          {state.page < state.pageCount ? (
+          {state.next.length ? (
             <div className="mt-4 flex justify-center">
               <Button variant="secondary" busy={state.more} onClick={() => void more()}>
                 {t("searchMore")}
@@ -149,7 +203,9 @@ export function Search({ q }: { q: string }) {
             </div>
           ) : null}
           <p className="mt-4 text-center text-xs text-muted">
-            {t("dataFrom", { db: "Open Food Facts" })}
+            {t("dataFrom", {
+              db: names(Object.keys(state.counts) as Source[]),
+            })}
           </p>
         </>
       )}

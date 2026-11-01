@@ -61,8 +61,8 @@ async function offline(page: Page | BrowserContext, errors: string[], lookups: s
   await page.route(/models\.dev|openrouter\.ai\/api\/v1\/models/, (r) => r.abort());
   // No better-choice lists unless a test serves some.
   await page.route(/\/alternatives\//, (r) => r.fulfill({ status: 404, body: "" }));
-  // Name search is blocked by its CORS policy for now: the default here too.
-  await page.route(/search\.openfoodfacts\.org/, (r) => r.abort());
+  // No name search unless a test answers it.
+  await page.route(/\/cgi\/search\.pl/, (r) => r.abort());
   await page.route(/images\.open\w+facts\.org/, (r) =>
     r.fulfill({
       contentType: "image/svg+xml",
@@ -126,7 +126,7 @@ async function connectModel(page: Page) {
 
 async function lookUp(page: Page, code: string, button = "Look up") {
   await page.goto("./");
-  await page.getByPlaceholder(/3017620422003|4008400402222/).fill(code);
+  await page.locator("#code").fill(code);
   await page.getByRole("button", { name: button }).click();
 }
 
@@ -522,56 +522,118 @@ test("starts even when another tab holds the local database", async ({ page, con
 });
 
 test.describe("name search", () => {
-  const hits = [
+  const food = [
     {
       code: "4008400402222",
       product_name: "Nutella",
-      brands: ["Nutella"],
+      brands: "Nutella",
       quantity: "450 g",
       nutriscore_grade: "e",
     },
     {
       code: "3017620422003",
       product_name: "Nutella",
-      brands: ["Nutella", "Ferrero"],
+      brands: "Nutella, Ferrero",
       quantity: "400 g",
       nutriscore_grade: "e",
     },
   ];
+  const beauty = [{ code: "4005900964441", product_name: "Soft", brands: "NIVEA", nova_group: 4 }];
 
-  test("when the search service answers: type a name, pick a product", async ({ page }) => {
+  /** Each database answers its hits, or fails when it has none to give. */
+  async function databases(page: Page, hits: Record<string, unknown[] | "down">) {
+    const asked: URL[] = [];
+    await page.route(/\/cgi\/search\.pl/, (route) => {
+      if (route.request().method() === "OPTIONS")
+        return route.fulfill({ status: 204, headers: cors });
+      const url = new URL(route.request().url());
+      asked.push(url);
+      const these = hits[url.host] ?? [];
+      return these === "down"
+        ? route.fulfill({ status: 503, headers: cors, body: "" })
+        : route.fulfill({
+            headers: cors,
+            json: { count: these.length, page: 1, page_size: 20, products: these },
+          });
+    });
+    return asked;
+  }
+
+  test("type a name, find it in every database, open the one in Open Beauty Facts", async ({
+    page,
+  }) => {
     const errors: string[] = [];
-    await offline(page, errors);
-    const asked: string[] = [];
-    await page.route(/search\.openfoodfacts\.org/, (route) => {
-      asked.push(route.request().url());
-      return route.fulfill({
-        headers: cors,
-        json: { hits, count: 2, page: 1, page_size: 20, page_count: 1 },
-      });
+    const lookups: string[] = [];
+    await offline(page, errors, lookups);
+    const asked = await databases(page, {
+      "world.openfoodfacts.org": food,
+      "world.openbeautyfacts.org": beauty,
     });
     await page.goto("./");
     const field = page.getByLabel("Barcode or product name");
-    await expect(field).toBeVisible();
     await field.fill("nutella");
     await page.getByRole("button", { name: "Look up" }).click();
     await expect(page.getByRole("heading", { name: "Search: “nutella”" })).toBeVisible();
-    await expect(page.getByText("2 products in Open Food Facts")).toBeVisible();
+    await expect(page.getByText("3 products in the Open Facts databases")).toBeVisible();
     const results = page.getByTestId("search-results");
-    await expect(results.getByRole("link")).toHaveCount(2);
-    await results.getByRole("link", { name: /Nutella, Ferrero/ }).click();
-    await expect(page.getByTestId("product-name")).toHaveText("Nutella");
-    expect(page.url()).toContain("#/p/3017620422003");
-    expect(new URL(asked.at(-1) ?? "").searchParams.get("q")).toBe("nutella");
+    await expect(results.getByRole("link")).toHaveCount(3);
+    await expect(results.getByRole("link", { name: /Soft.*Cosmetic/ })).toBeVisible();
+    await expect(page.getByText("Data: Open Food Facts, Open Beauty Facts")).toBeVisible();
+    expect(new Set(asked.map((u) => u.host)).size).toBe(4);
+    expect(asked.every((u) => u.searchParams.get("search_terms") === "nutella")).toBe(true);
+    await results.getByRole("link", { name: /Soft/ }).click();
+    await expect(page.getByTestId("product-name")).toHaveText("Soft");
+    expect(page.url()).toContain("#/p/4005900964441?db=obf");
+    // Read where the hit lives, no detour through the food database.
+    expect(lookups).toEqual(["world.openbeautyfacts.org 4005900964441"]);
     expect(errors).toEqual([]);
   });
 
-  test("while it is blocked: the field stays a barcode field", async ({ page }) => {
+  test("a database down: the others' results still show; then a food product opens", async ({
+    page,
+  }) => {
+    const errors: string[] = [];
+    await offline(page, errors);
+    const asked = await databases(page, {
+      "world.openfoodfacts.org": food,
+      "world.openbeautyfacts.org": "down",
+    });
+    await page.goto("./#/search?q=nutella");
+    const results = page.getByTestId("search-results");
+    await expect(results.getByRole("link")).toHaveCount(2);
+    await expect(
+      page.getByText(
+        "Open Beauty Facts did not answer: these results come from the other databases.",
+      ),
+    ).toBeVisible();
+    // Asked three times: the first try and two after a pause.
+    expect(asked.filter((u) => u.host === "world.openbeautyfacts.org")).toHaveLength(3);
+    await page.getByRole("button", { name: "Retry" }).click();
+    await expect(results.getByRole("link")).toHaveCount(2);
+    await expect(
+      page.getByText("Open Beauty Facts did not answer", { exact: false }),
+    ).toBeVisible();
+    await results.getByRole("link", { name: /Nutella, Ferrero/ }).click();
+    await expect(page.getByTestId("product-name")).toHaveText("Nutella");
+    expect(page.url()).toMatch(/#\/p\/3017620422003$/);
+    expect(errors).toEqual([]);
+  });
+
+  test("every database down: say so", async ({ page }) => {
+    const errors: string[] = [];
+    await offline(page, errors);
+    await page.goto("./#/search?q=nutella");
+    await expect(
+      page.getByText("The search could not be reached.", { exact: false }),
+    ).toBeVisible();
+    expect(errors).toEqual([]);
+  });
+
+  test("digits are still a barcode", async ({ page }) => {
     const errors: string[] = [];
     await offline(page, errors);
     await page.goto("./");
-    await expect(page.getByLabel("Or type the code")).toBeVisible();
-    await page.getByLabel("Or type the code").fill("nutella");
+    await page.getByLabel("Barcode or product name").fill("12345");
     await page.getByRole("button", { name: "Look up" }).click();
     await expect(page.getByText("A barcode has 8, 12, 13 or 14 digits.")).toBeVisible();
     expect(errors).toEqual([]);

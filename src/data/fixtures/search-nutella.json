@@ -1,49 +1,199 @@
 {
-  "count": 631,
+  "count": 1082,
   "page": 1,
-  "page_size": 3,
-  "page_count": 211,
-  "is_count_exact": true,
-  "hits": [
+  "page_count": 19,
+  "page_size": 20,
+  "products": [
     {
-      "code": "0009800800049",
-      "brands": [
-        "Nutella"
-      ],
-      "countries_tags": [
-        "en:united-states"
-      ],
+      "brands": "Nutella, Ferrero",
+      "code": "3017620422003",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/301/762/042/2003/front_en.879.200.jpg",
       "nova_group": 3,
-      "nutriscore_grade": "e",
-      "product_name": "Nutella & go! hazelnut spread + breadsticks",
-      "product_name_en": "Nutella & go! hazelnut spread + breadsticks",
-      "image_front_small_url": "https://images.openfoodfacts.org/images/products/000/980/080/0049/front_en.5.200.jpg"
-    },
-    {
-      "code": "0098008952506",
-      "brands": [
-        "Nutella"
-      ],
-      "countries_tags": [
-        "en:united-states"
-      ],
       "nutriscore_grade": "unknown",
       "product_name": "Nutella",
       "product_name_en": "Nutella",
-      "image_front_small_url": "https://images.openfoodfacts.org/images/products/009/800/895/2506/front_en.3.200.jpg"
+      "quantity": "400 g e"
     },
     {
-      "code": "0613460834124",
-      "brands": [
-        "Nutella"
-      ],
-      "countries_tags": [
-        "en:united-states"
-      ],
+      "brands": "Nutella, FERRERO FRANCE COMMERCIALE",
+      "code": "3017620425035",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/301/762/042/5035/front_en.583.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Nutella",
+      "product_name_en": "Nutella",
+      "quantity": "1 kg"
+    },
+    {
+      "brands": "Nutella, Ferrero",
+      "code": "3017620429484",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/301/762/042/9484/front_en.373.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Nutella",
+      "product_name_en": "Nutella",
+      "quantity": "825 g"
+    },
+    {
+      "brands": "Ferrero, Nutella",
+      "code": "8000500426494",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/800/050/042/6494/front_en.101.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Nutella Plant-Based",
+      "product_name_en": "Nutella Plant-Based",
+      "quantity": "350 g"
+    },
+    {
+      "brands": "Ferrero",
+      "code": "80176800",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/000/008/017/6800/front_en.321.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Nutella",
+      "product_name_en": "Nutella 750g",
+      "quantity": "750g"
+    },
+    {
+      "brands": "Ferrero Technical Services Srl, Nutella biscuits",
+      "code": "8000500310427",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/800/050/031/0427/front_fr.593.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Biscuits NUTELLA Biscuits Noisettes et Cacao x22 - 304g",
+      "product_name_en": "Nutella B-ready",
+      "quantity": "304 g"
+    },
+    {
+      "brands": "Nutella, Ferrero, Nutellagg",
+      "code": "59032823",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/000/005/903/2823/front_en.305.200.jpg",
+      "nova_group": 4,
       "nutriscore_grade": "e",
       "product_name": "nutella",
-      "product_name_en": "nutella",
-      "image_front_small_url": "https://images.openfoodfacts.org/images/products/061/346/083/4124/front_en.3.200.jpg"
+      "product_name_en": "nutella 630 g",
+      "quantity": "630 g"
+    },
+    {
+      "brands": "Ferrero",
+      "code": "8000500179864",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/800/050/017/9864/front_en.178.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Nutella",
+      "product_name_en": "Nutella",
+      "quantity": "600g"
+    },
+    {
+      "brands": "Nutella, Ferrero",
+      "code": "3017620421006",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/301/762/042/1006/front_fr.376.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Pâte à tartiner Nutella noisettes et cacao - 750g",
+      "product_name_en": "",
+      "quantity": "750 g"
+    },
+    {
+      "brands": "Nutella, Ferrero Technical Services Srl",
+      "code": "8000500082379",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/800/050/008/2379/front_en.167.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Nutella",
+      "product_name_en": "Nutella",
+      "quantity": "1000g"
+    },
+    {
+      "brands": "Nutella, Ferrero",
+      "code": "3017620420702",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/301/762/042/0702/front_en.127.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Nutella pâte à tartiner aux noisettes et au cacao",
+      "product_name_en": "Nutella pâte à tartiner aux noisettes et au cacao",
+      "quantity": "800 g"
+    },
+    {
+      "brands": "Nutella",
+      "code": "4008400401621",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/400/840/040/1621/front_en.302.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Nutella",
+      "product_name_en": "Nutella",
+      "quantity": "450 g"
+    },
+    {
+      "brands": "Ferrero",
+      "code": "4008400404127",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/400/840/040/4127/front_en.251.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Nutella Nuss-Nugat-Creme",
+      "product_name_en": "Nutella Nuss-Nugat-Creme",
+      "quantity": "750 g"
+    },
+    {
+      "brands": "Nutella, Ferrero",
+      "code": "80135876",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/000/008/013/5876/front_en.264.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Nutella Hazelnut Spread with Cocoa",
+      "product_name_en": "Nutella Hazelnut Spread with Cocoa",
+      "quantity": "400 g"
+    },
+    {
+      "brands": "Nutella, Ferrero, Nutella biscuits",
+      "code": "8000500310397",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/800/050/031/0397/front_en.303.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "nutella biscuits",
+      "product_name_en": "nutella biscuits",
+      "quantity": "166 g"
+    },
+    {
+      "brands": "Nutella, Nutella b-ready",
+      "code": "8000500227848",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/800/050/022/7848/front_en.455.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Biscuits NUTELLA B-ready Noisettes et Cacao x6 - 132g",
+      "product_name_en": "17000527 Nutella B-ready",
+      "quantity": "132 g"
+    },
+    {
+      "brands": "Ferrero",
+      "code": "4008400402222",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/400/840/040/2222/front_en.161.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Nutella",
+      "product_name_en": "Nutella",
+      "quantity": "500g"
+    },
+    {
+      "brands": "Nutella, Ferrero, Nutella b-ready",
+      "code": "8000500217078",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/800/050/021/7078/front_fr.259.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "B-ready",
+      "product_name_en": "",
+      "quantity": "220 g"
+    },
+    {
+      "brands": "Ferrero, Nutella B-ready, Nutella b-ready",
+      "code": "8000500223369",
+      "image_front_small_url": "https://images.openfoodfacts.org/images/products/800/050/022/3369/front_en.139.200.jpg",
+      "nova_group": 4,
+      "nutriscore_grade": "e",
+      "product_name": "Biscuits NUTELLA B-ready Noisettes et Cacao x15 - 330g",
+      "product_name_en": "Biscuits Nutella B-Ready X15 Biscuits Fourrés - 330g (Ferrero, Nutella B-Ready)",
+      "quantity": "330 g"
     }
-  ]
+  ],
+  "skip": 0
 }

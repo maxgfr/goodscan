@@ -21,7 +21,9 @@ const NAV: { route: Route; label: MessageKey; icon: IconName; match: Route["name
 function View({ route }: { route: Route }) {
   switch (route.name) {
     case "product":
-      return <ProductPage key={route.code} code={route.code} />;
+      return (
+        <ProductPage key={route.code} code={route.code} {...(route.db ? { db: route.db } : {})} />
+      );
     case "search":
       return <Search key={route.q} q={route.q} />;
     case "history":

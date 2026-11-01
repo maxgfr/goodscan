@@ -4,7 +4,13 @@ import { type Alternative, findAlternatives, marketOf } from "../data/alternativ
 import type { CosmeticCategory } from "../data/cosmetics";
 import { type Evidence, evidenceUrl } from "../data/evidence";
 import { ADD_PRODUCT_URL, DATABASES, productUrl } from "../data/off";
-import { isCosmetic, isFood, type Nutriments, type Product as P } from "../data/product";
+import {
+  isCosmetic,
+  isFood,
+  type Nutriments,
+  type Product as P,
+  type Source,
+} from "../data/product";
 import { lawsShown } from "../data/usFoodLaws";
 import type { MessageKey } from "../i18n";
 import { rateIngredients } from "../score/cosmetic";
@@ -33,10 +39,10 @@ const VERDICT_KEY = {
   "not-food": "verdictNotFood",
 } as const;
 
-export function ProductPage({ code }: { code: string }) {
+export function ProductPage({ code, db }: { code: string; db?: Source }) {
   const { t, lang, refreshHistory } = useApp();
   const onSaved = useCallback(() => void refreshHistory(), [refreshHistory]);
-  const state = useProduct(code, lang, onSaved);
+  const state = useProduct(code, lang, onSaved, db);
   const [fromLabel, setFromLabel] = useState<P | null>(null);
 
   const applyLabel = (p: P) => {

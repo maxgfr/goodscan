@@ -1,24 +1,25 @@
 /**
- * Search by product name, through Open Food Facts' search service
- * (search-a-licious, search.openfoodfacts.org): the legacy full-text search
- * and /api/v2/search answer 503 to anonymous visitors.
+ * Search by product name, in the four databases the barcode lookup reads
+ * (food, beauty, pet food, other products), through each one's full-text
+ * search (/cgi/search.pl?json=1): CORS is open, no key. Search-a-licious
+ * (search.openfoodfacts.org) only allows localhost in its CORS policy
+ * (openfoodfacts/search-a-licious#427), and /api/v2/search has no full text.
  *
- * The deployed service only allows localhost in its CORS policy for now
- * (openfoodfacts/search-a-licious#427), so the app asks once whether it
- * answers from this page and shows name search only then: it turns on by
- * itself the day the policy opens. VITE_SEARCH_ENDPOINT points elsewhere
- * (a proxy) at build time.
+ * Each search asks every database at once and interleaves their answers, food
+ * first; a database that fails leaves the others' results standing. Open Food
+ * Facts sheds load with a quick 503 about half the time, without CORS headers
+ * (so a failed request, to the page): it is asked again, twice at most, within
+ * the 10 searches a minute it allows.
  */
-import { RateLimiter } from "./off";
-import { type Grade, isGrade } from "./product";
+import { DATABASES, RateLimiter } from "./off";
+import { type Grade, isGrade, type Source } from "./product";
 
-export const SEARCH_URL: string =
-  import.meta.env.VITE_SEARCH_ENDPOINT || "https://search.openfoodfacts.org/search";
-
+/** Per database and per page. */
 export const PAGE_SIZE = 20;
 
 export interface SearchHit {
   code: string;
+  source: Source;
   name: string;
   brands?: string;
   quantity?: string;
@@ -29,9 +30,15 @@ export interface SearchHit {
 
 export interface SearchPage {
   hits: SearchHit[];
+  /** Matches in all the databases that answered. */
   count: number;
   page: number;
-  pageCount: number;
+  /** Some database has a next page. */
+  more: boolean;
+  /** Matches per database that answered. */
+  counts: Partial<Record<Source, number>>;
+  /** The databases asked that did not answer. */
+  failed: Source[];
 }
 
 export class SearchError extends Error {
@@ -40,13 +47,20 @@ export class SearchError extends Error {
   }
 }
 
-export const searchLimiter = new RateLimiter(10);
+/** Each database's own brake, under the 10 searches a minute allowed, retries counted. */
+export type Limiters = Partial<Record<Source, RateLimiter>>;
+export const searchLimiters = (): Limiters =>
+  Object.fromEntries(DATABASES.map((d) => [d.source, new RateLimiter(10)]));
+const LIMITERS = searchLimiters();
+
+/** The waits before asking a shedding database again. */
+export const RETRY_DELAYS = [600, 1500];
 
 type Raw = Record<string, unknown>;
 const str = (v: unknown): string | undefined =>
   typeof v === "string" && v.trim() ? v.trim() : undefined;
 
-export function toHit(raw: Raw, lang: string): SearchHit | null {
+export function toHit(raw: Raw, lang: string, source: Source = "off"): SearchHit | null {
   const code = str(raw.code);
   if (!code || !/^\d{8,14}$/.test(code)) return null;
   const brands = Array.isArray(raw.brands)
@@ -54,6 +68,7 @@ export function toHit(raw: Raw, lang: string): SearchHit | null {
     : str(raw.brands);
   const hit: SearchHit = {
     code,
+    source,
     name: str(raw[`product_name_${lang}`]) ?? str(raw.product_name) ?? code,
   };
   if (brands) hit.brands = brands;
@@ -61,19 +76,23 @@ export function toHit(raw: Raw, lang: string): SearchHit | null {
   if (quantity) hit.quantity = quantity;
   const image = str(raw.image_front_small_url) ?? str(raw.image_front_url);
   if (image) hit.image = image;
-  const grade = str(raw.nutriscore_grade);
-  if (isGrade(grade)) hit.nutriscore = grade;
-  if (typeof raw.nova_group === "number" && raw.nova_group >= 1 && raw.nova_group <= 4)
-    hit.nova = raw.nova_group;
+  // The other databases carry leftover food grades on cosmetics and the like.
+  if (source === "off") {
+    const grade = str(raw.nutriscore_grade);
+    if (isGrade(grade)) hit.nutriscore = grade;
+    if (typeof raw.nova_group === "number" && raw.nova_group >= 1 && raw.nova_group <= 4)
+      hit.nova = raw.nova_group;
+  }
   return hit;
 }
 
-function url(q: string, lang: string, page: number, size: number): string {
+export function searchUrl(host: string, q: string, lang: string, page: number): string {
   const params = new URLSearchParams({
-    q,
-    langs: lang === "en" ? "en" : `${lang},en`,
+    search_terms: q,
+    json: "1",
     page: String(page),
-    page_size: String(size),
+    page_size: String(PAGE_SIZE),
+    lc: lang,
     fields: [
       "code",
       "product_name",
@@ -85,72 +104,130 @@ function url(q: string, lang: string, page: number, size: number): string {
       "nova_group",
     ].join(","),
   });
-  return `${SEARCH_URL}?${params}`;
+  return `${host}/cgi/search.pl?${params}`;
 }
 
 export interface SearchOptions {
   lang: string;
   page?: number;
+  /** The databases to ask: all by default, the ones with a next page for "more". */
+  sources?: Source[];
   fetch?: typeof fetch;
-  limiter?: RateLimiter;
+  limiters?: Limiters;
+  retryDelays?: number[];
   signal?: AbortSignal;
 }
 
-export async function searchProducts(q: string, opts: SearchOptions): Promise<SearchPage> {
-  const { lang, page = 1, fetch: f = fetch, limiter = searchLimiter, signal } = opts;
-  const terms = q.trim();
-  if (!terms) return { hits: [], count: 0, page: 1, pageCount: 0 };
-  if (limiter.take() > 0) throw new SearchError("rate-limit");
-  let res: Response;
-  try {
-    res = await f(url(terms, lang, page, PAGE_SIZE), signal ? { signal } : {});
-  } catch (err) {
-    if (signal?.aborted) throw err;
-    throw new SearchError("network");
+interface DbPage {
+  source: Source;
+  hits: SearchHit[];
+  count: number;
+  more: boolean;
+}
+
+const pause = (ms: number, signal?: AbortSignal) =>
+  new Promise<void>((resolve) => {
+    if (!ms) return resolve();
+    const timer = setTimeout(resolve, ms);
+    signal?.addEventListener("abort", () => {
+      clearTimeout(timer);
+      resolve();
+    });
+  });
+
+async function searchOne(
+  { host, source }: { host: string; source: Source },
+  q: string,
+  page: number,
+  opts: SearchOptions,
+): Promise<DbPage> {
+  const { lang, fetch: f = fetch, limiters = LIMITERS, retryDelays = RETRY_DELAYS, signal } = opts;
+  const limiter = limiters[source];
+  let res: Response | undefined;
+  for (let attempt = 0; ; attempt++) {
+    if (limiter && limiter.take() > 0) throw new SearchError("rate-limit");
+    const delay = retryDelays[attempt];
+    let failed = false;
+    try {
+      // No X-User-Agent here: a plain GET needs no preflight, and Open Food
+      // Facts' shed responses (preflights included) carry no CORS headers.
+      res = await f(searchUrl(host, q, lang, page), signal ? { signal } : {});
+      failed = res.status === 503;
+    } catch (err) {
+      if (signal?.aborted) throw err;
+      // A shed 503 without CORS headers reaches the page as a failed request.
+      if (delay === undefined) throw new SearchError("network");
+      failed = true;
+    }
+    if (!failed || delay === undefined) break;
+    await pause(delay, signal);
+    if (signal?.aborted) throw signal.reason;
   }
+  if (!res) throw new SearchError("network");
   if (res.status === 429) throw new SearchError("rate-limit");
   if (!res.ok) throw new SearchError("server");
-  const body = (await res.json()) as {
-    hits?: Raw[];
-    count?: number;
-    page?: number;
-    page_count?: number;
-  };
-  const hits = (body.hits ?? [])
-    .map((h) => toHit(h, lang))
+  let body: { products?: Raw[]; count?: number | string };
+  try {
+    body = (await res.json()) as typeof body;
+  } catch {
+    throw new SearchError("server");
+  }
+  const hits = (body.products ?? [])
+    .map((p) => toHit(p, lang, source))
     .filter((h): h is SearchHit => h !== null);
+  const count = Number(body.count) || hits.length;
+  // page_count here is the products on this page, not the number of pages.
+  return { source, hits, count, more: page * PAGE_SIZE < count };
+}
+
+/** One from each database in turn, food first, each product once. */
+export function interleave(lists: SearchHit[][]): SearchHit[] {
+  const out: SearchHit[] = [];
+  const seen = new Set<string>();
+  const longest = Math.max(0, ...lists.map((l) => l.length));
+  for (let i = 0; i < longest; i++)
+    for (const list of lists) {
+      const hit = list[i];
+      if (hit && !seen.has(hit.code)) {
+        seen.add(hit.code);
+        out.push(hit);
+      }
+    }
+  return out;
+}
+
+export async function searchProducts(q: string, opts: SearchOptions): Promise<SearchPage> {
+  const { page = 1, sources, signal } = opts;
+  const terms = q.trim();
+  const empty: SearchPage = { hits: [], count: 0, page, more: false, counts: {}, failed: [] };
+  const dbs = sources ? DATABASES.filter((d) => sources.includes(d.source)) : DATABASES;
+  if (!terms || !dbs.length) return empty;
+  const settled = await Promise.allSettled(dbs.map((db) => searchOne(db, terms, page, opts)));
+  if (signal?.aborted) throw signal.reason ?? new DOMException("Aborted", "AbortError");
+  const pages = settled.flatMap((s) => (s.status === "fulfilled" ? [s.value] : []));
+  if (!pages.length) {
+    const kinds = settled.map((s) =>
+      s.status === "rejected" && s.reason instanceof SearchError ? s.reason.kind : "network",
+    );
+    throw new SearchError(
+      kinds.includes("rate-limit") ? "rate-limit" : kinds.includes("server") ? "server" : "network",
+    );
+  }
+  const counts: Partial<Record<Source, number>> = {};
+  for (const p of pages) counts[p.source] = p.count;
   return {
-    hits,
-    count: body.count ?? hits.length,
-    page: body.page ?? page,
-    pageCount: body.page_count ?? 1,
+    hits: interleave(pages.map((p) => p.hits)),
+    count: pages.reduce((n, p) => n + p.count, 0),
+    page,
+    more: pages.some((p) => p.more),
+    counts,
+    failed: dbs.filter((_, i) => settled[i]?.status === "rejected").map((d) => d.source),
   };
 }
 
-const PROBE_KEY = "goodscan-search-available";
-
-/**
- * Whether name search answers from this page: one small request, remembered
- * for the session (a "no" is asked again next session).
- */
-export async function searchAvailable(
-  f: typeof fetch = fetch,
-  storage: Pick<Storage, "getItem" | "setItem"> | undefined = globalThis.sessionStorage,
-  timeoutMs = 4000,
-): Promise<boolean> {
-  const known = storage?.getItem(PROBE_KEY);
-  if (known === "1" || known === "0") return known === "1";
-  const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), timeoutMs);
-  let ok = false;
-  try {
-    const res = await f(`${SEARCH_URL}?q=nutella&page_size=1&fields=code`, { signal: ctrl.signal });
-    ok = res.ok && Array.isArray(((await res.json()) as { hits?: unknown }).hits);
-  } catch {
-    ok = false;
-  } finally {
-    clearTimeout(timer);
-  }
-  storage?.setItem(PROBE_KEY, ok ? "1" : "0");
-  return ok;
+/** The databases worth asking for the next page. */
+export function withMore(page: SearchPage): Source[] {
+  return (Object.entries(page.counts) as [Source, number][])
+    .filter(([, count]) => page.page * PAGE_SIZE < count)
+    .map(([source]) => source);
 }

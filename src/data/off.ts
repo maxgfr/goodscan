@@ -236,6 +236,8 @@ export function normalize(raw: Raw, source: Source, lang: string): Product {
 
 export interface LookupOptions {
   lang: string;
+  /** The database to read first (a name search hit knows where it lives). */
+  prefer?: Source;
   fetch?: typeof fetch;
   limiter?: RateLimiter;
   signal?: AbortSignal;
@@ -273,19 +275,29 @@ async function read(
 
 /**
  * Finds a barcode: in Open Food Facts first (every code form), then in the
- * other databases with the code as scanned. Null when none knows it.
+ * other databases with the code as scanned; in the preferred database first
+ * when there is one. Null when none knows it.
  */
 export async function lookup(rawCode: string, opts: LookupOptions): Promise<Product | null> {
   const codes = lookupCodes(rawCode);
   const [first] = codes;
   if (!first) return null;
+  const preferred = opts.prefer ? DATABASES.find((d) => d.source === opts.prefer) : undefined;
+  const tried = new Set<string>();
+  if (preferred) {
+    const raw = await read(preferred, first, opts);
+    if (raw) return normalize(raw, preferred.source, opts.lang);
+    tried.add(`${preferred.source}:${first}`);
+  }
   const [off, ...others] = DATABASES;
   if (!off) return null;
   for (const code of codes) {
+    if (tried.has(`${off.source}:${code}`)) continue;
     const raw = await read(off, code, opts);
     if (raw) return normalize(raw, off.source, opts.lang);
   }
   for (const db of others) {
+    if (tried.has(`${db.source}:${first}`)) continue;
     const raw = await read(db, first, opts);
     if (raw) return normalize(raw, db.source, opts.lang);
   }

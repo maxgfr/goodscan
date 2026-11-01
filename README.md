@@ -28,13 +28,14 @@ label from a photo when a product is missing. An installable PWA: no account, no
    It identifies itself with `X-User-Agent` and brakes itself under the API's 15 reads a minute.
    Products are kept a week in IndexedDB, so a second scan is instant and works offline.
 
-   **By name:** the same field takes a product name, through Open Food Facts' search service
-   ([search-a-licious](https://github.com/openfoodfacts/search-a-licious)); the legacy full-text
-   search answers 503 to anonymous visitors. That service only allows `localhost` in its CORS
-   policy for now ([search-a-licious#427](https://github.com/openfoodfacts/search-a-licious/issues/427)),
-   so the app asks once per session whether it answers from the page and offers name search only
-   then: it turns on by itself the day the policy opens. A deployment can point
-   `VITE_SEARCH_ENDPOINT` at its own proxy meanwhile.
+   **By name:** the same field takes a product name. The page asks the four databases' full-text
+   search at once (`/cgi/search.pl?json=1`, CORS open) and interleaves their answers, food first,
+   each marked with where it comes from (cosmetic, pet food, product); a tap opens it straight in
+   its own database. Open Food Facts sheds load with a quick 503 about half the time, so it is
+   asked again, twice at most, within the 10 searches a minute it allows; a database that still
+   does not answer is named above the others' results, with a retry. (Search-a-licious only
+   allows `localhost` in its CORS policy,
+   [search-a-licious#427](https://github.com/openfoodfacts/search-a-licious/issues/427).)
 3. **Score.** Deterministic and explained, in [`src/score/score.ts`](src/score/score.ts):
    - start from nutrition: the 2023 Nutri-Score mapped onto 0–100 (A ≈ 85–100 … E ≈ 0–23),
      the database's, or one goodscan computes from the nutrition facts when the database could
@@ -249,7 +250,7 @@ bun install
 bun run dev        # http://localhost:5173
 bun run test       # unit tests (score, Nutri-Score, matching, API client, i18n, AI)
 bun run test:e2e   # build + Playwright, incl. a real camera scan from a fake video
-bun run e2e-live   # against the real Open Food Facts and every official source (by hand)
+bun run e2e-live   # against the four real Open Facts databases and every official source (by hand)
 bun run alternatives # the better-choice lists in public/alternatives (not committed)
 bun run typecheck && bun run lint
 ```

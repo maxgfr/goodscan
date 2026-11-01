@@ -1,5 +1,5 @@
 /**
- * The official sources `bun run hazards` and `bun run alternatives` read
+ * The official sources `bun run hazards`, `alternatives` and `attributes` read
  * (run by hand: bun run e2e-live). Each still answers, in the shape the
  * scripts expect, so a change upstream shows here before it breaks a build.
  */
@@ -71,6 +71,76 @@ describe("official sources, live", () => {
     ).json()) as Record<string, { cas?: { en?: string }; inci_restriction?: { en?: string } }>;
     expect(obf["en:linalool"]?.cas?.en).toBe("78-70-6");
     expect(obf["en:linalool"]?.inci_restriction?.en).toMatch(/^III\//);
+  }, 60_000);
+
+  test("PubChem's synonyms turn a CID into its CAS number", async () => {
+    const res = await fetch(
+      "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/synonyms/JSON",
+      {
+        method: "POST",
+        headers: { ...UA, "Content-Type": "application/x-www-form-urlencoded" },
+        body: "cid=6549",
+      },
+    );
+    const body = (await res.json()) as {
+      InformationList: { Information: { CID: number; Synonym?: string[] }[] };
+    };
+    const [linalool] = body.InformationList.Information;
+    expect(linalool?.CID).toBe(6549);
+    expect(linalool?.Synonym).toContain("78-70-6");
+  }, 30_000);
+
+  test("Wikidata gives the additives' CAS numbers, from the taxonomy's links", async () => {
+    const taxonomy = (await (
+      await fetch("https://static.openfoodfacts.org/data/taxonomies/additives.json", {
+        headers: UA,
+      })
+    ).json()) as Record<string, { wikidata?: { en?: string } }>;
+    const q = taxonomy["en:e951"]?.wikidata?.en;
+    expect(q).toMatch(/^Q\d+$/);
+    const query = `SELECT ?item ?cas WHERE { VALUES ?item { wd:${q} } ?item wdt:P231 ?cas }`;
+    const res = await fetch(
+      `https://query.wikidata.org/sparql?format=json&query=${encodeURIComponent(query)}`,
+      { headers: { ...UA, Accept: "application/sparql-results+json" } },
+    );
+    const body = (await res.json()) as { results: { bindings: { cas: { value: string } }[] } };
+    expect(body.results.bindings.map((b) => b.cas.value)).toContain("22839-47-0");
+  }, 60_000);
+
+  test("Open Food Facts' preference attributes and importance levels", async () => {
+    const get = async (path: string) =>
+      (await (
+        await fetch(`https://world.openfoodfacts.org/api/v2/${path}?lc=fr`, { headers: UA })
+      ).json()) as { id: string; name: string; attributes?: { id: string; name: string }[] }[];
+    const groups = await get("attribute_groups");
+    const ids = groups.flatMap((g) => (g.attributes ?? []).map((a) => a.id));
+    for (const id of ["nutriscore", "nova", "additives", "allergens_no_gluten"])
+      expect(ids).toContain(id);
+    await Bun.sleep(5000);
+    const levels = (await get("preferences")).map((p) => p.id);
+    expect(levels).toEqual(["not_important", "important", "very_important", "mandatory"]);
+  }, 60_000);
+
+  test("the category taxonomies the better choices rank by carry their parents", async () => {
+    for (const [url, tag, parent] of [
+      [
+        "https://static.openfoodfacts.org/data/taxonomies/categories.json",
+        "en:breakfast-cereals",
+        "en:breakfasts",
+      ],
+      [
+        "https://static.openbeautyfacts.org/data/taxonomies/categories.json",
+        "en:shampoos",
+        "en:hair",
+      ],
+    ] as const) {
+      const t = (await (await fetch(url, { headers: UA })).json()) as Record<
+        string,
+        { parents?: string[] }
+      >;
+      expect(t[tag]?.parents, url).toContain(parent);
+      expect(Object.values(t).filter((e) => e.parents?.length).length, url).toBeGreaterThan(100);
+    }
   }, 60_000);
 
   test("the full exports answer, with the columns the better choices read", async () => {

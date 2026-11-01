@@ -6,6 +6,7 @@ describe("routes", () => {
     for (const r of [
       { name: "scan" },
       { name: "product", code: "3017620422003" },
+      { name: "product", code: "4005900964441", db: "obf" },
       { name: "search", q: "pâte à tartiner & co" },
       { name: "history" },
       { name: "settings" },
@@ -20,5 +21,9 @@ describe("routes", () => {
     expect(parseRoute("")).toEqual({ name: "scan" });
     expect(parseRoute("#/nope")).toEqual({ name: "scan" });
     expect(parseRoute("#/search?q=%20")).toEqual({ name: "scan" });
+    expect(parseRoute("#/p/3017620422003?db=nope")).toEqual({
+      name: "product",
+      code: "3017620422003",
+    });
   });
 });

@@ -59,6 +59,47 @@ describe("lookup", () => {
     ]);
   });
 
+  test("a search hit's database is read first, and not asked twice", async () => {
+    const beauty = fakeFetch({
+      openbeautyfacts: found({ code: "4005900964441", product_name: "Soft" }),
+    });
+    const p = await lookup("4005900964441", {
+      lang: "en",
+      prefer: "obf",
+      fetch: beauty.f,
+      limiter: new RateLimiter(),
+    });
+    expect(p?.source).toBe("obf");
+    expect(beauty.calls.map((c) => new URL(c.url).host)).toEqual(["world.openbeautyfacts.org"]);
+
+    const moved = fakeFetch({
+      openfoodfacts: found({ code: "4005900964441", product_name: "Soft" }),
+    });
+    expect(
+      (
+        await lookup("4005900964441", {
+          lang: "en",
+          prefer: "obf",
+          fetch: moved.f,
+          limiter: new RateLimiter(),
+        })
+      )?.source,
+    ).toBe("off");
+    const nowhere = fakeFetch({});
+    await lookup("4005900964441", {
+      lang: "en",
+      prefer: "opf",
+      fetch: nowhere.f,
+      limiter: new RateLimiter(),
+    });
+    expect(nowhere.calls.map((c) => new URL(c.url).host)).toEqual([
+      "world.openproductsfacts.org",
+      "world.openfoodfacts.org",
+      "world.openbeautyfacts.org",
+      "world.openpetfoodfacts.org",
+    ]);
+  });
+
   test("nowhere: null", async () => {
     const { f } = fakeFetch({});
     expect(
