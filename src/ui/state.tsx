@@ -10,6 +10,7 @@ import {
   useMemo,
   useState,
 } from "react";
+import { canSearchWeb } from "../ai/call";
 import { llm, loadLlmSettings, savedSettings } from "../ai/settings";
 import { type HistoryItem, history as readHistory } from "../data/db";
 import {
@@ -51,6 +52,8 @@ interface App {
   setPreferences(p: Preferences): void;
   t: Translate;
   settings: LlmSettings | null;
+  /** The model has its provider's web search; null while the catalog that says so loads. */
+  webSearch: boolean | null;
   history: HistoryItem[];
   refreshHistory(): Promise<void>;
 }
@@ -64,6 +67,18 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const llmState = useLlmSettings(llm);
   // biome-ignore lint/correctness/useExhaustiveDependencies: re-read when the saved settings change
   const settings = useMemo(() => savedSettings(), [llmState.saved]);
+  // What a provider's model takes comes from the catalog, fetched once one is connected.
+  const needsCatalog = Boolean(settings?.providerId);
+  const catalogLoading =
+    needsCatalog && (llmState.catalogStatus === "idle" || llmState.catalogStatus === "loading");
+  useEffect(() => {
+    if (needsCatalog) llm.retryCatalog();
+  }, [needsCatalog]);
+  // biome-ignore lint/correctness/useExhaustiveDependencies: re-read when the catalog arrives
+  const webSearch = useMemo(
+    () => (settings ? (canSearchWeb({ settings }) ? true : catalogLoading ? null : false) : false),
+    [settings, llmState.catalog, catalogLoading],
+  );
 
   const lang = stored.lang ?? detectLang();
   const regionSetting = stored.region ?? "auto";
@@ -109,6 +124,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       setPreferences: (p) => update({ preferences: p }),
       t: translator(lang),
       settings,
+      webSearch,
       history,
       refreshHistory,
     }),
@@ -120,6 +136,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       regionSetting,
       preferences,
       settings,
+      webSearch,
       history,
       refreshHistory,
       update,

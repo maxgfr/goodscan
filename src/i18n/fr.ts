@@ -58,6 +58,7 @@ export const fr: Messages = {
   verdictNotFood: "Pas un aliment",
   scoreOutOf: "/ 100",
   scoreEstimated: "Estimé par IA à partir d'une photo",
+  scoreFromWeb: "Estimé par IA à partir du web",
   notFoodBody:
     "Ce produit vient de {db} : goodscan ne note que les aliments, les boissons et les cosmétiques.",
 
@@ -215,6 +216,17 @@ export const fr: Messages = {
   aiThinking: "Réflexion…",
   aiError: "L'IA n'a pas pu répondre : {message}",
   aiDisclaimer: "L'IA peut se tromper. Ce n'est pas un avis médical.",
+  aiWebTitle: "Demander à l'IA de chercher sur le web",
+  aiWebBody:
+    "Aucune base ouverte ne le connaît : votre modèle peut le chercher sur le web (enseignes, site du fabricant) et goodscan note ce qu'il trouve. Utilise votre clé et quelques recherches web.",
+  aiWebSearch: "Chercher sur le web avec l'IA",
+  aiWebSearching: "Recherche sur le web…",
+  aiWebNone:
+    "L'IA n'a trouvé aucune page sur ce produit précis, ou pas assez pour le noter. Essayez une photo de l'étiquette.",
+  aiWebUnavailable:
+    "Votre modèle ne sait pas chercher sur le web : choisissez-en un qui le fait (Claude, GPT, Gemini) dans",
+  aiWebMode: "Chercher sur le web",
+  aiWebSources: "Sources lues par l'IA",
 
   historyTitle: "Historique",
   historyEmpty: "Rien de scanné pour l'instant.",

@@ -8,10 +8,14 @@ import { scoreProduct } from "../score/score";
 import { AiError } from "./call";
 import {
   explainProduct,
+  findOnline,
   type LabelAnswer,
+  type OnlineAnswer,
   productFacts,
   productFromLabel,
+  productFromOnline,
   readLabel,
+  WEB_SEARCH_RULE,
 } from "./product";
 import { proxySettings } from "./settings";
 
@@ -41,8 +45,44 @@ function answering(text: string) {
   return { model, prompts };
 }
 
-const caps = (vision: boolean) =>
-  resolveCapabilities({ kind: "openai", modelId: "gpt-test", override: { vision } });
+const caps = (vision: boolean, webSearch = false) =>
+  resolveCapabilities({
+    kind: "openai",
+    modelId: "gpt-test",
+    override: { vision, webSearch: webSearch ? "openai:web_search" : null },
+  });
+
+/** A model answering each call in turn, the first with the pages it read. */
+function researching(answers: string[], urls: string[] = []) {
+  const calls: { prompt: unknown; tools: string[] }[] = [];
+  const model = new MockLanguageModelV4({
+    doGenerate: async (opts) => {
+      const n = calls.length;
+      calls.push({ prompt: opts.prompt, tools: (opts.tools ?? []).map((t) => t.name) });
+      return {
+        content: [
+          ...(n === 0
+            ? urls.map((url, i) => ({
+                type: "source" as const,
+                sourceType: "url" as const,
+                id: String(i),
+                url,
+                title: `Page ${i}`,
+              }))
+            : []),
+          { type: "text" as const, text: answers[n] ?? "" },
+        ],
+        finishReason: { unified: "stop", raw: "stop" },
+        usage: {
+          inputTokens: { total: 10, noCache: 10, cacheRead: 0, cacheWrite: 0 },
+          outputTokens: { total: 10, text: 10, reasoning: 0 },
+        },
+        warnings: [],
+      };
+    },
+  });
+  return { model, calls };
+}
 
 const label: LabelAnswer = {
   name: "Granola maison",
@@ -80,7 +120,8 @@ describe("AI", () => {
       "de",
       "Für Kinder?",
     );
-    expect(out).toBe("- Viel Zucker\n- Hochverarbeitet");
+    expect(out.text).toBe("- Viel Zucker\n- Hochverarbeitet");
+    expect(out.sources).toEqual([]);
     const prompt = JSON.stringify(prompts[0]);
     expect(prompt).toContain("German");
     expect(prompt).toContain("Für Kinder?");
@@ -126,6 +167,100 @@ describe("AI", () => {
     expect(p.source).toBe("off");
     expect(p.nutriments.sugars).toBe(10);
     expect(p.nutriments.salt).toBe(0.3);
+  });
+
+  test("search mode: the provider's web search goes with the question, its pages come back", async () => {
+    const p = normalize(RAW.nutellaFr, "off", "fr");
+    const facts = productFacts(p, scoreProduct(p), null);
+    const { model, calls } = researching(
+      ["Rappel en 2026 (source : web)."],
+      ["https://example.org/rappel", "https://example.org/rappel", "ftp://nope"],
+    );
+    const out = await explainProduct(
+      { settings, model, capabilities: caps(false, true) },
+      facts,
+      "fr",
+      "Des rappels ?",
+      false,
+      true,
+    );
+    expect(calls[0]?.tools).toEqual(["web_search"]);
+    expect(JSON.stringify(calls[0]?.prompt)).toContain(WEB_SEARCH_RULE);
+    expect(out.sources).toEqual([{ url: "https://example.org/rappel", title: "Page 0" }]);
+    // Without the mode, no tool.
+    const plain = researching(["ok"]);
+    await explainProduct(
+      { settings, model: plain.model, capabilities: caps(false, true) },
+      facts,
+      "fr",
+    );
+    expect(plain.calls[0]?.tools).toEqual([]);
+  });
+
+  test("search mode needs a model that searches the web", async () => {
+    const { model, calls } = researching(["x"]);
+    await expect(
+      findOnline({ settings, model, capabilities: caps(false) }, { code: "1234567890128" }, "en"),
+    ).rejects.toBeInstanceOf(AiError);
+    expect(calls).toHaveLength(0);
+  });
+
+  test("a product found on the web: researched, then read, then scored like a label", async () => {
+    const found: OnlineAnswer = {
+      ...label,
+      found: true,
+      kind: "food",
+      code: "1234567890128",
+      ingredients: label.ingredients,
+    };
+    const { model, calls } = researching(
+      [
+        "Granola maison, Test. Per 100 g: 450 kcal… Sources: https://shop.example/granola",
+        JSON.stringify(found),
+      ],
+      ["https://shop.example/granola"],
+    );
+    const result = await findOnline(
+      { settings, model, capabilities: caps(false, true) },
+      { code: "1234567890128" },
+      "fr",
+    );
+    expect(calls.map((c) => c.tools)).toEqual([["web_search"], []]);
+    expect(JSON.stringify(calls[0]?.prompt)).toContain("barcode 1234567890128");
+    expect(JSON.stringify(calls[1]?.prompt)).toContain("Per 100 g: 450 kcal");
+    const p = productFromOnline(result, "1234567890128");
+    expect(p).toMatchObject({ source: "label", estimated: true, code: "1234567890128" });
+    expect(p?.webSources).toEqual([{ url: "https://shop.example/granola", title: "Page 0" }]);
+    expect(p && scoreProduct(p).value).not.toBeNull();
+
+    // By name: the barcode the pages gave becomes the product's.
+    expect(productFromOnline(result, "")?.code).toBe("1234567890128");
+    // Nothing usable: no product.
+    expect(productFromOnline({ answer: { ...found, found: false }, sources: [] }, "1")).toBeNull();
+    expect(productFromOnline({ answer: { ...found, kind: "other" }, sources: [] }, "1")).toBeNull();
+    const empty = {
+      ...found,
+      ingredients: null,
+      per100: Object.fromEntries(Object.keys(found.per100).map((k) => [k, null])),
+    } as OnlineAnswer;
+    expect(productFromOnline({ answer: empty, sources: [] }, "1")).toBeNull();
+  });
+
+  test("a cosmetic found on the web is scored from its ingredient list", () => {
+    const cosmetic: OnlineAnswer = {
+      ...label,
+      found: true,
+      kind: "cosmetic",
+      code: null,
+      name: "Crème test",
+      ingredients: "Aqua, Glycerin, Parfum, Limonene, Linalool, Butylphenyl Methylpropional",
+    };
+    const p = productFromOnline({ answer: cosmetic, sources: [] }, "3600000000009");
+    expect(p).toMatchObject({ source: "obf", estimated: true, name: "Crème test" });
+    expect(p?.webSources).toBeUndefined();
+    const s = p ? scoreProduct(p) : null;
+    expect(s?.value).not.toBeNull();
+    expect(s?.cosmetic?.length).toBeGreaterThan(0);
   });
 
   test("a site proxy, only with a valid endpoint", () => {
