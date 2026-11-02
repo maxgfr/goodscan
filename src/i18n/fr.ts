@@ -279,6 +279,8 @@ export const fr: Messages = {
   aiTest: "Tester",
   aiForget: "Oublier",
   aiSaved: "Enregistré.",
+  storageFull:
+    "Le stockage de ce site est plein ou bloqué : gardé pour cette page seulement, perdu au rechargement.",
   aiIncomplete: "Choisissez un modèle et saisissez une clé d'abord.",
   aiInsecure: "Le http simple n'est permis que vers localhost.",
   aiInvalid: "Cette URL de point d'accès n'est pas valide.",

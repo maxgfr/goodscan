@@ -96,12 +96,13 @@ export default defineConfig({
         globIgnores: ["alternatives/**"],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         navigateFallback: "index.html",
+        // Named after the app: every project page of maxgfr.github.io shares one Cache Storage.
         runtimeCaching: [
           {
             urlPattern: ({ url }) => url.pathname.includes("/alternatives/"),
             handler: "StaleWhileRevalidate",
             options: {
-              cacheName: "alternatives",
+              cacheName: "goodscan-alternatives",
               expiration: { maxEntries: 64, maxAgeSeconds: 7 * 24 * 3600 },
             },
           },
@@ -110,7 +111,7 @@ export default defineConfig({
             urlPattern: /^https:\/\/images\.open(food|beauty|petfood|products)facts\.org\//,
             handler: "CacheFirst",
             options: {
-              cacheName: "off-images",
+              cacheName: "goodscan-off-images",
               expiration: { maxEntries: 300, maxAgeSeconds: 30 * 24 * 3600 },
               cacheableResponse: { statuses: [0, 200] },
             },

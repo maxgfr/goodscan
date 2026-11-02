@@ -246,6 +246,9 @@ goodscan is a guide, not medical advice; data can be wrong or out of date.
 
 - History, cached products and preferences stay in your browser (IndexedDB, localStorage). One
   button erases them.
+- Every project page of maxgfr.github.io shares one browser storage: everything goodscan keeps is
+  named after it, and when another site has filled that storage, the settings say a change is
+  kept for this page only instead of "Saved".
 - The page talks to Open Food Facts and, if you connect one, to your AI provider, straight from
   your browser. The API key is encrypted at rest under a non-extractable WebCrypto key.
 - A strict Content Security Policy: scripts only from this site, images only from this site and

@@ -18,6 +18,7 @@ import type { Score } from "../score/score";
 import { Button, Icon, Notice } from "./kit";
 import { href } from "./router";
 import { useApp } from "./state";
+import { readItem, writeItem } from "./storage";
 
 function message(err: unknown): string {
   if (err instanceof AiError) return err.message;
@@ -220,7 +221,7 @@ export function AiPanel({
   const [question, setQuestion] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [web, setWeb] = useState(() => localStorage.getItem(WEB_KEY) === "1");
+  const [web, setWeb] = useState(() => readItem(WEB_KEY) === "1");
   const searchable = webSearch === true;
 
   async function ask(q?: string) {
@@ -274,7 +275,7 @@ export function AiPanel({
               checked={web}
               onChange={(e) => {
                 setWeb(e.target.checked);
-                localStorage.setItem(WEB_KEY, e.target.checked ? "1" : "0");
+                writeItem(WEB_KEY, e.target.checked ? "1" : "0");
               }}
             />
             {t("aiWebMode")}

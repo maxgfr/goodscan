@@ -271,6 +271,8 @@ export const en = {
   aiTest: "Test",
   aiForget: "Forget",
   aiSaved: "Saved.",
+  storageFull:
+    "Storage for this site is full or blocked: kept for this page only, gone after a reload.",
   aiIncomplete: "Pick a model and enter a key first.",
   aiInsecure: "Plain http is only allowed to localhost.",
   aiInvalid: "This endpoint URL is not valid.",
