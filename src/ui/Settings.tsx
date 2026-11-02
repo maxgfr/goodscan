@@ -17,12 +17,14 @@ import { Button, Icon, Notice, PageTitle, Section } from "./kit";
 import { useApp } from "./state";
 
 export function Settings() {
-  const { t, langSetting, setLang, regionSetting, setRegion, refreshHistory } = useApp();
+  const { t, langSetting, setLang, regionSetting, setRegion, refreshHistory, prefsPersisted } =
+    useApp();
   const [erased, setErased] = useState(false);
   return (
     <>
       <PageTitle title={t("settingsTitle")} />
       <div className="grid gap-4">
+        {prefsPersisted ? null : <Notice tone="warn">{t("storageFull")}</Notice>}
         <Section title={`${t("settingsLanguage")} · ${t("settingsRegion")}`}>
           <div className="grid gap-3 sm:grid-cols-2">
             <label>
@@ -187,7 +189,9 @@ function AiSettings() {
     const r = await llm.save();
     setSaved(
       r.ok
-        ? t("aiSaved")
+        ? r.persisted
+          ? t("aiSaved")
+          : t("storageFull")
         : r.reason === "incomplete"
           ? t("aiIncomplete")
           : r.reason === "insecure-endpoint"

@@ -280,6 +280,8 @@ export const de: Messages = {
   aiTest: "Testen",
   aiForget: "Vergessen",
   aiSaved: "Gespeichert.",
+  storageFull:
+    "Der Speicher dieser Seite ist voll oder blockiert: nur für diese Seite behalten, nach dem Neuladen weg.",
   aiIncomplete: "Wähle zuerst ein Modell und gib einen Schlüssel ein.",
   aiInsecure: "Einfaches http ist nur zu localhost erlaubt.",
   aiInvalid: "Diese Endpunkt-URL ist ungültig.",

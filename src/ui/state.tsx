@@ -22,6 +22,7 @@ import {
   translator,
 } from "../i18n";
 import { DEFAULT_PREFERENCES, type Preferences } from "../score/match";
+import { readItem, writeItem } from "./storage";
 
 const KEY = "goodscan-prefs";
 
@@ -33,7 +34,8 @@ interface Stored {
 
 function readStored(): Stored {
   try {
-    return JSON.parse(localStorage.getItem(KEY) ?? "{}") as Stored;
+    const stored = JSON.parse(readItem(KEY) ?? "{}") as Stored | null;
+    return stored && typeof stored === "object" ? stored : {};
   } catch {
     return {};
   }
@@ -50,6 +52,8 @@ interface App {
   setRegion(region: Region | "auto"): void;
   preferences: Preferences;
   setPreferences(p: Preferences): void;
+  /** False once the browser refused to keep a change (storage full or blocked). */
+  prefsPersisted: boolean;
   t: Translate;
   settings: LlmSettings | null;
   /** The model has its provider's web search; null while the catalog that says so loads. */
@@ -61,7 +65,10 @@ interface App {
 const Ctx = createContext<App | null>(null);
 
 export function AppProvider({ children }: { children: ReactNode }) {
-  const [stored, setStored] = useState(readStored);
+  const [{ stored, persisted }, setStored] = useState(() => ({
+    stored: readStored(),
+    persisted: true,
+  }));
   const [ready, setReady] = useState(false);
   const [history, setHistory] = useState<HistoryItem[]>([]);
   const llmState = useLlmSettings(llm);
@@ -86,12 +93,12 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const preferences = stored.preferences ?? DEFAULT_PREFERENCES;
 
   const update = useCallback((patch: Stored) => {
-    setStored((s) => {
+    setStored(({ stored: s }) => {
       const next: Stored = { ...s, ...patch };
       for (const k of Object.keys(next) as (keyof Stored)[])
         if (next[k] === undefined) delete next[k];
-      localStorage.setItem(KEY, JSON.stringify(next));
-      return next;
+      // A full storage keeps the change for this page only, and the settings say so.
+      return { stored: next, persisted: writeItem(KEY, JSON.stringify(next)) };
     });
   }, []);
 
@@ -122,6 +129,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       setRegion: (r) => update({ region: r }),
       preferences,
       setPreferences: (p) => update({ preferences: p }),
+      prefsPersisted: persisted,
       t: translator(lang),
       settings,
       webSearch,
@@ -135,6 +143,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       region,
       regionSetting,
       preferences,
+      persisted,
       settings,
       webSearch,
       history,

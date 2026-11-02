@@ -400,6 +400,31 @@ test("ask AI: explains the score with the connected model", async ({ page }) => 
   expect(errors).toEqual([]);
 });
 
+test("storage full (another site of the origin filled it): say so, keep working", async ({
+  page,
+}) => {
+  const errors: string[] = [];
+  await offline(page, errors);
+  // Every project page of maxgfr.github.io shares this origin's localStorage.
+  await page.addInitScript(() => {
+    Storage.prototype.setItem = () => {
+      throw new DOMException("The quota has been exceeded.", "QuotaExceededError");
+    };
+  });
+  await page.goto("./#/settings");
+  await page.getByRole("tab", { name: "Local / custom" }).click();
+  await page.getByLabel("Endpoint (OpenAI-compatible)").fill(ENDPOINT);
+  await page.getByLabel("Model", { exact: true }).fill("mock-model");
+  await page.getByRole("button", { name: "Save", exact: true }).click();
+  await expect(page.getByText(/^Storage for this site is full/)).toBeVisible();
+  await expect(page.getByText("Saved.")).toHaveCount(0);
+  // A preference still applies, for this page, and the settings say it will not last.
+  await page.getByLabel("Language").selectOption("fr");
+  await expect(page.getByRole("heading", { name: "Réglages" })).toBeVisible();
+  await expect(page.getByText(/^Le stockage de ce site est plein/)).toBeVisible();
+  expect(errors).toEqual([]);
+});
+
 test.describe("offline", () => {
   test.use({ serviceWorkers: "allow" });
   test("the app shell and scanned products still work", async ({ page, context }) => {
