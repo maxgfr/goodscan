@@ -11,7 +11,7 @@ import { SWEETENERS } from "../data/off";
 import type { Nutriments, Product } from "../data/product";
 import type { Match } from "../score/match";
 import type { Score } from "../score/score";
-import { type CallContext, structured, text } from "./call";
+import { type Answer, answer, type CallContext, structured } from "./call";
 import type { ModelImage } from "./image";
 
 /** The facts a model gets: what the page shows, nothing about the user beyond what they set. */
@@ -85,20 +85,31 @@ export function explainInstructions(language: string, cosmetic = false): string 
   ].join("\n");
 }
 
+/** What the search mode adds to the instructions. */
+export const WEB_SEARCH_RULE =
+  "You may search the web for what the facts leave out (the maker's page, an official position, a recall). Say in a few words what comes from the web, and never let it replace the facts or the score given.";
+
 export async function explainProduct(
   ctx: CallContext,
   facts: string,
   language: string,
   question?: string,
   cosmetic = false,
-): Promise<string> {
+  webSearch = false,
+): Promise<Answer> {
   const ask = question?.trim();
-  return text(ctx, explainInstructions(language, cosmetic), [
-    {
-      role: "user",
-      content: `Product facts (JSON): ${facts}\n\n${ask ? `My question: ${ask}` : "Explain this score."}`,
-    },
-  ]);
+  const instructions = explainInstructions(language, cosmetic);
+  return answer(
+    ctx,
+    webSearch ? `${instructions}\n${WEB_SEARCH_RULE}` : instructions,
+    [
+      {
+        role: "user",
+        content: `Product facts (JSON): ${facts}\n\n${ask ? `My question: ${ask}` : "Explain this score."}`,
+      },
+    ],
+    { webSearch },
+  );
 }
 
 const per100 = z.number().min(0).nullable();
@@ -274,5 +285,125 @@ export function productFromCosmeticLabel(label: CosmeticLabelAnswer, base: Produ
   const ingredients = label.ingredients.trim();
   if (ingredients) product.ingredients = ingredients;
   if (!base.name && label.name) product.name = label.name;
+  return product;
+}
+
+// ---------------------------------------------------------------- a product found on the web
+
+export const onlineSchema = labelSchema.extend({
+  found: z
+    .boolean()
+    .describe("The research found this exact product (same barcode, or same name and brand)"),
+  kind: z.enum(["food", "cosmetic", "other"]),
+  code: z
+    .string()
+    .nullable()
+    .describe("Its barcode (8, 12, 13 or 14 digits) when a page gives it, else null"),
+  ingredients: z
+    .string()
+    .nullable()
+    .describe("The ingredient list as published (INCI for a cosmetic), or null"),
+});
+
+export type OnlineAnswer = z.infer<typeof onlineSchema>;
+
+export function researchInstructions(language: string): string {
+  return [
+    "You look up a product on the web for a health app, because no open database knows it.",
+    "Search for it (by barcode when one is given: retailers, the maker's site, product databases), then report only what pages about this exact product say: its name and brand, whether it is a food, a cosmetic or something else, the nutrition facts per 100 g or 100 ml, the ingredient list as published, and its barcode.",
+    "Never fill a value from a similar product or from general knowledge: say it is missing. If no page is about this exact product, say so plainly.",
+    "End with the URLs you used.",
+    `Write in ${languageName(language)}.`,
+  ].join("\n");
+}
+
+export function extractInstructions(): string {
+  return [
+    "You turn a web research report about one product into structured data for a health app.",
+    "Copy only what the report states; use null for anything it does not give. found is false when the report says the exact product was not found.",
+    ...labelInstructions("en")
+      .split("\n")
+      .filter((l) => /per 100|Salt|E-numbers/.test(l)),
+  ].join("\n");
+}
+
+export interface OnlineResult {
+  answer: OnlineAnswer;
+  sources: { url: string; title?: string }[];
+}
+
+/**
+ * The model searches the web for a barcode or a name the databases do not
+ * know, then its report is made into a label-like answer (a second call, with
+ * no tool: every provider can return structured data then).
+ */
+export async function findOnline(
+  ctx: CallContext,
+  query: { code?: string; name?: string },
+  language: string,
+): Promise<OnlineResult> {
+  const what = [
+    query.code ? `barcode ${query.code}` : null,
+    query.name ? `name "${query.name}"` : null,
+  ]
+    .filter(Boolean)
+    .join(", ");
+  const report = await answer(
+    ctx,
+    researchInstructions(language),
+    [{ role: "user", content: `Find this product: ${what}.` }],
+    { webSearch: true },
+  );
+  const parsed = await structured(ctx, onlineSchema, "web_product", extractInstructions(), [
+    {
+      role: "user",
+      content: `Looked for: ${what}.\n\nReport:\n${report.text}`,
+    },
+  ]);
+  return { answer: parsed, sources: report.sources };
+}
+
+/**
+ * What the web gave, made into a product scored like any other: a food through
+ * the label path, a cosmetic through its ingredient list; null when nothing
+ * usable was found.
+ */
+export function productFromOnline(
+  { answer: found, sources }: OnlineResult,
+  code: string,
+): Product | null {
+  if (!found.found || found.kind === "other") return null;
+  const barcode = code || (found.code && /^\d{8,14}$/.test(found.code) ? found.code : "");
+  const webSources = sources.length ? sources.slice(0, 6) : undefined;
+  if (found.kind === "cosmetic") {
+    if (!found.ingredients?.trim()) return null;
+    const product: Product = {
+      code: barcode,
+      source: "obf",
+      name: found.name,
+      countries: [],
+      categories: [],
+      labels: [],
+      additives: [],
+      allergens: [],
+      traces: [],
+      analysis: [],
+      ingredients: found.ingredients.trim(),
+      nutriments: {},
+      isBeverage: false,
+      isWater: false,
+      nutriscoreNotApplicable: true,
+      sweeteners: false,
+      attributes: [],
+      estimated: true,
+    };
+    if (found.brands) product.brands = found.brands;
+    if (webSources) product.webSources = webSources;
+    return product;
+  }
+  const hasValues = Object.values(found.per100).some((v) => v !== null) || found.ingredients;
+  if (!hasValues) return null;
+  const product = productFromLabel(found, barcode);
+  if (webSources) product.webSources = webSources;
   return product;
 }

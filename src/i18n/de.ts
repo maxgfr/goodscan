@@ -61,6 +61,7 @@ export const de: Messages = {
   verdictNotFood: "Kein Lebensmittel",
   scoreOutOf: "/ 100",
   scoreEstimated: "Von KI aus einem Foto geschätzt",
+  scoreFromWeb: "Von KI aus dem Web geschätzt",
   notFoodBody:
     "Dieses Produkt stammt aus {db}: goodscan bewertet nur Lebensmittel, Getränke und Kosmetik.",
 
@@ -216,6 +217,17 @@ export const de: Messages = {
   aiThinking: "Denkt nach…",
   aiError: "Die KI konnte nicht antworten: {message}",
   aiDisclaimer: "KI kann sich irren. Keine medizinische Beratung.",
+  aiWebTitle: "KI im Web suchen lassen",
+  aiWebBody:
+    "Keine offene Datenbank kennt es: Dein Modell kann im Web danach suchen (Händler, Seite des Herstellers), und goodscan bewertet, was es findet. Nutzt deinen Schlüssel und einige Websuchen.",
+  aiWebSearch: "Mit KI im Web suchen",
+  aiWebSearching: "Suche im Web…",
+  aiWebNone:
+    "Die KI hat keine Seite zu genau diesem Produkt gefunden, oder nicht genug für eine Bewertung. Versuche ein Foto des Etiketts.",
+  aiWebUnavailable:
+    "Dein Modell kann nicht im Web suchen: Wähle eines, das es kann (Claude, GPT, Gemini), in den",
+  aiWebMode: "Im Web suchen",
+  aiWebSources: "Von der KI gelesene Quellen",
 
   historyTitle: "Verlauf",
   historyEmpty: "Noch nichts gescannt.",

@@ -63,8 +63,10 @@ export interface Product {
   ecoscore?: Grade;
   /** Open Food Facts' attributes, for matching against the user's preferences. */
   attributes: Attribute[];
-  /** True when a model read the values from a photo. */
+  /** True when a model read the values from a photo, or found them on the web. */
   estimated?: boolean;
+  /** The pages a model's web search took the values from. */
+  webSources?: { url: string; title?: string }[];
 }
 
 export const isGrade = (g: unknown): g is Grade =>

@@ -639,3 +639,167 @@ test.describe("name search", () => {
     expect(errors).toEqual([]);
   });
 });
+
+test.describe("AI web search", () => {
+  const FOUND = {
+    ...LABEL,
+    found: true,
+    kind: "food",
+    code: "4006381333931",
+  };
+
+  /** OpenAI's Responses API: the web research (with its citations), then the structured read. */
+  async function openai(page: Page, found: unknown = FOUND) {
+    const bodies: string[] = [];
+    await page.route("https://api.openai.com/v1/**", async (route) => {
+      if (route.request().method() === "OPTIONS")
+        return route.fulfill({ status: 204, headers: cors });
+      const body = route.request().postData() ?? "";
+      bodies.push(body);
+      const searching = body.includes("web_search");
+      const text = searching
+        ? body.includes("Find this product")
+          ? "Granola maison by Test: 450 kcal per 100 g. Source: https://shop.example/granola"
+          : "- A recall in 2026, says the maker's site (web)."
+        : body.includes("web_product")
+          ? JSON.stringify(found)
+          : "- A recall in 2026, says the maker's site (web).";
+      return route.fulfill({
+        headers: cors,
+        json: {
+          id: `resp_${bodies.length}`,
+          object: "response",
+          created_at: 1,
+          model: "gpt-5-mini",
+          status: "completed",
+          incomplete_details: null,
+          output: [
+            {
+              type: "message",
+              id: `msg_${bodies.length}`,
+              role: "assistant",
+              status: "completed",
+              content: [
+                {
+                  type: "output_text",
+                  text,
+                  annotations: searching
+                    ? [
+                        {
+                          type: "url_citation",
+                          start_index: 0,
+                          end_index: 7,
+                          url: "https://shop.example/granola",
+                          title: "Granola maison – Shop",
+                        },
+                      ]
+                    : [],
+                },
+              ],
+            },
+          ],
+          usage: {
+            input_tokens: 10,
+            output_tokens: 10,
+            total_tokens: 20,
+            input_tokens_details: { cached_tokens: 0 },
+            output_tokens_details: { reasoning_tokens: 0 },
+          },
+        },
+      });
+    });
+    return bodies;
+  }
+
+  async function connectOpenai(page: Page) {
+    await page.goto("./#/settings");
+    await page.getByRole("combobox", { name: "Provider" }).selectOption({ label: "OpenAI" });
+    await page.getByLabel("Search models…").fill("gpt-5-mini");
+    await page.getByRole("option", { name: /^GPT-5 Mini/ }).click();
+    await page.getByLabel("API key").fill("sk-test-123456");
+    await page.getByRole("button", { name: "Save", exact: true }).click();
+    await expect(page.getByText("Saved.")).toBeVisible();
+  }
+
+  test("unknown barcode: on a tap, the AI searches the web and goodscan scores it", async ({
+    page,
+  }) => {
+    const errors: string[] = [];
+    await offline(page, errors);
+    const bodies = await openai(page);
+    await connectOpenai(page);
+    await lookUp(page, "4006381333931");
+    await expect(page.getByRole("heading", { name: "Not in Open Food Facts yet" })).toBeVisible();
+    // Nothing is sent before the tap.
+    expect(bodies).toHaveLength(0);
+    await page.getByRole("button", { name: "Search the web with AI" }).click();
+    await expect(page.getByTestId("product-name")).toHaveText("Granola maison");
+    await expect(page.getByText("Estimated by AI from the web")).toBeVisible();
+    await expect(
+      page.getByTestId("web-sources").getByRole("link", { name: "Granola maison – Shop" }),
+    ).toHaveAttribute("href", "https://shop.example/granola");
+    await expect(page.getByTestId("reasons")).toContainText("computed by goodscan");
+    expect(bodies).toHaveLength(2);
+    expect(bodies[0]).toContain("4006381333931");
+    // Kept like a database answer: coming back asks nothing again.
+    await page.reload();
+    await expect(page.getByTestId("product-name")).toHaveText("Granola maison");
+    expect(bodies).toHaveLength(2);
+    expect(errors).toEqual([]);
+  });
+
+  test("nothing found on the web: say so, offer the photo", async ({ page }) => {
+    const errors: string[] = [];
+    await offline(page, errors);
+    await openai(page, { ...FOUND, found: false });
+    await connectOpenai(page);
+    await lookUp(page, "4006381333931");
+    await page.getByRole("button", { name: "Search the web with AI" }).click();
+    await expect(page.getByText("The AI found no page about this exact product")).toBeVisible();
+    await expect(page.getByLabel("Read the label from a photo")).toBeAttached();
+    expect(errors).toEqual([]);
+  });
+
+  test("a name no database knows: the AI finds it, with its barcode", async ({ page }) => {
+    const errors: string[] = [];
+    await offline(page, errors);
+    await page.route(/\/cgi\/search\.pl/, (route) =>
+      route.fulfill({ headers: cors, json: { count: 0, page: 1, page_size: 20, products: [] } }),
+    );
+    const bodies = await openai(page);
+    await connectOpenai(page);
+    await page.goto("./#/search?q=granola%20maison");
+    await expect(page.getByText("No product matches")).toBeVisible();
+    await page.getByRole("button", { name: "Search the web with AI" }).click();
+    await expect(page.getByTestId("product-name")).toHaveText("Granola maison");
+    expect(page.url()).toContain("#/p/4006381333931");
+    expect(bodies[0]).toContain("granola maison");
+    expect(errors).toEqual([]);
+  });
+
+  test("search mode: Ask AI searches the web and shows its sources", async ({ page }) => {
+    const errors: string[] = [];
+    await offline(page, errors);
+    const bodies = await openai(page);
+    await connectOpenai(page);
+    await lookUp(page, "4008400402222");
+    await page.getByRole("button", { name: "Explain this score" }).click();
+    await expect(page.getByTestId("ai-answer")).toContainText("A recall");
+    expect(bodies.at(-1)).not.toContain("web_search");
+    await page.getByLabel("Search the web").check();
+    await page.getByRole("button", { name: "Explain this score" }).click();
+    await expect(page.getByTestId("web-sources")).toBeVisible();
+    expect(bodies.at(-1)).toContain("web_search");
+    expect(errors).toEqual([]);
+  });
+
+  test("a model with no web search: say which can", async ({ page }) => {
+    const errors: string[] = [];
+    await offline(page, errors);
+    await connectModel(page);
+    await lookUp(page, "1234567890128");
+    await expect(page.getByText("Your model cannot search the web")).toBeVisible();
+    await expect(page.getByRole("button", { name: "Search the web with AI" })).toHaveCount(0);
+    expect(errors).toEqual([]);
+  });
+});

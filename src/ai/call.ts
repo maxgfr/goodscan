@@ -12,6 +12,7 @@ import {
   type LlmErrorCode,
   type LlmSettings,
   loadModel,
+  webSearchTools,
 } from "llm-connect";
 import type { z } from "zod";
 import { capabilitiesOf } from "./settings";
@@ -69,17 +70,81 @@ export function hasImage(messages: ModelMessage[]): boolean {
   );
 }
 
+export interface CallOptions {
+  /** Let the model search the web with its provider's own tool. */
+  webSearch?: boolean;
+}
+
+/** Does the connected model have its provider's web search? */
+export function canSearchWeb(ctx: Pick<CallContext, "settings" | "capabilities">): boolean {
+  return Boolean((ctx.capabilities ?? capabilitiesOf(ctx.settings)).webSearch);
+}
+
 /** Checks the call against the model before any request; returns its capabilities. */
-export function preflight(ctx: CallContext, messages: ModelMessage[]): Capabilities {
+export function preflight(
+  ctx: CallContext,
+  messages: ModelMessage[],
+  opts: CallOptions = {},
+): Capabilities {
   const capabilities = ctx.capabilities ?? capabilitiesOf(ctx.settings);
   if (hasImage(messages) && !capabilities.vision) {
     throw new AiError(
       "This model does not accept photos. Pick a vision model in Settings (GPT, Claude, Gemini…).",
     );
   }
-  const problem = callProblem(ctx.settings, { messages }, capabilities);
+  if (opts.webSearch && !capabilities.webSearch) {
+    throw new AiError(
+      "This model cannot search the web. Pick one that can in Settings (Claude, GPT, Gemini…).",
+    );
+  }
+  const problem = callProblem(
+    ctx.settings,
+    { messages, ...(opts.webSearch ? { webSearch: true } : {}) },
+    capabilities,
+  );
   if (problem) throw new AiError(problem.message);
   return capabilities;
+}
+
+export interface Answer {
+  text: string;
+  /** The pages a web search read, when there was one. */
+  sources: { url: string; title?: string }[];
+}
+
+/** A plain-text answer, with the pages its web search read. */
+export async function answer(
+  ctx: CallContext,
+  instructions: string,
+  messages: ModelMessage[],
+  opts: CallOptions = {},
+): Promise<Answer> {
+  const capabilities = preflight(ctx, messages, opts);
+  try {
+    const tools = opts.webSearch
+      ? await webSearchTools(capabilities.webSearch, { maxUses: 5 })
+      : undefined;
+    const res = await generateText({
+      model: ctx.model ?? (await loadModel(ctx.settings)),
+      instructions,
+      messages,
+      ...(tools ? { tools } : {}),
+      maxRetries: 1,
+      ...(ctx.signal ? { abortSignal: ctx.signal } : {}),
+      ...callOptions(ctx.settings, { capabilities }),
+    });
+    const seen = new Set<string>();
+    const sources: Answer["sources"] = [];
+    for (const s of res.steps.flatMap((step) => step.sources)) {
+      if (s.sourceType !== "url" || !/^https?:\/\//.test(s.url) || seen.has(s.url)) continue;
+      seen.add(s.url);
+      sources.push(s.title ? { url: s.url, title: s.title } : { url: s.url });
+    }
+    return { text: res.text.trim(), sources };
+  } catch (err) {
+    if (ctx.signal?.aborted) throw new DOMException("Cancelled", "AbortError");
+    throw aiError(err, ctx.settings);
+  }
 }
 
 /** A plain-text answer. */
@@ -88,21 +153,7 @@ export async function text(
   instructions: string,
   messages: ModelMessage[],
 ): Promise<string> {
-  const capabilities = preflight(ctx, messages);
-  try {
-    const res = await generateText({
-      model: ctx.model ?? (await loadModel(ctx.settings)),
-      instructions,
-      messages,
-      maxRetries: 1,
-      ...(ctx.signal ? { abortSignal: ctx.signal } : {}),
-      ...callOptions(ctx.settings, { capabilities }),
-    });
-    return res.text.trim();
-  } catch (err) {
-    if (ctx.signal?.aborted) throw new DOMException("Cancelled", "AbortError");
-    throw aiError(err, ctx.settings);
-  }
+  return (await answer(ctx, instructions, messages)).text;
 }
 
 /** One structured answer, checked against `schema`. */

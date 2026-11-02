@@ -56,6 +56,7 @@ export const en = {
   verdictNotFood: "Not a food",
   scoreOutOf: "/ 100",
   scoreEstimated: "Estimated by AI from a photo",
+  scoreFromWeb: "Estimated by AI from the web",
   notFoodBody: "This product comes from {db}: goodscan rates food, drinks and cosmetics only.",
 
   whyTitle: "Why this score",
@@ -208,6 +209,16 @@ export const en = {
   aiThinking: "Thinking…",
   aiError: "The AI could not answer: {message}",
   aiDisclaimer: "AI can be wrong. Not medical advice.",
+  aiWebTitle: "Ask AI to search the web",
+  aiWebBody:
+    "No open database knows it: your model can look for it on the web (retailers, the maker's site) and goodscan scores what it finds. Uses your key and a few web searches.",
+  aiWebSearch: "Search the web with AI",
+  aiWebSearching: "Searching the web…",
+  aiWebNone:
+    "The AI found no page about this exact product, or not enough to score it. Try a photo of the label.",
+  aiWebUnavailable: "Your model cannot search the web: pick one that can (Claude, GPT, Gemini) in",
+  aiWebMode: "Search the web",
+  aiWebSources: "Sources read by the AI",
 
   historyTitle: "History",
   historyEmpty: "Nothing scanned yet.",

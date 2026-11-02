@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { type Alternative, findAlternatives, marketOf } from "../data/alternatives";
 import type { CosmeticCategory } from "../data/cosmetics";
+import { cacheProduct } from "../data/db";
 import { type Evidence, evidenceUrl } from "../data/evidence";
 import { ADD_PRODUCT_URL, DATABASES, productUrl } from "../data/off";
 import {
@@ -24,7 +25,7 @@ import {
   verdictOf,
 } from "../score/score";
 import { fopBox } from "../score/us";
-import { AiPanel, LabelReader } from "./Ai";
+import { AiPanel, LabelReader, WebFinder, WebSources } from "./Ai";
 import { GradeBadge, Icon, Notice, NovaBadge, ScoreDial, Section, VERDICT_TONE } from "./kit";
 import { href } from "./router";
 import { useApp } from "./state";
@@ -48,6 +49,11 @@ export function ProductPage({ code, db }: { code: string; db?: Source }) {
   const applyLabel = (p: P) => {
     setFromLabel(p);
     void remember(code, p).then(onSaved);
+  };
+  // Found on the web: kept like a database answer, so coming back costs no new search.
+  const applyWeb = (p: P) => {
+    applyLabel(p);
+    void cacheProduct(code, lang, p).catch(() => undefined);
   };
 
   if (fromLabel) return <ProductView product={fromLabel} onLabel={applyLabel} />;
@@ -95,6 +101,9 @@ export function ProductPage({ code, db }: { code: string; db?: Source }) {
           <BackLink />
           <Section title={t("notFoundTitle")}>
             <p className="mb-4 text-sm text-soft">{t("notFoundBody", { code })}</p>
+            <div className="mb-4">
+              <WebFinder code={code} onProduct={applyWeb} />
+            </div>
             <LabelReader code={code} onProduct={applyLabel} prompt={t("aiLabelBody")} />
             <a
               className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700 underline dark:text-brand-400"
@@ -181,7 +190,7 @@ function BackLink() {
   );
 }
 
-function ProductView({
+export function ProductView({
   product,
   offline = false,
   onLabel,
@@ -249,9 +258,10 @@ function ProductView({
             {product.estimated ? (
               <p className="mt-1 inline-flex items-center gap-1 rounded-full bg-violet-100 px-2 py-0.5 text-xs font-medium text-violet-800 dark:bg-violet-900/40 dark:text-violet-200">
                 <Icon name="spark" className="size-3" />
-                {t("scoreEstimated")}
+                {product.webSources ? t("scoreFromWeb") : t("scoreEstimated")}
               </p>
             ) : null}
+            {product.webSources ? <WebSources sources={product.webSources} /> : null}
             {cosmetic ? <p className="mt-1 text-sm text-muted">{t("cosmeticScore")}</p> : null}
             {!food && !cosmetic ? (
               <p className="mt-1 text-sm text-muted">{t("notFoodBody", { db: db?.name ?? "" })}</p>
@@ -323,7 +333,7 @@ function ProductView({
         </Section>
       ) : null}
 
-      {product.source !== "label" ? (
+      {product.source !== "label" && !product.webSources ? (
         <p className="text-center text-xs text-muted">
           {t("dataFrom", { db: db?.name ?? "Open Food Facts" })} ·{" "}
           <a className="underline" href={productUrl(product)} target="_blank" rel="noreferrer">

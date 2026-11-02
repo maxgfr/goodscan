@@ -1,12 +1,14 @@
 /** The optional AI: explain, answer, read a label. Hidden behind "connect a model" until there is one. */
 import { useState } from "react";
-import { AiError } from "../ai/call";
+import { AiError, type Answer } from "../ai/call";
 import { preparePhoto } from "../ai/image";
 import {
   explainProduct,
+  findOnline,
   productFacts,
   productFromCosmeticLabel,
   productFromLabel,
+  productFromOnline,
   readCosmeticLabel,
   readLabel,
 } from "../ai/product";
@@ -113,6 +115,97 @@ export function LabelReader({
   );
 }
 
+/** The pages a web search read, as links. */
+export function WebSources({ sources }: { sources: { url: string; title?: string }[] }) {
+  const { t } = useApp();
+  if (!sources.length) return null;
+  return (
+    <div className="mt-2 text-xs text-muted" data-testid="web-sources">
+      <p className="font-semibold">{t("aiWebSources")}</p>
+      <ul className="mt-1 grid gap-0.5">
+        {sources.map((s) => (
+          <li key={s.url} className="truncate">
+            <a className="underline" href={s.url} target="_blank" rel="noreferrer">
+              {s.title || new URL(s.url).host}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+/**
+ * A product no database knows, looked up on the web by the connected model
+ * (on a tap: it spends the user's tokens and searches).
+ */
+export function WebFinder({
+  code = "",
+  name,
+  onProduct,
+}: {
+  code?: string;
+  name?: string;
+  onProduct: (p: Product) => void;
+}) {
+  const { t, settings, lang, webSearch } = useApp();
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [missing, setMissing] = useState(false);
+  if (!settings || webSearch === null) return null;
+  if (!webSearch) {
+    return (
+      <p className="text-sm text-soft">
+        {t("aiWebUnavailable")}{" "}
+        <a
+          className="font-semibold text-brand-700 underline dark:text-brand-400"
+          href={href({ name: "settings" })}
+        >
+          {t("navSettings")}
+        </a>
+      </p>
+    );
+  }
+  return (
+    <div className="grid gap-2">
+      <p className="text-sm text-soft">{t("aiWebBody")}</p>
+      <div>
+        <Button
+          icon="spark"
+          busy={busy}
+          onClick={async () => {
+            setBusy(true);
+            setError(null);
+            setMissing(false);
+            try {
+              const found = productFromOnline(
+                await findOnline(
+                  { settings },
+                  { ...(code ? { code } : {}), ...(name ? { name } : {}) },
+                  lang,
+                ),
+                code,
+              );
+              if (found) onProduct(found);
+              else setMissing(true);
+            } catch (err) {
+              setError(t("aiError", { message: message(err) }));
+            } finally {
+              setBusy(false);
+            }
+          }}
+        >
+          {busy ? t("aiWebSearching") : t("aiWebSearch")}
+        </Button>
+      </div>
+      {missing ? <Notice tone="warn">{t("aiWebNone")}</Notice> : null}
+      {error ? <Notice tone="error">{error}</Notice> : null}
+    </div>
+  );
+}
+
+const WEB_KEY = "goodscan-ai-web-search";
+
 export function AiPanel({
   product,
   score,
@@ -122,11 +215,13 @@ export function AiPanel({
   score: Score;
   match: Match | null;
 }) {
-  const { t, settings, lang } = useApp();
-  const [answer, setAnswer] = useState<string | null>(null);
+  const { t, settings, lang, webSearch } = useApp();
+  const [answer, setAnswer] = useState<Answer | null>(null);
   const [question, setQuestion] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [web, setWeb] = useState(() => localStorage.getItem(WEB_KEY) === "1");
+  const searchable = webSearch === true;
 
   async function ask(q?: string) {
     if (!settings) return;
@@ -140,6 +235,7 @@ export function AiPanel({
           lang,
           q,
           isCosmetic(product),
+          web && searchable,
         ),
       );
     } catch (err) {
@@ -166,10 +262,24 @@ export function AiPanel({
 
   return (
     <div className="grid gap-3">
-      <div>
+      <div className="flex flex-wrap items-center gap-3">
         <Button icon="spark" busy={busy && !question} onClick={() => void ask()}>
           {t("aiExplain")}
         </Button>
+        {searchable ? (
+          <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-soft">
+            <input
+              type="checkbox"
+              className="size-4 accent-brand-700"
+              checked={web}
+              onChange={(e) => {
+                setWeb(e.target.checked);
+                localStorage.setItem(WEB_KEY, e.target.checked ? "1" : "0");
+              }}
+            />
+            {t("aiWebMode")}
+          </label>
+        ) : null}
       </div>
       <form
         className="flex gap-2"
@@ -209,7 +319,7 @@ export function AiPanel({
           className="rounded-xl bg-stone-50 p-3 text-sm leading-relaxed dark:bg-stone-800/60"
           data-testid="ai-answer"
         >
-          {answer
+          {answer.text
             .split("\n")
             .filter(Boolean)
             .map((line, i) => (
@@ -218,6 +328,7 @@ export function AiPanel({
                 {line.startsWith("- ") ? `• ${line.slice(2)}` : line}
               </p>
             ))}
+          <WebSources sources={answer.sources} />
           <p className="mt-2 text-xs text-muted">{t("aiDisclaimer")}</p>
         </div>
       ) : null}

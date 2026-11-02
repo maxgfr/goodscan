@@ -8,8 +8,8 @@ cosmetic ingredient, the studies behind them, and better choices in the same cat
 for products from the US, France, Germany and the 150+ countries Open Food Facts covers, in
 English, French and German. Set your preferences (allergens,
 vegan, low salt…) and it tells you whether a product is for you, the way the Open Food Facts apps
-do. Connect your own AI model if you like, to have a score explained, ask questions, or read a
-label from a photo when a product is missing. An installable PWA: no account, no server.
+do. Connect your own AI model if you like, to have a score explained, ask questions, or, when a
+product is missing, read its label from a photo or look it up on the web. An installable PWA: no account, no server.
 
 **→ [maxgfr.github.io/goodscan](https://maxgfr.github.io/goodscan/)**
 
@@ -71,6 +71,14 @@ label from a photo when a product is missing. An installable PWA: no account, no
    LM Studio) to explain a score, answer a question about the product, or read the nutrition
    facts and ingredients from a photo. Label values go through the same score, marked "estimated
    by AI": the model never gives the score itself.
+
+   **Web search.** With a model that has its provider's own web search (Claude, GPT, Gemini;
+   llm-connect's `webSearchTools`), a barcode or a name no database knows can be looked up on the
+   web, on a tap: the model searches (5 searches at most on Anthropic), a second call with no tool
+   reads its report into the label's fields, and goodscan scores them, marked "estimated by AI from
+   the web" with the pages it read. A barcode found that way is kept a week like a database answer.
+   "Ask AI" has a "Search the web" mode too, for what the facts leave out (a recall, the maker's
+   page), with its sources under the answer.
 
 ## Science
 

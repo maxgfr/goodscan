@@ -1,10 +1,13 @@
 /** Name search results, page by page, each one opening the product. */
 import { useEffect, useState } from "react";
+import { cacheProduct } from "../data/db";
 import { DATABASES } from "../data/off";
-import type { Source } from "../data/product";
+import type { Product, Source } from "../data/product";
 import { SearchError, type SearchHit, searchProducts, withMore } from "../data/search";
+import { WebFinder } from "./Ai";
 import { Button, Icon, Notice, PageTitle } from "./kit";
-import { href } from "./router";
+import { ProductView } from "./Product";
+import { go, href } from "./router";
 import { useApp } from "./state";
 
 const KIND = { obf: "searchKindObf", opff: "searchKindOpff", opf: "searchKindOpf" } as const;
@@ -39,9 +42,17 @@ const names = (sources: Source[]) =>
     .join(", ");
 
 export function Search({ q }: { q: string }) {
-  const { t, lang } = useApp();
+  const { t, lang, settings } = useApp();
   const [state, setState] = useState<State>({ status: "loading" });
   const [attempt, setAttempt] = useState(0);
+  const [fromWeb, setFromWeb] = useState<Product | null>(null);
+
+  /** Found on the web: with a barcode it opens like any product (kept, so no new search). */
+  async function webProduct(p: Product) {
+    if (!p.code) return setFromWeb(p);
+    await cacheProduct(p.code, lang, p).catch(() => undefined);
+    go({ name: "product", code: p.code });
+  }
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: a new attempt asks again
   useEffect(() => {
@@ -100,6 +111,16 @@ export function Search({ q }: { q: string }) {
   }
 
   const fmt = new Intl.NumberFormat(lang);
+  const web = (
+    <section className="card mt-4 grid gap-2" aria-labelledby="web-search">
+      <h2 id="web-search" className="text-sm font-semibold">
+        {t("aiWebTitle")}
+      </h2>
+      <WebFinder name={q} onProduct={(p) => void webProduct(p)} />
+    </section>
+  );
+
+  if (fromWeb) return <ProductView product={fromWeb} onLabel={setFromWeb} />;
 
   return (
     <>
@@ -136,7 +157,10 @@ export function Search({ q }: { q: string }) {
           {state.kind === "rate-limit" ? t("searchRateLimit") : t("searchError")} {retry}
         </Notice>
       ) : state.hits.length === 0 && !state.failed.length ? (
-        <Notice>{t("searchNone", { q })}</Notice>
+        <>
+          <Notice>{t("searchNone", { q })}</Notice>
+          {settings ? web : null}
+        </>
       ) : (
         <>
           {state.failed.length ? (
@@ -202,6 +226,7 @@ export function Search({ q }: { q: string }) {
               </Button>
             </div>
           ) : null}
+          {settings ? web : null}
           <p className="mt-4 text-center text-xs text-muted">
             {t("dataFrom", {
               db: names(Object.keys(state.counts) as Source[]),
