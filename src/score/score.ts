@@ -9,7 +9,7 @@
  */
 import additivesData from "../data/additives.json";
 import { EU_NOT_AUTHORISED } from "../data/eu";
-import { type Evidence, evidenceFor, weighs } from "../data/evidence";
+import { type Evidence, evidenceFor, HUMAN_KINDS, weighs } from "../data/evidence";
 import { type Grade, isCosmetic, isFood, type Product } from "../data/product";
 import { US_FOOD_LAWS, type UsLaw } from "../data/usFoodLaws";
 import { type CosmeticFlag, scoreCosmetic } from "./cosmetic";
@@ -53,6 +53,8 @@ export interface Reason {
     | "ingredientSuspected"
     | "ingredientAllergens";
   delta?: number;
+  /** The 0–100 the score starts from, on the line that sets it. */
+  base?: number;
   /** A ceiling this finding sets. */
   cap?: number;
   grade?: Grade;
@@ -79,6 +81,10 @@ export interface AdditiveInfo {
   hazard?: AdditiveHazard;
   /** US federal and state rules naming it: shown, not counted. */
   usLaws?: UsLaw[];
+  /** What it is used for (Open Food Facts classes: emulsifier, colour…). */
+  classes?: string[];
+  /** EFSA's (re-)evaluation, with its link. */
+  efsa?: { url: string; year?: number };
 }
 
 export interface Score {
@@ -95,7 +101,13 @@ export interface Score {
 
 const DATA = additivesData as Record<
   string,
-  { n: Record<string, string>; r?: "h" | "m" | "n"; a?: 1 }
+  {
+    n: Record<string, string>;
+    r?: "h" | "m" | "n";
+    a?: 1;
+    c?: string[];
+    e?: { u: string; y?: number };
+  }
 >;
 const RISK = { h: "high", m: "moderate", n: "none" } as const;
 
@@ -105,6 +117,8 @@ export function additiveInfo(tag: string): AdditiveInfo {
   const info: AdditiveInfo = { tag, code, names: d?.n ?? { en: code } };
   if (d?.r) info.risk = RISK[d.r];
   if (d?.a) info.anses = true;
+  if (d?.c) info.classes = d.c;
+  if (d?.e) info.efsa = d.e.y ? { url: d.e.u, year: d.e.y } : { url: d.e.u };
   if (tag in EU_NOT_AUTHORISED) info.euNotAuthorised = true;
   const evidence = evidenceFor(tag);
   if (evidence?.length) {
@@ -200,11 +214,11 @@ export function scoreProduct(p: Product): Score {
 
   if (p.isWater) {
     base = 100;
-    reasons.push({ key: "water" });
+    reasons.push({ key: "water", base });
   } else if (isAlcohol(p)) {
     base = 20;
     cap = 20;
-    reasons.push({ key: "alcohol", cap });
+    reasons.push({ key: "alcohol", cap, base });
   } else if (p.nutriscore) {
     nutri = { ...p.nutriscore, computed: false };
   } else {
@@ -224,10 +238,14 @@ export function scoreProduct(p: Product): Score {
       nutri.score === undefined
         ? GRADE_BASE[nutri.grade]
         : interpolate(p.isBeverage ? DRINK_KNOTS : FOOD_KNOTS, nutri.score);
-    reasons.push({ key: nutri.computed ? "nutritionComputed" : "nutrition", grade: nutri.grade });
+    reasons.push({
+      key: nutri.computed ? "nutritionComputed" : "nutrition",
+      grade: nutri.grade,
+      base: Math.round(base),
+    });
   } else if (base === null && p.nutriscoreNotApplicable) {
     base = 75;
-    reasons.push({ key: "nutritionNotApplicable" });
+    reasons.push({ key: "nutritionNotApplicable", base });
   } else if (base === null) {
     reasons.push({ key: "nutritionMissing" });
   }
@@ -299,6 +317,102 @@ export function additiveReason(a: AdditiveInfo): Reason | undefined {
   if (a.hazard?.level === "moderate") return { key: "additiveHazardModerate", additive, delta: -6 };
   return undefined;
 }
+
+/**
+ * How worrying an additive is, in one word. The first three are exactly the
+ * penalties of additiveReason, so the label never disagrees with the score;
+ * "low" is something said that costs nothing, "none" an assessment that
+ * found nothing, "unknown" no source saying anything.
+ */
+export type AdditiveLevel = "banned" | "high" | "moderate" | "low" | "none" | "unknown";
+
+/** One plain-words reason behind the level: a message key, or a sentence of an official list. */
+export interface Why {
+  key:
+    | "whyEu"
+    | "whyEfsaHigh"
+    | "whyEfsaModerate"
+    | "whyEfsaNone"
+    | "whyHazard"
+    | "whyOfficial"
+    | "whyHuman"
+    | "whySignal"
+    | "whyReassuring"
+    | "whyUsFda"
+    | "whyUsState"
+    | "whyAnses"
+    | "whyEfsaReviewed"
+    | "whyNothing";
+  tone: "high" | "moderate" | "low" | "none";
+  vars?: Record<string, string | number>;
+  /** The sentence itself, for an official list's finding. */
+  text?: { en: string; fr: string; de: string };
+}
+
+const LEVEL_OF: Partial<Record<Reason["key"], AdditiveLevel>> = {
+  additiveEu: "banned",
+  additiveHigh: "high",
+  additiveHazardHigh: "high",
+  additiveEvidence: "moderate",
+  additiveModerate: "moderate",
+  additiveHazardModerate: "moderate",
+};
+const TONE_RANK = { high: 0, moderate: 1, low: 2, none: 3 } as const;
+
+const orgsOf = (list: readonly Evidence[]) =>
+  [...new Set(list.map((e) => e.source.org))].join(", ");
+
+/** The level, and every reason for it, strongest first. */
+export function additiveLevel(a: AdditiveInfo): { level: AdditiveLevel; why: Why[] } {
+  const why: Why[] = [];
+  if (a.euNotAuthorised) why.push({ key: "whyEu", tone: "high" });
+  if (a.risk === "high") why.push({ key: "whyEfsaHigh", tone: "high" });
+  if (a.risk === "moderate") why.push({ key: "whyEfsaModerate", tone: "moderate" });
+  for (const f of a.hazard?.findings ?? []) {
+    if (f.level !== "listed") why.push({ key: "whyHazard", tone: f.level, text: f.summary });
+  }
+  const evidence = a.evidence ?? [];
+  const concerns = evidence.filter((e) => e.concern);
+  // An official list already said it (IARC's group): not twice.
+  const listed = new Set((a.hazard?.findings ?? []).map((f) => f.source.org));
+  const official = concerns.filter((e) => e.kind === "official" && !listed.has(e.source.org));
+  const human = concerns.filter((e) => HUMAN_KINDS.has(e.kind));
+  const tone = a.evidenceWeighs ? "moderate" : "low";
+  if (official.length) why.push({ key: "whyOfficial", tone, vars: { orgs: orgsOf(official) } });
+  if (human.length) why.push({ key: "whyHuman", tone, vars: { count: human.length } });
+  const signals = concerns.length - official.length - human.length;
+  if (signals) why.push({ key: "whySignal", tone: "low", vars: { count: signals } });
+  const ban = a.usLaws?.find((l) => l.kind === "federal-ban")
+    ? "whyUsFda"
+    : a.usLaws?.find((l) => l.kind === "state-ban")
+      ? "whyUsState"
+      : undefined;
+  if (ban) why.push({ key: ban, tone: "low" });
+  if (a.anses) why.push({ key: "whyAnses", tone: "low" });
+  if (a.risk === "none") why.push({ key: "whyEfsaNone", tone: "none" });
+  const reassuring = evidence.length - concerns.length;
+  if (reassuring) why.push({ key: "whyReassuring", tone: "none", vars: { count: reassuring } });
+  if (a.efsa?.year) why.push({ key: "whyEfsaReviewed", tone: "none", vars: { year: a.efsa.year } });
+  why.sort((x, y) => TONE_RANK[x.tone] - TONE_RANK[y.tone]);
+
+  const reason = additiveReason(a);
+  const counted = reason ? LEVEL_OF[reason.key] : undefined;
+  const level: AdditiveLevel =
+    counted ??
+    (why.some((w) => w.tone !== "none") ? "low" : why.length || a.efsa ? "none" : "unknown");
+  if (!why.length) why.push({ key: "whyNothing", tone: "none" });
+  return { level, why };
+}
+
+/** Worst first, for lists. */
+export const LEVEL_RANK: Record<AdditiveLevel, number> = {
+  banned: 0,
+  high: 1,
+  moderate: 2,
+  low: 3,
+  none: 4,
+  unknown: 5,
+};
 
 export function verdictOf(value: number): Verdict {
   return value >= 75 ? "excellent" : value >= 50 ? "good" : value >= 25 ? "poor" : "bad";

@@ -52,10 +52,15 @@ export function go(route: Route): void {
   location.hash = href(route);
 }
 
+/** Has the user moved inside the app? Then "back" is the browser's back, not a fixed page. */
+let movedInApp = false;
+export const canGoBack = () => movedInApp;
+
 export function useRoute(): Route {
   const [route, setRoute] = useState(() => parseRoute(location.hash));
   useEffect(() => {
     const on = () => {
+      movedInApp = true;
       setRoute(parseRoute(location.hash));
       window.scrollTo({ top: 0 });
     };

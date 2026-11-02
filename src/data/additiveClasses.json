@@ -1,0 +1,61 @@
+{
+  "antioxidant": {
+    "en": "Antioxidants are substances which prolong the shelf-life of foods by protecting them against deterioration caused by oxidation, such as fat rancidity and colour changes.",
+    "fr": "Les antioxydants sont des substances qui prolongent la durée de conservation des denrées alimentaires en les protégeant des altérations provoquées par l'oxydation, telles que le rancissement des matières grasses et les modifications de la couleur.",
+    "de": "Antioxidationsmittel sind Stoffe, die die Haltbarkeit von Lebensmitteln verlängern, indem sie sie vor den schädlichen Auswirkungen der Oxidation wie Ranzigwerden von Fett und Farbveränderungen schützen."
+  },
+  "carrier": {
+    "en": "A food additive used to dissolve, dilute, disperse or otherwise physically modify a food additive or nutrient without altering its function -and without exerting any technological effect itself- in order to facilitate its handling, application or use of the food additive or nutrient.",
+    "fr": "Additif alimentaire utilisé pour dissoudre, diluer, disperser ou modifier physiquement de toute autre façon un additif alimentaire ou un nutriment sans altérer sa fonction -et sans produire lui-même d'effet technologique- afin de faciliter sa manipulation, son application ou son utilisationde l'additif alimentaire ou du nutriment."
+  },
+  "colour": {
+    "en": "Colours are substances which add or restore colour in a food, and include natural constituents of foods and natural sources which are normally not consumed as foods as such and not normally used as characteristic ingredients of food.",
+    "fr": "Les colorants sont des substances qui ajoutent ou redonnent de la couleur à des denrées alimentaires; il peut s'agir de constituants naturels de denrées alimentaires ou d'autres substances naturelles qui ne sont pas normalement consommés comme aliments en soi et qui ne sont pas habituellement utilisés comme ingrédients caractéristiques dans l'alimentation.",
+    "de": "Farbstoffe sind Stoffe, die einem Lebensmittel Farbe geben oder die Farbe in einem Lebensmittel wiederherstellen; hierzu gehören natürliche Bestandteile von Lebensmitteln sowie natürliche Ausgangsstoffe, die normalerweise weder als Lebensmittel verzehrt noch als charakteristische Lebensmittelzutaten verwendet werden."
+  },
+  "emulsifier": {
+    "en": "Emulsifiers are substances which make it possible to form or maintain a homogenous mixture of two or more immiscible phases such as oil and water in a foodstuff.",
+    "fr": "Les émulsifiants sont des substances qui, ajoutées à une denrée alimentaire, permettent de réaliser ou de maintenir le mélange homogène de deux ou plusieurs phases non miscibles, telles que l'huile et l'eau.",
+    "de": "Emulgatoren sind Stoffe, die es ermöglichen, die einheitliche Dispersion zweier oder mehrerer nicht mischbarer Phasen wie z. B. Öl und Wasser in einem Lebensmittel herzustellen oder aufrechtzuerhalten."
+  },
+  "flavour-enhancer": {
+    "en": "Flavour enhancers are substances which enhance the existing taste and/or odour of a foodstuff.",
+    "fr": "Les exhausteurs de goût sont des substances qui renforcent le goût et/ou l'odeur d'une denrée alimentaire.",
+    "de": "Geschmacksverstärker sind Stoffe, die den Geschmack und/oder Geruch eines Lebensmittels verstärken."
+  },
+  "humectant": {
+    "en": "Humectants are substances which prevent foods from drying out by counteracting the effect of an atmosphere having a low degree of humidity, or promote the dissolution of a powder in an aqueous medium.",
+    "fr": "Les humectants sont des substances qui empêchent le dessèchement des denrées alimentaires en compensant les effets d'une faible humidité atmosphérique ou qui favorisent la dissolution d'une poudre en milieu aqueux.",
+    "de": "Feuchthaltemittel sind Stoffe, die das Austrocknen von Lebensmitteln verhindern, indem sie die Auswirkungen einer Atmosphäre mit geringem Feuchtigkeitsgehalt ausgleichen, oder Stoffe, die die Auflösung eines Pulvers in einem wässrigen Medium fördern."
+  },
+  "preservative": {
+    "en": "Preservatives are substances which prolong the shelf-life of foods by protecting them against deterioration caused by micro-organisms and/or which protect against growth of pathogenic micro-organisms.",
+    "fr": "Les conservateurs sont des substances qui prolongent la durée de conservation des denrées alimentaires en les protégeant des altérations dues aux micro-organismes et/ou qui les protègent contre la croissance de micro-organismes pathogènes.",
+    "de": "Konservierungsstoffe sind Stoffe, die die Haltbarkeit von Lebensmitteln verlängern, indem sie sie vor den schädlichen Auswirkungen von Mikroorganismen schützen, und/oder vor dem Wachstum pathogener Mikroorganismen schützen."
+  },
+  "propellent-gas": {
+    "en": "Propellants are gases other than air which expel a foodstuff from a container.",
+    "fr": "Les propulseurs sont des gaz autres que l'air qui ont pour effet d'expulser une denrée alimentaire d'un contenant.",
+    "de": "Treibgase sind andere Gase als Luft, die ein Lebensmittel aus seinem Behältnis herauspressen."
+  },
+  "sequestrant": {
+    "en": "Sequestrants are substances which form chemical complexes with metallic ions.",
+    "fr": "Les séquestrants sont des substances qui forment des complexes chimiques avec les ions métalliques.",
+    "de": "Komplexbildner sind Stoffe, die mit Metallionen chemische Komplexe bilden."
+  },
+  "stabiliser": {
+    "en": "Stabilisers are substances which make it possible to maintain the physico-chemical state of a foodstuff; stabilisers include substances which enable the maintenance of a homogenous dispersion of two or more immiscible substances in a foodstuff, substances which stabilise, retain or intensify an existing colour of a foodstuff and substances which increase the binding capacity of the food, including the formation of cross-links between proteins enabling the binding of food pieces into re-constituted food.",
+    "fr": "Les stabilisants sont des substances qui, ajoutées à une denrée alimentaire, permettent de maintenir son état physico-chimique. Les stabilisants comprennent les substances qui permettent de maintenir la dispersion homogène de deux ou plusieurs substances non miscibles dans une denrée alimentaire, les substances qui stabilisent, conservent ou intensifient la couleur d'une denrée alimentaire, ainsi que les substances qui augmentent la capacité de liaison des denrées alimentaires, y compris la réticulation entre protéines permettant la liaison de morceaux d'aliments dans les aliments reconstitués.",
+    "de": "Stabilisatoren sind Stoffe, die es ermöglichen, den physikalisch-chemischen Zustand eines Lebensmittels aufrechtzuerhalten. Zu den Stabilisatoren zählen Stoffe, die es ermöglichen, die einheitliche Dispersion zweier oder mehrerer nicht mischbarer Phasen in einem Lebensmittel aufrechtzuerhalten, Stoffe, durch welche die vorhandene Farbe eines Lebensmittels stabilisiert, bewahrt oder intensiviert wird, und Stoffe, die die Bindefähigkeit eines Lebensmittels verbessern, einschließlich der Bildung von Proteinvernetzungen, die die Bindung von Lebensmittelstücken in rekonstituierten Lebensmitteln ermöglichen."
+  },
+  "sweetener": {
+    "en": "Sweeteners are substances used to impart a sweet taste to foods or in table-top sweeteners.",
+    "fr": "Les édulcorants sont des substances qui servent à donner une saveur sucrée aux denrées alimentaires ou qui sont utilisées dans des édulcorants de table.",
+    "de": "Süßungsmittel sind Stoffe, die zum Süßen von Lebensmitteln und in Tafelsüßen verwendet werden."
+  },
+  "thickener": {
+    "en": "Thickeners are substances which increase the viscosity of a foodstuff.",
+    "fr": "Les épaississants sont des substances qui, ajoutées à une denrée alimentaire, en augmentent la viscosité.",
+    "de": "Verdickungsmittel sind Stoffe, die die Viskosität eines Lebensmittels erhöhen."
+  }
+}

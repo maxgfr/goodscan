@@ -198,7 +198,7 @@ export function Search({ q }: { q: string }) {
                     <span className="flex items-center gap-1.5">
                       <span className="truncate text-sm font-medium">{h.name}</span>
                       {h.source !== "off" && h.source !== "label" ? (
-                        <span className="shrink-0 rounded bg-stone-100 px-1.5 py-0.5 text-[10px] font-semibold tracking-wide text-muted uppercase dark:bg-stone-800">
+                        <span className="shrink-0 rounded bg-stone-100 px-1.5 py-0.5 text-xs font-semibold tracking-wide text-muted uppercase dark:bg-stone-800">
                           {t(KIND[h.source])}
                         </span>
                       ) : null}

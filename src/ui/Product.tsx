@@ -3,7 +3,6 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { type Alternative, findAlternatives, marketOf } from "../data/alternatives";
 import type { CosmeticCategory } from "../data/cosmetics";
 import { cacheProduct } from "../data/db";
-import { type Evidence, evidenceUrl } from "../data/evidence";
 import { ADD_PRODUCT_URL, DATABASES, productUrl } from "../data/off";
 import {
   isCosmetic,
@@ -12,22 +11,25 @@ import {
   type Product as P,
   type Source,
 } from "../data/product";
-import { lawsShown } from "../data/usFoodLaws";
 import type { MessageKey } from "../i18n";
 import { rateIngredients } from "../score/cosmetic";
-import { asEvidence } from "../score/hazard";
 import { type Match, matchProduct } from "../score/match";
-import {
-  type AdditiveInfo,
-  type Reason,
-  type Score,
-  scoreProduct,
-  verdictOf,
-} from "../score/score";
+import { type Reason, type Score, scoreProduct, verdictOf } from "../score/score";
 import { fopBox } from "../score/us";
+import { Additives, nameOf } from "./Additives";
 import { AiPanel, LabelReader, WebFinder, WebSources } from "./Ai";
-import { GradeBadge, Icon, Notice, NovaBadge, ScoreDial, Section, VERDICT_TONE } from "./kit";
-import { href } from "./router";
+import {
+  GradeBadge,
+  Icon,
+  LEVEL_DOT,
+  Notice,
+  NovaBadge,
+  RISK_TONE,
+  ScoreDial,
+  Section,
+  VERDICT_TONE,
+} from "./kit";
+import { canGoBack, href } from "./router";
 import { useApp } from "./state";
 import { remember, useProduct } from "./useProduct";
 
@@ -183,7 +185,13 @@ function BackLink() {
   return (
     <a
       href={href({ name: "scan" })}
-      className="inline-flex w-fit items-center gap-1 text-sm text-muted hover:text-stone-900 dark:hover:text-white"
+      // Back to the search results or the history the product was opened from.
+      onClick={(e) => {
+        if (!canGoBack()) return;
+        e.preventDefault();
+        history.back();
+      }}
+      className="-my-2 inline-flex w-fit items-center gap-1 py-2 text-sm text-muted hover:text-stone-900 dark:hover:text-white"
     >
       <Icon name="left" className="size-4" />
       {t("back")}
@@ -283,6 +291,8 @@ export function ProductView({
           </div>
         ) : null}
 
+        {!cosmetic ? <Allergens product={product} /> : null}
+
         {needsLabel ? (
           <div className="mt-4 border-t border-stone-200 pt-4 dark:border-stone-800">
             <LabelReader
@@ -299,6 +309,9 @@ export function ProductView({
         <BetterChoices product={product} score={score.value} />
       ) : null}
 
+      {/* What moves the score comes first, then the grades and the figures behind it. */}
+      {cosmetic ? <Concerns score={score} /> : <Additives score={score} product={product} />}
+
       {region === "us" ? (
         <>
           {us}
@@ -313,20 +326,7 @@ export function ProductView({
 
       {match ? <MatchCard match={match} /> : null}
 
-      <Section title={t("aiTitle")}>
-        <p className="-mt-2 mb-3 text-xs text-muted">{t("aiSubtitle")}</p>
-        <AiPanel product={product} score={score} match={match} />
-      </Section>
-
       {food ? <NutritionTable n={product.nutriments} drink={product.isBeverage} /> : null}
-      {cosmetic ? (
-        <Concerns score={score} />
-      ) : (
-        <>
-          <Additives score={score} />
-          <Allergens product={product} />
-        </>
-      )}
       {cosmetic && product.ingredients ? (
         <IngredientLevels product={product} />
       ) : product.ingredients ? (
@@ -334,6 +334,11 @@ export function ProductView({
           <p className="text-sm leading-relaxed text-soft">{product.ingredients}</p>
         </Section>
       ) : null}
+
+      <Section title={t("aiTitle")}>
+        <p className="-mt-2 mb-3 text-xs text-muted">{t("aiSubtitle")}</p>
+        <AiPanel product={product} score={score} match={match} />
+      </Section>
 
       {product.source !== "label" && !product.webSources ? (
         <p className="text-center text-xs text-muted">
@@ -355,7 +360,7 @@ function ReasonLine({ reason, score }: { reason: Reason; score: Score }) {
     : undefined;
   const text = t(`reason_${reason.key}` as MessageKey, {
     grade: reason.grade?.toUpperCase() ?? "",
-    additive: a ? (a.names[lang] ?? a.names.en ?? a.code) : "",
+    additive: a ? `${nameOf(a, lang)} (${a.code})` : "",
     ingredient: ingredient ? inciName(ingredient.inci) : "",
     count: reason.count ?? 0,
   });
@@ -369,7 +374,7 @@ function ReasonLine({ reason, score }: { reason: Reason; score: Score }) {
         ) : null}
         {reason.source ? (
           <a
-            className="ml-1 inline-flex items-center align-middle text-muted"
+            className="-my-1 ml-0.5 inline-flex items-center p-1 align-middle text-muted"
             href={reason.source}
             target="_blank"
             rel="noreferrer"
@@ -379,9 +384,13 @@ function ReasonLine({ reason, score }: { reason: Reason; score: Score }) {
           </a>
         ) : null}
       </span>
-      {delta ? (
+      {reason.base !== undefined ? (
+        <span className="num shrink-0 font-semibold" data-testid="reason-base">
+          {reason.base}
+        </span>
+      ) : delta ? (
         <span
-          className={`num shrink-0 font-semibold ${delta > 0 ? "text-emerald-600" : "text-rose-600"}`}
+          className={`num shrink-0 font-semibold ${delta > 0 ? "text-emerald-700 dark:text-emerald-400" : "text-rose-700 dark:text-rose-400"}`}
         >
           {delta > 0 ? `+${delta}` : `−${-delta}`}
         </span>
@@ -407,8 +416,9 @@ function Badges({ product, score }: { product: P; score: Score }) {
   );
 }
 
+// Only what is high or medium takes a colour: a green "Low" under a "Bad" verdict reads as praise.
 const LEVEL_TONE = {
-  low: "bg-emerald-100 text-emerald-900 dark:bg-emerald-900/40 dark:text-emerald-100",
+  low: "bg-stone-100 text-stone-800 dark:bg-stone-800 dark:text-stone-100",
   med: "bg-amber-100 text-amber-900 dark:bg-amber-900/40 dark:text-amber-100",
   high: "bg-rose-100 text-rose-900 dark:bg-rose-900/40 dark:text-rose-100",
 };
@@ -422,7 +432,9 @@ function UsBox({ product }: { product: P }) {
       title={t("usTitle")}
       aside={
         <span className="text-xs text-muted">
-          {box.per === "serving" ? t("usServing", { g: Math.round(box.grams) }) : t("usPer100")}
+          {box.per === "serving"
+            ? t(product.isBeverage ? "usServingMl" : "usServing", { g: Math.round(box.grams) })
+            : t(product.isBeverage ? "usPer100Ml" : "usPer100")}
         </span>
       }
     >
@@ -529,116 +541,6 @@ function NutritionTable({ n, drink }: { n: Nutriments; drink: boolean }) {
   );
 }
 
-const RISK_TONE = {
-  high: "bg-rose-100 text-rose-800 dark:bg-rose-900/40 dark:text-rose-200",
-  moderate: "bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200",
-  none: "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200",
-  unknown: "bg-stone-100 text-stone-600 dark:bg-stone-800 dark:text-stone-300",
-};
-
-function Additives({ score }: { score: Score }) {
-  const { t, lang } = useApp();
-  return (
-    <Section title={t("additivesTitle")}>
-      {score.additives.length ? (
-        <ul className="grid gap-2" data-testid="additives">
-          {score.additives.map((a) => {
-            const risk = a.euNotAuthorised ? "high" : (a.risk ?? "unknown");
-            return (
-              <li key={a.tag} className="grid gap-1.5 text-sm">
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <span>{a.names[lang] ?? a.names.en ?? a.code}</span>
-                  <span className="flex flex-wrap gap-1">
-                    {usBan(a) ? (
-                      <span className="rounded-full px-2 py-0.5 text-xs text-muted ring-1 ring-stone-300 dark:ring-stone-700">
-                        {t(usBan(a) === "federal-ban" ? "usBannedFda" : "usBannedState")}
-                      </span>
-                    ) : null}
-                    {a.anses ? (
-                      <span className="rounded-full px-2 py-0.5 text-xs text-muted ring-1 ring-stone-300 dark:ring-stone-700">
-                        {t("anses")}
-                      </span>
-                    ) : null}
-                    <span
-                      className={`rounded-full px-2 py-0.5 text-xs font-medium ${RISK_TONE[risk]}`}
-                    >
-                      {a.euNotAuthorised ? t("euNotAuthorised") : t(`risk_${risk}` as MessageKey)}
-                    </span>
-                  </span>
-                </div>
-                {a.evidence || a.hazard || a.usLaws ? <Science evidence={scienceOf(a)} /> : null}
-              </li>
-            );
-          })}
-        </ul>
-      ) : (
-        <p className="text-sm text-muted">{t("additivesNone")}</p>
-      )}
-    </Section>
-  );
-}
-
-/** The strongest US ban on an additive, if any: the FDA's, else a state's for all food. */
-const usBan = (a: AdditiveInfo) =>
-  a.usLaws?.find((l) => l.kind === "federal-ban")?.kind ??
-  a.usLaws?.find((l) => l.kind === "state-ban")?.kind;
-
-/** The cited findings, then what official lists say that they do not already. */
-function scienceOf(a: AdditiveInfo): Evidence[] {
-  const cited = a.evidence ?? [];
-  const orgs = new Set(cited.filter((e) => e.kind === "official").map((e) => e.source.org));
-  const official = (a.hazard?.findings ?? [])
-    .filter((f) => !orgs.has(f.source.org))
-    .map(asEvidence);
-  const laws = lawsShown(a.usLaws ?? []).map(
-    (l): Evidence => ({ summary: l.summary, kind: "official", source: l.source, concern: true }),
-  );
-  return [...cited, ...official, ...laws];
-}
-
-/** The cited findings on one additive, folded under it. */
-function Science({ evidence }: { evidence: Evidence[] }) {
-  const { t, lang } = useApp();
-  const l = lang === "fr" || lang === "de" ? lang : "en";
-  return (
-    <details
-      className="rounded-xl bg-stone-50 px-3 py-2 dark:bg-stone-800/60"
-      data-testid="science"
-    >
-      <summary className="cursor-pointer text-xs font-semibold text-brand-700 dark:text-brand-400">
-        {t("scienceTitle")} ({evidence.length})
-      </summary>
-      <ul className="mt-2 grid gap-3">
-        {evidence.map((e) => (
-          <li key={`${e.source.url}${e.summary.en}`} className="grid gap-1">
-            <span className="flex flex-wrap gap-1">
-              <span className="rounded-full px-2 py-0.5 text-xs text-muted ring-1 ring-stone-300 dark:ring-stone-700">
-                {t(`evidence_${e.kind}` as MessageKey)}
-              </span>
-              <span
-                className={`rounded-full px-2 py-0.5 text-xs font-medium ${e.concern ? RISK_TONE.moderate : RISK_TONE.none}`}
-              >
-                {e.concern ? t("evidenceConcern") : t("evidenceReassuring")}
-              </span>
-            </span>
-            <p className="text-soft">{e.summary[l]}</p>
-            <a
-              className="inline-flex w-fit items-center gap-1 text-xs text-muted underline"
-              href={evidenceUrl(e)}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {e.source.org}, {e.source.year}
-              <Icon name="external" className="size-3" />
-            </a>
-          </li>
-        ))}
-      </ul>
-      <p className="mt-2 text-xs text-muted">{t("scienceNote")}</p>
-    </details>
-  );
-}
-
 const CATEGORY_KEY: Record<CosmeticCategory, MessageKey> = {
   "eu-prohibited": "cat_euProhibited",
   "eu-restricted": "cat_euRestricted",
@@ -672,16 +574,12 @@ const CATEGORY_TONE: Record<CosmeticCategory, string> = {
   "eu-annex-ii": RISK_TONE.unknown,
 };
 
-const LEVEL_DOT = {
-  high: "bg-rose-600",
-  moderate: "bg-amber-500",
-  low: "bg-yellow-300 dark:bg-yellow-400",
-  none: "bg-emerald-500",
-} as const;
+// Same words and colours as the food additives: not being on a list is grey, not green.
+const INCI_DOT = { ...LEVEL_DOT, none: "bg-stone-300 dark:bg-stone-600" };
 const LEVEL_KEY = {
-  high: "risk_high",
-  moderate: "risk_moderate",
-  low: "risk_low",
+  high: "concern_high",
+  moderate: "concern_moderate",
+  low: "concern_low",
   none: "riskNotListed",
 } as const;
 
@@ -696,7 +594,7 @@ function IngredientLevels({ product }: { product: P }) {
           // biome-ignore lint/suspicious/noArrayIndexKey: items of one fixed list
           <li key={i} className="inline-flex items-center gap-1.5" title={t(LEVEL_KEY[item.level])}>
             <span
-              className={`size-2 shrink-0 rounded-full ${LEVEL_DOT[item.level]}`}
+              className={`size-2 shrink-0 rounded-full ${INCI_DOT[item.level]}`}
               aria-hidden="true"
             />
             <span className={item.level === "none" ? "text-soft" : "font-medium"}>
@@ -709,7 +607,7 @@ function IngredientLevels({ product }: { product: P }) {
       <p className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-xs text-muted">
         {(["high", "moderate", "low", "none"] as const).map((l) => (
           <span key={l} className="inline-flex items-center gap-1">
-            <span className={`size-2 rounded-full ${LEVEL_DOT[l]}`} aria-hidden="true" />
+            <span className={`size-2 rounded-full ${INCI_DOT[l]}`} aria-hidden="true" />
             {t(LEVEL_KEY[l])}
           </span>
         ))}
@@ -735,43 +633,55 @@ function Concerns({ score }: { score: Score }) {
   return (
     <Section title={t("concernTitle")}>
       {flags.length ? (
-        <ul className="grid gap-3" data-testid="concerns">
+        // One folded row per ingredient, like the food additives: the categories say the
+        // level at a glance, the explanation and its sources open on a tap.
+        <ul className="divide-y divide-stone-100 dark:divide-stone-800" data-testid="concerns">
           {flags.map(({ ingredient: i }) => (
-            <li key={i.id} className="grid gap-1 text-sm">
-              <div className="flex flex-wrap items-center justify-between gap-2">
-                <span className="font-medium">{inciName(i.inci)}</span>
-                <span className="flex flex-wrap gap-1">
-                  {i.categories.map((c) => (
-                    <span
-                      key={c}
-                      className={`rounded-full px-2 py-0.5 text-xs font-medium ${CATEGORY_TONE[c]}`}
-                    >
-                      {t(CATEGORY_KEY[c])}
+            <li key={i.id} className="text-sm">
+              <details className="group py-2.5">
+                <summary className="flex cursor-pointer list-none items-start gap-3 [&::-webkit-details-marker]:hidden">
+                  <span className="flex min-w-0 flex-1 flex-wrap items-center justify-between gap-2">
+                    <span className="font-medium">{inciName(i.inci)}</span>
+                    <span className="flex flex-wrap gap-1">
+                      {i.categories.map((c) => (
+                        <span
+                          key={c}
+                          className={`rounded-full px-2 py-0.5 text-xs font-medium ${CATEGORY_TONE[c]}`}
+                        >
+                          {t(CATEGORY_KEY[c])}
+                        </span>
+                      ))}
                     </span>
-                  ))}
-                </span>
-              </div>
-              <p className="text-soft">{i.summary[l]}</p>
-              <span className="flex flex-wrap gap-x-3 gap-y-1">
-                {i.sources.map((src) => (
-                  <a
-                    key={src.url}
-                    className="inline-flex items-center gap-1 text-xs text-muted underline"
-                    href={
-                      src.doi
-                        ? `https://doi.org/${src.doi}`
-                        : src.pmid
-                          ? `https://pubmed.ncbi.nlm.nih.gov/${src.pmid}/`
-                          : src.url
-                    }
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {src.org}, {src.year}
-                    <Icon name="external" className="size-3" />
-                  </a>
-                ))}
-              </span>
+                  </span>
+                  <Icon
+                    name="right"
+                    className="mt-0.5 size-4 shrink-0 text-muted transition-transform group-open:rotate-90 motion-reduce:transition-none"
+                  />
+                </summary>
+                <div className="mt-2 grid gap-1">
+                  <p className="text-soft">{i.summary[l]}</p>
+                  <span className="flex flex-wrap gap-x-3 gap-y-1">
+                    {i.sources.map((src) => (
+                      <a
+                        key={src.url}
+                        className="inline-flex items-center gap-1 py-1 text-xs text-muted underline"
+                        href={
+                          src.doi
+                            ? `https://doi.org/${src.doi}`
+                            : src.pmid
+                              ? `https://pubmed.ncbi.nlm.nih.gov/${src.pmid}/`
+                              : src.url
+                        }
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {src.org}, {src.year}
+                        <Icon name="external" className="size-3" />
+                      </a>
+                    ))}
+                  </span>
+                </div>
+              </details>
             </li>
           ))}
         </ul>
@@ -795,33 +705,41 @@ function Allergens({ product }: { product: P }) {
         a.match !== undefined &&
         (prefix === "contains" ? a.match <= 10 : a.match > 10 && a.match <= 50),
     );
-  // Open Food Facts' attribute titles are already in the user's language.
-  const contains = fromAttributes("contains").map((a) => a.title);
-  const traces = fromAttributes("traces").map((a) => a.title);
+  // Open Food Facts' attribute titles are in the user's language, and say
+  // "Contains: milk" or "May contain: nuts": the label is ours, the allergen theirs.
+  const bare = (title: string) => title.replace(/^[^:：]{1,40}\s?[:：]\s*/, "");
+  const contains = fromAttributes("contains").map((a) => bare(a.title));
+  const traces = fromAttributes("traces").map((a) => bare(a.title));
   const list = contains.length ? contains : product.allergens.map(tagName);
   const traceList = traces.length ? traces : product.traces.map(tagName);
   return (
-    <Section title={t("allergensTitle")}>
-      {list.length ? (
-        <ul className="flex flex-wrap gap-1.5">
-          {list.map((a) => (
-            <li
-              key={a}
-              className="rounded-full bg-rose-50 px-2.5 py-0.5 text-sm text-rose-800 dark:bg-rose-900/30 dark:text-rose-200"
-            >
-              {a}
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p className="text-sm text-muted">{t("allergensNone")}</p>
-      )}
+    <div
+      className="mt-4 grid gap-1.5 border-t border-stone-200 pt-3 text-sm dark:border-stone-800"
+      data-testid="allergens"
+    >
+      <div className="flex flex-wrap items-center gap-x-2 gap-y-1.5">
+        <h2 className="font-semibold">{t("allergensTitle")}</h2>
+        {list.length ? (
+          <ul className="flex flex-wrap gap-1.5">
+            {list.map((a) => (
+              <li
+                key={a}
+                className="rounded-full bg-rose-50 px-2.5 py-0.5 text-rose-800 dark:bg-rose-900/30 dark:text-rose-200"
+              >
+                {a}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <span className="text-muted">{t("allergensNone")}</span>
+        )}
+      </div>
       {traceList.length ? (
-        <p className="mt-2 text-sm text-soft">
+        <p className="text-soft">
           <span className="font-medium">{t("traces")}: </span>
           {traceList.join(", ")}
         </p>
       ) : null}
-    </Section>
+    </div>
   );
 }

@@ -10,9 +10,72 @@ import { z } from "zod";
 import { SWEETENERS } from "../data/off";
 import type { Nutriments, Product } from "../data/product";
 import type { Match } from "../score/match";
-import type { Score } from "../score/score";
+import { type AdditiveInfo, additiveLevel, type Score } from "../score/score";
 import { type Answer, answer, type CallContext, structured } from "./call";
 import type { ModelImage } from "./image";
+
+/** What the page says about one additive, in English, for a model. */
+function additiveSummary(a: AdditiveInfo) {
+  const { level } = additiveLevel(a);
+  return {
+    code: a.code,
+    name: a.names.en,
+    usedAs: a.classes,
+    goodscanLevel: level,
+    efsaOverexposureRisk: a.risk,
+    notAuthorisedInEU: a.euNotAuthorised,
+    watchedByAnses: a.anses,
+    officialLists: a.hazard?.findings.map((f) => `${f.summary.en} (${f.source.org})`),
+    usRules: a.usLaws?.map((l) => `${l.jurisdiction}: ${l.summary.en}`),
+    science: a.evidence?.map((e) => ({
+      kind: e.kind,
+      concern: e.concern,
+      finding: e.summary.en,
+      source: `${e.source.org} ${e.source.year}`,
+    })),
+    efsaEvaluation: a.efsa ? `${a.efsa.year ?? ""} ${a.efsa.url}`.trim() : undefined,
+  };
+}
+
+/** The facts on one additive, and the product it is in. */
+export function additiveFacts(a: AdditiveInfo, p: Pick<Product, "name" | "categories">): string {
+  return JSON.stringify({
+    additive: additiveSummary(a),
+    product: { name: p.name, categories: p.categories.slice(0, 5) },
+  });
+}
+
+/**
+ * What the model may say about one additive. It explains goodscan's level,
+ * never sets its own: the level comes from the same rule as the score.
+ */
+export function additiveInstructions(language: string): string {
+  return [
+    "You are a careful food-safety advisor explaining one food additive to a shopper, in a phone app.",
+    "Use the facts given (goodscan's level, official lists, cited studies with their source). You may add well-established general knowledge about what the additive is and how it is made, but never invent studies, figures or rulings.",
+    "goodscanLevel is fixed: banned (not authorised in the EU), high, moderate (both cost points), low (said, not counted), none (assessed, nothing found), unknown (no source says anything; not proof of safety). Explain it; never give another rating.",
+    "Answer in 5 to 8 short lines, in this order: what it is and why it is in this product; what the evidence says, balanced, naming the body or study and year from the facts; the level in plain words and why; who should be careful, only if the facts or well-known labelling rules say so (children, pregnancy, allergy, sensitive gut); one practical takeaway.",
+    "Do not overstate: an association in a cohort study is not proof, a hazard classification is not a dose. Keep official positions and studies apart.",
+    "Plain text only: no Markdown headings, no tables; a line may start with '- '.",
+    "You are not a doctor: for a medical condition, add one short line suggesting to ask a professional.",
+    `Write in ${languageName(language)}.`,
+  ].join("\n");
+}
+
+export async function explainAdditive(
+  ctx: CallContext,
+  facts: string,
+  language: string,
+  webSearch = false,
+): Promise<Answer> {
+  const instructions = additiveInstructions(language);
+  return answer(
+    ctx,
+    webSearch ? `${instructions}\n${WEB_SEARCH_RULE}` : instructions,
+    [{ role: "user", content: `Additive facts (JSON): ${facts}\n\nExplain this additive.` }],
+    { webSearch },
+  );
+}
 
 /** The facts a model gets: what the page shows, nothing about the user beyond what they set. */
 export function productFacts(p: Product, score: Score, match: Match | null): string {
@@ -27,18 +90,7 @@ export function productFacts(p: Product, score: Score, match: Match | null): str
     isBeverage: p.isBeverage,
     nutriscore: score.nutri,
     nova: p.nova,
-    additives: score.additives.map((a) => ({
-      code: a.code,
-      name: a.names.en,
-      efsaOverexposureRisk: a.risk,
-      notAuthorisedInEU: a.euNotAuthorised,
-      science: a.evidence?.map((e) => ({
-        kind: e.kind,
-        concern: e.concern,
-        finding: e.summary.en,
-        source: `${e.source.org} ${e.source.year}`,
-      })),
-    })),
+    additives: score.additives.map(additiveSummary),
     allergens: p.allergens,
     traces: p.traces,
     labels: p.labels.slice(0, 10),
