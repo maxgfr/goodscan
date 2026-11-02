@@ -184,6 +184,7 @@ export function Search({ q }: { q: string }) {
                   {h.image ? (
                     <img
                       src={h.image}
+                      crossOrigin="anonymous"
                       alt=""
                       loading="lazy"
                       className="size-12 shrink-0 rounded-lg bg-white object-contain ring-1 ring-stone-200 dark:ring-stone-800"

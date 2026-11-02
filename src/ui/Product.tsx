@@ -151,6 +151,7 @@ function BetterChoices({ product, score }: { product: P; score: number }) {
               {a.image ? (
                 <img
                   src={a.image}
+                  crossOrigin="anonymous"
                   alt=""
                   loading="lazy"
                   className="size-11 shrink-0 rounded-lg bg-white object-contain ring-1 ring-stone-200 dark:ring-stone-800"
@@ -227,6 +228,7 @@ export function ProductView({
           {product.image ? (
             <img
               src={product.image}
+              crossOrigin="anonymous"
               alt=""
               className="size-24 shrink-0 rounded-xl bg-white object-contain ring-1 ring-stone-200 dark:ring-stone-800"
             />

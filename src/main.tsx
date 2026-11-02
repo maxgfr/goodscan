@@ -20,3 +20,8 @@ createRoot(root).render(
 // over at once and reloads it, before the old one could ask for files gone from
 // the server.
 if (import.meta.env.PROD) registerSW({ immediate: true });
+
+// The runtime caches' names before they carried the app's: the photos one held opaque
+// responses, each counted as megabytes of the origin's quota, shared by every maxgfr.github.io page.
+if ("caches" in window)
+  for (const name of ["off-images", "alternatives"]) void caches.delete(name).catch(() => false);
