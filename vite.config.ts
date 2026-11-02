@@ -103,17 +103,22 @@ export default defineConfig({
             handler: "StaleWhileRevalidate",
             options: {
               cacheName: "goodscan-alternatives",
-              expiration: { maxEntries: 64, maxAgeSeconds: 7 * 24 * 3600 },
+              expiration: { maxEntries: 64, maxAgeSeconds: 7 * 24 * 3600, purgeOnQuotaError: true },
             },
           },
           {
-            // Product photos: <img> loads are opaque, so status 0 is cached too.
+            // Product photos, loaded with crossorigin (the Open *Facts servers send CORS headers).
+            // Never an opaque response: the browser counts each one as megabytes of quota.
             urlPattern: /^https:\/\/images\.open(food|beauty|petfood|products)facts\.org\//,
             handler: "CacheFirst",
             options: {
               cacheName: "goodscan-off-images",
-              expiration: { maxEntries: 300, maxAgeSeconds: 30 * 24 * 3600 },
-              cacheableResponse: { statuses: [0, 200] },
+              expiration: {
+                maxEntries: 150,
+                maxAgeSeconds: 30 * 24 * 3600,
+                purgeOnQuotaError: true,
+              },
+              cacheableResponse: { statuses: [200] },
             },
           },
         ],

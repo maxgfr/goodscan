@@ -29,6 +29,7 @@ export function HistoryList({
               {item.image ? (
                 <img
                   src={item.image}
+                  crossOrigin="anonymous"
                   alt=""
                   className="size-11 shrink-0 rounded-lg bg-stone-100 object-contain"
                   loading="lazy"

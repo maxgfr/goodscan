@@ -65,6 +65,7 @@ async function offline(page: Page | BrowserContext, errors: string[], lookups: s
   await page.route(/\/cgi\/search\.pl/, (r) => r.abort());
   await page.route(/images\.open\w+facts\.org/, (r) =>
     r.fulfill({
+      headers: cors,
       contentType: "image/svg+xml",
       body: '<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"/>',
     }),
@@ -425,8 +426,62 @@ test("storage full (another site of the origin filled it): say so, keep working"
   expect(errors).toEqual([]);
 });
 
+test("a remembered key the full IndexedDB refuses: say so, not Saved", async ({ page }) => {
+  const errors: string[] = [];
+  await offline(page, errors);
+  // An origin over its quota: localStorage still takes the prefs, IndexedDB not the key.
+  await page.addInitScript(() => {
+    IDBObjectStore.prototype.put = () => {
+      throw new DOMException("The quota has been exceeded.", "QuotaExceededError");
+    };
+  });
+  await page.goto("./#/settings");
+  await page.getByRole("tab", { name: "Local / custom" }).click();
+  await page.getByLabel("Endpoint (OpenAI-compatible)").fill(ENDPOINT);
+  await page.getByLabel("Model", { exact: true }).fill("mock-model");
+  await page.getByLabel(/^API key/).fill("sk-test");
+  await page.getByLabel(/^Remember the key/).check();
+  await page.getByRole("button", { name: "Save", exact: true }).click();
+  await expect(page.getByText(/^Storage for this site is full/)).toBeVisible();
+  await expect(page.getByText("Saved.")).toHaveCount(0);
+  expect(errors).toEqual([]);
+});
+
 test.describe("offline", () => {
   test.use({ serviceWorkers: "allow" });
+  test("product photos are cached as CORS responses; the old opaque cache is gone", async ({
+    page,
+    context,
+  }) => {
+    await offline(context, []);
+    await page.goto("./");
+    await page.evaluate(async () => {
+      await navigator.serviceWorker.ready;
+      // What an older version left: its photos cache, under a name without the app's.
+      await (await caches.open("off-images")).put(
+        "https://images.openfoodfacts.org/x.jpg",
+        new Response("x"),
+      );
+    });
+    await page.reload();
+    await expect.poll(() => page.evaluate(() => caches.has("off-images"))).toBe(false);
+    await expect
+      .poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller)))
+      .toBe(true);
+    await lookUp(page, "4008400402222");
+    const photo = page.locator("img[crossorigin]").first();
+    await expect
+      .poll(() => photo.evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0))
+      .toBe(true);
+    const types = () =>
+      page.evaluate(async () => {
+        const cache = await caches.open("goodscan-off-images");
+        const hits = await Promise.all((await cache.keys()).map((k) => cache.match(k)));
+        return [...new Set(hits.map((r) => r?.type))];
+      });
+    await expect.poll(types).toEqual(["cors"]);
+  });
+
   test("the app shell and scanned products still work", async ({ page, context }) => {
     const errors: string[] = [];
     await offline(context, errors);
