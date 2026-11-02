@@ -101,7 +101,9 @@ async function offline(page: Page | BrowserContext, errors: string[], lookups: s
       ? JSON.stringify(LABEL)
       : body.includes("cosmetic_label")
         ? JSON.stringify(INCI)
-        : "- Lots of sugar and saturated fat.\n- Keep it for a treat.";
+        : body.includes("Additive facts")
+          ? "- Aspartame is an intense sweetener.\n- IARC put it in group 2B in 2023."
+          : "- Lots of sugar and saturated fat.\n- Keep it for a treat.";
     return route.fulfill({
       headers: cors,
       json: {
@@ -182,12 +184,21 @@ test("science: Coca-Cola Zero's aspartame is cited and costs points", async ({ p
   await offline(page, errors);
   await lookUp(page, "5449000131805");
   await expect(page.getByTestId("reasons")).toContainText(
-    "Aspartame: a concern backed by an official body or human studies",
+    "Aspartame (E951): a concern backed by an official body or human studies",
   );
-  const science = page
-    .getByTestId("additives")
-    .locator("li", { hasText: "Aspartame" })
-    .getByTestId("science");
+  const row = page.getByTestId("additive").filter({ hasText: "Aspartame" });
+  // The pill says what the score does: EFSA sees no overexposure, IARC and WHO still weigh.
+  await expect(row.getByTestId("additive-level")).toHaveText("Moderate concern");
+  await expect(row).toContainText("Sweetener");
+  await expect(row.getByTestId("additive-why")).toContainText("IARC");
+  // Worst first: the high-risk phosphoric acid leads.
+  await expect(page.getByTestId("additive").first()).toHaveAttribute("data-level", "high");
+  // Allergens sit with the verdict, their label said once.
+  await expect(page.getByTestId("allergens")).not.toContainText("May contain: May contain");
+  await row.locator("summary").first().click();
+  await expect(row).toContainText("Why this level");
+  await expect(row).toContainText("Explain with AI: connect a model");
+  const science = row.getByTestId("science");
   await science.getByText(/What science says/).click();
   await expect(science).toContainText("Official position");
   await expect(science.getByRole("link").first()).toHaveAttribute("href", /^https:\/\//);
@@ -326,13 +337,15 @@ test.describe("cosmetics", () => {
     const concerns = page.getByTestId("concerns");
     await expect(concerns).toContainText("Linalool");
     await expect(concerns).toContainText("Allergène de parfum");
+    // Folded: the sources open with the ingredient.
+    await concerns.locator("summary").first().click();
     await expect(concerns.getByRole("link").first()).toHaveAttribute("href", /^https:\/\//);
     await expect(page.getByRole("heading", { name: "Ingrédients (INCI)" })).toBeVisible();
     // Every ingredient of the list with its level, as printed.
     const inci = page.getByTestId("inci");
     await expect(inci.getByRole("listitem")).toHaveCount(22);
     await expect(inci.getByRole("listitem").filter({ hasText: "linalool" })).toContainText(
-      "Risque faible",
+      "Préoccupation faible",
     );
     await expect(inci.getByRole("listitem").first()).toContainText("Absent de nos listes");
     // No food sections on a cosmetic, not even the food preferences.
@@ -444,6 +457,24 @@ test("a remembered key the full IndexedDB refuses: say so, not Saved", async ({ 
   await page.getByRole("button", { name: "Save", exact: true }).click();
   await expect(page.getByText(/^Storage for this site is full/)).toBeVisible();
   await expect(page.getByText("Saved.")).toHaveCount(0);
+  expect(errors).toEqual([]);
+});
+
+test("ask AI about one additive: explained from its level, kept when reopened", async ({
+  page,
+}) => {
+  const errors: string[] = [];
+  await offline(page, errors);
+  await connectModel(page);
+  await lookUp(page, "5449000131805");
+  const row = page.getByTestId("additive").filter({ hasText: "Aspartame" });
+  await row.locator("summary").first().click();
+  await row.getByRole("button", { name: "Explain with AI" }).click();
+  await expect(row.getByTestId("ai-additive")).toContainText("intense sweetener");
+  // Folded and opened again: the answer is still there, no second call.
+  await row.locator("summary").first().click();
+  await row.locator("summary").first().click();
+  await expect(row.getByTestId("ai-additive")).toBeVisible();
   expect(errors).toEqual([]);
 });
 

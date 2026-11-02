@@ -199,7 +199,7 @@ export function Scan() {
                   className="chip inline-flex items-center gap-2 py-1.5 text-sm"
                   href={href({ name: "product", code: s.code })}
                 >
-                  <span className="num rounded bg-stone-100 px-1 text-[10px] font-semibold tracking-wide text-muted dark:bg-stone-800">
+                  <span className="num rounded bg-stone-100 px-1 text-xs font-semibold tracking-wide text-muted dark:bg-stone-800">
                     {s.market}
                   </span>
                   {s.label}

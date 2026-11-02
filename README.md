@@ -13,7 +13,22 @@ product is missing, read its label from a photo or look it up on the web. An ins
 
 **→ [maxgfr.github.io/goodscan](https://maxgfr.github.io/goodscan/)**
 
-![A German chocolate bar looked up on the live site: its score, the reasons, the Nutri-Score, NOVA and the FDA-style box, then the same page in German](docs/demo.gif)
+<p align="center">
+  <img src="docs/demo.gif" width="380" alt="Coca-Cola Zero looked up by its barcode: a score of 17, Bad, each point of the score with its reason, then its six additives worst first, each with what it does and how worrying it is, and aspartame opened: a moderate concern, and every reason why, from IARC and WHO to EFSA's re-evaluation">
+</p>
+
+What you get, for any barcode or product name:
+- **A 0–100 score you can check line by line**: where it starts (the Nutri-Score) and every
+  point it gains or loses, each with its reason and source.
+- **Every additive explained**: what it does (emulsifier, colour, sweetener…), how worrying it
+  is on a six-step scale that never disagrees with the score, and why, in plain words: EFSA,
+  IARC, the EU's lists, the cited studies, the US bans. On a tap, your own AI model explains
+  it in full.
+- **Allergens next to the verdict**, and whether the product fits your preferences (vegan, no
+  gluten, low salt…).
+- **Better choices** in the same category, for your market.
+- **Cosmetics too**: an ingredient score from the EU Cosmetics Regulation, CMR, endocrine
+  disruptors, PFAS and fragrance allergens.
 
 ## How it works
 
@@ -68,9 +83,9 @@ product is missing, read its label from a photo or look it up on the web. An ins
    [llm-connect](https://github.com/maxgfr/llm-models/tree/main/packages/llm-connect) (OpenAI,
    Anthropic, Gemini, Mistral, OpenRouter, any provider in the
    [llm-models](https://github.com/maxgfr/llm-models) catalog, or a local server such as Ollama or
-   LM Studio) to explain a score, answer a question about the product, or read the nutrition
-   facts and ingredients from a photo. Label values go through the same score, marked "estimated
-   by AI": the model never gives the score itself.
+   LM Studio) to explain a score, explain one additive, answer a question about the product, or
+   read the nutrition facts and ingredients from a photo. Label values go through the same
+   score, marked "estimated by AI": the model never gives the score itself.
 
    **Web search.** With a model that has its provider's own web search (Claude, GPT, Gemini;
    llm-connect's `webSearchTools`), a barcode or a name no database knows can be looked up on the
@@ -79,6 +94,34 @@ product is missing, read its label from a photo or look it up on the web. An ins
    the web" with the pages it read. A barcode found that way is kept a week like a database answer.
    "Ask AI" has a "Search the web" mode too, for what the facts leave out (a recall, the maker's
    page), with its sources under the answer.
+
+## Every additive, explained
+
+Each additive of a food gets one level, from the same rule as the score
+([`additiveLevel`](src/score/score.ts)), so the label can never say "no known risk" while the
+score takes points off; a test checks it on all 726 additives of the taxonomy:
+
+| Level                 | What it means                                                                                                                                  | Points                |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| Not allowed in the EU | on no EU list, or removed from it (titanium dioxide, potassium bromate…)                                                                       | −25, score at most 25 |
+| High concern          | EFSA's high overexposure risk, IARC 1 or 2A, a CMR 1A/1B, an EU-identified endocrine disruptor                                                 | −15, score at most 49 |
+| Moderate concern      | an official position of concern or two human studies that agree, EFSA's moderate overexposure, IARC 2B, a suspected CMR or endocrine disruptor | −6                    |
+| Low concern           | something said that does not weigh: a lone animal or lab study, an ANSES watch, a US ban                                                       | shown, not counted    |
+| No concern found      | EFSA judged intakes safe or re-evaluated it, and nothing above applies                                                                         | none                  |
+| Nothing flagged       | none of these sources says anything; not proof that it is safe                                                                                 | none                  |
+
+The additives are listed worst first. Each row shows what the additive is used for (Open Food
+Facts' classes: emulsifier, colour, sweetener, or its E-number family when no class says),
+its level, and the strongest reason in one line. Open it for:
+- what that class of additive does, in the EU's words;
+- every reason behind the level, strongest first: EFSA, the official lists, the cited studies
+  (counted as concerns or reassuring), the US bans, ANSES's watch, EFSA's re-evaluation with its
+  link;
+- [what science says](#science), finding by finding;
+- **Explain with AI**, with your own model: what the additive is and why it is in this product,
+  what the evidence says and who should be careful, from the same facts. The model is told the
+  level and why, and explains it without rating it again; the "Search the web" switch of Ask AI
+  applies, and an answer is kept for the session.
 
 ## Science
 
@@ -179,9 +222,10 @@ additives`):
 `src/data/hazards.json` is derived from the Open Food Facts and Open Beauty Facts taxonomies, so it
 is shared under the ODbL like them; the CLP data is © European Union, CC BY 4.0.
 
-Each additive now counts once, for the strongest thing said about it, and each cosmetic ingredient
-of the list shows its level (high, moderate, low, or on none of the lists), like Yuka, with the
-sources a click away.
+Each additive counts once, for the strongest thing said about it (see
+[Every additive, explained](#every-additive-explained)). Each cosmetic ingredient of the list
+shows its level in the same words (high, moderate or low concern, or on none of the lists), with
+its explanation and sources a tap away.
 
 ## Better choices
 
@@ -217,8 +261,11 @@ also checks that every official source the scripts read still answers in the sha
   back to its Open Food Facts page. `bun run additives` and `bun run attributes` refresh the
   extracts in `src/data/` from the live taxonomy.
 - Additive risks: EFSA re-evaluations, as recorded by Open Food Facts
-  (`efsa_evaluation_overexposure_risk`), plus a short hand-kept list of additives the EU does not
-  authorise ([`src/data/eu.ts`](src/data/eu.ts)).
+  (`efsa_evaluation_overexposure_risk`, and the evaluation's DOI and date), plus a short
+  hand-kept list of additives the EU does not authorise ([`src/data/eu.ts`](src/data/eu.ts)).
+- What an additive does: the classes of the Open Food Facts additives taxonomy, and each class's
+  description from the `additives_classes` taxonomy, in English, French and German
+  ([`src/data/additiveClasses.json`](src/data/additiveClasses.json), `bun run additives`).
 - Official lists, for every additive and cosmetic ingredient (`bun run hazards`, see
   [Official lists](#official-lists-for-every-ingredient)): IARC Monographs; the EU harmonised
   classification (CLP Annex VI) through PubChem, © European Union, CC BY 4.0; the EU

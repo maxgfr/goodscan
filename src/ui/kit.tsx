@@ -52,7 +52,7 @@ const VARIANTS: Record<Variant, string> = {
   secondary:
     "border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-100 dark:hover:bg-stone-800",
   ghost:
-    "text-stone-600 hover:bg-stone-100 hover:text-soft dark:hover:bg-stone-800 dark:hover:text-white",
+    "text-stone-600 hover:bg-stone-100 hover:text-stone-900 dark:text-stone-300 dark:hover:bg-stone-800 dark:hover:text-white",
   danger: "text-rose-600 hover:bg-rose-50 dark:text-rose-400 dark:hover:bg-rose-950",
 };
 
@@ -154,6 +154,22 @@ export const VERDICT_TONE: Record<Verdict, { ring: string; text: string; bg: str
   "not-food": { ring: "stroke-stone-400", text: "text-muted", bg: "bg-stone-400" },
 };
 
+/** Pills for a level of concern: always with their word, never colour alone. */
+export const RISK_TONE = {
+  high: "bg-rose-100 text-rose-800 dark:bg-rose-900/40 dark:text-rose-200",
+  moderate: "bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200",
+  none: "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200",
+  unknown: "bg-stone-100 text-stone-600 dark:bg-stone-800 dark:text-stone-300",
+};
+
+/** The dot beside a level, for lists. */
+export const LEVEL_DOT = {
+  high: "bg-rose-600",
+  moderate: "bg-amber-500",
+  low: "bg-yellow-300 dark:bg-yellow-400",
+  none: "bg-emerald-500",
+};
+
 /** The 0–100 score as a dial, coloured by verdict. */
 export function ScoreDial({
   value,
@@ -220,7 +236,7 @@ const GRADE_COLORS: Record<Grade, string> = {
   a: "bg-emerald-700 text-white",
   b: "bg-lime-600 text-white",
   c: "bg-yellow-400 text-stone-900",
-  d: "bg-orange-500 text-white",
+  d: "bg-orange-500 text-stone-950",
   e: "bg-rose-600 text-white",
 };
 
@@ -237,7 +253,7 @@ export function GradeBadge({
   return (
     <div className="flex flex-col items-start gap-1.5 sm:flex-row sm:items-center sm:gap-2">
       <span
-        className={`grid size-9 place-items-center rounded-lg text-lg font-bold uppercase ${grade ? GRADE_COLORS[grade] : "bg-stone-200 text-muted dark:bg-stone-800"}`}
+        className={`grid size-9 place-items-center rounded-lg text-lg font-bold uppercase ${grade ? GRADE_COLORS[grade] : "bg-stone-200 text-stone-700 dark:bg-stone-800 dark:text-stone-300"}`}
         aria-hidden="true"
       >
         {grade ?? "?"}
@@ -252,11 +268,18 @@ export function GradeBadge({
 }
 
 export function NovaBadge({ group, label }: { group: number | undefined; label: string }) {
-  const colors = ["", "bg-emerald-700", "bg-yellow-500", "bg-orange-500", "bg-rose-600"];
+  // Dark text on the light hues: white on yellow or orange falls under 3:1.
+  const colors = [
+    "",
+    "bg-emerald-700 text-white",
+    "bg-yellow-400 text-stone-900",
+    "bg-orange-500 text-stone-950",
+    "bg-rose-600 text-white",
+  ];
   return (
     <div className="flex flex-col items-start gap-1.5 sm:flex-row sm:items-center sm:gap-2">
       <span
-        className={`grid size-9 place-items-center rounded-lg text-lg font-bold text-white ${group ? colors[group] : "bg-stone-200 text-muted dark:bg-stone-800"}`}
+        className={`grid size-9 place-items-center rounded-lg text-lg font-bold ${group ? colors[group] : "bg-stone-200 text-stone-700 dark:bg-stone-800 dark:text-stone-300"}`}
         aria-hidden="true"
       >
         {group ?? "?"}

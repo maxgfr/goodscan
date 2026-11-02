@@ -7,6 +7,8 @@ import { DEFAULT_PREFERENCES, matchProduct } from "../score/match";
 import { scoreProduct } from "../score/score";
 import { AiError } from "./call";
 import {
+  additiveFacts,
+  explainAdditive,
   explainProduct,
   findOnline,
   type LabelAnswer,
@@ -127,6 +129,49 @@ describe("AI", () => {
     expect(prompt).toContain("Für Kinder?");
     expect(prompt).toContain("goodscanScore");
     expect(prompt).not.toContain("sk-test");
+  });
+
+  test("explains one additive from its level and its cited findings, never re-rating it", async () => {
+    const p = normalize(RAW.cokeZero, "off", "en");
+    const aspartame = scoreProduct(p).additives.find((a) => a.tag === "en:e951");
+    if (!aspartame) throw new Error("no aspartame");
+    const facts = additiveFacts(aspartame, p);
+    expect(JSON.parse(facts).additive).toMatchObject({
+      code: "E951",
+      usedAs: ["sweetener"],
+      goodscanLevel: "moderate",
+    });
+    const { model, calls } = researching(["- A sweetener\n- IARC 2B"]);
+    const out = await explainAdditive(
+      { settings, model, capabilities: caps(false, true) },
+      facts,
+      "fr",
+    );
+    expect(out.text).toBe("- A sweetener\n- IARC 2B");
+    const prompt = JSON.stringify(calls[0]?.prompt);
+    expect(prompt).toContain("French");
+    expect(prompt).toContain("goodscanLevel is fixed");
+    expect(prompt).toContain("IARC");
+    expect(prompt).not.toContain(WEB_SEARCH_RULE);
+    expect(calls[0]?.tools).toEqual([]);
+    // With the search mode: the rule and the tool.
+    const web = researching(["ok"]);
+    await explainAdditive(
+      { settings, model: web.model, capabilities: caps(false, true) },
+      facts,
+      "en",
+      true,
+    );
+    expect(JSON.stringify(web.calls[0]?.prompt)).toContain(WEB_SEARCH_RULE);
+    expect(web.calls[0]?.tools).toEqual(["web_search"]);
+  });
+
+  test("the product's facts carry each additive's level and official lists", () => {
+    const p = normalize(RAW.cokeZero, "off", "en");
+    const facts = JSON.parse(productFacts(p, scoreProduct(p), null));
+    const aspartame = facts.additives.find((a: { code: string }) => a.code === "E951");
+    expect(aspartame.goodscanLevel).toBe("moderate");
+    expect(aspartame.officialLists.join(" ")).toContain("IARC");
   });
 
   test("reads a label and the same score applies", async () => {

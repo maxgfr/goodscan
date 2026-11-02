@@ -1,9 +1,17 @@
 import { describe, expect, test } from "bun:test";
+import additivesData from "../data/additives.json";
 import { RAW } from "../data/fixtures";
 import { normalize } from "../data/off";
 import type { Product } from "../data/product";
 import { nutriscore } from "./nutriscore";
-import { interpolate, scoreProduct, verdictOf } from "./score";
+import {
+  additiveInfo,
+  additiveLevel,
+  additiveReason,
+  interpolate,
+  scoreProduct,
+  verdictOf,
+} from "./score";
 
 const product = (key: keyof typeof RAW, lang = "en") => normalize(RAW[key], "off", lang);
 
@@ -283,5 +291,50 @@ describe("goodscan score", () => {
       "bad",
       "bad",
     ]);
+  });
+});
+
+describe("additiveLevel", () => {
+  const PENALTY = { banned: -25, high: -15, moderate: -6 } as const;
+
+  test("agrees with the score's penalty, for every additive", () => {
+    for (const tag of Object.keys(additivesData)) {
+      const a = additiveInfo(tag);
+      const { level } = additiveLevel(a);
+      const expected = level in PENALTY ? PENALTY[level as keyof typeof PENALTY] : undefined;
+      expect({ tag, delta: additiveReason(a)?.delta }).toEqual({ tag, delta: expected });
+    }
+  });
+
+  test("aspartame: no EFSA overexposure, yet a moderate concern, and why", () => {
+    const { level, why } = additiveLevel(additiveInfo("en:e951"));
+    expect(level).toBe("moderate");
+    expect(why[0]?.key).not.toBe("whyEfsaNone");
+    expect(why.map((w) => w.key)).toContain("whyOfficial");
+    expect(why.map((w) => w.key)).toContain("whyEfsaNone");
+  });
+
+  test("banned in the EU, high, and nothing known", () => {
+    expect(additiveLevel(additiveInfo("en:e171")).level).toBe("banned");
+    expect(additiveLevel(additiveInfo("en:e250")).level).toBe("high");
+    expect(additiveLevel(additiveInfo("en:e99999"))).toEqual({
+      level: "unknown",
+      why: [{ key: "whyNothing", tone: "none" }],
+    });
+  });
+
+  test("an EFSA re-evaluation and nothing else: no concern found", () => {
+    const a = additiveInfo("en:e330");
+    expect(a.classes).toEqual(["antioxidant", "sequestrant"]);
+    expect(a.efsa?.url).toMatch(/^https:\/\/doi\.org\//);
+    expect(additiveLevel(a).level).toBe("none");
+  });
+
+  test("reasons come strongest first", () => {
+    const rank = { high: 0, moderate: 1, low: 2, none: 3 };
+    for (const tag of ["en:e951", "en:e250", "en:e171", "en:e407", "en:e621"]) {
+      const tones = additiveLevel(additiveInfo(tag)).why.map((w) => rank[w.tone]);
+      expect(tones).toEqual([...tones].sort((x, y) => x - y));
+    }
   });
 });

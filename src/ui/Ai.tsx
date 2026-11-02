@@ -3,6 +3,8 @@ import { useState } from "react";
 import { AiError, type Answer } from "../ai/call";
 import { preparePhoto } from "../ai/image";
 import {
+  additiveFacts,
+  explainAdditive,
   explainProduct,
   findOnline,
   productFacts,
@@ -14,7 +16,7 @@ import {
 } from "../ai/product";
 import { isCosmetic, type Product } from "../data/product";
 import type { Match } from "../score/match";
-import type { Score } from "../score/score";
+import type { AdditiveInfo, Score } from "../score/score";
 import { Button, Icon, Notice } from "./kit";
 import { href } from "./router";
 import { useApp } from "./state";
@@ -207,6 +209,118 @@ export function WebFinder({
 
 const WEB_KEY = "goodscan-ai-web-search";
 
+/** The "search the web" switch, remembered, and whether the model can search at all. */
+function useWebMode() {
+  const { webSearch } = useApp();
+  const [web, setWebState] = useState(() => readItem(WEB_KEY) === "1");
+  const setWeb = (on: boolean) => {
+    setWebState(on);
+    writeItem(WEB_KEY, on ? "1" : "0");
+  };
+  return { web, setWeb, searchable: webSearch === true };
+}
+
+function WebToggle({ web, setWeb }: { web: boolean; setWeb: (on: boolean) => void }) {
+  const { t } = useApp();
+  return (
+    <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-soft">
+      <input
+        type="checkbox"
+        className="size-4 accent-brand-700"
+        checked={web}
+        onChange={(e) => setWeb(e.target.checked)}
+      />
+      {t("aiWebMode")}
+    </label>
+  );
+}
+
+/** A model's answer: its lines, '- ' lines as bullets, the pages it read, the caveat. */
+function AnswerView({ answer, testId = "ai-answer" }: { answer: Answer; testId?: string }) {
+  const { t } = useApp();
+  return (
+    <div
+      className="rounded-xl bg-stone-50 p-3 text-sm leading-relaxed dark:bg-stone-800/60"
+      data-testid={testId}
+    >
+      {answer.text
+        .split("\n")
+        .filter(Boolean)
+        .map((line, i) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: lines of one fixed answer
+          <p key={i} className={line.startsWith("- ") ? "pl-3 -indent-3" : "mb-1"}>
+            {line.startsWith("- ") ? `• ${line.slice(2)}` : line}
+          </p>
+        ))}
+      <WebSources sources={answer.sources} />
+      <p className="mt-2 text-xs text-muted">{t("aiDisclaimer")}</p>
+    </div>
+  );
+}
+
+/** Answers already paid for, this session: reopening an additive costs no new call. */
+const additiveAnswers = new Map<string, Answer>();
+
+/** One additive explained by the connected model, on a tap. */
+export function AdditiveAi({ additive, product }: { additive: AdditiveInfo; product: Product }) {
+  const { t, settings, lang, webSearch } = useApp();
+  // One "search the web" switch for the page: the one under "Ask AI", read when tapped.
+  const web = () => webSearch === true && readItem(WEB_KEY) === "1";
+  const keyOf = () => `${additive.tag}|${lang}|${web() ? "web" : ""}`;
+  const [key, setKey] = useState(keyOf);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const shown = additiveAnswers.get(key) ?? null;
+
+  if (!settings) {
+    return (
+      <a
+        className="inline-flex w-fit items-center gap-1.5 py-1 text-xs font-semibold text-brand-700 underline dark:text-brand-400"
+        href={href({ name: "settings" })}
+      >
+        <Icon name="spark" className="size-3.5" />
+        {t("aiAdditiveConnect")}
+      </a>
+    );
+  }
+  return (
+    <div className="grid gap-2">
+      {shown ? null : (
+        <div className="flex flex-wrap items-center gap-3">
+          <Button
+            variant="secondary"
+            icon="spark"
+            busy={busy}
+            onClick={async () => {
+              setBusy(true);
+              setError(null);
+              try {
+                const a = await explainAdditive(
+                  { settings },
+                  additiveFacts(additive, product),
+                  lang,
+                  web(),
+                );
+                const k = keyOf();
+                additiveAnswers.set(k, a);
+                setKey(k);
+              } catch (err) {
+                setError(t("aiError", { message: message(err) }));
+              } finally {
+                setBusy(false);
+              }
+            }}
+          >
+            {busy ? t("aiThinking") : t("aiAdditive")}
+          </Button>
+        </div>
+      )}
+      {error ? <Notice tone="error">{error}</Notice> : null}
+      {shown ? <AnswerView answer={shown} testId="ai-additive" /> : null}
+    </div>
+  );
+}
+
 export function AiPanel({
   product,
   score,
@@ -216,13 +330,12 @@ export function AiPanel({
   score: Score;
   match: Match | null;
 }) {
-  const { t, settings, lang, webSearch } = useApp();
+  const { t, settings, lang } = useApp();
   const [answer, setAnswer] = useState<Answer | null>(null);
   const [question, setQuestion] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [web, setWeb] = useState(() => readItem(WEB_KEY) === "1");
-  const searchable = webSearch === true;
+  const { web, setWeb, searchable } = useWebMode();
 
   async function ask(q?: string) {
     if (!settings) return;
@@ -267,20 +380,7 @@ export function AiPanel({
         <Button icon="spark" busy={busy && !question} onClick={() => void ask()}>
           {t("aiExplain")}
         </Button>
-        {searchable ? (
-          <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-soft">
-            <input
-              type="checkbox"
-              className="size-4 accent-brand-700"
-              checked={web}
-              onChange={(e) => {
-                setWeb(e.target.checked);
-                writeItem(WEB_KEY, e.target.checked ? "1" : "0");
-              }}
-            />
-            {t("aiWebMode")}
-          </label>
-        ) : null}
+        {searchable ? <WebToggle web={web} setWeb={setWeb} /> : null}
       </div>
       <form
         className="flex gap-2"
@@ -315,24 +415,7 @@ export function AiPanel({
         </p>
       ) : null}
       {error ? <Notice tone="error">{error}</Notice> : null}
-      {answer ? (
-        <div
-          className="rounded-xl bg-stone-50 p-3 text-sm leading-relaxed dark:bg-stone-800/60"
-          data-testid="ai-answer"
-        >
-          {answer.text
-            .split("\n")
-            .filter(Boolean)
-            .map((line, i) => (
-              // biome-ignore lint/suspicious/noArrayIndexKey: lines of one fixed answer
-              <p key={i} className={line.startsWith("- ") ? "pl-3 -indent-3" : "mb-1"}>
-                {line.startsWith("- ") ? `• ${line.slice(2)}` : line}
-              </p>
-            ))}
-          <WebSources sources={answer.sources} />
-          <p className="mt-2 text-xs text-muted">{t("aiDisclaimer")}</p>
-        </div>
-      ) : null}
+      {answer ? <AnswerView answer={answer} /> : null}
     </div>
   );
 }
